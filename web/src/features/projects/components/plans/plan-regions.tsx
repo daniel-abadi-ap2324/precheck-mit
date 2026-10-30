@@ -5,6 +5,8 @@ import { LoaderCircle, RefreshCw, Shapes, Sparkles } from "lucide-react";
 import { Callout, ErrorState } from "@/components/common";
 import { EditorRegiones } from "@/components/regiones";
 import { Button } from "@/components/ui/button";
+import { AiRequirementNotice, iaDisponible } from "@/features/ia/components/ai-requirement-notice";
+import { useConfigIa } from "@/features/ia/hooks";
 import { useEnVista } from "@/hooks/use-en-vista";
 import { queryKeys } from "@/lib/query-keys";
 import { etiquetaVision } from "@/lib/regiones";
@@ -43,6 +45,8 @@ export function PlanRegions({ planId, fileName }: { planId: string; fileName: st
     },
   });
   const procesando = data?.propuesta.status === "processing" || proponer.isPending;
+  const config = useConfigIa();
+  const sinIa = Boolean(config.data) && !iaDisponible(config.data!);
   const regiones = data?.regiones ?? null;
   // El modelo lo elige el servidor (configuración de IA); aquí solo se muestra.
   const modeloVision = data?.modeloVision?.nombre;
@@ -54,7 +58,7 @@ export function PlanRegions({ planId, fileName }: { planId: string; fileName: st
         <RefreshCw aria-hidden />
         {regiones ? "Proponer de nuevo" : "Proponer regiones"}
       </Button>
-      <Button size="sm" variant="outline" disabled={procesando} onClick={() => proponer.mutate(true)}>
+      <Button size="sm" variant="outline" disabled={procesando || sinIa} onClick={() => proponer.mutate(true)}>
         <Sparkles aria-hidden />
         {etiquetaVision(modeloVision)}
       </Button>
@@ -72,6 +76,7 @@ export function PlanRegions({ planId, fileName }: { planId: string; fileName: st
           El sistema propone el lote, la huella, los retiros, los estacionamientos y demás áreas sobre la lámina; revíselas, corríjalas y confírmelas antes de ejecutar el PreCheck.
         </p>
       </div>
+      <AiRequirementNotice que="«Proponer con IA (visión)»" />
       {error ? (
         <ErrorState variant="inline" error={error} onRetry={() => void refetch()} />
       ) : !data ? (

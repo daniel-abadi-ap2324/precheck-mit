@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { NativeSelect } from "@/components/ui/native-select";
 import { MAX_EMPLEADOS_XTRA, tituloRevisionIa, urlRegistroIa, type EstadoXtra, type ProveedorIa } from "@/services/ia/cliente";
 import { useConfigIa, useRegistroIa, useRevisionIa } from "../hooks";
+import { AiRequirementNotice } from "./ai-requirement-notice";
 
 const NOMBRE_PROVEEDOR = {
   "claude-code": "Claude Code en este equipo",
@@ -215,6 +216,7 @@ export function AiReviewPanel({ precheckId }: { precheckId: string }) {
           </div>
         </div>
       ) : null}
+      <AiRequirementNotice que="La revisión con IA" />
       {apagada ? (
         <p className="text-sm text-muted-foreground">
           La revisión con IA está apagada. Actívela en Configuración → Revisión

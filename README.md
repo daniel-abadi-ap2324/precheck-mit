@@ -70,23 +70,44 @@ drafted the documents. Inside the product, Claude (Sonnet, Opus) and DeepSeek mo
 
 ## Running it
 
-Requirements: Python 3.11 or newer with `pip install -r requirements.txt` (PyMuPDF, Shapely, ezdxf…) and Node 20.
+Requirements: Python 3.11 or newer and Node 20 or newer.
 
 ```bash
-# Read the synthetic plan and see the facts the reader found
-python -m precheck.planos demo/plano-sintetico.pdf --salida tmp/demo
+# 1. Python environment (the web app uses .venv in the repository root if it exists, or the python on your PATH;
+#    set PRECHECK_PYTHON to use another interpreter)
+python -m venv .venv
+.venv/Scripts/python -m pip install -r requirements.txt     # Windows
+# .venv/bin/python -m pip install -r requirements.txt       # macOS / Linux
 
-# Check that every rule's citation appears word for word in its regulation
+# 2. Check that every rule's citation appears word for word in its regulation
 python precheck/motor/verificar_citas.py reglas/reglas_plot_borrador.json normativa/zonificacion/textos/anexo4_fichas_plot.txt
 
-# Web app (http://127.0.0.1:3000)
+# 3. Web app (http://127.0.0.1:3000)
 cd web && npm install && npx next dev -H 127.0.0.1 -p 3000
 ```
 
+Scanned plans (like the Casco Antiguo one) also need [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki) on
+your PATH. Vector PDFs, like the synthetic plan, do not.
+
 In the web app, create a project and pick a plan in the "Plano de ejemplo" list (it shows both files in `demo/`), or
-upload one yourself. For the synthetic plan, confirm the facts (zone R1, Betania) and run the PreCheck. The synthetic plan has one failure on purpose: its sidewalk is 1.00 m wide, and zone R1 requires
-1.20 m. The AI review step needs Claude Code installed or an Anthropic API key. Without either, the rule engine
-still runs.
+upload one yourself. For the synthetic plan, confirm the facts (zone R1, Betania) and run the PreCheck. The synthetic
+plan has one failure on purpose: its sidewalk is 1.00 m wide, and zone R1 requires 1.20 m.
+
+### What needs an API key or a Claude session
+
+The rule engine, the map, the rules and zoning pages, the results and the Informe work with nothing connected. The
+features that call a language model only work after you connect **an API key** (Anthropic or DeepSeek) **or a Claude
+session** (Claude Code installed and signed in with `claude /login`) in **Configuración → Revisión con IA**. The app
+shows a notice wherever a feature needs it.
+
+| Feature | Without AI | With an API key or Claude session |
+|---|---|---|
+| Rule engine, results, map, rules, zoning | Works | Works |
+| Reading plans (text, OCR "Rápido") | Works | Works |
+| OCR "Claude" and "GLM-OCR" | "Claude" needs the AI; "GLM-OCR" needs Ollama and its model instead | Works |
+| Regions "Proponer con IA (visión)" | Disabled, with a notice | Works |
+| Review with AI (decides the rules left in review) | Disabled, with a notice | Works |
+| Informe: AI opinion section | Empty, with a notice | Filled in |
 
 ## Sanitization
 

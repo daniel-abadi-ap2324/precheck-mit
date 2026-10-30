@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { EmptyState, ErrorState, LinkButton } from "@/components/common";
 import { Skeleton } from "@/components/ui/skeleton";
+import { AiRequirementNotice } from "@/features/ia/components/ai-requirement-notice";
 import { useReportModel } from "../hooks/use-report-model";
 import type { ReportVersion } from "../lib/report-model";
 import { sectionsOf } from "../lib/sections";
@@ -47,6 +48,7 @@ export function ReportPage({ projectId }: { projectId: string }) {
     body = (
       <div className="flex flex-col gap-4">
         <ReportToolbar model={model} version={version} onVersionChange={setVersion} />
+        <AiRequirementNotice que="El dictamen con IA de este informe" className="print:hidden" />
         {/* Columnas con mínimo 0: si no, el índice (una fila sin cortes en móvil) ensancha toda la página. */}
         <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[13rem_minmax(0,1fr)] print:block">
           <aside className="min-w-0 print:hidden">

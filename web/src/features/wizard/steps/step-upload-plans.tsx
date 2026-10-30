@@ -6,6 +6,7 @@ import { FileUploader } from "@/components/uploader";
 import { PlanExamplePicker } from "@/features/plans";
 import { DESCRIPCION_OCR, LECTORES_OCR, type LectorOcr } from "@/lib/lector-ocr";
 import { useWizardStore } from "@/stores/wizard";
+import { AiRequirementNotice } from "@/features/ia/components/ai-requirement-notice";
 import { useEnsureProject } from "../hooks/use-ensure-project";
 import { COTAS_A_DECLARAR } from "../lib/cotas-a-declarar";
 import { usePlanUploads } from "../hooks/use-plan-uploads";
@@ -107,6 +108,7 @@ function SelectorOcr({ valor, onChange, bloqueado }: { valor: LectorOcr; onChang
           </label>
         ))}
       </div>
+      {valor === "claude" ? <AiRequirementNotice que="El lector Claude" /> : null}
       <p id={`${id}-nota`} className="text-2xs text-muted-foreground">
         {bloqueado ? "Para cambiar de lector, quite los planos cargados y súbalos de nuevo." : "Los PDF vectoriales traen el texto: el lector solo se usa en hojas escaneadas."}
       </p>
