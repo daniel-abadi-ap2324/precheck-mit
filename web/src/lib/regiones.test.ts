@@ -126,7 +126,7 @@ describe("geometría", () => {
   it("mueve un vértice recortándolo a la página y convierte píxeles a fracción", () => {
     expect(moverVertice(CUADRADO, 2, [1.4, -0.2])[2]).toEqual([1, 0]);
     expect(aFraccion(1200, 400, 2400, 1600)).toEqual([0.5, 0.25]);
-    expect(aFraccion(-5, 044444, 2400, 1600)).toEqual([0, 1]);
+    expect(aFraccion(-5, 99999, 2400, 1600)).toEqual([0, 1]);
   });
 
   it("encuentra el lado más cercano, el punto dentro del polígono y el centro", () => {

@@ -1,0 +1,15 @@
+# Dependencies and build output
+web/node_modules/
+web/.next/
+web/.data/
+web/.env*.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local runtime data (never commit keys or uploads)
+.data/
+tmp*/
+*.log
+web/public/maplibre/
