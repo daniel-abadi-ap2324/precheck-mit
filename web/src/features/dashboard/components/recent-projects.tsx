@@ -34,8 +34,8 @@ export function RecentProjects({ projects }: { projects: Project[] }) {
         />
       ) : (
         <>
-          <ProjectsTable projects={recent} caption="Proyectos recientes" hiddenColumns={["address", "updatedAt"]} className="hidden md:flex" />
-          <ul className="flex flex-col gap-3 md:hidden">
+          <ProjectsTable projects={recent} caption="Proyectos recientes" hiddenColumns={["address", "zoningCode", "updatedAt"]} className="hidden xl:flex" />
+          <ul className="flex flex-col gap-3 xl:hidden">
             {recent.map((p) => (
               <li key={p.id}>
                 <ProjectCard project={p} />

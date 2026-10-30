@@ -116,7 +116,7 @@ export function StepRun({ onBack }: { onBack: () => void }) {
   const motivoBloqueo = sinPdf
     ? "El motor de reglas necesita un plano PDF: vuelva al paso «Cargar el plano»."
     : lectura.leyendo || lecturaDocs.leyendo
-      ? "Leyendo el plano y los documentos. Con GLM-OCR, una hoja escaneada tarda varios minutos."
+      ? "Leyendo el plano y los documentos. Una hoja escaneada tarda de uno a tres minutos con el lector Rápido, bastante más con GLM-OCR."
       : lectura.listos === 0
         ? "No se pudo leer ningún plano: suba otro PDF."
         : sinConfirmar.length

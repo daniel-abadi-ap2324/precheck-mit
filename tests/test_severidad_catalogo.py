@@ -90,6 +90,7 @@ class TestCatalogoFirme(unittest.TestCase):
                    for r in json.loads(p.read_text(encoding="utf-8")) for e in firmeza.errores_de_firmeza(r, textos)]
         self.assertEqual(errores, [], "\n".join(errores[:20]))
 
+    @unittest.skipUnless((RAIZ / "docs" / "revision-catalogo" / "adr0017" / "preclasificacion.json").exists(), "los datos de revisión del catálogo no vienen en esta copia pública")
     def test_aplicar_otra_vez_no_cambia_nada(self):
         from consolidar_severidad import consolidar
         from consolidar_severidad import reglas_por_id
