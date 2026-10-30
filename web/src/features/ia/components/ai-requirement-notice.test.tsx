@@ -7,6 +7,8 @@ const base: ConfigIa = {
   proveedor: "claude-code",
   modelo: "claude-sonnet-5-5",
   modelos: [],
+  modeloEscaneados: null,
+  modelosEscaneados: [],
   llaveConfigurada: false,
   origenLlave: null,
   claudeCodeDisponible: true,

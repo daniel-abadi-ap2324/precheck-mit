@@ -24,7 +24,7 @@ permission to share; the other is a synthetic plan (`demo/plano-sintetico.pdf`).
   each with a verified citation;
 - the Next.js web interface, which ran on demo data.
 
-**Daniel (me)** made 287 commits between October 4 and 16, 2026, about 34,000 added lines in `web/src`, `precheck/`
+**Daniel (me)** made 405 commits between October 4 and 28, 2026, about 44,000 added lines in `web/src`, `precheck/`
 and `scripts/`:
 
 - **Running it locally.** I made PreCheck run on Windows and connected the web app to the real engine, so plans you
@@ -34,7 +34,7 @@ and `scripts/`:
 - **AI review in the app.** An AI agent reviews the plans from inside the app. You can choose the model per run. Its
   log can be downloaded, and every finding is marked on the drawing. Findings that are not in the rule catalog are
   labeled "proposed by the AI" so a reviewer validates them.
-- **Measuring the AI.** I hand-verified the answers for 5 real plans and ran more than 50 comparison rounds across models.
+- **Measuring the AI.** I hand-verified the answers for 5 real plans and ran more than 70 comparison rounds across models.
   Over the four vector plans, in the 3-run rounds 43–45, Opus 5.5 read 98 % of the facts correctly, Sonnet 5.5 96 % and
   DeepSeek 87 %. There are screens for comparing models (`/projects/compare`) and for the history of the rounds
   (`/rondas`).

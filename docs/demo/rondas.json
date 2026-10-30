@@ -2120,7 +2120,7 @@
    "ronda": 83,
    "titulo": "Casco Antiguo con XTRA (Opus y 2 empleados Sonnet), 6 repeticiones",
    "cambioCorto": "Revisión XTRA repetida 6 veces, junto a la ronda 82.",
-   "efecto": "Decisiones iguales entre corridas: 99.1 %, sin contradicciones; 83 datos iguales en las 6.",
+   "efecto": "Decisiones iguales entre corridas: 99.1 %, sin veredictos opuestos; 83 datos iguales en las 6.",
    "cambio": "Sin cambio de código; ronda aparte porque el nombre de la corrida no distingue XTRA.",
    "hipotesis": "XTRA es más estable que Opus solo.",
    "resultado": "Sí: 99.1 % frente a 97.1 % de Opus, por 9.19 USD de media (Opus 7.10). El retiro posterior sigue variando (0 a 2.27 m).",
