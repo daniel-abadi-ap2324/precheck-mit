@@ -1,0 +1,135 @@
+[
+  {
+    "id": "PLOT-A128-ART9-SUPUESTO-GENERADOR",
+    "version": 2,
+    "titulo": "Proyecto con un supuesto generador de compensación urbana",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "9",
+      "pagina_pdf": 6,
+      "cita_textual": "Sr: entenderá que existe un beneficio urbanístico derivado del incremento del aprovechainiento del suelo cuando se configure alguno de los siguientes supuestos:"
+    },
+    "tipo": "criterio",
+    "aplica_si": "existe(proyecto.resolucion_edificabilidad) or (existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true) or (existe(lote.afectado_compensacion) and lote.afectado_compensacion == true)",
+    "entradas": [
+      "proyecto.resolucion_edificabilidad",
+      "proyecto.usa_codigo_programado",
+      "lote.afectado_compensacion"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O2",
+      "cita": "Sr: entenderá que existe un beneficio urbanístico derivado del incremento del aprovechainiento del suelo cuando se configure alguno de los siguientes supuestos:",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto se apoya en una excepción o tolerancia a la norma, un uso de suelo programado o un cambio de zonificación que incrementa el aprovechamiento: configura un supuesto generador de compensación urbana (Acuerdo 128, Art. 9), que se liquida al solicitar el permiso de construcción (Art. 14).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Supuestos: num. 1 y 5 cambio de zonificación por plan o por acto del MIVIOT (lote.afectado_compensacion); num. 2 y 3 excepción o tolerancia que aumenta pisos u ocupación u omite área social o estacionamientos (proyecto.resolucion_edificabilidad); num. 4 uso de suelo programado (proyecto.usa_codigo_programado). Aviso informativo en RLA y siguientes trámites; no sustituye PLOT-EDIFICABILIDAD-ADICIONAL (que verifica que la resolución cubra lo propuesto). Hechos: proyecto.resolucion_edificabilidad y proyecto.usa_codigo_programado ya existen; lote.afectado_compensacion es provisional (true si el CEUS trae la marginal del Art. 13 o la DPU informa la finca como afectada, Arts. 11, 12 y 55); lo decide la IA o un extractor futuro. No procede o no aplica: permisos con planos misceláneos, obras menores o demolición que mantienen el uso y las regulaciones prediales (Art. 15); exoneraciones de otras normas: la Nación, Asociaciones Intermunicipales, pobres de solemnidad (Art. 16); intervenciones de conservación o restauración en inmuebles con declaratoria patrimonial sin demolición total ni sustitución (Art. 53); trámites iniciados y admitidos antes de la entrada en vigor que terminen con acto favorable (Art. 54). Sin acotar por lote.norma_aplicable: el Acuerdo 128 rige en todo el Distrito de Panamá, incluidas las zonas con normas del MIVIOT (Art. 9, num. 5). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026 (sancionado el 18-05-2026). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O2 («Sr: entenderá que existe un beneficio urbanístico derivado del incremento del aprovechainiento del suelo cuando se co…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART14-MOMENTO-PERMISO",
+    "version": 2,
+    "titulo": "Compensación urbana cumplida al solicitar el permiso de construcción",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "14, párr. 1",
+      "pagina_pdf": 7,
+      "cita_textual": "compensación urbana deberá ser cunrplida por las personas naturales o iurídicas que. en su condición de propietario, poseedores, promotores, desarrolladores o solicitantes; materialicen el aprovechamiento adicional de edifrcabihdad previsto en el presente Acuerdo, al momento de solicitar el permiso de construcció¡r"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['RDP', 'PDC_CON_ATC', 'PDC'] and (existe(proyecto.resolucion_edificabilidad) or (existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true) or (existe(lote.afectado_compensacion) and lote.afectado_compensacion == true))",
+    "entradas": [
+      "tramite",
+      "proyecto.resolucion_edificabilidad",
+      "proyecto.usa_codigo_programado",
+      "lote.afectado_compensacion"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "compensación urbana deberá ser cunrplida por las personas naturales o iurídicas",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": "a favor de la Tesorería Municipal, co,r base ¿r la liquidación que emita la Dirección de Obras y Construcciones."
+    },
+    "mensaje_no_cumple": "El proyecto materializa un aprovechamiento adicional (Acuerdo 128, Art. 9): la compensación urbana debe cumplirse al solicitar el permiso de construcción (Art. 14). Verificar la liquidación de la DOYC y el pago, o la solicitud de pago excepcional (Arts. 23 y 30).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio y no documental porque el Art. 23 permite el permiso de construcción condicionado cuando se solicita pago excepcional, y el pago total solo se exige antes del permiso de ocupación: el revisor decide qué basta en esta etapa. En permisos por etapas, se cumple por la etapa autorizada (párr. 3). 'PDC' es un nombre de trámite provisional (permiso sin ATC); se excluye 'OBRAS_MENORES' por el Art. 15. El cálculo (Arts. 17 a 19) lo hace la DOYC y no se reproduce: los porcentajes del Art. 17 están dañados en el OCR («l0%o», «I .5?i», «25%o»). Hechos: proyecto.resolucion_edificabilidad y proyecto.usa_codigo_programado ya existen; lote.afectado_compensacion es provisional (true si el CEUS trae la marginal del Art. 13 o la DPU informa la finca como afectada, Arts. 11, 12 y 55); lo decide la IA o un extractor futuro. No procede o no aplica: permisos con planos misceláneos, obras menores o demolición que mantienen el uso y las regulaciones prediales (Art. 15); exoneraciones de otras normas: la Nación, Asociaciones Intermunicipales, pobres de solemnidad (Art. 16); intervenciones de conservación o restauración en inmuebles con declaratoria patrimonial sin demolición total ni sustitución (Art. 53); trámites iniciados y admitidos antes de la entrada en vigor que terminen con acto favorable (Art. 54). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026 (sancionado el 18-05-2026). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («compensación urbana deberá ser cunrplida por las personas naturales o iurídicas», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART14-MODIFICACION-ASBUILT",
+    "version": 2,
+    "titulo": "Compensación urbana en registro de modificación o plano As Built",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "14, párr. 2",
+      "pagina_pdf": 7,
+      "cita_textual": "Será igualmente aplicable al momento de ¡rresentar registro de modificación o actualización a plano o Plano as Built"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['MODIFICACION_AS_BUILT'] and (existe(proyecto.resolucion_edificabilidad) or (existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true) or (existe(lote.afectado_compensacion) and lote.afectado_compensacion == true))",
+    "entradas": [
+      "tramite",
+      "proyecto.resolucion_edificabilidad",
+      "proyecto.usa_codigo_programado",
+      "lote.afectado_compensacion"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "compensación urbana deberá ser cunrplida por las personas naturales o iurídicas",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": "a favor de la Tesorería Municipal, co,r base ¿r la liquidación que emita la Dirección de Obras y Construcciones."
+    },
+    "mensaje_no_cumple": "La modificación o el plano As Built incrementa el aprovechamiento: la compensación urbana se exige también en este registro, calculada sobre la diferencia entre el plano registrado y la modificación (Acuerdo 128, Art. 14, párr. 2).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'REGISTRO_MODIFICACION' y 'AS_BUILT' (registro de modificación o actualización de plano y plano As Built del Acuerdo 110); proponer el nombre definitivo. Hechos: proyecto.resolucion_edificabilidad y proyecto.usa_codigo_programado ya existen; lote.afectado_compensacion es provisional (true si el CEUS trae la marginal del Art. 13 o la DPU informa la finca como afectada, Arts. 11, 12 y 55); lo decide la IA o un extractor futuro. No procede o no aplica: permisos con planos misceláneos, obras menores o demolición que mantienen el uso y las regulaciones prediales (Art. 15); exoneraciones de otras normas: la Nación, Asociaciones Intermunicipales, pobres de solemnidad (Art. 16); intervenciones de conservación o restauración en inmuebles con declaratoria patrimonial sin demolición total ni sustitución (Art. 53); trámites iniciados y admitidos antes de la entrada en vigor que terminen con acto favorable (Art. 54). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026 (sancionado el 18-05-2026). Códigos de trámite unificados con reglas-nuevas-a110-articulos (MODIFICACION_AS_BUILT, PERMISO_OCUPACION). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («compensación urbana deberá ser cunrplida por las personas naturales o iurídicas», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART23-PAGO-ANTES-OCUPACION",
+    "version": 2,
+    "titulo": "Compensación urbana pagada en su totalidad antes del permiso de ocupación",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "23, párr. 1",
+      "pagina_pdf": 9,
+      "cita_textual": "Solo se poclrá emitir Permiso de Ocupación al ser pagada en su totalidad la compensacion urbana exigible."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION' and expediente.compensacion_urbana.exigible == true",
+    "entradas": [
+      "expediente.compensacion_urbana.pagada_total"
+    ],
+    "condicion": "expediente.compensacion_urbana.pagada_total == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Solo se poclrá emitir Permiso de Ocupación al ser pagada en su totalidad la compensacion urbana exigible.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "No consta el pago total de la compensación urbana exigible: sin él no puede emitirse el permiso de ocupación (Acuerdo 128, Art. 23).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.compensacion_urbana.pagada_total == true. Hechos provisionales: tramite 'SPOC' (permiso de ocupación, glosario del proyecto), expediente.compensacion_urbana.exigible y expediente.compensacion_urbana.pagada_total (constancia de Tesorería, Arts. 22 y 48); los decide la IA o un extractor futuro. Si no se sabe si la compensación es exigible, la regla queda en revisión. Duda: el párr. 2 dice que «Lo anterior no aplica» cuando se solicita pago excepcional, pero luego solo habla de emitir el Permiso de Construcción; si con pago excepcional en curso basta para la ocupación lo decide un humano. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026 (sancionado el 18-05-2026). Códigos de trámite unificados con reglas-nuevas-a110-articulos (MODIFICACION_AS_BUILT, PERMISO_OCUPACION). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Solo se poclrá emitir Permiso de Ocupación al ser pagada en su totalidad la compensacion urbana exigible.», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  }
+]

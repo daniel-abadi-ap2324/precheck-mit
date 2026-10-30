@@ -1,0 +1,306 @@
+{
+  "slug": "motor-reglas-auditable",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Promover las migraciones de la bitácora y crear su aplicador",
+      "layer": "migration",
+      "deps": [],
+      "acs": [
+        "AC-19"
+      ],
+      "dod": "`tests/test_migraciones.py` pasa: aplicar, reaplicar, triggers y reversión; Las 10 pruebas existentes siguen pasando",
+      "files_hint": [
+        "docs/features/motor-reglas-auditable/migrations/",
+        "precheck/auditoria/migraciones/",
+        "precheck/auditoria/migrar.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/promover-migraciones-y-aplicador.md"
+    },
+    {
+      "id": "T2",
+      "title": "Implementar el canónico JSON y la cadena de eventos del dominio",
+      "layer": "domain",
+      "deps": [],
+      "acs": [
+        "AC-19"
+      ],
+      "dod": "`tests/test_cadena.py` pasa, incluida la prueba de claves reordenadas; `test_cadena_detecta_alteracion` existente sigue pasando",
+      "files_hint": [
+        "precheck/auditoria/canonico.py",
+        "precheck/auditoria/cadena.py",
+        "precheck/auditoria/verificar_cadena.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/cadena-y-canonico.md"
+    },
+    {
+      "id": "T3",
+      "title": "Extraer el evaluador puro de motor.py y fijar VERSION_MOTOR",
+      "layer": "domain",
+      "deps": [],
+      "acs": [
+        "AC-05"
+      ],
+      "dod": "Las 10 pruebas existentes pasan sin cambios; Prueba nueva de umbral efectivo en `tests/test_evaluador.py`",
+      "files_hint": [
+        "precheck/motor/evaluador.py",
+        "precheck/motor/version.py",
+        "precheck/motor/motor.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/evaluador-puro-y-version-motor.md"
+    },
+    {
+      "id": "T4",
+      "title": "Derivar el estado de las reglas y seleccionar la versión aplicable",
+      "layer": "domain",
+      "deps": [
+        "T2"
+      ],
+      "acs": [
+        "AC-02",
+        "AC-06",
+        "AC-12"
+      ],
+      "dod": "`tests/test_seleccion.py` cubre AC-02, AC-06 y AC-12 y pasa",
+      "files_hint": [
+        "precheck/reglas/gobierno.py",
+        "precheck/motor/seleccion.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/estado-de-reglas-y-seleccion.md"
+    },
+    {
+      "id": "T5",
+      "title": "Crear ErrorPreCheck y el registro de personas derivado de eventos",
+      "layer": "domain",
+      "deps": [
+        "T2"
+      ],
+      "acs": [
+        "AC-10",
+        "AC-11"
+      ],
+      "dod": "`tests/test_personas.py` cubre AC-10 y AC-11 (regla de dominio) y pasa",
+      "files_hint": [
+        "precheck/errores.py",
+        "precheck/personas/registro.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/errores-y-registro-de-personas.md"
+    },
+    {
+      "id": "T6",
+      "title": "Implementar RepositorioSQLite detrás del puerto de bitácora",
+      "layer": "infra",
+      "deps": [
+        "T1",
+        "T2"
+      ],
+      "acs": [
+        "AC-19"
+      ],
+      "dod": "`tests/test_sqlite_repo.py` pasa (anexar, leer, cabezas, usos, idempotencia, atomicidad)",
+      "files_hint": [
+        "precheck/auditoria/puertos.py",
+        "precheck/auditoria/sqlite_repo.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/repositorio-sqlite.md"
+    },
+    {
+      "id": "T7",
+      "title": "Implementar proponer versiones con verificación de cita",
+      "layer": "app",
+      "deps": [
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "acs": [
+        "AC-07",
+        "AC-08",
+        "AC-12"
+      ],
+      "dod": "`tests/test_proponer.py` cubre AC-07, AC-08 y AC-12 y pasa; `verificar_citas.py` conserva su CLI",
+      "files_hint": [
+        "precheck/reglas/servicio.py",
+        "precheck/motor/verificar_citas.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/proponer-versiones.md"
+    },
+    {
+      "id": "T8",
+      "title": "Implementar aprobar, rechazar y retirar versiones con cuatro ojos",
+      "layer": "app",
+      "deps": [
+        "T7"
+      ],
+      "acs": [
+        "AC-09",
+        "AC-10",
+        "AC-11",
+        "AC-20b"
+      ],
+      "dod": "`tests/test_gobierno.py` cubre AC-09, AC-10, AC-11 y AC-20b y pasa",
+      "files_hint": [
+        "precheck/reglas/servicio.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/aprobar-rechazar-retirar.md"
+    },
+    {
+      "id": "T9",
+      "title": "Implementar inicializar, vincular cuenta, designar y confirmar propuestas",
+      "layer": "app",
+      "deps": [
+        "T5",
+        "T6"
+      ],
+      "acs": [
+        "AC-11"
+      ],
+      "dod": "`tests/test_personas_servicio.py` pasa, incluido AC-11 de punta a punta con personas reales del registro",
+      "files_hint": [
+        "precheck/personas/servicio.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/personas-inicializar-vincular-designar.md"
+    },
+    {
+      "id": "T10",
+      "title": "Implementar evaluar expediente con degradación, CEUS, cobertura e instantánea",
+      "layer": "app",
+      "deps": [
+        "T3",
+        "T4",
+        "T6",
+        "T9"
+      ],
+      "acs": [
+        "AC-01",
+        "AC-02",
+        "AC-03",
+        "AC-04",
+        "AC-05",
+        "AC-06",
+        "AC-21"
+      ],
+      "dod": "`tests/test_evaluar.py` cubre AC-01 a AC-06 y AC-21 y pasa; Evaluar `plot_1zm6_excede.json` con el catálogo completo tarda ≤ 10 s",
+      "files_hint": [
+        "precheck/expediente/servicio.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/evaluar-expediente.md"
+    },
+    {
+      "id": "T11",
+      "title": "Implementar decidir, visto bueno y estado del expediente",
+      "layer": "app",
+      "deps": [
+        "T10"
+      ],
+      "acs": [
+        "AC-13",
+        "AC-14",
+        "AC-15",
+        "AC-16"
+      ],
+      "dod": "`tests/test_decisiones.py` cubre AC-13 a AC-16 y pasa",
+      "files_hint": [
+        "precheck/expediente/servicio.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/decidir-visto-bueno-estado.md"
+    },
+    {
+      "id": "T12",
+      "title": "Implementar reproducir una evaluación registrada",
+      "layer": "app",
+      "deps": [
+        "T10"
+      ],
+      "acs": [
+        "AC-17",
+        "AC-18"
+      ],
+      "dod": "`tests/test_reproducir.py` cubre AC-17 y AC-18 y pasa",
+      "files_hint": [
+        "precheck/expediente/servicio.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/reproducir-evaluacion.md"
+    },
+    {
+      "id": "T13",
+      "title": "Implementar suspender y levantar normas con cuatro ojos",
+      "layer": "app",
+      "deps": [
+        "T8",
+        "T9",
+        "T10"
+      ],
+      "acs": [
+        "AC-20"
+      ],
+      "dod": "`tests/test_suspension.py` cubre AC-20 y pasa",
+      "files_hint": [
+        "precheck/reglas/servicio.py",
+        "precheck/reglas/normas.json"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/suspender-y-levantar-normas.md"
+    },
+    {
+      "id": "T14",
+      "title": "Implementar sellar y verificar contra el anclaje externo",
+      "layer": "app",
+      "deps": [
+        "T6"
+      ],
+      "acs": [
+        "AC-19",
+        "AC-19b"
+      ],
+      "dod": "`tests/test_sello.py` cubre AC-19 y AC-19b y pasa",
+      "files_hint": [
+        "precheck/auditoria/sello.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/sellar-y-verificar.md"
+    },
+    {
+      "id": "T15",
+      "title": "Exponer la fachada PreCheck y la CLI python3 -m precheck",
+      "layer": "ports",
+      "deps": [
+        "T8",
+        "T11",
+        "T12",
+        "T13",
+        "T14"
+      ],
+      "acs": [
+        "AC-03",
+        "AC-14",
+        "AC-16"
+      ],
+      "dod": "`tests/test_cli.py` pasa (AC-03, AC-14 y AC-16 vistos desde la CLI); Suite completa verde",
+      "files_hint": [
+        "precheck/__init__.py",
+        "precheck/__main__.py",
+        "precheck/cli.py",
+        "README.md",
+        "CLAUDE.md"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/fachada-y-cli.md"
+    },
+    {
+      "id": "T16",
+      "title": "Agregar la prueba de extremo a extremo y las de NFR",
+      "layer": "tests",
+      "deps": [
+        "T15"
+      ],
+      "acs": [
+        "AC-17",
+        "AC-19b",
+        "AC-21"
+      ],
+      "dod": "`tests/test_extremo_a_extremo.py` pasa: 100 % reproducciones coinciden, alteraciones detectadas, ≤ 10 s por expediente",
+      "files_hint": [
+        "tests/test_extremo_a_extremo.py"
+      ],
+      "file": "docs/features/motor-reglas-auditable/tasks/pruebas-extremo-a-extremo-y-nfr.md"
+    }
+  ]
+}

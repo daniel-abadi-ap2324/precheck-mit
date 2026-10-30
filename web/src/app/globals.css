@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "../styles/tokens.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Tipografía intermedia: 11 px (rótulos mínimos) y 13 px (texto compacto de listas y tablas). */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-compact: 0.8125rem;
+  --text-compact--line-height: 1.25rem;
+  /* Layout: barra lateral, paneles laterales y alturas mínimas de mapa (w-panel, min-h-map…). */
+  --spacing-sidebar: 15.5rem;
+  --spacing-sidebar-collapsed: 4rem;
+  --spacing-panel-sm: 18.75rem;
+  --spacing-panel: 21.25rem;
+  --spacing-panel-lg: 26.25rem;
+  --spacing-map-sm: 17.5rem;
+  --spacing-map: 26.25rem;
+  --spacing-map-lg: 35rem;
+  --font-heading: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-pass: var(--mp-pass);
+  --color-pass-soft: var(--mp-pass-soft);
+  --color-fail: var(--mp-fail);
+  --color-fail-soft: var(--mp-fail-soft);
+  --color-warning: var(--mp-warning);
+  --color-warning-soft: var(--mp-warning-soft);
+  --color-info: var(--mp-info);
+  --color-info-soft: var(--mp-info-soft);
+  --color-manual: var(--mp-manual);
+  --color-manual-soft: var(--mp-manual-soft);
+  --color-supuesto: var(--mp-supuesto);
+  --color-supuesto-soft: var(--mp-supuesto-soft);
+  --color-processing: var(--mp-processing);
+  --color-processing-soft: var(--mp-processing-soft);
+  --color-dimension: var(--mp-dimension);
+  --color-plan-grid: var(--mp-plan-grid);
+  --color-plan-paper: var(--mp-plan-paper);
+  --color-ink: var(--mp-ink);
+  --color-ink-muted: var(--mp-ink-muted);
+  --color-line: var(--mp-line);
+  --color-brand: var(--mp-brand);
+  --color-brand-soft: var(--mp-brand-soft);
+  --color-brand-hover: var(--mp-brand-hover);
+  --color-brand-accent: var(--mp-brand-accent);
+  --color-navy: var(--mp-navy);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Mapea los tokens de marca (src/styles/tokens.css) a las variables de shadcn/ui. */
+  --background: var(--mp-paper);
+  --foreground: var(--mp-ink);
+  --card: var(--mp-sheet);
+  --card-foreground: var(--mp-ink);
+  --popover: var(--mp-sheet);
+  --popover-foreground: var(--mp-ink);
+  --primary: var(--mp-brand);
+  --primary-foreground: var(--mp-on-brand);
+  --secondary: var(--mp-surface-2);
+  --secondary-foreground: var(--mp-ink);
+  --muted: var(--mp-surface-2);
+  --muted-foreground: var(--mp-ink-muted);
+  --accent: var(--mp-brand-soft);
+  --accent-foreground: var(--mp-ink);
+  --destructive: var(--mp-fail);
+  --border: var(--mp-line);
+  --input: var(--mp-line-strong);
+  --ring: var(--mp-focus);
+  --chart-1: var(--mp-brand);
+  --chart-2: var(--mp-pass);
+  --chart-3: var(--mp-warning);
+  --chart-4: var(--mp-fail);
+  --chart-5: var(--mp-manual);
+  --radius: 0.75rem;
+  --sidebar: var(--mp-navy);
+  --sidebar-foreground: var(--mp-sidebar-ink);
+  --sidebar-primary: var(--mp-brand);
+  --sidebar-primary-foreground: var(--mp-on-brand);
+  --sidebar-accent: var(--mp-sidebar-accent);
+  --sidebar-accent-foreground: var(--mp-on-brand);
+  --sidebar-border: var(--mp-sidebar-line);
+  --sidebar-ring: var(--mp-focus);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+@layer base {
+  body {
+    font-feature-settings: "tnum" 0;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  :focus-visible {
+    outline: 2px solid var(--mp-focus);
+    outline-offset: 2px;
+  }
+  /*
+   * Tamaño de los objetivos (WCAG 2.5.8): al menos 24 px; en pantallas táctiles, 44 px. Especificidad cero
+   * (:where) para que cualquier clase explícita lo sobrescriba. Los enlaces dentro de un párrafo quedan fuera
+   * (excepción «en línea») y las casillas usan su etiqueta como área de toque.
+   */
+  :where(a[href]:not(p a, li p a), button, [role="button"], [role="tab"], [role="option"], [role="combobox"], select, input:not([type="checkbox"], [type="radio"], [type="hidden"])) {
+    min-height: 24px;
+    min-width: 24px;
+  }
+  :where(a[href]:not(p a, li p a)) {
+    display: inline-flex;
+    align-items: center;
+  }
+  @media (pointer: coarse) {
+    :where(a[href]:not(p a, li p a), button, [role="button"], [role="tab"], [role="option"], [role="combobox"], select, input:not([type="checkbox"], [type="radio"], [type="hidden"])) {
+      min-height: 44px;
+      min-width: 44px;
+      /* Con min-width fijo, un elemento de una fila flexible podría encogerse por debajo de su texto (pestañas). */
+      flex-shrink: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

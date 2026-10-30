@@ -1,0 +1,1041 @@
+[
+ {
+  "id": "A110-AIII-4-ESCALA-REGIONAL",
+  "version": 2,
+  "titulo": "Anteproyecto: localización regional a escala 1:5,000",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 4",
+   "pagina_pdf": 47,
+   "cita_textual": "Localización regional clara y de fácil interpretación a escala 1:5,000."
+  },
+  "tipo": "documental",
+  "aplica_si": "tramite == 'RLA'",
+  "entradas": [
+   "plano.localizacion_regional.escala_1_5000"
+  ],
+  "condicion": "plano.localizacion_regional.escala_1_5000 == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Localización regional clara y de fácil interpretación a escala 1:5,000.",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "La localización regional no está a escala 1:5,000 (Anexo III, num. 4).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.localizacion_regional.escala_1_5000. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Mismo hecho que A110-AIV-3-LOC-REGIONAL-ESCALA (RDP). Severidad observación: la escala es presentación de la lámina (criterio 5); la falta de la localización regional la detecta, como bloqueante, A110-AIII-4-PUNTOS-REFERENCIA. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Localización regional clara y de fácil interpretación a escala 1:5,000.», normativa/acuerdo-110/texto-completo.md)"
+ },
+ {
+  "id": "A110-AIII-5-LINDEROS-RUMBOS",
+  "version": 4,
+  "titulo": "Anteproyecto: linderos con medidas y rumbos",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 5",
+   "pagina_pdf": 47,
+   "cita_textual": "Línea de propiedad, linderos de lotes y sus medidas y rumbos, e identificadas con sus nombres."
+  },
+  "tipo": "documental",
+  "aplica_si": "tramite == 'RLA'",
+  "entradas": [
+   "plano.localizacion_general.linderos_con_rumbos"
+  ],
+  "condicion": "plano.localizacion_general.linderos_con_rumbos == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Línea de propiedad, linderos de lotes y sus medidas y rumbos, e identificadas con sus nombres.",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "La localización general no trae la línea de propiedad y los linderos con sus medidas y rumbos (Anexo III, num. 5).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.localizacion_general.linderos_con_rumbos. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Mismo hecho que A110-AIV-4-LINDEROS-RUMBOS (RDP). El Anexo III pide además «identificadas con sus nombres»; el hecho actual no lo distingue: el revisor lo confirma en la lámina. Versión 2 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 3 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Línea de propiedad, linderos de lotes y sus medidas y rumbos, e identificadas con sus nombres.», normativa/acuerdo-110/texto-completo.md)"
+ },
+ {
+  "id": "A110-AIII-5-USO-COLINDANTES",
+  "version": 4,
+  "titulo": "Anteproyecto: uso de suelo de los colindantes",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 5",
+   "pagina_pdf": 47,
+   "cita_textual": "Uso de suelo de sus colindantes."
+  },
+  "tipo": "documental",
+  "aplica_si": "tramite == 'RLA'",
+  "entradas": [
+   "plano.localizacion_general.uso_colindantes"
+  ],
+  "condicion": "plano.localizacion_general.uso_colindantes == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Uso de suelo de sus colindantes.",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "La localización general no indica el uso de suelo de los colindantes (Anexo III, num. 5).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.localizacion_general.uso_colindantes. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Mismo hecho que A110-AIV-4-USO-COLINDANTES (RDP). Versión 2 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 3 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Uso de suelo de sus colindantes.», normativa/acuerdo-110/texto-completo.md)"
+ },
+ {
+  "id": "A110-AIII-5-ESTAC-DISCAPACIDAD",
+  "version": 5,
+  "titulo": "Anteproyecto: estacionamientos para personas con discapacidad contemplados",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 5",
+   "pagina_pdf": 47,
+   "cita_textual": "contemplar los espacios de estacionamientos para uso de personas con discapacidad de acuerdo con lo establecido en la Ley No. 42 de Equiparación de Oportunidades para Personas con Discapacidad."
+  },
+  "tipo": "documental",
+  "aplica_si": "(tramite == 'RLA' and proyecto.estacionamientos > 0) and proyecto.tipologia_vivienda not in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "plano.estacionamientos.discapacidad_contemplados"
+  ],
+  "condicion": "plano.estacionamientos.discapacidad_contemplados == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "contemplar los espacios de estacionamientos para uso de personas con discapacidad de acuerdo con lo establecido en la Ley No. 42 de Equiparación de Oportunidades para Personas con Discapacidad.",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "No se contemplan los estacionamientos para personas con discapacidad (Anexo III, num. 5; Ley 42).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.estacionamientos.discapacidad_contemplados. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Mismo hecho y mismo aplica_si que A110-AIV-4-ESTAC-DISCAPACIDAD (RDP). Solo comprueba que estén contemplados: la cantidad y las medidas dependen de la Ley 42 y su reglamento, que no están en el repositorio. Versión 2 (2026-10-16): no se aplica a la vivienda unifamiliar, bifamiliar ni en hilera. El reglamento de la Ley 42 (Decreto Ejecutivo 88 de 2002, Art. 25; normativa/ley42-discapacidad/) dirige la accesibilidad, y con ella los estacionamientos accesibles del Art. 27, a «edificaciones y espacios de uso publico»; una casa no lo es. Antes daba NO_CUMPLE en casas con garaje (CASO-A, Punta Pacífica). Sin la tipología declarada, el motor la deja en revisión. Versión 3 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 4 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 5 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («contemplar los espacios de estacionamientos para uso de personas con discapacidad de acuerdo con lo establecido en la…», normativa/acuerdo-110/texto-completo.md)",
+  "fuente_alcance": {
+   "norma": "Decreto Ejecutivo N.° 88 de 12-11-2002 (reglamento de la Ley 42 de 1999), Gaceta Oficial 24682",
+   "articulo": "Art. 25",
+   "cita_textual": "Las edificaciones y espacios de uso publico, se diseñarán en forma tal que sean accesibles y practicables a las personas con movilidad reducida u otra discapacidad"
+  }
+ },
+ {
+  "id": "A110-AIII-5-OCUPACION-INDICADA",
+  "version": 4,
+  "titulo": "Anteproyecto: área de ocupación máxima indicada",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 5",
+   "pagina_pdf": 47,
+   "cita_textual": "Área de ocupación máxima."
+  },
+  "tipo": "documental",
+  "aplica_si": "tramite == 'RLA'",
+  "entradas": [
+   "plano.localizacion_general.ocupacion_maxima_indicada"
+  ],
+  "condicion": "plano.localizacion_general.ocupacion_maxima_indicada == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Localización general con escalas entre 1:100 y 1:500 de acuerdo con el tamaño de la finca, indicando lo siguiente:",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "La localización general no indica el área de ocupación máxima (Anexo III, num. 5).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.localizacion_general.ocupacion_maxima_indicada. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Hecho nuevo, paralelo a plano.localizacion_general.area_libre_indicada y altura_maxima_indicada: hay que darlo de alta en scripts/hechos_documentales.json. El Anexo IV no repite este punto, así que no hay regla hermana para el RDP. Comprueba que el dato esté en la lámina, no que la ocupación cumpla la zona (eso lo hacen las reglas -OCUPACION de cada ficha). Versión 2 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 3 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Localización general con escalas entre 1:100 y 1:500 de acuerdo con el tamaño de la finca, indicando lo siguiente:», normativa/acuerdo-110/texto-completo.md)"
+ },
+ {
+  "id": "A110-AIII-8-SECCIONES",
+  "version": 4,
+  "titulo": "Anteproyecto: secciones transversal y longitudinal",
+  "fuente": {
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "articulo": "Anexo III, num. 8",
+   "pagina_pdf": 47,
+   "cita_textual": "Sección transversal y longitudinal que incluya línea de construcción, línea de propiedad y retiros."
+  },
+  "tipo": "documental",
+  "aplica_si": "tramite == 'RLA'",
+  "entradas": [
+   "plano.secciones.transversal_y_longitudinal"
+  ],
+  "condicion": "plano.secciones.transversal_y_longitudinal == true",
+  "severidad": "bloqueante",
+  "subsanacion": "plano",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Sección transversal y longitudinal que incluya línea de construcción, línea de propiedad y retiros.",
+   "archivo": "normativa/acuerdo-110/texto-completo.md",
+   "cita_subsanacion": "y con los requisitos básicos señalados en el **Anexo III y IV** del presente Acuerdo."
+  },
+  "mensaje_no_cumple": "Faltan las secciones transversal y longitudinal con línea de construcción, línea de propiedad y retiros (Anexo III, num. 8).",
+  "vigencia": {
+   "desde": "2025-05-05",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Aplica al anteproyecto (RLA): Anexo III, por el Art. 21, num. 3. Hecho provisional: plano.secciones.transversal_y_longitudinal. Lo produce el extractor, la IA (revisor-planos) o el formulario (ver scripts/hechos_documentales.json); sin el hecho, el motor deja la regla en REQUIERE_REVISION por dato faltante. Mismo hecho que A110-AIV-7-SECCIONES (RDP); para el RLA la cita propia es el Anexo III, num. 8, con el mismo texto. Versión 2 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 3 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Sección transversal y longitudinal que incluya línea de construcción, línea de propiedad y retiros.», normativa/acuerdo-110/texto-completo.md)"
+ },
+ {
+  "id": "SF-VILLA-LILLA-UT3-R6-SOLO-RESIDENCIAL-HORTENSIAS",
+  "version": 2,
+  "titulo": "R6: uso solo residencial en fincas con acceso único por la calle Las Hortensias (Villa Lilla UT3)",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Villa Lilla, Unidad Territorial 3",
+   "pagina_pdf": 6,
+   "cita_textual": "En las fincas cuyo único acceso sea desde la calle Las Hortensias, el único uso será residencial."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Villa Lilla' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['R6', '1R6'] and lote.acceso_unico_calle_las_hortensias == true",
+  "entradas": [
+   "proyecto.uso_exclusivamente_residencial"
+  ],
+  "condicion": "proyecto.uso_exclusivamente_residencial == true",
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "En las fincas cuyo único acceso sea desde la calle Las Hortensias, el único uso será residencial.",
+   "archivo": "normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La finca solo tiene acceso por la calle Las Hortensias y el proyecto incluye usos no residenciales; ahí el único uso permitido es el residencial (Acuerdo 270, Villa Lilla UT3).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Hechos nuevos: lote.acceso_unico_calle_las_hortensias (lo declara el solicitante o sale del Documento Gráfico) y proyecto.uso_exclusivamente_residencial (todo el programa es vivienda). El hecho del lote va sin existe() a propósito: en Villa Lilla UT3, si falta, la regla queda en REQUIERE_REVISION, que es lo prudente ante una prohibición. No sirve proyecto.uso_combinado == false, porque un proyecto solo comercial también lo cumple. Página del Anexo 2 (numeración del documento). El texto agrega que estas limitaciones no aplican a 1EP ni a 1P, que el aplica_si ya excluye al exigir 1R6. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («En las fincas cuyo único acceso sea desde la calle Las Hortensias, el único uso será residencial.», normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt); tipo «documental» corregido a «criterio»"
+ },
+ {
+  "id": "SF-VILLA-LILLA-UT7-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Villa Lilla' and lote.sf_unidad_territorial == 7 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-VILLA-LILLA-UT10-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Villa Lilla' and lote.sf_unidad_territorial == 10 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-COCO-DEL-MAR-UT1-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Coco del Mar' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-PAITILLA-UT7-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 7 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-PAITILLA-UT10-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 10 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT3-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT4-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 4 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-SAN-FRANCISCO-CENTRO-UT3-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'San Francisco Centro' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-SAN-FRANCISCO-CENTRO-UT5-ZM7-PROG-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'San Francisco Centro' and lote.sf_unidad_territorial == 5 and lote.codigo_zona in ['ZM7', '1ZM7'] and existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. En esta UT el ZM7 es el código programado (1ZM6 / 1ZM7 Programado): por eso lleva el guardia usa_codigo_programado (decisión 8). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-SAN-FRANCISCO-CENTRO-UT6-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'San Francisco Centro' and lote.sf_unidad_territorial == 6 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-SAN-FRANCISCO-CENTRO-UT7-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'San Francisco Centro' and lote.sf_unidad_territorial == 7 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT5-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 5 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-BOCA-LA-CAJA-UT1-ZM7-LOTE-FONDO",
+  "version": 2,
+  "titulo": "ZM7: fondo mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM7",
+   "pagina_pdf": 19,
+   "cita_textual": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Boca la Caja' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['ZM7', '1ZM7']",
+  "entradas": [
+   "lote.fondo_m"
+  ],
+  "condicion": "lote.fondo_m >= 30",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El fondo del lote es menor que el mínimo (30 m) de la zona ZM7.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Valor de la ficha ZM7 del Anexo 4 (también en la tabla resumen: 1ZM7 … 600 / 20 / 30). El Acuerdo 270 no fija otro fondo para esta UT (solo cambia la altura), así que rige la ficha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área Mínima 600 m2 Frente Mínimo 20 m Fondo Mínimo 30 m», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-VILLA-LILLA-UT1-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Villa Lilla' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-VILLA-LILLA-UT2-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Villa Lilla' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-COCO-DEL-MAR-UT5-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Coco del Mar' and lote.sf_unidad_territorial == 5 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-PAITILLA-UT2-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT3-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT6-R3-LOTE-FRENTE-TIPOLOGIA",
+  "version": 3,
+  "titulo": "R3: frente mínimo de lote según tipología",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Anexo 4, tabla resumen del Código del Suelo Urbano, fila 1R3",
+   "pagina_pdf": 35,
+   "cita_textual": "1R3 200 400 unifamiliar o bif. Una sobre otra; 200 bif. Adosada o hilera 14 aislada o bif. Una sobre otra; 7m bif. Adosada o hilera"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 6 and lote.codigo_zona in ['R3', '1R3'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+  "entradas": [
+   "lote.frente_m",
+   "proyecto.tipologia_vivienda"
+  ],
+  "condicion": "(proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra'] and lote.frente_m >= 14) or (proyecto.tipologia_vivienda in ['bifamiliar_adosada', 'hilera'] and lote.frente_m >= 7)",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente Mínimo 14m (A) 7m (B) 7m (C)",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R3 para la tipología: 14 m para unifamiliar aislada o bifamiliar una sobre otra; 7 m para bifamiliar adosada o hilera.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). La cita es la fila 1R3 de la tabla resumen porque es la que asigna cada frente a su tipología (pagina_pdf 35 inferida contando las fichas). Concuerda con la ficha R3 (pág. 4): «Frente Mínimo 14m (A) 7m (B) 7m (C)», donde A = unifamiliar aislada y bifamiliar una sobre otra, B = bifamiliar adosada y C = hilera. Vocabulario de proyecto.tipologia_vivienda: unifamiliar, bifamiliar_una_sobre_otra, bifamiliar_adosada, hilera, apartamentos. Apartamentos no está permitido en R3: lo resuelve la regla de usos, por eso queda fuera del aplica_si. Si falta la tipología, la regla queda en REQUIERE_REVISION. La ficha no dice si en hilera los 7 m son por unidad; el revisor lo confirma. El Acuerdo 270 no fija otro frente para esta UT. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente Mínimo 14m (A) 7m (B) 7m (C)», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-ESTACIONAMIENTOS-SOTERRADOS",
+  "version": 2,
+  "titulo": "R2 Programado: estacionamientos soterrados o detrás del edificio (Loma Alegre UT1)",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Loma Alegre y Altos del Golf, Unidad Territorial 1",
+   "pagina_pdf": 75,
+   "cita_textual": "En el 1R2 Programado con Vocación Residencial Multifamiliar los estacionamientos deben ser soterrados o detrás del edificio, ocultándose de la calle."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2'] and existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true",
+  "entradas": [
+   "plano.estacionamientos.soterrados_o_detras_edificio"
+  ],
+  "condicion": "plano.estacionamientos.soterrados_o_detras_edificio == true",
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B3",
+   "cita": "En el 1R2 Programado con Vocación Residencial Multifamiliar los estacionamientos deben ser soterrados o detrás del edificio, ocultándose de la calle.",
+   "archivo": "normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "En el 1R2 Programado los estacionamientos deben ser soterrados o estar detrás del edificio, ocultos desde la calle (Acuerdo 270, Loma Alegre UT1).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Hecho nuevo: plano.estacionamientos.soterrados_o_detras_edificio. La norma admite cualquiera de las dos opciones («o»). La vocación del 1R2 Programado es vivienda en apartamentos (multifamiliar), así que aplica a todo proyecto que use el código programado. Quedan sin regla en el mismo párrafo: portacocheras cubiertas desde la calle y pavimento permeable en estacionamientos a nivel de terreno. El texto condiciona el suelo programado de esta UT a un Acuerdo de compensación (ver Acuerdo 128 de 2026). Página del Anexo 2. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («En el 1R2 Programado con Vocación Residencial Multifamiliar los estacionamientos deben ser soterrados o detrás del ed…», normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt); tipo «documental» corregido a «criterio»"
+ },
+ {
+  "id": "ML2-REC1-ALTURA-COMERCIAL",
+  "version": 2,
+  "titulo": "MP-REC1: comercio solo en planta baja",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RE (niveles permitidos)",
+   "pagina_pdf": 3,
+   "cita_textual": "NIVELES PERMITIDOS / MP-RE: • Uso combinado Comercial en Planta Baja únicamente."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-REC1'] and proyecto.uso_combinado == true",
+  "entradas": [
+   "proyecto.comercio_solo_planta_baja"
+  ],
+  "condicion": "proyecto.comercio_solo_planta_baja == true",
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Uso combinado Comercial en Planta Baja únicamente.",
+   "archivo": "normativa/zonas-exceptuadas/textos/metro_l2.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "En la zona MP-REC1 el uso comercial combinado solo puede ir en planta baja.",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Hecho nuevo: proyecto.comercio_solo_planta_baja (ningún local comercial en pisos altos ni en sótano), verificable en plantas, cortes y elevaciones. Corrección pendiente: ML2-COMBINADO-ALTURA-COMERCIAL incluye MP-REC1 con «Planta Baja y un (1) piso alto», que es de las fichas MP-RME, MP-RM1, MP-RM2 y MP-RM3-C2; hay que quitar 'MP-REC1' de su aplica_si para no duplicar ni contradecir esta regla. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Uso combinado Comercial en Planta Baja únicamente.», normativa/zonas-exceptuadas/textos/metro_l2.txt); tipo «documental» corregido a «criterio»"
+ },
+ {
+  "id": "ML2-RM3C3-ALTURA-COMERCIAL",
+  "version": 2,
+  "titulo": "MP-RM3C3: niveles comerciales en uso combinado",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM3 (niveles permitidos)",
+   "pagina_pdf": 7,
+   "cita_textual": "(MP-RM3-C3): Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM3C3'] and proyecto.uso_combinado == true",
+  "entradas": [],
+  "condicion": null,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "(MP-RM3-C3): Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.",
+   "archivo": "normativa/zonas-exceptuadas/textos/metro_l2.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Verificar que los niveles comerciales del uso combinado en MP-RM3C3 se ajusten al gráfico de niveles permitidos de la ficha MP-RM3.",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Criterio porque la lectura es dudosa: la línea de MP-RM3-C3 (metro_l2.txt:186) repite palabra por palabra la de estacionamientos (línea 187), lo que sugiere un error de copia o de transcripción. Si se leyera literal, el comercio iría en planta baja, dos pisos altos y sótanos. La ficha MP-C3 fija para Comercial + Residencial «Planta Baja + Cinco (5) pisos», y la MP-RM3 remite al «grafico adjunto». Pregunta para la DOYC: ¿cuántos niveles comerciales admite MP-RM3C3 según la Gaceta 28804-A? Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («(MP-RM3-C3): Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.», normativa/zonas-exceptuadas/textos/metro_l2.txt)"
+ },
+ {
+  "id": "PLOT-R1-ESTAC-CARGA-DESCARGA",
+  "version": 2,
+  "titulo": "R1: un estacionamiento de carga y descarga para actividades permitidas",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R1",
+   "pagina_pdf": 2,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Actividades Permitidas Discapacitados Dos (2) espacios Uno (1) cada 60m2 Uno (1) de Carga/Descarga Norma Vigente"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R1', '1R1'] and ((existe(proyecto.uso_combinado) and proyecto.uso_combinado == true) or (existe(proyecto.area_comercial_m2) and proyecto.area_comercial_m2 > 0))",
+  "entradas": [
+   "proyecto.estacionamientos_carga_descarga"
+  ],
+  "condicion": "proyecto.estacionamientos_carga_descarga >= 1",
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Actividades Permitidas Discapacitados Dos (2) espacios Uno (1) cada 60m2 Uno (1) de Carga/Descarga Norma Vigente",
+   "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El proyecto tiene actividades distintas de la vivienda y no proyecta el estacionamiento de carga y descarga que exige la ficha R1.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Hecho nuevo: proyecto.estacionamientos_carga_descarga. Lectura de la tabla de la ficha: tres rótulos (Unidad de Vivienda, Actividades Permitidas, Discapacitados) y cuatro valores; «Uno (1) cada 60m2» y «Uno (1) de Carga/Descarga» corresponden a Actividades Permitidas y «Norma Vigente» a Discapacitados (seguridad media: confirmar con el PDF). Aplica cuando hay actividades distintas de la vivienda, con las banderas ya usadas en el catálogo (uso_combinado o area_comercial_m2); otras actividades permitidas no comerciales (asistencial, cultural) quedan para el revisor. PLOT-R1-ESTACIONAMIENTOS-OTROS-USOS debería dejar de mencionar la carga y descarga y quedarse con «uno cada 60 m2». Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Actividades Permitidas Discapacitados Dos (2) espacios Uno (…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+ },
+ {
+  "id": "PLOT-ART79-BICI-NO-SOBREPUESTOS",
+  "version": 2,
+  "titulo": "Estacionamientos para bicicletas: no pueden ir sobrepuestos",
+  "fuente": {
+   "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+   "articulo": "79",
+   "pagina_pdf": 37,
+   "cita_textual": "Los estacionamientos para bicicletas deberán tener un ancho mínimo de 0.5 m y un largo mínimo de 1.5 m, no podrán ubicarse sobrepuestos"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and tramite in ['RLA', 'RDP'] and proyecto.estacionamientos_bicicletas > 0",
+  "entradas": [
+   "plano.estac_bicicletas.sobrepuestos"
+  ],
+  "condicion": "plano.estac_bicicletas.sobrepuestos == false",
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "no podrán ubicarse sobrepuestos",
+   "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Los estacionamientos para bicicletas están sobrepuestos (uno encima de otro), lo que el PLOT prohíbe (Art. 79).",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Regla nueva de la revisión definitiva (2026-10-09). Hecho nuevo: plano.estac_bicicletas.sobrepuestos (true si hay módulos apilados o en dos niveles). Mismo aplica_si que PLOT-ART79-BICI-DIMENSIONES; el mensaje de esa regla debería dejar de decir «o están sobrepuestos», porque su condición solo mide ancho y largo. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' (el Acuerdo 270 integra San Francisco al PLOT). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («no podrán ubicarse sobrepuestos», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt); tipo «documental» corregido a «criterio»"
+ }
+]

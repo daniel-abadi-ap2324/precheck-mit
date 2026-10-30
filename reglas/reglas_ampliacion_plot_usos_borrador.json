@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "PLOT-R1-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R1: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R1",
+      "pagina_pdf": 2,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERICIARIO O SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R1', '1R1']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERICIARIO O SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R1 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). El texto extraído no trae el rótulo «USOS PERMITIDOS» en esta ficha: la tabla de usos va de RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 46-70 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERICIARIO O SERVICIO…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-R2-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R2: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R2",
+      "pagina_pdf": 3,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R2', '1R2']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R2 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). El texto extraído no trae el rótulo «USOS PERMITIDOS» en esta ficha: la tabla de usos va de RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 130-154 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar aislada y bifamiliar una sobre otra COMERCIAL Comercio vecinal TERCIARIO O DE SERVIC…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-R3-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R3: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R3",
+      "pagina_pdf": 4,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R3', '1R3']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R3 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). El texto extraído no trae el rótulo «USOS PERMITIDOS» en esta ficha: la tabla de usos va de RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 249-273 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio v…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-R4-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R4: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R4",
+      "pagina_pdf": 5,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R4', '1R4']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R4 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). El texto extraído no trae el rótulo «USOS PERMITIDOS» en esta ficha: la tabla de usos va de RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 287-311 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio v…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-R5-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R5: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R5",
+      "pagina_pdf": 6,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R5', '1R5']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio vecinal TERCIARIO O DE SERVICIOS N/A LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.) CULTURAL Centro comunitario, centro cívico e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R5 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). El texto extraído no trae el rótulo «USOS PERMITIDOS» en esta ficha: la tabla de usos va de RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 369-393 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera COMERCIAL Comercio v…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-R6-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "R6: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha R6",
+      "pagina_pdf": 7,
+      "cita_textual": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R6', '1R6']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha R6 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 452-476 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entid…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-RE-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "RE: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha RE",
+      "pagina_pdf": 8,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, supermercados, pequeños talleres y almacenes de venta USOS PERMITIDOS TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RE', '1RE']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, supermercados, pequeños talleres y almacenes de venta USOS PERMITIDOS TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha RE (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 540-565 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Comercio vecinal, …», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-RM-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "RM: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha RM",
+      "pagina_pdf": 9,
+      "cita_textual": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RM', '1RM']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha RM (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 615-639 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Oficinas, entid…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-RM-1-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "RM-1: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha RM-1",
+      "pagina_pdf": 10,
+      "cita_textual": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RM-1', '1RM-1']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha RM-1 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 770-794 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especial…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-RM-2-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "RM-2: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha RM-2",
+      "pagina_pdf": 11,
+      "cita_textual": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RM-2', '1RM-2']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha RM-2 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 809-833 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especial…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-RM-3-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "RM-3: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha RM-3",
+      "pagina_pdf": 12,
+      "cita_textual": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RM-3', '1RM-3']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especializados TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones. EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos y piscinas. INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos, gasolineras e instalaciones complementarias.",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha RM-3 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La tabla de usos lleva el rótulo «USOS PERMITIDOS», que en el texto extraído aparece desplazado dentro de la tabla (maquetación del PDF). Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 964-988 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda en apartamentos USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano y servicios especial…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM1-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM1: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM1",
+      "pagina_pdf": 13,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM1', '1ZM1']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. USOS PERMITIDOS COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM1 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos: el primero (RESIDENCIAL a DEPORTIVO) y, tras el rótulo «USOS PERMITIDOS», un segundo bloque (COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1003-1036 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM2-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM2: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM2",
+      "pagina_pdf": 14,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM2', '1ZM2']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM2 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos sin rótulo en el texto extraído: el primero (RESIDENCIAL a DEPORTIVO) y un segundo bloque (de RESIDENCIAL o COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1082-1116 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM3-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM3: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM3",
+      "pagina_pdf": 15,
+      "cita_textual": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM3', '1ZM3']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Canchas, polideportivos y piscinas. COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM3 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos sin rótulo en el texto extraído: el primero (RESIDENCIAL a DEPORTIVO) y un segundo bloque (de RESIDENCIAL o COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1181-1215 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar COMERCIAL Central de abastos…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM4-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM4: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM4",
+      "pagina_pdf": 16,
+      "cita_textual": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM4', '1ZM4']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM4 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos sin rótulo en el texto extraído: el primero (RESIDENCIAL a DEPORTIVO) y un segundo bloque (de RESIDENCIAL o COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1283-1319 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM5-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM5: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM5",
+      "pagina_pdf": 17,
+      "cita_textual": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM5', '1ZM5']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM5 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos sin rótulo en el texto extraído: el primero (RESIDENCIAL a DEPORTIVO) y un segundo bloque (de RESIDENCIAL o COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1392-1428 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM6-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM6: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM6",
+      "pagina_pdf": 18,
+      "cita_textual": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM6', '1ZM6']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. RESIDENCIAL Vivienda unifamiliar (aislada, adosada o en hilera) COMERCIAL Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Comercios nocturnos y centros de convenciones LOGÍSTICA E INDUSTRIAL Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM6 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae dos bloques de usos sin rótulo en el texto extraído: el primero (RESIDENCIAL a DEPORTIVO) y un segundo bloque (de RESIDENCIAL o COMERCIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1503-1539 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («RESIDENCIAL Vivienda multifamiliar COMERCIAL Central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM7-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM7: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM7",
+      "pagina_pdf": 19,
+      "cita_textual": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM7', '1ZM7']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM7 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae el rótulo «ACTIVIDADES PERMITIDAS» y dos bloques de usos: el primero (RESIDENCIAL a TRANSPORTE) y un segundo bloque (LOGÍSTICA E INDUSTRIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1612-1645 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centr…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM8-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM8: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM8",
+      "pagina_pdf": 20,
+      "cita_textual": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM8', '1ZM8']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM8 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae el rótulo «ACTIVIDADES PERMITIDAS» y dos bloques de usos: el primero (RESIDENCIAL a TRANSPORTE) y un segundo bloque (LOGÍSTICA E INDUSTRIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1716-1749 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centr…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM9-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "ZM9: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha ZM9",
+      "pagina_pdf": 21,
+      "cita_textual": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM9', '1ZM9']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería, educación primaria, educación media y educación superior ASISTENCIAL Hospitales, centros y unidades de salud asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas. TRANSPORTE Gasolineras e instalaciones complementarias LOGÍSTICA E INDUSTRIAL Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento INFRAESTRUCTURA URBANA Energía eléctrica (Plantas eléctricas) INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha ZM9 (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae el rótulo «ACTIVIDADES PERMITIDAS» y dos bloques de usos: el primero (RESIDENCIAL a TRANSPORTE) y un segundo bloque (LOGÍSTICA E INDUSTRIAL a INFRAESTRUCTURA TRANSPORTE). Se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1822-1855 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («ACTIVIDADES PERMITIDAS RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio urbano y servicios especializados, centr…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-CV-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "CV: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha CV",
+      "pagina_pdf": 22,
+      "cita_textual": "VOCACIÓN DEL USO RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio vecinal, pequeños talleres y almacenes de venta TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes INSTITUCIONAL Oficinas gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Canchas y polideportivos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias USOS PERMITIDOS COMERCIAL Comercio urbano y servicios especializados LOGÍSTICA E INDUSTRIAL Talleres de servicio, reparación y mantenimiento DEPORTIVO Grandes centros deportivos especializados, estadios y piscinas INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['CV', '1CV']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio vecinal, pequeños talleres y almacenes de venta TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes INSTITUCIONAL Oficinas gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Canchas y polideportivos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias USOS PERMITIDOS COMERCIAL Comercio urbano y servicios especializados LOGÍSTICA E INDUSTRIAL Talleres de servicio, reparación y mantenimiento DEPORTIVO Grandes centros deportivos especializados, estadios y piscinas INFRAESTRUCTURA URBANA N/A INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha CV (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 1930-1967 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO RESIDENCIAL Vivienda multifamiliar COMERCIAL Comercio vecinal, pequeños talleres y almacenes de vent…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-CU-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "CU: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha CU",
+      "pagina_pdf": 23,
+      "cita_textual": "VOCACIÓN DEL USO COMERCIAL Comercio urbano, servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas y talleres de servicio, reparación y mantenimiento INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Pequeños talleres y almacenes de venta LOGÍSTICA E INDUSTRIAL Logística y servicios INSTITUCIONAL Oficinas de Gobierno/Alcaldía INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['CU', '1CU']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO COMERCIAL Comercio urbano, servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones y servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas y talleres de servicio, reparación y mantenimiento INSTITUCIONAL Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos e instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Pequeños talleres y almacenes de venta LOGÍSTICA E INDUSTRIAL Logística y servicios INSTITUCIONAL Oficinas de Gobierno/Alcaldía INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha CU (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2013-2049 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO COMERCIAL Comercio urbano, servicios especializados, centro comercial, supermercados, central de aba…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-PM-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "PM: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha PM",
+      "pagina_pdf": 24,
+      "cita_textual": "VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas) INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PM', '1PM']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas) INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha PM (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2100-2136 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancaria…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-P-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "P: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha P",
+      "pagina_pdf": 25,
+      "cita_textual": "VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas) INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Terminal de transporte terrestre e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['P', '1P']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo LOGÍSTICA E INDUSTRIAL Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas) INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVO Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Terminal de transporte terrestre e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha P (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2182-2219 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO COMERCIAL Pequeños talleres y almacenes de venta TERCIARIO O SERVICIOS Oficinas y entidades bancaria…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-PV-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "PV: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha PV",
+      "pagina_pdf": 26,
+      "cita_textual": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PV', '1PV']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha PV (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae una sola tabla, «USOS PERMITIDOS». Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2266-2291 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, es…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-PL-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "PL: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha PL",
+      "pagina_pdf": 27,
+      "cita_textual": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PL', '1PL']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha PL (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae una sola tabla, «USOS PERMITIDOS». Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2332-2357 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, es…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-PU-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "PU: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha PU",
+      "pagina_pdf": 28,
+      "cita_textual": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PU', '1PU']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha PU (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae una sola tabla, «USOS PERMITIDOS». Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2416-2441 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, es…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-PD-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "PD: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha PD",
+      "pagina_pdf": 29,
+      "cita_textual": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PD', '1PD']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL N/A EDUCATIVO N/A ASISTENCIAL N/A CULTURAL Bibliotecas, centros comunitarios, centros cívicos y museos DEPORTIVO Canchas, polideportivos, estadios, piscinas INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha PD (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae una sola tabla, «USOS PERMITIDOS». Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2484-2509 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio vecinal TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, es…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-EP-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "EP: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha EP",
+      "pagina_pdf": 30,
+      "cita_textual": "VOCACIÓN DEL USO COMERCIAL Comercio vecinal, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Centro de convenciones INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local,, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVOS Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas, cementerios y servicios funerarios DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga INFRAESTRUCTURA RESIDENCIAL N/A TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['EP', '1EP']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO COMERCIAL Comercio vecinal, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS Centro de convenciones INSTITUCIONAL Oficinas de gobierno/alcaldía, oficinas de administración local,, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto EDUCATIVOS Guardería y educación primaria, educación media y superior ASISTENCIAL Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas, cementerios y servicios funerarios DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas INFRAESTRUCTURA TRANSPORTE Aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga INFRAESTRUCTURA RESIDENCIAL N/A TERCIARIO O SERVICIOS Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) LOGÍSTICA E INDUSTRIAL N/A INFRAESTRUCTURA URBANA Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos INFRAESTRUCTURA TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha EP (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha trae «VOCACIÓN DEL USO» y un segundo bloque encabezado «INFRAESTRUCTURA» en el texto extraído (RESIDENCIAL a INFRAESTRUCTURA TRANSPORTE); se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2551-2586 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO COMERCIAL Comercio vecinal, central de abastos y bodega de acopio (mayoristas) TERCIARIO O SERVICIOS…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-IS-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "IS: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha IS",
+      "pagina_pdf": 31,
+      "cita_textual": "VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['IS', '1IS']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha IS (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2632-2661 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras do…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-IT-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "IT: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha IT",
+      "pagina_pdf": 32,
+      "cita_textual": "VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['IT', '1IT']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha IT (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2704-2734 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros pe…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-IM-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "IM: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha IM",
+      "pagina_pdf": 33,
+      "cita_textual": "VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['IM', '1IM']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha IM (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2788-2818 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras do…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-IA-USOS-PERMITIDOS",
+    "version": 2,
+    "titulo": "IA: usos permitidos",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Ficha IA",
+      "pagina_pdf": 34,
+      "cita_textual": "VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['IA', '1IA']",
+    "entradas": [
+      "proyecto.usos"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto URBANO Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos TRANSPORTE Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga USOS PERMITIDOS RESIDENCIAL N/A COMERCIAL Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas) TERICIARIO O SERVICIOS Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos LOGÍSTICA E INDUSTRIAL N/A INSTITUCIONAL Oficinas de gobierno/alcaldía EDUCATIVOS Educación media y superior ASISTENCIAL Hospitales y asistencia social (asilos, orfanatos, etc.) CULTURAL Bibliotecas y museos DEPORTIVO Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Verificar que todos los usos del proyecto estén entre los usos permitidos de la ficha IA (Anexo 4 del PLOT); un uso que no figure en la ficha, o de una categoría marcada N/A, no está permitido en la zona.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). La ficha distingue «VOCACIÓN DEL USO» y «USOS PERMITIDOS»; se admiten los usos de ambos bloques. Las categorías con N/A no admiten usos. La ficha no lista usos prohibidos ni condicionados. La cita es el texto literal de la tabla de usos (líneas 2857-2887 de normativa/zonificacion/textos/anexo4_fichas_plot.txt). Uso de suelo: siempre a revisión humana; la CEUS de la DPUOT prevalece. Solo para PLOT-A61-2021, como el resto de reglas del PLOT; en San Francisco (PLOT-A61-2021+A270-2025) las fichas del Acuerdo 270 añaden usos prohibidos por unidad territorial. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («VOCACIÓN DEL USO ACTIVIDADES PERMITIDAS INSTITUCIONAL Estaciones de policía, bomberos, y otras dotaciones, centros pe…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)"
+  },
+  {
+    "id": "PLOT-ZM-USO-MIXTO-DENSIDAD-MINIMA",
+    "version": 3,
+    "titulo": "Zonas mixtas ZM1-ZM9: densidad residencial mínima de 200 hab/ha",
+    "fuente": {
+      "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+      "articulo": "Notas del Cuadro resumen de códigos urbanos, Usos mixtos",
+      "pagina_pdf": 39,
+      "cita_textual": "Las parcelas zonificadas para usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 hab/hect., siendo permitido el uso residencial exclusivo. El uso hotelero califica como actividad residencial para estos propósitos. Las parcelas zonificadas 1ZM1 pueden ser exclusivamente comerciales, a lo largo de las siguientes vías: Ave. Central/Vía España/Vía José Agustín Arango (hasta la intersección con la Vía Domingo Díaz), Ave. Balboa, Ave. Justo Arosemena, Ave. Cuba, Ave. Perú, Ave. Nicanor de Obarrio (Calle 50), Ave. Federico Boyd, Ave. Samuel Lewis, Calle Aquilino de la Guardia, Calles 53 y 54 Este (Bella Vista), Ave. Manuel Espinosa Batista, Vía Israel/Ave. Cincuentenario, Vía Brasil/Ramón Arias/El Paical/Juan Pablo II, Ave. Santa Elena, Boulevard El Dorado, Ave. Fernández de Córdoba/Ave. La Paz, Ave. Ernesto T. Lefevre/12 de Octubre/Calle Castilla de Oro, Ave. Monte Oscuro, Ave. Simón Bolívar (Transístmica), Corredor Norte, y Corredor Sur"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM1', '1ZM1', 'ZM2', '1ZM2', 'ZM3', '1ZM3', 'ZM4', '1ZM4', 'ZM5', '1ZM5', 'ZM6', '1ZM6', 'ZM7', '1ZM7', 'ZM8', '1ZM8', 'ZM9', '1ZM9'] and ((existe(proyecto.uso_combinado) and proyecto.uso_combinado == true) or (existe(proyecto.area_comercial_m2) and proyecto.area_comercial_m2 > 0) or proyecto.unidades_vivienda == 0)",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha >= 200 or (existe(proyecto.incluye_uso_hotelero) and proyecto.incluye_uso_hotelero == true) or (lote.codigo_zona in ['ZM1', '1ZM1'] and existe(lote.frente_via_listada_zm1) and lote.frente_via_listada_zm1 == true)",
+    "tolerancia": 0.5,
+    "unidad": "pers/ha",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Las parcelas zonificadas para usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 hab/hect., siendo permitido el uso residencial exclusivo. El uso hotelero califica como actividad residencial para estos propósitos. Las parcelas zonificadas 1ZM1 pueden ser exclusivamente comerciales, a lo largo de las siguientes vías: Ave. Central/Vía España/Vía José Agustín Arango (hasta la intersección con la Vía Domingo Díaz), Ave. Balboa, Ave. Justo Arosemena, Ave. Cuba, Ave. Perú, Ave. Nicanor de Obarrio (Calle 50), Ave. Federico Boyd, Ave. Samuel Lewis, Calle Aquilino de la Guardia, Calles 53 y 54 Este (Bella Vista), Ave. Manuel Espinosa Batista, Vía Israel/Ave. Cincuentenario, Vía Brasil/Ramón Arias/El Paical/Juan Pablo II, Ave. Santa Elena, Boulevard El Dorado, Ave. Fernández de Córdoba/Ave. La Paz, Ave. Ernesto T. Lefevre/12 de Octubre/Calle Castilla de Oro, Ave. Monte Oscuro, Ave. Simón Bolívar (Transístmica), Corredor Norte, y Corredor Sur",
+      "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto en zona mixta no incorpora uso residencial (o hotelero) con la densidad mínima de 200 hab/ha; solo en 1ZM1 frente a las vías listadas puede ser exclusivamente comercial (Anexo 4, notas del cuadro resumen).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo patrón que SF-VILLA-LILLA-UT4-DENSIDAD-MINIMA: aplica a proyectos de uso mixto (proyecto.uso_combinado == true, hecho que ya usa el catálogo); sin ese dato la regla va a revisión. La densidad se calcula como en las reglas de densidad máxima (habitantes estimados / área del lote en ha). El uso hotelero califica como residencial: si el proyecto tiene hotel, el revisor suma sus ocupantes antes de confirmar un NO_CUMPLE. Queda abierto si la nota obliga también a proyectos sin vivienda (p. ej. solo comercio u oficinas en una parcela ZM); eso se revisa con PLOT-<ZM>-USOS-PERMITIDOS. Excepción: las parcelas 1ZM1 a lo largo de las vías listadas pueden ser exclusivamente comerciales (ver PLOT-ZM1-USO-EXCLUSIVAMENTE-COMERCIAL-VIAS). pagina_pdf 39: el .txt no trae marcadores de página; las notas siguen al cuadro resumen, cuya última página es la 39 (pagina_resumen de PL a IA en normas_plot_anexo4.json; en la Gaceta 29268-A van en la pág. 79, que corresponde a la 39 del Anexo 4). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Aplica a proyectos mixtos o no residenciales (el residencial exclusivo está permitido); el hotelero cuenta como residencial; 1ZM1 en vías listadas puede ser solo comercial. Cambios: aplica_si, condicion, entradas_opcionales, mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Las parcelas zonificadas para usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 ha…», normativa/zonificacion/textos/anexo4_fichas_plot.txt)",
+    "entradas_opcionales": [
+      "lote.codigo_zona",
+      "lote.frente_via_listada_zm1",
+      "proyecto.incluye_uso_hotelero"
+    ]
+  }
+]

@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "SF-COCO-DEL-MAR-UT3-ZM6-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM6 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Coco del Mar' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['ZM6', '1ZM6'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-PAITILLA-UT6-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 6 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-PAITILLA-UT7-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 7 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-PAITILLA-UT10-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Paitilla' and lote.sf_unidad_territorial == 10 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-DENSIDAD",
+  "version": 1,
+  "titulo": "RM-1: densidad máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "1,200 pers/ha"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La densidad del proyecto excede 1,200 pers/ha de la zona RM-1.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.densidad_pers_ha <= 1200",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "nota": "densidad = habitantes estimados / área del lote en ha; el criterio de personas por unidad lo define la DOYC/DPUOT",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-LOTE-AREA",
+  "version": 1,
+  "titulo": "RM-1: área mínima de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "600m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote no alcanza el área mínima (600m2) de la zona RM-1.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.area_m2 >= 600",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-LOTE-FRENTE",
+  "version": 1,
+  "titulo": "RM-1: frente mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "20 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.frente_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo (20 m) de la zona RM-1.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.frente_m >= 20",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-OCUPACION",
+  "version": 1,
+  "titulo": "RM-1: ocupación máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "80% o según retiros en PB+2"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede 80% o según retiros en PB+2 en la zona RM-1.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-ALTURA",
+  "version": 1,
+  "titulo": "RM-1: altura máxima en pisos",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Punta Pacífica, Unidad Territorial 2",
+   "pagina_pdf": 53,
+   "cita_textual": "6 pisos."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El número de pisos excede 6 pisos. (limitación especial de San Francisco, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.pisos_totales <= 6",
+  "unidad": "pisos",
+  "nota": "pisos_totales cuenta la planta baja; verificar con la DOYC cómo computan sótanos, mezanines y azoteas",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-ACERA",
+  "version": 1,
+  "titulo": "RM-1: ancho mínimo de acera",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "5.00m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "proyecto.acera_ancho_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La acera propuesta es menor que 5.00m en la zona RM-1.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.acera_ancho_m >= 5.0",
+  "unidad": "m",
+  "tolerancia": 0.01,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-RETIROS",
+  "version": 1,
+  "titulo": "RM-1: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "Lo establecido ó 5m"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: Lo establecido ó 5m | lateral: (PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m | posterior: (PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-1-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "RM-1: estacionamientos mínimos por vivienda",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-1",
+   "pagina_pdf": 10,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Un (1) espacio"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and proyecto.unidades_vivienda > 0",
+  "entradas": [
+   "proyecto.estacionamientos",
+   "proyecto.unidades_vivienda"
+  ],
+  "condicion": "proyecto.estacionamientos >= 1 * proyecto.unidades_vivienda",
+  "unidad": "espacios",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Hay menos de 1 estacionamiento por unidad de vivienda (zona RM-1, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Exigencia de la ficha RM-1 por unidad de vivienda. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-1 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-DENSIDAD",
+  "version": 1,
+  "titulo": "RM-2: densidad máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "1,500 pers/ha"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La densidad del proyecto excede 1,500 pers/ha de la zona RM-2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.densidad_pers_ha <= 1500",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "nota": "densidad = habitantes estimados / área del lote en ha; el criterio de personas por unidad lo define la DOYC/DPUOT",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-LOTE-AREA",
+  "version": 1,
+  "titulo": "RM-2: área mínima de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "800m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote no alcanza el área mínima (800m2) de la zona RM-2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.area_m2 >= 800",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-LOTE-FRENTE",
+  "version": 1,
+  "titulo": "RM-2: frente mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "20 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.frente_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo (20 m) de la zona RM-2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.frente_m >= 20",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-OCUPACION",
+  "version": 1,
+  "titulo": "RM-2: ocupación máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "80% o según retiros en PB+3"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede 80% o según retiros en PB+3 en la zona RM-2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-ALTURA",
+  "version": 1,
+  "titulo": "RM-2: altura máxima en pisos",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Punta Pacífica, Unidad Territorial 2",
+   "pagina_pdf": 53,
+   "cita_textual": "6 pisos."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El número de pisos excede 6 pisos. (limitación especial de San Francisco, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.pisos_totales <= 6",
+  "unidad": "pisos",
+  "nota": "pisos_totales cuenta la planta baja; verificar con la DOYC cómo computan sótanos, mezanines y azoteas",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-ACERA",
+  "version": 1,
+  "titulo": "RM-2: ancho mínimo de acera",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "5.00m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "proyecto.acera_ancho_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La acera propuesta es menor que 5.00m en la zona RM-2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.acera_ancho_m >= 5.0",
+  "unidad": "m",
+  "tolerancia": 0.01,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-RETIROS",
+  "version": 1,
+  "titulo": "RM-2: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "Lo establecido ó 5m"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: Lo establecido ó 5m | lateral: (PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m | posterior: (PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-2-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "RM-2: estacionamientos mínimos por vivienda",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-2",
+   "pagina_pdf": 11,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Un (1) espacio"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and proyecto.unidades_vivienda > 0",
+  "entradas": [
+   "proyecto.estacionamientos",
+   "proyecto.unidades_vivienda"
+  ],
+  "condicion": "proyecto.estacionamientos >= 1 * proyecto.unidades_vivienda",
+  "unidad": "espacios",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Hay menos de 1 estacionamiento por unidad de vivienda (zona RM-2, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Exigencia de la ficha RM-2 por unidad de vivienda. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-2 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-DENSIDAD",
+  "version": 1,
+  "titulo": "RM-3: densidad máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "2,000 pers/ha"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La densidad del proyecto excede 2,000 pers/ha de la zona RM-3.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.densidad_pers_ha <= 2000",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "nota": "densidad = habitantes estimados / área del lote en ha; el criterio de personas por unidad lo define la DOYC/DPUOT",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-LOTE-AREA",
+  "version": 1,
+  "titulo": "RM-3: área mínima de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "800 m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote no alcanza el área mínima (800 m2) de la zona RM-3.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.area_m2 >= 800",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-LOTE-FRENTE",
+  "version": 1,
+  "titulo": "RM-3: frente mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "20 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "lote.frente_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo (20 m) de la zona RM-3.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.frente_m >= 20",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-OCUPACION",
+  "version": 1,
+  "titulo": "RM-3: ocupación máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "80% o según retiros en PB+4"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede 80% o según retiros en PB+4 en la zona RM-3.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-ALTURA",
+  "version": 1,
+  "titulo": "RM-3: altura máxima en pisos",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Punta Pacífica, Unidad Territorial 2",
+   "pagina_pdf": 53,
+   "cita_textual": "6 pisos."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El número de pisos excede 6 pisos. (limitación especial de San Francisco, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.pisos_totales <= 6",
+  "unidad": "pisos",
+  "nota": "pisos_totales cuenta la planta baja; verificar con la DOYC cómo computan sótanos, mezanines y azoteas",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-ACERA",
+  "version": 1,
+  "titulo": "RM-3: ancho mínimo de acera",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "5.00m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [
+   "proyecto.acera_ancho_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La acera propuesta es menor que 5.00m en la zona RM-3.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.acera_ancho_m >= 5.0",
+  "unidad": "m",
+  "tolerancia": 0.01,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-RETIROS",
+  "version": 1,
+  "titulo": "RM-3: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "Lo establecido ó 5m"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: Lo establecido ó 5m | lateral: (PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m | posterior: (PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT2-RM-3-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "RM-3: estacionamientos mínimos por vivienda",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RM-3",
+   "pagina_pdf": 12,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda Un (1) espacio"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 2 and lote.codigo_zona in ['RM', '1RM'] and proyecto.unidades_vivienda > 0",
+  "entradas": [
+   "proyecto.estacionamientos",
+   "proyecto.unidades_vivienda"
+  ],
+  "condicion": "proyecto.estacionamientos >= 1 * proyecto.unidades_vivienda",
+  "unidad": "espacios",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Hay menos de 1 estacionamiento por unidad de vivienda (zona RM-3, Punta Pacífica UT2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Exigencia de la ficha RM-3 por unidad de vivienda. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Decisión tomada: Punta Pacífica UT2 es solo 1RM (A270 línea 2363); la ficha RM-3 no rige. Queda la regla -RM- equivalente."
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT3-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 3 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-PUNTA-PACIFICA-UT4-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Punta Pacífica' and lote.sf_unidad_territorial == 4 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-LOTE-FRENTE",
+  "version": 1,
+  "titulo": "R2: frente mínimo de lote",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R2",
+   "pagina_pdf": 3,
+   "cita_textual": "20 m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2']",
+  "entradas": [
+   "lote.frente_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El frente del lote es menor que el mínimo (20 m) de la zona R2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "lote.frente_m >= 20",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "El Acuerdo 270 no fija este parámetro en ninguna columna de la UT1: rige la ficha R2 para ambas; mismo aplica_si y condición que la regla base.",
+   "fusionada_en": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-LOTE-FRENTE"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-OCUPACION",
+  "version": 1,
+  "titulo": "R2: ocupación máxima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R2",
+   "pagina_pdf": 3,
+   "cita_textual": "50% (huella)"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2'] and not existe(proyecto.resolucion_edificabilidad)",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede 50% (huella) en la zona R2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.ocupacion_pct <= 50.0",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "El Acuerdo 270 no fija este parámetro en ninguna columna de la UT1: rige la ficha R2 para ambas; mismo aplica_si y condición que la regla base.",
+   "fusionada_en": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-OCUPACION"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-AREA-LIBRE",
+  "version": 1,
+  "titulo": "R2: área libre mínima",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R2",
+   "pagina_pdf": 3,
+   "cita_textual": "50%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2']",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El área libre es menor que 50% en la zona R2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.area_libre_pct >= 50.0",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "El Acuerdo 270 no fija este parámetro en ninguna columna de la UT1: rige la ficha R2 para ambas; mismo aplica_si y condición que la regla base.",
+   "fusionada_en": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-AREA-LIBRE"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-ACERA",
+  "version": 1,
+  "titulo": "R2: ancho mínimo de acera",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R2",
+   "pagina_pdf": 3,
+   "cita_textual": "1.20m"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2']",
+  "entradas": [
+   "proyecto.acera_ancho_m"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La acera propuesta es menor que 1.20m en la zona R2.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "condicion": "proyecto.acera_ancho_m >= 1.2",
+  "unidad": "m",
+  "tolerancia": 0.01,
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "El Acuerdo 270 no fija este parámetro en ninguna columna de la UT1: rige la ficha R2 para ambas; mismo aplica_si y condición que la regla base.",
+   "fusionada_en": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-ACERA"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-USOS-PROHIBIDOS",
+  "version": 1,
+  "titulo": "R2: usos prohibidos en Loma Alegre y Altos del Golf UT1",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A), Anexo 2: Fichas Actualizadas de San Francisco",
+   "articulo": "Anexo 2, Loma Alegre y Altos del Golf, Unidad Territorial 1",
+   "pagina_pdf": 73,
+   "cita_textual": "Comercio vecinal."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar que el uso propuesto no esté entre los prohibidos de la unidad territorial.",
+  "nota": "Comercial: Comercio vecinal. | Institucional: Estaciones de policía, bomberos, y otras dotaciones. | Educativo: Guardería, educación primaria, educación media y educación superior. | Cultural: Centro comunitario, centro cívico e instituciones religiosas. | Deportivo: Canchas, polideportivos y piscinas. | Infraestructura Transporte: Embarcaderos, gasolineras e instalaciones complementarias.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Las dos columnas (1R2 y 1R2 Programado) tienen la misma lista de prohibidos (líneas 3694-3752) y el mismo aplica_si: duplicada.",
+   "fusionada_en": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-USOS-PROHIBIDOS"
+  }
+ },
+ {
+  "id": "SF-LOMA-ALEGRE-Y-ALTOS-DEL-GOLF-UT1-R2-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "R2 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Loma Alegre y Altos del Golf' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['R2', '1R2'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ },
+ {
+  "id": "SF-BOCA-LA-CAJA-UT1-ZM8-PROG-SUELO-PROGRAMADO",
+  "version": 1,
+  "titulo": "ZM8 Programado: requiere participación en plusvalía o compensación",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "3 y 4",
+   "pagina_pdf": 2,
+   "cita_textual": "requerirá de la participación en plusvalía o compensación urbana por parte del usuario del código"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.sf_sector == 'Boca la Caja' and lote.sf_unidad_territorial == 1 and lote.codigo_zona in ['ZM8', '1ZM8'] and proyecto.usa_codigo_programado == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El uso del código programado requiere participación en plusvalía o compensación urbana.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación general (Art. 3 A270 / Art. 9 num. 4 A128): la compensación se liquida al pedir permiso (A128 Art. 14); en anteproyecto es aviso.",
+   "fusionada_en": "PLOT-A128-ART9-SUPUESTO-GENERADOR"
+  }
+ }
+]

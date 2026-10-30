@@ -1,0 +1,458 @@
+{
+ "descripcion": "Familias de zona con su nombre y su densidad máxima, para elegir la zona de trabajo cuando el plano declara un código de otra norma (ADR-0016). Cada valor sale de una cita literal que comprueba tests/test_familias_zona.py.",
+ "familias": [
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R1d1",
+   "nombre": "Residencial Baja Densidad Baja Intensidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 100,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 11",
+    "cita_familia": "1. Baja densidad (R1): desde 50 Hab./ha; hasta 300 Hab./ha",
+    "cita_nombre": "- Baja densidad - baja intensidad (R1d1)",
+    "cita_seccion": "ARTICULO 11: Para la Sub-Categoría Residencial Baja Densidad Baja Intensidad (R1d1)",
+    "cita_densidad": "Densidad neta: 50 p/h | 100 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R1d2",
+   "nombre": "Residencial Baja Densidad – Mediana Intensidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 200,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 12",
+    "cita_familia": "1. Baja densidad (R1): desde 50 Hab./ha; hasta 300 Hab./ha",
+    "cita_nombre": "- Baja densidad – mediana intensidad (R1d2)",
+    "cita_seccion": "ARTICULO 12: Para la Sub-Categoría Residencial Baja Densidad – Mediana Intensidad (R1d2)",
+    "cita_densidad": "Densidad neta: 100 p/h | 200 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R1d3",
+   "nombre": "Residencial Baja Densidad – Alta intensidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 300,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 13",
+    "cita_familia": "1. Baja densidad (R1): desde 50 Hab./ha; hasta 300 Hab./ha",
+    "cita_nombre": "- Baja densidad – alta intensidad ( R1d3)",
+    "cita_seccion": "ARTICULO 13: Para la Sub-Categoría Residencial Baja Densidad – Alta intensidad (R1d3)",
+    "cita_densidad": "Densidad neta: 200 p/h | 300 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R1c",
+   "nombre": "Residencial Baja Densidad de Conjunto",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 300,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 14",
+    "cita_familia": "1. Baja densidad (R1): desde 50 Hab./ha; hasta 300 Hab./ha",
+    "cita_nombre": "- Baja densidad de conjunto (R1c)",
+    "cita_seccion": "ARTICULO 14: Para la categoría Residencial Baja Densidad de Conjunto (R1c)",
+    "cita_densidad": "Densidad neta: 100 p/h | 300 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R2d1",
+   "nombre": "Residencial Mediana Densidad – Baja Intensidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 400,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 15",
+    "cita_familia": "2. Mediana densidad (R2): más de 300 Hab./ha., hasta 600 Hab./ha.",
+    "cita_nombre": "- Mediana densidad - baja intensidad (R2d1)",
+    "cita_seccion": "ARTICULO 15: Para la categoría Residencial Mediana Densidad – Baja Intensidad (R2d1)",
+    "cita_densidad": "Densidad neta: 300 p/h | 400 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R2d2",
+   "nombre": "Residencial Mediana Densidad – Mediana Intensidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 500,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 16",
+    "cita_familia": "2. Mediana densidad (R2): más de 300 Hab./ha., hasta 600 Hab./ha.",
+    "cita_nombre": "- Mediana densidad - mediana intensidad (R2d2)",
+    "cita_seccion": "ARTICULO 16: Para la categoría Residencial Mediana Densidad – Mediana Intensidad (R2d2)",
+    "cita_densidad": "Densidad neta: 400 p/h | 500 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R2d3",
+   "nombre": "Residencial Mediana Densidad – Alta Intensidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 600,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 17",
+    "cita_familia": "2. Mediana densidad (R2): más de 300 Hab./ha., hasta 600 Hab./ha.",
+    "cita_nombre": "- Mediana densidad – alta intensidad (R2d3)",
+    "cita_seccion": "ARTICULO 17: Para la categoría Residencial Mediana Densidad – Alta Intensidad (R2d3)",
+    "cita_densidad": "Densidad neta: 500 p/h | 600 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R2c",
+   "nombre": "Residencial Mediana Densidad de Conjunto",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 600,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 18",
+    "cita_familia": "2. Mediana densidad (R2): más de 300 Hab./ha., hasta 600 Hab./ha.",
+    "cita_nombre": "- Mediana densidad de conjunto (R2c)",
+    "cita_seccion": "ARTICULO 18: Para la categoría Residencial Mediana Densidad de Conjunto (R2c)",
+    "cita_densidad": "Densidad neta: 300 p/h | 600 p/h"
+   }
+  },
+  {
+   "norma": "MIVIOT-AC-R160-2002",
+   "codigo": "R3d1",
+   "nombre": "Residencial Alta Densidad – Baja Intensidad",
+   "uso": "residencial",
+   "densidad": "alta",
+   "densidad_max": 800,
+   "unidad_densidad": "hab/ha",
+   "fuente": {
+    "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+    "articulo": "Art. 10 y Art. 19",
+    "cita_familia": "3. Alta densidad (R3): más de 600 Hab./ha., hasta 800 Hab./ha.",
+    "cita_nombre": "- Alta densidad – baja intensidad (R3d1)",
+    "cita_seccion": "ARTICULO 19: Para la categoría Residencial Alta Densidad – Baja Intensidad (R3d1)",
+    "cita_densidad": "Densidad neta: 600 p/h | 800 p/h"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R1",
+   "nombre": "Residencial de baja densidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 50,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R1 (p. 2)",
+    "cita_nombre": "RESIDENCIAL DE BAJA DENSIDAD \nR1 \nDENSIDAD \nMáxima \n50 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE BAJA DENSIDAD \nR1 \nDENSIDAD \nMáxima \n50 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R2",
+   "nombre": "Residencial de baja densidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 100,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R2 (p. 3)",
+    "cita_nombre": "RESIDENCIAL DE BAJA DENSIDAD \nR2 \nDENSIDAD \nMáxima \n100 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE BAJA DENSIDAD \nR2 \nDENSIDAD \nMáxima \n100 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R3",
+   "nombre": "Residencial de baja densidad",
+   "uso": "residencial",
+   "densidad": "baja",
+   "densidad_max": 200,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R3 (p. 4)",
+    "cita_nombre": "RESIDENCIAL DE BAJA DENSIDAD \nR3 \nDENSIDAD \nMáxima \n200 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE BAJA DENSIDAD \nR3 \nDENSIDAD \nMáxima \n200 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R4",
+   "nombre": "Residencial de mediana densidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 300,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R4 (p. 5)",
+    "cita_nombre": "RESIDENCIAL DE MEDIANA DENSIDAD \nR4 \nDENSIDAD \nMáxima \n300 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE MEDIANA DENSIDAD \nR4 \nDENSIDAD \nMáxima \n300 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R5",
+   "nombre": "Residencial de mediana densidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 400,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R5 (p. 6)",
+    "cita_nombre": "RESIDENCIAL DE MEDIANA DENSIDAD \nR5 \nDENSIDAD \nMáxima \n400 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE MEDIANA DENSIDAD \nR5 \nDENSIDAD \nMáxima \n400 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "R6",
+   "nombre": "Residencial multifamiliar de mediana densidad",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 600,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha R6 (p. 7)",
+    "cita_nombre": "RESIDENCIAL MULTIFAMILIAR DE MEDIANA \nDENSIDAD \nR6 \nDENSIDAD \nMáxima \n600 pers/ha",
+    "cita_densidad": "RESIDENCIAL MULTIFAMILIAR DE MEDIANA \nDENSIDAD \nR6 \nDENSIDAD \nMáxima \n600 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "RE",
+   "nombre": "Residencial de mediana densidad en parcela irregular",
+   "uso": "residencial",
+   "densidad": "mediana",
+   "densidad_max": 500,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha RE (p. 8)",
+    "cita_nombre": "RESIDENCIAL DE MEDIANA DENSIDAD EN \nPARCELA IRREGULAR \nRE \nDENSIDAD \nMáxima \n500 pers/ha",
+    "cita_densidad": "RESIDENCIAL DE MEDIANA DENSIDAD EN \nPARCELA IRREGULAR \nRE \nDENSIDAD \nMáxima \n500 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "RM",
+   "nombre": "Residencial multifamiliar de alta densidad",
+   "uso": "residencial",
+   "densidad": "alta",
+   "densidad_max": 1000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha RM (p. 9)",
+    "cita_nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM \nDENSIDAD \nMáxima \n1,000 pers/ha",
+    "cita_densidad": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM \nDENSIDAD \nMáxima \n1,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "RM-1",
+   "nombre": "Residencial multifamiliar de alta densidad",
+   "uso": "residencial",
+   "densidad": "alta",
+   "densidad_max": 1200,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha RM-1 (p. 10)",
+    "cita_nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-1 \nDENSIDAD \nMáxima \n1,200 pers/ha",
+    "cita_densidad": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-1 \nDENSIDAD \nMáxima \n1,200 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "RM-2",
+   "nombre": "Residencial multifamiliar de alta densidad",
+   "uso": "residencial",
+   "densidad": "alta",
+   "densidad_max": 1500,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha RM-2 (p. 11)",
+    "cita_nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-2 \nDENSIDAD \nMáxima \n1,500 pers/ha",
+    "cita_densidad": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-2 \nDENSIDAD \nMáxima \n1,500 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "RM-3",
+   "nombre": "Residencial multifamiliar de alta densidad",
+   "uso": "residencial",
+   "densidad": "alta",
+   "densidad_max": 2000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha RM-3 (p. 12)",
+    "cita_nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-3 \nDENSIDAD \nMáxima \n2,000 pers/ha",
+    "cita_densidad": "RESIDENCIAL MULTIFAMILIAR DE ALTA \nDENSIDAD \nRM-3 \nDENSIDAD \nMáxima \n2,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM1",
+   "nombre": "Zona mixta de baja intensidad",
+   "uso": "mixto",
+   "densidad": "baja",
+   "densidad_max": 200,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM1 (p. 13)",
+    "cita_nombre": "ZONA MIXTA DE BAJA INTENSIDAD \nZM1 \nDENSIDAD \nMáxima \n200 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE BAJA INTENSIDAD \nZM1 \nDENSIDAD \nMáxima \n200 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM2",
+   "nombre": "Zona mixta de baja intensidad",
+   "uso": "mixto",
+   "densidad": "baja",
+   "densidad_max": 800,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM2 (p. 14)",
+    "cita_nombre": "ZONA MIXTA DE BAJA INTENSIDAD \nZM2 \nDENSIDAD \nMáxima \n800 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE BAJA INTENSIDAD \nZM2 \nDENSIDAD \nMáxima \n800 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM3",
+   "nombre": "Zona mixta de baja intensidad",
+   "uso": "mixto",
+   "densidad": "baja",
+   "densidad_max": 1000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM3 (p. 15)",
+    "cita_nombre": "ZONA MIXTA DE BAJA INTENSIDAD \nZM3 \nDENSIDAD \nMáxima \n1,000 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE BAJA INTENSIDAD \nZM3 \nDENSIDAD \nMáxima \n1,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM4",
+   "nombre": "Zona mixta de mediana intensidad",
+   "uso": "mixto",
+   "densidad": "mediana",
+   "densidad_max": 1500,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM4 (p. 16)",
+    "cita_nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM4 \nDENSIDAD \nMáxima \n1,500 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM4 \nDENSIDAD \nMáxima \n1,500 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM5",
+   "nombre": "Zona mixta de mediana intensidad",
+   "uso": "mixto",
+   "densidad": "mediana",
+   "densidad_max": 1500,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM5 (p. 17)",
+    "cita_nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM5 \nDENSIDAD \nMáxima \n1,500 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM5 \nDENSIDAD \nMáxima \n1,500 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM6",
+   "nombre": "Zona mixta de mediana intensidad",
+   "uso": "mixto",
+   "densidad": "mediana",
+   "densidad_max": 2000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM6 (p. 18)",
+    "cita_nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM6 \nDENSIDAD \nMáxima \n2,000 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE MEDIANA INTENSIDAD \nZM6 \nDENSIDAD \nMáxima \n2,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM7",
+   "nombre": "Zona mixta de alta intensidad",
+   "uso": "mixto",
+   "densidad": "alta",
+   "densidad_max": 2000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM7 (p. 19)",
+    "cita_nombre": "ZONA MIXTA DE ALTA INTENSIDAD \nZM7 \nDENSIDAD \nMáxima \n2,000 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE ALTA INTENSIDAD \nZM7 \nDENSIDAD \nMáxima \n2,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM8",
+   "nombre": "Zona mixta de alta intensidad",
+   "uso": "mixto",
+   "densidad": "alta",
+   "densidad_max": 2000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM8 (p. 20)",
+    "cita_nombre": "ZONA MIXTA DE ALTA INTENSIDAD \nZM8 \nDENSIDAD \nMáxima \n2,000 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE ALTA INTENSIDAD \nZM8 \nDENSIDAD \nMáxima \n2,000 pers/ha"
+   }
+  },
+  {
+   "norma": "PLOT-A61-2021",
+   "codigo": "ZM9",
+   "nombre": "Zona mixta de alta intensidad",
+   "uso": "mixto",
+   "densidad": "alta",
+   "densidad_max": 2000,
+   "unidad_densidad": "pers/ha",
+   "fuente": {
+    "archivo": "normativa/zonificacion/textos/anexo4_fichas_plot.txt",
+    "articulo": "Anexo 4, ficha ZM9 (p. 21)",
+    "cita_nombre": "ZONA MIXTA DE ALTA INTENSIDAD \nZM9 \nDENSIDAD \nMáxima \n2,000 pers/ha",
+    "cita_densidad": "ZONA MIXTA DE ALTA INTENSIDAD \nZM9 \nDENSIDAD \nMáxima \n2,000 pers/ha"
+   }
+  }
+ ]
+}

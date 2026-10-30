@@ -1,0 +1,1611 @@
+[
+  {
+    "id": "LC-R1B-USOS",
+    "version": 2,
+    "titulo": "R1B-E: usos permitidos",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares, casas en hilera y casas de apartamentos"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares, casas en hilera y casas de apartamentos",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona R1B-E.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares, casas en…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-DENSIDAD",
+    "version": 2,
+    "titulo": "R1B-E: densidad neta máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Densidad Neta: Hasta 200 personas/hectárea (40 unidades de vivienda/hectárea)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha <= 200",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Densidad Neta: Hasta 200 personas/hectárea (40 unidades de vivienda/hectárea)",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta excede 200 personas por hectárea (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La densidad del proyecto requiere el factor oficial de personas por vivienda; si no está en el plano, va a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad Neta: Hasta 200 personas/hectárea (40 unidades de vivienda/hectárea)», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-LOTE-AREA",
+    "version": 4,
+    "titulo": "R1B-E: área mínima de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Area mínima de lote: 600 M2, vivienda unifamiliar, bifamiliar casas en hilera, casa de apartamentos."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 600",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: 600 M2, vivienda unifamiliar, bifamiliar casas en hilera, casa de apartamentos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que 600 m² (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 600 correcto para todas las tipologías (línea 19). La cita cortada sugería que solo rige para unifamiliar; se cita la fila completa. Cambios: cita. Versión 3 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: 600 M2, vivienda unifamiliar, bifamiliar casas en hilera, casa de apartamentos.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-LOTE-FRENTE",
+    "version": 4,
+    "titulo": "R1B-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Frente mínimo de lote: 20 ML"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 20",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: 20 ML",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 20 m (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 20 correcto (línea 20), pero la cita arrastraba «Fondo mínimo» de la línea 21. Se recorta a su fila. Cambios: cita. Versión 3 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: 20 ML», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-ALTURA",
+    "version": 2,
+    "titulo": "R1B-E: altura máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Altura máxima: Planta baja y dos altos"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.pisos_totales"
+    ],
+    "condicion": "proyecto.pisos_totales <= 3",
+    "unidad": "pisos",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Altura máxima: Planta baja y dos altos",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La altura excede planta baja y dos altos (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "pisos_totales cuenta la planta baja; verificar con la DOYC cómo computan sótanos, mezanines y azoteas. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura máxima: Planta baja y dos altos», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-OCUPACION",
+    "version": 2,
+    "titulo": "R1B-E: área de ocupación máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Area de ocupación máxima: 50% del área del lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.ocupacion_pct"
+    ],
+    "condicion": "proyecto.ocupacion_pct <= 50",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area de ocupación máxima: 50% del área del lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede el 50 % del lote (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area de ocupación máxima: 50% del área del lote», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-AREA-LIBRE",
+    "version": 2,
+    "titulo": "R1B-E: área libre mínima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Area libre mínima: 50% del área del lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.area_libre_pct"
+    ],
+    "condicion": "proyecto.area_libre_pct >= 50",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area libre mínima: 50% del área del lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área libre es menor que el 50 % del lote (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area libre mínima: 50% del área del lote», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-LINEA-CONSTRUCCION",
+    "version": 2,
+    "titulo": "R1B-E: línea de construcción",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Línea de construcción: La establecidad o 5.00 ML, mínimo a partir de la línea de propiedad."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Línea de construcción: La establecidad o 5.00 ML, mínimo a partir de la línea de propiedad.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La línea de construcción no respeta la establecida ni el mínimo de 5.00 m (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara con la servidumbre vial y la línea de construcción oficial del lote: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Línea de construcción: La establecidad o 5.00 ML, mínimo a partir de la línea de propiedad.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-RETIRO-LATERAL",
+    "version": 3,
+    "titulo": "R1B-E: retiro lateral",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Retiro lateral: En planta baja y plantas altas: - Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con aberturas sin pared- cerca cerrada. En planta baja: - 1.50% ML con aberturas y pared-cerca cerrada, no menor de 2.10 mts. de alto. En planta altas: -1.50 ML con pared ciega (Area Habitable) y con aberturas altas (área de servicio)."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro lateral: En planta baja y plantas altas: - Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con aberturas sin pared- cerca cerrada.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral no corresponde a ninguna opción de la zona R1B-E: ninguno con pared ciega; 2.50 m con aberturas; en planta baja 1.50 m con aberturas y pared-cerca de 2.10 m (el texto dice «1.50% ML»); en plantas altas 1.50 m con pared ciega o aberturas altas.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Opciones según haya pared ciega, aberturas, pared-cerca y el tipo de área, en planta baja y altas: se revisa en planta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita era solo la línea del «1.50% ML», una errata del original, y ocultaba las demás opciones. Se citan las tres líneas del retiro lateral; sigue como criterio. Cambios: mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro lateral: En planta baja y plantas altas: - Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con abert…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-RETIRO-POSTERIOR",
+    "version": 3,
+    "titulo": "R1B-E: retiro posterior",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Retiro posterior: 5.00 Mts"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.retiro_posterior_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_m >= 5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro posterior: 5.00",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior es menor que 5.00 m (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 5.00 correcto (línea 29), pero la cita arrastraba «Estacionamiento» de la línea 30. Se recorta a su fila. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: 5.00», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "R1B-E: estacionamientos por vivienda",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Estacionamiento: - Hasta 200 M2: 2/ vivienda - 201 hasta 300M2: 3/vivienda -301 hasta 400 M2. y más 4/vivienda"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamiento: - Hasta 200 M2: 2/ vivienda - 201 hasta 300M2: 3/vivienda -301 hasta 400 M2. y más 4/vivienda",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan los exigidos por área de vivienda (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Exigencia por vivienda según su área: hasta 200 m² 2; de 201 a 300 m² 3; de 301 a 400 m² y más 4. Requiere el área de cada vivienda: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Sigue como criterio: tabla por área de vivienda; la cita omitía el tramo mayor (4 por vivienda). Se cita la fila completa (línea 30). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: - Hasta 200 M2: 2/ vivienda - 201 hasta 300M2: 3/vivienda -301 hasta 400 M2. y más 4/vivienda», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-ESTACIONAMIENTOS-VISITAS",
+    "version": 3,
+    "titulo": "R1B-E: estacionamientos de visitas",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares, en hilera y apartamento."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares, en hilera y apartamento.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan estacionamientos de visitas: se exige uno por cada dos viviendas (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "1 por cada 2 viviendas (unifamiliares, bifamiliares, en hilera y apartamentos). La nota de la resolución lo extiende a las construcciones nuevas. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): El mensaje exigía también acceso y bienes comunes, que cubren las reglas -VISITAS-; se recorta. Convertida: 1/2 viviendas para todas las tipologías, literal. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares, en hilera y apartamento.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 2"
+  },
+  {
+    "id": "LC-R2A-USOS",
+    "version": 2,
+    "titulo": "R2A-E: usos permitidos",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares (una sobre otra y adosada) y sus usos complementarios"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares (una sobre otra y adosada) y sus usos complementarios",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona R2A-E.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares (una sobr…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-DENSIDAD",
+    "version": 2,
+    "titulo": "R2A-E: densidad neta máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Densidad neta: Hasta 300 personas/hectáreas (60 unidades de viviendas /hectáreas)."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha <= 300",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Densidad neta: Hasta 300 personas/hectáreas (60 unidades de viviendas /hectáreas).",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta excede 300 personas por hectárea (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La densidad del proyecto requiere el factor oficial de personas por vivienda; si no está en el plano, va a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad neta: Hasta 300 personas/hectáreas (60 unidades de viviendas /hectáreas).», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-LOTE-AREA",
+    "version": 5,
+    "titulo": "R2A-E: área mínima de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area mínima de lote: 600 M2. Vivienda unifamiliar ó bifamiliar (una sobre otra) 600 M2 vivienda bifamiliar (adosada) 200 M2. c/u vivienda en hilera."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+    "entradas": [
+      "lote.area_m2",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: 600 M2. Vivienda unifamiliar ó bifamiliar (una sobre otra) 600 M2 vivienda bifamiliar (adosada) 200 M2. c/u vivienda en hilera.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que el mínimo de la zona R2A-E: 600 m² para unifamiliar o bifamiliar (una sobre otra o adosada) o 200 m² por cada vivienda en hilera.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "600 m² unifamiliar o bifamiliar (una sobre otra o adosada); 200 m² por cada vivienda en hilera. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida con la tipología declarada: 600 m² unifamiliar y bifamiliar, 200 m² c/u en hilera, literales (línea 39). La cita anterior era un fragmento. Cambios: tipo criterio → cuantitativa, aplica_si, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (proyecto.unidades_vivienda): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. Versión 4 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 5 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: 600 M2. Vivienda unifamiliar ó bifamiliar (una sobre otra) 600 M2 vivienda bifamiliar (adosada) …», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "(proyecto.tipologia_vivienda != 'hilera' and lote.area_m2 >= 600) or (proyecto.tipologia_vivienda == 'hilera' and lote.area_m2 >= 200 * proyecto.unidades_vivienda)",
+    "entradas_opcionales": [
+      "proyecto.unidades_vivienda"
+    ]
+  },
+  {
+    "id": "LC-R2A-LOTE-FRENTE",
+    "version": 4,
+    "titulo": "R2A-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Frente mínimo de lote: 20ML vivienda unifamiliar ó bifamiliar (una sobre otra) 20.00 ML, vivienda bifamiliar (adosada) 6.50 ML Vivienda en hilera"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E'] and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera']",
+    "entradas": [
+      "lote.frente_m",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: 20ML vivienda unifamiliar ó bifamiliar (una sobre otra) 20.00 ML, vivienda bifamiliar (adosada) 6.50 ML Vivienda en hilera",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R2A-E: 20.00 m para unifamiliar o bifamiliar, o 6.50 m para vivienda en hilera.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "20 m unifamiliar o bifamiliar; 6.50 m por vivienda en hilera. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida con la tipología declarada: 20 m unifamiliar y bifamiliar, 6.50 m en hilera, literales (línea 40). No se multiplica por unidad: el texto no lo dice. Cambios: tipo criterio → cuantitativa, aplica_si, condicion, entradas, mensaje_no_cumple, cita. Versión 3 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: 20ML vivienda unifamiliar ó bifamiliar (una sobre otra) 20.00 ML, vivienda bifamiliar (adosada…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "(proyecto.tipologia_vivienda != 'hilera' and lote.frente_m >= 20) or (proyecto.tipologia_vivienda == 'hilera' and lote.frente_m >= 6.50)"
+  },
+  {
+    "id": "LC-R2A-ALTURA",
+    "version": 2,
+    "titulo": "R2A-E: altura máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Altura máxima:Planta baja y dos altos."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.pisos_totales"
+    ],
+    "condicion": "proyecto.pisos_totales <= 3",
+    "unidad": "pisos",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Altura máxima:Planta baja y dos altos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La altura excede planta baja y dos altos (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "pisos_totales cuenta la planta baja; verificar con la DOYC cómo computan sótanos, mezanines y azoteas. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura máxima:Planta baja y dos altos.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-OCUPACION",
+    "version": 2,
+    "titulo": "R2A-E: área de ocupación máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area de ocupación máxima: 60% del área del lote."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.ocupacion_pct"
+    ],
+    "condicion": "proyecto.ocupacion_pct <= 60",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area de ocupación máxima: 60% del área del lote.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede el 60 % del lote (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area de ocupación máxima: 60% del área del lote.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-AREA-LIBRE",
+    "version": 2,
+    "titulo": "R2A-E: área libre mínima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area libre mínima: 40% de área del lote."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.area_libre_pct"
+    ],
+    "condicion": "proyecto.area_libre_pct >= 40",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area libre mínima: 40% de área del lote.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área libre es menor que el 40 % del lote (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area libre mínima: 40% de área del lote.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-LINEA-CONSTRUCCION",
+    "version": 2,
+    "titulo": "R2A-E: línea de construcción",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Línea de construcción : La establecida ó 2.50 ML mínimo a partir de la línea de propiedad."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Línea de construcción : La establecida ó 2.50 ML mínimo a partir de la línea de propiedad.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La línea de construcción no respeta la establecida ni el mínimo de 2.50 m (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara con la servidumbre vial y la línea de construcción oficial del lote: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Línea de construcción : La establecida ó 2.50 ML mínimo a partir de la línea de propiedad.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-RETIRO-LATERAL",
+    "version": 3,
+    "titulo": "R2A-E: retiro lateral",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Retiro Lateral : En planta Baja y Plantas Altas: -Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con aberturas en área habitable. En Planta Baja: - 1.50ML con aberturas y pared-cerca cerrada no menor de 2.10 M. de alto. En Planta Alta: -1.50 ML con pared ciega (area Habitable) y con aberturas altas (Area de Servicio)"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro Lateral : En planta Baja y Plantas Altas: -Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con aberturas en área habitable.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral no corresponde a ninguna opción de la zona R2A-E: ninguno con pared ciega; 2.50 m con aberturas en área habitable; en planta baja 1.50 m con aberturas y pared-cerca de 2.10 m; en planta alta 1.50 m con pared ciega o aberturas altas.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Opciones según haya pared ciega, aberturas, pared-cerca y el tipo de área, en planta baja y altas: se revisa en planta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita solo traía la opción de planta baja con pared-cerca; se citan las tres líneas del retiro lateral (46-48) para no rechazar opciones válidas. Criterio. Cambios: mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro Lateral : En planta Baja y Plantas Altas: -Ninguno con pared ciega acabada hacia el vecino. -2.50 ML con abert…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-RETIRO-POSTERIOR",
+    "version": 3,
+    "titulo": "R2A-E: retiro posterior",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Retiro posterior: 5.00Mts"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.retiro_posterior_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_m >= 5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro posterior: 5.00",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior es menor que 5.00 m (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 5.00 correcto (línea 49), pero la cita arrastraba la fila de estacionamientos (línea 50). Se recorta a su fila. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: 5.00», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "R2A-E: estacionamientos por vivienda",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Estacionamiento: Hasta 200 Mts2: 2/viviendas 201 hasta 300 Mts2: 3/Vivienda 301 hasta 400 Mts2 y más 4 viviendas"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamiento: Hasta 200 Mts2: 2/viviendas 201 hasta 300 Mts2: 3/Vivienda 301 hasta 400 Mts2 y más 4 viviendas",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan los exigidos por área de vivienda (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Exigencia por vivienda según su área: hasta 200 m² 2; de 201 a 300 m² 3; de 301 a 400 m² y más 4. Requiere el área de cada vivienda: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Sigue como criterio: tabla por área de vivienda; la cita omitía el tramo mayor (4 por vivienda). Se cita la fila completa (línea 50). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: Hasta 200 Mts2: 2/viviendas 201 hasta 300 Mts2: 3/Vivienda 301 hasta 400 Mts2 y más 4 viviendas», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-ESTACIONAMIENTOS-VISITAS",
+    "version": 3,
+    "titulo": "R2A-E: estacionamientos de visitas",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares y en hilera."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares y en hilera.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan estacionamientos de visitas: se exige uno por cada dos viviendas (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "1 por cada 2 viviendas unifamiliares, bifamiliares y en hilera. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): El mensaje exigía también acceso y bienes comunes, que cubren las reglas -VISITAS-; se recorta. Convertida: 1/2 viviendas para todas las tipologías, literal. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamientos para visitas: 1/2 viviendas unifamiliares, bifamiliares y en hilera.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 2"
+  },
+  {
+    "id": "LC-R2B-USOS",
+    "version": 3,
+    "titulo": "R2B-E: usos permitidos",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "usos Permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares, (una sobre otra), bifamiliares (adosada), en hilera, apartamentos y sus usos complementarios (ejemplos: Bohíos, pequeños depósitos, casetas, piscinas). Siempre que dichos usos y sus estructuras no constituyan perjuicios a los vecinos o afecten en forma adversa el carácter residencial de la zona. No se permite la construcción de edificios docentes, religiosos, culturales, filantrópicos y asistenciales y otros similares."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "usos Permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares, (una sobre otra), bifamiliares (adosada), en hilera, apartamentos y sus usos complementarios (ejemplos: Bohíos, pequeños depósitos, casetas, piscinas). Siempre que dichos usos y sus estructuras no constituyan perjuicios a los vecinos o afecten en forma adversa el carácter residencial de la zona. No se permite la construcción de edificios docentes, religiosos, culturales, filantrópicos y asistenciales y otros similares.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona R2B-E.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vivienda unifamiliar, bifamiliar, en hilera y apartamentos; sin edificios docentes, religiosos, culturales, filantrópicos ni asistenciales. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Uso de suelo: criterio. La cita solo traía la prohibición de usos institucionales; se cita la fila completa de usos permitidos (línea 56). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («usos Permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifam…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-DENSIDAD",
+    "version": 2,
+    "titulo": "R2B-E: densidad neta máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Densidad neta: Hasta 300 personas/hectárea (60 unidades de vivienda/hectárea)."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha <= 300",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Densidad neta: Hasta 300 personas/hectárea (60 unidades de vivienda/hectárea).",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta excede 300 personas por hectárea (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La densidad del proyecto requiere el factor oficial de personas por vivienda; si no está en el plano, va a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad neta: Hasta 300 personas/hectárea (60 unidades de vivienda/hectárea).», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-LOTE-AREA",
+    "version": 5,
+    "titulo": "R2B-E: área mínima de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area mínima de lote: Vivienda unifamiliar 600 M2. Vivienda bifamiliar 600 M2 (2 unidades de viviendas/lote) Casas en hilera 600M2 (una unidad de vivienda por cada 200M2). Casas de apartamentos 600M2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "lote.area_m2",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: Vivienda unifamiliar 600 M2. Vivienda bifamiliar 600 M2 (2 unidades de viviendas/lote) Casas en hilera 600M2 (una unidad de vivienda por cada 200M2). Casas de apartamentos 600M2",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que 600 m² o, en casas en hilera, tiene más de una vivienda por cada 200 m² (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "600 m² para toda tipología; en hilera, una vivienda por cada 200 m²; bifamiliar, 2 viviendas por lote. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida: 600 m² en todas las tipologías y una vivienda en hilera por cada 200 m², literales (línea 58). La cita anterior era un fragmento. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (proyecto.unidades_vivienda): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. Versión 4 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 5 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: Vivienda unifamiliar 600 M2. Vivienda bifamiliar 600 M2 (2 unidades de viviendas/lote) Casas en …», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "lote.area_m2 >= 600 and (proyecto.tipologia_vivienda != 'hilera' or proyecto.unidades_vivienda <= lote.area_m2 / 200)",
+    "entradas_opcionales": [
+      "proyecto.unidades_vivienda"
+    ]
+  },
+  {
+    "id": "LC-R2B-LOTE-FRENTE",
+    "version": 5,
+    "titulo": "R2B-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Frente mínimo de lote: Unifamiliar y bifamiliar: 20 Mts. Casas en hileras: 6.50 Mts (por unidad de vivienda). Casas de apartamentos: 20 Mts."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "lote.frente_m",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: Unifamiliar y bifamiliar: 20 Mts. Casas en hileras: 6.50 Mts (por unidad de vivienda). Casas de apartamentos: 20 Mts.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que el mínimo de la zona R2B-E: 20 m para unifamiliar, bifamiliar o apartamentos, o 6.50 m por vivienda en hilera.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "20 m unifamiliar, bifamiliar y apartamentos; 6.50 m por vivienda en hilera. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida con la tipología declarada: 20 m y 6.50 m «por unidad de vivienda» en hilera, literales (línea 59). Cita de la fila completa. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (proyecto.unidades_vivienda): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. Versión 4 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 5 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: Unifamiliar y bifamiliar: 20 Mts. Casas en hileras: 6.50 Mts (por unidad de vivienda). Casas d…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "(proyecto.tipologia_vivienda == 'hilera' and lote.frente_m >= 6.50 * proyecto.unidades_vivienda) or (proyecto.tipologia_vivienda != 'hilera' and lote.frente_m >= 20)",
+    "entradas_opcionales": [
+      "proyecto.unidades_vivienda"
+    ]
+  },
+  {
+    "id": "LC-R2B-OCUPACION",
+    "version": 2,
+    "titulo": "R2B-E: área de ocupación máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area de Ocupación: 60% del área del lote."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "proyecto.ocupacion_pct"
+    ],
+    "condicion": "proyecto.ocupacion_pct <= 60",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area de Ocupación: 60% del área del lote.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede el 60 % del lote (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area de Ocupación: 60% del área del lote.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-AREA-LIBRE",
+    "version": 3,
+    "titulo": "R2B-E: área libre mínima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Area libre mínima: 40% del área del lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "proyecto.area_libre_pct"
+    ],
+    "condicion": "proyecto.area_libre_pct >= 40",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area libre mínima: 40% del área del lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área libre es menor que el 40 % del lote (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 40 correcto (línea 63), pero la cita arrastraba «Línea» de la línea 64. Se recorta a su fila. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area libre mínima: 40% del área del lote», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-LINEA-CONSTRUCCION",
+    "version": 3,
+    "titulo": "R2B-E: línea de construcción",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Línea de construcción: La establecida"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Línea de construcción: La establecida",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La línea de construcción no respeta la línea establecida (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara con la servidumbre vial y la línea de construcción oficial del lote: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «La establecida» remite al documento oficial de líneas, no cargado: criterio. La cita arrastraba «Retiro lateral» de la línea 65; se recorta. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Línea de construcción: La establecida», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-RETIRO-LATERAL",
+    "version": 3,
+    "titulo": "R2B-E: retiro lateral",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Retiro lateral: En planta baja y Plantas altas -Ninguno con pared ciega acabada hacia al vecino. -2.50 Mts con aberturas en áreas habitables. -1.50 Mts con aberturas altas en área de servicio. -1.50 con pared ciega (área habitable) Planta baja -1.50 con aberturas en áreas habitables y pared cerca no menor de 2.10 Mts de alto."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro lateral: En planta baja y Plantas altas -Ninguno con pared ciega acabada hacia al vecino. -2.50 Mts con aberturas en áreas habitables.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral no corresponde a ninguna opción de la zona R2B-E: ninguno con pared ciega; 2.50 m con aberturas en área habitable; 1.50 m con aberturas altas de servicio o pared ciega; en planta baja 1.50 m con pared-cerca de 2.10 m.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Opciones según haya pared ciega, aberturas, pared-cerca y el tipo de área, en planta baja y altas: se revisa en planta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita solo traía la opción de planta baja; se citan las dos líneas del retiro lateral (65-66) para no rechazar opciones válidas. Criterio. Cambios: mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro lateral: En planta baja y Plantas altas -Ninguno con pared ciega acabada hacia al vecino. -2.50 Mts con abertu…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-RETIRO-POSTERIOR",
+    "version": 2,
+    "titulo": "R2B-E: retiro posterior",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 3,
+      "cita_textual": "Retiro posterior: 5.00Mts"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "proyecto.retiro_posterior_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_m >= 5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro posterior: 5.00",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior es menor que 5.00 m (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: 5.00», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "R2B-E: estacionamientos por vivienda",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 4,
+      "cita_textual": "Estacionamiento: Hasta 200 Mts2: vivienda 201 hasta 300 Mts2: 3/viviendas 301 hasta 400 Mts2: y más 4/vivienda"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamiento: Hasta 200 Mts2: vivienda 201 hasta 300 Mts2: 3/viviendas 301 hasta 400 Mts2: y más 4/vivienda",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan los exigidos por área de vivienda (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Exigencia por vivienda según su área: hasta 200 m² 2; de 201 a 300 m² 3; de 301 a 400 m² y más 4. En el original falta la cifra del primer tramo. Requiere el área de cada vivienda: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Sigue como criterio: en la línea 70 falta la cifra del primer tramo («Hasta 200 Mts2: vivienda»). Se cita la fila completa. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: Hasta 200 Mts2: vivienda 201 hasta 300 Mts2: 3/viviendas 301 hasta 400 Mts2: y más 4/vivienda», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-ESTACIONAMIENTOS-VISITAS",
+    "version": 3,
+    "titulo": "R2B-E: estacionamientos de visitas",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 4,
+      "cita_textual": "Estacionamientos para visitas 1/4 apartamentos - 1/2 viviendas unifamiliares, bifamiliares y en hilera."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamientos para visitas 1/4 apartamentos - 1/2 viviendas unifamiliares, bifamiliares y en hilera.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan estacionamientos de visitas: uno por cada cuatro apartamentos o uno por cada dos viviendas unifamiliares, bifamiliares o en hilera (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "1 por cada 4 apartamentos y 1 por cada 2 viviendas unifamiliares, bifamiliares y en hilera. La cifra del primer tramo (hasta 200 m²) falta en el original. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): El mensaje exigía acceso y bienes comunes, que cubren las reglas -VISITAS-; se recorta. Convertida con la tipología declarada: 1/4 apartamentos, 1/2 las demás. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamientos para visitas 1/4 apartamentos - 1/2 viviendas unifamiliares, bifamiliares y en hilera.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "(proyecto.tipologia_vivienda == 'apartamentos' and proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 4) or (proyecto.tipologia_vivienda != 'apartamentos' and proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 2)"
+  },
+  {
+    "id": "LC-RM-USOS",
+    "version": 2,
+    "titulo": "RM-E: usos permitidos",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casas en hileras y sus usos complementarios"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casas en hileras y sus usos complementarios",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona RM-E.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casas en hileras y …», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-DENSIDAD",
+    "version": 2,
+    "titulo": "RM-E: densidad neta máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Densidad : Hasta 600 personas /hectáreas (120. unidades de vivienda/hectárea)."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha <= 600",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Densidad : Hasta 600 personas /hectáreas (120. unidades de vivienda/hectárea).",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta excede 600 personas por hectárea (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La densidad del proyecto requiere el factor oficial de personas por vivienda; si no está en el plano, va a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad : Hasta 600 personas /hectáreas (120. unidades de vivienda/hectárea).», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-LOTE-AREA",
+    "version": 4,
+    "titulo": "RM-E: área mínima de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Area mínima de lote: 600 M2 apartamentos"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E'] and proyecto.tipologia_vivienda == 'apartamentos'",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 600",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: 600 M2 apartamentos",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que 600 m² (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 600 correcto (línea 79), pero el texto lo fija para «apartamentos» y la zona admite bifamiliares e hileras. Se acota a esa tipología declarada. Cambios: aplica_si. Versión 3 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: 600 M2 apartamentos», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-LOTE-FONDO",
+    "version": 2,
+    "titulo": "RM-E: fondo mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Fondo mínimo de lote: 30ML"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "lote.fondo_m"
+    ],
+    "condicion": "lote.fondo_m >= 30",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Fondo mínimo de lote: 30ML",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El fondo del lote es menor que 30 m (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Fondo mínimo de lote: 30ML», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-LOTE-FRENTE",
+    "version": 3,
+    "titulo": "RM-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Frente mínimo de lote: 20 ML."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 20",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: 20 ML.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 20 m (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: 20 ML.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-OCUPACION",
+    "version": 2,
+    "titulo": "RM-E: área de ocupación máxima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Area de ocupación máxima: 60% del área del lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "proyecto.ocupacion_pct"
+    ],
+    "condicion": "proyecto.ocupacion_pct <= 60",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area de ocupación máxima: 60% del área del lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede el 60 % del lote (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area de ocupación máxima: 60% del área del lote», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-AREA-LIBRE",
+    "version": 2,
+    "titulo": "RM-E: área libre mínima",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Area libre mínima: 40% del área del lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "proyecto.area_libre_pct"
+    ],
+    "condicion": "proyecto.area_libre_pct >= 40",
+    "unidad": "%",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area libre mínima: 40% del área del lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área libre es menor que el 40 % del lote (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area libre mínima: 40% del área del lote», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-LINEA-CONSTRUCCION",
+    "version": 2,
+    "titulo": "RM-E: línea de construcción",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Línea de construcción: La establecida ó 5.00 ML. mínima a partir de la línea de propiedad."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Línea de construcción: La establecida ó 5.00 ML. mínima a partir de la línea de propiedad.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La línea de construcción no respeta la establecida ni el mínimo de 5.00 m (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara con la servidumbre vial y la línea de construcción oficial del lote: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Línea de construcción: La establecida ó 5.00 ML. mínima a partir de la línea de propiedad.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-RETIRO-LATERAL",
+    "version": 3,
+    "titulo": "RM-E: retiro lateral",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Retiro lateral: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 1.50 ML: Area de Servicio con aberturas altas. 2.50 ML: Area Habitable"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro lateral: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 1.50 ML: Area de Servicio con aberturas altas. 2.50 ML: Area Habitable",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral no corresponde a la zona RM-E (ninguno en planta baja y dos altos con pared ciega; 1.50 m en área de servicio con aberturas altas; 2.50 m en área habitable).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Opciones según haya pared ciega, aberturas, pared-cerca y el tipo de área, en planta baja y altas: se revisa en planta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita solo traía el basamento adosado; se cita la fila completa (línea 86) con los retiros de 1.50 m y 2.50 m. Criterio por tipo de área. Cambios: mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro lateral: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 1.50 ML: Area de Servici…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-RETIRO-POSTERIOR",
+    "version": 3,
+    "titulo": "RM-E: retiro posterior",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Retiro posterior: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 3.00 ML: Torre Ninguno: Cuando colinda con zonificación RM3 C2 o industrial. Cuando colinda con zonificación residencial: aplicar las opciones ilustradas."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro posterior: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 3.00 ML: Torre Ninguno: Cuando colinda con zonificación RM3 C2 o industrial. Cuando colinda con zonificación residencial: aplicar las opciones ilustradas.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior no corresponde a la zona RM-E (basamento adosado, torre 3.00 m, opciones ilustradas según la colindancia).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Ninguno en planta baja y dos altos con pared ciega; torre 3.00 m; ninguno si colinda con RM3 C2 o industrial; junto a residencial, las opciones del gráfico del Anexo Nº 1. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio (depende de la colindancia y de opciones ilustradas no transcritas). El mensaje exigía las opciones según colindancia; se cita la fila completa (línea 87). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: Ninguno: en planta baja y dos altos con pared ciega acabada hacia el vecino. 3.00 ML: Torre Ninguno…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-E: estacionamientos por vivienda",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Estacionamiento: Hasta de 200 Mts.2: 2/viviendas 201 hasta 300 Mts.2: 3/vivienda 301 hasta 400 Mts.2 y más 4/vivienda"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamiento: Hasta de 200 Mts.2: 2/viviendas 201 hasta 300 Mts.2: 3/vivienda 301 hasta 400 Mts.2 y más 4/vivienda",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan los exigidos por área de vivienda (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Exigencia por vivienda según su área: hasta 200 m² 2; de 201 a 300 m² 3; de 301 a 400 m² y más 4. Requiere el área de cada vivienda: a revisión. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Sigue como criterio: tabla por área de vivienda; la cita omitía el tramo mayor (4 por vivienda). Se cita la fila completa (línea 88). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: Hasta de 200 Mts.2: 2/viviendas 201 hasta 300 Mts.2: 3/vivienda 301 hasta 400 Mts.2 y más 4/vivienda», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-ESTACIONAMIENTOS-VISITAS",
+    "version": 3,
+    "titulo": "RM-E: estacionamientos de visitas",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Estacionamientos para visitas: 1/4 apartamento - 1/2 viviendas unifamiliares, bifamiliares y en hilera."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda",
+      "proyecto.tipologia_vivienda"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Estacionamientos para visitas: 1/4 apartamento - 1/2 viviendas unifamiliares, bifamiliares y en hilera.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan estacionamientos de visitas: uno por cada cuatro apartamentos o uno por cada dos viviendas unifamiliares, bifamiliares o en hilera (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "1 por cada 4 apartamentos y 1 por cada 2 viviendas unifamiliares, bifamiliares y en hilera. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): El mensaje exigía acceso y bienes comunes, que cubren las reglas -VISITAS-; se recorta. Convertida con la tipología declarada: 1/4 apartamentos, 1/2 las demás. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamientos para visitas: 1/4 apartamento - 1/2 viviendas unifamiliares, bifamiliares y en hilera.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "(proyecto.tipologia_vivienda == 'apartamentos' and proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 4) or (proyecto.tipologia_vivienda != 'apartamentos' and proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 2)"
+  },
+  {
+    "id": "LC-RM-SIN-BONIFICACION",
+    "version": 3,
+    "titulo": "RM-E: sin bonificación",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "NOTA: No se permitirá que los proyectos se acojan al sistema de bonificación vigente."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [
+      "proyecto.usa_bonificacion"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "NOTA: No se permitirá que los proyectos se acojan al sistema de bonificación vigente.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto se acoge a una bonificación (de densidad u otra), prohibida en la zona RM-E.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Prohibición («No se permitirá») computable con un dato sí/no declarado: si el proyecto se acoge a la bonificación. Cambios: tipo criterio → documental, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («NOTA: No se permitirá que los proyectos se acojan al sistema de bonificación vigente.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt); tipo «documental» corregido a «criterio»",
+    "condicion": "proyecto.usa_bonificacion == false"
+  },
+  {
+    "id": "LC-RM123-NORMA-NO-CARGADA",
+    "version": 2,
+    "titulo": "RM1-E, RM2-E y RM3-E: norma no cargada",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Segundo",
+      "pagina_pdf": 2,
+      "cita_textual": "se desarrollarán con base en las Normas Especiales de Desarrollo Urbano aprobadas en el artículo segundo de la resolución No. 93-91"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM1-E', 'RM2-E', 'RM3-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "se desarrollarán con base en las Normas Especiales de Desarrollo Urbano aprobadas en el artículo segundo de la resolución No. 93-91",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote está en RM1-E, RM2-E o RM3-E, que se rigen por la Resolución 93-91 (modificada por la 115-91), no cargada: revisión manual contra esas normas.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Conseguir las Resoluciones No. 93-91 (11-oct-1991) y No. 115-91 (30-oct-1991) para cargar sus reglas. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («se desarrollarán con base en las Normas Especiales de Desarrollo Urbano aprobadas en el artículo segundo de la resolu…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-TODAS-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "Ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículos Cuarto a Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Los niveles de estacionamientos en áreas cerradas tendrán ventilación, ya sea vertical u horizontal a través de los pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E', 'R2B-E', 'R2-B-E', 'RM-E'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Los niveles de estacionamientos en áreas cerradas tendrán ventilación, ya sea vertical u horizontal a través de los pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en áreas cerradas no indican ventilación vertical u horizontal por pozos o rejillas en los pisos.",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante, como en El Carmen. La cita cortaba antes de «pozos o rejillas»; se cita la frase completa (línea 73). Computable con dos datos sí/no. Cambios: severidad observacion → bloqueante, tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («Los niveles de estacionamientos en áreas cerradas tendrán ventilación, ya sea vertical u horizontal a través de los p…», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  }
+]

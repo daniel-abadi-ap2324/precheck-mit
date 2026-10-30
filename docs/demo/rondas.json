@@ -1,0 +1,2135 @@
+{
+ "version": 2,
+ "generado": "2026-10-13",
+ "nota": "Catálogo de las rondas de prueba de la revisión con IA. Las corridas se llaman «<Plano> - prueba N con <Modelo>», donde N es la ronda; la ronda 1 se llama «<Plano> - prueba con <Modelo>», sin número. fecha: día, en hora de Panamá (UTC−5), del primer lanzamiento de la ronda; cuando una ronda cruza la medianoche o mezcla dos condiciones, se dice en «cambio». modelos y planos: solo corridas que llegaron a ejecutarse (estado.ia.modelo en web/.data); las canceladas antes de empezar o fallidas sin modelo se mencionan en «resultado». commits: los que entraron antes del lanzamiento según el git log de la rama (hora local), o los que el informe atribuye a la ronda. cambio, hipotesis y resultado resumen los informes de docs/demo, CAMBIOS-RESPECTO-A-LA-VERSION-ORIGINAL.md y docs/contexto-claude/03-evidencias.md (al que CAMBIOS remite las cifras de las rondas 6 a 11). Cuando el informe da cifras por tanda y no por ronda, se repite la cifra de la tanda y se dice. grupos (versión 2): rondas que repitieron la misma prueba y se miden juntas; una ronda sin grupo va sola. Desde el 19-oct la web no muestra exactitudes, porque la verdad no está confirmada (ADR-0015). Las cifras de exactitud que quedan en «cambio» y «resultado» son históricas y dependen de la verdad usada (v3, verdad corregida o ampliada v3+v4). «no documentado» = ningún informe lo dice. Todo es preliminar y no oficial.",
+ "grupos": [
+  {
+   "rondas": [
+    9,
+    10
+   ],
+   "titulo": "90 reglas nuevas sobre lo que debe traer el plano"
+  },
+  {
+   "rondas": [
+    18,
+    19
+   ],
+   "titulo": "Tocumen con y sin zonas marcadas"
+  },
+  {
+   "rondas": [
+    20,
+    21
+   ],
+   "titulo": "Instrucciones escritas para 24 datos de sí o no"
+  },
+  {
+   "rondas": [
+    23,
+    24,
+    25
+   ],
+   "titulo": "Criterios mejorados con 4 modelos y los 5 planos"
+  },
+  {
+   "rondas": [
+    26,
+    27
+   ],
+   "titulo": "Tercera versión de los criterios con Sonnet"
+  },
+  {
+   "rondas": [
+    28,
+    29
+   ],
+   "titulo": "Siete mejoras pequeñas a los criterios"
+  },
+  {
+   "rondas": [
+    35,
+    36
+   ],
+   "titulo": "DeepSeek: el motor de reglas siempre recibe los datos"
+  },
+  {
+   "rondas": [
+    43,
+    44,
+    45
+   ],
+   "titulo": "Comparar los cinco modelos en igualdad"
+  },
+  {
+   "rondas": [
+    46,
+    47,
+    48
+   ],
+   "titulo": "DeepSeek sin repasar su razonamiento viejo"
+  },
+  {
+   "rondas": [
+    49,
+    50,
+    51
+   ],
+   "titulo": "DeepSeek más seguro si cita el texto del escaneado"
+  },
+  {
+   "rondas": [
+    52,
+    53,
+    54
+   ],
+   "titulo": "DeepSeek con menos ampliaciones de la hoja"
+  },
+  {
+   "rondas": [
+    57,
+    58
+   ],
+   "titulo": "Reglas corregidas, CASO-A y DeepSeek con tope de 100 USD"
+  },
+  {
+   "rondas": [
+    61,
+    62
+   ],
+   "titulo": "Línea base de DeepSeek"
+  },
+  {
+   "rondas": [
+    63,
+    64
+   ],
+   "titulo": "Enrutamiento de los escaneados a Sonnet"
+  },
+  {
+   "rondas": [
+    65,
+    66
+   ],
+   "titulo": "DeepSeek con datos de alcance"
+  },
+  {
+   "rondas": [
+    67,
+    68
+   ],
+   "titulo": "Repaso de los datos en duda"
+  },
+  {
+   "rondas": [
+    69,
+    70
+   ],
+   "titulo": "Forma de los datos como Opus"
+  },
+  {
+   "rondas": [
+    71,
+    72,
+    73
+   ],
+   "titulo": "Medición final: enrutamiento y alcance"
+  }
+ ],
+ "rondas": [
+  {
+   "ronda": 1,
+   "fecha": "2026-10-05",
+   "tanda": "Lote nocturno del 5–6 oct (los proyectos se llaman «<Plano> - prueba con <Modelo>», sin número)",
+   "titulo": "Primera prueba: tres modelos revisan los 5 planos",
+   "cambioCorto": "Probé tres modelos de IA sobre los 5 planos, cada uno por separado, para tener un punto de partida.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Coincidieron de 22 % en Tocumen a 71 % en Bella Vista.",
+   "cambio": "Primera ronda con la revisión con IA lanzada desde la web: se elige el modelo por revisión y cada revisión decide solo con su plano, sin leer dictámenes de otras corridas, para poder comparar modelos. Casco Antiguo se corrió la tarde del 5-oct sin más instrucciones. Bella Vista, Panamá Norte, San Francisco y Tocumen se corrieron esa noche y hasta el 6-oct de madrugada; para entonces ya regían el estado inicial limpio por revisión, el máximo de 3 revisiones a la vez y los 12 hallazgos tipificados con id fijo.",
+   "hipotesis": "Medir la estabilidad entre modelos sobre el mismo plano. No había verdad humana, así que se mide coincidencia y no acierto.",
+   "resultado": "Solapamiento de hallazgos / acuerdo en el catálogo: Casco Antiguo 30 % / 92 %, Bella Vista 71 % / 61 %, Panamá Norte 58 % / 78 %, San Francisco 38 % / 92 %, Tocumen 22 % / 70 %. Tocumen con Sonnet terminó en 2 minutos con un solo hallazgo, y Fable listó 596 decisiones en San Francisco (574 NO_APLICA). Datos pedidos escritos: 45 % de media. San Francisco corrió con la zona 1ZM7 precargada por error; el plano declara RM3-C2.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/informe-noche.md",
+   "commits": [
+    "30d9f96",
+    "5f9bdd0",
+    "702efeb",
+    "029789e",
+    "1e87331",
+    "a1c8051",
+    "d2cfa14"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 2,
+   "fecha": "2026-10-05",
+   "tanda": "Lote nocturno del 5–6 oct y segunda vuelta del 6-oct",
+   "titulo": "Repetir Casco Antiguo y pedir revisiones más completas",
+   "cambioCorto": "Repetí Casco Antiguo sin cambios y pedí a la IA revisiones más completas en San Francisco y Tocumen.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Mejoró San Francisco, de 38 % a 58 %. Tocumen con Sonnet pasó de 1 a 9 problemas.",
+   "cambio": "Esta ronda mezcla dos condiciones. Casco Antiguo (5-oct, 17:16) corrió antes de las mejoras de esa noche, igual que la ronda 1. San Francisco y Tocumen (6-oct, 07:14) corrieron con la instrucción de «profundidad mínima»: mirar todas las láminas y recorrer el Anexo III/IV antes de cerrar. También llevaban el aviso de «revisión posiblemente superficial».",
+   "hipotesis": "Casco Antiguo: segunda medida de la línea base. San Francisco y Tocumen: ver si la profundidad mínima evita revisiones superficiales y sube el solapamiento.",
+   "resultado": "Casco Antiguo: solapamiento 32 %, acuerdo 88 % (línea base). San Francisco: el solapamiento subió de 38 % a 58 %, con un acuerdo del 61 %. Dos de sus corridas listaron unas 597 decisiones y la tercera 18. Tocumen con Sonnet pasó de 1 a 9 hallazgos y aun así tuvo el aviso de superficial.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/informe-noche.md",
+   "commits": [
+    "5517550",
+    "3898ab0"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 3,
+   "fecha": "2026-10-05",
+   "tanda": "Lote nocturno del 5–6 oct",
+   "titulo": "Lista fija de problemas típicos para que los modelos coincidan",
+   "cambioCorto": "Añadí una lista fija de 12 problemas típicos para que todos los modelos los nombren igual.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Mejoró mucho en Casco Antiguo: de 30 % a 83 %.",
+   "cambio": "Cada revisión parte del estado inicial: la web reescribe extraccion.json y lote.json y reevalúa el motor. Antes, una corrida interrumpida contaminaba la siguiente. Además: máximo 3 revisiones a la vez, 12 hallazgos tipificados con id y título fijos en el agente revisor-planos y regla de doble medición con rango para las medidas decisivas.",
+   "hipotesis": "Que el mismo hallazgo se llame igual entre corridas y suba el solapamiento frente a las rondas 1 y 2.",
+   "resultado": "Casco Antiguo: solapamiento 83 % (antes 30–32 %), acuerdo en el catálogo 87 %. Las tres corridas usaron ids fijos: 9 de 9, 9 de 9 y 11 de 12 hallazgos. La cola de hallazgos que aparecen en una sola corrida bajó de 8–10 a 3. Costo: 31.6 USD (3 corridas).",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo"
+   ],
+   "informe": "docs/demo/informe-noche.md",
+   "commits": [
+    "029789e",
+    "1e87331",
+    "a1c8051",
+    "d2cfa14"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 4,
+   "fecha": "2026-10-06",
+   "tanda": "Segunda vuelta del 6-oct",
+   "titulo": "Aviso cuando la revisión parece demasiado corta",
+   "cambioCorto": "Añadí un aviso cuando la revisión de la IA parece demasiado corta, y lo probé en Casco Antiguo.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. No mejoró: bajó de 83 % a 78 % y una corrida siguió siendo corta.",
+   "cambio": "Instrucción de profundidad mínima antes de cerrar el dictamen: mirar todas las láminas, recorrer los requisitos del Anexo III/IV y pasar la lista tipificada. Además, el aviso de «revisión posiblemente superficial» cuando una corrida propone menos de 3 hallazgos fuera del catálogo.",
+   "hipotesis": "Que ninguna corrida sea superficial y que la cola de hallazgos sueltos desaparezca.",
+   "resultado": "Casco Antiguo: solapamiento 78 %, acuerdo 79 %. Núcleo de 12 hallazgos y cola de 0. Una corrida tuvo el aviso de superficial. Costo: 22.0 USD.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo"
+   ],
+   "informe": "docs/demo/diagnostico-variacion.md",
+   "commits": [
+    "5517550",
+    "3898ab0"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 5,
+   "fecha": "2026-10-06",
+   "tanda": "Comprobación del diagnóstico de variación (6-oct)",
+   "titulo": "Datos que la IA debe leer siempre",
+   "cambioCorto": "Añadí una lista fija de 13 datos que la IA debe leer en cada corrida.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. La IA escribió el 87 % de los datos pedidos. Casco Antiguo quedó en 94 %.",
+   "cambio": "Lista fija de 13 datos obligatorios que cada corrida debe escribir, armada a mano. «zona.otras_zonas_no_aplican»: ya no se listan una por una las reglas de otras zonas. Se cambiaron varias cosas a la vez, sin corrida de control.",
+   "hipotesis": "Que todas las corridas aporten los mismos datos (cobertura) y que el dictamen deje de inflarse con «no aplica».",
+   "resultado": "Datos pedidos escritos: 87 % (Casco 100, 80 y 80 %); recalculado después con la lista de 19 datos, 68–79 %. Solapamiento: Casco 94 %, San Francisco 75 %. San Francisco bajó a 21, 18 y 24 decisiones (antes 597, 597 y 18). El acuerdo en el catálogo no mejoró (Casco 86 %, SF 70 %). Las medidas siguen variando: retiro posterior de Casco de 0 a 2.16 m. En San Francisco, cada modelo asumió una unidad territorial distinta.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/diagnostico-variacion.md",
+   "commits": [
+    "2219af2",
+    "5805ab2"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 6,
+   "fecha": "2026-10-07",
+   "tanda": "Ronda programada del 7-oct, 02:05 (sin tanda)",
+   "titulo": "Lista de datos según las reglas de cada plano",
+   "cambioCorto": "Cambié la lista de datos para que dependa de las reglas que aplican a cada plano.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Empeoró: Casco Antiguo de 94 % a 73 % y San Francisco de 75 % a 28 %.",
+   "cambio": "La lista de datos obligatorios deja de ser fija y sale de las entradas de las reglas que el motor evalúa para cada plano (datos_pedidos.py). Si la evidencia no distingue la unidad territorial, la IA debe declararla con confianza baja. En «Comparar modelos», la misma regla repetida por unidad territorial cuenta como una sola fila.",
+   "hipotesis": "Que la cobertura llegue a 100 % en cualquier plano y que la unidad territorial deje de inventarse.",
+   "resultado": "Datos escritos: 100 % en las 8 corridas, frente a 87 %. Casco: acuerdo en el catálogo 94 %, pero el solapamiento empeoró (94 → 73 %). San Francisco: solapamiento 28 % (antes 75 %) y dictámenes de 47, 39 y 136 decisiones, porque las corridas decidieron las reglas de cada unidad territorial posible. La confianza en la unidad territorial bajó a 0.4–0.6, pero los modelos siguieron sin coincidir. Tocumen: 47 % / 89 %.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "f8db343",
+    "04cf225",
+    "649fc96",
+    "5f3d7c2"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 7,
+   "fecha": "2026-10-07",
+   "tanda": "Ronda del 7-oct por la mañana (sin tanda)",
+   "titulo": "Misma lista de 19 datos para todos los planos",
+   "cambioCorto": "Cambié a una sola lista de 19 datos para todos los planos, tomada de las normas.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Casco Antiguo coincidió en 79 % y la IA escribió el 100 % de los datos.",
+   "cambio": "Se vuelve a una lista fija, pero universal: 19 datos de los Anexos III y IV del Acuerdo 110 (datos_universales.json), sumados a los que piden las reglas del plano. Nueva instrucción: decidir un solo id por grupo de reglas idénticas entre unidades territoriales. Las corridas de San Francisco que arrancaron después de ese cambio la usaron; la de Sonnet, no.",
+   "hipotesis": "Cobertura completa en Casco Antiguo y fin de los dictámenes inflados por unidad territorial.",
+   "resultado": "Casco: 100 % de datos escritos en las 3 corridas (53–79 % en rondas anteriores con la misma lista), solapamiento 79 %, acuerdo 89 %; el retiro posterior quedó entre 1.5 y 2.12 m. San Francisco: 59 % / 70 %, con dictámenes de 149 (Sonnet, sin la instrucción), 26 y 27 decisiones. Seis corridas de esta ronda murieron en un minuto por saltos de línea CRLF en el agente; desde entonces lo comprueba preflight_ia.py. Costo de Casco: 25.4 USD.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "San Francisco"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "663baa5",
+    "097d56b"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 8,
+   "fecha": "2026-10-07",
+   "tanda": "Ronda del 7-oct por la tarde (sin tanda)",
+   "titulo": "Quitar una zona mal cargada en San Francisco",
+   "cambioCorto": "Corregí San Francisco: el sistema le daba a la IA una zona equivocada desde el principio.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Coincidieron en 66 % y las decisiones bajaron de 47–136 a 16–25.",
+   "cambio": "Se corrigió la lectura de la zonificación. El extractor lee el código aunque la etiqueta y el código estén en líneas distintas, y el motor avisa ZONA_DISCREPANTE si la zona del usuario difiere de la del plano. lote_ia.py ya no precarga 1ZM7 en San Francisco: las rondas 1 a 7 de ese plano la usaron por error y no valen como resultado del plano.",
+   "hipotesis": "Ver qué zona determina cada modelo cuando nadie se la da (el plano declara RM3-C2).",
+   "resultado": "Dictámenes de 16, 25 y 18 decisiones (antes 47, 39 y 136). Sonnet y Opus leyeron RM3-C2, dijeron que no existe en la norma cargada y pidieron la CEUS. Fable decidió 1ZM7 con el Documento Gráfico vectorizado. Solapamiento 66 %, acuerdo 84 %. Datos escritos: 95–100 % de 20.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "San Francisco"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "41912af"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 9,
+   "fecha": "2026-10-07",
+   "tanda": "Ronda 9 (7-oct por la noche, sin tanda)",
+   "titulo": "90 reglas nuevas sobre lo que debe traer el plano",
+   "cambioCorto": "Añadí 90 reglas sobre lo que debe traer el plano: la IA lee los datos y el motor de reglas decide.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. En las reglas nuevas coincidieron solo 59 % en Casco y 78 % en San Francisco.",
+   "cambio": "Entran en borrador 90 reglas documentales de los Anexos III y IV. También un extractor de requisitos documentales (solo evidencia positiva), 4 preguntas sí/no en el formulario y la instrucción de que la IA escriba hechos y el motor decida. Es un paquete de cambios sin corrida de control; se compara con la ronda 7 (Casco) y la 8 (San Francisco).",
+   "hipotesis": "Que el motor decida las reglas documentales con los datos de la IA sin inflar el dictamen (tope: Casco 60 y San Francisco 50 decisiones).",
+   "resultado": "Sin inflarse: Casco 26, 29 y 39 decisiones; San Francisco 19, 30 y 25. El motor decidió entre 28 y 37 reglas de los Anexos III y IV por corrida. Los hallazgos propios bajaron (Casco 8, 7, 7; SF 2, 4, 6). Datos escritos: 88–98 % de una lista de 56 a 59. Acuerdo entre modelos en las reglas nuevas: 78 % en SF y 59 % en Casco, por diferencias de interpretación. Costo: Casco 29.0 USD, SF 26.4 USD.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "San Francisco"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "3040392",
+    "db15050",
+    "bf5253c",
+    "ee8273e",
+    "36999d7"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 10,
+   "fecha": "2026-10-07",
+   "tanda": "Lote A (7–8 oct)",
+   "titulo": "Repetir la ronda 9 para ver si fue azar",
+   "cambioCorto": "Repetí la ronda 9 sin cambios para saber si su resultado fue azar.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Fue azar: Casco Antiguo volvió de 79 % a 87 %.",
+   "cambio": "Igual que la ronda 9; no se cambió nada. Se programó con una compuerta de tamaño (compuerta_ronda.py) que la omitía si la ronda 9 inflaba el dictamen.",
+   "hipotesis": "Repetición para medir estabilidad: separar el azar del efecto de las 90 reglas nuevas.",
+   "resultado": "5 de 6 corridas; San Francisco con Fable se cortó por el límite de uso. El acuerdo en el catálogo de Casco volvió a 87 % (en la ronda 9 fue 79 %), así que esa caída era azar. Entre la ronda 9 y la 10, con el mismo modelo, 76–92 % de las reglas nuevas salen igual. Entre modelos, el acuerdo es 59–66 % en Casco y 78–80 % en SF. Costo: Casco 25.2 USD.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "San Francisco"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "202b2eb"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 11,
+   "fecha": "2026-10-08",
+   "tanda": "Lote B (8-oct)",
+   "titulo": "Probar las reglas nuevas en un plano distinto",
+   "cambioCorto": "Probé las reglas nuevas en Tocumen, un plano que no usé para prepararlas.",
+   "efecto": "Sin referencia confirmada: se midió cuánto coincidían los modelos entre sí. Solo terminó Sonnet, con 2 incumplimientos falsos. Opus no terminó.",
+   "cambio": "Igual que la ronda 9. Se programó para Tocumen, Bella Vista y Panamá Norte con Sonnet y Opus, y se detuvo a propósito tras 2 corridas para ahorrar créditos.",
+   "hipotesis": "Ver cómo se comportan las reglas de los Anexos III y IV en planos que no se usaron para ajustarlas.",
+   "resultado": "Solo terminó Tocumen con Sonnet: 26 decisiones, 4 hallazgos propios, 93 % de datos y 11 NO_CUMPLE en las reglas nuevas, sin revisar a mano. Dos de esos NO_CUMPLE eran de estacionamientos y resultaron falsos: «sin numerar ni acotar» y plazas para discapacidad. Tocumen con Opus superó el límite de 45 minutos y falló.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/contexto-claude/03-evidencias.md",
+   "commits": [
+    "202b2eb"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 12,
+   "fecha": "2026-10-08",
+   "tanda": "no documentado",
+   "titulo": "Ronda sin informe propio",
+   "cambioCorto": "Añadí una segunda revisión para completar los datos que faltaban y una lectura del texto de la imagen para la finca.",
+   "efecto": "No tiene informe propio. Medida después, no mejoró frente a la ronda 10 en Casco Antiguo, y Sonnet empeoró.",
+   "cambio": "No documentado: ningún informe describe esta ronda. Según el git log, justo antes de lanzarla (11:22–11:24) entraron la segunda pasada dirigida (51b3327: el servidor reabre la sesión con los datos pendientes) y el OCR RapidOCR como segundo lector del recuadro de la finca (27ffa68). Esa misma mañana, antes, entraron la etapa 2 (376 reglas más en borrador, 0ec1223) y el criterio de rotura de cordón y acera (80b8257).",
+   "hipotesis": "no documentado",
+   "resultado": "No documentado. Solo hay una mención en rondas-shabbat.md: en Casco Antiguo, Sonnet, Opus y Fable tomaron entre 24 y 43 decisiones en las rondas 9, 10 y 12.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco"
+   ],
+   "informe": "no documentado",
+   "commits": [
+    "0ec1223",
+    "80b8257",
+    "51b3327",
+    "27ffa68"
+   ],
+   "etapa": "linea-base"
+  },
+  {
+   "ronda": 13,
+   "fecha": "2026-10-09",
+   "tanda": "Shabbat, tanda 1 (9-oct)",
+   "titulo": "Probar Haiku, el modelo más barato",
+   "cambioCorto": "Probé Haiku, el modelo más barato, con la nueva forma de revisar.",
+   "efecto": "Leyó bien la finca y el área, pero en Casco Antiguo hizo solo 2 decisiones en 4 minutos. Haiku no sirve para revisar.",
+   "cambio": "Entre la ronda 12 y esta entraron: el catálogo definitivo de anteproyecto (1962 reglas revisadas contra la norma), el paso 1 (confirmar finca, área y zona antes de crear el PreCheck), el paso 2 (regiones del plano editables, usadas como evidencia y no como verdad) y la instrucción de dar NO_CUMPLE por ausencia solo con la lámina ampliada a 150 ppp o más y confianza ≥ 0.85. Las mejoras de los detectores de regiones entraron a las 20:13, después del lanzamiento.",
+   "hipotesis": "Probar el flujo nuevo con el modelo más barato. Las 5 tandas de Shabbat van del modelo más barato al más caro, siempre sobre Casco Antiguo (escaneado) y Tocumen (vectorial).",
+   "resultado": "Finca y área correctas en los dos planos. Casco Antiguo: revisión superficial, 2 decisiones en 4 minutos. Tocumen: 18 NO CUMPLE, casi todos por ausencia, el triple que Sonnet en la ronda 11. Repitió el NO CUMPLE de plazas para discapacidad. Tocumen tenía 0 regiones (detector anterior). 3.11 USD. Conclusión: Haiku no sirve como revisor.",
+   "modelos": [
+    "Haiku 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/rondas-shabbat.md",
+   "commits": [
+    "9b9bc2e",
+    "f9b2af3",
+    "ea27a6f",
+    "be258fe",
+    "4f61bed",
+    "437aef9",
+    "f5bd10f"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 14,
+   "fecha": "2026-10-09",
+   "tanda": "Shabbat, tanda 2 (9-oct)",
+   "titulo": "Primera vez con zonas marcadas sobre el plano",
+   "cambioCorto": "Añadí zonas marcadas sobre el plano (lote, estacionamientos, edificio) para que la IA las use.",
+   "efecto": "Mejoró: ningún incumplimiento falso de estacionamientos y costó 1.8 USD por plano, antes 2.4. Pero contó 373 plazas y son 369.",
+   "cambio": "El mismo flujo que la ronda 13, ya con los detectores nuevos: plazas por numeración y separadores, lote por vértices rotulados y huella por ambientes rotulados. Tocumen llega con 374 regiones (369 plazas).",
+   "hipotesis": "Que la IA use las regiones como contraste y no dé NO CUMPLE falsos de estacionamientos.",
+   "resultado": "Casco: 34 decisiones y 2 NO CUMPLE. Tocumen: 45 decisiones y 1 NO CUMPLE (curvas de nivel). La IA usó las regiones por primera vez, pero tomó el último número rotulado (373) como cantidad de plazas: son 369. No hubo NO CUMPLE falso de estacionamientos. 3.66 USD (1.8 por plano, frente a 2.4 de media antes).",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/rondas-shabbat.md",
+   "commits": [
+    "e1e256b",
+    "56fcdb0",
+    "dde9f08",
+    "ccc4505",
+    "354e685"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 15,
+   "fecha": "2026-10-10",
+   "tanda": "Shabbat, tanda 3 (10-oct)",
+   "titulo": "Explicar que el número de una plaza no es el total",
+   "cambioCorto": "Añadí la instrucción de que el número pintado en una plaza no es el total de plazas, y repetí Sonnet.",
+   "efecto": "No mejoró: Sonnet siguió diciendo 373 plazas, y son 369.",
+   "cambio": "Instrucción al agente: un número de plaza rotulado no es un conteo, porque la numeración puede tener huecos (1a22f68). Por lo demás, igual que la ronda 14.",
+   "hipotesis": "Repetición de Sonnet para medir cuánto varía entre corridas, y ver si la instrucción corrige el conteo de plazas.",
+   "resultado": "Casco: 58 decisiones y 1 NO CUMPLE. Tocumen: 52 decisiones y ninguno. Curvas de nivel salió NO CUMPLE en la tanda 2 y OBSERVACIÓN en esta: el mismo modelo cambia en las reglas dudosas. La instrucción no bastó: Sonnet afirmó «373 plazas numeradas continuas», y es falso (faltan 106, 136, 171 y 296). 2.98 USD. Corrección posterior: el resumen de regiones avisa de los huecos (14f1215).",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/rondas-shabbat.md",
+   "commits": [
+    "1a22f68"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 16,
+   "fecha": "2026-10-10",
+   "tanda": "Shabbat, tanda 4 (10-oct)",
+   "titulo": "Avisar a la IA de los números de plaza que faltan",
+   "cambioCorto": "Añadí un aviso de qué números de plaza faltan en la secuencia, y lo probé con Opus.",
+   "efecto": "Mejoró: por primera vez la IA dio 369 plazas, lo correcto. Costó 12.60 USD, unas 4 veces más que Sonnet.",
+   "cambio": "El resumen de regiones que recibe la IA dice directamente que las plazas van numeradas hasta el 373 pero son 369, y qué números faltan (nota_numeracion, 14f1215).",
+   "hipotesis": "Que la IA llegue a 369 plazas al leer el aviso, ahora con Opus.",
+   "resultado": "Primera tanda en que la IA concluye bien: Opus amplió la lámina, confirmó los huecos y dio 369. Explicó la diferencia de ocupación (43.06 % frente a 40.85 %) por los aleros. Pocas decisiones (23 y 27) y pocos NO CUMPLE (2 y 1). 12.60 USD, unas 4 veces Sonnet, en 15–17 minutos.",
+   "modelos": [
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/rondas-shabbat.md",
+   "commits": [
+    "14f1215"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 17,
+   "fecha": "2026-10-10",
+   "tanda": "Shabbat, tanda 5 (10-oct)",
+   "titulo": "Probar Fable con lo mismo",
+   "cambioCorto": "Probé Fable sin cambiar nada más, para compararlo con Opus.",
+   "efecto": "Igual que Opus: 369 plazas y los mismos 2 incumplimientos en Casco, pero a 39.80 USD, 3 veces más. Fable no compensa.",
+   "cambio": "Ningún cambio de código respecto a la ronda 16; cambia el modelo (Fable 5.1).",
+   "hipotesis": "Ver si el modelo más caro aporta sobre Opus.",
+   "resultado": "Las dos revisiones necesitaron una segunda pasada automática (de 14 y 11 reglas sin decidir a 4). Plazas: 369, correcto. Hallazgo único: el polígono del lote no cuadra con los datos de campo a 1:450. En Casco, los mismos 2 NO CUMPLE que Opus. 39.80 USD (3 veces Opus) y 23–36 minutos. Total de Shabbat: 62.15 USD. Recomendación: Sonnet para el día a día y Opus para la revisión final; Fable y Haiku no.",
+   "modelos": [
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/informe-shabbat.md",
+   "commits": [],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 18,
+   "fecha": "2026-10-11",
+   "tanda": "Prueba con y sin polígonos (11-oct)",
+   "titulo": "Tocumen con y sin zonas marcadas",
+   "cambioCorto": "Probé Tocumen con Sonnet dos veces: con zonas marcadas sobre el plano y sin ellas.",
+   "efecto": "Sin diferencia esta vez: las dos corridas dieron 369 plazas, lo correcto.",
+   "cambio": "Copia exacta del plano de Tocumen sin regiones.json («Tocumen sin polígonos»). Mismo modelo, mismos datos confirmados y mismas instrucciones; la única diferencia son los polígonos.",
+   "hipotesis": "Medir cuánto mejora la revisión de la IA cuando el plano trae polígonos.",
+   "resultado": "Con polígonos: 369 plazas (bien), 42 reglas decididas, 2 NO CUMPLE, 1.53 USD. Sin polígonos: 369 plazas (bien), 34 reglas, 0 NO CUMPLE, 2.29 USD. Ningún NO CUMPLE falso de estacionamientos en ninguna de las dos.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "Tocumen sin polígonos"
+   ],
+   "informe": "docs/demo/prueba-poligonos.md",
+   "commits": [
+    "9a9fd12"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 19,
+   "fecha": "2026-10-11",
+   "tanda": "Prueba con y sin polígonos (11-oct)",
+   "titulo": "Repetir la prueba con y sin zonas marcadas",
+   "cambioCorto": "Repetí la prueba con y sin zonas marcadas para ver cuánto cambia entre corridas.",
+   "efecto": "Mejora moderada: con zonas acertó las plazas 2 de 2 veces, sin ellas 1 de 2. La mayor ventaja es que ahorra trabajo a la persona.",
+   "cambio": "Igual que la ronda 18.",
+   "hipotesis": "Repetición para medir estabilidad (2 corridas por lado).",
+   "resultado": "Con polígonos: 369 plazas (bien), 32 reglas, 3 NO CUMPLE, 5.08 USD en 19 minutos. Sin polígonos: 373 plazas (mal), 52 reglas, 1 NO CUMPLE, 1.29 USD. Conclusión de las dos rondas: mejora moderada en el conteo (2 de 2 frente a 1 de 2). La ganancia grande de los polígonos está en el trabajo de la persona (373 → 1 acción) y la mayor parte de la mejora de la revisión vino de las instrucciones.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "Tocumen sin polígonos"
+   ],
+   "informe": "docs/demo/prueba-poligonos.md",
+   "commits": [
+    "9a9fd12"
+   ],
+   "etapa": "regiones"
+  },
+  {
+   "ronda": 20,
+   "fecha": "2026-10-11",
+   "tanda": "Criterios de decisión (11-oct)",
+   "titulo": "Instrucciones escritas para 24 datos de sí o no",
+   "cambioCorto": "Añadí un criterio escrito para los 24 datos de sí o no en que más fallaban los modelos.",
+   "efecto": "Mejoró en esos datos, sobre todo con Opus en Casco Antiguo y Tocumen. Sonnet casi no cambió.",
+   "cambio": "Campo «criterio» en el contrato de datos para los 24 datos más disputados: qué cuenta como sí y qué como no. La web lo añade a la definición que recibe la IA. Con criterio y zona legible, la IA escribe sí o no con confianza ≥ 0.85. La franja de sellos se mide de forma determinista (medir_membrete.py).",
+   "hipotesis": "El diagnóstico halló que las contradicciones fuertes entre corridas venían de datos sí/no leídos distinto (15 reglas en Casco, 16 en Tocumen), no del razonamiento. Los criterios deberían subir la exactitud y bajar las contradicciones.",
+   "resultado": "Exactitud en los datos disputados (rondas 20–21 juntas): Opus en Casco 67 → 100 % y en Tocumen 65 → 94 %. Haiku en Tocumen 65 → 94 %. Sonnet en Casco 25 → 35 % y en Tocumen 50 → 62 %. Haiku no terminó Casco («sin dictamen válido» en 1 minuto). 15.95 USD.",
+   "modelos": [
+    "Haiku 5.5",
+    "Sonnet 5.5",
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/diagnostico-desacuerdos.md",
+   "commits": [
+    "fe3081b"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 21,
+   "fecha": "2026-10-11",
+   "tanda": "Criterios de decisión (11-oct)",
+   "titulo": "Repetir Sonnet con los criterios",
+   "cambioCorto": "Repetí Sonnet con los criterios para ver cuánto cambia entre corridas.",
+   "efecto": "Se cuenta junto con la ronda 20. Sonnet no mejoró más.",
+   "cambio": "Igual que la ronda 20.",
+   "hipotesis": "Repetición de Sonnet para medir estabilidad con los criterios nuevos.",
+   "resultado": "Cuenta junto con la ronda 20 en la exactitud de Sonnet: Casco 35 %, Tocumen 62 %. 2.60 USD.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/diagnostico-desacuerdos.md",
+   "commits": [
+    "fe3081b"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 22,
+   "fecha": "2026-10-11",
+   "tanda": "Criterios de decisión (11-oct)",
+   "titulo": "Corregir curvas de nivel y retiro posterior",
+   "cambioCorto": "Corregí cómo se deciden las curvas de nivel y el retiro posterior cuando falta la medida.",
+   "efecto": "Mejoró Sonnet en Casco Antiguo y en Tocumen.",
+   "cambio": "La segunda pasada lleva el criterio de cada dato pendiente. Se corrigieron dos criterios propios: «0 = sin topografía» daba por cumplida la regla de curvas de nivel, y ahora el 0 va con confianza 0.5 y la IA decide NO_CUMPLE. Un retiro posterior no medido ya no se escribe como 0 con confianza que decida.",
+   "hipotesis": "Que Sonnet se comprometa con los criterios y que el motor no decida con ceros falsos.",
+   "resultado": "Sonnet: Casco 100 % y Tocumen 71 % (1 corrida cada uno). Contradicciones CUMPLE/NO_CUMPLE entre corridas (rondas 20–22 frente a las anteriores): Casco 5.3 → 1.8 %, Tocumen 4.1 → 2.8 %. Curvas: Casco dio NO_CUMPLE y Tocumen OBSERVACIÓN; después se añadió la excepción para cuando el criterio pide decidir. Sonnet siguió sin medir el retiro en Tocumen. 2.61 USD.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/diagnostico-desacuerdos.md",
+   "commits": [
+    "25c5872"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 23,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 1 (12-oct) · lotes r23, g23 y p23",
+   "titulo": "Criterios mejorados con 4 modelos y los 5 planos",
+   "cambioCorto": "Mejoré los criterios y los probé con 4 modelos en los 5 planos, 3 de ellos nuevos.",
+   "efecto": "Mejoró mucho con Sonnet, y también con Opus en planos nuevos. La tanda costó 141 USD.",
+   "cambio": "Los criterios del 11-oct (v2), afinados después de la ronda 22 (coordinador, descripción del trabajo, diseñadores y la excepción de las curvas). Datos confirmados (paso 1) para Bella Vista, Panamá Norte y San Francisco, que entran por primera vez desde la ronda 1.",
+   "hipotesis": "Medir si los criterios mejoran la exactitud y el acuerdo con los 4 modelos, y si generalizan a 3 planos que no se usaron para escribirlos.",
+   "resultado": "Cifras de la tanda 1 (rondas 23–25 juntas, verdad comprobada a mano de 83 datos). Exactitud: Casco con Opus 96 %, Sonnet 88 %, Fable 100 % y Haiku 77 %; Tocumen con Opus 97 %, Sonnet 98 %, Fable 98 % y Haiku 82 %; planos nuevos con Opus 90–100 % y Sonnet 88–94 %. Antes de los criterios, Sonnet acertaba 20–51 %. Acuerdo consigo mismo: Opus 94–96 %, Fable 91–93 %, Sonnet 82–88 %. 141 USD. Se planearon 39 revisiones y 16 salieron de la cola antes de empezar para ahorrar cuota. Esta ronda incluye los planos nuevos; «Tocumen sin polígonos» no llegó a correr.",
+   "modelos": [
+    "Haiku 5.5",
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda1-12oct.md",
+   "commits": [
+    "ec8ceb9",
+    "c76204d",
+    "37df302"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 24,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 1 (12-oct) · lote r24",
+   "titulo": "Primera repetición con los criterios mejorados",
+   "cambioCorto": "Repetí la ronda 23 en Casco Antiguo y Tocumen para ver cuánto cambia entre corridas.",
+   "efecto": "Estable. Cada modelo repitió sus respuestas así: Opus 94–96 %, Fable 91–93 % y Sonnet 82–88 %. Cifras de las rondas 23 a 25 juntas.",
+   "cambio": "Igual que la ronda 23.",
+   "hipotesis": "Repetición para medir estabilidad (acuerdo de cada modelo consigo mismo) en Casco Antiguo y Tocumen.",
+   "resultado": "Cifras de la tanda 1 (rondas 23–25 juntas, verdad comprobada a mano de 83 datos). Exactitud: Casco con Opus 96 %, Sonnet 88 %, Fable 100 % y Haiku 77 %; Tocumen con Opus 97 %, Sonnet 98 %, Fable 98 % y Haiku 82 %; planos nuevos con Opus 90–100 % y Sonnet 88–94 %. Antes de los criterios, Sonnet acertaba 20–51 %. Acuerdo consigo mismo: Opus 94–96 %, Fable 91–93 %, Sonnet 82–88 %. 141 USD. Se planearon 39 revisiones y 16 salieron de la cola antes de empezar para ahorrar cuota. De esta ronda terminaron Casco (Sonnet, Opus y Fable) y Tocumen (los 4 modelos); los planos nuevos se sacaron de la cola.",
+   "modelos": [
+    "Haiku 5.5",
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/tanda1-12oct.md",
+   "commits": [
+    "ec8ceb9",
+    "c76204d"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 25,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 1 (12-oct) · lote r25",
+   "titulo": "Segunda repetición con los criterios mejorados",
+   "cambioCorto": "Repetí otra vez la ronda 23. Solo terminó Tocumen con Sonnet y con Fable.",
+   "efecto": "Sin cambios notables en Tocumen con Sonnet y con Fable. Cifras de las rondas 23 a 25 juntas.",
+   "cambio": "Igual que la ronda 23.",
+   "hipotesis": "Repetición para medir estabilidad en Casco Antiguo y Tocumen.",
+   "resultado": "Cifras de la tanda 1 (rondas 23–25 juntas, verdad comprobada a mano de 83 datos). Exactitud: Casco con Opus 96 %, Sonnet 88 %, Fable 100 % y Haiku 77 %; Tocumen con Opus 97 %, Sonnet 98 %, Fable 98 % y Haiku 82 %; planos nuevos con Opus 90–100 % y Sonnet 88–94 %. Antes de los criterios, Sonnet acertaba 20–51 %. Acuerdo consigo mismo: Opus 94–96 %, Fable 91–93 %, Sonnet 82–88 %. 141 USD. Se planearon 39 revisiones y 16 salieron de la cola antes de empezar para ahorrar cuota. De esta ronda solo terminaron Tocumen con Sonnet y con Fable.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/tanda1-12oct.md",
+   "commits": [
+    "ec8ceb9",
+    "c76204d"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 26,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 2 (12-oct) · lotes t2a y t2c",
+   "titulo": "Tercera versión de los criterios con Sonnet",
+   "cambioCorto": "Añadí criterios para 18 casos dudosos de los planos nuevos y los probé con Sonnet.",
+   "efecto": "Mixto: mejoró San Francisco, pero empeoraron Panamá Norte y Tocumen.",
+   "cambio": "Criterios v3: resuelven 18 ambigüedades de los planos nuevos (escala con varios dibujos, desglose con un solo uso, vivienda unifamiliar, pasaporte, ochava, pérgolas…). El coordinador debe estar en todas las láminas. Las curvas son las del terreno del proyecto. Se corrigió la verdad de Casco (coordinador = no).",
+   "hipotesis": "Que la v3 suba la exactitud de Sonnet en los planos nuevos. Tocumen y Casco van como control.",
+   "resultado": "Sonnet (tanda 2, rondas 26–27): San Francisco 81 → 95 %, Bella Vista 88 → 88 %, Panamá Norte 88 → 81 %, Tocumen 98 → 88 %, Casco 88 → 85 %. Acuerdo entre las 2 corridas de cada plano nuevo: 88–94 %. Errores: retiro posterior en 6 de 6 (copia la cota del retiro mínimo) y curvas en 4 de 4. Hubo una regresión del criterio de desglose por uso. 13.36 USD.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda2-12oct.md",
+   "commits": [
+    "1f215ab",
+    "8c26d35"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 27,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 2 (12-oct) · lote t2b",
+   "titulo": "Repetir los criterios nuevos en los planos nuevos",
+   "cambioCorto": "Repetí la ronda 26 en los 3 planos nuevos para ver cuánto cambia entre corridas.",
+   "efecto": "Estable: las dos corridas de cada plano coincidieron en 88 % (San Francisco), 90 % (Bella Vista) y 94 % (Panamá Norte).",
+   "cambio": "Igual que la ronda 26.",
+   "hipotesis": "Repetición para medir estabilidad de Sonnet en Bella Vista, Panamá Norte y San Francisco.",
+   "resultado": "Cuenta junto con la ronda 26 (2 corridas por plano nuevo): acuerdo entre las dos de 88 % en San Francisco, 90 % en Bella Vista y 94 % en Panamá Norte. Sonnet ya no cambia de opinión al azar.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda2-12oct.md",
+   "commits": [
+    "1f215ab",
+    "8c26d35"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 28,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 3 (12-oct) · lote t3a",
+   "titulo": "Siete mejoras pequeñas a los criterios",
+   "cambioCorto": "Añadí 7 mejoras pequeñas, sobre todo a los criterios, y las probé una por una.",
+   "efecto": "Mejoró en los 5 planos con Sonnet. El retiro posterior y las curvas de nivel siguen fallando.",
+   "cambio": "Siete mejoras, cada una en su propio commit para poder revertirla. La descripción del trabajo que lee el extractor queda con confianza 0.8, así que la decide la IA. Y 6 criterios: coordinador (logo de la desarrolladora), ancho de acera (secciones de calle), escala (los croquis S.E. no cuentan), curvas (rótulos sobre líneas curvas), retiro posterior (la cota «RETIRO» es el mínimo, no la medida) y desglose por uso.",
+   "hipotesis": "Verificar si cada mejora sube su dato o hay que revertirla.",
+   "resultado": "Sonnet subió en los 5 planos a 92–100 %: Casco 92, Tocumen 94, Bella Vista 92, Panamá Norte 92 (2 corridas) y San Francisco 100 %. Descripción, acera, escala y desglose: 6 de 6, 6 de 6, 6 de 6 y 4 de 4. Retiro posterior 1 de 4 y curvas 0 de 3: no se arreglan con texto. Ninguna mejora se revirtió. 10.06 USD.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda3-12oct.md",
+   "commits": [
+    "5666e3f",
+    "b805066",
+    "1296840",
+    "85fb50b",
+    "5f94731",
+    "b5d1f05",
+    "b3034bd"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 29,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 3 (12-oct) · lote t3b",
+   "titulo": "Repetir en Panamá Norte",
+   "cambioCorto": "Repetí la ronda 28 en Panamá Norte para ver cuánto cambia entre corridas.",
+   "efecto": "Estable en Panamá Norte con 2 corridas.",
+   "cambio": "Igual que la ronda 28.",
+   "hipotesis": "Repetición en Panamá Norte, el plano más bajo de la tanda 2, para medir estabilidad.",
+   "resultado": "Cuenta junto con la ronda 28: Panamá Norte 92 % con 2 corridas.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/tanda3-12oct.md",
+   "commits": [
+    "5666e3f",
+    "b805066",
+    "1296840",
+    "85fb50b",
+    "5f94731",
+    "b5d1f05",
+    "b3034bd"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 30,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 4 (12-oct) · lote t4",
+   "titulo": "Programa que mide las curvas de nivel",
+   "cambioCorto": "Añadí un programa que calcula cada cuántos metros van las curvas de nivel leyendo sus números en el plano.",
+   "efecto": "Mejoró Panamá Norte, que ya da 1 m. Bella Vista sigue mal. Sonnet no mejoró más.",
+   "cambio": "medir_curvas.py saca la equidistancia de las curvas de los rótulos de cota del PDF, y el criterio pide ejecutarla antes de mirar la lámina.",
+   "hipotesis": "Que el dato de curvas, que fallaba siempre, se resuelva con código y no con más texto.",
+   "resultado": "Sonnet: Casco 92, Tocumen 88, Bella Vista 92, Panamá Norte 92 y San Francisco 95 %. Panamá Norte ya da 1 m de curvas, lo correcto. Bella Vista sigue mal: rótulos con dos decimales. Retiro posterior: 0 de 3. Conclusión: meseta alrededor del 92 %; lo que queda pide una herramienta de retiro y una decisión de la DOYC sobre el coordinador. 8.13 USD.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda4-12oct.md",
+   "commits": [
+    "fc345c9"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 31,
+   "fecha": "2026-10-12",
+   "tanda": "Prueba de DeepSeek (12-oct)",
+   "titulo": "Primera prueba de DeepSeek",
+   "cambioCorto": "Añadí DeepSeek, un modelo más barato de otra empresa, con un límite de gasto de 20 USD.",
+   "efecto": "Mal en Tocumen: leía bien, pero se daba poca confianza y el motor de reglas no usaba sus datos.",
+   "cambio": "Proveedor nuevo deepseek-api (DeepSeek Flash) con 6 herramientas que corren en el servidor: texto de lámina, recorte, medir membrete, medir curvas, escribir dato y reevaluar. Usa los mismos criterios y el mismo resumen de polígonos que Claude, con un tope de gasto de 20 USD.",
+   "hipotesis": "Saber si un modelo que cuesta centavos revisa al nivel de Opus. Meta acordada: ≥ 90 % de exactitud en los datos disputados.",
+   "resultado": "El informe atribuye a la v1 un 35 % en Tocumen: leía bien, pero ponía confianza 0.6–0.8 y el motor no usaba los datos (47 % de dudas). Esta es la única corrida de DeepSeek anterior a la v2 (ded6c1c, 23:07); la atribución a esta ronda se deduce de la hora.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)"
+   ],
+   "informe": "docs/demo/deepseek-12oct.md",
+   "commits": [
+    "d0f6e89",
+    "93798ef",
+    "f7c8936"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 32,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 5 (12-oct) · lotes t5a y t5b",
+   "titulo": "Criterios corregidos tras revisar a mano otra vez",
+   "cambioCorto": "Añadí a los criterios 6 frases que salieron de revisar a mano las respuestas de la IA.",
+   "efecto": "No empeoró nada con Sonnet ni con Opus en los 5 planos.",
+   "cambio": "La revisión independiente de 20 respuestas de la verdad confirmó 16 y retiró 2 por indecidibles. Añadió 6 frases a los criterios: bandas del marco, «a centro de calle» como cota, línea de servidumbre como LP, retiro acotado en un lindero, terreno del proyecto en las curvas y terraza a nivel que no cuenta. También entró el criterio de áreas abiertas y cerradas. medir_curvas.py sigue desde la ronda 30.",
+   "hipotesis": "Que las frases nuevas no bajen nada, y comparar Sonnet con Opus en los 3 planos nuevos.",
+   "resultado": "Con la verdad corregida, Sonnet: Casco 100, Tocumen 94, Bella Vista 92, Panamá Norte 100 y San Francisco 95 %. Opus: Bella Vista 92, Panamá Norte 100 y San Francisco 100 %. Con criterios claros, el modelo barato lee igual que el caro. Lo que queda en Bella Vista es el retiro del podio y las curvas de dos decimales. 33.63 USD según la tabla de datos.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda5-12oct.md",
+   "commits": [
+    "1698b3d",
+    "0ade855"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 33,
+   "fecha": "2026-10-12",
+   "tanda": "Tanda 6 (12–13 oct) · lotes t6a y t6b, más corridas de DeepSeek",
+   "titulo": "Lo máximo de Claude en el escaneado y DeepSeek mejorado",
+   "cambioCorto": "Probé Fable y Opus en Casco Antiguo, el escaneado, y una versión mejorada de DeepSeek en los 5 planos.",
+   "efecto": "En Casco Antiguo, Fable y Opus dieron lo mismo; Fable cuesta 3 a 13 veces más sin ventaja. DeepSeek no pudo con Casco Antiguo.",
+   "cambio": "Claude (tanda 6, 23:21): ningún cambio de código; Fable en Casco, Bella Vista y Panamá Norte, y Opus en Casco. DeepSeek: la v2 (ded6c1c) pone confianza 0.9 como normal cuando hay evidencia, escribe el valor del plano y no el límite de la norma, y recibe el resumen de regiones. Tocumen se lanzó a las 23:07 y los otros 4 a las 23:27. La v3 (b82cbbb) quedó registrada un minuto después. La ronda cruza la medianoche.",
+   "hipotesis": "Medir el techo alcanzable en Casco Antiguo con los modelos grandes, ver si Fable acierta los datos indecidibles y hacer la primera corrida de DeepSeek por plano.",
+   "resultado": "Claude: Casco 100 % con Fable y con Opus (Sonnet 100 % en la tanda 5); Fable 96 % en Panamá Norte y 92 % en Bella Vista. Fable no aporta sobre Opus ni Sonnet, a 3–13 veces el costo; unos 66 USD. Los tres modelos fallan el retiro del podio de Bella Vista (escriben 2.50; la verdad es 0). DeepSeek: Tocumen 88 % y Panamá Norte 96 %. En Bella Vista (4 %) y San Francisco (10 %) cerró antes de escribir los datos. En Casco Antiguo dio 0 % y copió una cédula mal leída.",
+   "modelos": [
+    "Opus 5.5",
+    "Fable 5.1",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda6-12oct.md",
+   "commits": [
+    "ded6c1c"
+   ],
+   "etapa": "lectura"
+  },
+  {
+   "ronda": 34,
+   "fecha": "2026-10-13",
+   "tanda": "Prueba de DeepSeek (13-oct, madrugada)",
+   "titulo": "DeepSeek con límite de ampliaciones",
+   "cambioCorto": "Añadí a DeepSeek un máximo de 20 ampliaciones de partes de la hoja y corregí nombres de datos mal escritos.",
+   "efecto": "Mejoró mucho Bella Vista. San Francisco quedó mal porque terminó sin pasar sus datos al motor de reglas.",
+   "cambio": "v4: tope de 20 recortes por revisión y aviso a mitad del presupuesto si no ha escrito datos. v5, tras una revisión independiente del código: datos_que_faltan devolvía vacío justo cuando faltaban datos, se añadió un corte duro, el gasto se escribe de forma atómica y se corrigieron 28 claves del contrato que decían «sí/no» para valores en metros (afectaban a todos los modelos).",
+   "hipotesis": "Que DeepSeek deje de gastar el presupuesto en recortes y escriba los datos antes de cerrar.",
+   "resultado": "Bella Vista: de 4 % a 79 %. San Francisco: escribió 62 datos bien, pero cerró sin reevaluar y el motor no los vio; medido 10 %, reevaluado a mano 57 %. De ahí sale la v6.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Bella Vista",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/deepseek-12oct.md",
+   "commits": [
+    "ffe9d51",
+    "09c97bb",
+    "ae7fc44"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 35,
+   "fecha": "2026-10-13",
+   "tanda": "Confirmación de DeepSeek (13-oct, madrugada)",
+   "titulo": "DeepSeek: el motor de reglas siempre recibe los datos",
+   "cambioCorto": "Añadí que el motor de reglas use los datos de DeepSeek aunque DeepSeek termine sin pedirlo.",
+   "efecto": "Mejoró y se estabilizó: cambia poco de una corrida a otra.",
+   "cambio": "v6: si el modelo cierra después de escribir datos sin reevaluar, el sistema corre el motor.",
+   "hipotesis": "Confirmar con 2 corridas por plano vectorial que el resultado es estable y que la bimodalidad (corridas que cierran sin escribir) desaparece.",
+   "resultado": "Rondas 35 y 36 juntas: 8 revisiones, 4.94 USD. Las dos corridas de cada plano dan lo mismo (±3 puntos) y ninguna cerró sin escribir. Con los datos v3: Tocumen 94 %, Panamá Norte 91 %, San Francisco 90 % y Bella Vista 81 %. Acuerdo entre las dos corridas: 74–88 %, frente a 78–93 % de Claude. En toda la prueba de DeepSeek (7 de 17 revisiones) cambió reglas que el motor ya había decidido. Costo por revisión: 0.51–0.71 USD.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/deepseek-12oct.md",
+   "commits": [
+    "f921791"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 36,
+   "fecha": "2026-10-13",
+   "tanda": "Confirmación de DeepSeek (13-oct, madrugada)",
+   "titulo": "Repetir DeepSeek mejorado",
+   "cambioCorto": "Repetí la ronda 35 para ver cuánto cambia DeepSeek entre corridas.",
+   "efecto": "Se cuenta junto con la ronda 35. DeepSeek llevaba gastados 10.40 de 20 USD.",
+   "cambio": "Igual que la ronda 35.",
+   "hipotesis": "Repetición para medir estabilidad (segunda corrida por plano vectorial).",
+   "resultado": "Cuenta junto con la ronda 35 (ver allí). Gasto total de la prueba de DeepSeek hasta aquí: 10.40 USD de 20 (260 llamadas).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/deepseek-12oct.md",
+   "commits": [
+    "f921791"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 37,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 7 (13-oct) · lotes t7a y t7b, más la prueba de fuego de DeepSeek (t7ds)",
+   "titulo": "El motor de reglas manda y la IA solo completa",
+   "cambioCorto": "Añadí que la IA no cambie lo que el motor de reglas ya decidió, y que solo pida documentos que no están en el plano.",
+   "efecto": "Mejoró: la IA ya no quiso cambiar decisiones del motor de reglas, antes 1.5 veces por corrida. Sonnet también mejoró.",
+   "cambio": "Jerarquía motor → IA impuesta por la web: si la IA contradice una regla que el motor ya decidió, prevalece el motor y la decisión queda visible con la nota. INFORMACION_REQUERIDA llega a la web solo para reglas de documento externo, con lo que hay que aportar. Además: revisión DOYC por decisión, regiones en el asistente, informe con modelo y costo, medir_retiro para DeepSeek, criterios de los 7 datos sí/no verificados a mano (verdad planos_v4), huella del podio sin rótulo y regiones propuestas a los 4 planos que no las tenían. La prueba de fuego de DeepSeek (02:24) corrió antes de que INFORMACION_REQUERIDA se limitara a documentos externos (2864f5c, 02:38); la tanda 7 de Claude (04:42), después.",
+   "hipotesis": "La primera tanda que mide el dictamen y no solo la lectura: 0 contradicciones motor–IA (línea base 1.5 por corrida en r33–36) y 0 reglas de documento externo sin «información requerida» (línea base 36). Los criterios de los 7 datos deberían recuperar los 5–15 puntos que la verdad ampliada quita.",
+   "resultado": "Claude (8 revisiones, 33.4 USD): 0 contradicciones con el motor, 0 documentos externos sin IR y 55 decisiones en IR, todas de documento externo. Exactitud con la verdad ampliada (v3 + v4): Sonnet 94–100 % (antes 73–90 %) y Opus 96–100 %. Los 7 datos sí/no, 31 de 31. Solo falla el retiro posterior: Bella Vista 2.50 en vez de 0, y ninguna corrida ejecutó medir_retiro.py. DeepSeek en Bella Vista: cerró por el tope de 0.60 USD con 48 de 98 datos y puso IR en 41 decisiones, 33 de ellas en reglas de solo plano.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda7-13oct.md",
+   "commits": [
+    "9b1e3d6",
+    "fb90d41",
+    "501aab0",
+    "32201e6",
+    "ee6fa82",
+    "6685b5f",
+    "ccc4631",
+    "e4f7a69",
+    "a23e375",
+    "aeb8def",
+    "2864f5c"
+   ],
+   "etapa": "dictamen"
+  },
+  {
+   "ronda": 38,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 8 (13-oct) · lote t8a, más la segunda prueba de fuego de DeepSeek (t8ds)",
+   "titulo": "El sistema mide el retiro posterior",
+   "cambioCorto": "Añadí que el sistema mida el retiro posterior por su cuenta y le dé la medida a la IA.",
+   "efecto": "Mejoró: Sonnet leyó por primera vez el retiro de Bella Vista como 0. DeepSeek siguió escribiendo 2.50.",
+   "cambio": "DeepSeek (02:38): el normalizador quita INFORMACION_REQUERIDA en reglas de solo plano y el tope por revisión sube de 0.6 a 0.9 USD. Claude (05:13): la web corre medir_retiro.py en el servidor y le da la medida hecha a la IA en el prompt («RETIRO POSTERIOR YA MEDIDO…»).",
+   "hipotesis": "Que el retiro posterior, el único dato que seguía fallando, se escriba con la medida del servidor.",
+   "resultado": "DeepSeek en Bella Vista: IR 41 → 7, todas de documento externo. Siguió cerrando por presupuesto (81 datos, 1.0 USD), escribió 2.50 de retiro porque el plano no tenía regiones y tuvo 4 contradicciones. Sonnet: Bella Vista dio retiro 0, la primera corrida de Claude que lo acierta, con 87 % de exactitud. Panamá Norte: 100 % en los datos medidos, pero escribió 7.0 de retiro por una pérgola; se cerró esa salvedad en el prompt. 0 contradicciones y 0 documentos externos sin IR.",
+   "modelos": [
+    "Sonnet 5.5",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/tanda7-13oct.md",
+   "commits": [
+    "2864f5c",
+    "c1f69bf"
+   ],
+   "etapa": "dictamen"
+  },
+  {
+   "ronda": 39,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 9 (13-oct) · lotes t9a, t9b, t9c, t9f, t9ds y t9dsc",
+   "titulo": "DeepSeek frente a Opus en los 5 planos",
+   "cambioCorto": "Subí el límite de gasto de DeepSeek a 1.5 USD por plano y lo comparé con Opus en los 5 planos.",
+   "efecto": "DeepSeek quedó por debajo de Opus, sobre todo en Casco Antiguo y Tocumen.",
+   "cambio": "El tope por revisión de DeepSeek sube de 0.6 a 1.5 USD (a precio de lista; la factura es unas 4 veces menor). Se cerró la salvedad del retiro (terrazas, pérgolas y aleros no cuentan). Se mide en los 5 planos, Casco incluido, con Sonnet, Opus y Fable de referencia y con la verdad ampliada (v3 + v4).",
+   "hipotesis": "Llevar DeepSeek al estándar de Opus y diagnosticar qué le falta.",
+   "resultado": "DeepSeek: Panamá Norte 90 %, San Francisco 93 %, Casco 53 % (más 29 % correctos con confianza 0.6) y Tocumen 0 % (escribió 2 datos de 90). Sonnet 88–100 %, Opus 96–100 %, Fable 97–100 %. 0 contradicciones en Claude y 4 de DeepSeek en Casco. El equipo se quedó sin memoria con 5 revisiones en paralelo y se perdieron Bella Vista (DeepSeek y Opus) y Panamá Norte (Opus). Las 5 de Fable corrieron aunque se habían cancelado. DeepSeek costó 0.33–1.19 USD por plano a precio de lista.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda9-13oct.md",
+   "commits": [
+    "fbef2a3",
+    "ff342ef"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 40,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 9 (13-oct) · lote t40ds",
+   "titulo": "DeepSeek: no terminar con datos sin leer",
+   "cambioCorto": "Añadí que DeepSeek no pueda terminar si le faltan más del 30 % de los datos, y una forma de buscar texto en el plano.",
+   "efecto": "Mejoró DeepSeek en Tocumen y en Casco Antiguo. Ya casi no deja datos sin leer.",
+   "cambio": "Si DeepSeek cierra con menos del 70 % de los datos pedidos, se le devuelve el dictamen con la lista de los que faltan (hasta 2 veces); tras 8 recortes sin escribir, se le obliga a escribir. Herramienta buscar_texto: una expresión en todas las láminas. Método: buscar antes de escribir «no» y decidir con el dibujo que nombra el criterio. La cancelación DELETE vacía la cola.",
+   "hipotesis": "Que DeepSeek no se quede sin presupuesto antes de escribir y que mire en el lugar correcto.",
+   "resultado": "Tocumen 0 → 100 %, Casco 53 → 65 %, Panamá Norte 90 %, Bella Vista 87 % y San Francisco 78 %. Cobertura resuelta en todos: solo faltan 2–4 datos de rampa que no aplican.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda9-13oct.md",
+   "commits": [
+    "6545ec5",
+    "987920f",
+    "9f45109"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 41,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 9 (13-oct) · lotes t41ds, t41ds3 y t41op3",
+   "titulo": "DeepSeek lee el texto de los escaneados",
+   "cambioCorto": "Añadí que DeepSeek reconozca el texto de la imagen en escaneados y cite el texto en que basa cada sí o no.",
+   "efecto": "Mejoró Casco Antiguo con DeepSeek. Opus usó bien el retiro medido por el sistema.",
+   "cambio": "OCR de las láminas escaneadas (Tesseract del extractor, con caché) para buscar_texto y texto_pagina, corrido antes del bucle. En los datos sí/no, citar el texto que sostiene el valor o qué se buscó; sin cita ni búsqueda, confianza 0.6. Opus se relanzó en Bella Vista y Panamá Norte tras la caída del servidor.",
+   "hipotesis": "Que DeepSeek lea el plano escaneado y que sus «no» estén sostenidos. Con Opus, comprobar que el retiro medido en el servidor se escribe con la salvedad cerrada.",
+   "resultado": "DeepSeek: Tocumen 100 %, Casco 100 % (OCR de 7 láminas), Panamá Norte 90 %, San Francisco 89 % y Bella Vista 87 %. 4 contradicciones en Casco. Opus: Panamá Norte 100 % y Bella Vista 97 %, sin contradicciones; escribió el retiro medido en los dos planos (Bella Vista 0, Panamá Norte 9.27 con medida propia de 9.16), y el dato de Panamá Norte vuelve a la medición (9.2 ± 0.35). La re-verificación a mano de 10 datos en disputa confirmó la verdad en los 10.",
+   "modelos": [
+    "Opus 5.5",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda9-13oct.md",
+   "commits": [
+    "c34aec8",
+    "4b6bb69"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 42,
+   "fecha": "2026-10-13",
+   "tanda": "Tanda 9 (13-oct) · lote t42ds",
+   "titulo": "DeepSeek con menos información por consulta",
+   "cambioCorto": "Reduje cuánta información recibe DeepSeek en cada consulta, corregí errores y mejoré 4 criterios.",
+   "efecto": "Mejoró Panamá Norte, pero empeoró Casco Antiguo porque DeepSeek se volvió más prudente.",
+   "cambio": "Contexto más corto por llamada: la lámina 1 por renglones, inicial corto desde la llamada 6 y texto_pagina a 60 000. Correcciones de la revisión de código: buscar_texto ya no invierte los escapes, y un NO_CUMPLE del motor no baja por la confianza de la IA. 4 criterios afinados tras la re-verificación: nivel superior con logo del proyecto, colindantes con la planta general en rango, acera existente acotada e iniciales en DISEÑO que coinciden con el sello.",
+   "hipotesis": "Bajar el costo por llamada y cerrar los errores repetidos de lectura del membrete.",
+   "resultado": "Panamá Norte 97 %, Tocumen 96 %, San Francisco 89 %, Bella Vista 87 % y Casco 76 %: la regla «sin cita, 0.6» lo vuelve prudente en el escaneado. 0 contradicciones en los 5 planos. Contexto: 60–75k tokens de entrada por llamada (antes 105–135k). Costo: 0.35–0.59 USD por plano a precio de lista. Media de las rondas 41–42: ≈ 90 % en lectura (Opus 96–100 %). Conclusión del informe: sirve como primera pasada y para pruebas, pero no sustituye a Opus en la revisión final.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/tanda9-13oct.md",
+   "commits": [
+    "bebe8e9",
+    "bd2f2f5",
+    "e36995f",
+    "693d1ff"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 43,
+   "fecha": "2026-10-13",
+   "tanda": "Comparativa (13-oct) · lotes t43ds y t43cl",
+   "titulo": "Comparar los cinco modelos en igualdad",
+   "cambioCorto": "Probé los cinco modelos con el mismo sistema y los mismos 5 planos para compararlos en igualdad.",
+   "efecto": "Primera comparación de los cinco modelos en planos vectoriales. Haiku y DeepSeek quedaron lejos de los demás.",
+   "cambio": "Ningún cambio de lectura: es la medición de control. Antes, la web inferí el proveedor del modelo pedido (ya no hay que cambiar ia.json entre encolados) y dejé las variantes de DeepSeek por variables de entorno. Cada modelo corrió una vez en cada plano; Fable y Haiku solo en esta ronda.",
+   "hipotesis": "Hasta ahora cada modelo se midió en rondas distintas, con código distinto: no se podían comparar. Con el mismo commit y la misma verdad (129 datos) la diferencia entre modelos es real, no del código.",
+   "resultado": "Exactitud media en los 4 planos vectoriales: Opus 100 %, Fable 97 %, Sonnet 96 %, DeepSeek 81 %, Haiku 72 %. En el escaneado (Casco): Opus 100, Fable 94, Sonnet 94, DeepSeek 88, Haiku 53. DeepSeek bajó frente a la ronda 42 con el mismo código (Bella Vista 87 → 71, Tocumen 96 → 79), sobre todo por datos correctos con confianza baja: por eso hacen falta las repeticiones. 0 contradicciones motor–IA y 0 documentos externos sin INFORMACION_REQUERIDA en las 25 corridas. Costo por revisión: Sonnet 2.46 USD de cuota, Opus 5.97, Fable 26.10, Haiku 1.79, DeepSeek 0.63 a precio de lista (≈ 0.16 real).",
+   "modelos": [
+    "DeepSeek Flash",
+    "Haiku 5.5",
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee",
+    "b9795db"
+   ],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 44,
+   "fecha": "2026-10-13",
+   "tanda": "Comparativa (13–14 oct) · lotes t44ds y t44cl",
+   "titulo": "Segunda repetición de la comparación",
+   "cambioCorto": "Repetí DeepSeek, Sonnet y Opus en los 5 planos sin cambiar nada, para ver cuánto cambia cada uno entre corridas.",
+   "efecto": "Opus y Sonnet quedaron parecidos; DeepSeek, más lejos, sobre todo en el escaneado.",
+   "cambio": "Ningún cambio: misma configuración y mismo commit que la ronda 43.",
+   "hipotesis": "Una corrida por plano no distingue un modelo de otro (Sonnet dio 97 → 87 → 100 en Bella Vista en tres rondas seguidas).",
+   "resultado": "Planos vectoriales: Opus 98 %, Sonnet 97 %, DeepSeek 86 %. Casco (escaneado): Opus 100 %, Sonnet 88 %, DeepSeek 65 %. 0 contradicciones motor–IA en las 15 corridas. DeepSeek varió mucho frente a la ronda 43 en el mismo plano (Bella Vista 71 → 97 %).",
+   "modelos": [
+    "DeepSeek Flash",
+    "Sonnet 5.5",
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee",
+    "b9795db"
+   ],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 45,
+   "fecha": "2026-10-13",
+   "tanda": "Comparativa (14-oct) · lotes t45ds y t45cl",
+   "titulo": "Tercera repetición de la comparación",
+   "cambioCorto": "Repetí por tercera vez DeepSeek, Sonnet y Opus en los 5 planos sin cambios.",
+   "efecto": "DeepSeek cambia mucho más que Sonnet y Opus de una corrida a otra del mismo plano.",
+   "cambio": "Ningún cambio: misma configuración y mismo commit que las rondas 43 y 44.",
+   "hipotesis": "Con tres corridas por plano se aplica la regla de decisión: DeepSeek a ≤ 5 puntos de Sonnet en todas y con ≤ 3 puntos de variación.",
+   "resultado": "Planos vectoriales: Sonnet 96 %, Opus 95 %, DeepSeek 93 % (su mejor ronda). Casco: Sonnet 88, Opus 88, DeepSeek 76. Con las rondas 43–45 juntas (3 corridas por plano): Opus 98 % en vectoriales, Sonnet 96 %, DeepSeek 87 %; en el escaneado 96, 90 y 76. DeepSeek no cumple la regla en ningún plano: su peor corrida queda a 13–28 pts de Sonnet y varía 6–26 pts entre corridas (Sonnet y Opus 0–12). 0 contradicciones motor–IA en las 55 corridas.",
+   "modelos": [
+    "DeepSeek Flash",
+    "Sonnet 5.5",
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee",
+    "b9795db"
+   ],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 46,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t46ds · repetición 1 de 3",
+   "titulo": "DeepSeek sin repasar su razonamiento viejo",
+   "cambioCorto": "Quité a DeepSeek el razonamiento que ya había usado en pasos anteriores, sin otros cambios.",
+   "efecto": "Repetición 1 de 3. El resultado se mide con las tres: ver la ronda 48.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_RECORTE_HISTORIAL=1.",
+   "hipotesis": "Menos contexto viejo podría hacerlo más estable.",
+   "resultado": "Ver la ronda 48: el efecto de la variante se mide con sus tres repeticiones (46–48).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 47,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t47ds · repetición 2 de 3",
+   "titulo": "DeepSeek sin repasar su razonamiento viejo",
+   "cambioCorto": "Quité a DeepSeek el razonamiento que ya había usado en pasos anteriores, sin otros cambios.",
+   "efecto": "Repetición 2 de 3. El resultado se mide con las tres: ver la ronda 48.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_RECORTE_HISTORIAL=1.",
+   "hipotesis": "Menos contexto viejo podría hacerlo más estable.",
+   "resultado": "Ver la ronda 48: el efecto de la variante se mide con sus tres repeticiones (46–48).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 48,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t48ds · repetición 3 de 3",
+   "titulo": "DeepSeek sin repasar su razonamiento viejo",
+   "cambioCorto": "Quité a DeepSeek el razonamiento que ya había usado en pasos anteriores, sin otros cambios.",
+   "efecto": "No cambió frente a antes: siguió cambiando mucho entre corridas y costó algo más. Se descarta.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_RECORTE_HISTORIAL=1.",
+   "hipotesis": "Menos contexto viejo podría hacerlo más estable.",
+   "resultado": "Con 3 corridas por plano: Bella Vista 83 % (±29), Casco 71 (±23), Panamá Norte 93 (±7), San Francisco 88 (±15), Tocumen 86 (±17). Media en vectoriales 88 % frente a 87 % de la base (rondas 43–45): dentro del ruido. Costo 0.61 USD a precio de lista. Se descarta.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 49,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t49ds · repetición 1 de 3",
+   "titulo": "DeepSeek más seguro si cita el texto del escaneado",
+   "cambioCorto": "Añadí que DeepSeek se dé confianza 0.9 cuando cita el texto exacto que reconoció en un escaneado.",
+   "efecto": "Repetición 1 de 3. El resultado se mide con las tres: ver la ronda 51.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_PISO_CONFIANZA_OCR=1.",
+   "hipotesis": "En Casco, DeepSeek leía bien pero dejaba los datos en 0.6 por falta de cita y el motor no los usaba.",
+   "resultado": "Ver la ronda 51: el efecto de la variante se mide con sus tres repeticiones (49–51).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 50,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t50ds · repetición 2 de 3",
+   "titulo": "DeepSeek más seguro si cita el texto del escaneado",
+   "cambioCorto": "Añadí que DeepSeek se dé confianza 0.9 cuando cita el texto exacto que reconoció en un escaneado.",
+   "efecto": "Repetición 2 de 3. El resultado se mide con las tres: ver la ronda 51.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_PISO_CONFIANZA_OCR=1.",
+   "hipotesis": "En Casco, DeepSeek leía bien pero dejaba los datos en 0.6 por falta de cita y el motor no los usaba.",
+   "resultado": "Ver la ronda 51: el efecto de la variante se mide con sus tres repeticiones (49–51).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 51,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t51ds · repetición 3 de 3",
+   "titulo": "DeepSeek más seguro si cita el texto del escaneado",
+   "cambioCorto": "Añadí que DeepSeek se dé confianza 0.9 cuando cita el texto exacto que reconoció en un escaneado.",
+   "efecto": "Mejoró el escaneado (Casco Antiguo); en vectoriales no cambió. Una corrida de Casco no terminó.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_PISO_CONFIANZA_OCR=1.",
+   "hipotesis": "En Casco, DeepSeek leía bien pero dejaba los datos en 0.6 por falta de cita y el motor no los usaba.",
+   "resultado": "Casco 85 % (2 corridas válidas; la tercera no devolvió un dictamen JSON válido), frente a 76 % de la base. Vectoriales 88 % (base 87): Bella Vista 87 (±17), Panamá Norte 88 (±10), San Francisco 92 (±4), Tocumen 88 (±17). Es la única variante con efecto, y solo en el escaneado.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 52,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t52ds · repetición 1 de 3",
+   "titulo": "DeepSeek con menos ampliaciones de la hoja",
+   "cambioCorto": "Bajé de 20 a 12 las ampliaciones de partes de la hoja que puede pedir DeepSeek.",
+   "efecto": "Repetición 1 de 3. El resultado se mide con las tres: ver la ronda 54.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_MAX_RECORTES=12, PRECHECK_DEEPSEEK_RECORTES_SIN_ESCRIBIR=5.",
+   "hipotesis": "Obligarlo a escribir antes reduciría las corridas en que mira mucho y escribe poco.",
+   "resultado": "Ver la ronda 54: el efecto de la variante se mide con sus tres repeticiones (52–54).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 53,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t53ds · repetición 2 de 3",
+   "titulo": "DeepSeek con menos ampliaciones de la hoja",
+   "cambioCorto": "Bajé de 20 a 12 las ampliaciones de partes de la hoja que puede pedir DeepSeek.",
+   "efecto": "Repetición 2 de 3. El resultado se mide con las tres: ver la ronda 54.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_MAX_RECORTES=12, PRECHECK_DEEPSEEK_RECORTES_SIN_ESCRIBIR=5.",
+   "hipotesis": "Obligarlo a escribir antes reduciría las corridas en que mira mucho y escribe poco.",
+   "resultado": "Ver la ronda 54: el efecto de la variante se mide con sus tres repeticiones (52–54).",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 54,
+   "fecha": "2026-10-14",
+   "tanda": "Comparativa (14-oct) · lote t54ds · repetición 3 de 3",
+   "titulo": "DeepSeek con menos ampliaciones de la hoja",
+   "cambioCorto": "Bajé de 20 a 12 las ampliaciones de partes de la hoja que puede pedir DeepSeek.",
+   "efecto": "Empeoró en planos vectoriales: una corrida de Panamá Norte salió muy mal. Se descarta.",
+   "cambio": "Mismo código que las rondas 43–45; el servidor arrancó con PRECHECK_DEEPSEEK_MAX_RECORTES=12, PRECHECK_DEEPSEEK_RECORTES_SIN_ESCRIBIR=5.",
+   "hipotesis": "Obligarlo a escribir antes reduciría las corridas en que mira mucho y escribe poco.",
+   "resultado": "Vectoriales 81 % frente a 87 % de la base; Panamá Norte 72 % (±44, una corrida muy mala), Bella Vista 86 (±13), San Francisco 83, Tocumen 86, Casco 78 (±6). Costo 0.51 USD a precio de lista. Dos corridas de la ronda 54 no terminaron: una por el tope de gasto del contador (60 USD a precio de lista, ≈ 15 reales) y otra sin dictamen válido.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "Bella Vista",
+    "Panamá Norte",
+    "San Francisco"
+   ],
+   "informe": "docs/demo/comparativa-14oct.md",
+   "commits": [
+    "65850ee"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 56,
+   "fecha": "2026-10-15",
+   "tanda": "Lote con IA (15-oct) · Casco Antiguo y Tocumen",
+   "titulo": "Casco Antiguo y Tocumen con Sonnet y Opus",
+   "cambioCorto": "Primera prueba con el Nuevo PreCheck en 2 pasos y documentos complementarios.",
+   "efecto": "Casco Antiguo y Tocumen con Sonnet y Opus; en Tocumen, Opus pasó el límite de 45 minutos.",
+   "cambio": "Mismo motor; lectura en dos pasos y regla del retiro posterior sin cambios.",
+   "hipotesis": "Los dos modelos de Claude leen igual de bien con el flujo nuevo.",
+   "resultado": "Casco Sonnet 95 % (escribió 0 en el retiro posterior, error), Opus 100 %; Tocumen Sonnet 100 %. Costo: Casco 2.96 (Sonnet) y 5.07 USD (Opus); Tocumen 1.77 USD (Sonnet).",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ],
+   "informe": null,
+   "commits": [],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 57,
+   "fecha": "2026-10-16",
+   "tanda": "Comparación (16-oct) · Opus, Sonnet y DeepSeek en 3 planos",
+   "titulo": "Reglas corregidas, CASO-A y DeepSeek con tope de 100 USD",
+   "cambioCorto": "Requisitos de forma del plano y tamaño de lote pasan a observación; se agrega CASO-A con sus documentos.",
+   "efecto": "CASO-A: entre 1 y 3 «No cumple» de la IA (antes 18).",
+   "cambio": "Reglas del Anexo III y IV y de lote como observación; estacionamientos de discapacidad fuera de la vivienda unifamiliar; tope total de DeepSeek en 100 USD del contador y sin tope por revisión.",
+   "hipotesis": "Con las reglas corregidas, CASO-A deja de dar «No cumple» que la norma no exige.",
+   "resultado": "Costo por plano: Opus 4.2–4.7 USD, Sonnet 2.3–2.8, DeepSeek 0.48–0.65 (contador). Todas las corridas marcaron A110-AIV-CURVAS-NIVEL. CASO-A no tiene datos verificados a mano.",
+   "modelos": [
+    "Opus 5.5",
+    "Sonnet 5.5",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "CASO-A"
+   ],
+   "commits": [
+    "f5669a2",
+    "3f39c30",
+    "86372a2",
+    "c8044c9"
+   ],
+   "informe": null,
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 58,
+   "fecha": "2026-10-16",
+   "tanda": "Comparación (16-oct) · segunda sesión de Sonnet",
+   "titulo": "Segunda sesión de Sonnet en los 3 planos",
+   "cambioCorto": "Misma configuración que la ronda 57, repetida con Sonnet para medir cuánto varía.",
+   "efecto": "Sonnet mejora respecto de la primera sesión en Casco Antiguo y Tocumen.",
+   "cambio": "Ninguno: repetición de la ronda 57 con Sonnet.",
+   "hipotesis": "La diferencia entre Sonnet y Opus de la ronda 57 es en parte azar.",
+   "resultado": "Sonnet varía hasta 12 puntos entre dos corridas del mismo plano. CASO-A: 4 «No cumple» de la IA.",
+   "modelos": [
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "CASO-A"
+   ],
+   "informe": null,
+   "commits": [],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 59,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Cierre de la referencia: Sonnet y Opus en 5 planos y CASO-A",
+   "cambioCorto": "Sonnet y Opus en los 5 planos de prueba y en CASO-A (con --forzar).",
+   "efecto": "Sonnet coincide con el consenso de Opus y Fable un 94.5 % en datos y un 91.3 % en decisiones (vectoriales). Opus cuesta 5.0–6.2 USD por plano.",
+   "cambio": "Sin cambios de código; termina la ronda que se cortó el 16-oct.",
+   "hipotesis": "Sonnet queda cerca de Opus a un tercio del costo.",
+   "resultado": "Sonnet 1.2–2.0 USD por plano, Opus 5.0–6.2 USD. CASO-A: Sonnet 2 «No cumple» (acera), Opus 3 (ocupación, área libre, retiro frontal).",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte",
+    "CASO-A"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 60,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Fable en los 5 planos (referencia)",
+   "cambioCorto": "Fable 5.1 en los 5 planos para tener Opus y Fable en cada plano.",
+   "efecto": "Referencia de la noche junto con Opus de la ronda 59.",
+   "cambio": "Sin cambios de código.",
+   "hipotesis": "Opus y Fable coinciden en la mayoría de los datos.",
+   "resultado": "Fable 14–33 USD y 31–50 minutos por plano. Un posible error de la verdad: Tocumen, plano.resumen_areas.desglose_por_uso.",
+   "modelos": [
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 61,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Línea base de DeepSeek (1 de 4)",
+   "cambioCorto": "Línea base de DeepSeek en los 4 vectoriales, con el código de siempre.",
+   "efecto": "Junto con las rondas 62 a 64: 86.3 % de coincidencia con el consenso en datos y 85.2 % en decisiones.",
+   "cambio": "Sin cambios de código.",
+   "hipotesis": "Medir cuánto varía DeepSeek entre corridas.",
+   "resultado": "0.39–0.73 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 62,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Línea base de DeepSeek (2 de 4)",
+   "cambioCorto": "Línea base de DeepSeek en los 4 vectoriales, con el código de siempre.",
+   "efecto": "Ver ronda 61.",
+   "cambio": "Sin cambios de código.",
+   "hipotesis": "Medir cuánto varía DeepSeek entre corridas.",
+   "resultado": "0.40–0.54 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 63,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Enrutamiento de los escaneados a Sonnet (1 de 2)",
+   "cambioCorto": "PRECHECK_DEEPSEEK_ENRUTAR=1: la revisión pedida a DeepSeek de un plano escaneado corre con Sonnet.",
+   "efecto": "Casco Antiguo corrió con Sonnet: 99 % de coincidencia con el consenso de la referencia amplia, frente a 86 % de DeepSeek.",
+   "cambio": "Enrutamiento por capa de texto (más de la mitad de las páginas sin texto).",
+   "hipotesis": "Un escaneado no se puede revisar sin ver la lámina.",
+   "resultado": "Casco con Sonnet 2.29 USD; los vectoriales siguen con DeepSeek (0.53–0.74 USD del contador).",
+   "modelos": [
+    "DeepSeek Flash",
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "e6576b0"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 64,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Enrutamiento de los escaneados a Sonnet (2 de 2)",
+   "cambioCorto": "Repetición de la ronda 63.",
+   "efecto": "Casco con Sonnet 1.80 USD; vectoriales como la línea base.",
+   "cambio": "Enrutamiento por capa de texto.",
+   "hipotesis": "Un escaneado no se puede revisar sin ver la lámina.",
+   "resultado": "Vectoriales 0.42–0.82 USD del contador.",
+   "modelos": [
+    "DeepSeek Flash",
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "e6576b0"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 65,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "DeepSeek con datos de alcance (1 de 2)",
+   "cambioCorto": "PRECHECK_DEEPSEEK_ALCANCE=1: puede escribir las claves que usan las reglas en su condición de aplicación.",
+   "efecto": "Coincidencia con el consenso 88.8 % (+2.5 frente a la línea base), decisiones 86.4 % (+1.2). Se mantiene.",
+   "cambio": "Las claves del aplica_si de las reglas pasan a datos permitidos y se listan en el mensaje inicial.",
+   "hipotesis": "DeepSeek no escribía rampa.sentidos, proyecto.obra_nueva ni lote.cantidad_fincas porque la herramienta se lo impedía.",
+   "resultado": "0.37–0.51 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "371624b"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 66,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "DeepSeek con datos de alcance (2 de 2)",
+   "cambioCorto": "Repetición de la ronda 65.",
+   "efecto": "Ver ronda 65.",
+   "cambio": "Datos de alcance.",
+   "hipotesis": "Escribir los datos de alcance acerca a DeepSeek a Opus.",
+   "resultado": "0.43–0.55 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "371624b"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 67,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Repaso de los datos en duda (1 de 2)",
+   "cambioCorto": "PRECHECK_DEEPSEEK_SEGUNDA_PASADA=1: antes de cerrar se le devuelven los datos con confianza menor a 0.85.",
+   "efecto": "Coincidencia con el consenso 85.6 % (−3.2 frente a alcance) y 55 % más cara. Revertida.",
+   "cambio": "Se disparó en las 8 corridas; escribió más datos (101) sin acercarlos a Opus.",
+   "hipotesis": "Comprobar las dudas acerca los datos a Opus.",
+   "resultado": "0.41–1.17 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "102a8a5",
+    "350f07a"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 68,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Repaso de los datos en duda (2 de 2)",
+   "cambioCorto": "Repetición de la ronda 67.",
+   "efecto": "Ver ronda 67.",
+   "cambio": "Segunda pasada.",
+   "hipotesis": "Comprobar las dudas acerca los datos a Opus.",
+   "resultado": "Revertida en el commit 350f07a.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "102a8a5",
+    "350f07a"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 69,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Forma de los datos como Opus (1 de 2)",
+   "cambioCorto": "PRECHECK_DEEPSEEK_FORMA=1: número de finca solo, lista de fincas, frente = un lindero, ningún 0 en duda en una medida.",
+   "efecto": "Coincidencia con el consenso 85.3 % (−3.5 frente a alcance), decisiones 82.4 %. Revertida.",
+   "cambio": "Párrafo de forma en el prompt; escribir_hecho acepta listas y rechaza un 0 con confianza menor a 0.85.",
+   "hipotesis": "Parte de los desacuerdos con Opus eran de forma, no de lectura.",
+   "resultado": "El rechazo del 0 se disparó en 7 de 8 corridas.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "c4d77d5",
+    "1dec8de"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 70,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Forma de los datos como Opus (2 de 2)",
+   "cambioCorto": "Repetición de la ronda 69.",
+   "efecto": "Ver ronda 69.",
+   "cambio": "Forma de los datos.",
+   "hipotesis": "Parte de los desacuerdos con Opus eran de forma, no de lectura.",
+   "resultado": "Revertida en el commit 1dec8de.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "c4d77d5",
+    "1dec8de"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 71,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Medición final: enrutamiento y alcance (1 de 3)",
+   "cambioCorto": "La mejor combinación de la noche: escaneados a Sonnet y datos de alcance.",
+   "efecto": "Con las rondas 65–66 (20 corridas): 88.1 % de coincidencia con el consenso y 84.8 % en decisiones; Sonnet 94.5 % y 91.3 %.",
+   "cambio": "PRECHECK_DEEPSEEK_ENRUTAR=1 y PRECHECK_DEEPSEEK_ALCANCE=1.",
+   "hipotesis": "La combinación se sostiene con más repeticiones.",
+   "resultado": "0.30–0.83 USD del contador por corrida; Casco con Sonnet 2.01 USD.",
+   "modelos": [
+    "DeepSeek Flash",
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "e6576b0",
+    "371624b"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 72,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Medición final: enrutamiento y alcance (2 de 3)",
+   "cambioCorto": "La mejor combinación de la noche: escaneados a Sonnet y datos de alcance.",
+   "efecto": "Con las rondas 65–66 (20 corridas): 88.1 % de coincidencia con el consenso y 84.8 % en decisiones; Sonnet 94.5 % y 91.3 %.",
+   "cambio": "PRECHECK_DEEPSEEK_ENRUTAR=1 y PRECHECK_DEEPSEEK_ALCANCE=1.",
+   "hipotesis": "La combinación se sostiene con más repeticiones.",
+   "resultado": "0.30–0.83 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "e6576b0",
+    "371624b"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 73,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Medición final: enrutamiento y alcance (3 de 3)",
+   "cambioCorto": "La mejor combinación de la noche: escaneados a Sonnet y datos de alcance.",
+   "efecto": "Con las rondas 65–66 (20 corridas): 88.1 % de coincidencia con el consenso y 84.8 % en decisiones; Sonnet 94.5 % y 91.3 %.",
+   "cambio": "PRECHECK_DEEPSEEK_ENRUTAR=1 y PRECHECK_DEEPSEEK_ALCANCE=1.",
+   "hipotesis": "La combinación se sostiene con más repeticiones.",
+   "resultado": "0.30–0.83 USD del contador por corrida.",
+   "modelos": [
+    "DeepSeek Flash"
+   ],
+   "planos": [
+    "Tocumen (comercial)",
+    "San Francisco",
+    "Bella Vista",
+    "Panamá Norte"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "e6576b0",
+    "371624b"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "ronda": 75,
+   "fecha": "2026-10-19",
+   "tanda": "Noche del 19-oct · DeepSeek frente a Opus y Fable",
+   "titulo": "Revisión XTRA en San Francisco y Casco Antiguo",
+   "cambioCorto": "XTRA: maestro Opus y 3 empleados Sonnet, en un vectorial y un escaneado.",
+   "efecto": "San Francisco: 97 % con el consenso y 98 % en decisiones. Casco Antiguo: 98 % y 97 %.",
+   "cambio": "lote_ia --xtra 3 --modelo-empleados sonnet.",
+   "hipotesis": "La revisión XTRA mejora a Opus solo.",
+   "resultado": "9.46 USD en San Francisco y 12.61 en Casco, contando a los empleados; 21–22 minutos.",
+   "modelos": [
+    "Opus 5.5",
+    "Sonnet 5.5"
+   ],
+   "planos": [
+    "San Francisco",
+    "Casco Antiguo"
+   ],
+   "informe": "docs/demo/informe-noche-2026-10-19.md",
+   "commits": [
+    "0cd36fb"
+   ],
+   "etapa": "comparativa"
+  },
+  {
+   "ronda": 81,
+   "fecha": "2026-10-26",
+   "tanda": "26-oct · Escaneados con cuatro modelos",
+   "titulo": "Casco Antiguo con Sonnet, DeepSeek, Opus y Fable, 3 repeticiones",
+   "cambioCorto": "Medición del plano escaneado con los cuatro modelos, después del harness de DeepSeek.",
+   "efecto": "DeepSeek coincide con Opus y Fable en 90 % de los datos y 90 % de las decisiones (Sonnet 99 % y 95 %); en la ronda 80 eran 83 % y 90 %.",
+   "cambio": "Controles C-CERO y C-FRENTE del 21-oct (primera ronda con ellos); 3 repeticiones por modelo (la r79 y la r80 tenían 1) y Fable.",
+   "hipotesis": "Con el harness, DeepSeek queda a 5 puntos o menos de Sonnet y estable entre repeticiones.",
+   "resultado": "No pasa en datos (9 puntos de Sonnet); en decisiones queda justo a 5. Se repite 90.0 % (Sonnet 91.7 %, Opus 96.4 %, Fable 99.1 %), con 3.3 % de reglas con resultado opuesto. Costo por corrida: DeepSeek 0.56–0.93 USD de lista, Sonnet 1.2–1.9, Opus 2.6–3.2, Fable 21.8 (las otras dos sin dato por el tope del registro).",
+   "modelos": [
+    "Sonnet 5.5",
+    "DeepSeek Flash",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo"
+   ],
+   "informe": "docs/demo/ronda-81/resultados.md",
+   "commits": [
+    "3b008aa",
+    "46c108d"
+   ],
+   "etapa": "deepseek"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tanda": "27-oct · Estabilidad con 8 a la vez",
+   "informe": "docs/demo/ronda-82/resultados.md",
+   "commits": [
+    "dc991c0"
+   ],
+   "etapa": "comparativa",
+   "ronda": 82,
+   "titulo": "Casco Antiguo y Tocumen con Sonnet, Opus y Fable, muchas repeticiones",
+   "cambioCorto": "Mismo código que la r81, más repeticiones, para ver qué datos varían por modelo.",
+   "efecto": "Decisiones iguales entre corridas: Fable 98.2 %, Opus 97.1 %, Sonnet 89.2 % (Casco, junto con la r81).",
+   "cambio": "Sin cambio de código. Casco: Fable ×3, Opus ×8, Sonnet ×8; Tocumen: 2 de cada uno. 8 revisiones a la vez.",
+   "hipotesis": "Con más repeticiones se ve qué datos varían por el modelo y cuáles por el plano.",
+   "resultado": "Lo que varía en todos los modelos es lo que el plano no acota (retiro posterior, pisos, segmento de la acera). Sonnet deja datos vacíos y separa la servidumbre vial (8 de 11 «no»). Costo medio en Casco: Sonnet 1.54, Opus 7.10, Fable 16.6 USD.",
+   "modelos": [
+    "Sonnet 5.5",
+    "Opus 5.5",
+    "Fable 5.1"
+   ],
+   "planos": [
+    "Casco Antiguo",
+    "Tocumen (comercial)"
+   ]
+  },
+  {
+   "fecha": "2026-10-27",
+   "tanda": "27-oct · Estabilidad con 8 a la vez",
+   "informe": "docs/demo/ronda-82/resultados.md",
+   "commits": [
+    "dc991c0"
+   ],
+   "etapa": "comparativa",
+   "ronda": 83,
+   "titulo": "Casco Antiguo con XTRA (Opus y 2 empleados Sonnet), 6 repeticiones",
+   "cambioCorto": "Revisión XTRA repetida 6 veces, junto a la ronda 82.",
+   "efecto": "Decisiones iguales entre corridas: 99.1 %, sin contradicciones; 83 datos iguales en las 6.",
+   "cambio": "Sin cambio de código; ronda aparte porque el nombre de la corrida no distingue XTRA.",
+   "hipotesis": "XTRA es más estable que Opus solo.",
+   "resultado": "Sí: 99.1 % frente a 97.1 % de Opus, por 9.19 USD de media (Opus 7.10). El retiro posterior sigue variando (0 a 2.27 m).",
+   "modelos": [
+    "Opus 5.5"
+   ],
+   "planos": [
+    "Casco Antiguo"
+   ]
+  }
+ ]
+}

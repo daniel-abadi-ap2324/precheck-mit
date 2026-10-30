@@ -1,0 +1,876 @@
+[
+  {
+    "id": "A110-ART13-IDIOMA-ESPANOL",
+    "version": 3,
+    "titulo": "Plano, notas, memorias y documentos en idioma español",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "13",
+      "pagina_pdf": 3,
+      "cita_textual": "Todas las indicaciones contenidas en el plano, notas, memorias técnicas, certificaciones y documentos de registro se presentarán en el idioma español"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['RLA', 'PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'MOVIMIENTO_TIERRA', 'FOTOVOLTAICO', 'BIENES_USO_PUBLICO']",
+    "entradas": [
+      "plano.textos_en_espanol"
+    ],
+    "condicion": "plano.textos_en_espanol == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Todas las indicaciones contenidas en el plano, notas, memorias técnicas, certificaciones y documentos de registro se presentarán en el idioma español",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay indicaciones, notas, memorias o documentos que no están en español (Art. 13). Solo se admiten referencias técnicas en inglés de los reglamentos de la JTIA o de técnicas que exceden la norma.",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El hecho plano.textos_en_espanol debe ser true cuando lo único en inglés son las dos excepciones del artículo (referencias de los reglamentos de la JTIA y técnicas que exceden la norma). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'MOVIMIENTO_TIERRA' = movimiento de tierra (Cap. VII); 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV); el Acuerdo llama también «trámite RDP» a etapas, modificación y movimiento de tierra, que aquí llevan nombre propio. Hechos provisionales (los decide la IA o un extractor futuro): plano.textos_en_espanol. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Idioma de las indicaciones: presentación, pasa a observación por la regla de severidad. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Todas las indicaciones contenidas en el plano, notas, memorias técnicas, certificaciones y documentos de registro se …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART25-DOCUMENTACION-AVALADA",
+    "version": 3,
+    "titulo": "Nueva revisión del anteproyecto por modificación: documentación avalada por la entidad urbanística",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "25",
+      "pagina_pdf": 5,
+      "cita_textual": "siempre y cuando aporte la documentación avalada por la entidad urbanística que lo justifique"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RLA' and anteproyecto.revision_por_modificacion == true",
+    "entradas": [
+      "expediente.documentacion_avalada_entidad_urbanistica.adjunto"
+    ],
+    "condicion": "expediente.documentacion_avalada_entidad_urbanistica.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "siempre y cuando aporte la documentación avalada por la entidad urbanística que lo justifique",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": "siempre y cuando aporte la documentación avalada por la entidad urbanística que lo justifique."
+    },
+    "mensaje_no_cumple": "El anteproyecto se vuelve a someter por una modificación que afecta normas urbanas (densidad, altura, retiros, ocupación o zonas verdes): falta la documentación avalada por la entidad urbanística que la justifique (Art. 25).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hechos provisionales (los decide la IA o un extractor futuro): anteproyecto.revision_por_modificacion, expediente.documentacion_avalada_entidad_urbanistica.adjunto. Si falta un hecho de aplicabilidad (anteproyecto.revision_por_modificacion) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Documentación «avalada por la entidad urbanística»: visto bueno de otra autoridad, pasa a observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («siempre y cuando aporte la documentación avalada por la entidad urbanística que lo justifique», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART27-RECONSIDERACION-REGISTRO-VIGENTE",
+    "version": 3,
+    "titulo": "Reconsideración del anteproyecto aceptado: registro vigente o plano ya ingresado",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "27",
+      "pagina_pdf": 5,
+      "cita_textual": "Se podrá reconsiderar un Anteproyecto registrado como aceptado, siempre y cuando el registro esté vigente. También se podrá reconsiderar un Anteproyecto, aun cuando su registro no esté vigente, si se cuenta con un plano registrado o se ha ingresado una etapa de plano o plano final."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RLA' and anteproyecto.es_reconsideracion == true",
+    "entradas": [
+      "anteproyecto.registro_vigente"
+    ],
+    "condicion": "anteproyecto.registro_vigente == true or anteproyecto.plano_registrado_o_etapa_ingresada == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Se podrá reconsiderar un Anteproyecto registrado como aceptado, siempre y cuando el registro esté vigente. También se podrá reconsiderar un Anteproyecto, aun cuando su registro no esté vigente, si se cuenta con un plano registrado o se ha ingresado una etapa de plano o plano final.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Solo se puede reconsiderar un anteproyecto aceptado con el registro vigente, salvo que ya tenga plano registrado o una etapa o plano final ingresado (Art. 27).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Si el registro no está vigente pero hay plano registrado o etapa ingresada, se evalúa con la norma vigente a la fecha de la solicitud inicial (Art. 27, párr. 2). Solo se lista anteproyecto.registro_vigente en entradas: si es false, la condición consulta anteproyecto.plano_registrado_o_etapa_ingresada. Hechos provisionales (los decide la IA o un extractor futuro): anteproyecto.es_reconsideracion, anteproyecto.registro_vigente, anteproyecto.plano_registrado_o_etapa_ingresada. Si falta un hecho de aplicabilidad (anteproyecto.es_reconsideracion) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita solo traía el párrafo 1; se amplía con el párrafo 2 para probar la rama «or» de la condición. Condición de admisibilidad: bloqueante. Cambios: entradas_opcionales, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B2 («Se podrá reconsiderar un Anteproyecto registrado como aceptado, siempre y cuando el registro esté vigente. También se…», normativa/acuerdo-110/texto-completo.md)",
+    "entradas_opcionales": [
+      "anteproyecto.plano_registrado_o_etapa_ingresada"
+    ]
+  },
+  {
+    "id": "A110-ART28-DELIMITACION-ANTEPROYECTO",
+    "version": 2,
+    "titulo": "Varios anteproyectos en la misma finca: medidas y linderos de cada anteproyecto",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "28",
+      "pagina_pdf": 5,
+      "cita_textual": "Para estos casos dentro de cada finca o lote se deben delimitar las medidas y linderos en cada anteproyecto que se presente"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RLA' and lote.otros_anteproyectos_misma_finca == true",
+    "entradas": [
+      "plano.delimitacion_area_anteproyecto.presente"
+    ],
+    "condicion": "plano.delimitacion_area_anteproyecto.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Para estos casos dentro de cada finca o lote se deben delimitar las medidas y linderos en cada anteproyecto que se presente",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay más de un anteproyecto en la misma finca: el plano debe delimitar las medidas y linderos de este anteproyecto dentro de la finca (Art. 28).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El refrendo del propietario que pide el mismo artículo se verifica con la firma del memorial (A110-ART21-MEMORIAL-FIRMAS). Hechos provisionales (los decide la IA o un extractor futuro): lote.otros_anteproyectos_misma_finca, plano.delimitacion_area_anteproyecto.presente. Si falta un hecho de aplicabilidad (lote.otros_anteproyectos_misma_finca) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Para estos casos dentro de cada finca o lote se deben delimitar las medidas y linderos en cada anteproyecto que se pr…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART28-INDICA-OTROS-PROYECTOS",
+    "version": 3,
+    "titulo": "Varios anteproyectos en la misma finca: el plano indica los otros proyectos y su superficie",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "28",
+      "pagina_pdf": 5,
+      "cita_textual": "a la vez indicar que ya se cuenta con uno o varios proyectos en"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RLA' and lote.otros_anteproyectos_misma_finca == true",
+    "entradas": [
+      "plano.indica_otros_proyectos_finca.presente"
+    ],
+    "condicion": "plano.indica_otros_proyectos_finca.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "a la vez indicar que ya se cuenta con uno o varios proyectos en",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay más de un anteproyecto en la misma finca: el plano debe indicar que ya se cuenta con otros proyectos en ella (Art. 28).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hechos provisionales (los decide la IA o un extractor futuro): lote.otros_anteproyectos_misma_finca, plano.indica_otros_proyectos_finca.presente. Si falta un hecho de aplicabilidad (lote.otros_anteproyectos_misma_finca) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): La cita se corta en el salto de página y no prueba la superficie; se recorta el mensaje a lo que dice la cita. Cambios: mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («a la vez indicar que ya se cuenta con uno o varios proyectos en», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART30-CESION-DERECHOS-NOTA",
+    "version": 2,
+    "titulo": "Cesión de derechos de autor del diseño: nota firmada por cedente y cesionario, notariada",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "30",
+      "pagina_pdf": 6,
+      "cita_textual": "De realizar una cesión debe informarse de la misma, mediante una nota digitalizada en formato PDF, dirigida al director de la DOYC, firmada el cedente y el cesionario, debidamente notariada"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['RLA', 'PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'FOTOVOLTAICO'] and expediente.hay_cesion_derechos == true",
+    "entradas": [
+      "expediente.nota_cesion_derechos_notariada.adjunto"
+    ],
+    "condicion": "expediente.nota_cesion_derechos_notariada.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "De realizar una cesión debe informarse de la misma, mediante una nota digitalizada en formato PDF, dirigida al director de la DOYC, firmada el cedente y el cesionario, debidamente notariada",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Se usa un diseño cedido por su autor: falta la nota dirigida al director de la DOYC, firmada por el cedente y el cesionario y notariada (Art. 30 y equivalentes).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Equivalentes en Arts. 47, 60, 71, 82 y 100. En etapas y modificación la cesión se informa «antes de finalizar el registro» (Arts. 71 y 82). La cita conserva la errata «firmada el cedente». La reválida de plano tiene regla propia (A110-ART109-PROFESIONAL-O-CESION). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII). 'RDP' = plano constructivo de edificación (Cap. IV); el Acuerdo llama también «trámite RDP» a etapas, modificación y movimiento de tierra, que aquí llevan nombre propio. Hechos provisionales (los decide la IA o un extractor futuro): expediente.hay_cesion_derechos, expediente.nota_cesion_derechos_notariada.adjunto. Si falta un hecho de aplicabilidad (expediente.hay_cesion_derechos) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («De realizar una cesión debe informarse de la misma, mediante una nota digitalizada en formato PDF, dirigida al direct…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART39-ESPECIALIZADO-APROBACIONES",
+    "version": 2,
+    "titulo": "Plano misceláneo especializado: aprobaciones y certificaciones de entidades fuera de la Ventanilla Única",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "39",
+      "pagina_pdf": 8,
+      "cita_textual": "se deben presentar aprobaciones y certificaciones de entidades específicas que no se encuentran incorporadas a la Ventanilla Única, para poder proceder al registro"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite == 'PLANO_MISCELANEO' and proyecto.misc_especializado == true",
+    "entradas": [
+      "proyecto.misc_especializado"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "se deben presentar aprobaciones y certificaciones de entidades específicas que no se encuentran incorporadas a la Ventanilla Única, para poder proceder al registro",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Plano misceláneo especializado (torres de telecomunicaciones, vallas, apuntalamiento…): faltan las aprobaciones o certificaciones de las entidades específicas (Art. 39).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: qué entidades corresponden (ASEP, MIVIOT, Mi Ambiente, AAC, Mi Cultura, ACP, SINAPROC…) lo decide el revisor según la obra («podrán requerir», párr. 2). Bloqueante porque el párr. 1 las exige «para poder proceder al registro». Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.misc_especializado. Si falta un hecho de aplicabilidad (proyecto.misc_especializado) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («se deben presentar aprobaciones y certificaciones de entidades específicas que no se encuentran incorporadas a la Ven…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART46-CALCULOS-CADA-PROFESIONAL",
+    "version": 2,
+    "titulo": "Sistemas diseñados por varios profesionales: cálculos de cada uno",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "46",
+      "pagina_pdf": 9,
+      "cita_textual": "siempre y cuando cada uno sea responsable y garante de su diseño y presente los respectivos cálculos digitalizados en formato PDF, de requerirse"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT'] and proyecto.varios_profesionales_sistemas == true",
+    "entradas": [
+      "expediente.calculos_cada_profesional.adjunto"
+    ],
+    "condicion": "expediente.calculos_cada_profesional.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "siempre y cuando cada uno sea responsable y garante de su diseño y presente los respectivos cálculos digitalizados en formato PDF, de requerirse",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los sistemas los diseñan varios profesionales: cada uno debe presentar los cálculos de su diseño (Art. 46 y equivalentes).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Equivalentes en Arts. 61, 72 y 82. Qué cálculos «se requieren» por sistema lo fija el Anexo V (memorias por sección). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI). 'RDP' = plano constructivo de edificación (Cap. IV); el Acuerdo llama también «trámite RDP» a etapas, modificación y movimiento de tierra, que aquí llevan nombre propio. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.varios_profesionales_sistemas, expediente.calculos_cada_profesional.adjunto. Si falta un hecho de aplicabilidad (proyecto.varios_profesionales_sistemas) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («siempre y cuando cada uno sea responsable y garante de su diseño y presente los respectivos cálculos digitalizados en…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART54-AUTORIZACION-REPETICION",
+    "version": 2,
+    "titulo": "Repetición de planos típicos de vivienda: autorización del arquitecto diseñador y del promotor",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "54",
+      "pagina_pdf": 10,
+      "cita_textual": "previa autorización digitalizada en formato PDF por el arquitecto diseñador y el promotor, siempre y cuando el modelo de la vivienda no sufra cambios"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RDP' and proyecto.repeticion_plano_tipico == true",
+    "entradas": [
+      "expediente.autorizacion_repeticion.adjunto"
+    ],
+    "condicion": "expediente.autorizacion_repeticion.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "previa autorización digitalizada en formato PDF por el arquitecto diseñador y el promotor, siempre y cuando el modelo de la vivienda no sufra cambios",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Se repite un plano típico de vivienda en otras fincas: falta la autorización del arquitecto diseñador y del promotor; el modelo no puede sufrir cambios (Art. 54).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. 'RDP' = plano constructivo de edificación (Cap. IV); el Acuerdo llama también «trámite RDP» a etapas, modificación y movimiento de tierra, que aquí llevan nombre propio. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.repeticion_plano_tipico, expediente.autorizacion_repeticion.adjunto. Si falta un hecho de aplicabilidad (proyecto.repeticion_plano_tipico) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («previa autorización digitalizada en formato PDF por el arquitecto diseñador y el promotor, siempre y cuando el modelo…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART54-HOJA1-IMPLANTACION",
+    "version": 2,
+    "titulo": "Repetición de planos típicos: Hoja 1 con datos legales e implantación en los nuevos lotes",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "54",
+      "pagina_pdf": 10,
+      "cita_textual": "Para esto deberá presentarse la Hoja 1 del Plano en formato PDF con los datos legales y la implantación sobre los nuevos lotes."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RDP' and proyecto.repeticion_plano_tipico == true",
+    "entradas": [
+      "expediente.hoja1_implantacion_nuevos_lotes.adjunto"
+    ],
+    "condicion": "expediente.hoja1_implantacion_nuevos_lotes.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Para esto deberá presentarse la Hoja 1 del Plano en formato PDF con los datos legales y la implantación sobre los nuevos lotes.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Repetición de plano típico: falta la Hoja 1 con los datos legales y la implantación sobre los nuevos lotes (Art. 54).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. 'RDP' = plano constructivo de edificación (Cap. IV); el Acuerdo llama también «trámite RDP» a etapas, modificación y movimiento de tierra, que aquí llevan nombre propio. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.repeticion_plano_tipico, expediente.hoja1_implantacion_nuevos_lotes.adjunto. Si falta un hecho de aplicabilidad (proyecto.repeticion_plano_tipico) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Para esto deberá presentarse la Hoja 1 del Plano en formato PDF con los datos legales y la implantación sobre los nue…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART67-HOJA1-ETAPA-PREVIA",
+    "version": 2,
+    "titulo": "Plano por etapas con etapas previas: Hoja N°1 de la etapa registrada anteriormente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "67",
+      "pagina_pdf": 12,
+      "cita_textual": "En caso de que se hayan registrado etapas previas, incluir copia digitalizada en formato PDF de la Hoja N°1 del Plano de Edificación por Etapas registrado anteriormente por la DOYC."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RDP_ETAPAS' and expediente.etapas_previas_registradas == true",
+    "entradas": [
+      "expediente.hoja1_etapa_previa.adjunto"
+    ],
+    "condicion": "expediente.hoja1_etapa_previa.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "En caso de que se hayan registrado etapas previas, incluir copia digitalizada en formato PDF de la Hoja N°1 del Plano de Edificación por Etapas registrado anteriormente por la DOYC.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay etapas previas registradas: falta la Hoja N°1 del plano por etapas registrado anteriormente (Art. 67; Anexo V, Estructural, 7).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'RDP_ETAPAS' = plano por etapas (Cap. V). Hechos provisionales (los decide la IA o un extractor futuro): expediente.etapas_previas_registradas, expediente.hoja1_etapa_previa.adjunto. Si falta un hecho de aplicabilidad (expediente.etapas_previas_registradas) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («En caso de que se hayan registrado etapas previas, incluir copia digitalizada en formato PDF de la Hoja N°1 del Plano…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART102-COINCIDE-LOTIFICACION-MIVIOT",
+    "version": 2,
+    "titulo": "Bienes de uso público o parques: conforme al plano de lotificación registrado por el MIVIOT",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "102",
+      "pagina_pdf": 18,
+      "cita_textual": "deberá ser revisado y registrado en la DOYC, de acuerdo con el Plano de Lotificación registrado por el MIVIOT"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite == 'BIENES_USO_PUBLICO'",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberá ser revisado y registrado en la DOYC, de acuerdo con el Plano de Lotificación registrado por el MIVIOT",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano de bienes de uso público o parques no corresponde con el plano de lotificación registrado por el MIVIOT (Art. 102).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: el revisor compara el área y la ubicación del bien de uso público con la lotificación registrada. Trámites provisionales: 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deberá ser revisado y registrado en la DOYC, de acuerdo con el Plano de Lotificación registrado por el MIVIOT», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART110-CODIGO-PLANO-REVALIDA",
+    "version": 2,
+    "titulo": "Reválida de plano: vincula el plano completo con su código de registro",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "110, num. 2",
+      "pagina_pdf": 19,
+      "cita_textual": "Vincular el plano que se desea revalidar completo, presentando el Código de Registro Digital del Plano."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'REVALIDA'",
+    "entradas": [
+      "expediente.codigo_plano_registrado.vinculado"
+    ],
+    "condicion": "expediente.codigo_plano_registrado.vinculado == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Vincular el plano que se desea revalidar completo, presentando el Código de Registro Digital del Plano.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Debe vincularse el plano completo que se revalida con su Código de Registro Digital (Art. 110, num. 2).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El memorial del num. 1 lo verifica A110-ART53-MEMORIAL-FIRMAS; la tasa del num. 3 la controla la plataforma. Trámites provisionales: 'REVALIDA' = reválida de plano (Cap. X). Hechos provisionales (los decide la IA o un extractor futuro): expediente.codigo_plano_registrado.vinculado. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Vincular el plano que se desea revalidar completo, presentando el Código de Registro Digital del Plano.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART117-EXTENSION-CAUSA-IMPUTABLE",
+    "version": 2,
+    "titulo": "Extensión de la ATC: retraso probado e imputable a la Ventanilla Única",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "117",
+      "pagina_pdf": 20,
+      "cita_textual": "por causas probadas e imputables a la Ventanilla Única de la DOYC, se podrá extender la ATC por una sola vez adicional, por un período de 30 días hábiles"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['ATC', 'PDC_CON_ATC'] and atc.extendida == true",
+    "entradas": [
+      "expediente.prueba_retraso_imputable_vu.adjunto"
+    ],
+    "condicion": "expediente.prueba_retraso_imputable_vu.adjunto == true",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O4",
+      "cita": "por causas probadas e imputables a la Ventanilla Única de la DOYC, se podrá extender la ATC por una sola vez adicional, por un período de 30 días hábiles",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ATC extendida debe sustentarse en un retraso del registro probado e imputable a la Ventanilla Única (Art. 117).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la extensión «se podrá» conceder y la decide la DOYC. El plazo (120 + 30 días hábiles, una sola vez) ya lo evalúa A110-ATC-VIGENCIA (reglas/reglas_a110_borrador.json). Trámites provisionales: 'ATC' = ATC (Cap. XI). La ATC se acota con ['ATC', 'PDC_CON_ATC'] porque A110-ATC-VIGENCIA usa 'PDC_CON_ATC'; falta decidir un solo nombre. Hechos provisionales (los decide la IA o un extractor futuro): expediente.prueba_retraso_imputable_vu.adjunto. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O4 («por causas probadas e imputables a la Ventanilla Única de la DOYC, se podrá extender la ATC por una sola vez adiciona…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART136-ACERA-NO-SUPERA-PDC",
+    "version": 2,
+    "titulo": "Uso de acera: el tiempo solicitado no supera la vigencia del Permiso de Construcción (5 años)",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "136",
+      "pagina_pdf": 24,
+      "cita_textual": "que en ningún caso será superior al período del Permiso de Construcción"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite == 'PDC' and solicita_uso_acera == true and existe(uso_acera.tiempo_anios)",
+    "entradas": [
+      "uso_acera.tiempo_anios"
+    ],
+    "condicion": "uso_acera.tiempo_anios <= 5",
+    "unidad": "años",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "que en ningún caso será superior al período del Permiso de Construcción",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El tiempo de uso de acera solicitado supera el período del Permiso de Construcción, que es de 5 años (Art. 136).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El límite de 5 años sale del mismo artículo («El Permiso de Construcción tendrá una validez de cinco (5) años»). Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII). Hechos provisionales (los decide la IA o un extractor futuro): uso_acera.tiempo_anios. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B2 («que en ningún caso será superior al período del Permiso de Construcción», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART138-NOTIFICACION-15-DIAS",
+    "version": 2,
+    "titulo": "Explosivos en movimiento de tierra: primera notificación con 15 días de anticipación",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "138",
+      "pagina_pdf": 24,
+      "cita_textual": "con quince (15) días de anticipación a la fecha prevista para su realización"
+    },
+    "tipo": "plazo",
+    "aplica_si": "tramite == 'PDC' and obra.usa_explosivos == true and existe(explosivos.notificacion_1_dias_anticipacion)",
+    "entradas": [
+      "explosivos.notificacion_1_dias_anticipacion"
+    ],
+    "condicion": "explosivos.notificacion_1_dias_anticipacion >= 15",
+    "unidad": "días",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "tendrá la obligación de realizar dos notificaciones, para poder proceder a los trabajos",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La primera notificación escrita a la Junta Comunal y a los colindantes debe hacerse con 15 días de anticipación a los trabajos con explosivos (Art. 138).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la notificación ocurre después de emitido el permiso, «para poder proceder a los trabajos». El texto dice «días», sin «hábiles». Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII). Hechos provisionales (los decide la IA o un extractor futuro): obra.usa_explosivos, explosivos.notificacion_1_dias_anticipacion. Si falta un hecho de aplicabilidad (obra.usa_explosivos) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («tendrá la obligación de realizar dos notificaciones, para poder proceder a los trabajos», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART138-NOTIFICACION-2-DIAS",
+    "version": 2,
+    "titulo": "Explosivos en movimiento de tierra: segunda notificación con 2 días de anticipación",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "138",
+      "pagina_pdf": 24,
+      "cita_textual": "dos (02) días de anticipación a la fecha prevista para su realización"
+    },
+    "tipo": "plazo",
+    "aplica_si": "tramite == 'PDC' and obra.usa_explosivos == true and existe(explosivos.notificacion_2_dias_anticipacion)",
+    "entradas": [
+      "explosivos.notificacion_2_dias_anticipacion"
+    ],
+    "condicion": "explosivos.notificacion_2_dias_anticipacion >= 2",
+    "unidad": "días",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "tendrá la obligación de realizar dos notificaciones, para poder proceder a los trabajos",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La segunda notificación escrita a la Junta Comunal y a los colindantes debe hacerse con 2 días de anticipación a los trabajos con explosivos (Art. 138).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la notificación ocurre después de emitido el permiso. El texto dice «días», sin «hábiles». Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII). Hechos provisionales (los decide la IA o un extractor futuro): obra.usa_explosivos, explosivos.notificacion_2_dias_anticipacion. Si falta un hecho de aplicabilidad (obra.usa_explosivos) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («tendrá la obligación de realizar dos notificaciones, para poder proceder a los trabajos», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART141-REVALIDA-ANTES-VENCIMIENTO",
+    "version": 2,
+    "titulo": "Reválida del Permiso de Construcción solicitada antes de su vencimiento",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "141",
+      "pagina_pdf": 25,
+      "cita_textual": "que se deberá solicitar previa a su fecha de vencimiento en la DOYC"
+    },
+    "tipo": "plazo",
+    "aplica_si": "tramite == 'REVALIDA_PDC'",
+    "entradas": [
+      "permiso_construccion.vigente"
+    ],
+    "condicion": "permiso_construccion.vigente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "que se deberá solicitar previa a su fecha de vencimiento en la DOYC",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La reválida del Permiso de Construcción debe solicitarse antes de su fecha de vencimiento (Art. 141).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el Art. 139 dice que se podrá pedir la reválida cuando «transcurra la totalidad de la validez del Permiso», lo que contradice el Art. 141. Trámites provisionales: 'REVALIDA_PDC' = reválida del PDC (Cap. XIV). Hechos provisionales (los decide la IA o un extractor futuro): permiso_construccion.vigente. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B3 («que se deberá solicitar previa a su fecha de vencimiento en la DOYC», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART144-TITULAR-O-TRANSFERENCIA",
+    "version": 3,
+    "titulo": "Reválida del PDC: la pide su titular o, si es otro, con transferencia registrada antes",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "144",
+      "pagina_pdf": 25,
+      "cita_textual": "En caso de que lo vaya a solicitar otro profesional idóneo o empresa constructora, debe realizar un Registro de Transferencia de Permiso de Construcción"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'REVALIDA_PDC'",
+    "entradas": [
+      "constructor.es_titular_permiso_original"
+    ],
+    "condicion": "constructor.es_titular_permiso_original == true or expediente.transferencia_permiso_registrada == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "En caso de que lo vaya a solicitar otro profesional idóneo o empresa constructora, debe realizar un Registro de Transferencia de Permiso de Construcción",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La reválida la pide un profesional o empresa distinto del titular del permiso original: primero debe registrarse la Transferencia del Permiso de Construcción (Art. 144).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'REVALIDA_PDC' = reválida del PDC (Cap. XIV). Hechos provisionales (los decide la IA o un extractor futuro): constructor.es_titular_permiso_original, expediente.transferencia_permiso_registrada. | Versión 2 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (expediente.transferencia_permiso_registrada): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («En caso de que lo vaya a solicitar otro profesional idóneo o empresa constructora, debe realizar un Registro de Trans…», normativa/acuerdo-110/texto-completo.md)",
+    "entradas_opcionales": [
+      "expediente.transferencia_permiso_registrada"
+    ]
+  },
+  {
+    "id": "A110-ART169-AREA-CARGA-DENTRO-PROYECTO",
+    "version": 2,
+    "titulo": "Grúa o montacarga: área de carga y descarga dentro del proyecto",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "169, lit. a",
+      "pagina_pdf": 31,
+      "cita_textual": "El área de carga y descarga que debe quedar dentro del proyecto."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite == 'GRUA'",
+    "entradas": [
+      "plano.hoja1.area_carga_descarga_dentro_proyecto"
+    ],
+    "condicion": "plano.hoja1.area_carga_descarga_dentro_proyecto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "El área de carga y descarga que debe quedar dentro del proyecto.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área de carga y descarga del equipo debe quedar dentro del proyecto (Art. 169, lit. a; Art. 168, lit. c).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Equivalentes en Arts. 168. Verificable en la Hoja N°1 que pide el Art. 166, num. 2. Trámites provisionales: 'GRUA' = grúa o montacarga (Cap. XVII). Hechos provisionales (los decide la IA o un extractor futuro): plano.hoja1.area_carga_descarga_dentro_proyecto. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («El área de carga y descarga que debe quedar dentro del proyecto.», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-ART170-VIGENCIA-NO-SUPERA-PDC",
+    "version": 2,
+    "titulo": "Grúa o estructura temporal: vigencia solicitada no supera la del Permiso de Construcción",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "170",
+      "pagina_pdf": 32,
+      "cita_textual": "pero en ningún caso puede superar la vigencia del Permiso de Construcción"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['GRUA', 'ESTRUCTURA_TEMPORAL'] and existe(permiso_solicitado.vigencia_meses) and existe(permiso_construccion.meses_restantes)",
+    "entradas": [
+      "permiso_solicitado.vigencia_meses",
+      "permiso_construccion.meses_restantes"
+    ],
+    "condicion": "permiso_solicitado.vigencia_meses <= permiso_construccion.meses_restantes",
+    "unidad": "meses",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "pero en ningún caso puede superar la vigencia del Permiso de Construcción",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La vigencia solicitada para la grúa o la estructura temporal supera la del Permiso de Construcción (Art. 170; Art. 179).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Equivalentes en Arts. 179. Si la obra solo tiene ATC (Art. 164) la comparación debe hacerse con la vigencia de la ATC; queda para el revisor. Trámites provisionales: 'GRUA' = grúa o montacarga (Cap. XVII); 'ESTRUCTURA_TEMPORAL' = estructura temporal (Cap. XVIII). Hechos provisionales (los decide la IA o un extractor futuro): permiso_solicitado.vigencia_meses, permiso_construccion.meses_restantes. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B2 («pero en ningún caso puede superar la vigencia del Permiso de Construcción», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART175-ESTRUCTURA-DENTRO-PROPIEDAD",
+    "version": 2,
+    "titulo": "Estructura temporal dentro de la propiedad y sin obstruir a los peatones",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "175",
+      "pagina_pdf": 32,
+      "cita_textual": "La instalación de Estructuras Temporales debe realizarse dentro de la propiedad y no puede obstruir la libre circulación de los peatones."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite == 'ESTRUCTURA_TEMPORAL'",
+    "entradas": [
+      "plano.hoja1.estructura_temporal_dentro_propiedad"
+    ],
+    "condicion": "plano.hoja1.estructura_temporal_dentro_propiedad == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "La instalación de Estructuras Temporales debe realizarse dentro de la propiedad y no puede obstruir la libre circulación de los peatones.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La estructura temporal debe quedar dentro de la propiedad sin obstruir la circulación de los peatones (Art. 175).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Verificable con la ubicación a escala de la Hoja N°1 (Art. 177, num. 2). La exigencia de PDC o ATC vigente la evalúa A110-ART164-PDC-O-ATC-VIGENTE. Trámites provisionales: 'ESTRUCTURA_TEMPORAL' = estructura temporal (Cap. XVIII). Hechos provisionales (los decide la IA o un extractor futuro): plano.hoja1.estructura_temporal_dentro_propiedad. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («La instalación de Estructuras Temporales debe realizarse dentro de la propiedad y no puede obstruir la libre circulac…», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-ART176-SOLICITANTE-TITULAR-PDC",
+    "version": 2,
+    "titulo": "Estructura temporal: se expide al titular del Permiso de Construcción",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "176",
+      "pagina_pdf": 32,
+      "cita_textual": "El Permiso Digital para Estructura Temporal se expedirá al profesional idóneo o empresa constructora responsable del Permiso de Construcción"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'ESTRUCTURA_TEMPORAL'",
+    "entradas": [
+      "constructor.es_titular_permiso_construccion"
+    ],
+    "condicion": "constructor.es_titular_permiso_construccion == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "El Permiso Digital para Estructura Temporal se expedirá al profesional idóneo o empresa constructora responsable del Permiso de Construcción",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El permiso de estructura temporal debe solicitarlo el profesional o la empresa responsable del Permiso de Construcción (Art. 176).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'ESTRUCTURA_TEMPORAL' = estructura temporal (Cap. XVIII). Hechos provisionales (los decide la IA o un extractor futuro): constructor.es_titular_permiso_construccion. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («El Permiso Digital para Estructura Temporal se expedirá al profesional idóneo o empresa constructora responsable del …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART182-SOLICITANTE-OCUPACION",
+    "version": 3,
+    "titulo": "Ocupación: la pide el titular del PDC o el propietario con declaración de abandono o defunción",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "182",
+      "pagina_pdf": 33,
+      "cita_textual": "El Permiso Digital de Ocupación será solicitado por el profesional idóneo o la empresa constructora que posee el Permiso de Construcción de la obra"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION'",
+    "entradas": [
+      "constructor.es_titular_permiso_construccion"
+    ],
+    "condicion": "constructor.es_titular_permiso_construccion == true or expediente.declaracion_abandono_o_defuncion.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "El Permiso Digital de Ocupación será solicitado por el profesional idóneo o la empresa constructora que posee el Permiso de Construcción de la obra",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación debe pedirla el titular del Permiso de Construcción; si la pide el propietario, falta la declaración jurada notariada de abandono o el certificado de defunción (Art. 182; Art. 183).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Equivalentes en Arts. 183. En ese caso el propietario designa un nuevo profesional idóneo acreditado ante la JTIA (Art. 183). Trámites provisionales: 'PERMISO_OCUPACION' = permiso de ocupación (Cap. XIX). Hechos provisionales (los decide la IA o un extractor futuro): constructor.es_titular_permiso_construccion, expediente.declaracion_abandono_o_defuncion.adjunto. | Versión 2 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (expediente.declaracion_abandono_o_defuncion.adjunto): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («El Permiso Digital de Ocupación será solicitado por el profesional idóneo o la empresa constructora que posee el Perm…», normativa/acuerdo-110/texto-completo.md)",
+    "entradas_opcionales": [
+      "expediente.declaracion_abandono_o_defuncion.adjunto"
+    ]
+  },
+  {
+    "id": "A110-ART188-OBRA-GRIS-CONSENTIMIENTO",
+    "version": 2,
+    "titulo": "Ocupación en obra gris: consentimiento escrito de propietarios y promitentes compradores",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "188",
+      "pagina_pdf": 35,
+      "cita_textual": "siempre y cuando se cuente con el consentimiento por escrito del o de los propietarios y de los promitentes compradores de dichas unidades"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION' and ocupacion.obra_gris == true",
+    "entradas": [
+      "expediente.consentimiento_obra_gris.adjunto"
+    ],
+    "condicion": "expediente.consentimiento_obra_gris.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "siempre y cuando se cuente con el consentimiento por escrito del o de los propietarios y de los promitentes compradores de dichas unidades",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Ocupación «en obra gris»: falta el consentimiento escrito de los propietarios y de los promitentes compradores de las unidades (Art. 188).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El artículo remite además a los requisitos del «Artículo 141», que trata de la reválida del PDC (posible error de referencia). Trámites provisionales: 'PERMISO_OCUPACION' = permiso de ocupación (Cap. XIX). Hechos provisionales (los decide la IA o un extractor futuro): ocupacion.obra_gris, expediente.consentimiento_obra_gris.adjunto. Si falta un hecho de aplicabilidad (ocupacion.obra_gris) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («siempre y cuando se cuente con el consentimiento por escrito del o de los propietarios y de los promitentes comprador…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART188-PO-OBRA-GRIS-PREVIO",
+    "version": 2,
+    "titulo": "Ocupación con acabados sobre locales recibidos en obra gris: Permiso de Ocupación de Obra Gris",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "188",
+      "pagina_pdf": 35,
+      "cita_textual": "se deberá presentar copia digitalizada en formato PDF del Permiso de Ocupación de Obra Gris para obtener el Permiso de Ocupación con Acabados"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION' and ocupacion.acabados_sobre_obra_gris == true",
+    "entradas": [
+      "expediente.permiso_ocupacion_obra_gris.adjunto"
+    ],
+    "condicion": "expediente.permiso_ocupacion_obra_gris.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "se deberá presentar copia digitalizada en formato PDF del Permiso de Ocupación de Obra Gris para obtener el Permiso de Ocupación con Acabados",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Remodelación de un local u oficina recibido en obra gris: falta la copia del Permiso de Ocupación de Obra Gris (Art. 188, párr. 2).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PERMISO_OCUPACION' = permiso de ocupación (Cap. XIX). Hechos provisionales (los decide la IA o un extractor futuro): ocupacion.acabados_sobre_obra_gris, expediente.permiso_ocupacion_obra_gris.adjunto. Si falta un hecho de aplicabilidad (ocupacion.acabados_sobre_obra_gris) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («se deberá presentar copia digitalizada en formato PDF del Permiso de Ocupación de Obra Gris para obtener el Permiso d…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART191-ACTAS-MOP-IDAAN",
+    "version": 2,
+    "titulo": "Ocupación de viviendas en urbanizaciones nuevas: actas de aceptación del MOP y del IDAAN",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "191",
+      "pagina_pdf": 35,
+      "cita_textual": "las actas de aceptación de infraestructura MOP e IDAAN"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION' and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "expediente.actas_aceptacion_mop_idaan.adjunto"
+    ],
+    "condicion": "expediente.actas_aceptacion_mop_idaan.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "las actas de aceptación de infraestructura MOP e IDAAN",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Viviendas en urbanización nueva: faltan las actas de aceptación de infraestructura del MOP y del IDAAN (Art. 191).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PERMISO_OCUPACION' = permiso de ocupación (Cap. XIX). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.urbanizacion_nueva, expediente.actas_aceptacion_mop_idaan.adjunto. Si falta un hecho de aplicabilidad (proyecto.urbanizacion_nueva) el motor da REQUIERE_REVISION (convención: hechos de aplicabilidad sin existe(); umbrales numéricos con existe()). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («las actas de aceptación de infraestructura MOP e IDAAN», normativa/acuerdo-110/texto-completo.md)"
+  }
+]

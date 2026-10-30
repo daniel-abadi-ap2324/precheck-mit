@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "PLOT-RM-2-DENSIDAD",
+  "version": 1,
+  "title": "RM-2: densidad máxima",
+  "category": "density",
+  "zoning": "RM-2",
+  "description": "La densidad del proyecto excede 1,500 pers/ha de la zona RM-2.",
+  "operator": "<=",
+  "value": 1500.0,
+  "unit": "pers/ha",
+  "regulation": {
+   "id": "PLOT-RM-2-DENSIDAD",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "1,500 pers/ha",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-LOTE-AREA",
+  "version": 1,
+  "title": "RM-2: área mínima de lote",
+  "category": "site",
+  "zoning": "RM-2",
+  "description": "El lote no alcanza el área mínima (800m2) de la zona RM-2.",
+  "operator": ">=",
+  "value": 800.0,
+  "unit": "m2",
+  "regulation": {
+   "id": "PLOT-RM-2-LOTE-AREA",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "800m2",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-LOTE-FRENTE",
+  "version": 1,
+  "title": "RM-2: frente mínimo de lote",
+  "category": "site",
+  "zoning": "RM-2",
+  "description": "El frente del lote es menor que el mínimo (20 m) de la zona RM-2.",
+  "operator": ">=",
+  "value": 20.0,
+  "unit": "m",
+  "regulation": {
+   "id": "PLOT-RM-2-LOTE-FRENTE",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "20 m",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-OCUPACION",
+  "version": 1,
+  "title": "RM-2: ocupación máxima",
+  "category": "coverage",
+  "zoning": "RM-2",
+  "description": "La ocupación excede 80% o según retiros en PB+3 en la zona RM-2.",
+  "operator": "criterio",
+  "value": null,
+  "unit": "%",
+  "regulation": {
+   "id": "PLOT-RM-2-OCUPACION",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "80% o según retiros en PB+3",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-ALTURA",
+  "version": 1,
+  "title": "RM-2: altura máxima en pisos",
+  "category": "height",
+  "zoning": "RM-2",
+  "description": "El número de pisos excede la altura máxima (40 pisos) de la zona RM-2.",
+  "operator": "<=",
+  "value": 40.0,
+  "unit": "pisos",
+  "regulation": {
+   "id": "PLOT-RM-2-ALTURA",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "40 pisos",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-ACERA",
+  "version": 1,
+  "title": "RM-2: ancho mínimo de acera",
+  "category": "site",
+  "zoning": "RM-2",
+  "description": "La acera propuesta es menor que 5.00m en la zona RM-2.",
+  "operator": ">=",
+  "value": 5.0,
+  "unit": "m",
+  "regulation": {
+   "id": "PLOT-RM-2-ACERA",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "5.00m",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "PLOT-RM-2-RETIROS",
+  "version": 1,
+  "title": "RM-2: retiros frontal, lateral y posterior",
+  "category": "setbacks",
+  "zoning": "RM-2",
+  "description": "Verificar retiros contra la ficha de zona.",
+  "operator": "criterio",
+  "value": null,
+  "unit": null,
+  "regulation": {
+   "id": "PLOT-RM-2-RETIROS",
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "article": "Ficha RM-2",
+   "quote": "Lo establecido ó 5m",
+   "sourcePage": 11
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-PDC-ACERA-ANCHO",
+  "version": 1,
+  "title": "Uso de acera: ancho máximo 1.20 m",
+  "category": "site",
+  "zoning": null,
+  "description": "El uso de acera solicitado excede 1.20 m de ancho (Art. 128).",
+  "operator": "<=",
+  "value": 1.2,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-PDC-ACERA-ANCHO",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "128",
+   "quote": "no deberá ocupar más de 1.20 m lineales de ancho de la acera",
+   "sourcePage": 22
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-PDC-ACERA-LONGITUD",
+  "version": 1,
+  "title": "Uso de acera: máximo 50% del frente",
+  "category": "site",
+  "zoning": null,
+  "description": "El uso de acera no puede superar el 50 % de la longitud de la acera frente a la obra (Art. 128): uso ≤ 0,5 × frente.",
+  "operator": "<=",
+  "value": null,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-PDC-ACERA-LONGITUD",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "128",
+   "quote": "un máximo del cincuenta por ciento (50%) de la longitud de la acera frente a la construcción",
+   "sourcePage": 22
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-OM-ADICION-100M2",
+  "version": 1,
+  "title": "Obras menores en residencias: adiciones hasta 100 m²",
+  "category": "other",
+  "zoning": null,
+  "description": "La adición supera 100 m²: no califica como obra menor; requiere plano (Art. 119).",
+  "operator": "<=",
+  "value": 100.0,
+  "unit": "m2",
+  "regulation": {
+   "id": "A110-OM-ADICION-100M2",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "119",
+   "quote": "adiciones que no superen los 100 metros cuadrados",
+   "sourcePage": 21
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-OM-CAPA-VEGETAL",
+  "version": 1,
+  "title": "Remoción de capa vegetal como obra menor: ≤ 1,000 m² y 10 cm",
+  "category": "other",
+  "zoning": null,
+  "description": "La remoción de capa vegetal excede 1,000 m² o 10 cm de espesor (Art. 119).",
+  "operator": "<=",
+  "value": 1000.0,
+  "unit": null,
+  "regulation": {
+   "id": "A110-OM-CAPA-VEGETAL",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "119",
+   "quote": "se tomará un área no mayor de 1,000 m², con espesor de 10 cm",
+   "sourcePage": 21
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-CERCA-TEMP-LATERAL",
+  "version": 1,
+  "title": "Cerca temporal: altura máxima lateral y posterior 2.40 m",
+  "category": "other",
+  "zoning": null,
+  "description": "La cerca temporal excede 2.40 m en laterales o parte posterior (Art. 123).",
+  "operator": "<=",
+  "value": 2.4,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-CERCA-TEMP-LATERAL",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "123.a",
+   "quote": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.",
+   "sourcePage": 22
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-CERCA-TEMP-FRONTAL",
+  "version": 1,
+  "title": "Cerca temporal: altura máxima frontal 2.10 m",
+  "category": "other",
+  "zoning": null,
+  "description": "La cerca temporal excede 2.10 m en la parte frontal (Art. 123).",
+  "operator": "<=",
+  "value": 2.1,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-CERCA-TEMP-FRONTAL",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "123.a",
+   "quote": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.",
+   "sourcePage": 22
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-RAMPA-DOBLE",
+  "version": 1,
+  "title": "Rampa vehicular de doble sentido: ancho mínimo 6.00 m",
+  "category": "parking",
+  "zoning": null,
+  "description": "La rampa de doble sentido tiene menos de 6.00 m libres (Anexo IV).",
+  "operator": ">=",
+  "value": 6.0,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-AIV-RAMPA-DOBLE",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 4",
+   "quote": "deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación)",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-RAMPA-SIMPLE",
+  "version": 1,
+  "title": "Rampa vehicular de un sentido: ancho mínimo 4.00 m",
+  "category": "parking",
+  "zoning": null,
+  "description": "La rampa de un sentido tiene menos de 4.00 m (Anexo IV).",
+  "operator": ">=",
+  "value": 4.0,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-AIV-RAMPA-SIMPLE",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 4",
+   "quote": "4.00m mínimo (un solo sentido de circulación)",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-ROTURA-CORDON",
+  "version": 1,
+  "title": "Rotura máxima de cordón y acera 7.50 m",
+  "category": "parking",
+  "zoning": null,
+  "description": "La rotura de cordón y acera excede 7.50 m (Anexo IV).",
+  "operator": "<=",
+  "value": 7.5,
+  "unit": "m",
+  "regulation": {
+   "id": "A110-AIV-ROTURA-CORDON",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 4",
+   "quote": "el máximo de rotura de cordón y acera permitido es 7.50m",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-CURVAS-NIVEL",
+  "version": 1,
+  "title": "Topografía con curvas de nivel a intervalos ≤ 1.00 m",
+  "category": "site",
+  "zoning": null,
+  "description": "La topografía no presenta curvas de nivel a intervalos de 1.00 m o menos (Anexo IV).",
+  "operator": "<=",
+  "value": 1.0,
+  "unit": null,
+  "regulation": {
+   "id": "A110-AIV-CURVAS-NIVEL",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 4",
+   "quote": "Topografía mediante curvas de nivel a intervalos no mayores de 1.00m (un metro)",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-FINCA-COINCIDE",
+  "version": 1,
+  "title": "Finca, tomo y folio del plano coinciden con el Registro Público",
+  "category": "site",
+  "zoning": null,
+  "description": "El número de finca del plano no coincide con la Certificación del Registro Público (Anexo IV).",
+  "operator": "=",
+  "value": null,
+  "unit": null,
+  "regulation": {
+   "id": "A110-AIV-FINCA-COINCIDE",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 1",
+   "quote": "Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propiedad emitida por el Registro Público.",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-AREA-LOTE",
+  "version": 1,
+  "title": "Área del lote del plano coincide con el Registro Público",
+  "category": "site",
+  "zoning": null,
+  "description": "El área del lote del plano debe corresponder a la Certificación de Propiedad (Anexo IV): diferencia ≤ 1 % del área registrada.",
+  "operator": "<=",
+  "value": null,
+  "unit": "m²",
+  "regulation": {
+   "id": "A110-AIV-AREA-LOTE",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 2",
+   "quote": "Área del lote correspondiente a la Certificación de Propiedad emitida por el Registro Público.",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-ATC-VIGENCIA",
+  "version": 1,
+  "title": "ATC vigente (120 días hábiles)",
+  "category": "other",
+  "zoning": null,
+  "description": "La ATC está vencida (Arts. 116-117).",
+  "operator": "<=",
+  "value": 120.0,
+  "unit": null,
+  "regulation": {
+   "id": "A110-ATC-VIGENCIA",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "116",
+   "quote": "La ATC tendrá una vigencia de ciento veinte (120) días hábiles a partir de la fecha de su expedición",
+   "sourcePage": 20
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "A110-AIV-RETIROS-ZONIFICACION",
+  "version": 1,
+  "title": "Retiros propuestos cumplen la norma de zonificación",
+  "category": "setbacks",
+  "zoning": null,
+  "description": "Verificar los retiros contra la norma de zonificación del lote.",
+  "operator": "criterio",
+  "value": null,
+  "unit": null,
+  "regulation": {
+   "id": "A110-AIV-RETIROS-ZONIFICACION",
+   "norma": "Acuerdo N°110 de 22-04-2025",
+   "article": "Anexo IV, 4 y Art. 19",
+   "quote": "Retiros exigidos por la norma de zonificación urbana vigente y los retiros laterales y posteriores propuestos",
+   "sourcePage": 49
+  },
+  "state": "borrador",
+  "severity": "bloqueante"
+ },
+ {
+  "id": "DEMO-EST-CANTIDAD",
+  "version": 1,
+  "title": "Estacionamientos mínimos por unidad de vivienda",
+  "category": "parking",
+  "zoning": "RM-2",
+  "description": "Estacionamientos mínimos por unidad de vivienda",
+  "operator": ">=",
+  "value": 24,
+  "unit": "espacios",
+  "regulation": {
+   "id": "DEMO-EST-CANTIDAD",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ACC-RAMPA-PENDIENTE",
+  "version": 1,
+  "title": "Pendiente máxima de rampa peatonal accesible",
+  "category": "accessibility",
+  "zoning": "RM-2",
+  "description": "Pendiente máxima de rampa peatonal accesible",
+  "operator": "<=",
+  "value": 8.33,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-ACC-RAMPA-PENDIENTE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-RET-LATERAL",
+  "version": 1,
+  "title": "Retiro lateral mínimo",
+  "category": "setbacks",
+  "zoning": "RM-2",
+  "description": "Retiro lateral mínimo",
+  "operator": ">=",
+  "value": 1.5,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-RET-LATERAL",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-VER-AREA",
+  "version": 1,
+  "title": "Área verde mínima del lote",
+  "category": "landscaping",
+  "zoning": "RM-2",
+  "description": "Área verde mínima del lote",
+  "operator": ">=",
+  "value": 15,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-VER-AREA",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-EST-VISITAS",
+  "version": 1,
+  "title": "Estacionamientos de visitas",
+  "category": "parking",
+  "zoning": "RM-2",
+  "description": "Estacionamientos de visitas",
+  "operator": ">=",
+  "value": 3,
+  "unit": "espacios",
+  "regulation": {
+   "id": "DEMO-EST-VISITAS",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "observacion",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ACC-SENALIZACION",
+  "version": 1,
+  "title": "Señalización de ruta accesible",
+  "category": "accessibility",
+  "zoning": "RM-2",
+  "description": "Señalización de ruta accesible",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-ACC-SENALIZACION",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "observacion",
+  "demo": true
+ },
+ {
+  "id": "DEMO-VER-ARBOLES",
+  "version": 1,
+  "title": "Arborización en la servidumbre",
+  "category": "landscaping",
+  "zoning": "RM-2",
+  "description": "Arborización en la servidumbre",
+  "operator": ">=",
+  "value": 4,
+  "unit": "árboles",
+  "regulation": {
+   "id": "DEMO-VER-ARBOLES",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "observacion",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OTR-BASURA",
+  "version": 1,
+  "title": "Cuarto de desechos sólidos",
+  "category": "other",
+  "zoning": "RM-2",
+  "description": "Cuarto de desechos sólidos",
+  "operator": ">=",
+  "value": 6,
+  "unit": "m2",
+  "regulation": {
+   "id": "DEMO-OTR-BASURA",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "observacion",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ALT-MEZANINE",
+  "version": 1,
+  "title": "Cómputo de mezanine en la altura",
+  "category": "height",
+  "zoning": "RM-2",
+  "description": "Cómputo de mezanine en la altura",
+  "operator": "criterio",
+  "value": null,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-ALT-MEZANINE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ALT-METROS",
+  "version": 1,
+  "title": "Altura total en metros",
+  "category": "height",
+  "zoning": "RM-2",
+  "description": "Altura total en metros",
+  "operator": "<=",
+  "value": 150,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-ALT-METROS",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ALT-PB",
+  "version": 1,
+  "title": "Altura libre de planta baja",
+  "category": "height",
+  "zoning": "RM-2",
+  "description": "Altura libre de planta baja",
+  "operator": ">=",
+  "value": 3.0,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-ALT-PB",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-RET-POSTERIOR",
+  "version": 1,
+  "title": "Retiro posterior mínimo",
+  "category": "setbacks",
+  "zoning": "RM-2",
+  "description": "Retiro posterior mínimo",
+  "operator": ">=",
+  "value": 5.0,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-RET-POSTERIOR",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-RET-TORRE",
+  "version": 1,
+  "title": "Retiro de torre sobre podio",
+  "category": "setbacks",
+  "zoning": "RM-2",
+  "description": "Retiro de torre sobre podio",
+  "operator": ">=",
+  "value": 3.0,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-RET-TORRE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OCU-PODIO",
+  "version": 1,
+  "title": "Ocupación del podio",
+  "category": "coverage",
+  "zoning": "RM-2",
+  "description": "Ocupación del podio",
+  "operator": "<=",
+  "value": 80,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-OCU-PODIO",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OCU-TORRE",
+  "version": 1,
+  "title": "Ocupación de la torre",
+  "category": "coverage",
+  "zoning": "RM-2",
+  "description": "Ocupación de la torre",
+  "operator": "<=",
+  "value": 50,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-OCU-TORRE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-DEN-UNIDADES",
+  "version": 1,
+  "title": "Unidades de vivienda declaradas",
+  "category": "density",
+  "zoning": "RM-2",
+  "description": "Unidades de vivienda declaradas",
+  "operator": "<=",
+  "value": 96,
+  "unit": "unidades",
+  "regulation": {
+   "id": "DEMO-DEN-UNIDADES",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-DEN-HAB",
+  "version": 1,
+  "title": "Habitantes estimados",
+  "category": "density",
+  "zoning": "RM-2",
+  "description": "Habitantes estimados",
+  "operator": "<=",
+  "value": 144,
+  "unit": "personas",
+  "regulation": {
+   "id": "DEMO-DEN-HAB",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-EST-DIMENSION",
+  "version": 1,
+  "title": "Dimensión mínima de estacionamiento",
+  "category": "parking",
+  "zoning": "RM-2",
+  "description": "Dimensión mínima de estacionamiento",
+  "operator": ">=",
+  "value": 2.5,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-EST-DIMENSION",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-EST-CIRCULACION",
+  "version": 1,
+  "title": "Ancho de circulación vehicular interna",
+  "category": "parking",
+  "zoning": "RM-2",
+  "description": "Ancho de circulación vehicular interna",
+  "operator": ">=",
+  "value": 6.0,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-EST-CIRCULACION",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-EST-DISCAPACIDAD",
+  "version": 1,
+  "title": "Estacionamientos para personas con discapacidad",
+  "category": "parking",
+  "zoning": "RM-2",
+  "description": "Estacionamientos para personas con discapacidad",
+  "operator": ">=",
+  "value": 2,
+  "unit": "espacios",
+  "regulation": {
+   "id": "DEMO-EST-DISCAPACIDAD",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ACC-PUERTA",
+  "version": 1,
+  "title": "Ancho libre de puerta accesible",
+  "category": "accessibility",
+  "zoning": "RM-2",
+  "description": "Ancho libre de puerta accesible",
+  "operator": ">=",
+  "value": 0.9,
+  "unit": "m",
+  "regulation": {
+   "id": "DEMO-ACC-PUERTA",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ACC-ASCENSOR",
+  "version": 1,
+  "title": "Ascensor accesible",
+  "category": "accessibility",
+  "zoning": "RM-2",
+  "description": "Ascensor accesible",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-ACC-ASCENSOR",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ACC-BANO",
+  "version": 1,
+  "title": "Baño accesible en área común",
+  "category": "accessibility",
+  "zoning": "RM-2",
+  "description": "Baño accesible en área común",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-ACC-BANO",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-VER-PERMEABLE",
+  "version": 1,
+  "title": "Superficie permeable",
+  "category": "landscaping",
+  "zoning": "RM-2",
+  "description": "Superficie permeable",
+  "operator": ">=",
+  "value": 10,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-VER-PERMEABLE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-SIT-SERVIDUMBRE",
+  "version": 1,
+  "title": "Servidumbre vial respetada",
+  "category": "site",
+  "zoning": "RM-2",
+  "description": "Servidumbre vial respetada",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-SIT-SERVIDUMBRE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-SIT-ACCESO",
+  "version": 1,
+  "title": "Acceso vehicular único por frente",
+  "category": "site",
+  "zoning": "RM-2",
+  "description": "Acceso vehicular único por frente",
+  "operator": "<=",
+  "value": 1,
+  "unit": "accesos",
+  "regulation": {
+   "id": "DEMO-SIT-ACCESO",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OTR-TANQUE",
+  "version": 1,
+  "title": "Reserva de agua potable",
+  "category": "other",
+  "zoning": "RM-2",
+  "description": "Reserva de agua potable",
+  "operator": ">=",
+  "value": 24,
+  "unit": "h",
+  "regulation": {
+   "id": "DEMO-OTR-TANQUE",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OTR-INCENDIO",
+  "version": 1,
+  "title": "Salida de emergencia por nivel",
+  "category": "other",
+  "zoning": "RM-2",
+  "description": "Salida de emergencia por nivel",
+  "operator": ">=",
+  "value": 2,
+  "unit": "salidas",
+  "regulation": {
+   "id": "DEMO-OTR-INCENDIO",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-OTR-TRANSFORMADOR",
+  "version": 1,
+  "title": "Espacio para transformador",
+  "category": "other",
+  "zoning": "RM-2",
+  "description": "Espacio para transformador",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-OTR-TRANSFORMADOR",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ZON-USO",
+  "version": 1,
+  "title": "Uso residencial permitido en la zona",
+  "category": "zoning",
+  "zoning": "RM-2",
+  "description": "Uso residencial permitido en la zona",
+  "operator": "=",
+  "value": 1,
+  "unit": null,
+  "regulation": {
+   "id": "DEMO-ZON-USO",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ },
+ {
+  "id": "DEMO-ZON-COMERCIO-PB",
+  "version": 1,
+  "title": "Comercio vecinal en planta baja",
+  "category": "zoning",
+  "zoning": "RM-2",
+  "description": "Comercio vecinal en planta baja",
+  "operator": "<=",
+  "value": 20,
+  "unit": "%",
+  "regulation": {
+   "id": "DEMO-ZON-COMERCIO-PB",
+   "norma": "Regla de demostración (no está en el catálogo)",
+   "article": "—",
+   "quote": ""
+  },
+  "state": "borrador",
+  "severity": "bloqueante",
+  "demo": true
+ }
+]

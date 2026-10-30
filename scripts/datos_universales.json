@@ -1,0 +1,84 @@
+{
+ "descripcion": "Datos que todo anteproyecto de edificación debe poder dar, sin importar la zona. Se suman a los que piden las reglas que aplican al plano. Fuentes: Acuerdo 110, Anexo III (num. 1, 2, 3 y 5) y Anexo IV (num. 1, 2 y 4), y los datos más usados por las reglas del catálogo (reglas/*.json). Preliminar; sin aprobar por la DOYC.",
+ "datos": [
+  {
+   "clave": "lote.finca",
+   "fuente": "Anexo III num. 1; Anexo IV num. 1"
+  },
+  {
+   "clave": "lote.area_m2",
+   "fuente": "Anexo III num. 2; Anexo IV num. 2"
+  },
+  {
+   "clave": "lote.frente_m",
+   "fuente": "Anexo III num. 5 (linderos y sus medidas)"
+  },
+  {
+   "clave": "lote.linea_construccion_m",
+   "fuente": "Anexo III num. 5 (línea de construcción con sus dimensiones)"
+  },
+  {
+   "clave": "proyecto.pisos_totales",
+   "fuente": "Anexo III num. 5 y 6 (plantas de edificios de varios pisos)"
+  },
+  {
+   "clave": "proyecto.altura_m",
+   "fuente": "Anexo III num. 5 (altura máxima)"
+  },
+  {
+   "clave": "proyecto.unidades_vivienda",
+   "fuente": "Anexo III num. 3 (cada apartamento con su área)"
+  },
+  {
+   "clave": "proyecto.densidad_pers_ha",
+   "fuente": "Anexo III num. 5 (densidad neta)"
+  },
+  {
+   "clave": "proyecto.ocupacion_pct",
+   "fuente": "Anexo III num. 5 (área de ocupación máxima)"
+  },
+  {
+   "clave": "proyecto.area_libre_pct",
+   "fuente": "Anexo III num. 5 (área libre mínima)"
+  },
+  {
+   "clave": "proyecto.area_verde_pct",
+   "fuente": "catálogo: lo usan reglas de 6 de 12 archivos"
+  },
+  {
+   "clave": "proyecto.retiro_frontal_m",
+   "fuente": "Anexo III num. 5 (retiros exigidos y propuestos)"
+  },
+  {
+   "clave": "proyecto.retiro_lateral_m",
+   "fuente": "Anexo III num. 5 (retiros laterales y posteriores propuestos)"
+  },
+  {
+   "clave": "proyecto.retiro_posterior_m",
+   "fuente": "Anexo III num. 5 (retiros laterales y posteriores propuestos)",
+   "criterio": "Primero ejecuta `$PY scripts/medir_retiro.py <carpeta del caso>`: si da `retiro_posterior_m`, escríbelo (método medicion, confianza 0.9); si da null, usa sus distancias por lado y decide tú cuál es el posterior. El lindero posterior es el opuesto al frente principal (la calle de la dirección del plano). Mide la distancia perpendicular mínima de ese lindero al elemento construido más cercano con muro (pared) o con losa elevada (balcón o terraza en altura) en cualquier nivel; una terraza o losa a nivel de terreno, abierta y sin muro, no cuenta aunque tenga pérgola encima, igual que los aleros. Usa una cota impresa de ese elemento al lindero si existe; si no, comprueba la escala del dibujo con una cota impresa (p. ej. la longitud de un lindero), aunque la lámina no traiga escala impresa, y mide. La cota de una línea de construcción o de un retiro mínimo dibujado junto al lindero no es la distancia de la edificación. Un muro adosado al lindero es 0. Nunca escribas 0 si no lo mediste. Pon en el detalle dónde se midió. Una cota rotulada «RETIRO», «RETIRO POSTERIOR» o «L. DE CONSTRUCCIÓN» junto al lindero es el retiro mínimo o la línea de construcción: no la copies como valor; tu valor sale de la pared. Si un muro o pared ciega toca el lindero posterior (edificio o podio adosado), escribe 0 con confianza 0.9. En un lote de esquina, si los dos linderos candidatos dan lo mismo, ese es el valor. Este dato siempre se escribe. Una cerca o un muro de cierre del lote sobre el lindero (p. ej. «muro de bloques h=2.50 acabado hacia vecino») no es la edificación: no lo midas como 0. Si el podio está adosado y la torre retirada, escribe el mínimo (0) y pon en el detalle el desglose por nivel («0 en semisótano, PB y mezzanine; 2.50 en AS1 y torre») para que el informe lo explique. Ampliación o remodelación: si el plano conserva un muro existente sobre el lindero posterior (p. ej. «muro de calicanto existente», «pared existente a mantener») y detrás de él hay un patio, ese muro es cierre y no edificación: mide hasta la primera pared con espacios habitables o vanos (la fachada nueva), aunque el plano diga «existente» o «adosado». «Edificio existente» no autoriza a escribir 0 ni true: el valor siempre es una distancia en metros medida a la pared."
+  },
+  {
+   "clave": "proyecto.estacionamientos",
+   "fuente": "Anexo III num. 5 (estacionamientos exigidos dentro de la propiedad)",
+   "criterio": "Cuenta las plazas dibujadas, no el último número rotulado: la numeración puede tener saltos (si el resumen de regiones avisa de números faltantes, compruébalos en la lámina). Una franja con un solo número es una plaza aunque quepan más autos en fila. Si en otra planta se repiten los mismos números, no los sumes. En una vivienda con un recinto de estacionamiento sin plazas dibujadas, cuenta 1 por recinto salvo que el plano diga otra cantidad."
+  },
+  {
+   "clave": "proyecto.acera_ancho_m",
+   "fuente": "Anexo III num. 5 (ancho de acera); Anexo IV num. 4"
+  },
+  {
+   "clave": "acceso_vehicular.rotura_cordon_m",
+   "fuente": "Anexo III num. 5 (máximo de rotura de cordón y acera: 7.50 m)"
+  },
+  {
+   "clave": "rampa.ancho_m",
+   "fuente": "Anexo III num. 5 (rampas: 6.00 m dos sentidos, 4.00 m uno)"
+  },
+  {
+   "clave": "plano.intervalo_curvas_nivel_m",
+   "fuente": "Anexo III num. 5 (curvas de nivel a intervalos no mayores de 1.00 m)",
+   "criterio": "Primero ejecuta `$PY scripts/medir_curvas.py <ruta del PDF del plano>`: si da `equidistancia_m`, escribe ese valor (método medicion, confianza 0.9, con el resultado del script en el detalle). Si no halla serie, mira tú las láminas: busca curvas de nivel en todas las láminas: líneas curvas con rótulos de cota (p. ej. «30.00», «71.0»); dos curvas rotuladas bastan. Escribe la equidistancia de las que pasan por el lote o el terreno del proyecto: la impresa o la diferencia entre dos curvas consecutivas rotuladas; si dentro del proyecto hay varias, la menor. Las curvas fuera del proyecto con otra equidistancia no cuentan. Cotas puntuales de nivel (N+…, NPT) no son curvas. Si ninguna lámina tiene curvas (revísalas todas a 150 ppp o más), escribe 0 con confianza 0.5 y detalle «sin topografía»: 0 no es un intervalo y el motor no debe decidir con él (la regla pide ≤ 1.00 m y 0 la daría por cumplida). Después decide A110-AIV-CURVAS-NIVEL tú, como NO_CUMPLE por ausencia comprobada. «Terreno del proyecto» es la urbanización completa, no solo el lote; basta que una de las curvas rotuladas cruce el lote."
+  }
+ ]
+}

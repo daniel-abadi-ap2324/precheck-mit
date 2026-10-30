@@ -1,0 +1,1163 @@
+[
+ {
+  "id": "CA-RMH1-USOS",
+  "version": 2,
+  "titulo": "RMH1: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 7",
+   "pagina_pdf": 4,
+   "cita_textual": "Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares y multifamiliares y sus usos complementarios como oficinas de profesionales residentes."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares y multifamiliares y sus usos complementarios como oficinas de profesionales residentes.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona RMH1 (Art. 7).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Permitidos: a) vivienda unifamiliar y multifamiliar y usos complementarios (oficinas de profesionales residentes); b) usos institucionales (docentes, religiosos, culturales, gubernamentales, filantrópicos, asistenciales) si no perjudican a los vecinos ni el carácter residencial; c) comercial vecinal (C1) solo en planta baja y sin perjudicar el carácter residencial. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares y multifami…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-RMH1-DENSIDAD-PB-PB1",
+  "version": 2,
+  "titulo": "RMH1: densidad neta máxima en inmuebles de PB o PB+1",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 7",
+   "pagina_pdf": 4,
+   "cita_textual": "Hasta 400 pers. /ha. en inmuebles que cuenten con Planta Baja, planta baja y un (1) nivel alto."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1'] and proyecto.pisos_totales <= 2",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "condicion": "proyecto.densidad_pers_ha <= 400",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Hasta 400 pers. /ha. en inmuebles que cuenten con Planta Baja, planta baja y un (1) nivel alto.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La densidad neta excede 400 pers./ha para inmuebles de PB o PB+1 en la zona RMH1.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta pisos_totales = planta baja + niveles altos (PB o PB+1 → proyecto.pisos_totales <= 2). La norma da la densidad según los niveles del inmueble, no del lote. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Hasta 400 pers. /ha. en inmuebles que cuenten con Planta Baja, planta baja y un (1) nivel alto.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-RMH1-DENSIDAD-PB2",
+  "version": 2,
+  "titulo": "RMH1: densidad neta máxima en inmuebles de PB+2",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 7",
+   "pagina_pdf": 4,
+   "cita_textual": "Hasta 600 pers. /ha. en aquellos inmuebles que cuenten con Planta Baja y dos (2) niveles altos."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1'] and proyecto.pisos_totales == 3",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "condicion": "proyecto.densidad_pers_ha <= 600",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Hasta 600 pers. /ha. en aquellos inmuebles que cuenten con Planta Baja y dos (2) niveles altos.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La densidad neta excede 600 pers./ha para inmuebles de PB+2 en la zona RMH1.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta pisos_totales = planta baja + niveles altos (PB+2 → proyecto.pisos_totales == 3). La norma da la densidad según los niveles del inmueble, no del lote. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Hasta 600 pers. /ha. en aquellos inmuebles que cuenten con Planta Baja y dos (2) niveles altos.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-RMH1-DENSIDAD-PB3-MAS",
+  "version": 2,
+  "titulo": "RMH1: densidad neta máxima en inmuebles de PB+3 o más",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 7",
+   "pagina_pdf": 4,
+   "cita_textual": "Hasta 800 pers. /ha. en aquellos inmuebles que cuenten con planta baja y tres (3) niveles altos o más."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1'] and proyecto.pisos_totales >= 4",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "condicion": "proyecto.densidad_pers_ha <= 800",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Hasta 800 pers. /ha. en aquellos inmuebles que cuenten con planta baja y tres (3) niveles altos o más.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La densidad neta excede 800 pers./ha para inmuebles de PB+3 o más en la zona RMH1.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta pisos_totales = planta baja + niveles altos (PB+3 o más → proyecto.pisos_totales >= 4). La norma da la densidad según los niveles del inmueble, no del lote. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Hasta 800 pers. /ha. en aquellos inmuebles que cuenten con planta baja y tres (3) niveles altos o más.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-RMH2-USOS",
+  "version": 2,
+  "titulo": "RMH2: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 8",
+   "pagina_pdf": 4,
+   "cita_textual": "Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares, multifamiliares y sus usos complementarios como oficinas de profesionales residentes."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares, multifamiliares y sus usos complementarios como oficinas de profesionales residentes.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona RMH2 (Art. 8).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Mismos usos que RMH1: a) vivienda (pág. 4); b) institucionales y c) comercial vecinal (C1) solo en planta baja (pág. 5). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción, restauración y reparación de edificios destinados a viviendas unifamiliares, multifamil…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-RMH2-DENSIDAD",
+  "version": 4,
+  "titulo": "RMH2: densidad neta máxima",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 8",
+   "pagina_pdf": 5,
+   "cita_textual": "Densidad Neta: Hasta 1,500 pers. /ha. Se permitirá la aplicación de esta densidad en áreas del Casco Antiguo localizadas principalmente en El Chorrillo y Santa Ana y en áreas del corregimiento de San Felipe colindantes con éstas. Se permitirá una tolerancia en la densidad de población de hasta 20% máximo, en casos especiales de acuerdo a la bondad del proyecto, previa aprobación del Ministerio de Vivienda."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH2']",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "condicion": "proyecto.densidad_pers_ha <= 1500 or (proyecto.densidad_pers_ha <= 1500 * (1 + 20 / 100) and existe(expediente.aprobacion_mivi_tolerancia_densidad.adjunto) and expediente.aprobacion_mivi_tolerancia_densidad.adjunto == true)",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "documento",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Densidad Neta: Hasta 1,500 pers. /ha.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": "Se permitirá una tolerancia en la densidad de población de hasta 20% máximo, en casos especiales de acuerdo a la bondad del proyecto, previa aprobación del Ministerio de Vivienda."
+  },
+  "mensaje_no_cumple": "La densidad neta excede 1,500 pers./ha en la zona RMH2, o la tolerancia de hasta 20%, sin la aprobación previa del Ministerio de Vivienda (Art. 8).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "El Art. 8 admite una tolerancia de hasta 20% máximo en casos especiales, previa aprobación del Ministerio de Vivienda: si el proyecto la invoca, debe presentar esa aprobación (no se aplica automáticamente). La densidad RMH2 se aplica principalmente en El Chorrillo, Santa Ana y áreas colindantes de San Felipe. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Daba NO_CUMPLE aunque se adjuntara la aprobación de la tolerancia de 20%. Se integra la tolerancia (1500 y 20 literales) y se cita el Art. 8 completo. Cambios: condicion, mensaje_no_cumple, cita. | Versión 3 (2026-10-09, revisión de subagentes): se declaran en entradas_opcionales las claves que la condición lee y no estaban declaradas (expediente.aprobacion_mivi_tolerancia_densidad.adjunto): solo se leen en una rama de un «o», así que se piden al profesional y a la IA (scripts/datos_pedidos.py) sin dejar la regla en revisión cuando la otra rama basta. Hallazgo 12 de la revisión del 9-oct-2026. Sin cambio de valores ni de cita. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B1 («Densidad Neta: Hasta 1,500 pers. /ha.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)",
+  "entradas_opcionales": [
+   "expediente.aprobacion_mivi_tolerancia_densidad.adjunto"
+  ]
+ },
+ {
+  "id": "CA-C1-USOS",
+  "version": 3,
+  "titulo": "C1: usos permitidos (solo en planta baja)",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 9",
+   "pagina_pdf": 5,
+   "cita_textual": "Instalaciones comerciales y de servicios en general relacionadas a las actividades comerciales y profesionales del barrio o vecindad, como: tiendas, boutiques, bazares, abarroterías, boticas, sastrerías, panaderías, carnicerías, fruterías, kioscos, cafeterías, heladerías, puestos de revistas, artículos de fotografía, venta de artesanías, video clubes, oficinas de servicios profesionales, lavamáticos, salones de belleza, barberías, modisterías, siempre y cuando se desarrollen en planta baja y no perjudiquen el carácter residencial de la zona."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Instalaciones comerciales y de servicios en general relacionadas a las actividades comerciales y profesionales del barrio o vecindad, como: tiendas, boutiques, bazares, abarroterías, boticas, sastrerías, panaderías, carnicerías, fruterías, kioscos, cafeterías, heladerías, puestos de revistas, artículos de fotografía, venta de artesanías, video clubes, oficinas de servicios profesionales, lavamáticos, salones de belleza, barberías, modisterías, siempre y cuando se desarrollen en planta baja y no perjudiquen el carácter residencial de la zona.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso comercial vecinal propuesto no cumple el Art. 9 (tipo de comercio, planta baja o carácter residencial).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Comercio y servicios de barrio (tiendas, boutiques, abarroterías, cafeterías, oficinas de servicios profesionales, salones de belleza, etc.) solo en planta baja. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). Versión 2: la cita trae la lista literal de actividades del Art. 9; la versión 1 citaba solo la condición final. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Instalaciones comerciales y de servicios en general relacionadas a las actividades comerciales y profesionales del ba…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-C2-USOS",
+  "version": 3,
+  "titulo": "C2: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 10, literales a) y b)",
+   "pagina_pdf": 6,
+   "cita_textual": "eléctricos, artículos electrónicos, víveres y telas, restaurantes, agencias de viajes, lavanderías, aseguradoras, galerías de arte, servicios de telecomunicaciones, inmobiliarias, clínicas de salud, librerías, agencias de correos, agencias de seguridad, cines, teatros, ferreterías, sucursales de bancos, discotecas, gimnasios, clubes deportivos, clubes culturales, papelerías, financieras, hoteles, aparthoteles, edificios de alquiler de estacionamientos, depósitos, talleres de reparación de aparatos eléctricos y oficinas administrativas, sala de estética), siempre y cuando no perjudiquen el Carácter Patrimonial del Área. b) Además se permitirá el uso comercial vecinal (C1)."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Construcción, reconstrucción, restauración y reparación de edificios destinados a instalaciones comerciales y profesionales",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona C2 (Art. 10).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "El literal a) empieza en la pág. 5: «Construcción, reconstrucción, restauración y reparación de edificios destinados a instalaciones comerciales y profesionales (venta al por mayor y al por menor de artículos de vestir, muebles, artículos para el hogar, artículos» y sigue en la pág. 6 con la lista citada, siempre que no perjudiquen el Carácter Patrimonial del Área; b) además comercial vecinal (C1). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). Versión 2: la cita trae la lista literal de actividades (pág. 6); la versión 1 citaba solo el encabezado del literal a). La cita no cruza el salto de página porque la transcripción lo marca y verificar_citas exige el tramo literal. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción, restauración y reparación de edificios destinados a instalaciones comerciales y profesi…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-C2-ESTACIONAMIENTOS-ALQUILER",
+  "version": 3,
+  "titulo": "C2: edificios de alquiler de estacionamientos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 10, Parágrafo",
+   "pagina_pdf": 6,
+   "cita_textual": "Parágrafo: Los edificios de alquiler de estacionamientos se permitirán solamente en edificios de 4º orden y en lotes baldíos (según la clasificación de órdenes de conservación establecida en el Decreto Ley No. 9 de 27 de agosto de 1997) o en donde la Dirección Nacional de Patrimonio Histórico estime conveniente."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "documento",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Parágrafo: Los edificios de alquiler de estacionamientos se permitirán solamente en edificios de 4º orden y en lotes baldíos",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": "o en donde la Dirección Nacional de Patrimonio Histórico estime conveniente."
+  },
+  "mensaje_no_cumple": "Edificio de alquiler de estacionamientos fuera de edificio de 4º orden o lote baldío sin anuencia de la DNPH.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Solo aplica si el uso propuesto es edificio de alquiler de estacionamientos; también se admite donde la Dirección Nacional de Patrimonio Histórico lo estime conveniente. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: admite además donde la DNPH lo estime conveniente. El mensaje nombra esa anuencia, que la cita omitía; se cita el parágrafo completo. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B2 («Parágrafo: Los edificios de alquiler de estacionamientos se permitirán solamente en edificios de 4º orden y en lotes …», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-SIV-USOS",
+  "version": 2,
+  "titulo": "SIV: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 11",
+   "pagina_pdf": 6,
+   "cita_textual": "edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicios religiosos, a nivel vecinal o barrial."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['SIV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicios religiosos, a nivel vecinal o barrial.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es un servicio institucional vecinal (Art. 11).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Servicios institucionales a nivel vecinal o barrial. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicio…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-SIU-USOS",
+  "version": 2,
+  "titulo": "SIU: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 12",
+   "pagina_pdf": 6,
+   "cita_textual": "edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicios religiosos, a nivel urbano."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['SIU']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicios religiosos, a nivel urbano.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es un servicio institucional urbano (Art. 12).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Servicios institucionales a nivel urbano. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («edificios destinados al servicio de salud, de la educación, seguridad, cultura, deportes, administración y a servicio…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-PL-USOS",
+  "version": 2,
+  "titulo": "PL: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 13",
+   "pagina_pdf": 7,
+   "cita_textual": "espacios abiertos dedicados a la recreación pasiva, tales como parques, plazas, plazoletas y paseos peatonales"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "espacios abiertos dedicados a la recreación pasiva, tales como parques, plazas, plazoletas y paseos peatonales",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es de recreación pasiva en espacio abierto (Art. 13).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "De carácter cívico o conmemorativo. El Parágrafo del Art. 13 respeta las actividades existentes en fincas zonificadas con otro uso hasta que culminen; no se convirtió en regla porque su alcance (¿solo PL o todo el Casco?) no es claro. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («espacios abiertos dedicados a la recreación pasiva, tales como parques, plazas, plazoletas y paseos peatonales», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-DNPH-ORDEN",
+  "version": 2,
+  "titulo": "Criterios de intervención de la DNPH según orden de conservación",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 15",
+   "pagina_pdf": 7,
+   "cita_textual": "Se deberán respetar los criterios de intervención, protección y conservación de las edificaciones y de los elementos arquitectónicos que las conforman"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B5",
+   "cita": "Se deberán respetar los criterios de intervención, protección y conservación de las edificaciones y de los elementos arquitectónicos que las conforman",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": "y que han sido identificados por la Dirección Nacional de Patrimonio Histórico del Instituto Nacional de Cultura."
+  },
+  "mensaje_no_cumple": "El proyecto no acredita el orden de conservación del inmueble ni el respeto de los criterios de intervención de la DNPH.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Determinar el orden (Primer a Cuarto) asignado por la DNPH/INAC; de él dependen altura, ocupación, patios y estacionamientos (Arts. 17-31). Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Se deberán respetar los criterios de intervención, protección y conservación de las edificaciones y de los elementos …», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-DIFERENCIA-NIVELES",
+  "version": 2,
+  "titulo": "Diferencia máxima de niveles con colindantes (obra nueva)",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 16",
+   "pagina_pdf": 7,
+   "cita_textual": "No deberán existir más de dos niveles de diferencia entre una construcción nueva y sus colindantes."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == true",
+  "entradas": [
+   "proyecto.diferencia_niveles_colindantes"
+  ],
+  "condicion": "proyecto.diferencia_niveles_colindantes <= 2",
+  "unidad": "niveles",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "No deberán existir más de dos niveles de diferencia entre una construcción nueva y sus colindantes.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La construcción nueva supera en más de dos niveles a alguno de sus colindantes.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.diferencia_niveles_colindantes = máxima diferencia (en valor absoluto) de niveles con cualquier colindante. Hecho nuevo proyecto.obra_nueva (bool). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («No deberán existir más de dos niveles de diferencia entre una construcción nueva y sus colindantes.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ALTURA-1Y2-ORDEN",
+  "version": 2,
+  "titulo": "Primer y Segundo Orden: se mantiene la altura original",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 17",
+   "pagina_pdf": 7,
+   "cita_textual": "En edificaciones de Primer Orden y Segundo Orden, se mantendrá la altura original del edificio."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['primer', 'segundo']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "En edificaciones de Primer Orden y Segundo Orden, se mantendrá la altura original del edificio.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El proyecto altera la altura original de un edificio de Primer o Segundo Orden.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Tampoco se permite aumentar la altura de los muros de fachada en Primer, Segundo y Tercer Orden. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En edificaciones de Primer Orden y Segundo Orden, se mantendrá la altura original del edificio.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ALTURA-3-ORDEN",
+  "version": 3,
+  "titulo": "Tercer Orden: sin pisos adicionales hacia el frente",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 17",
+   "pagina_pdf": 8,
+   "cita_textual": "En edificación de Tercer Orden, no se permitirá añadir pisos adicionales hacia el frente de la edificación."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion == 'tercer'",
+  "entradas": [
+   "proyecto.pisos_adicionales_frente"
+  ],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "En edificación de Tercer Orden, no se permitirá añadir pisos adicionales hacia el frente de la edificación.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El proyecto añade pisos hacia el frente de una edificación de Tercer Orden.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Tampoco se permite aumentar la altura de los muros de fachada (encabezado del Art. 17, pág. 7). Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Prohibición computable con un dato declarado: número de pisos añadidos hacia el frente de la edificación de Tercer Orden (debe ser 0). Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («En edificación de Tercer Orden, no se permitirá añadir pisos adicionales hacia el frente de la edificación.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)",
+  "condicion": "proyecto.pisos_adicionales_frente == 0"
+ },
+ {
+  "id": "CA-TODAS-ALTURA-4-ORDEN-PISOS",
+  "version": 2,
+  "titulo": "Cuarto Orden: planta baja y tres altos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 17",
+   "pagina_pdf": 8,
+   "cita_textual": "En edificación de Cuarto Orden, se permitirá planta baja y tres altos."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion == 'cuarto'",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "condicion": "proyecto.pisos_totales <= 4",
+  "unidad": "pisos",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "En edificación de Cuarto Orden, se permitirá planta baja y tres altos.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación de Cuarto Orden excede planta baja y tres altos (4 pisos).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Planta baja + tres altos = 4 pisos. No se extendió a lotes baldíos porque el texto solo nombra el Cuarto Orden; la altura de obra nueva se trata en CA-TODAS-ALTURA-NUEVA-ENTREPISO y CA-TODAS-ALTURA-NUEVA-16M. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En edificación de Cuarto Orden, se permitirá planta baja y tres altos.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ALTURA-NUEVA-ENTREPISO",
+  "version": 2,
+  "titulo": "Obra nueva: altura libre de entrepiso entre 3.00 y 4.00 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 17",
+   "pagina_pdf": 8,
+   "cita_textual": "con una altura libre de entrepiso entre tres (3.00) y cuatro (4.00) metros"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == true",
+  "entradas": [
+   "proyecto.altura_libre_entrepiso_m"
+  ],
+  "condicion": "proyecto.altura_libre_entrepiso_m >= 3 and proyecto.altura_libre_entrepiso_m <= 4",
+  "unidad": "m",
+  "tolerancia": 0.01,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "con una altura libre de entrepiso entre tres (3.00) y cuatro (4.00) metros",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La altura libre de entrepiso de la edificación nueva está fuera del rango 3.00-4.00 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.altura_libre_entrepiso_m (la altura libre de piso a cielo del nivel típico; si varía, el valor fuera de rango más desfavorable). La norma exceptúa las 'edificaciones con entrepisos' (ver CA-TODAS-ALTURA-NUEVA-16M): si el proyecto las tiene, esta regla debe revisarse manualmente. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («con una altura libre de entrepiso entre tres (3.00) y cuatro (4.00) metros», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ALTURA-NUEVA-16M",
+  "version": 2,
+  "titulo": "Obra nueva con entrepisos: altura máxima 16.00 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 17",
+   "pagina_pdf": 8,
+   "cita_textual": "salvo en edificaciones con entrepisos, cuya altura máxima permitida será de dieciséis (16.00) metros."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "salvo en edificaciones con entrepisos, cuya altura máxima permitida será de dieciséis (16.00) metros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación nueva con entrepisos excede la altura máxima de 16.00 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se deja como criterio porque el texto no define 'entrepisos' (¿mezzanines?) ni desde dónde se mide la altura, ni si los 16.00 m rigen también a las edificaciones sin entrepisos. Candidata a cuantitativa (proyecto.altura_m <= 16) cuando la DOYC fije la interpretación. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («salvo en edificaciones con entrepisos, cuya altura máxima permitida será de dieciséis (16.00) metros.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-OCUPACION-EXISTENTE",
+  "version": 2,
+  "titulo": "Edificación existente: ocupación según orden y patio original",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 18",
+   "pagina_pdf": 8,
+   "cita_textual": "En edificaciones existentes, las áreas de ocupación estarán sujetas a la categoría, de orden de conservación asignada al edificio"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == false",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B5",
+   "cita": "En edificaciones existentes, las áreas de ocupación estarán sujetas a la categoría, de orden de conservación asignada al edificio y a la existencia del área libre o patio original, o bien a la factibilidad de su recuperación.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación de la edificación existente no respeta su orden de conservación ni el área libre o patio original.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Depende del área libre o patio original o de la factibilidad de recuperarlo; ver también Arts. 21-22. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («En edificaciones existentes, las áreas de ocupación estarán sujetas a la categoría, de orden de conservación asignada…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-OCUPACION-LOTE-MENOR-100",
+  "version": 2,
+  "titulo": "Obra nueva o lote baldío < 100 m2: 100% con ventilación garantizada",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 19",
+   "pagina_pdf": 8,
+   "cita_textual": "se permitirá la construcción en el 100% del área del lote, siempre y cuando se establezca en planos y se garantice la ventilación adecuada de todos los espacios habitables."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and (proyecto.obra_nueva == true or lote.orden_conservacion == 'baldio') and lote.area_m2 < 100",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "se permitirá la construcción en el 100% del área del lote, siempre y cuando se establezca en planos y se garantice la ventilación adecuada de todos los espacios habitables.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Ocupación del 100% sin ventilación adecuada de todos los espacios habitables establecida en planos.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Lotes con área inferior a 100.00 m2. Hecho nuevo lote.orden_conservacion ('baldio') y proyecto.obra_nueva. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («se permitirá la construcción en el 100% del área del lote, siempre y cuando se establezca en planos y se garantice la…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-OCUPACION-LOTE-101-500",
+  "version": 2,
+  "titulo": "Obra nueva o lote baldío de 101 a 500 m2: ocupación máxima 90%",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 19",
+   "pagina_pdf": 8,
+   "cita_textual": "En lotes con áreas comprendidas entre 101.00 y 500.00 metros cuadrados, se permitirá una ocupación del 90% del área del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and (proyecto.obra_nueva == true or lote.orden_conservacion == 'baldio') and lote.area_m2 >= 101 and lote.area_m2 <= 500",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "condicion": "proyecto.ocupacion_pct <= 90",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "En lotes con áreas comprendidas entre 101.00 y 500.00 metros cuadrados, se permitirá una ocupación del 90% del área del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación excede el 90% del área del lote (lotes de 101 a 500 m2).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Rango literal 101.00-500.00 m2; los lotes entre 100 y 101 m2 o entre 500 y 501 m2 no tienen tramo (ver CA-TODAS-LOTE-TRAMO-SIN-NORMA). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En lotes con áreas comprendidas entre 101.00 y 500.00 metros cuadrados, se permitirá una ocupación del 90% del área d…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-OCUPACION-LOTE-MAYOR-501",
+  "version": 2,
+  "titulo": "Obra nueva o lote baldío > 501 m2: ocupación máxima 80%",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 19",
+   "pagina_pdf": 8,
+   "cita_textual": "se permitirá un área de ocupación del 80% del área del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and (proyecto.obra_nueva == true or lote.orden_conservacion == 'baldio') and lote.area_m2 > 501",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "condicion": "proyecto.ocupacion_pct <= 80",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "se permitirá un área de ocupación del 80% del área del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación excede el 80% del área del lote (lotes de más de 501 m2).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Umbral literal 'superior a 501.00 metros cuadrados' (el separador decimal de '501.00' en el escaneo es dudoso entre punto y coma; el valor 501 es legible). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («se permitirá un área de ocupación del 80% del área del lote.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-PATIOS-1Y2-ORDEN",
+  "version": 2,
+  "titulo": "Primer y Segundo Orden: recuperación integral de patios",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 21",
+   "pagina_pdf": 9,
+   "cita_textual": "se establece como condición la recuperación integral de las áreas de los patios interiores"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['primer', 'segundo']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "se establece como condición la recuperación integral de las áreas de los patios interiores",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El proyecto no recupera íntegramente los patios interiores y áreas libres originales de un edificio de Primer o Segundo Orden.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («se establece como condición la recuperación integral de las áreas de los patios interiores», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-PATIOS-3-ORDEN",
+  "version": 3,
+  "titulo": "Tercer Orden: patio no inferior al existente",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 22",
+   "pagina_pdf": 9,
+   "cita_textual": "Para las edificaciones de Tercer Orden, el tamaño del patio proyectado o previsto no será inferior al existente."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion == 'tercer' and lote.patio_existente_m2 > 0",
+  "entradas": [
+   "proyecto.patio_m2",
+   "lote.patio_existente_m2"
+  ],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Para las edificaciones de Tercer Orden, el tamaño del patio proyectado o previsto no será inferior al existente.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El patio proyectado del edificio de Tercer Orden es menor que el existente.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Si no hay vestigios del patio se aplica la norma de Cuarto Orden (Art. 23). Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «No será inferior al existente»: computable con las áreas de patio proyectada y existente declaradas. Supuesto: «tamaño» es el área total de patio. Cambios: tipo criterio → cuantitativa, aplica_si, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Para las edificaciones de Tercer Orden, el tamaño del patio proyectado o previsto no será inferior al existente.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)",
+  "condicion": "proyecto.patio_m2 >= lote.patio_existente_m2"
+ },
+ {
+  "id": "CA-TODAS-AREA-LIBRE-LOTE-MENOR-100",
+  "version": 2,
+  "titulo": "Cuarto Orden o baldío < 100 m2: sin área libre exigida si hay ventilación",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 23",
+   "pagina_pdf": 9,
+   "cita_textual": "no se exigirán áreas libres o patios interiores, siempre y cuando se garantice y establezca en planos, la ventilación adecuada en todos los espacios habitables."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['cuarto', 'baldio'] and lote.area_m2 < 100",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "no se exigirán áreas libres o patios interiores, siempre y cuando se garantice y establezca en planos, la ventilación adecuada en todos los espacios habitables.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Sin área libre ni ventilación adecuada establecida en planos para todos los espacios habitables.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Lotes con área inferior a 100.00 m2. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («no se exigirán áreas libres o patios interiores, siempre y cuando se garantice y establezca en planos, la ventilación…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-AREA-LIBRE-LOTE-101-500",
+  "version": 2,
+  "titulo": "Cuarto Orden o baldío de 101 a 500 m2: área libre mínima 10%",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 23",
+   "pagina_pdf": 9,
+   "cita_textual": "En lotes con áreas comprendidas entre 101.00 y 500.00 m2, el área libre mínima será del 10% del área del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['cuarto', 'baldio'] and lote.area_m2 >= 101 and lote.area_m2 <= 500",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_libre_pct >= 10",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "En lotes con áreas comprendidas entre 101.00 y 500.00 m2, el área libre mínima será del 10% del área del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área libre es menor que el 10% del área del lote.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Art. 20: los conductos de ventilación no computan como área libre. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En lotes con áreas comprendidas entre 101.00 y 500.00 m2, el área libre mínima será del 10% del área del lote.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-PATIO-LADO-LOTE-101-500",
+  "version": 2,
+  "titulo": "Cuarto Orden o baldío de 101 a 500 m2: lado menor del patio ≥ 2.50 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 23",
+   "pagina_pdf": 9,
+   "cita_textual": "El lado menor del patio o área libre no será inferior a 2.50 metros."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['cuarto', 'baldio'] and lote.area_m2 >= 101 and lote.area_m2 <= 500",
+  "entradas": [
+   "proyecto.patio_lado_menor_m"
+  ],
+  "condicion": "proyecto.patio_lado_menor_m >= 2.5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "El lado menor del patio o área libre no será inferior a 2.50 metros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El lado menor del patio o área libre es inferior a 2.50 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.patio_lado_menor_m (el menor lado de los patios o áreas libres computados). Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («El lado menor del patio o área libre no será inferior a 2.50 metros.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-AREA-LIBRE-LOTE-MAYOR-501",
+  "version": 2,
+  "titulo": "Cuarto Orden o baldío > 501 m2: área libre mínima 20%",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 23",
+   "pagina_pdf": 9,
+   "cita_textual": "el área libre corresponderá a un mínimo del 20% del área del lote"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['cuarto', 'baldio'] and lote.area_m2 > 501",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_libre_pct >= 20",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "el área libre corresponderá a un mínimo del 20% del área del lote",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área libre es menor que el 20% del área del lote.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Art. 20: los conductos de ventilación no computan como área libre. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («el área libre corresponderá a un mínimo del 20% del área del lote», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-PATIO-LADO-LOTE-MAYOR-501",
+  "version": 2,
+  "titulo": "Cuarto Orden o baldío > 501 m2: lado menor del patio ≥ 4.00 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 23",
+   "pagina_pdf": 9,
+   "cita_textual": "el lado menor del patio o área libre, no será inferior a 4.00 metros."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['cuarto', 'baldio'] and lote.area_m2 > 501",
+  "entradas": [
+   "proyecto.patio_lado_menor_m"
+  ],
+  "condicion": "proyecto.patio_lado_menor_m >= 4",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "el lado menor del patio o área libre, no será inferior a 4.00 metros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El lado menor del patio o área libre es inferior a 4.00 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.patio_lado_menor_m. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («el lado menor del patio o área libre, no será inferior a 4.00 metros.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-RETIRO-LATERAL-ABERTURAS",
+  "version": 2,
+  "titulo": "Retiro lateral mínimo con aberturas: 1.20 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 24",
+   "pagina_pdf": 9,
+   "cita_textual": "Con aberturas, el retiro no será inferior a 1.20 metros."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_laterales == true",
+  "entradas": [
+   "proyecto.retiro_lateral_m"
+  ],
+  "condicion": "proyecto.retiro_lateral_m >= 1.2",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Con aberturas, el retiro no será inferior a 1.20 metros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Con aberturas laterales, el retiro lateral es inferior a 1.20 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.aberturas_laterales (bool). Sin aberturas se mantienen o recuperan los adosamientos (Art. 24.1); los edificios existentes mantienen sus retiros laterales actuales (Art. 24.3). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Con aberturas, el retiro no será inferior a 1.20 metros.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-MEDIANERAS",
+  "version": 3,
+  "titulo": "Paredes medianeras: adosamientos, aberturas y cerramientos de vidrio",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 24",
+   "pagina_pdf": 9,
+   "cita_textual": "No se permitirán bloques de vidrio, paneles de vidrio u otros cerramientos equivalentes en pared medianera."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+  "entradas": [
+   "plano.medianera_con_vidrio"
+  ],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "No se permitirán bloques de vidrio, paneles de vidrio u otros cerramientos equivalentes en pared medianera.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El proyecto propone bloques de vidrio, paneles de vidrio u otros cerramientos equivalentes en pared medianera (Art. 24, num. 4).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Art. 24.1 y 25.3: aberturas en medianeras solo con autorización del propietario colindante y evidencia de que existían en el inmueble original; Art. 24.1: se mantienen o recuperan los adosamientos laterales de la fachada frontal; Art. 25.5: no bloques de vidrio en pared medianera. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): El mensaje exigía autorización, evidencia y adosamientos, que cubren las reglas CA-TODAS-MEDIANERA-* y -ADOSAMIENTO-; se recorta al vidrio. Convertida a dato sí/no. Cambios: tipo criterio → documental, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («No se permitirán bloques de vidrio, paneles de vidrio u otros cerramientos equivalentes en pared medianera.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt); tipo «documental» corregido a «criterio»",
+  "condicion": "plano.medianera_con_vidrio == false"
+ },
+ {
+  "id": "CA-TODAS-RETIRO-POSTERIOR-ABERTURAS",
+  "version": 3,
+  "titulo": "Retiro posterior mínimo con aberturas: 3.00 m",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 25",
+   "pagina_pdf": 10,
+   "cita_textual": "Con aberturas, el retiro posterior no será inferior a 3.00 m;"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_posteriores == true",
+  "entradas": [
+   "proyecto.retiro_posterior_m"
+  ],
+  "condicion": "proyecto.retiro_posterior_m >= 3",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Con aberturas, el retiro posterior no será inferior a 3.00 m;",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Con aberturas posteriores, el retiro posterior es inferior a 3.00 m.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.aberturas_posteriores (bool). Con paredes ciegas no se exige retiro (Art. 25.1); los edificios existentes mantienen sus retiros posteriores actuales (Art. 25.4). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Con aberturas, el retiro posterior no será inferior a 3.00 m;», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt) | Versión 3 (2026-10-21, ADR-0018): criterio de lectura de proyecto.aberturas_posteriores: vanos (ventanas, puertas o balcones) hacia el retiro o patio posterior, no solo en la pared del lindero."
+ },
+ {
+  "id": "CA-TODAS-LINEA-CONSTRUCCION",
+  "version": 2,
+  "titulo": "Línea de construcción: paramento de fachada sin salientes ni remetimientos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 26",
+   "pagina_pdf": 10,
+   "cita_textual": "Se mantendrá o recuperará la línea del paramento de fachada existente o determinada por las demás construcciones sobre la calle"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Se mantendrá o recuperará la línea del paramento de fachada existente o determinada por las demás construcciones sobre la calle",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La fachada no respeta la línea del paramento existente o tiene salientes o remetimientos no permitidos.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se prohíbe cualquier saliente o remetimiento, salvo los balcones de los niveles superiores. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Se mantendrá o recuperará la línea del paramento de fachada existente o determinada por las demás construcciones sobr…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ESTACIONAMIENTOS",
+  "version": 2,
+  "titulo": "Estacionamientos exigidos según normativa general por orden de conservación",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 27",
+   "pagina_pdf": 10,
+   "cita_textual": "El número de estacionamientos exigido según el uso de suelo asignado al lote se regirá por la normativa general establecida para cada clasificación de orden de conservación."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B5",
+   "cita": "El número de estacionamientos exigido según el uso de suelo asignado al lote se regirá por la normativa general establecida para cada clasificación de orden de conservación.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "No se acredita el número de estacionamientos exigido por la normativa general aplicable.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La resolución no da cifras: remite a la normativa general por orden de conservación. Se prefieren estacionamientos subterráneos; en Primer y Segundo Orden no deben alterar la fisonomía (acceso a rampas). Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («El número de estacionamientos exigido según el uso de suelo asignado al lote se regirá por la normativa general estab…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ESTACIONAMIENTOS-1Y2-ORDEN",
+  "version": 3,
+  "titulo": "Primer y Segundo Orden: estacionamientos solo en planta baja",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 28",
+   "pagina_pdf": 10,
+   "cita_textual": "En edificaciones de Primer Orden y de Segundo Orden solo se permitirán estacionamientos en planta baja"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['primer', 'segundo'] and proyecto.estacionamientos > 0",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "En edificaciones de Primer Orden y de Segundo Orden solo se permitirán estacionamientos en planta baja",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Estacionamientos fuera de planta baja, o visibles desde el exterior, en edificio de Primer o Segundo Orden.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Solo si los vanos y estructuras lo permiten y pasan desapercibidos al exterior. Art. 31: no pueden usarse total ni parcialmente como edificios de estacionamientos. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). Versión 2: solo aplica si el proyecto propone estacionamientos (proyecto.estacionamientos > 0); si falta el dato, va a revisión. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («En edificaciones de Primer Orden y de Segundo Orden solo se permitirán estacionamientos en planta baja», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ },
+ {
+  "id": "CA-TODAS-ESTACIONAMIENTOS-3-ORDEN",
+  "version": 3,
+  "titulo": "Tercer Orden: uso parcial de plantas para estacionamientos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 29",
+   "pagina_pdf": 10,
+   "cita_textual": "En edificaciones de Tercer Orden se permitirá la utilización parcial de las plantas del edificio para estacionamientos, siempre y cuando los vanos y las estructuras existentes así lo permitan."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion == 'tercer' and proyecto.estacionamientos > 0",
+  "entradas": [],
+  "severidad": "observacion",
+  "subsanacion": "informativa",
+  "fundamento": {
+   "criterio": "O1",
+   "cita": "En edificaciones de Tercer Orden se permitirá la utilización parcial de las plantas del edificio para estacionamientos, siempre y cuando los vanos y las estructuras existentes así lo permitan.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Uso de plantas de un edificio de Tercer Orden para estacionamientos que no es parcial o que los vanos y estructuras no permiten.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). Versión 2: solo aplica si el proyecto propone estacionamientos (proyecto.estacionamientos > 0); si falta el dato, va a revisión. El Art. 29 es permisivo: autoriza el uso parcial, no lo exige; por eso es observación y no bloqueante. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O1 («En edificaciones de Tercer Orden se permitirá la utilización parcial de las plantas del edificio para estacionamiento…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+ }
+]

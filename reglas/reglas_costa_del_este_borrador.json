@@ -1,0 +1,1021 @@
+[
+  {
+    "id": "CDE-RM3-E-USOS",
+    "version": 2,
+    "titulo": "RM3-E: usos permitidos",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casa en hilera y sus usos complementarios."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casa en hilera y sus usos complementarios.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona RM3-E.",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Incluye edificios religiosos, culturales, filantrópicos y asistenciales. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares, casa en hilera y su…», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-SIN-COMERCIO-PB",
+    "version": 3,
+    "titulo": "RM3-E: sin locales comerciales en planta baja",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "No se permiten locales comerciales en la planta baja para el expendio de artículos de consumo general."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.locales_comerciales_pb"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "No se permiten locales comerciales en la planta baja para el expendio de artículos de consumo general.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto tiene locales comerciales en planta baja, no permitidos en la zona RM3-E.",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se revisa en la planta baja arquitectónica. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Prohibición («No se permiten») computable con un dato declarado: número de locales comerciales en planta baja (debe ser 0). Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («No se permiten locales comerciales en la planta baja para el expendio de artículos de consumo general.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)",
+    "condicion": "proyecto.locales_comerciales_pb == 0"
+  },
+  {
+    "id": "CDE-RM3-E-DENSIDAD",
+    "version": 2,
+    "titulo": "RM3-E: densidad neta máxima",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "1,500 personas/hectárea (200 unidades/vivienda/hectárea)."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha <= 1500",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Densidad Neta: 1,500 personas/hectárea (200 unidades/vivienda/hectárea).",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta excede 1,500 personas por hectárea (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La densidad del proyecto requiere el factor oficial de personas por vivienda; si no está en el plano, va a revisión. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad Neta: 1,500 personas/hectárea (200 unidades/vivienda/hectárea).», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-LOTE-AREA",
+    "version": 3,
+    "titulo": "RM3-E: área mínima de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Area mínima de lote: 2,000.00 m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 2000",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: 2,000.00 m2",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que 2,000 m² (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: 2,000.00 m2», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-LOTE-FRENTE",
+    "version": 3,
+    "titulo": "RM3-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Frente mínimo de lote: 35.00 ml."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 35",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: 35.00 ml.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 35.00 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: 35.00 ml.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-LOTE-FONDO",
+    "version": 2,
+    "titulo": "RM3-E: fondo mínimo de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Fondo mínimo de lote: 57.00 ml."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "lote.fondo_m"
+    ],
+    "condicion": "lote.fondo_m >= 57",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Fondo mínimo de lote: 57.00 ml.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El fondo del lote es menor que 57.00 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Fondo mínimo de lote: 57.00 ml.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-UN-EDIFICIO",
+    "version": 2,
+    "titulo": "RM3-E: un solo edificio por lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "No se permiten dos edificios en el mismo lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.edificios_en_lote"
+    ],
+    "condicion": "proyecto.edificios_en_lote <= 1",
+    "unidad": "edificios",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "No se permiten dos edificios en el mismo lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay más de un edificio en el lote (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («No se permiten dos edificios en el mismo lote», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-AREA-APARTAMENTO",
+    "version": 2,
+    "titulo": "RM3-E: área mínima por apartamento",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "área mínima por apartamento 250.00 m2 (área cerrada)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.area_min_apartamento_m2"
+    ],
+    "condicion": "proyecto.area_min_apartamento_m2 >= 250",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "área mínima por apartamento 250.00 m2 (área cerrada)",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay apartamentos de menos de 250.00 m² de área cerrada (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara el apartamento más pequeño del proyecto. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («área mínima por apartamento 250.00 m2 (área cerrada)», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-SIN-EXCEPCIONES",
+    "version": 3,
+    "titulo": "RM3-E: sin excepciones de antejardín ni tolerancias en retiros",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, Ni las tolerancias en retiros, excepto en caso que se utilicen para colocar puertas cocheras, gacebos o similares."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, Ni las tolerancias en retiros, excepto en caso que se utilicen para colocar puertas cocheras, gacebos o similares.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto usa excepciones de antejardín o tolerancias en retiros no admitidas (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Solo se admiten para puertas cocheras, gacebos o similares. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio («o similares» exige juicio). El mensaje incluye las tolerancias en retiros, que la cita cortaba; se cita la frase completa (línea 30). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, Ni las tolerancias en retiros, excepto en…», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-SOBREVUELO",
+    "version": 3,
+    "titulo": "RM3-E: sobrevuelo sobre la línea de construcción",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E'] and (lote.parcela not in ['K', 'H'] or lote.frente_paseo_del_mar == true)",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "condicion": "proyecto.sobrevuelo_m <= 2.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El sobrevuelo sobre la línea de construcción excede 2.50 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 2.50 correcto, pero los lotes de las parcelas K y H frente a Paseo del Mar, que pueden sobrevolar hasta 2.50 m, quedaban sin regla. Se incluyen. Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-SOBREVUELO-PARCELAS-K-H",
+    "version": 2,
+    "titulo": "RM3-E: sin sobrevuelo en las parcelas K y H",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción de toda la edificación"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E'] and lote.parcela in ['K', 'H'] and lote.frente_paseo_del_mar == false",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "condicion": "proyecto.sobrevuelo_m <= 0",
+    "unidad": "m",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción de toda la edificación",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En las parcelas K y H no se permite sobrevolar la línea de construcción, salvo frente a Paseo del Mar (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Frente a Paseo del Mar se admite hasta 2.50 m. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción …», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-OCUPACION",
+    "version": 2,
+    "titulo": "RM3-E: ocupación y área libre",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "La que resulte después de aplicar retiros producidos por la línea de construcción o las líneas de construcción (lotes de esquina)."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area de ocupación máxima: La que resulte después de aplicar retiros producidos por la línea de construcción o las líneas de construcción (lotes de esquina).",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede la que dejan la línea (o líneas, en esquina) de construcción y los retiros (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area de ocupación máxima: La que resulte después de aplicar retiros producidos por la línea de construcción o las lín…», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-RETIRO-LATERAL-TORRE",
+    "version": 2,
+    "titulo": "RM3-E: retiro lateral de la torre",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Retiro lateral: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.retiro_lateral_torre_m"
+    ],
+    "condicion": "proyecto.retiro_lateral_torre_m >= 7.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro lateral: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral de la torre es menor que 7.50 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Basamento (planta baja y cinco altos) sin retiro lateral; torre, 7.50 m. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro lateral: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-RETIRO-POSTERIOR-TORRE",
+    "version": 2,
+    "titulo": "RM3-E: retiro posterior de la torre",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Retiro posterior: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.retiro_posterior_torre_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_torre_m >= 7.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Retiro posterior: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior de la torre es menor que 7.50 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: Ninguno en planta baja y cinco (5) altos 7.50 ml. la torre.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-RETIRO-POSTERIOR-SERVIDUMBRE",
+    "version": 2,
+    "titulo": "RM3-E: retiro posterior con servidumbre de paso",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "En los lotes donde existe servidumbre de paso en su posterior, será 7.5 ml. planta baja y cinco altos"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E'] and lote.servidumbre_paso_posterior == true",
+    "entradas": [
+      "proyecto.retiro_posterior_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_m >= 7.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "En los lotes donde existe servidumbre de paso en su posterior, será 7.5 ml. planta baja y cinco altos",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Con servidumbre de paso posterior, el retiro posterior del basamento es menor que 7.5 m (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En los lotes donde existe servidumbre de paso en su posterior, será 7.5 ml. planta baja y cinco altos», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-ESTACIONAMIENTOS-MINIMO",
+    "version": 2,
+    "titulo": "RM3-E: mínimo de dos estacionamientos por apartamento",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Un mínimo de 2 por apartamento."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.estacionamientos",
+      "proyecto.unidades_vivienda"
+    ],
+    "condicion": "proyecto.estacionamientos >= 2 * proyecto.unidades_vivienda",
+    "unidad": "espacios",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Un mínimo de 2 por apartamento.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay menos de dos estacionamientos por apartamento (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Además rige 1 por cada 125.00 m² de apartamento (regla aparte). Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Un mínimo de 2 por apartamento.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-RM3-E-ESTACIONAMIENTOS-AREA",
+    "version": 3,
+    "titulo": "RM3-E: estacionamientos por área de apartamento",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "1 estacionamiento por cada 125.00 m2 de apartamento; por fracción se utilizará el equivalente."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.estacionamientos",
+      "proyecto.area_apartamentos_total_m2"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "1 estacionamiento por cada 125.00 m2 de apartamento; por fracción se utilizará el equivalente.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan uno por cada 125.00 m² de apartamento (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Requiere el área de cada apartamento; «por fracción se utilizará el equivalente»: a revisión. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida: 1 por cada 125.00 m² de apartamento y «por fracción el equivalente» equivalen al área total de apartamentos entre 125. Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («1 estacionamiento por cada 125.00 m2 de apartamento; por fracción se utilizará el equivalente.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)",
+    "condicion": "proyecto.estacionamientos >= proyecto.area_apartamentos_total_m2 / 125"
+  },
+  {
+    "id": "CDE-RM3-E-ESTACIONAMIENTOS-VISITA",
+    "version": 2,
+    "titulo": "RM3-E: estacionamientos de visita",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Además se exigirá un estacionamiento de visita cada 3 apartamentos."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda"
+    ],
+    "condicion": "proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 3",
+    "unidad": "espacios",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Además se exigirá un estacionamiento de visita cada 3 apartamentos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay menos de un estacionamiento de visita por cada 3 apartamentos (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "No pueden venderse: son de uso exclusivo de visitas. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Además se exigirá un estacionamiento de visita cada 3 apartamentos.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-USOS",
+    "version": 2,
+    "titulo": "C2-E: usos permitidos",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Instalaciones comerciales en general relacionadas a las actividades mercantiles y profesionales del Centro Urbano."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Instalaciones comerciales en general relacionadas a las actividades mercantiles y profesionales del Centro Urbano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona C2-E.",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Instalaciones comerciales en general relacionadas a las actividades mercantiles y profesionales del Centro Urbano.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-LOTE-AREA",
+    "version": 3,
+    "titulo": "C2-E: área mínima de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Area mínima de lote: 2,000.00 m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 2000",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima de lote: 2,000.00 m2",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es menor que 2,000 m² (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Area mínima de lote: 2,000.00 m2», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-LOTE-FRENTE",
+    "version": 3,
+    "titulo": "C2-E: frente mínimo de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Frente mínimo de lote: 35.00 ml."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 35",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente mínimo de lote: 35.00 ml.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 35.00 m (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo de lote: 35.00 ml.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-LOTE-FONDO",
+    "version": 2,
+    "titulo": "C2-E: fondo mínimo de lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Fondo mínimo de lote: 57.00 ml."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "lote.fondo_m"
+    ],
+    "condicion": "lote.fondo_m >= 57",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Fondo mínimo de lote: 57.00 ml.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El fondo del lote es menor que 57.00 m (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Fondo mínimo de lote: 57.00 ml.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-UN-EDIFICIO",
+    "version": 2,
+    "titulo": "C2-E: un solo edificio por lote",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "No se permiten dos edificios en el mismo lote"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "proyecto.edificios_en_lote"
+    ],
+    "condicion": "proyecto.edificios_en_lote <= 1",
+    "unidad": "edificios",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "No se permiten dos edificios en el mismo lote",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay más de un edificio en el lote (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («No se permiten dos edificios en el mismo lote», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-AREA-APARTAMENTO",
+    "version": 2,
+    "titulo": "C2-E: área mínima por apartamento",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Area mínima por apartamento 250.00 m2 . (área cerrada)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.area_min_apartamento_m2"
+    ],
+    "condicion": "proyecto.area_min_apartamento_m2 >= 250",
+    "unidad": "m2",
+    "tolerancia": 0.5,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Area mínima por apartamento 250.00 m2 . (área cerrada)",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay apartamentos de menos de 250.00 m² de área cerrada (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Se compara el apartamento más pequeño del proyecto. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Area mínima por apartamento 250.00 m2 . (área cerrada)», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-SIN-EXCEPCIONES",
+    "version": 3,
+    "titulo": "C2-E: sin excepciones de antejardín ni tolerancias en retiros",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, ni las tolerancias en retiros, excepto en caso que se utilicen para colocar puertas cocheras, gacebos o similares."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, ni las tolerancias en retiros, excepto en caso que se utilicen para colocar puertas cocheras, gacebos o similares.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto usa excepciones de antejardín o tolerancias en retiros no admitidas (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Solo se admiten para puertas cocheras, gacebos o similares. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio («o similares» exige juicio). El mensaje incluye las tolerancias en retiros, que la cita cortaba; se cita la frase completa (línea 46). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («NOTA: No se aplicarán las excepciones vigentes para el uso de antejardines, ni las tolerancias en retiros, excepto en…», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-SOBREVUELO",
+    "version": 3,
+    "titulo": "C2-E: sobrevuelo sobre la línea de construcción",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E'] and (lote.parcela not in ['K', 'H'] or lote.frente_paseo_del_mar == true)",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "condicion": "proyecto.sobrevuelo_m <= 2.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El sobrevuelo sobre la línea de construcción excede 2.50 m (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 2.50 correcto, pero los lotes de las parcelas K y H frente a Paseo del Mar, que pueden sobrevolar hasta 2.50 m, quedaban sin regla. Se incluyen. Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («El sobrevuelo sobre las líneas de construcción solo podrá hacerse a un máximo de 2.50 m.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-SOBREVUELO-PARCELAS-K-H",
+    "version": 2,
+    "titulo": "C2-E: sin sobrevuelo en las parcelas K y H",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción de toda la edificación"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E'] and lote.parcela in ['K', 'H'] and lote.frente_paseo_del_mar == false",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "condicion": "proyecto.sobrevuelo_m <= 0",
+    "unidad": "m",
+    "tolerancia": 0,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción de toda la edificación",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En las parcelas K y H no se permite sobrevolar la línea de construcción, salvo frente a Paseo del Mar (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Frente a Paseo del Mar se admite hasta 2.50 m. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Para el resto de los lotes en la Parcela K y la Parcela H, la línea de construcción fijará el límite de construcción …», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-OCUPACION",
+    "version": 2,
+    "titulo": "C2-E: ocupación",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Para uso de oficinas, 100 % del área construible, o sea sin contar el área restringida por la línea de construcción y retiros."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Para uso de oficinas, 100 % del área construible, o sea sin contar el área restringida por la línea de construcción y retiros.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La ocupación excede el área construible fuera de la línea de construcción y los retiros (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "El área libre «varía». Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Para uso de oficinas, 100 % del área construible, o sea sin contar el área restringida por la línea de construcción y…», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-RETIRO-LATERAL",
+    "version": 3,
+    "titulo": "C2-E: retiro lateral",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Cuando colinde con el uso residencial, el retiro lateral se regirá por lo indicado en la norma RM-3E. Cuando colinde con otro uso comercial, se permitirá el adosamiento en planta baja y 7.50 m. en la torre."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Cuando colinde con el uso residencial, el retiro lateral se regirá por lo indicado en la norma RM-3E. Cuando colinde con otro uso comercial, se permitirá el adosamiento en planta baja y 7.50 m. en la torre.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro lateral no corresponde a la colindancia (norma RM-3E junto a residencial; adosado y 7.50 m en torre junto a comercial).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: remite a la norma RM-3E según colindancia. El mensaje incluye el caso junto a uso comercial, que la cita omitía; se cita la fila completa. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Cuando colinde con el uso residencial, el retiro lateral se regirá por lo indicado en la norma RM-3E. Cuando colinde …», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-RETIRO-POSTERIOR-TORRE",
+    "version": 2,
+    "titulo": "C2-E: retiro posterior de la torre",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Ninguno en planta baja y cinco altos 7.50 ml. en la torre."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "proyecto.retiro_posterior_torre_m"
+    ],
+    "condicion": "proyecto.retiro_posterior_torre_m >= 7.5",
+    "unidad": "m",
+    "tolerancia": 0.05,
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Ninguno en planta baja y cinco altos 7.50 ml. en la torre.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El retiro posterior de la torre es menor que 7.50 m (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Ninguno en planta baja y cinco altos 7.50 ml. en la torre.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  },
+  {
+    "id": "CDE-C2-E-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "C2-E: estacionamientos por uso",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila C2-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Un espacio por cada 100 m2, en depósitos. Un espacio por cada 50 m2 , de uso de oficina. Un espacio por cada 50 m2 , de uso comercial. Para uso residencial, se aplicarán las normas de estacionamientos que rigen para este uso."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+    "entradas": [
+      "proyecto.estacionamientos",
+      "proyecto.area_deposito_m2",
+      "proyecto.area_oficina_m2",
+      "proyecto.area_comercial_m2"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Un espacio por cada 100 m2, en depósitos. Un espacio por cada 50 m2 , de uso de oficina. Un espacio por cada 50 m2 , de uso comercial.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos no alcanzan lo exigido por uso (zona C2-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "1 por cada 100 m² de depósito, 1 por cada 50 m² de oficina y 1 por cada 50 m² de comercio; el uso residencial sigue sus propias normas. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Convertida: 1/100 m² de depósito, 1/50 m² de oficina y 1/50 m² comercial, literales. La cita omitía el comercial; se cita la fila completa. Cambios: tipo criterio → cuantitativa, condicion, entradas, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Un espacio por cada 100 m2, en depósitos. Un espacio por cada 50 m2 , de uso de oficina. Un espacio por cada 50 m2 , …», normativa/zonas-exceptuadas/textos/costa_del_este.txt)",
+    "condicion": "proyecto.estacionamientos >= proyecto.area_deposito_m2 / 100 + proyecto.area_oficina_m2 / 50 + proyecto.area_comercial_m2 / 50"
+  }
+]

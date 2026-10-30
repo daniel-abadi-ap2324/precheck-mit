@@ -1,0 +1,28 @@
+[
+ {
+  "id": "L21-TODAS-ZONIFICACION-DETALLADA",
+  "version": 1,
+  "titulo": "Zonificación detallada del MIVI",
+  "fuente": {
+   "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+   "articulo": "Artículo 5",
+   "pagina_pdf": 5,
+   "cita_textual": "servirán de base para establecer la zonificación detallada que realicen las autoridades competentes, en particular el Ministerio de Vivienda, en lo concerniente al desarrollo urbano."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-SILVESTRE-PROTEGIDA', 'AREA-PRODUCCION-RURAL', 'AREA-VERDE-URBANA', 'AREA-GENERACION-EMPLEO', 'CENTRO-URBANO', 'CENTRO-VECINAL', 'VIVIENDA-BAJA-DENSIDAD', 'VIVIENDA-MEDIANA-DENSIDAD', 'VIVIENDA-ALTA-DENSIDAD', 'AREA-OPERACION-CANAL', 'AREA-USO-DIFERIDO-ESCLUSAS', 'AREA-COMPATIBILIDAD', 'AREA-NO-DESARROLLABLE', 'AREA-USO-DIFERIDO-PELIGROSOS']",
+  "entradas": [],
+  "severidad": "observacion",
+  "mensaje_no_cumple": "La categoría del Plan General no basta: los parámetros del lote salen del código de zona de la Res. 160-2002.",
+  "vigencia": {
+   "desde": "1997-07-03",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Si el lote tiene código de la Res. 160-2002, evaluarlo con lote.norma_aplicable = 'MIVIOT-AC-R160-2002'. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Art. 5 es una disposición de alcance (base para la zonificación del MIVI), sin obligación verificable en el plano."
+  }
+ }
+]

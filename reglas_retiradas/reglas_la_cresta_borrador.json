@@ -1,0 +1,82 @@
+[
+ {
+  "id": "LC-R2B-ALTURA",
+  "version": 1,
+  "titulo": "R2B-E: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+   "articulo": "Artículo Quinto",
+   "pagina_pdf": 3,
+   "cita_textual": "Altura máxima: según densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida (zona R2B-E).",
+  "vigencia": {
+   "desde": "1992-03-04",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la zona.",
+   "fusionada_en": "LC-R2B-DENSIDAD"
+  }
+ },
+ {
+  "id": "LC-RM-ALTURA",
+  "version": 1,
+  "titulo": "RM-E: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+   "articulo": "Artículo Sexto",
+   "pagina_pdf": 4,
+   "cita_textual": "Altura máxima : según densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida (zona RM-E).",
+  "vigencia": {
+   "desde": "1992-03-04",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la zona.",
+   "fusionada_en": "LC-RM-DENSIDAD"
+  }
+ },
+ {
+  "id": "LC-TODAS-PLANOS-ANTERIORES",
+  "version": 1,
+  "titulo": "Anteproyectos o planos aprobados antes de la resolución",
+  "fuente": {
+   "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+   "articulo": "Artículo Octavo",
+   "pagina_pdf": 4,
+   "cita_textual": "Las fincas que a la fecha cuenten con anteproyectos o planos de construcción aprobados, seguirán vigentes hasta la fecha de su validez."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E', 'R2A-E', 'R2-A-E', 'R2B-E', 'R2-B-E', 'RM-E', 'RM1-E', 'RM2-E', 'RM3-E'] and expediente.invoca_uso_anterior == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El expediente invoca un anteproyecto o plano aprobado antes de 1992: vencido, debe acogerse a esta zonificación.",
+  "vigencia": {
+   "desde": "1992-03-04",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Ruido: transitoria de 1992; los anteproyectos y planos aprobados antes ya vencieron, y no impone obligación al plano."
+  }
+ }
+]

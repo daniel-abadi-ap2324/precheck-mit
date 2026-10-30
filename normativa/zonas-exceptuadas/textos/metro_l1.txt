@@ -1,0 +1,536 @@
+Fuente: Fichas normativas del Polígono de Influencia de la Línea 1 del Metro de Panamá (códigos de zona "Metro de Panamá", MP-): Plan Parcial del Polígono de Influencia de la Línea 1 del Metro de Panamá (ZOT-E7 del PLOT). Los rótulos de las fichas dicen "Documento Técnico / Polígono de Influencia del Sistema Metro de Panamá" y "MINISTERIO DE VIVIENDA Y ORDENAMIENTO TERRITORIAL" (MIVIOT).
+Instrumento de adopción: la copia NO contiene la resolución de aprobación, ni su número, ni su fecha, ni datos de Gaceta Oficial (solo las fichas normativas, con numeración propia de páginas 8 a 29). El Acuerdo N°61 de 2021 (PLOT) lo cita como "Plan Parcial Polígono de Influencia de la Línea 1 del Metro de Panamá (PPLOT)", ZOT-E7 (ver normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt).
+PDF: normativas/Línea 1 del Metro de Panamá - Normativa.pdf (22 páginas escaneadas; págs. 15-22 transcritas en una segunda pasada, cotejadas con la imagen, hojas apaisadas giradas 90°; la pág. 3 del PDF repite la ficha MP-RE de la pág. 2).
+Transcripción cotejada con la imagen del PDF escaneado; verificar contra la Gaceta antes de aprobar.
+Convención: tablas fila por fila, "Rótulo | subcategoría | valor"; [ilegible] o [¿…?] donde la imagen no se lee con certeza. Se transcriben las tablas y el texto de los gráficos que respaldan reglas; se omiten los rótulos internos de los dibujos (pisos, autos, cotas) salvo los bloques "NIVELES PERMITIDOS".
+
+[[pág 1 del PDF]]
+NORMA
+RESIDENCIAL
+CÓDIGO DE ZONA | DENSIDAD | ÁREA MÍNIMA DEL LOTE (m2)
+MP-RE | 500 | Vivienda Unifamiliar 200 m2 ; Vivienda Bifamiliar una al lado de la otra, / Vivienda Bifamiliar una sobre otra, | 160 m2 c/vivienda ; Apartamentos | 600 m2
+MP-RME | 1,000 | 600 m2
+MP-RM1 | 1,250 | 800 m2
+MP-RM2 | 1,400 | 1,000 m2
+MP-RM3 | 1,500 | 1,200 m2
+(número de página impreso: 8)
+
+[[pág 2 del PDF]]
+Código de Zona Metro de Panamá | MP-RE | Residencial Especial
+Usos Permitidos | Construcción, reconstrucción, modificación o adición de vivienda unifamiliar, bifamiliar una al lado de la otra, bifamiliar una sobre otra, edificios de apartamentos con los siguientes parámetros:
+• Edificio Multifamiliar de manera Independiente;
+• Edificio Multifamiliar combinado con uso comercial, demarcado en el documento gráfico de zonificación adjunto, sobre vías primarias y/o secundarias con servidumbre vial mínima de 15.00 metros.
+REGULACIÓN PREDIAL
+Densidad Neta | 500 personas / Hectárea
+Área Mínima del Lote | Residencial | Unifamiliar | 200 m2
+Área Mínima del Lote | Residencial | Bifamiliar Adosada | Una al lado de la otra / Una sobre otra | 160 m2 cada/una
+Área Mínima del Lote | Residencial | Apartamentos | 600 m2
+Área Mínima del Lote | Residencial + Comercial | Referir al código comercial que aplique
+Frente Mínimo del Lote | 20.00 metros para proyectos nuevos
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Residencial | Planta Baja y Cuatro (4) Altos
+Altura Máxima Permitida | Residencial + Comercial | Referir al código comercial que aplique
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia
+Área Verde Mínima del Lote | 20% del Área Libre del Lote
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la Línea de Propiedad
+Retiro Lateral Mínimo | Residencial | En ambos lados: 2.50 metros con aberturas y/ó 1.50 metros con pared ciega acabada hacia el vecino.
+Retiro Lateral Mínimo | Residencial + Comercial | Referir a la gráfica 1 de colindancia en el retiros laterales en uso comercial / residencial.
+Retiro Posterior Mínimo | Residencial / Residencial + Comercial | Referir al Gráfico de colindancia Posterior MP y a la Resolución No. 188-93, para colindantes fuera del Polígono de Línea 1
+Espacios de Estacionamientos | Residencial | Opcional, o Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Comercial | Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente.
+Código de Zona Metro de Panamá | MP-RE | GRÁFICO REPRESENTATIVO Residencial Especial
+(Gráfico de Retiros Laterales y Altimetrías) Planta Baja y cuatro (4) Altos para el uso residencial en apartamentos. Opcional estacionamientos.
+NIVELES PERMITIDOS / MP-RME:
+• Residencial: Planta Baja y cuatro (4) altos
+• Estacionamientos: Opcionales en Planta Baja,dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino.
+(número de página impreso: 9. Nota del transcriptor: el bloque de niveles de la ficha MP-RE está rotulado "MP-RME" en el original.)
+
+[[pág 3 del PDF]]
+(Repite la ficha MP-RE de la pág. 2 del PDF, con el mismo texto en la tabla y en el gráfico; número de página impreso: 10.)
+Código de Zona Metro de Panamá | MP-RE | Residencial Especial
+Densidad Neta | 500 personas / Hectárea
+Frente Mínimo del Lote | 20.00 metros para proyectos nuevos
+Altura Máxima Permitida | Residencial | Planta Baja y Cuatro (4) Altos
+
+[[pág 4 del PDF]]
+Código de Zona Metro de Panamá | MP-RMEC1 | GRÁFICO REPRESENTATIVO Residencial Multifamiliar Especial Comercial de Baja intensidad
+(Gráfico de Retiros Laterales y Altimetrías) Altura del uso residencial en apartamentos según densidad. Uso combinado Planta Baja y un (1) alto. Opcional estacionamientos.
+NIVELES PERMITIDOS / MP-RMEC1:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y Un (1) piso alto. Sótano 1.
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino.
+(número de página impreso: 11)
+
+[[pág 5 del PDF]]
+Código de Zona Metro de Panamá | MP-RME | Residencial Multifamiliar Especial
+Usos Permitidos | Construcción, reconstrucción, modificación o adición de edificios, con los siguientes parámetros:
+• Edificio Multifamiliar de manera Independiente;
+• Edificio Multifamiliar combinado con uso comercial (MP-C1) en las vías primarias y/o secundarias con servidumbre vial mínima de 15.00 metros.
+REGULACIÓN PREDIAL
+Densidad Neta | 1,000 personas / Hectárea
+Área Mínima del Lote | Residencial / Residencial + Comercial | 600 m2
+Frente Mínimo del Lote | 20.00 metros para proyectos nuevos
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Residencial | Según Densidad
+Altura Máxima Permitida | Residencial + Comercial | PB + 1
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo con la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia
+Área Verde Mínima del Lote | 20% del Área Libre del Lote
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la Línea de Propiedad
+Retiro Lateral Mínimo | Residencial | En ambos lados: 2.50 metros con aberturas y/ó 1.50 metros con pared ciega acabada hacia el vecino.
+Retiro Lateral Mínimo | Residencial + Comercial | Referir a la Gráfica de colindancia en el retiros laterales en uso comercial / residencial.
+Retiro Posterior Mínimo | Residencial / Residencial + Comercial | Referir al Gráfico de colindancia Posterior MP y a la Resolución No. 188-93, para colindantes fuera del Polígono de Línea 1
+Espacios de Estacionamientos | Residencial | Opcional, o Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Comercial | Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente.
+Código de Zona Metro de Panamá | MP-RME | GRÁFICO REPRESENTATIVO Residencial Multifamiliar Especial
+NIVELES PERMITIDOS / MP-RME:
+• Residencial: Según Densidad
+• Estacionamientos: Opcionales en Planta Baja,dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A.2.50 metros con abertura.
+B.1.50 metros sin abertura.
+C .Adosamiento con pared ciega acabada hacia el vecino.
+(número de página impreso: 12)
+
+[[pág 6 del PDF]]
+(La copia no incluye una ficha tabular "Regulación Predial" del código MP-RM1; esta página contiene solo los gráficos representativos MP-RM1C1 y MP-RM1C2. Número de página impreso: 13.)
+Código de Zona Metro de Panamá | MP-RM1C1 | GRÁFICO REPRESENTATIVO Residencial Multifamiliar 1 Comercial de Baja intensidad
+(Gráfico de Retiros Laterales y Altimetrías) Altura del uso residencial en apartamentos, según densidad. Opcional estacionamientos.
+NIVELES PERMITIDOS / MP-RM1C1:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y un (1) piso alto. Sótano 1.
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino.
+Código de Zona Metro de Panamá | MP-RM1C2 | GRÁFICO REPRESENTATIVO Residencial Multifamiliar 1 Comercial de Mediana Intensidad
+(Gráfico de Retiros Laterales y Altimetrías) Altura del uso residencial en apartamentos, según densidad. Opcional estacionamientos.
+NIVELES PERMITIDOS / MP-RM1C2:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y dos (2) pisos altos. Sótano 1.
+• Estacionamientos: Opcionales Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino.
+
+[[pág 7 del PDF]]
+Código de Zona Metro de Panamá | MP-RM2 | Residencial Multifamiliar 2
+Usos Permitidos | Construcción, reconstrucción, modificación o adición de edificios, con los siguientes parámetros:
+• Edificio Multifamiliar de manera Independiente;
+• Edificio Multifamiliar combinado con uso comercial (MP-C1) en las vías primarias y/o secundarias con servidumbre vial mínima de 15.00 metros.
+REGULACIÓN PREDIAL
+Densidad Neta | 1,400 personas / Hectárea
+Área Mínima del Lote | Residencial / Residencial + Comercial | 1,000 m2
+Frente Mínimo del Lote | 20.00 metros para proyectos nuevos
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Residencial | Según Densidad
+Altura Máxima Permitida | Residencial + Comercial | Referir al código comercial MP-C1
+Área de Ocupación Máxima | 100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 20% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | Residencial | En ambos lados: 2.50 metros con aberturas y/ó 1.50 metros con pared ciega acabada hacia el vecino.
+Retiro Lateral Mínimo | Residencial + Comercial | Referir a la gráfica de colindancia en el retiro lateral en uso comercial / residencial.
+Retiro Posterior Mínimo | Residencial / Residencial + Comercial | Referir al Gáfico de colindancia Posterior MP y a la Resolución No. 188-93, para colindantes fuera del Polígono de Línea 1
+Espacios de Estacionamientos | Residencial | Opcional, Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Comercial | Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente.
+Código de Zona Metro de Panamá | MP-RM2 | GRÁFICO REPRESENTATIVO Residencial Multifamiliar 2
+NIVELES PERMITIDOS / MP-RM2:
+• Residencial: Según Densidad
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino.
+(número de página impreso: 14)
+
+[[pág 8 del PDF]]
+(Solo gráficos representativos de MP-RM2C1 y MP-RM2C2; número de página impreso: 15.)
+NIVELES PERMITIDOS / MP-RM2C1:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y un (1) piso alto. Sótano 1 (opcional).
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino
+NIVELES PERMITIDOS / MP-RM2C2:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y dos (2) pisos altos. Sótano 1 (opcional).
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.dosamiento con pared ciega acabada hacia el vecino.
+
+[[pág 9 del PDF]]
+Código de Zona Metro de Panamá | MP-RM3 | Residencial Multifamiliar 3
+Usos Permitidos | Construcción, reconstrucción, modificación o adición de edificios, en los siguientes parámetros:
+• Edificio Multifamiliar de manera Independiente;
+• Edificio Multifamiliar combinado con uso comercial (MP-C2, MP-C3), en las vías primarias y/o secundarias con servidumbre vial mínima de 15.00 metros.
+REGULACIÓN PREDIAL
+Densidad Neta | 1,500 personas / Hectárea
+Área Mínima del Lote | Residencial | 1,200.00 m2
+Área Mínima del Lote | Residencial + Comercial | Referir al código comercial MP-C2 y MP-C3
+Frente Mínimo del Lote | Residencial | 20.00 metros para proyectos nuevos
+Frente Mínimo del Lote | Residencial + Comercial | Referir al código comercial MP-C2 y MP-C3
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Residencial | Según Densidad.
+Altura Máxima Permitida | Residencial + Comercial | Referir al código comercial MP-C2 y MP-C3
+Área de Ocupación Máxima | 100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 40% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | Residencial | En ambos lados: 2.50 metros con aberturas y/ó 1.50 metros con pared ciega acabada hacia el vecino.
+Retiro Lateral Mínimo | Residencial + Comercial | Referir al Gráfic de colindancia en el retiros laterales en uso comercial / residencial.
+Retiro Posterior Mínimo | Residencial / Residencial + Comercial | Referir al Gáfico de colindancia Posterior MP y a la Resolución No. 188-93, para colindantes fuera del Polígono de Línea 1
+Espacios de Estacionamientos | Residencial | Opcional, Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Comercial | Referir a las Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente.
+NIVELES PERMITIDOS / MP-RM3:
+• Residencial: Según Densidad
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino
+(número de página impreso: 16)
+
+[[pág 10 del PDF]]
+(Solo gráficos representativos de MP-RM3C1 y MP-RM3C2; número de página impreso: 17.)
+NIVELES PERMITIDOS / MP-RM3C1:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y un (1) piso alto. Sótano 1 (opcional).
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino
+NIVELES PERMITIDOS / MP-RM3C2:
+• Residencial: Según Densidad
+• Comercial: Planta Baja y dos (2) pisos altos. Sótano 1 (opcional).
+• Estacionamientos: Opcionales en Planta Baja, dos (2) pisos altos y niveles de sótano.
+• Retiros Laterales (R.L.) / en cualquiera de los lados:
+A. 2.50 metros con abertura.
+B. 1.50 metros sin abertura.
+C. Adosamiento con pared ciega acabada hacia el vecino
+
+[[pág 11 del PDF]]
+NORMA
+COMERCIAL
+CLASIFICACIÓN
+CÓDIGO DE ZONA | INTENSIDAD | ÁREA MÍNIMA DEL LOTE (m2) | USO COMBINADO Comercial + Residencial | USO COMBINADO Comercial + Residencial ÁREA MÍNIMA DEL LOTE (m2)
+MP-C1 | Baja | 200 m2 | MP | RMEC1 | 600 m2
+MP-C1 | Baja | 200 m2 | MP | RM1C1 | 800 m2
+MP-C1 | Baja | 200 m2 | MP | RM2C1 | 1,000 m2
+MP-C2 | Mediana | 1,500 m2 | MP-RM3C2 | 1,500 m2
+MP-C3 | Alta | 5,000 m2 | MP-RM3C3 | 5,000 m2
+(Nota del transcriptor: en el original "MP" es una celda combinada para las tres filas de MP-C1, y "MP-C1 | Baja | 200 m2" también son celdas combinadas; se repiten por fila.)
+
+[[pág 12 del PDF]]
+Código de Zona Metro de Panamá | MP-C1 | Comercial de Baja Intensidad
+Usos Permitidos | Instalaciones comerciales, oficinas y de servicios en general, relacionadas con las actividades mercantiles, profesionales y de servicios del centro del área urbana o de la ciudad, que incluyen el manejo, almacenamiento y distribución de la mercancía. Se permitirán actividades relacionadas al uso residencial multifamiliar.
+Parámetros:
+• Comercial de manera independiente.
+• Combinado con uso residencial multifamiliar (MP-RME, MP-RM1, MP-RM2).
+REGULACIÓN PREDIAL
+Área Mínima del Lote | COMERCIAL | 200 m2
+Área Mínima del Lote | Comercial + Residencial | Referir Áreas Mínimas de los Códigos de Zona Residenciales (MP-RME, MP-RM1, MP-RM2)
+Frente Mínimo del Lote | Comercial | 10.00 metros para proyectos nuevos
+Frente Mínimo del Lote | Comercial + Residencial | Referir Código Residencial (MP-RME, MP-RM1, MP-RM2)
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Comercial / Comercial + Residencial | PB + 1
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 10% del Área Libre del Lote
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | Comercial | 1.50 metros en ambos lados con pared ciega acabada hacia el vecino.
+Retiro Posterior Mínimo | 2.50 metros
+Espacio de Estacionamientos | Comercial | Referir a Disposiciones Técnicas en la normativa vigente.
+Espacio de Estacionamientos | Discapacitados | Referir a Disposiciones Técnicas en la normativa vigente.
+Actividades Comerciales Baja Intensidad | Categoría y actividad comercial permitida dentro del código Comercial de Baja Intensidad (C1): Abasto y productos básicos: Minisúper, mercadito, abarrotería, frutería, verdulería, panadería, refresquería, farmacia. Especialidades: Café internet, consultorios médicos, laboratorio médico, librería, zapatería, grabados, impresiones, estudio fotográfico, gimnasio, floristería, agencia de viajes, librería, ópticas, modistería, sastrería, filatelia, numismática, modelismo. Centro de comercio: Comercio al por menor en general, aseguradora, oficina, centro de copiado, internet, lavamático, lavandería, tintorería, artículos de festejos, barbería, salón de belleza, sala de estética, reparación de calzado, tiendas de artículos musicales, de video, electrodomésticos, deportivos, cafetería, refresquería, joyería y bisutería. Financiero: Sucursal de Banco, financiera, casa de cambio, casa de empeño, cooperativas, locales comerciales en primer sótano. Administración y Corporativos: Consultoras, centro de capacitación, oficinas y servicio corporativo.
+-Todas las actividades deberán cumplir con las regulaciones establecidas por las autoridades correspondientes en la materia.
+- Las actividades comerciales solicitadas que no estén contenidas en las Categorías o en el Listado de servicios, serán analizadas y autorizadas por el MIVIOT.
+(Pie: Documento Técnico Polígono de Influencia del Sistema Metro de Panamá; MINISTERIO DE VIVIENDA Y ORDENAMIENTO TERRITORIAL. Número de página impreso: 19)
+
+[[pág 13 del PDF]]
+Código de Zona Metro de Panamá | MP-C2 | Comercial de Mediana Intensidad
+Usos Permitidos | Instalaciones comerciales, oficinas y de servicios en general, relacionadas con las actividades mercantiles, profesionales y de servicios del centro del área urbana o de la ciudad, que incluyen el manejo, almacenamiento y distribución de la mercancía. Se permitirán actividades relacionadas al uso residencial.
+Parámetros:
+• Comercial de manera independiente.
+• Combinado con uso residencial multifamiliar (MP-RM3).
+REGULACIÓN PREDIAL
+Área Mínima del Lote | COMERCIAL | 1,500 m2
+Área Mínima del Lote | Comercial + Residencial | Referir Áreas Mínimas del Código de Zona Residencial (MP-RM3)
+Frente Mínimo del Lote | 20.00 metros para proyectos nuevos
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Comercial | Planta Baja + Nueve (9) pisos
+Altura Máxima Permitida | Comercial + Residencial | Comercial | Planta Baja + Cinco (5) pisos
+Altura Máxima Permitida | Comercial + Residencial | Residencial | Según Densidad
+Área de Ocupación Máxima | 100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 20% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | Comercial | 1.50 metros en ambos lados con pared ciega acabada hacia el vecino.
+Retiro Posterior Mínimo | 2.50 metros
+Espacios de Estacionamientos | Comercial | Referir a Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a Disposiciones Técnicas en la normativa vigente.
+Actividades Comerciales Mediana Intensidad | Categoría y actividad:
+Abasto: Minisúper, mercadito, abarrotería, panadería, frutería, verdulería.
+Productos básicos y especialidades: Refresquería, cafetería, floristería, video tienda, disco tienda, artículos para oficina, grabados, impresiones, estudio fotográfico, gimnasio, café internet, modistería, sastrería, lavamático, lavandería, tintorería, artículos de festejo, barbería, sala de belleza, sala de estética, reparación de calzado, zapatería, joyería, bisutería, boutique, casa de empeño, casa de cambio, ópticas, farmacia consultorios, laboratorios médicos, centro de capacitación, venta de electrodomésticos, artículos musicales, librería, agencia de viajes.
+Hospedaje público: Actividades hoteleras.
+Comercio: Oficina, financiera-, cooperativa y afines, local comercial, centro comercial.
+Las actividades comerciales solicitadas que no estén contenidas en las Categorías o en el Listado de servicios, serán analizados por el MIVIOT.
+(Número de página impreso: 20)
+
+[[pág 14 del PDF]]
+Código de Zona Metro de Panamá | MP-C3 | Comercial de Alta Intensidad
+Usos Permitidos | Instalaciones comerciales, oficinas y de servicios en general, relacionadas con las actividades mercantiles, profesionales y de servicios del centro del área urbana o de la ciudad, que incluyen el manejo, almacenamiento y distribución de la mercancía. Se permitirán actividades relacionadas al uso residencial multifamiliar. (Ver actividades permitidas en el MP-C3).
+Parámetros:
+• Comercial de manera independiente.
+• Combinado con uso residencial multifamiliar (MP-RM3).
+REGULACIÓN PREDIAL
+Área Mínima del Lote | COMERCIAL / Comercial + Residencial | 5,000 m2
+Frente Mínimo del Lote | 40.00 metros para proyectos nuevos
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Comercial | Planta Baja + Doce (12) pisos
+Altura Máxima Permitida | Comercial + Residencial | Comercial | Planta Baja + Cinco (5) pisos
+Altura Máxima Permitida | Comercial + Residencial | Residencial | Según Densidad
+Área de Ocupación Máxima | 100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 20% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | Comercial | 3.00 metros en ambos lados con pared ciega acabada hacia el vecino.
+Retiro Posterior Mínimo | 5.00 metros
+Espacios de Estacionamientos | Comercial | Referir a Disposiciones Técnicas en la normativa vigente.
+Espacios de Estacionamientos | Discapacitados | Referir a Disposiciones Técnicas en la normativa vigente.
+Actividades Comerciales Alta Intensidad | Categoría y actividad:
+Abasto: Supermercado, cadena de abasto, depósito de productos no perecederos, gasolinera.
+Productos básicos y especialidades: Restaurante, bar, discoteca, bodega, boleras, jorón de baile, cantina, taberna, centro de diversión, auditorio, teatro, sala de cine, centros de entretenimiento infantil, consultorio, laboratorio dental, centro asistencial, laboratorio médico, centro de capacitación, venta de electrodomésticos, artículos musicales, mercancía seca, librería, talleres de vehículos a motor, tiendas por departamento, agencia de servicios, talleres de chapistería y pintura, accesorios para autos, talleres en general, distribuidoras de productos, productos lácteos, casa de decoración, venta de repuesto de auto, mecánica en general, arrendadoras de autos, servicio de fletes, venta de automóviles y comercio en general.
+Salud y cuidados especiales: Clínicas, hospitales, consultorios médicos, laboratorios médicos, ópticas, asilo de anciano, guardería, COIF, jardín de Infantes,
+Salud y cuidados especiales: Clínica, consultorio médico, laboratorio médico, óptica, asilo de anciano, guardería, COIF, jardín de Infantes.
+Hospedaje público: Actividades hoteleras
+Comercio: Centro comercial, oficina, financiera, cooperativa y afines, local comercial, Mall comercial.
+Diversión: Parque temático, parque recreativo, anfiteatro, auditorio, academia de enseñanza temática.
+Las actividades comerciales solicitadas que no estén contenidas en las Categorías o en el Listado de servicios, serán analizados por el MIVIOT.
+(Número de página impreso: 21)
+
+[[pág 15 del PDF]]
+NORMA
+SERVICIOS DE EQUIPAMIENTO URBANO
+CLASIFICACIÓN
+CÓDIGO DE ZONA | INTENSIDAD | ÁREA MÍNIMA DEL LOTE (m2)
+MP-SEU1 | Baja | 800
+MP-SEU2 | Mediana | 1,500
+MP-SEU3 | Alta | 5,000
+(número de página impreso: 22)
+
+[[pág 16 del PDF]]
+Código de Zona Metro de Panamá | MP-SEU1 | Servicios de Equipamiento Urbano Baja Intensidad
+Definición | Áreas destinadas a la localización de actividades de servicios y equipamiento urbano que tienen características físicas, funciones similares, pero distintos en relación al nivel de especialidad, cuyas capacidades se apoyan o complementan estructuralmente entre sí, para contribuir al desarrollo integral dentro de la trama urbana de una comunidad, siempre y cuando cumplan con las regulaciones técnicas, ambientales y de seguridad, sin afectar de forma adversa el carácter de la zona.
+Usos Permitidos | Clasificación General de Servicios y Equipamiento Urbano de Baja Intensidad:
+• Salud (servicios de atención primaria, asistencia animal y similares).
+• Asistencial (guardería, orfanato, albergue, y similares).
+• Educativo (parvularios, enseñanza dirigida, y similares).
+• Seguridad y Administración Pública (puestos policivos, corregiduría, administrativos y similares).
+• Servicio Social (oficina general de atención al cliente de servicios públicos, y similares).
+• Cultural (teatro, local de exposiciones, y similares).
+• Edificios de Estacionamientos
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 800 m2
+Frente Mínimo de Lote | 20 metros
+Fondo Mínimo de Lote | Libre
+Altura Máxima | Planta Baja + Un (1) piso alto
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre De Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Línea de Construcción | La establecida ó 5.00 metros mínimos, a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 3.00 metros
+Retiro Posterior Mínimo | 5.00 metros
+Espacios de Estacionamientos | Servicios | Referir a las Disposiciones Técnicas en la normativa vigente
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente
+(número de página impreso: 23)
+
+[[pág 17 del PDF]]
+Código de Zona Metro de Panamá | MP-SEU2 | Servicios de Equipamiento Urbano Mediana Intensidad
+Usos Permitidos | Clasificación General de Servicios y Equipamiento Urbano de Mediana Intensidad:
+• Salud (policentro, consultas médicas especializadas, asistencia animal y similares).
+• Asistencial (guardería, orfanato, albergue, asilos y similares).
+• Educativo (centros de enseñanza, institutos, a nivel vocacional y/o superior; biblioteca; y similares).
+• Seguridad y Administración Pública (puestos policivos, academias, administrativos y similares).
+• Religioso (casa de oración, capilla, enseñanza dirigida, instituto y similares).
+• Servicio Social (oficina general de atención al cliente de servicios públicos, y similares).
+• Cultural (teatros, museos, exposiciones y similares).
+• Edificios de Estacionamientos
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 1,500 m2
+Frente Mínimo de Lote | 20 metros
+Fondo Mínimo de Lote | Libre
+Altura Máxima | Planta Baja + Cuatro (4) pisos altos
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre De Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Línea de Construcción | La establecida o 5.00 metros mínimos, a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 3.00 metros
+Retiro Posterior Mínimo | 5.00 metros
+Espacios de Estacionamientos | Servicios | Referir a Disposiciones Técnicas en la normativa vigente
+Espacios de Estacionamientos | Discapacitados | Referir a Disposiciones Técnicas en la normativa vigente
+(número de página impreso: 24)
+
+[[pág 18 del PDF]]
+Código de Zona Metro de Panamá | MP-SEU3 | Servicios de Equipamiento Urbano Alta Intensidad
+Usos Permitidos | Clasificación General de Servicios y Equipamiento Urbano de Alta Intensidad:
+• Salud (hospital general y/o especializado, asistencia animal y similares).
+• Asistencial (orfanato, albergue, asilos y similares).
+• Educativo (ciclo completo de enseñanza, universidad, instituto de enseñanza superior; biblioteca; instituto: laboral/tecnológico/superior, centro de investigación y similares).
+• Seguridad y Administración Pública (estaciones policivas, academias, administrativos y similares).
+• Religioso (basílica, catedral, iglesia, templo, instituto y similares).
+• Servicio Social (oficina general de atención al cliente de servicios públicos, y similares).
+• Cultural (auditóriums, exposiciones, museos y similares).
+• Edificios de Estacionamientos
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 5,000 m2
+Frente Mínimo de Lote | 35 metros
+Fondo Mínimo de Lote | Libre
+Altura Máxima | Planta Baja + Diez (10) pisos altos
+Área de Ocupación Máxima | 100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre De Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Línea de Construcción | La establecida o 5.00 metros como mínimo, a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 3.00 metros
+Retiro Posterior Mínimo | 5.00 metros
+Espacios de Estacionamientos | Servicios | Referir a las Disposiciones Técnicas en la normativa vigente
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente
+(número de página impreso: 25)
+
+[[pág 19 del PDF]]
+(Página impresa al revés en el escaneo; número de página impreso: 26.)
+NORMA
+PARQUES, PLAZAS Y ÁREAS VERDES
+CLASIFICACIÓN
+CÓDIGO DE ZONA | DEFINICIÓN | ÁREA MÍNIMA DEL LOTE (m2)
+MP-PL | Plaza | 500
+MP-PRV | Parque Recreativo Vecinal | 1,000
+MP-PRU | Parque Recreativo Urbano | 3,000
+MP-AVND | Área Verde No Desarrollable | Libre
+
+[[pág 20 del PDF]]
+(Dos fichas en la hoja; número de página impreso: 27.)
+Código de Zona Metro de Panamá | MP-PL | Plaza
+Definición | Áreas dentro del polígono de Influencia del Metro de Panamá, destinadas a espacios abiertos, de superficie mayormente dura, de infinita proyección en formas (alargada, circular, etc.), en donde el mobiliario urbano y los espacios públicos sean emplazados de forma segura y en el que se resalten elementos que evoquen a la cultura y observación para la promoción de actividades sociales propias del centro urbano.
+Usos Permitidos | Generalidades Temáticas:
+• Emplazamiento de estructuras efímeras: escultura, monumento, fuente, y similares;
+• Accesibilidad: aceras, veredas peatonales, y similares;
+• Mobiliario Urbano: asientos, fuente de agua, basureros, caseta telefónica, y similares.
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 500 m2
+Frente Mínimo del Lote | Libre
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Libre
+Área de Ocupación Máxima | Hasta el 90% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 10% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 5.00 metros a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Retiro Posterior Mínimo | 5.00 metros a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Espacios de Estacionamientos | OPCIONAL
+DISPOSICIONES ESPECIALES
+• Cuando colinde con áreas residenciales, deberá constituir un perímetro de amortiguamiento (mínimo 2.00 m), arborizado con especies nativas;
+• Todas las habilitaciones para la realización de las actividades propias de una plaza, deberán cumplir con las regulaciones establecidas por las autoridades correspondientes en la materia.
+
+Código de Zona Metro de Panamá | MP-PRV | Parque Recreativo Vecinal
+Definición | Áreas dentro del polígono de Influencia del Metro de Panamá, destinadas a espacios abiertos que permitan actividades de recreación, cultura, deporte y similares; en donde el mobiliario urbano y los espacios abiertos públicos sean emplazados de forma segura, de manera que garanticen la sana diversión y sean armónicos con el ambiente natural, permitiendo que resalten las actividades sociales propias de los espacios abiertos de la comunidad.
+Usos Permitidos | Generalidades Temáticas:
+• Emplazamiento de estructuras: gazebo, kiosco, merenderos, puesto policivo, sanitarios, refugio de sol/lluvia, mantenimiento, cancha deportiva multiusos, y similares;
+• Accesibilidad: aceras, veredas peatonales, y similares;
+• Mobiliario Urbano: asientos, bancas, fuentes de agua, basureros, caseta telefónica, juegos infantiles, y similares.
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 1,000 m2
+Frente Mínimo del Lote | 25 metros
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Planta Baja
+Área Máxima De Construcción Cerrada | 20% del área del lote de terreno
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Superficie Permeable | 60%
+Superficie Impermeable | 40%
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 10.00m a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Retiro Posterior Mínimo | 10.00m a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Espacios de Estacionamientos | Servicios | Referir a las Disposiciones Técnicas en la normativa vigente
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente
+DISPOSICIONES ESPECIALES
+• Cuando colinde con áreas residenciales, deberá constituir un perímetro de amortiguamiento (mínimo 2.50 m), arborizado con especies nativas.
+• Todas las habilitaciones para la realización de las actividades que se promuevan en un parque recreativo vecinal, deberán cumplir con las regulaciones técnicas de infraestructura, seguridad y de ambiente establecidas por todas las autoridades competentes a la materia.
+
+[[pág 21 del PDF]]
+(Dos fichas en la hoja; número de página impreso: 28.)
+Código de Zona Metro de Panamá | MP-PRU | Parque Recreativo Urbano
+Usos Permitidos | Generalidades Temáticas:
+• Emplazamiento de estructuras: club deportivo comunitario, sala multiusos, anfiteatro, gimnasio, casa cultural, feria comunitaria, gazebo, kiosco, puesto policivo, sanitarios, refugio de sol/lluvia, mantenimiento, canchas deportivas multiusos, y similares;
+• Accesibilidad: aceras, veredas peatonales, ciclo vías y/o similares;
+Mobiliario Urbano: asientos, bancas, juegos infantiles, fuentes de agua, basureros, caseta telefónica, y similares.
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 3,000 m2
+Frente Mínimo del Lote | 30 metros
+Fondo Mínimo del Lote | Libre
+Altura Máxima Permitida | Planta baja + Un (1) piso alto
+Área de Ocupación Máxima | Hasta el 60% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Libre del Lote | La que resulte al aplicar la línea de construcción y los retiros de acuerdo a la colindancia.
+Área Verde Mínima del Lote | 40% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | 10.00m a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Retiro Posterior Mínimo | 10.00m a partir de la línea de propiedad, para el emplazamiento de estructura (s)
+Espacios de Estacionamientos | Servicios | Referir a las Disposiciones Técnicas en la normativa vigente
+Espacios de Estacionamientos | Discapacitados | Referir a las Disposiciones Técnicas en la normativa vigente
+DISPOSICIONES ESPECIALES
+• Cuando colinde con áreas residenciales, deberá constituir un perímetro de amortiguamiento (mínimo 3.50 m), arborizado con especies nativas;
+• Todas las habilitaciones para la realización de las actividades propias de un parque recreativo urbano deberán cumplir con las regulaciones establecidas por las autoridades correspondientes en la materia.
+
+Código de Zona Metro de Panamá | MP-AVND | Área Verde No Desarrollable
+Definición | Áreas dentro del polígono de Influencia del Metro de Panamá, destinadas a espacios abiertos, de superficie mayormente permeable y de conservación natural, en donde, de ser necesarios, sean emplazados elementos de accesibilidad peatonal, que caractericen espacios públicos seguros y en el que se resalte la promoción de la conservación ambiental, la flora, la fauna, y del buen uso del espacio abierto que representa esta categoría en el centro urbano.
+Usos Permitidos | Generalidades Temáticas:
+• Accesibilidad: aceras, veredas peatonales de superficie natural o permeable, y similares.
+REGULACIÓN PREDIAL
+Área Mínima del Lote | LIBRE
+Frente Mínimo del Lote | LIBRE
+Fondo Mínimo del Lote | LIBRE
+Altura Máxima Permitida | La que recomiende la autoridad competente en materia ambiental.
+Área de Ocupación Máxima | Hasta el 10% del área del lote.
+Área Libre del Lote | 90% del área del lote.
+Área Verde Mínima del Lote | 90% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | NO APLICA
+Retiro Posterior Mínimo | NO APLICA
+Espacios de Estacionamientos | NO APLICA
+DISPOSICIONES ESPECIALES
+• Todas las habilitaciones para la realización de las actividades que correspondan a un área verde no desarrollable, deberán cumplir con las regulaciones establecidas por las autoridades competentes en la materia;
+
+[[pág 22 del PDF]]
+(Ficha y gráfico representativo; número de página impreso: 29.)
+Código de Zona Metro de Panamá | MP-TTU | Transporte Terrestre Urbano
+Definición | Áreas dentro del polígono de Influencia del Metro de Panamá, destinadas a a las actividades relacionadas con los sistemas de transporte terrestre de tipo urbano, interbarrial, tanto de pasajeros como de carga en general.
+Usos Permitidos | Generalidades Temáticas: Sistemas de transporte terrestre urbano tales como, Terminal de transporte terrestre urbano Terminal de transporte interbarrial de pasajeros y de carga en general Piquera de transporte selectivo y colectivo Área de depósitos con su área de carga y descarga Servicios comerciales y de equipamiento urbano, como promoción de actividades complementarias para los usuarios del sistema de transporte urbano.
+REGULACIÓN PREDIAL
+Área Mínima del Lote | 2,000 m2
+Frente Mínimo del Lote | LIBRE
+Fondo Mínimo del Lote | LIBRE
+Altura Máxima Permitida | La que recomiende la autoridad competente en materia de transporte terrestre.
+Área de Ocupación Máxima | Hasta el 70% del área del lote.
+Área Libre del Lote | 30% del área del lote.
+Área Verde Mínima del Lote | 30% del Área Libre del Lote.
+Línea de Construcción | La establecida ó 5.00 metros mínimo a partir de la línea de propiedad.
+Retiro Lateral Mínimo | NO APLICA
+Retiro Posterior Mínimo | NO APLICA
+Espacios de Estacionamientos | NO APLICA
+DISPOSICIONES ESPECIALES
+• Todas las habilitaciones para la realización de las actividades que correspondan a un área verde no desarrollable, deberán cumplir con las regulaciones establecidas por las autoridades competentes en la materia.

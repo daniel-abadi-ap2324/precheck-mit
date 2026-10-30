@@ -1,0 +1,871 @@
+MINISTERIO DE VIVIENDA
+RESOLUCION Nº 160-2002 (De 22 de julio de 2002)
+"Por la cual se crean los Códigos de Zona y Normas de Desarrollo Urbano para el Area del Canal".
+Fuente: Gaceta Oficial Nº 24,645, martes 24 de septiembre de 2002, págs. 30 y siguientes.
+PDF: normativas/Res.#160-2002-Área del Canal.pdf (Gaceta completa de 120 páginas; la resolución empieza en la pág. 30 del PDF, que coincide con la página de la Gaceta).
+Transcripción cotejada con la imagen del PDF escaneado; verificar contra la Gaceta antes de aprobar.
+Solo se transcriben los artículos y cuadros que respaldan reglas. Ortografía original. En los cuadros, cada
+línea es la pareja rótulo–valor tal como se lee en la imagen (rótulo en una columna, valor en la otra).
+
+[[pág 31 del PDF]] ARTICULO 1
+ARTICULO 1: Crear y aprobar los códigos y normas de desarrollo urbano para el Area del Canal.
+
+[[pág 39 del PDF]] ARTICULO 8: Requisitos Generales (actividad residencial)
+ARTICULO 8: Requisitos Generales: Los requisitos generales para la aplicación de códigos de zona de la actividad residencial son los siguientes:
+1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín".
+2. El Sistema de Bonificación no se aplica a ninguno de los códigos residenciales dentro del Area del Canal.
+3. La actividad primaria ocupará un mínimo del 80% y un máximo del 95% del suelo del polígono; mientras que la complementaria un mínimo del 5% y un máximo del 20%.
+6. Los lotes residenciales ubicados dentro de los códigos R1d1, R1d2, R1d3 y R1c podrán tener acceso únicamente de vías locales.
+7. Los lotes residenciales ubicados dentro de los códigos R2d1, R2d2, R2d3 y R2c podrán tener acceso de vías locales y/o colectoras. Los que se encuentran ubicados dentro del código R3d1, así como los servicios institucionales y comerciales deberán tener acceso únicamente por vías colectoras.
+8. En los códigos R2d1, R2d2 y R2d3, cuando sólo se desarrolle un lote con vivienda plurifamiliar vertical, se utilizará el mismo factor del polígono para definir los estacionamientos de visitas, es decir 0.33 por unidad de vivienda. En el caso del código R3d1, el factor es de 0.5 por unidad de vivienda.
+9. En los códigos R1d1, R1d2, R1d3, R2d1, R2d2, R2d3, y R3d1 sólo se podrá utilizar dentro del polígono una de las tipologías de vivienda.
+10. En los códigos R1c y R2c es obligatorio utilizar dentro del polígono todas las tipologías de vivienda. En cada manzana sólo se podrá utilizar una de las tipologías a escoger. El espacio libre entre manzanas puede ser contado como parte del porcentaje exigido de espacio abierto.
+11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts. y los estacionamientos de visitas a un radio máximo de 150 mts.
+
+[[pág 40 del PDF]] ARTICULO 8 (continuación)
+13. El número de personas por unidad de vivienda para calcular la densidad de población estará dada según La siguiente tabla:
+Recámaras | Personas
+1 | 2
+2 | 4
+3 | 5
+4 ó más | 1 persona adicional por cada recámara que se agregue
+14. Para los apartamentos eficientes de un solo ambiente y establecimientos de hospedaje público, tales como hoteles, pensiones, moteles y aparthoteles se computarán dos (2) personas.
+
+[[pág 32 del PDF]] ARTICULO 3: Glosario de términos
+Altura (H): Altura permitida de cualquier edificación desde el nivel de piso acabado hasta la parte superior del techo, definida en función de la línea de construcción por un factor numérico (x) dado por la norma para cada actividad, es decir: h = xLc. Esta definición establece una relación directa entre la amplitud de la vía y la edificación que le sirve de marco. Internamente las edificaciones podrán tener tantos pisos como la altura máxima y el confort lo permitan.
+Area de ocupación: Es la porción de lote sobre la cual se puede asentar la edificación, sin que necesariamente se tenga que incluir el estacionamiento.
+
+[[pág 33 del PDF]] ARTICULO 3: Glosario de términos
+Area verde libre: Area destinada a la siembra de vegetación arbórea, arbustiva y tapizante, su superficie debe ser siempre suave.
+
+[[pág 35 del PDF]] ARTICULO 3: Glosario de términos
+Línea de construcción (Lc): Distancia dada desde el eje o centro de la servidumbre vial hasta el punto de donde se permite la colocación de estructuras permanentes.
+
+
+[[pág 40 del PDF]] ARTICULO 10: Categorías y Sub-Categorías (actividad residencial)
+ARTICULO 10: Categorías y Sub-Categorías: Las Categorías y Sub-Categorías para la actividad residencial son las siguientes:
+1. Baja densidad (R1): desde 50 Hab./ha; hasta 300 Hab./ha
+- Baja densidad - baja intensidad (R1d1)
+- Baja densidad – mediana intensidad (R1d2)
+- Baja densidad – alta intensidad ( R1d3)
+- Baja densidad de conjunto (R1c)
+2. Mediana densidad (R2): más de 300 Hab./ha., hasta 600 Hab./ha.
+- Mediana densidad - baja intensidad (R2d1)
+- Mediana densidad - mediana intensidad (R2d2)
+- Mediana densidad – alta intensidad (R2d3)
+- Mediana densidad de conjunto (R2c)
+
+[[pág 41 del PDF]] ARTICULO 10 (fin) y ARTICULO 11 (R1d1)
+3. Alta densidad (R3): más de 600 Hab./ha., hasta 800 Hab./ha.
+- Alta densidad – baja intensidad (R3d1)
+ARTICULO 11: Para la Sub-Categoría Residencial Baja Densidad Baja Intensidad (R1d1) se establecen los siguientes requisitos:
+Usos Permitidos:
+Actividades primarias: • Vivienda unifamiliar (vu) • Vivienda adosada de 2 unidades (va) • Pi, Pv, Prv, Pnd con sus respectivas restricciones
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes • Mcv1 con sus respectivas restricciones • Siv1 con sus respectivas restricciones
+Restricciones de Polígono: Mínimo | Máximo
+Area lotificable (100%):
+Lotes residenciales: % libre | 65%
+Espacio abierto: 7.5% | --------
+Servicio institucional: 2.5 % | 7.5%
+Comercio: 2.5 % | 7.5%
+Infraestructura: % libre | % libre
+Estacionamiento para visita: 0.25 por unidad de vivienda | --------
+
+[[pág 42 del PDF]] ARTICULO 11 (R1d1, continuación) y ARTICULO 12 (R1d2)
+Restricciones del Lote:
+Densidad neta: 50 p/h | 100 p/h
+Superficie total: Vu 500 m2 | 1000 m2
+Va 500 m2 | 700 m2
+Frente del lote: 15 mts. | 25 mts.
+Retiro frontal: Según categoría de vía | ------
+Retiro lateral: 3.50 mts en lateral libre | -------
+Retiro posterior: 5 mts. | -------
+Area de ocupación: ------- | 40%
+Altura: ------- | 0.4Lc
+Estacionamiento: 2 por unidad de vivienda | -------
+Area verde libre: 40% | -------
+ARTICULO 12: Para la Sub-Categoría Residencial Baja Densidad – Mediana Intensidad (R1d2) se establecen los siguientes requisitos:
+Usos permitidos:
+Actividades primarias: • Vivienda unifamiliar (vu) • Vivienda adosada de 2 a 4 unidades (va) • Vivienda plurifamiliar vertical de 2 unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones
+
+[[pág 43 del PDF]] ARTICULO 12 (R1d2, continuación) y ARTICULO 13 (R1d3)
+• Mcv1, Mcv2 con sus respectivas restricciones • Siv1 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 65%
+Espacio abierto: 7.5% | -------
+Servicio institucional: 2.5 % | 7.5%
+Comercio: 2.5 % | 7.5%
+Estacionamientos para visitas: 0.25 por unidad de vivienda | --------
+Restricciones del Lote:
+Densidad neta: 100 p/h | 200 p/h
+Superficie total: Vu 400 m2 | 700 m2
+Va 300 m2 | 500 m2
+Vpv 500 m2 | 700 m2
+Frente del lote: 10 mts | 20 mts
+Retiro frontal: Según categoría de vía | ---------
+Retiro lateral: 3 mts en lateral libre | --------
+Retiro posterior: 5 mts | --------
+Area de ocupación: ------- | 45%
+Altura: ------- | 0.7Lc
+Estacionamiento: 2 por unidad de vivienda | ------
+Area verde libre: 35% | ------
+ARTICULO 13: Para la Sub-Categoría Residencial Baja Densidad – Alta intensidad (R1d3), se establecen los siguientes requisitos:
+
+[[pág 44 del PDF]] ARTICULO 13 (R1d3, continuación)
+Usos permitidos:
+Actividades primarias: • Vivienda unifamiliar (vu) • Vivienda adosada de 2 a 6 unidades (va) • Vivienda plurifamiliar vertical de 2 o más unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones
+Actividades complementarias: • Estructuras recreativas dentro del polígono, sin fines de lucro siempre, y cuando éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes • Mcv2 con sus respectivas restricciones • Siv1 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 65%
+Espacio abierto: 7.5% | --------
+Servicio institucional: 2.5 % | 7.5%
+Comercio: 2.5 % | 7.5%
+Estacionamientos para visitas: 0.25 por unidad vivienda | -------
+Restricciones del Lote:
+Densidad neta: 200 p/h | 300 p/h
+Superficie total: Vu 300 m2 | 500 m2
+Va 200 m2 | 350 m2
+Vpv 400 m2 | 800 m2
+Frente del lote: 9 mts | 20 mts
+Retiro frontal: Según categoría de vía | --------
+Retiro lateral: 2.5 mts | -------
+Retiro posterior: 5 mts | -------
+Area de ocupación: ------- | 50%
+Altura: ------- | 0.7Lc
+Estacionamiento: 2 por unidad de vivienda | ------
+Area verde libre: 30% | ------
+
+[[pág 45 del PDF]] ARTICULO 14 (R1c)
+ARTICULO 14: Para la categoría Residencial Baja Densidad de Conjunto (R1c), se establecen los siguiente requisitos:
+Usos Permitidos:
+Actividades primarias: • Vivienda Unifamiliar (vu) • Vivienda adosada de 2 o más unidades (va) • Vivienda plurifamiliar vertical de 2 o más unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones.
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv1, Mcv2 con sus respectivas restricciones • Siv1 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 60%
+Espacio abierto: 30% | -------
+Servicio institucional: 2,5 % | 7,5%
+
+[[pág 46 del PDF]] ARTICULO 14 (R1c, continuación) y ARTICULO 15 (R2d1)
+Comercio: 2,5 % | 7,5%
+Infraestructura: % libre | % libre
+Restricciones de Manzana
+Densidad neta: 100 p/h | 300 p/h
+Retiro entre manzanas: 20 m | 50 m
+Lotes residenciales: % libre | 80%
+Estac. de visitas: 0.33 por unidad de vivienda | -------
+Estacionamiento: 1 por unidad de vivienda | -------
+Restricciones del Lote
+Superficie total: 200 m2 | ---------
+Frente del lote: 8 mts, 10.5 mts en lotes extremos | ---------
+Retiro frontal: 3 mts | ---------
+Retiro lateral: 2.50 mts para Vu Ninguno para los otros tipos | ---------
+Retiro posterior: 3 mts, Ninguno con espacio abierto | -------
+Area de ocupación: -------- | 100% restando retiros
+Altura: -------- | Planta baja y cuatro altos
+ARTICULO 15: Para la categoría Residencial Mediana Densidad – Baja Intensidad (R2d1), se establece los siguientes requisitos:
+
+[[pág 47 del PDF]] ARTICULO 15 (R2d1, continuación)
+Usos Permitidos:
+Actividades primarias: • Viviendas adosada de 3 a 8 unidades (va) • Viviendas plurifamiliar vertical de 4 o más unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv2 con sus respectivas restricciones • Siv2 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 60%
+Espacio abierto: 10% | -------
+Servicio institucional: 5 % | 10 %
+Comercio: 5 % | 10 %
+Estacionamientos para visitas: 0.33 por unidad de vivienda | -------
+Restricciones del Lote
+Densidad neta: 300 p/h | 400 p/h
+Superficie total: Va 150 m2 | 300 m2
+Vpv 700 m2 | 1000 m2
+Frente del lote: 9.50 mts en lotes extremos 7 mts para el resto | 25 mts
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 2.50 mts en lateral libre | -------
+Retiro posterior: 5 mts | -------
+Area de ocupación: ------- | 40%
+Altura: ------- | 0.9Lc
+Estacionamiento: 1 por unidad de vivienda | ------
+Area verde libre: 40%
+
+[[pág 48 del PDF]] ARTICULO 16 (R2d2)
+ARTICULO 16: Para la categoría Residencial Mediana Densidad – Mediana Intensidad (R2d2), se establecen los siguientes requisitos:
+Usos Permitidos:
+Actividades primarias: • Vivienda plurifamiliar vertical de 6 o más unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones.
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv2 con sus respectivas restricciones • Siv2 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 60%
+Espacio abierto: 10% | --------
+Servicio institucional: 5 % | 10%
+Comercio: 5 % | 10%
+Infraestructura: % libre | % libre
+Estac. para visitas: 0.33 por unidad de vivienda | --------
+Restricciones del Lote
+Densidad neta: 400 p/h | 500 p/h
+Superficie total: 800 m2 | 1200 m2
+
+[[pág 49 del PDF]] ARTICULO 16 (R2d2, continuación) y ARTICULO 17 (R2d3)
+Frente del lote: 15 mts | 25 mts
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 3 mts | -------
+Retiro posterior: 7.5 mts | -------
+Area de ocupación: ------- | 45%
+Altura: ------- | 1.10Lc
+Estacionamiento: 1 por unidad de vivienda | -------
+Area verde libre: 35%
+ARTICULO 17: Para la categoría Residencial Mediana Densidad – Alta Intensidad (R2d3), se establecen los siguientes requisitos:
+Usos Permitidos:
+Actividades primarias: • Vivienda plurifamiliar vertical de 8 o más unidades (vpv) • Pi, Pv, Prv, Pnd con sus respectivas restricciones.
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv2, Mcv3 con sus respectivas restricciones. • Siv2 con sus respectivas restricciones
+
+[[pág 50 del PDF]] ARTICULO 17 (R2d3, continuación) y ARTICULO 18 (R2c)
+Lotes residenciales: % libre | 60%
+Espacio abierto: 10% | --------
+Servicio institucional: 5 % | 10%
+Comercio: 5 % | 10%
+Infraestructura: % libre | % libre
+Estac. para visitas: 0.33 por unidad de vivienda | --------
+Restricciones de Lote
+Densidad neta: 500 p/h | 600 p/h
+Superficie total: 1000 m2 | 1500 m2
+Frente del lote: 20 mts | 30 mts
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 3 mts | -------
+Retiro posterior: 10.0 mts | -------
+Area de ocupación: ------- | 50%
+Altura: ------- | 1.5Lc
+Estacionamiento: 1 por unidad de vivienda | -------
+Area verde libre: 30%
+ARTICULO 18: Para la categoría Residencial Mediana Densidad de Conjunto (R2c), se establecen los siguientes requisitos:
+
+[[pág 51 del PDF]] ARTICULO 18 (R2c, continuación)
+Usos Permitidos:
+Actividades primarias: • Vivienda unifamiliar (vu) • Vivienda adosadas de 2 o más unidades (va) • Vivienda plurifamiliar vertical de 2 o más unidades (vp) • Pi, Pv, Prv, Pnd con sus respectivas restricciones.
+Actividades complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv2, Mcv3 con sus respectivas restricciones • Siv2 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 50%
+Espacio abierto: 35% | -------
+Servicio institucional: 5 % | 10%
+Comercio: 5 % | 10%
+Infraestructura: % libre | % libre
+Restricciones de Manzana
+Densidad neta: 300 p/h | 600 p/h
+Retiro entre manzanas: 25 mts | 50 mts
+Lotes residenciales: % libre | 90%
+Estacionamiento para visitas: 0.5 por unidad de vivienda | -------
+Estacionamiento: 1 por unidad de vivienda | -------
+Restricciones del Lote
+Superficie total: 150 m2 | Según diseño
+Frente del lote: 7 mts 9.50 en lotes extremos | Según diseño
+Retiro frontal: 3 mts | ---------
+Retiro lateral: 2 mts para Vu Ninguno para los otros tipos | ---------
+Retiro posterior: 3 mts. Ninguno cuando colinde con espacio abierto | ------
+Area de ocupación: -------- | 100% restando retiros
+
+[[pág 52 del PDF]] ARTICULO 18 (R2c, fin) y ARTICULO 19 (R3d1)
+Altura: -------- | Planta baja y 7 altos
+ARTICULO 19: Para la categoría Residencial Alta Densidad – Baja Intensidad (R3d1), se establecen los siguientes requisitos:
+Usos Permitidos:
+Actividades Primarias: •Vivienda plurifamiliar vertical de 12 o más unidades (vpv) •Pi, Pv, Prv, Pnd con sus respectivas restricciones
+Actividades Complementarias: • Estructuras recreativas dentro de cada polígono, sin fines de lucro, siempre que éstas no sean perjudiciales al carácter residencial, al ambiente o a sus habitantes. • Mcv3 con sus respectivas restricciones • Siv3 con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 50%
+Espacio abierto: 15% | --------
+Servicio institucional: 7,5 % | 15%
+Comercio: 5 % | 10%
+Infraestructura: % libre | % libre
+Estacionamiento para visitas: 0.5 por unidad de vivienda | --------
+
+[[pág 53 del PDF]] ARTICULO 19 (R3d1, continuación), ARTICULOS 20 y 21 (actividad mixta)
+Restricciones de Lote
+Densidad neta: 600 p/h | 800 p/h
+Superficie total: 1200 m2 | 1700 m2
+Frente del lote: 25 mts | 30 mts
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 3 mts | -------
+Retiro posterior: 10 mts | -------
+Area de ocupación: ------- | 40%
+Altura: ------- | 1.7Lc
+Estacionamiento: 1 por unidad de vivienda. | ---------
+Area verde libre 40% | ---------
+ARTICULO 21: Requisitos Generales: Se establece como requisito para aprobar los códigos de zona de actividad residencial las siguientes facilidades:
+1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín".
+2. El sistema de bonificación no se aplica a ninguno de los códigos mixtos dentro del Area del Canal.
+3. La actividad primaria ocupa un mínimo del 70% y un máximo del 90% del suelo del polígono o lote y la actividad complementaria ocupa un máximo del 30% y un mínimo del 10% del polígono o lote.
+6. Toda edificación ubicada dentro los códigos Mcu deberá tener sus áreas de estacionamientos y abasto en la parte posterior de la misma.
+
+[[pág 54 del PDF]] ARTICULO 21 (continuación)
+7. Toda edificación ubicada dentro de los códigos Mru, podrá tener la actividad residencial sólo a partir del primer alto de dicha edificación.
+8. Para los códigos Mcu y Mcv en caso de construcción de vivienda plurifamiliar vertical, la densidad de población dentro de cada lote estará definida por la altura permitida y la máxima capacidad de ocupación del lote. Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidades de vivienda.
+9. Para los códigos Mcu las edificaciones residenciales deberán proveer de área social a los residentes a razón de 15 m2 por unidad de vivienda. El tamaño mínimo permitido de área social es de 75 m2 cuando haya 5 ó menos unidades de vivienda. El área social debe contar como mínimo con un área al aire libre, una zona de juegos para niños y un salón para actividades sociales.
+10.Las edificaciones ubicadas dentro de los códigos Mcv sólo podrán tener acceso de las vías colectoras. Las edificaciones ubicadas dentro de los códigos Mcu sólo podrán tener acceso de las vías secundarias y/o primarias.
+11.Las edificaciones ubicadas dentro de los códigos Mru1 y Mru2 sólo podrán tener acceso de las vías colectoras y/o secundarias. Las edificaciones ubicadas dentro del código Mru3 sólo podrán tener acceso de las vías secundarias.
+12.En los códigos Mru cuando sólo se desarrolle un lote, se utilizará el mismo factor para definir los estacionamientos de visitas dentro del polígono, es decir 0.5 por unidad de vivienda.
+
+[[pág 55 del PDF]] ARTICULOS 23 y 24 (Mru)
+ARTICULO 23: Las categorías y sub-categorías de Códigos para la Actividad Mixta son las siguientes:
+1. Mixto Residencial Urbano (Mru): Mixto Residencial Urbano - Baja Intensidad (Mru1); Mixto Residencial Urbano - Mediana Intensidad (Mru2); Mixto Residencial Urbano - Alta Intensidad (Mru3)
+2. Mixto Comercial Vecinal (Mcv): Mixto Comercial Vecinal - Baja Intensidad (Mcv1); Mixto Comercial Vecinal - Mediana Intensidad (Mcv2); Mixto Comercial Vecinal - Alta Intensidad (Mcv3)
+3. Mixto Comercial Urbano (Mcu): Mixto Comercial Urbano - Baja Intensidad (Mcu1); Mixto Comercial Urbano - Mediana Intensidad (Mcu2); Mixto Comercial Urbano - Alta Intensidad (Mcu3)
+ARTICULO 24: Para la categoría Mixto Residencial Urbano (Mru), se establecen los siguientes requisitos:
+
+[[pág 56 del PDF]] ARTICULO 24: Mru1
+Sub-Categoría: Mixto Residencial Urbano - Baja Intensidad (Mru1)
+Actividades primarias: • Vivienda plurifamiliar vertical desde el primer alto, área social. • Comercio al por menor de víveres en planta baja (abarrotes, minisuper, bodegas, carnicerías, pescaderías, panaderías, fruterías). • Servicios al por menor en planta baja o primer alto (lavandería, farmacia, zapatería, salón de belleza, barbería, ferretería, cafetería, heladería, floristería y librería). • Otros servicios (gimnasios, guarderías, parvularios, clínicas) en planta baja o primer alto • Asociaciones benéficas, ONGs, organismos internacionales y afines en planta baja o primer alto. • Oficinas en general en planta baja o primer alto • Pru, Pl, Pnd con sus respectivas restricciones
+Actividades complementarias: • Tu1 con sus respectivas restricciones • Siv2 con sus respectivas restricciones • Esv con sus respectivas restricciones
+Restricciones de Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 50%
+Espacio abierto: 15% | --------
+Servicio institucional: 5 % | 10%
+Estac. para visitas: 0.5 por unidad de vivienda | --------
+Restricciones del Lote
+Densidad neta: 600 p/h | 800 p/h
+Superficie total: 1200 m2 | 1700 m2
+Frente del lote: 20 mts. | 35 mts.
+Retiro frontal: 2.50 mts. | --------
+Retiro lateral: 3 mts. | -------
+Retiro posterior: 5 mts. | -------
+Area de ocupación: ------- | 60%
+Altura: 0.7Lc | 1.1Lc
+Area social: 15 m2 por unidad de vivienda | --------
+
+[[pág 57 del PDF]] ARTICULO 24: Mru1 (fin) y Mru2
+Estacionamientos: - 1 por unidad de vivienda - 1 por cada 40 m2 de área comercial. - 1 espacio de carga y descarga.
+Sub-Categoría : Mixto Residencial Urbano - Mediana Intensidad (Mru2)
+Actividades primarias: • Vivienda plurifamiliar vertical desde del primer alto, área social. • Comercio al por menor de víveres en planta baja (abarrotes, "minisupers", bodegas, carnicerías, pescaderías, panaderías, fruterías y similares). • Servicios al por menor en planta baja o primer alto (lavandería, farmacia, zapatería, salón de belleza, barbería, sastrería, ferretería, restaurante, cafetería, heladería, floristería y librería). • Otros servicios (gimnasio, guardería, parvulario, clínica, centro educativo de cursos cortos) en planta baja o primer alto. • Asociaciones benéficas, ONGs, organismos internacionales y afines en planta baja o primer alto. • Oficinas en general en planta baja o primer alto • Ventas de artículos del hogar, de vestir, equipos de oficina, equipo fotográfico, copiadoras, deportes, joyería, en planta baja o primer alto. • Pru, Pl, Pnd con sus respectivas restricciones
+Actividades complementarias: • Tu1 con sus respectivas restricciones • Siv3 con sus respectivas restricciones • Esv con sus respectivas restricciones
+Restricciones de Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 50%
+Espacio abierto: 15% | --------
+Servicio institucional: 5 % | 10%
+
+[[pág 58 del PDF]] ARTICULO 24: Mru2 (fin) y Mru3
+Infraestructura: % libre | % libre
+Estac. para visitas: 0.5 por unidad de vivienda | -------
+Restricciones del Lote
+Densidad neta: 800 p/h | 1000 p/h
+Superficie total: 1500 m2 | 2000 m2
+Frente del lote: 25 mts | 35 mts
+Retiro frontal: 2.50 mts | -------
+Retiro lateral: 3.00 mts | -------
+Retiro posterior: 5.00 mts | -------
+Area de ocupación: ------- | 60%
+Altura: 1.0Lc | 1.5Lc
+Area social: 15 m2 por unidad de vivienda | -------
+Estacionamiento: - 1 por unidad de vivienda - 1 por cada 35 m2 de área comercial. - 2 espacio de carga y descarga.
+Sub-Categoría: Mixto Residencial Urbano - Alta Intensidad (Mru3)
+Actividades primarias: • Vivienda plurifamiliar vertical a partir del segundo alto, área social. • Comercio al por menor de víveres en planta baja (abarrotes, minisupers, bodegas, carnicerías, pescaderías, panaderías, fruterías y similares). • Servicios al por menor en planta baja o primer alto (lavandería, farmacia, zapatería, salón de belleza, barbería, sastrería, ferretería, restaurante, cafetería, heladería, floristería y librería). • Otros servicios (gimnasio, guardería, parvulario, clínica, centro educativo de cursos cortos) en planta baja o primer alto. • Venta de artículos de hogar, de vestir, equipos de oficina, equipo fotográfico, copiadoras, deportes, joyería, equipos de música, muebles, en planta baja o primer alto. • Asociaciones benéficas, ONGs, organismos internacionales y afines en planta baja, primer alto o segundo alto.
+
+[[pág 59 del PDF]] ARTICULO 24: Mru3 (fin) y ARTICULO 25 (Mcv)
+• Oficinas en general en planta baja, primer alto, o segundo alto. • Pru, Pl, Pnd con sus respectivas restricciones
+Actividades complementarias: • Tu1 con sus respectivas restricciones • Siv3 con sus respectivas restricciones • Esv con sus respectivas restricciones
+Restricciones del Polígono: Mínimo | Máximo
+Lotes residenciales: % libre | 60%
+Espacio abierto: 15% | --------
+Servicio institucional: 5 % | 10%
+Infraestructura: % libre | % libre
+Estac. para visitas: 0.5 por unidad de vivienda | --------
+Restricciones del Lote
+Densidad neta: 1000 p/h | 1500 p/h
+Superficie total: 1700 m2 | 2500 m2
+Frente del lote: 25 mts | 40 mts
+Retiro frontal: 2.50 mts
+Retiro lateral: 3.00 mts | -------
+Retiro posterior: 5.00 mts | -------
+Area de ocupación: ------- | 60%
+Altura: 1.0Lc | 1.5Lc
+Area social: 15 m2 por unidad de vivienda | -------
+Estacionamiento: - 1 por unidad de vivienda - 1 por cada 30 m2 de área comercial. - 2 espacios de carga y descarga.
+ARTÍCULO 25: Para la categoría Mixto Comercial Vecinal (Mcv), se establecen los siguientes requisitos:
+
+[[pág 60 del PDF]] ARTICULO 25: Mcv1
+Sub-categoría: Mixto Comercial Vecinal - Baja Intensidad (Mcv1)
+Actividades primarias: • Comercio al por menor de víveres en planta baja (abarrotes, carnicería, pescadería, panadería, frutería). • Servicios al por menor (lavandería, farmacia, zapatería).
+Actividades complementarias: • Vivienda plurifamiliar vertical a partir del primer alto
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 300 m2 | 600 m2
+Frente del lote: 12 mts | 20 mts
+Retiro frontal 3 mts | ------
+Retiro lateral: Ninguno 3.00 mts en colindancia con vivienda | ------
+Retiro posterior: 3.00 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: ------- | 0.5Lc
+Estacionamiento: - 1 por cada 75 m2 de área comercial. - 1 espacio de carga y descarga. | ---------
+Sub-categoría: Mixto Comercial Vecinal - Mediana Intensidad (Mcv2)
+
+[[pág 61 del PDF]] ARTICULO 25: Mcv2 y Mcv3
+Actividades primarias: • Comercio al por menor de víveres en planta baja (abarrotes, carnicería, pescadería, panadería, frutería) • Servicios al por menor (lavandería, farmacia, ferretería, zapatería, salón de belleza, barbería, heladería) • Otros servicios privados (gimnasios, guarderías)
+Actividades complementarias: • Vivienda plurifamiliar vertical a partir del primer alto
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 450 m2 | 600 m2
+Frente del lote: 15 mts | 20 mts
+Retiro frontal: 3 mts
+Retiro lateral: Ninguno 3.00 mts en colindancia con vivienda | -------
+Retiro posterior: 3 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: ------- | 0.7Lc
+Estacionamiento: - 1 por cada 50 m2 de área comercial - 1espacio de carga y descarga. | -------
+Subcategoría: Mixto Comercio Vecinal - Alta Intensidad (Mcv3)
+Actividades primarias: • Comercio al por menor de víveres en planta baja (abarrotes, "minisupers", bodegas, carnicería, pescadería, panadería, frutería) • Servicios al por menor (lavandería, farmacia, ferretería, zapatería, salón de belleza, barbería, sastrería, cafetería, heladería, floristerías, reparación y venta de aparatos eléctricos y electrodomésticos menores, librería) • Otros servicios privados (gimnasios, guarderías, veterinaria, clínicas y consultorios médicos individuales) • Talleres menores como costura, artículos de cuero, confección de cerámicas, reparación de
+
+[[pág 62 del PDF]] ARTICULO 25: Mcv3 (fin) y ARTICULO 26 (Mcu)
+relojes, arreglos florales y afines • Oficinas de profesionales independientes
+Actividades complementarias: • Vivienda plurifamiliar vertical a partir del primer alto.
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 600 m2 | 1000 m2
+Frente del lote: 20 mts | 30 mts
+Retiro frontal: 3 mts | --------
+Retiro lateral: Ninguno 3.00 mts en colindancia con vivienda | Ninguno
+Retiro posterior: 3 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: ------- | 0.9Lc
+Estacionamiento: - 1 por cada 50 m2 de área comercial. - 1 espacio de carga y descarga. | ----------
+ARTICULO 26: Para la categoría Mixto Comercial Urbano (Mcu), se establecen los siguientes requisitos:
+Sub-categoria: Mixto Comercial Urbano - Baja Intensidad (Mcu1)
+
+[[pág 63 del PDF]] ARTICULO 26: Mcu1 y Mcu2
+Actividades primarias: • Comercio al por mayor y al por menor de artículos para el hogar • Comercio al por menor y al por mayor de toda clase de víveres • Oficinas en general • Asociaciones benéficas, ONG's, organismos internacionales y afines • Edificios de estacionamientos y gasolineras • Sucursal de Banco y casa de cambio • Teatros, restaurantes y salas de fiestas • Venta y reparación de llantas • Reparación de toda clase de electrodomésticos • Mru1 con sus respectivas restricciones • Siu1 con sus respectivas restricciones • Tu1 con sus respectivas restricciones
+Actividades Complementarias: • Esu con sus respectivas restricciones • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 800 m2 | -------
+Frente del lote: 20 mts | ------
+Retiro frontal: 2.50 mts en planta baja Ninguno para otros pisos | 4 mts en planta baja
+Retiro lateral: Ninguno | -------
+Retiro posterior: Ninguno | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.5Lc | 0.8Lc
+Estacionamiento: • 1 por cada 30 m2 de área comercial • 1 espacio de carga y descarga cada 500 m2 de área comercial | -------
+Sub-categoría: Mixto Comercio Urbano - Mediana Intensidad Mcu2
+Actividades primarias: • Comercio al por mayor y al por menor de toda clase de artículos para el hogar, materias primas, textiles, productos farmacéuticos, etc.
+
+[[pág 64 del PDF]] ARTICULO 26: Mcu2 (fin)
+• Comercio al por menor y al por mayor de toda clase de víveres • Comercio al por menor y al por mayor de equipos y materiales en general • Oficinas en general • Asociaciones benéficas, ONG's, organismos internacionales y afines • Edificios de estacionamientos • Centros de diversión y recreación (bares, discotecas, cines, etc.) • Teatros, galerías de arte, restaurantes, salas de fiestas y afines • Venta al por menor y reparación de automóviles • Sucursal de banco y casa de cambio • Gasolineras • Reparación de artículos eléctricos y mecánicos en general • Mru2 con sus respectivas restricciones • Siu2 con sus respectivas restricciones • Tu2 con sus respectivas restricciones
+Actividades complementarias: • Esu con sus respectivas restricciones • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 1000 m2 | ------
+Frente del lote: 20 mts | ------
+Retiro frontal: 2.50 mts en planta baja Ninguno para otros pisos | 4 mts en planta baja
+Retiro lateral: Ninguno | ------
+Retiro posterior: Ninguno | ------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.8Lc | 1.2Lc
+Estacionamiento: • 1 por cada 25 m2 de área comercial • 1 espacio de carga y descarga cada 400 m2 de área comercial | ------
+
+[[pág 65 del PDF]] ARTICULO 26: Mcu3
+Sub-Categoría: Mixto Comercio Urbano - Alta Intensidad (Mcu3)
+Actividades primarias: • Comercio al por mayor y al por menor de artículos para el hogar • Comercio al por menor y al por mayor de toda clase de víveres. • Asociaciones benéficas, ONG's, organismos internacionales y afines. • Edificios de estacionamientos • Centros de diversión y recreación como bares, discotecas, cines, y otros. • Teatros, galerías de arte • Restaurantes, salas de fiestas y afines • Venta y reparación de automóviles, motocicletas, motores fuera de borda y demás vehículos a motor, repuestos y accesorios. • Compañía fumigadora y venta de productos agroquímicos. • Rastro y deshuesaderos • Gasolineras, depósito y venta de gas licuado • Hoteles • Moteles de ocasión • Centro comercial • Estudios de televisión y radio • Venta de materiales de construcción • Casa matriz, sucursal de banco y casa de cambio • Servicios de mudanzas, agencias de carga y encomiendas. • Mru3 con sus respectivas restricciones • Siu3 con sus respectivas restricciones • Tu3 con sus respectivas restricciones
+Actividades complementarias: • Esu con sus respectivas restricciones • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 1200 m2 | ------
+Frente del lote: 20 mts | ------
+Retiro frontal: 2.50 mts sólo en planta baja. Para el resto de los pisos no hay retiro | 4 mts sólo en planta baja
+
+[[pág 66 del PDF]] ARTICULO 26: Mcu3 (fin), ARTICULOS 27 y 28 (Area verde urbana y recreación)
+Retiro lateral: Ninguno | Ninguno
+Retiro posterior: Ninguno | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.8Lc | 1.4Lc
+Estacionamiento: - 1 espacio por cada 25 m2 de área comercial - 1 espacio de carga y descarga cada 300m2 de área comercial | ----------
+ARTICULO 28: Requisitos Generales: Los requisitos generales para aprobar códigos de zona para la actividad de Area Verde Urbana y de Recreación son:
+1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín".
+2. La actividad primaria ocupará un mínimo del 90% y un máximo del 97.5% del suelo del polígono; la complementaria un mínimo del 2.5% y un máximo del 10%.
+4. Los parques infantiles (Pi), parques vecinales (Pv) y áreas recreativas vecinales (Prv) dentro de las nuevas urbanizaciones deberán ser entregados por los promotores con arborización mínima a razón de 1 árbol por cada 100m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.
+5. Las áreas recreativas urbanas (Pru) y plazas (Pl) deberán ser entregadas con arborización mínima a razón de 1 árbol por cada 300 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.
+
+[[pág 67 del PDF]] ARTICULO 28 (continuación)
+6. Los parques interbarriales (Pib) y parques distritales (Pd) deberán ser entregados con arborización mínima a razón de 1 árbol por cada 200 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.
+7. Las áreas verdes no desarrollables (Pnd) y parques metropolitanos (Pm) son definidos por sus características ambientales, las cuales deben ser conservadas o en todo caso mejoradas ya sea por reforestación, estabilización y/o descontaminación.
+9. En las áreas recreativas vecinales (Prv), parques interbarriales (Pib), áreas recreativas urbanas (Pru), parques distritales (Pd) y parque metropolitano (Pm) el estacionamiento no puede ocupar más del 15% de la superficie del suelo del polígono. De necesitarse más estacionamientos, los mismos tendrán que ser subterráneos o estar colocados dentro de un edificio.
+11. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 75 o más personas, debe tener un parque infantil (Pi) a razón de 2.00 m2 por persona. El Parque Infantil debe servir a un radio máximo de 150 mts del lote más lejano.
+12. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 40 o más personas, debe tener un parque vecinal (Pv) a razón de 5.00 m2 por persona. El parque vecinal debe servir a un radio máximo de 250 mts del lote más lejano.
+13. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 200 o más personas, debe tener un área recreativa vecinal (Prv) a razón de 2.00 m2 por persona. El área recreativa vecinal debe servir a un radio máximo de 500 mts del lote más lejano.
+
+[[pág 69 del PDF]] ARTICULO 31: Parque Infantil (Pi)
+Actividades primarias: • Juegos infantiles • Veredas peatonales
+Actividades complementarias: • Caseta de mantenimiento • Refugio contra sol y/o lluvia
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 200 m2 | 1500 m2
+Frente de lote: 10 mts | -------
+Retiro frontal, lateral y posterior: Ninguno | -------
+Superficie dura o impermeable: 15% | 30%
+Superficie suave o permeable: 70% | 85%
+Area de construcción cerrada: -------- | 5%
+Altura: --------- | 1 planta
+Estacionamiento: Ninguno | -------
+
+[[pág 70 del PDF]] ARTICULO 32: Parque Vecinal (Pv)
+Actividades primarias: • Juegos infantiles • Cancha de baloncesto, tenis o voleibol y similares • Veredas peatonales
+Actividades complementarias: • Caseta de mantenimiento • Refugio contra sol y/o lluvia
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 500 m2 | 5000 m2
+Frente de lote: 17 mts | --------
+Retiro frontal, lateral y posterior: Ninguno | -------
+Superficie dura o impermeable: 20% | 30%
+
+[[pág 71 del PDF]] ARTICULO 32 (Pv, continuación)
+Superficie suave o permeable: 70% | 80%
+Area de construcción cerrada: ------- | 2%
+Altura: ------ | 1 planta
+Estacionamiento: Ninguno | -------
+
+[[pág 72 del PDF]] ARTICULO 33: Area Recreativa Vecinal (Prv)
+Actividades primarias: • Deportes como tenis, frontón, baloncesto, voleibol, fútbol sala, bolos, y natación. • Club deportivo comunitario • Veredas peatonales y de ciclismo • Sala multiuso • Gimnasio comunitario • Teatro al aire libre • Casa cultural y/o feria comunitaria • Mirador • Caseta para fiestas comunitarias
+Actividades complementarias: • Caseta de mantenimiento y administración • Refresquería, heladería y venta temporal de comida.
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 1,500 m2 | 10,000 m2
+Frente de lote: 25 mts | -------
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 5 mts | ------
+Retiro posterior: 5 mts | ------
+Superficie dura o impermeable: 30% | 50%
+Superficie suave o permeable: 50% | 70%
+Area de construcción cerrada: 25% | 40%
+Altura máxima: -------- | 2 plantas
+Estacionamiento: 1 espacio por 50m2 de área cerrada construida | ------
+
+[[pág 73 del PDF]] ARTICULO 34: Area Recreativa Urbana (Pru)
+Actividades primarias: • Complejo deportivo • Pistas cubiertas, gimnasio y/o estadio, centros de pista y campo. • Cancha de fútbol, béisbol • Campo de tiro • Pista de ciclismo y motocros, de motociclismo y automovilismo. • Hipódromo, Campo de equitación • Instalaciones para deportes acuáticos de toda índole. • Museo, Teatro, Opera y Ballet • Complejo de expresiones artísticas, Centro de convenciones. • Explanada para ferias • Zoológico, Jardín Botánico y similares • Mirador panorámico • Campo de Golf • Parque temático, parque de diversiones • Instalaciones para tenis, frontón, baloncesto, voleibo, fulbito, bolos y deportes de aventura. • Pista de patinaje, rampas para patineta y afines.
+Actividades complementarias: • Cafetería, heladería, refresquería y similares • Locales para renta de artículos de recreación • Caseta de mantenimiento y administración
+
+[[pág 74 del PDF]] ARTICULO 34 (Pru, continuación)
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 2000 m2 | ------
+Frente de lote: 30 mts | ------
+Retiro frontal: Según categoría de vía | -------
+Retiro lateral: 5 mts | ------
+Retiro posterior: 5 mts | ------
+Superficie dura o impermeable: 40% | 70%
+Superficie suave o permeable: 30% | 60%
+Area de construcción cerrada: 30% | 60%
+Altura máxima: -------- | 4 plantas
+Estacionamiento: - 1 espacio por 30 m2 de área construida. - 1 espacio por 750 m2 de lote (autobuses) - 1 espacio por 1000 m2 de lote (camiones).
+
+[[pág 75 del PDF]] ARTICULO 35: Parque Interbarrial (Pib)
+Actividades primarias: • Juegos para personas de todas las edades • Veredas peatonales y de ciclismo • Teatro al aire libre • Instalaciones para natación • Canchas para deportes (baloncesto, tenis, frontón, voleibol, fútbol, fulbito, pin pon, béisbol) • Pista de patinaje y rampas para patinetas • Fuentes de agua y escultura pública • Locales de exposiciones artísticas y culturales • Sitios de contemplación y paseo • Comedor al aire libre • Ferias locales, festivales, encuentros de tipo popular /folklórico
+Actividades complementarias: • Refugio contra sol y/o lluvia • Caseta de mantenimiento y administración • Puestos ambulantes de bebida y "snacks"
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 1 ha | ------
+Frente de lote: 40 mts | ------
+Retiro frontal: 10 mts | ------
+Retiro lateral y posterior: 10 mts | ------
+Superficie dura o impermeable: 20% | 35%
+Superficie suave o permeable: 65% | 80%
+Area de construcción cerrada: ---- | 2%
+Altura: ----- | 1 planta
+Estacionamiento: 1 espacio por cada 500 m2 de lote | ------
+
+[[pág 76 del PDF]] ARTICULO 36: Parque Distrital (Pd)
+Actividades primarias: • Juegos para personas de todas las edades • Pista de paseo a caballo • Veredas peatonales y de ciclismo • Teatro al aire libre • Instalaciones para natación y sitios de recreación acuática. • Canchas para deportes (baloncesto, tenis, frontón, voleibol, fútbol, fulbito, pin pon, béisbol) • Pista de patinaje y rampas para patinetas • Aeromodelismo, "go cars" y similares • Mirador • Fuentes de agua y escultura pública • Locales de exposiciones artísticas y culturales
+
+[[pág 77 del PDF]] ARTICULO 36 (Pd, continuación)
+Restricciones del Lote: Mínimo | Máximo
+Superficie del lote: 10 has | ------
+Retiro frontal, lateral y posterior: 10 mts | ------
+Superficie dura o impermeable: 25% | 40%
+Superficie suave o permeable: 60% | 75%
+Area de construcción cerrada: 10% | 20%
+Altura: | 3 plantas
+Estacionamiento: - 1 espacio por cada 1000 m2 de lote - 1 espacio por cada 750 m2 de lote (autobuses).
+
+[[pág 78 del PDF]] ARTICULO 37: Area Verde no Desarrollable (Pnd)
+Carácter: Espacio abierto que contiene sitios naturales en los que no se puede desarrollar ningún tipo de construcción, pero que pueden ser visitados y observados por los residentes y usuarios de una comunidad o centro urbano.
+Actividades primarias: • Senderismo, contemplación y practicas deportivas a baja escala.
+Actividades complementarias: • Ninguna
+Superficie total: Lo necesario para cumplir con el objetivo de esta categoría.
+
+[[pág 79 del PDF]] ARTICULO 38: Plaza (Pl)
+Actividades primarias: • Area de asientos y observación • Instalaciones efímeras para diversas actividades sociales • Venta ambulante y Ferias temporales • Escultura pública y fuente • Facilidades para consumir alimentos • Anfiteatro
+Actividades complementarias: • Puestos de heladería, refresquería y kioscos • Refugio contra sol y/o lluvia
+Restricciones del Lote: Mínimo | Máximo
+Superficie de lote: 1000 m2 | ----
+Frente de lote: 20 mts | ----
+Retiro frontal, lateral y posterior: 5 mts | -------
+Superficie dura o impermeable: 70% | 100%
+Superficie suave o permeable: ------- | 30%
+Area de construcción cerrada: ------ | 5%
+Estacionamiento: Ninguno | Ninguno
+
+[[pág 80 del PDF]] ARTICULO 39: Parque Metropolitano (Pm)
+Actividades primarias: • Sitios de observación de fauna y flora • Pista para paseos a caballo • Veredas peatonales y de ciclismo • Museo, teatro al aire libre • Areas de acampado, áreas para merendar • Mirador • Senderos de interpretación • Locales para actividades de educación ambiental. • Locales de exposiciones e interpretación • Locales para actividades artísticas y culturales • Sitios de contemplación y paseo • Sitios de recreación acuática • Instalaciones para escalar, saltar, trepar y otras actividades de entrenamiento físico. • Juegos para personas de todas las edades
+
+[[pág 81 del PDF]] ARTICULO 39 (Pm, continuación) y ARTICULO 41 (servicios institucionales)
+Restricciones de Lote: Mínimo | Máximo
+Superficie de lote: 30 has | -----
+Frente de lote: Ninguno | -----
+Retiro frontal, lateral y posterior: 15 mts | -------
+Superficie dura o impermeable: 2.5% | 10%
+Superficie suave o permeable: 90% | 97.5%
+Area de construcción cerrada: ------ | 2.5%
+Estacionamiento: 1 espacio por cada 1500 m2 de lote 1 espacio cada 20,000 m2 de lote (autobuses). | -------
+ARTICULO 41: Requisitos Generales: Los requisitos generales para aprobar un código de zona de actividad de servicio Institucional son:
+2. El sistema de bonificación no se aplica a ninguno de los códigos de servicio institucional.
+
+[[pág 82 del PDF]] ARTICULO 41 (continuación)
+6. Toda edificación ubicada dentro del Servicio Institucional Urbano (Siu) deberá tener sus áreas de estacionamientos y abastos en la parte posterior de la misma o un costado, en ningún caso frente a la edificación, ni adyacente a la vía.
+7. Las edificaciones ubicadas dentro del código Servicio Institucional Vecinal – Baja Intensidad (Siv1) sólo podrán tener acceso a las vías locales y/o colectoras. Las ubicadas dentro de los códigos Servicio Institucional Vecinal –Mediana Intensidad y Alta Intensidad (Siv2 y Siv3) sólo podrán servirse de vías colectoras.
+8. Las edificaciones ubicadas dentro del código Servicio Institucional Urbano– Baja Intensidad (Siu1) sólo podrán tener acceso a las vías colectoras y/o secundarias. Las ubicadas dentro de los códigos Servicio Institucional Urbano – Mediana Intensidad y Alta Intensidad (Siu2 y Siu3) sólo podrán servirse de vías secundarias y/o primarias.
+
+[[pág 83 del PDF]] ARTICULOS 43 y 44 (Siv1)
+1. Servicio Institucional Vecinal (Siv): Servicio Institucional Vecinal – Baja Intensidad (Siv1); Servicio Institucional Vecinal – Mediana Intensidad (Siv2); Servicio Institucional Vecinal – Alta Intensidad (Siv3)
+2. Servicio Institucional Urbano (Siu): Servicio Institucional Urbano – Baja Intensidad (Siu1); Servicio Institucional Urbano – Mediana Intensidad (Siu2); Servicio Institucional Urbano – Alta Intensidad (Siu3)
+Sub-Categoría: Servicio Institucional Vecinal - Baja Intensidad (Siv1)
+Actividades primarias: • Centro de salud • Consultorio médico • Clínica Dental • Maternal • Parvulario • Centro comunitario • Capilla
+
+[[pág 84 del PDF]] ARTICULO 44: Siv1 (fin) y Siv2
+Actividades complementarias: • Mcv1 con sus respectivas restricciones • Prv, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 500 m2 | 2000 m2
+Frente del lote: 15 mts | ------
+Retiro frontal: Según categoría de vía | --------
+Retiro lateral: Ninguno con pared ciega 3 mts con pared ventilada | -------
+Retiro posterior: 3 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: ------ | 0.4Lc
+Estacionamiento: - 1 espacio por cada 50 m2 de área construida. | ----------
+Area verde libre: 20%
+Sub-Categoría: Servicio Institucional Vecinal - Mediana Intensidad (Siv2)
+Actividades primarias: • Centro de salud • Consultorio médico • Clínica dental • Optica y clínica de ojos • Veterinaria • Parvulario • Centro de orientación infantil • Colegio primario • Jardín de infancia • Oficina de cobro de servicios públicos • Correos y/o telégrafos • Centro comunitario • Iglesia y/o templo
+Actividades secundarias: • Mcv2 con sus respectivas restricciones • Prv, Pl con sus respectivas restricciones
+
+[[pág 85 del PDF]] ARTICULO 44: Siv2 (fin) y Siv3
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 800 m2 | 3000 m2
+Frente del lote: 20 mts | ------
+Retiro frontal: Sègún categoría de vía | --------
+Retiro lateral: 2.5 mts | ------
+Retiro posterior: 3 mts | ------
+Area de ocupación: ------- | 100% restando retiros
+Altura: | 0.5Lc
+Estacionamiento: - 1 espacio cada 45 m2 de área construida. - En servicios educativos 1 espacio cada 60 m2 de área construida (autobuses). | --------
+Area verde libre: 20% | ------
+Sub-Categoría: Servicio Institucional Vecinal de Alta Intensidad (Siv3)
+Actividades primarias: • Policlínica • Clínica dental • Optica y/o clínica de ojos • Clínica general • Servicio de radiología y laboratorio • Centro de orientación infantil • Colegio primario • Biblioteca escolar • Centro educativo de cursos cortos (computación, música, danza, artes plásticas, bellas artes y afines) • Oficina de atención al cliente de servicios públicos. • Correos y/o telégrafos • Subestación de policía • Centro comunitario • Junta comunal • Auditórium • Iglesia y/o templo • Salón de congregaciones
+
+[[pág 86 del PDF]] ARTICULO 44: Siv3 (fin)
+Actividades complementarias: • Mcv3 con sus respectivas restricciones • Prv, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 1500 m2 | 4500 m2
+Frente del lote: 25 mts | ------
+Retiro frontal: Según categoría de vía | ------
+Retiro lateral: 3 mts | -------
+Retiro posterior: 3 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: ------- | 0.7Lc
+Estacionamiento: - 1 espacio por cada 40 m2 de área construida. - 1 espacio por lote de carga y descarga (camiones). - En servicios educativos un espacio cada 90 m2 de área construida (autobuses).
+Area verde libre: 10%
+ARTICULO 45: Para la categoría Servicio Institucional Urbano (Siu), se establecen los siguientes requisitos:
+
+[[pág 87 del PDF]] ARTICULO 45: Siu1
+Sub-Categoría: Servicio Institucional Urbano - Baja Intensidad (Siu1)
+Actividades primarias: • Policlínica • Centro de atención de adictos • Centro de atención de enfermedades infecciosas • Clínica general • Clínica especializada (cirugía plástica, psicología, ginecología, psiquiatría, acupuntura, ortopedia, pediatría, y similares) • Colegio primario y/o secundario • Biblioteca escolar • Instituto de capacitación vocacional (belleza, corte y confección, cocina, mecano-grafía, idiomas y afines) • Instituto tecnológico • Centro educativo de cursos cortos (computación, música, artes plásticas, bellas artes, danza y afines) • Oficina general de atención al cliente de servicios públicos • Orfanato y asistencia a indigentes • Centro cultural (teatros, auditóriums, exposiciones, museos y afines) • Embajadas • Correos y/o telégrafos • Corregiduría • Subestación de policía • Subestación de bomberos • Cárcel y/o juzgado circuital • Iglesia y/o templo • Cementerio • Funeraria y/o crematorio • Oficina estatal o municipal al nivel de centro urbano
+
+[[pág 88 del PDF]] ARTICULO 45: Siu1 (fin) y Siu2
+Actividades complementaria: • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 2500 m2 | -------
+Frente del lote: 30 mts | ------
+Retiro frontal: Según categoría de vía | --------
+Retiro lateral: No hay | -------
+Retiro posterior: 5 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.4Lc | 0.6Lc
+Estacionamiento: - 1 espacio por cada 40 m2 de área construida. - 2 espacios de carga y descarga (camiones). - En servicios educativos 1 espacio cada 60 m2 de área construida (autobuses). - servicios de salud: 1 espacio por lote (ambulancias).
+Sub-Categoría: Servicio Institucional Urbano - Mediana Intensidad (Siu2)
+Actividades primarias: • Centros de rehabilitación para impedidos • Hospital especializado (maternidad, pediátrico, geriátrico, oncológico y similares) • Clínica – hospital • Clínicas especializadas como cirugía plástica, psicología, psiquiatría, acupuntura, ortopedia, pediatría, obstetricia y ginecología y similares. • Colegio primario y/o secundario • Colegio de ciclo completo • Biblioteca pública • Instituto de capacitación vocacional (belleza, corte y confección, cocina, mecanografía, idiomas y afines). • Centro educativo de cursos cortos (computación, música, artes plásticas, bellas artes, danza y afines). • Instituto tecnológico
+
+[[pág 89 del PDF]] ARTICULO 45: Siu2 (fin)
+• Oficina estatal o municipal al nivel de centro urbano. • Sedes de instituciones estatales • Oficina administrativa de servicios públicos • Orfanato y asistencia a indigentes • Centro cultural (teatros, auditóriums, exposiciones, museos y afines). • Embajadas • Oficina general de correos y telégrafos • Corregiduría • Subestación de policía • Subestación de bomberos • Cárcel y Juzgado circuital • Santuario y templo mayor • Convento y seminario • Cementerio • Funeraria y crematorio
+Actividades complementarias: • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 4500 m2 | -------
+Frente del lote: 50 mts | ------
+Retiro frontal: Según categoría de vía | --------
+Retiro lateral: No hay | -------
+Retiro posterior: 5 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.5Lc | 0.8Lc
+Estacionamiento: - 1 espacio por cada 30 m2 de área construida. - 2 espacios de carga y descarga por lote (camiones). - En servicios educativos 1 espacio cada 50 m2 de área construida (autobuses) - En servicios de salud 2 espacios por lote (ambulancias).
+
+[[pág 90 del PDF]] ARTICULO 45: Siu3
+Sub-Categorías: Servicio Institucional Urbano de Alta Intensidad (Siu3)
+Actividades primarias: • Hospital general • Hospital psiquiátrico • Centros de rehabilitación • Hospital especializado (pediátrico, geriátrico, oncológico, maternidad y similares) • Clínica – hospital • Clínicas especializadas como cirugía plástica, psicología, psiquiatría, acupuntura, ortopedia, pediatría, obstetricia y ginecología y afines. • Colegio de ciclo completo • Biblioteca pública • Instituto de capacitación vocacional (belleza, corte y confección, cocina, mecanografía, idiomas y afines). • Instituto tecnológico • Universidad • Centro de investigación • Instituto de educación superior • Sede de instituciones estatales y/o municipales • Oficina general de atención al cliente de servicios públicos. • Orfanato y asistencia a indigentes • Centro cultural (teatros, auditóriums, exposiciones, museos y afines). • Cuartel de policía • Academia de policía • Academia de bomberos • Corte y/o centros penitenciarios • Catedral y templo mayor • Seminario • Cementerio
+Actividades complementarias: • Pru, Pl con sus respectivas restricciones
+Restricciones del Lote: Mínimo | Máximo
+Superficie total: 7000 m2 | -------
+Frente del lote: 70 mts | ------
+Retiro frontal: Según categoría de vía | --------
+
+[[pág 91 del PDF]] ARTICULO 45: Siu3 (fin) y ARTICULO 47 (turismo)
+Retiro lateral: No hay | -------
+Retiro posterior: 5 mts | -------
+Area de ocupación: ------- | 100% restando retiros
+Altura: 0.5Lc | 0.9Lc
+Estacionamiento: - 1 espacio por cada 25 m2 de área construida. - 3 espacios de carga y descarga (camiones). - En servicios educativos 1 espacio por cada 50 m2 de área construida. - En servicios de salud 3 espacios por lote (ambulancias).
+
+[[pág 92 del PDF]] ARTICULOS 47 (continuación) y 49 (turismo)
+5. Toda edificación ubicada dentro los códigos Turismo Urbano (Tu) deberán tener sus áreas de estacionamientos superficiales y abasto en la parte posterior o lateral de la misma.
+6. Las edificaciones ubicadas dentro de los códigos de Turismo Natural (Tn) sólo podrán servirse de las vías locales o colectoras.
+7. Las edificaciones ubicadas dentro de los códigos Turismo Urbano (Tu) sólo podrán servirse de vías colectoras, secundarias y/o principal.
+ARTICULO 49: Las Categorías y Sub-Categorías de la Actividad Turismo son: 1. Turismo Natural (Tn): Turismo Natural- Baja Intensidad (Tn1); Turismo Natural- Mediana Intensidad (Tn2); Turismo Natural- Alta Intensidad (Tn3) 2. Turismo Urbano (Tu): Turismo Urbano- Baja Intensidad (Tu1); Turismo Urbano- Mediana Intensidad (Tu2); Turismo Urbano- Alta Intensidad (Tu3)
+
+[[pág 93 del PDF]] ARTICULO 50: Tn1
+Sub-categoría: Turismo Natural - Baja Intensidad (Tn1)
+Actividades primarias: • Cabañas • Refugios • Areas de acampado • Torres de observación • Mirador • Senderos • Merenderos • Centro de visitantes • Tienda de recuerdos • Puesto de alquiler de implementos deportivos • Instalaciones para experimentos al aire libre • Caseta de servicios sanitarios • Teleférico • Helipuerto
+Actividades complementarias: • Esv con sus respectivas restricciones • Pnd, Pib, Pd y Pm con sus respectivas restricciones.
+Restricciones de Lote: Mínimo | Máximo
+Densidad: 1/1000 m2 de lote | -------
+Superficie de lote: 5000 m2 | -------
+Retiro frontal, lateral y posterior: 10.00 mts | -------
+Superficie dura o impermeable: 5% | 15%
+
+[[pág 94 del PDF]] ARTICULO 50: Tn1 (fin) y Tn2
+Superficie suave o permeable: 85% | 95%
+Area de construcción cerrada: -------- | 5%
+Altura: --------- | 1 planta, siempre que no sobrepase la altura media de los árboles o arbustos
+Sub-categoría: Turismo Natural - Mediana Intensidad (Tn2)
+Actividades primarias: • Cabañas • Hostales • Areas de acampado • Salas de exposiciones • Torres de observación • Mirador • Senderos • Sitios de interpretación • Merenderos • Cafeterías • Albergue juvenil • Centro de visitantes • Oficinas administrativas • Tiendas de recuerdos • Puestos de alquiler de implementos deportivos. • Muelles • Alojamiento para científicos • Areas de investigación abiertos o cerrados
+
+[[pág 95 del PDF]] ARTICULO 50: Tn2 (fin) y Tn3
+Restricciones de Lote: Mínimo | Máximo
+Densidad de camas: 1/700 m2 de lote | -------
+Superficie de lote: 4000 m2 | -------
+Retiro frontal, lateral y posterior: 10.00 mts | -------
+Superficie dura o impermeable: 5 % | 20%
+Superficie suave o permeable: 80% | 95%
+Area de construcción cerrada: -------- | 10%
+Altura: -------- | 2 plantas, siempre que no sobrepase la altura media de los árboles o arbustos
+Sub-categoría: Turismo Natural - Alta Intensidad (Tn3)
+
+[[pág 96 del PDF]] ARTICULO 50: Tn3 (continuación)
+Actividades primarias: • Cabañas • Hostales • Hoteles • Ecoresorts • Salas de exposiciones • Anfiteatros • Torres de observación • Restaurantes y/o cafetería • Albergue juvenil • Senderos • Merenderos • Centro de visitantes • Tiendas de recuerdos • Puestos de alquiler de implementos deportivos. • Muelles • Mirador • Viviendas de tiempo compartido • Alojamiento para científicos • Centros de investigación • Oficinas administrativas • Balnearios • Centros de recuperación física • Viveros • Centro de exhibición de especies vegetales y animales. • Zoológicos • Jardines botánicos • Helipuerto
+Restricciones de Lote: Mínimo | Máximo
+Densidad de camas: 1/ 400 m2 de lote | -------
+Superficie de lote: 3000 m2 | ---------
+Retiro frontal, lateral y posterior: 8.00 mts | -------
+Superficie dura o impermeable: 10% | 30%
+Superficie suave o permeable: 70% | 90%
+
+[[pág 97 del PDF]] ARTICULO 50: Tn3 (fin) y ARTICULO 51: Tu1
+Area de construcción cerrada: -------- | 20%
+Altura: -------- | 3 plantas, siempre que no sobrepase la altura media de los árboles o arbustos
+Sub-categoría: Turismo Urbano - Baja Intensidad (Tu1)
+Actividades primarias: • Hostales • Hoteles • Moteles • Albergues juveniles
+
+[[pág 98 del PDF]] ARTICULO 51: Tu1 (fin) y Tu2
+• Casas de hospedaje • Restaurante y/o cafetería • Bares • Centros de diversión • Salón de convenciones • Salas de exposición • Viviendas de tiempo compartido • Centro de visitantes • Alojamiento para científicos • Centros de investigación científica • Helipuerto
+Restricciones de Lote: Mínimo | Máximo
+Densidad : 1 /150 m2 de lote | --------
+Superficie total: 1000 m2 | -------
+Frente del lote: 25 mts | -------
+Retiro frontal Según categoría de vía | -------
+Retiro lateral: 20% del ancho promedio | -------
+Retiro posterior: 10% del largo promedio | -------
+Area de ocupación: ------- | 60% del lote
+Area verde libre: 30% del lote | -------
+Altura: ------- | 0.5Lc
+Estacionamiento: - 1 espacio por cada / 40 m2 de área comercial. - 1 espacio de carga y descarga/300 m2 de área comercial (camiones).
+Sub-categorías: Turismo Urbano - Mediana Intensidad (Tu2)
+Actividades primarias: • Hoteles • Motel
+
+[[pág 99 del PDF]] ARTICULO 51: Tu2 (fin)
+• Aparthotel • Alojamientos estudiantiles • Restaurante y/o cafetería • Bares y discotecas • Centros de diversión • Casinos • Atracadero • Museos • Centro de convenciones • Centros recreativos • Centro de visitantes • Viviendas de tiempo compartido • Boutiques • Teatros y salas de espectáculo • Centro de saunas y afines
+Restricciones de Lote: Mínimo | Máximo
+Densidad de camas: 1 /100 m2 de lote | -------
+Superficie total: 1750 m2 | -------
+Frente del lote: 30 mts | --------
+Retiro frontal Según categoría de vía | ------
+Retiro lateral: 15% del ancho promedio | ---------
+Retiro posterior: 10% del largo promedio | -------
+Area de ocupación: ------- | 65% restando retiros
+Area verde: 25% del lote | -------
+Altura: ------- | 0.7Lc
+Estacionamiento: - 1 espacio por cada 30 m2 de área comercial - 1 espacio de carga y descarga/ 200 m2 de área comercial (camiones).
+
+[[pág 100 del PDF]] ARTICULO 51: Tu3
+Sub-categorías: Turismo Urbano - Alta Intensidad (Tu3)
+Actividades primarias: • Hoteles • Alojamientos estudiantiles • Aparthotel • Resorts • Restaurante y/o cafetería • Bares • Discotecas • Centros de diversión • Casinos • Salas de baile • Parque temático • Campo de golf • Marina • Museos • Centros recreativos • Centro de convenciones • Centro de exhibiciones marinas • Boutiques • Pistas de patinaje • Teatros y salas de espectáculo • Centro de saunas y afines
+Restricciones de Lote: Mínimo | Máximo
+Densidad: 1 /50 m2 de lote | --------
+Superficie total: 2500 m2 | -------
+Frente del lote: 40 mts | -------
+Retiro frontal Según categoría de vía | ------
+Retiro lateral: 10% del ancho promedio | ---------
+Retiro posterior: 7% del largo promedio | -------
+
+[[pág 101 del PDF]] ARTICULO 51: Tu3 (fin) y ARTICULO 53 (equipamiento de servicios básicos)
+Area de ocupación: ------- | 70% restando retiros
+Area verde: 20% del lote | -------
+Altura: ------ | 0.7Lc
+Estacionamiento: - 1 espacio por cada 25 m2 de área comercial. - 1 espacio de carga y descarga/150 m2 de área comercial (camiones).
+ARTICULO 53: Requisitos Generales: Los requisitos generales para aprobar un código de zona de actividad de Equipamiento de Servicios Básicos son:
+3. Toda edificación ubicada dentro de los códigos de Equipamiento de Servicio Básico (Es) deberá tener sus áreas de estacionamientos y abasto en la parte posterior de la misma o a un costado, en ningún caso frente a la edificación, ni adyacente a las vías de acceso.
+4. Toda maquinaria, equipo u otro tipo de aparato deberá ubicarse dentro de una edificación que la proteja y la cubra.
+
+[[pág 103 del PDF]] ARTICULO 56: Esv y ARTICULO 57: Esu
+Actividades primarias: • Estación de bombeo • Transformadores eléctricos superficiales • Plantas de tratamiento de aguas • Paneles de distribución telefónica • Tanques de agua
+Actividades complementarias: • No hay
+Restricciones de Lote: Mínimo | Máximo
+Superficie total: 300 m2 | 5000 m2
+Retiro frontal, lateral y posterior: 5 mts | --------
+Area de ocupación: ------- | 100% restando retiros
+Altura: Según especificaciones | Según especificaciones
+Area verde libre: 30%
+
+[[pág 104 del PDF]] ARTICULO 57: Esu (continuación)
+Actividades primarias: • Plantas de distribución eléctrica • Plantas de tratamiento de aguas servidas • Centros de comunicación • Torres de comunicación • Potabilizadora • Tanques de agua
+Actividades complementarias: • No hay
+Restricciones de Lote: Mínimo | Máximo
+Superficie total: 0.5 has | 3 has
+Retiro frontal, lateral y posterior: 10 mts | --------
+Area de ocupación: ------ | 100% restando retiros
+Altura: Según especificaciones | Según especificaciones
+Estacionamiento: 1 espacio por cada 1000 m2 de lote. | --------
+Area verde libre: 40%
+
+[[pág 105 del PDF]] ARTICULO 59 (transporte)
+6. La jerarquía vial mínima que podrán tener acceso a cualquiera de los códigos de Transporte será de vía colectora o mayor.
+
+[[pág 106 del PDF]] ARTICULOS 61 y 62: TTv
+1. Transporte Terrestre (TT): Transporte Terrestre Vecinal (TTv); Transporte Terrestre Urbano (TTu); Transporte Terrestre de Carga (TTc) 2. Transporte Marítimo (Tm) 3. Transporte Aéreo (Ta) 4. Transporte Ferroviario (Tf)
+Subcategoría: Transporte Terrestre Vecinal (TTv)
+Actividades primarias: • Piquera de Transporte Selectivo • Piquera de Transporte Colectivo para rutas internas o locales
+Actividades complementarias: • Area de Servicio y Mantenimiento (Gasolinera, Talleres, y/o similares) • Cafetería • Lava Auto
+
+[[pág 107 del PDF]] ARTICULO 62: TTv (fin) y TTu
+Restricciones de Lote: Mínimo | Máximo
+Superficie total: 500 m2 | 3,000 m2
+Retiro frontal, lateral y posterior: 3.00 mts. | -----
+Altura: ------ | dos plantas
+Area verde libre: 15% | 25%
+Subcategoría: Transporte Terrestre Urbano (TTu)
+Actividades primarias: • Terminal de Transporte Urbano • Terminal de Transporte Interprovincial • Terminal de Transporte Internacional • Piquera de Transporte Selectivo • Piquera de Transporte Colectivo para rutas internas o locales. • Centro de Transbordo • Terminal de Transporte Turístico • Patio de Estacionamiento de la Flota de Autobuses y Taxis.
+Restricciones de Lote: Mínimo | Máximo
+Superficie total: 1,000 m2 | ------
+
+[[pág 108 del PDF]] ARTICULO 62: TTu (fin) y TTc
+Retiro frontal, lateral y posterior: 5.00 mts. | ------
+Altura: ------- | Tres Plantas
+Area verde libre: 20% | 30%
+Subcategoría: Transporte Terrestre de Carga (TTc)
+Actividades primarias: • Patios de Contenedores • Patio de Estacionamiento para todo tipo de camiones • Area de Depósito (Carga y Descarga) • Recintos Aduaneros • Estaciones de Pesas y Dimensiones
+Actividades complementarias: • Oficinas en General • Area de Servicio y Mantenimiento (Gasolinera, Talleres, y/o similares) • Lava Auto
+Restricciones de Lote: Mínimo | Máximo
+Superficie total: 1,500 m2 | ------
+Retiro frontal, lateral y posterior: 5.00 mts. | ------
+Altura: ------- | Dos Plantas
+Area verde libre: 10% | 20%
+
+[[pág 109 del PDF]] ARTICULOS 63 (Tm) y 64 (Ta)
+Actividades primarias: • Puerto de contenedores • Puerto petrolero • Puerto químico • Puerto de materias primas • Puerto a granel • Puerto pesquero • Puerto de cruceros • Astillero • Terminal de pasajeros • Club náutico • Recinto aduanero • Muelle • Puesto de seguridad marítima
+Restricciones de Lote: Según requerimientos técnicos
+
+[[pág 110 del PDF]] ARTICULOS 64 (Ta) y 65 (Tf)
+Actividades primarias: • Aeropuerto doméstico de pasajeros y/o de carga • Aeropuerto internacional de pasajeros y/o de carga. • Pista de aterrizaje • Recinto de aduanas • Area de mantenimiento y reparación de aeronaves • Helipuerto • Hangares
+Restricciones de Lote: Según requerimientos técnicos
+
+[[pág 111 del PDF]] ARTICULO 65 (Tf, fin), ARTICULOS 66 y 67
+Actividades primarias: • Terminal de carga y/o pasajeros • Centro de transbordo • Area de mantenimiento y reparación • Patio de locomotoras y vagones • Recinto aduanero • Depósitos
+Restricciones de Lote: Según Requerimientos Técnicos
+ARTICULO 66: Las reglamentaciones de este documento deberán ser revisadas y evaluadas en su totalidad por las instituciones con competencia en la planificación urbana, a los cinco (5) años de haber entrado en vigencia. Dicha revisión deberá contar con la participación de la comunidad.
+ARTICULO 67: Esta Resolución comenzará a regir a partir de su promulgación en la Gaceta Oficial.
+FUNDAMENTO DE DERECHO: Ley 9 del 25 de enero de 1973, Ley 21 de 2 de julio de 1997, Resolución No. 60-87 del 22 de julio de 1987.
+Dada en la ciudad de Panamá, a los 22 días del mes de julio de 2002

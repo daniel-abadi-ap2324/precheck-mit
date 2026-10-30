@@ -1,0 +1,32 @@
+[
+ {
+  "id": "CA-RMH2-TOLERANCIA-DENSIDAD",
+  "version": 1,
+  "titulo": "RMH2: tolerancia de densidad solo con aprobación del MIVI",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 8",
+   "pagina_pdf": 5,
+   "cita_textual": "Se permitirá una tolerancia en la densidad de población de hasta 20% máximo, en casos especiales de acuerdo a la bondad del proyecto, previa aprobación del Ministerio de Vivienda."
+  },
+  "tipo": "documental",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH2'] and proyecto.densidad_pers_ha > 1500 and proyecto.densidad_pers_ha <= 1800",
+  "entradas": [
+   "expediente.aprobacion_mivi_tolerancia_densidad.adjunto"
+  ],
+  "condicion": "expediente.aprobacion_mivi_tolerancia_densidad.adjunto == true",
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La densidad supera 1,500 pers./ha sin la aprobación previa del Ministerio de Vivienda para la tolerancia de hasta 20% (Art. 8).",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Aplica solo entre 1,500 y 1,800 pers./ha (20% de tolerancia); por encima de 1,800 no hay tolerancia posible y basta CA-RMH2-DENSIDAD. Ver correcciones-catalogo.md: CA-RMH2-DENSIDAD da NO_CUMPLE aunque se adjunte la aprobación. Hechos provisionales (los decide la IA o un extractor futuro): expediente.aprobacion_mivi_tolerancia_densidad.adjunto. Cita en la línea 54 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación y zona que CA-RMH2-DENSIDAD, que ya integra la tolerancia de 20% con la aprobación del Ministerio. Mantenerla duplicaría el resultado.",
+   "fusionada_en": "CA-RMH2-DENSIDAD"
+  }
+ }
+]

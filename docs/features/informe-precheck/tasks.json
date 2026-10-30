@@ -1,0 +1,255 @@
+{
+  "slug": "informe-precheck",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Agregar anexar_lote y cadenas al puerto de bitácora y los códigos informe.*",
+      "layer": "infra",
+      "deps": [],
+      "acs": [
+        "AC-17"
+      ],
+      "dod": "`tests/test_anexar_lote.py` pasa (lote atómico con rollback, encadenamiento, `cadenas()` desde el puerto) y los 7 códigos `informe.*` existen en `CODIGOS`",
+      "files_hint": [
+        "precheck/auditoria/puertos.py",
+        "precheck/auditoria/sqlite_repo.py",
+        "precheck/contexto.py",
+        "precheck/errores.py",
+        "tests/test_anexar_lote.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/puerto-anexar-lote-y-errores.md"
+    },
+    {
+      "id": "T2",
+      "title": "Calcular la huella del modelo y el código impreso en bloques",
+      "layer": "domain",
+      "deps": [],
+      "acs": [
+        "AC-12",
+        "AC-16"
+      ],
+      "dod": "`tests/test_informe_huella.py` pasa: NFC, espacios del encabezado, orden de claves, alteración de un carácter, código en bloques y prefijo ≥ 16",
+      "files_hint": [
+        "precheck/informe/huella.py",
+        "tests/test_informe_huella.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/huella-y-codigo.md"
+    },
+    {
+      "id": "T3",
+      "title": "Registrar la indicación al profesional y decidir con indicación",
+      "layer": "app",
+      "deps": [
+        "T1"
+      ],
+      "acs": [
+        "AC-17",
+        "AC-21"
+      ],
+      "dod": "`tests/test_informe_indicar.py` cubre AC-17 y AC-21 y pasa; `tests/test_decisiones.py` sigue pasando sin cambios",
+      "files_hint": [
+        "precheck/informe/servicio.py",
+        "precheck/expediente/servicio.py",
+        "tests/test_informe_indicar.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/indicar-y-decidir-con-indicacion.md"
+    },
+    {
+      "id": "T4",
+      "title": "Proyectar el modelo de la versión del revisor con corte temporal",
+      "layer": "domain",
+      "deps": [],
+      "acs": [
+        "AC-01",
+        "AC-02",
+        "AC-22"
+      ],
+      "dod": "`tests/test_informe_modelo_revisor.py` cubre AC-01, AC-02 y AC-22 y pasa; `modelo.py` sin E/S",
+      "files_hint": [
+        "precheck/informe/__init__.py",
+        "precheck/informe/modelo.py",
+        "tests/test_informe_modelo_revisor.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/modelo-version-revisor.md"
+    },
+    {
+      "id": "T5",
+      "title": "Derivar la indicación vigente y su traslado entre evaluaciones",
+      "layer": "domain",
+      "deps": [
+        "T4"
+      ],
+      "acs": [
+        "AC-24"
+      ],
+      "dod": "`tests/test_informe_traslado.py` cubre AC-24 (traslado recursivo y cambio de versión, resultado o valores) y pasa",
+      "files_hint": [
+        "precheck/informe/modelo.py",
+        "tests/test_informe_traslado.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/indicaciones-vigentes-y-traslado.md"
+    },
+    {
+      "id": "T6",
+      "title": "Proyectar la versión del profesional con observaciones, alcance y primera página",
+      "layer": "domain",
+      "deps": [
+        "T4",
+        "T5"
+      ],
+      "acs": [
+        "AC-08",
+        "AC-09",
+        "AC-10",
+        "AC-11",
+        "AC-19",
+        "AC-23"
+      ],
+      "dod": "`tests/test_informe_modelo_profesional.py` cubre AC-08, AC-09, AC-10, AC-11, AC-19 y AC-23 y pasa; el modelo no contiene motivos, NO_APLICA ni indicativos",
+      "files_hint": [
+        "precheck/informe/modelo.py",
+        "tests/test_informe_modelo_profesional.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/modelo-version-profesional.md"
+    },
+    {
+      "id": "T7",
+      "title": "Derivar la vigencia de las emisiones y los resultados afectados",
+      "layer": "domain",
+      "deps": [],
+      "acs": [
+        "AC-14",
+        "AC-15",
+        "AC-16",
+        "AC-20"
+      ],
+      "dod": "`tests/test_informe_vigencia.py` cubre AC-14, AC-15, las entregas de AC-16 y la detección de AC-20 y pasa",
+      "files_hint": [
+        "precheck/informe/vigencia.py",
+        "tests/test_informe_vigencia.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/vigencia-de-emisiones.md"
+    },
+    {
+      "id": "T8",
+      "title": "Renderizar el documento autocontenido y extraer su modelo",
+      "layer": "domain",
+      "deps": [
+        "T2",
+        "T4"
+      ],
+      "acs": [
+        "AC-11"
+      ],
+      "dod": "`tests/test_informe_html.py` pasa: determinismo, autocontenido, escape, estados en texto, pie con código y expediente, ida y vuelta de `extraer`",
+      "files_hint": [
+        "precheck/informe/html.py",
+        "tests/test_informe_html.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/render-html-y-extraccion.md"
+    },
+    {
+      "id": "T9",
+      "title": "Generar la versión del revisor y emitir la del profesional",
+      "layer": "app",
+      "deps": [
+        "T1",
+        "T3",
+        "T6",
+        "T7",
+        "T8"
+      ],
+      "acs": [
+        "AC-01",
+        "AC-03",
+        "AC-04",
+        "AC-05",
+        "AC-06",
+        "AC-16",
+        "AC-18",
+        "AC-20"
+      ],
+      "dod": "`tests/test_informe_emitir.py` cubre AC-01, AC-03, AC-04, AC-05, AC-06, AC-16, AC-18 y AC-20 y pasa; `informe_emitido` sin datos del encabezado",
+      "files_hint": [
+        "precheck/informe/servicio.py",
+        "tests/test_informe_emitir.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/generar-y-emitir.md"
+    },
+    {
+      "id": "T10",
+      "title": "Verificar informes por archivo y por código y listar emitidos",
+      "layer": "app",
+      "deps": [
+        "T9"
+      ],
+      "acs": [
+        "AC-12",
+        "AC-13",
+        "AC-14",
+        "AC-15"
+      ],
+      "dod": "`tests/test_informe_verificar.py` cubre AC-12 (archivo y código), AC-13, AC-14 y AC-15 y pasa",
+      "files_hint": [
+        "precheck/informe/servicio.py",
+        "tests/test_informe_verificar.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/verificar-y-emitidos.md"
+    },
+    {
+      "id": "T11",
+      "title": "Exponer los métodos del informe en la fachada y la CLI",
+      "layer": "ports",
+      "deps": [
+        "T3",
+        "T9",
+        "T10"
+      ],
+      "acs": [
+        "AC-07"
+      ],
+      "dod": "`tests/test_cli_informe.py` cubre AC-07 en los seis subcomandos y las salidas 0/1/2/3/5/6 y pasa",
+      "files_hint": [
+        "precheck/__init__.py",
+        "precheck/cli.py",
+        "tests/test_cli_informe.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/fachada-y-cli.md"
+    },
+    {
+      "id": "T12",
+      "title": "Agregar la prueba de extremo a extremo y las de NFR del informe",
+      "layer": "tests",
+      "deps": [
+        "T11"
+      ],
+      "acs": [
+        "AC-07",
+        "AC-16"
+      ],
+      "dod": "`tests/test_informe_extremo_a_extremo.py` y `tests/test_informe_nfr.py` pasan: ciclo completo por biblioteca y CLI, p95 ≤ 2 s, huella reproducible, 0 recursos externos, 100 % de alteraciones detectadas",
+      "files_hint": [
+        "tests/test_informe_extremo_a_extremo.py",
+        "tests/test_informe_nfr.py"
+      ],
+      "file": "docs/features/informe-precheck/tasks/extremo-a-extremo-y-nfr.md"
+    },
+    {
+      "id": "T13",
+      "title": "Documentar el módulo informe y registrar el cambio",
+      "layer": "docs",
+      "deps": [
+        "T11"
+      ],
+      "acs": [],
+      "dod": "README, CHANGELOG `[Unreleased]`, `docs/architecture-map.md` y `CLAUDE.md` describen el módulo informe y sus subcomandos",
+      "files_hint": [
+        "README.md",
+        "CHANGELOG.md",
+        "docs/architecture-map.md",
+        "CLAUDE.md"
+      ],
+      "file": "docs/features/informe-precheck/tasks/documentacion-y-changelog.md"
+    }
+  ]
+}

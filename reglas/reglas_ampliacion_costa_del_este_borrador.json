@@ -1,0 +1,31 @@
+[
+  {
+    "id": "CDE-RM3-E-VISITAS-USO-EXCLUSIVO",
+    "version": 2,
+    "titulo": "RM3-E: estacionamientos de visita no vendibles, de uso exclusivo",
+    "fuente": {
+      "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+      "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+      "pagina_pdf": 1,
+      "cita_textual": "Los estacionamientos de visita no podrán ser vendidos, serán del uso exclusivo de visitas."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Los estacionamientos de visita no podrán ser vendidos, serán del uso exclusivo de visitas.",
+      "archivo": "normativa/zonas-exceptuadas/textos/costa_del_este.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visita se venden o se asignan a unidades en lugar de quedar para uso exclusivo de visitas (zona RM3-E).",
+    "vigencia": {
+      "desde": "2004-06-17",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hoy solo lo menciona la nota de CDE-RM3-E-ESTACIONAMIENTOS-VISITA. Se revisa en el reglamento de propiedad horizontal o en el cuadro de estacionamientos. Cita en la línea 29 de normativa/zonas-exceptuadas/textos/costa_del_este.txt. Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Los estacionamientos de visita no podrán ser vendidos, serán del uso exclusivo de visitas.», normativa/zonas-exceptuadas/textos/costa_del_este.txt)"
+  }
+]

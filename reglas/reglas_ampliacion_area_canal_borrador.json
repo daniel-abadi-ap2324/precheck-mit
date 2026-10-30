@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "AC-RES-ACTIVIDAD-PRIMARIA",
+    "version": 2,
+    "titulo": "Residencial: actividad primaria entre 80% y 95% del polígono",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 3",
+      "pagina_pdf": 39,
+      "cita_textual": "3. La actividad primaria ocupará un mínimo del 80% y un máximo del 95% del suelo del polígono; mientras que la complementaria un mínimo del 5% y un máximo del 20%."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.actividad_primaria_pct"
+    ],
+    "condicion": "proyecto.actividad_primaria_pct >= 80 and proyecto.actividad_primaria_pct <= 95",
+    "tolerancia": 0.1,
+    "unidad": "%",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "3. La actividad primaria ocupará un mínimo del 80% y un máximo del 95% del suelo del polígono; mientras que la complementaria un mínimo del 5% y un máximo del 20%.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La actividad primaria no ocupa entre el 80% y el 95% del suelo del polígono (Res. 160-2002, Art. 8, num. 3).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se aplica al polígono de una urbanización; la complementaria (5% a 20%) es el resto. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.actividad_primaria_pct, proyecto.urbanizacion_nueva. Cita en la línea 17 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («3. La actividad primaria ocupará un mínimo del 80% y un máximo del 95% del suelo del polígono; mientras que la comple…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-R1-ACCESO-VIAS-LOCALES",
+    "version": 3,
+    "titulo": "R1d1-R1d3 y R1c: acceso solo por vías locales",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 6",
+      "pagina_pdf": 39,
+      "cita_textual": "6. Los lotes residenciales ubicados dentro de los códigos R1d1, R1d2, R1d3 y R1c podrán tener acceso únicamente de vías locales."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R1C', 'R1c', 'r1c']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "6. Los lotes residenciales ubicados dentro de los códigos R1d1, R1d2, R1d3 y R1c podrán tener acceso únicamente de vías locales.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote residencial R1 tiene acceso por una vía que no es local (Res. 160-2002, Art. 8, num. 6).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 18 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («6. Los lotes residenciales ubicados dentro de los códigos R1d1, R1d2, R1d3 y R1c podrán tener acceso únicamente de ví…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['local']"
+  },
+  {
+    "id": "AC-R2-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "R2d1-R2d3 y R2c: acceso por vías locales y/o colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 7",
+      "pagina_pdf": 39,
+      "cita_textual": "7. Los lotes residenciales ubicados dentro de los códigos R2d1, R2d2, R2d3 y R2c podrán tener acceso de vías locales y/o colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R2C', 'R2c', 'r2c']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O1",
+      "cita": "7. Los lotes residenciales ubicados dentro de los códigos R2d1, R2d2, R2d3 y R2c podrán tener acceso de vías locales y/o colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote residencial R2 tiene acceso por una vía que no es local ni colectora (Res. 160-2002, Art. 8, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: el texto es permisivo («podrán»), no prohíbe expresamente otras vías. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 19 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada; texto facultativo («podrán»), por eso observación. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O1 («7. Los lotes residenciales ubicados dentro de los códigos R2d1, R2d2, R2d3 y R2c podrán tener acceso de vías locales …», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['local', 'colectora']"
+  },
+  {
+    "id": "AC-R3D1-ACCESO-COLECTORAS",
+    "version": 3,
+    "titulo": "R3d1: acceso solo por vías colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 7",
+      "pagina_pdf": 39,
+      "cita_textual": "Los que se encuentran ubicados dentro del código R3d1, así como los servicios institucionales y comerciales deberán tener acceso únicamente por vías colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R3D1', 'R3d1', 'r3d1']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Los que se encuentran ubicados dentro del código R3d1, así como los servicios institucionales y comerciales deberán tener acceso únicamente por vías colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote R3d1 no tiene acceso únicamente por vías colectoras (Res. 160-2002, Art. 8, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El mismo numeral exige vías colectoras para los servicios institucionales y comerciales del polígono residencial; los códigos Siv y Siu tienen su propia regla (Art. 41, nums. 7 y 8). lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 19 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («Los que se encuentran ubicados dentro del código R3d1, así como los servicios institucionales y comerciales deberán t…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora']"
+  },
+  {
+    "id": "AC-RES-UNA-TIPOLOGIA",
+    "version": 3,
+    "titulo": "R1d1-R3d1: una sola tipología de vivienda en el polígono",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 9",
+      "pagina_pdf": 39,
+      "cita_textual": "9. En los códigos R1d1, R1d2, R1d3, R2d1, R2d2, R2d3, y R3d1 sólo se podrá utilizar dentro del polígono una de las tipologías de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.tipologias_vivienda_cantidad"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "9. En los códigos R1d1, R1d2, R1d3, R2d1, R2d2, R2d3, y R3d1 sólo se podrá utilizar dentro del polígono una de las tipologías de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El polígono usa más de una tipología de vivienda (Res. 160-2002, Art. 8, num. 9).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el plano de lotificación o de conjunto. Cita en la línea 21 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable declarando cuántas tipologías usa el polígono (clave existente); «dentro del polígono»: solo urbanizaciones. Cambios: tipo criterio → cuantitativa, aplica_si, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («9. En los códigos R1d1, R1d2, R1d3, R2d1, R2d2, R2d3, y R3d1 sólo se podrá utilizar dentro del polígono una de las ti…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.tipologias_vivienda_cantidad <= 1"
+  },
+  {
+    "id": "AC-RC-TODAS-TIPOLOGIAS",
+    "version": 3,
+    "titulo": "R1c y R2c: todas las tipologías de vivienda en el polígono",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 10",
+      "pagina_pdf": 39,
+      "cita_textual": "10. En los códigos R1c y R2c es obligatorio utilizar dentro del polígono todas las tipologías de vivienda."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "10. En los códigos R1c y R2c es obligatorio utilizar dentro del polígono todas las tipologías de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El conjunto R1c/R2c no usa todas las tipologías de vivienda de su código (Res. 160-2002, Art. 8, num. 10).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Las tipologías de cada código están en los Arts. 14 y 18. Cita en la línea 22 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: el número de tipologías no está literal en la cita. Se acota a urbanizaciones («dentro del polígono»). Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («10. En los códigos R1c y R2c es obligatorio utilizar dentro del polígono todas las tipologías de vivienda.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-RC-TIPOLOGIA-POR-MANZANA",
+    "version": 3,
+    "titulo": "R1c y R2c: una tipología por manzana",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 10",
+      "pagina_pdf": 39,
+      "cita_textual": "En cada manzana sólo se podrá utilizar una de las tipologías a escoger."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.max_tipologias_por_manzana"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "En cada manzana sólo se podrá utilizar una de las tipologías a escoger.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay manzanas con más de una tipología de vivienda en un conjunto R1c/R2c (Res. 160-2002, Art. 8, num. 10).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El espacio libre entre manzanas puede contarse en el espacio abierto exigido (mismo numeral). Cita en la línea 22 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable («sólo ... una de las tipologías» por manzana) con dato declarado; solo urbanizaciones. Cambios: tipo criterio → cuantitativa, aplica_si, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («En cada manzana sólo se podrá utilizar una de las tipologías a escoger.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.max_tipologias_por_manzana <= 1"
+  },
+  {
+    "id": "AC-RES-RADIO-SERVICIOS",
+    "version": 3,
+    "titulo": "Residencial: servicio institucional y comercio vecinal a 350 m como máximo",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 11",
+      "pagina_pdf": 39,
+      "cita_textual": "11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.radio_servicio_institucional_m",
+      "proyecto.radio_comercio_vecinal_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El servicio institucional o el comercio vecinal queda a más de 350 m de las viviendas que sirve (Res. 160-2002, Art. 8, num. 11).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el plano de la urbanización. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.urbanizacion_nueva. Cita en la línea 23 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con los radios declarados en el plano de urbanización; valor literal 350 m. Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.radio_servicio_institucional_m <= 350 and proyecto.radio_comercio_vecinal_m <= 350"
+  },
+  {
+    "id": "AC-RES-RADIO-VISITAS",
+    "version": 3,
+    "titulo": "Residencial: estacionamientos de visitas a 150 m como máximo",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 11",
+      "pagina_pdf": 39,
+      "cita_textual": "11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts. y los estacionamientos de visitas a un radio máximo de 150 mts."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.radio_estacionamientos_visita_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts. y los estacionamientos de visitas a un radio máximo de 150 mts.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas quedan a más de 150 m de las viviendas que sirven (Res. 160-2002, Art. 8, num. 11).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el plano de la urbanización. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.urbanizacion_nueva. Cita en la línea 23 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con el radio declarado; cita ampliada al numeral 11 completo. Cambios: tipo criterio → cuantitativa, condicion, entradas, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («11. El servicio institucional y el comercio vecinal deben servir a un radio máximo de 350 mts. y los estacionamientos…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.radio_estacionamientos_visita_m <= 150"
+  },
+  {
+    "id": "AC-RES-POBLACION-RECAMARAS",
+    "version": 3,
+    "titulo": "Residencial: población calculada por recámaras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 8, numeral 13",
+      "pagina_pdf": 40,
+      "cita_textual": "13. El número de personas por unidad de vivienda para calcular la densidad de población estará dada según La siguiente tabla: Recámaras | Personas 1 | 2 2 | 4 3 | 5 4 ó más | 1 persona adicional por cada recámara que se agregue 14. Para los apartamentos eficientes de un solo ambiente y establecimientos de hospedaje público, tales como hoteles, pensiones, moteles y aparthoteles se computarán dos (2) personas."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.poblacion",
+      "proyecto.viviendas_1_recamara",
+      "proyecto.viviendas_2_recamaras",
+      "proyecto.viviendas_3_recamaras",
+      "proyecto.viviendas_4_o_mas_recamaras",
+      "proyecto.recamaras_viviendas_4_o_mas",
+      "proyecto.unidades_eficientes_y_hospedaje"
+    ],
+    "condicion": "proyecto.poblacion >= 2 * proyecto.viviendas_1_recamara + 4 * proyecto.viviendas_2_recamaras + 5 * proyecto.viviendas_3_recamaras + proyecto.recamaras_viviendas_4_o_mas + 2 * proyecto.viviendas_4_o_mas_recamaras + 2 * proyecto.unidades_eficientes_y_hospedaje",
+    "tolerancia": 0,
+    "unidad": "personas",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O2",
+      "cita": "13. El número de personas por unidad de vivienda para calcular la densidad de población estará dada según La siguiente tabla:",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La población declarada es menor que la que resulta de la tabla de personas por recámara y de 2 personas por eficiente u hospedaje (Res. 160-2002, Art. 8, nums. 13 y 14).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tabla: 1 recámara 2 personas; 2 recámaras 4; 3 recámaras 5; 4 o más, 1 persona adicional por cada recámara que se agregue (vivienda de r recámaras = r + 2 personas). La condición es una cota inferior: los apartamentos eficientes y el hospedaje suman aparte (num. 14). Esta población es la que alimenta proyecto.densidad_pers_ha de las reglas *-DENSIDAD. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.viviendas_1_recamara, proyecto.viviendas_2_recamaras, proyecto.viviendas_3_recamaras, proyecto.viviendas_4_o_mas_recamaras, proyecto.recamaras_viviendas_4_o_mas (total de recámaras de esas viviendas). Cita en la línea 26 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Regla de cómputo (observación). La cita no traía la tabla; se cita la tabla y el num. 14, y se suma el cómputo de eficientes. Cambios: severidad bloqueante → observacion, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O2 («13. El número de personas por unidad de vivienda para calcular la densidad de población estará dada según La siguient…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MIX-CIUDAD-JARDIN",
+    "version": 3,
+    "titulo": "Mixto: normas especiales de Ciudad Jardín (Res. 139-2000)",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 1",
+      "pagina_pdf": 53,
+      "cita_textual": "ARTICULO 21: Requisitos Generales: Se establece como requisito para aprobar los códigos de zona de actividad residencial las siguientes facilidades: 1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín\"."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MRU1', 'Mru1', 'mru1', 'MRU2', 'Mru2', 'mru2', 'MRU3', 'Mru3', 'mru3', 'MCV1', 'Mcv1', 'mcv1', 'MCV2', 'Mcv2', 'mcv2', 'MCV3', 'Mcv3', 'mcv3', 'MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "ARTICULO 21: Requisitos Generales: Se establece como requisito para aprobar los códigos de zona de actividad residencial las siguientes facilidades: 1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto en código mixto debe cumplir la Res. 139-2000 (Ciudad Jardín), que el PreCheck no tiene cargada (Art. 21, num. 1).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Norma no cargada: revisión manual (mismo criterio que AC-RES-CIUDAD-JARDIN). Cita en la línea 291 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Remite a la Res. 139-2000 no cargada: criterio. «debe regirse» es obligación (bloqueante). Cita repetida en tres artículos: se amplía con el encabezado. Cambios: severidad observacion → bloqueante, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («ARTICULO 21: Requisitos Generales: Se establece como requisito para aprobar los códigos de zona de actividad residenc…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MIX-ACTIVIDAD-PRIMARIA",
+    "version": 2,
+    "titulo": "Mixto: actividad primaria entre 70% y 90% del polígono o lote",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 3",
+      "pagina_pdf": 53,
+      "cita_textual": "3. La actividad primaria ocupa un mínimo del 70% y un máximo del 90% del suelo del polígono o lote y la actividad complementaria ocupa un máximo del 30% y un mínimo del 10% del polígono o lote."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MRU1', 'Mru1', 'mru1', 'MRU2', 'Mru2', 'mru2', 'MRU3', 'Mru3', 'mru3', 'MCV1', 'Mcv1', 'mcv1', 'MCV2', 'Mcv2', 'mcv2', 'MCV3', 'Mcv3', 'mcv3', 'MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3']",
+    "entradas": [
+      "proyecto.actividad_primaria_pct"
+    ],
+    "condicion": "proyecto.actividad_primaria_pct >= 70 and proyecto.actividad_primaria_pct <= 90",
+    "tolerancia": 0.1,
+    "unidad": "%",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "3. La actividad primaria ocupa un mínimo del 70% y un máximo del 90% del suelo del polígono o lote y la actividad complementaria ocupa un máximo del 30% y un mínimo del 10% del polígono o lote.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La actividad primaria no ocupa entre el 70% y el 90% del suelo del polígono o lote (Res. 160-2002, Art. 21, num. 3).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. La complementaria (10% a 30%) es el resto. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.actividad_primaria_pct. Cita en la línea 293 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («3. La actividad primaria ocupa un mínimo del 70% y un máximo del 90% del suelo del polígono o lote y la actividad com…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MCX-ESTACIONAMIENTOS-VIVIENDA",
+    "version": 2,
+    "titulo": "Mcv y Mcu con vivienda: un estacionamiento por vivienda",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 8",
+      "pagina_pdf": 54,
+      "cita_textual": "Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidades de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV1', 'Mcv1', 'mcv1', 'MCV2', 'Mcv2', 'mcv2', 'MCV3', 'Mcv3', 'mcv3', 'MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.estacionamientos_residenciales",
+      "proyecto.unidades_vivienda"
+    ],
+    "condicion": "proyecto.estacionamientos_residenciales >= proyecto.unidades_vivienda",
+    "tolerancia": 0,
+    "unidad": "espacios",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidades de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay menos de un estacionamiento residencial por unidad de vivienda en código Mcv/Mcu (Res. 160-2002, Art. 21, num. 8).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. La primera frase del numeral (la densidad la define la altura permitida y la ocupación máxima) no es una obligación aparte. Los estacionamientos comerciales de los Arts. 25 y 26 se cuentan aparte. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.estacionamientos_residenciales. Cita en la línea 298 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidade…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MCX-ESTACIONAMIENTOS-VISITA",
+    "version": 2,
+    "titulo": "Mcv y Mcu con vivienda: un estacionamiento de visita por cada 3 viviendas",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 8",
+      "pagina_pdf": 54,
+      "cita_textual": "Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidades de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV1', 'Mcv1', 'mcv1', 'MCV2', 'Mcv2', 'mcv2', 'MCV3', 'Mcv3', 'mcv3', 'MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.estacionamientos_visita",
+      "proyecto.unidades_vivienda"
+    ],
+    "condicion": "proyecto.estacionamientos_visita >= proyecto.unidades_vivienda / 3",
+    "tolerancia": 0,
+    "unidad": "espacios",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidades de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay menos de un estacionamiento de visita por cada tres viviendas en código Mcv/Mcu (Res. 160-2002, Art. 21, num. 8).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Cita en la línea 298 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Además, se deberá colocar como mínimo un estacionamiento por unidad de vivienda y uno de visita por cada tres unidade…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MCU-AREA-SOCIAL",
+    "version": 2,
+    "titulo": "Mcu residencial: área social de 15 m² por vivienda",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 9",
+      "pagina_pdf": 54,
+      "cita_textual": "9. Para los códigos Mcu las edificaciones residenciales deberán proveer de área social a los residentes a razón de 15 m2 por unidad de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.area_social_m2_por_vivienda"
+    ],
+    "condicion": "proyecto.area_social_m2_por_vivienda >= 15",
+    "tolerancia": 0.1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Para los códigos Mcu las edificaciones residenciales deberán proveer de área social a los residentes a razón de 15 m2 por unidad de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Área social menor que 15 m² por unidad de vivienda en código Mcu (Res. 160-2002, Art. 21, num. 9).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo hecho que AC-MRU1-AREA-SOCIAL. Cita en la línea 299 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Para los códigos Mcu las edificaciones residenciales deberán proveer de área social a los residentes a razón de 15 m2…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MCU-AREA-SOCIAL-MINIMA",
+    "version": 2,
+    "titulo": "Mcu residencial con 5 viviendas o menos: área social mínima de 75 m²",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 9",
+      "pagina_pdf": 54,
+      "cita_textual": "El tamaño mínimo permitido de área social es de 75 m2 cuando haya 5 ó menos unidades de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3'] and proyecto.unidades_vivienda > 0 and proyecto.unidades_vivienda <= 5",
+    "entradas": [
+      "proyecto.area_social_m2"
+    ],
+    "condicion": "proyecto.area_social_m2 >= 75",
+    "tolerancia": 0.1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "El tamaño mínimo permitido de área social es de 75 m2 cuando haya 5 ó menos unidades de vivienda.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área social es menor que 75 m² en un edificio Mcu de 5 viviendas o menos (Res. 160-2002, Art. 21, num. 9).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Hechos provisionales (los decide la IA o un extractor futuro): proyecto.area_social_m2. Cita en la línea 299 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («El tamaño mínimo permitido de área social es de 75 m2 cuando haya 5 ó menos unidades de vivienda.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-MCU-AREA-SOCIAL-COMPONENTES",
+    "version": 3,
+    "titulo": "Mcu residencial: componentes mínimos del área social",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 9",
+      "pagina_pdf": 54,
+      "cita_textual": "El área social debe contar como mínimo con un área al aire libre, una zona de juegos para niños y un salón para actividades sociales."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "plano.area_social.aire_libre",
+      "plano.area_social.juegos_ninos",
+      "plano.area_social.salon"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "El área social debe contar como mínimo con un área al aire libre, una zona de juegos para niños y un salón para actividades sociales.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área social no tiene área al aire libre, zona de juegos para niños y salón de actividades sociales (Res. 160-2002, Art. 21, num. 9).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en las plantas arquitectónicas. Cita en la línea 299 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable: tres componentes literales del área social, como datos sí/no del plano. Cambios: tipo criterio → documental, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («El área social debe contar como mínimo con un área al aire libre, una zona de juegos para niños y un salón para activ…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt); tipo «documental» corregido a «criterio»",
+    "condicion": "plano.area_social.aire_libre == true and plano.area_social.juegos_ninos == true and plano.area_social.salon == true"
+  },
+  {
+    "id": "AC-MCV-ACCESO-COLECTORAS",
+    "version": 3,
+    "titulo": "Mcv: acceso solo por vías colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 10",
+      "pagina_pdf": 54,
+      "cita_textual": "10.Las edificaciones ubicadas dentro de los códigos Mcv sólo podrán tener acceso de las vías colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV1', 'Mcv1', 'mcv1', 'MCV2', 'Mcv2', 'mcv2', 'MCV3', 'Mcv3', 'mcv3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "10.Las edificaciones ubicadas dentro de los códigos Mcv sólo podrán tener acceso de las vías colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Mcv tiene acceso por una vía que no es colectora (Res. 160-2002, Art. 21, num. 10).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 300 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («10.Las edificaciones ubicadas dentro de los códigos Mcv sólo podrán tener acceso de las vías colectoras.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora']"
+  },
+  {
+    "id": "AC-MCU-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Mcu: acceso solo por vías secundarias y/o primarias",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 10",
+      "pagina_pdf": 54,
+      "cita_textual": "Las edificaciones ubicadas dentro de los códigos Mcu sólo podrán tener acceso de las vías secundarias y/o primarias."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU1', 'Mcu1', 'mcu1', 'MCU2', 'Mcu2', 'mcu2', 'MCU3', 'Mcu3', 'mcu3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las edificaciones ubicadas dentro de los códigos Mcu sólo podrán tener acceso de las vías secundarias y/o primarias.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Mcu tiene acceso por una vía que no es secundaria ni primaria (Res. 160-2002, Art. 21, num. 10).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 300 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («Las edificaciones ubicadas dentro de los códigos Mcu sólo podrán tener acceso de las vías secundarias y/o primarias.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['secundaria', 'primaria']"
+  },
+  {
+    "id": "AC-MRU12-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Mru1 y Mru2: acceso solo por vías colectoras y/o secundarias",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 11",
+      "pagina_pdf": 54,
+      "cita_textual": "11.Las edificaciones ubicadas dentro de los códigos Mru1 y Mru2 sólo podrán tener acceso de las vías colectoras y/o secundarias."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MRU1', 'Mru1', 'mru1', 'MRU2', 'Mru2', 'mru2']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "11.Las edificaciones ubicadas dentro de los códigos Mru1 y Mru2 sólo podrán tener acceso de las vías colectoras y/o secundarias.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Mru1/Mru2 tiene acceso por una vía que no es colectora ni secundaria (Res. 160-2002, Art. 21, num. 11).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 301 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («11.Las edificaciones ubicadas dentro de los códigos Mru1 y Mru2 sólo podrán tener acceso de las vías colectoras y/o s…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora', 'secundaria']"
+  },
+  {
+    "id": "AC-MRU3-ACCESO-SECUNDARIAS",
+    "version": 3,
+    "titulo": "Mru3: acceso solo por vías secundarias",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 21, numeral 11",
+      "pagina_pdf": 54,
+      "cita_textual": "Las edificaciones ubicadas dentro del código Mru3 sólo podrán tener acceso de las vías secundarias."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MRU3', 'Mru3', 'mru3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las edificaciones ubicadas dentro del código Mru3 sólo podrán tener acceso de las vías secundarias.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Mru3 tiene acceso por una vía que no es secundaria (Res. 160-2002, Art. 21, num. 11).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 301 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («Las edificaciones ubicadas dentro del código Mru3 sólo podrán tener acceso de las vías secundarias.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['secundaria']"
+  },
+  {
+    "id": "AC-AV-CIUDAD-JARDIN",
+    "version": 3,
+    "titulo": "Área verde y recreación: normas especiales de Ciudad Jardín (Res. 139-2000)",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 1",
+      "pagina_pdf": 66,
+      "cita_textual": "ARTICULO 28: Requisitos Generales: Los requisitos generales para aprobar códigos de zona para la actividad de Area Verde Urbana y de Recreación son: 1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín\"."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PI', 'Pi', 'pi', 'PV', 'Pv', 'pv', 'PRV', 'Prv', 'prv', 'PRU', 'Pru', 'pru', 'PIB', 'Pib', 'pib', 'PD', 'Pd', 'pd', 'PND', 'Pnd', 'pnd', 'PL', 'Pl', 'pl', 'PM', 'Pm', 'pm']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Los requisitos generales para aprobar códigos de zona para la actividad de Area Verde Urbana y de Recreación son: 1. Toda construcción o desarrollo urbano debe regirse por lo estipulado en la Resolución 139-2000, por la cual se aprueban normas especiales para mantener el carácter de Ciudad Jardín",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto en área verde o de recreación debe cumplir la Res. 139-2000 (Ciudad Jardín), que el PreCheck no tiene cargada (Art. 28, num. 1).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Norma no cargada: revisión manual (mismo criterio que AC-RES-CIUDAD-JARDIN). Cita en la línea 469 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Remite a la Res. 139-2000 no cargada: criterio. «debe regirse» es obligación (bloqueante). Cita repetida en tres artículos: se amplía con el encabezado. Cambios: severidad observacion → bloqueante, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Los requisitos generales para aprobar códigos de zona para la actividad de Area Verde Urbana y de Recreación son: 1. …», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-AV-ACTIVIDAD-PRIMARIA",
+    "version": 2,
+    "titulo": "Área verde: actividad primaria entre 90% y 97.5% del polígono",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 2",
+      "pagina_pdf": 66,
+      "cita_textual": "2. La actividad primaria ocupará un mínimo del 90% y un máximo del 97.5% del suelo del polígono; la complementaria un mínimo del 2.5% y un máximo del 10%."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PI', 'Pi', 'pi', 'PV', 'Pv', 'pv', 'PRV', 'Prv', 'prv', 'PRU', 'Pru', 'pru', 'PIB', 'Pib', 'pib', 'PD', 'Pd', 'pd', 'PND', 'Pnd', 'pnd', 'PL', 'Pl', 'pl', 'PM', 'Pm', 'pm']",
+    "entradas": [
+      "proyecto.actividad_primaria_pct"
+    ],
+    "condicion": "proyecto.actividad_primaria_pct >= 90 and proyecto.actividad_primaria_pct <= 97.5",
+    "tolerancia": 0.1,
+    "unidad": "%",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "2. La actividad primaria ocupará un mínimo del 90% y un máximo del 97.5% del suelo del polígono; la complementaria un mínimo del 2.5% y un máximo del 10%.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La actividad primaria no ocupa entre el 90% y el 97.5% del suelo del polígono (Res. 160-2002, Art. 28, num. 2).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. La complementaria (2.5% a 10%) es el resto. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.actividad_primaria_pct. Cita en la línea 470 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («2. La actividad primaria ocupará un mínimo del 90% y un máximo del 97.5% del suelo del polígono; la complementaria un…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PI-PV-PRV-ARBORIZACION",
+    "version": 2,
+    "titulo": "Pi, Pv y Prv de nuevas urbanizaciones: un árbol por cada 100 m²",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 4",
+      "pagina_pdf": 66,
+      "cita_textual": "deberán ser entregados por los promotores con arborización mínima a razón de 1 árbol por cada 100m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PI', 'Pi', 'pi', 'PV', 'Pv', 'pv', 'PRV', 'Prv', 'prv'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "proyecto.arboles_propuestos",
+      "lote.area_m2"
+    ],
+    "condicion": "proyecto.arboles_propuestos >= lote.area_m2 / 100",
+    "tolerancia": 0,
+    "unidad": "árboles",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberán ser entregados por los promotores con arborización mínima a razón de 1 árbol por cada 100m2",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La arborización es menor que un árbol por cada 100 m² del área (Pi, Pv y Prv de nuevas urbanizaciones; Res. 160-2002, Art. 28, num. 4).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo en nuevas urbanizaciones. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.arboles_propuestos, proyecto.urbanizacion_nueva. Cita en la línea 471 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deberán ser entregados por los promotores con arborización mínima a razón de 1 árbol por cada 100m2», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PI-PV-PRV-PLAN-DISENO",
+    "version": 2,
+    "titulo": "Pi, Pv y Prv de nuevas urbanizaciones: plan de diseño con vegetación tapizante y mobiliario urbano",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 4",
+      "pagina_pdf": 66,
+      "cita_textual": "1 árbol por cada 100m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PI', 'Pi', 'pi', 'PV', 'Pv', 'pv', 'PRV', 'Prv', 'prv'] and proyecto.urbanizacion_nueva == true",
+    "entradas": [
+      "plano.plan_diseno_area_verde.presente"
+    ],
+    "condicion": "plano.plan_diseno_area_verde.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "1 árbol por cada 100m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el plan de diseño con vegetación tapizante y mobiliario urbano (Pi, Pv y Prv de nuevas urbanizaciones; Res. 160-2002, Art. 28, num. 4).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo en nuevas urbanizaciones. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): plano.plan_diseno_area_verde.presente, proyecto.urbanizacion_nueva. Cita en la línea 471 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («1 árbol por cada 100m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urb…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PRU-PL-ARBORIZACION",
+    "version": 2,
+    "titulo": "Pru y Pl: un árbol por cada 300 m²",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 5",
+      "pagina_pdf": 66,
+      "cita_textual": "deberán ser entregadas con arborización mínima a razón de 1 árbol por cada 300 m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PRU', 'Pru', 'pru', 'PL', 'Pl', 'pl']",
+    "entradas": [
+      "proyecto.arboles_propuestos",
+      "lote.area_m2"
+    ],
+    "condicion": "proyecto.arboles_propuestos >= lote.area_m2 / 300",
+    "tolerancia": 0,
+    "unidad": "árboles",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberán ser entregadas con arborización mínima a razón de 1 árbol por cada 300 m2",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La arborización es menor que un árbol por cada 300 m² del área (Pru y Pl; Res. 160-2002, Art. 28, num. 5).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Hechos provisionales (los decide la IA o un extractor futuro): proyecto.arboles_propuestos. Cita en la línea 472 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deberán ser entregadas con arborización mínima a razón de 1 árbol por cada 300 m2», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PRU-PL-PLAN-DISENO",
+    "version": 2,
+    "titulo": "Pru y Pl: plan de diseño con vegetación tapizante y mobiliario urbano",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 5",
+      "pagina_pdf": 66,
+      "cita_textual": "1 árbol por cada 300 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PRU', 'Pru', 'pru', 'PL', 'Pl', 'pl']",
+    "entradas": [
+      "plano.plan_diseno_area_verde.presente"
+    ],
+    "condicion": "plano.plan_diseno_area_verde.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "1 árbol por cada 300 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el plan de diseño con vegetación tapizante y mobiliario urbano (Pru y Pl; Res. 160-2002, Art. 28, num. 5).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Hechos provisionales (los decide la IA o un extractor futuro): plano.plan_diseno_area_verde.presente. Cita en la línea 472 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («1 árbol por cada 300 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario ur…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PIB-PD-ARBORIZACION",
+    "version": 2,
+    "titulo": "Pib y Pd: un árbol por cada 200 m²",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 6",
+      "pagina_pdf": 67,
+      "cita_textual": "deberán ser entregados con arborización mínima a razón de 1 árbol por cada 200 m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PIB', 'Pib', 'pib', 'PD', 'Pd', 'pd']",
+    "entradas": [
+      "proyecto.arboles_propuestos",
+      "lote.area_m2"
+    ],
+    "condicion": "proyecto.arboles_propuestos >= lote.area_m2 / 200",
+    "tolerancia": 0,
+    "unidad": "árboles",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberán ser entregados con arborización mínima a razón de 1 árbol por cada 200 m2",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La arborización es menor que un árbol por cada 200 m² del área (Pib y Pd; Res. 160-2002, Art. 28, num. 6).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Hechos provisionales (los decide la IA o un extractor futuro): proyecto.arboles_propuestos. Cita en la línea 475 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deberán ser entregados con arborización mínima a razón de 1 árbol por cada 200 m2», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PIB-PD-PLAN-DISENO",
+    "version": 2,
+    "titulo": "Pib y Pd: plan de diseño con vegetación tapizante y mobiliario urbano",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 6",
+      "pagina_pdf": 67,
+      "cita_textual": "1 árbol por cada 200 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PIB', 'Pib', 'pib', 'PD', 'Pd', 'pd']",
+    "entradas": [
+      "plano.plan_diseno_area_verde.presente"
+    ],
+    "condicion": "plano.plan_diseno_area_verde.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "1 árbol por cada 200 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario urbano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el plan de diseño con vegetación tapizante y mobiliario urbano (Pib y Pd; Res. 160-2002, Art. 28, num. 6).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Hechos provisionales (los decide la IA o un extractor futuro): plano.plan_diseno_area_verde.presente. Cita en la línea 475 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («1 árbol por cada 200 m2 y vegetación tapizante, con su respectivo plan de diseño que incluya también el mobiliario ur…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-PND-PM-CONSERVACION",
+    "version": 2,
+    "titulo": "Pnd y Pm: conservar o mejorar sus características ambientales",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 7",
+      "pagina_pdf": 67,
+      "cita_textual": "7. Las áreas verdes no desarrollables (Pnd) y parques metropolitanos (Pm) son definidos por sus características ambientales, las cuales deben ser conservadas o en todo caso mejoradas ya sea por reforestación, estabilización y/o descontaminación."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['PND', 'Pnd', 'pnd', 'PM', 'Pm', 'pm']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "7. Las áreas verdes no desarrollables (Pnd) y parques metropolitanos (Pm) son definidos por sus características ambientales, las cuales deben ser conservadas o en todo caso mejoradas ya sea por reforestación, estabilización y/o descontaminación.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto no conserva ni mejora las características ambientales del área Pnd/Pm (Res. 160-2002, Art. 28, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Puede requerir el criterio de la autoridad ambiental. Cita en la línea 476 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («7. Las áreas verdes no desarrollables (Pnd) y parques metropolitanos (Pm) son definidos por sus características ambie…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)"
+  },
+  {
+    "id": "AC-RES-PARQUE-VECINAL",
+    "version": 3,
+    "titulo": "Residencial: parque vecinal a 5 m² por persona",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 12",
+      "pagina_pdf": 67,
+      "cita_textual": "12. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 40 o más personas, debe tener un parque vecinal (Pv) a razón de 5.00 m2 por persona. El parque vecinal debe servir a un radio máximo de 250 mts del lote más lejano."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.poblacion >= 40",
+    "entradas": [
+      "proyecto.parque_vecinal_m2",
+      "proyecto.poblacion",
+      "proyecto.parque_vecinal_radio_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "12. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 40 o más personas, debe tener un parque vecinal (Pv) a razón de 5.00 m2 por persona. El parque vecinal debe servir a un radio máximo de 250 mts del lote más lejano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El desarrollo residencial de 40 o más personas no prevé parque vecinal de 5.00 m² por persona a menos de 250 m.",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo molde que AC-RES-PARQUE-INFANTIL. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Cita en la línea 479 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con área y radio declarados; valores literales del num. 12. Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («12. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 40 o más personas, debe tener un parque ve…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.parque_vecinal_m2 >= 5.00 * proyecto.poblacion and proyecto.parque_vecinal_radio_m <= 250"
+  },
+  {
+    "id": "AC-RES-AREA-RECREATIVA-VECINAL",
+    "version": 3,
+    "titulo": "Residencial: área recreativa vecinal a 2 m² por persona",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 28, numeral 13",
+      "pagina_pdf": 67,
+      "cita_textual": "13. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 200 o más personas, debe tener un área recreativa vecinal (Prv) a razón de 2.00 m2 por persona. El área recreativa vecinal debe servir a un radio máximo de 500 mts del lote más lejano."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c'] and proyecto.poblacion >= 200",
+    "entradas": [
+      "proyecto.area_recreativa_vecinal_m2",
+      "proyecto.poblacion",
+      "proyecto.area_recreativa_vecinal_radio_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "13. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 200 o más personas, debe tener un área recreativa vecinal (Prv) a razón de 2.00 m2 por persona. El área recreativa vecinal debe servir a un radio máximo de 500 mts del lote más lejano.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El desarrollo residencial de 200 o más personas no prevé área recreativa vecinal de 2.00 m² por persona a menos de 500 m.",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo molde que AC-RES-PARQUE-INFANTIL. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Cita en la línea 480 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con área y radio declarados; valores literales del num. 13. Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («13. Cada nuevo polígono, manzana o lote residencial, cuya población sea de 200 o más personas, debe tener un área rec…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.area_recreativa_vecinal_m2 >= 2.00 * proyecto.poblacion and proyecto.area_recreativa_vecinal_radio_m <= 500"
+  },
+  {
+    "id": "AC-INST-SIN-BONIFICACION",
+    "version": 3,
+    "titulo": "Servicio institucional: sin sistema de bonificación",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 41, numeral 2",
+      "pagina_pdf": 81,
+      "cita_textual": "2. El sistema de bonificación no se aplica a ninguno de los códigos de servicio institucional."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV1', 'Siv1', 'siv1', 'SIV2', 'Siv2', 'siv2', 'SIV3', 'Siv3', 'siv3', 'SIU1', 'Siu1', 'siu1', 'SIU2', 'Siu2', 'siu2', 'SIU3', 'Siu3', 'siu3']",
+    "entradas": [
+      "proyecto.usa_bonificacion"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "2. El sistema de bonificación no se aplica a ninguno de los códigos de servicio institucional.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto se acoge a una bonificación, que no aplica en los códigos de servicio institucional del Área del Canal.",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo molde que AC-MIX-SIN-BONIFICACION. Cita en la línea 600 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con un dato sí/no declarado; prohibición literal. Cambios: tipo criterio → cuantitativa, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («2. El sistema de bonificación no se aplica a ninguno de los códigos de servicio institucional.», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "proyecto.usa_bonificacion == false"
+  },
+  {
+    "id": "AC-SIV1-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Siv1: acceso solo por vías locales y/o colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 41, numeral 7",
+      "pagina_pdf": 82,
+      "cita_textual": "7. Las edificaciones ubicadas dentro del código Servicio Institucional Vecinal – Baja Intensidad (Siv1) sólo podrán tener acceso a las vías locales y/o colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV1', 'Siv1', 'siv1']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "7. Las edificaciones ubicadas dentro del código Servicio Institucional Vecinal – Baja Intensidad (Siv1) sólo podrán tener acceso a las vías locales y/o colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Siv1 tiene acceso por una vía que no es local ni colectora (Res. 160-2002, Art. 41, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 604 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («7. Las edificaciones ubicadas dentro del código Servicio Institucional Vecinal – Baja Intensidad (Siv1) sólo podrán t…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['local', 'colectora']"
+  },
+  {
+    "id": "AC-SIV23-ACCESO-COLECTORAS",
+    "version": 3,
+    "titulo": "Siv2 y Siv3: acceso solo por vías colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 41, numeral 7",
+      "pagina_pdf": 82,
+      "cita_textual": "Las ubicadas dentro de los códigos Servicio Institucional Vecinal –Mediana Intensidad y Alta Intensidad (Siv2 y Siv3) sólo podrán servirse de vías colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV2', 'Siv2', 'siv2', 'SIV3', 'Siv3', 'siv3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las ubicadas dentro de los códigos Servicio Institucional Vecinal –Mediana Intensidad y Alta Intensidad (Siv2 y Siv3) sólo podrán servirse de vías colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Siv2/Siv3 tiene acceso por una vía que no es colectora (Res. 160-2002, Art. 41, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 604 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («Las ubicadas dentro de los códigos Servicio Institucional Vecinal –Mediana Intensidad y Alta Intensidad (Siv2 y Siv3)…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora']"
+  },
+  {
+    "id": "AC-SIU1-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Siu1: acceso solo por vías colectoras y/o secundarias",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 41, numeral 8",
+      "pagina_pdf": 82,
+      "cita_textual": "8. Las edificaciones ubicadas dentro del código Servicio Institucional Urbano– Baja Intensidad (Siu1) sólo podrán tener acceso a las vías colectoras y/o secundarias."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIU1', 'Siu1', 'siu1']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "8. Las edificaciones ubicadas dentro del código Servicio Institucional Urbano– Baja Intensidad (Siu1) sólo podrán tener acceso a las vías colectoras y/o secundarias.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Siu1 tiene acceso por una vía que no es colectora ni secundaria (Res. 160-2002, Art. 41, num. 8).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 605 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («8. Las edificaciones ubicadas dentro del código Servicio Institucional Urbano– Baja Intensidad (Siu1) sólo podrán ten…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora', 'secundaria']"
+  },
+  {
+    "id": "AC-SIU23-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Siu2 y Siu3: acceso solo por vías secundarias y/o primarias",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 41, numeral 8",
+      "pagina_pdf": 82,
+      "cita_textual": "Las ubicadas dentro de los códigos Servicio Institucional Urbano – Mediana Intensidad y Alta Intensidad (Siu2 y Siu3) sólo podrán servirse de vías secundarias y/o primarias."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIU2', 'Siu2', 'siu2', 'SIU3', 'Siu3', 'siu3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las ubicadas dentro de los códigos Servicio Institucional Urbano – Mediana Intensidad y Alta Intensidad (Siu2 y Siu3) sólo podrán servirse de vías secundarias y/o primarias.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Siu2/Siu3 tiene acceso por una vía que no es secundaria ni primaria (Res. 160-2002, Art. 41, num. 8).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 605 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («Las ubicadas dentro de los códigos Servicio Institucional Urbano – Mediana Intensidad y Alta Intensidad (Siu2 y Siu3)…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['secundaria', 'primaria']"
+  },
+  {
+    "id": "AC-TN-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Tn: acceso solo por vías locales o colectoras",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 47, numeral 6",
+      "pagina_pdf": 92,
+      "cita_textual": "6. Las edificaciones ubicadas dentro de los códigos de Turismo Natural (Tn) sólo podrán servirse de las vías locales o colectoras."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TN1', 'Tn1', 'tn1', 'TN2', 'Tn2', 'tn2', 'TN3', 'Tn3', 'tn3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "6. Las edificaciones ubicadas dentro de los códigos de Turismo Natural (Tn) sólo podrán servirse de las vías locales o colectoras.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Tn tiene acceso por una vía que no es local ni colectora (Res. 160-2002, Art. 47, num. 6).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 706 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada de la vía de acceso; categorías literales del texto. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («6. Las edificaciones ubicadas dentro de los códigos de Turismo Natural (Tn) sólo podrán servirse de las vías locales …», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['local', 'colectora']"
+  },
+  {
+    "id": "AC-TU-ACCESO-VIAS",
+    "version": 3,
+    "titulo": "Tu: acceso solo por vías colectoras, secundarias y/o principal",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 47, numeral 7",
+      "pagina_pdf": 92,
+      "cita_textual": "7. Las edificaciones ubicadas dentro de los códigos Turismo Urbano (Tu) sólo podrán servirse de vías colectoras, secundarias y/o principal."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TU1', 'Tu1', 'tu1', 'TU2', 'Tu2', 'tu2', 'TU3', 'Tu3', 'tu3']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "7. Las edificaciones ubicadas dentro de los códigos Turismo Urbano (Tu) sólo podrán servirse de vías colectoras, secundarias y/o principal.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La edificación Tu tiene acceso por una vía local (Res. 160-2002, Art. 47, num. 7).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 707 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la jerarquía declarada. El texto dice «principal»; se acepta también «primaria» como sinónimo del vocabulario del catálogo. Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («7. Las edificaciones ubicadas dentro de los códigos Turismo Urbano (Tu) sólo podrán servirse de vías colectoras, secu…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora', 'secundaria', 'principal', 'primaria']"
+  },
+  {
+    "id": "AC-ES-ESTACIONAMIENTO-POSTERIOR",
+    "version": 3,
+    "titulo": "Es: estacionamientos y abasto atrás o al costado",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 53, numeral 3",
+      "pagina_pdf": 101,
+      "cita_textual": "3. Toda edificación ubicada dentro de los códigos de Equipamiento de Servicio Básico (Es) deberá tener sus áreas de estacionamientos y abasto en la parte posterior de la misma o a un costado, en ningún caso frente a la edificación, ni adyacente a las vías de acceso."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['ESV', 'Esv', 'esv', 'ESU', 'Esu', 'esu']",
+    "entradas": [
+      "plano.estacionamientos_ubicacion",
+      "plano.estacionamientos_adyacente_via"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "3. Toda edificación ubicada dentro de los códigos de Equipamiento de Servicio Básico (Es) deberá tener sus áreas de estacionamientos y abasto en la parte posterior de la misma o a un costado, en ningún caso frente a la edificación, ni adyacente a las vías de acceso.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos o el abasto están frente a la edificación o junto a la vía de acceso (códigos Es).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo molde que AC-SIU-ESTACIONAMIENTO-POSTERIOR. Cita en la línea 800 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con la ubicación de estacionamientos y abasto declarada en el plano; posiciones literales del texto. Cambios: tipo criterio → documental, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («3. Toda edificación ubicada dentro de los códigos de Equipamiento de Servicio Básico (Es) deberá tener sus áreas de e…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt); tipo «documental» corregido a «criterio»",
+    "condicion": "plano.estacionamientos_ubicacion in ['posterior', 'lateral'] and plano.estacionamientos_adyacente_via == false"
+  },
+  {
+    "id": "AC-TRANSPORTE-ACCESO-COLECTORA",
+    "version": 3,
+    "titulo": "Transporte: acceso por vía colectora o mayor",
+    "fuente": {
+      "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+      "articulo": "Artículo 59, numeral 6",
+      "pagina_pdf": 105,
+      "cita_textual": "6. La jerarquía vial mínima que podrán tener acceso a cualquiera de los códigos de Transporte será de vía colectora o mayor."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TTV', 'TTv', 'Ttv', 'ttv', 'TTU', 'TTu', 'Ttu', 'ttu', 'TTC', 'TTc', 'Ttc', 'ttc', 'TM', 'Tm', 'tm', 'TA', 'Ta', 'ta', 'TF', 'Tf', 'tf']",
+    "entradas": [
+      "lote.via_acceso_categoria"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "6. La jerarquía vial mínima que podrán tener acceso a cualquiera de los códigos de Transporte será de vía colectora o mayor.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote de transporte tiene acceso por una vía de jerarquía menor que colectora (Res. 160-2002, Art. 59, num. 6).",
+    "vigencia": {
+      "desde": "2002-09-24",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. lote.via_acceso_categoria: jerarquía de la vía por la que se accede al lote ('local', 'colectora', 'secundaria', 'primaria'/'principal'); si se estandariza, la regla podría pasar a una condición automática. Hechos provisionales (los decide la IA o un extractor futuro): lote.via_acceso_categoria. Cita en la línea 825 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable: «colectora o mayor» = colectora, secundaria y primaria/principal (jerarquía declarada). Cambios: tipo criterio → cuantitativa, condicion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («6. La jerarquía vial mínima que podrán tener acceso a cualquiera de los códigos de Transporte será de vía colectora o…», normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt)",
+    "condicion": "lote.via_acceso_categoria in ['colectora', 'secundaria', 'primaria', 'principal']"
+  }
+]

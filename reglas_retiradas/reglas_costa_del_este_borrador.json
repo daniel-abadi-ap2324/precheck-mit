@@ -1,0 +1,55 @@
+[
+ {
+  "id": "CDE-RM3-E-ALTURA",
+  "version": 1,
+  "titulo": "RM3-E: altura máxima",
+  "fuente": {
+   "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+   "articulo": "Cuadro de Normas Especiales, fila RM3-E",
+   "pagina_pdf": 1,
+   "cita_textual": "Altura máxima: Según densidad."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['RM3-E', 'RM-3E']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida (zona RM3-E).",
+  "vigencia": {
+   "desde": "2004-06-17",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica CDE-RM3-E-DENSIDAD.",
+   "fusionada_en": "CDE-RM3-E-DENSIDAD"
+  }
+ },
+ {
+  "id": "CDE-C2-E-ALTURA",
+  "version": 1,
+  "titulo": "C2-E: altura máxima",
+  "fuente": {
+   "norma": "Normas Especiales de la Urbanización Costa del Este (Master Plan, 17-jun-2004)",
+   "articulo": "Cuadro de Normas Especiales, fila C2-E",
+   "pagina_pdf": 1,
+   "cita_textual": "Será determinada por el área de construcción"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CDE' and lote.codigo_zona in ['C2-E']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta del área de construcción permitida (zona C2-E).",
+  "vigencia": {
+   "desde": "2004-06-17",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia: la copia no trae la resolución de adopción; se usa la fecha del plano (17-jun-2004). Confirmar el instrumento y su fecha antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Será determinada por el área de construcción»: sin tope propio ni dato con qué comparar; no hay obligación verificable."
+  }
+ }
+]

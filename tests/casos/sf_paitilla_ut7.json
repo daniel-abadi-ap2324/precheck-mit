@@ -1,0 +1,7 @@
+{"tramite":"RDP","solicita_uso_acera":false,
+ "lote":{"norma_aplicable":{"valor":"PLOT-A61-2021+A270-2025","confianza":0.95},"sf_sector":{"valor":"Paitilla","confianza":0.95},
+  "sf_unidad_territorial":{"valor":7,"confianza":0.95},"codigo_zona":{"valor":"1ZM7","confianza":0.97},
+  "area_m2":{"valor":1200,"confianza":0.99},"finca":{"valor":"123","confianza":0.95},"frente_m":{"valor":24,"confianza":0.95}},
+ "proyecto":{"densidad_pers_ha":{"valor":1500,"confianza":0.9},"pisos_totales":{"valor":24,"confianza":0.98},"acera_ancho_m":{"valor":5,"confianza":0.95},"usa_codigo_programado":false},
+ "plano":{"intervalo_curvas_nivel_m":{"valor":1,"confianza":0.9}},
+ "registro_publico":{"finca":{"valor":"123","confianza":0.99},"area_lote_m2":{"valor":1200,"confianza":0.99}}}

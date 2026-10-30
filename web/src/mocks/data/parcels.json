@@ -1,0 +1,2023 @@
+[
+ {
+  "id": "PAR-081400",
+  "finca": "083076",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.530519,
+   8.995241
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5304102,
+      8.9950599
+     ],
+     [
+      -79.5304088,
+      8.9954216
+     ],
+     [
+      -79.530627,
+      8.9954225
+     ],
+     [
+      -79.5306285,
+      8.9950608
+     ],
+     [
+      -79.5304102,
+      8.9950599
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 1, Betania"
+ },
+ {
+  "id": "PAR-081401",
+  "finca": "083009",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.532176,
+   8.994832
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.532049,
+      8.9946505
+     ],
+     [
+      -79.5320475,
+      8.9950122
+     ],
+     [
+      -79.5323022,
+      8.9950132
+     ],
+     [
+      -79.5323036,
+      8.9946515
+     ],
+     [
+      -79.532049,
+      8.9946505
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 2, Betania"
+ },
+ {
+  "id": "PAR-081402",
+  "finca": "083080",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531866,
+   8.994831
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5317216,
+      8.9946492
+     ],
+     [
+      -79.5317201,
+      8.9950109
+     ],
+     [
+      -79.5320111,
+      8.995012
+     ],
+     [
+      -79.5320126,
+      8.9946503
+     ],
+     [
+      -79.5317216,
+      8.9946492
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 3, Betania"
+ },
+ {
+  "id": "PAR-081403",
+  "finca": "083084",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531575,
+   8.994829
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314669,
+      8.9946482
+     ],
+     [
+      -79.5314654,
+      8.9950099
+     ],
+     [
+      -79.5316837,
+      8.9950107
+     ],
+     [
+      -79.5316852,
+      8.994649
+     ],
+     [
+      -79.5314669,
+      8.9946482
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 4, Betania"
+ },
+ {
+  "id": "PAR-081404",
+  "finca": "083015",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.53072,
+   8.994826
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5305938,
+      8.9946447
+     ],
+     [
+      -79.5305923,
+      8.9950064
+     ],
+     [
+      -79.530847,
+      8.9950074
+     ],
+     [
+      -79.5308484,
+      8.9946457
+     ],
+     [
+      -79.5305938,
+      8.9946447
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 5, Betania"
+ },
+ {
+  "id": "PAR-081405",
+  "finca": "083098",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.530411,
+   8.994825
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5302664,
+      8.9946434
+     ],
+     [
+      -79.5302649,
+      8.9950051
+     ],
+     [
+      -79.5305559,
+      8.9950062
+     ],
+     [
+      -79.5305574,
+      8.9946445
+     ],
+     [
+      -79.5302664,
+      8.9946434
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 6, Betania"
+ },
+ {
+  "id": "PAR-081406",
+  "finca": "083053",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.53012,
+   8.994824
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5300117,
+      8.9946424
+     ],
+     [
+      -79.5300103,
+      8.9950041
+     ],
+     [
+      -79.5302285,
+      8.9950049
+     ],
+     [
+      -79.53023,
+      8.9946432
+     ],
+     [
+      -79.5300117,
+      8.9946424
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 7, Betania"
+ },
+ {
+  "id": "PAR-081407",
+  "finca": "083052",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.532759,
+   8.994418
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5326327,
+      8.9942369
+     ],
+     [
+      -79.5326313,
+      8.9945986
+     ],
+     [
+      -79.5328859,
+      8.9945996
+     ],
+     [
+      -79.5328874,
+      8.9942379
+     ],
+     [
+      -79.5326327,
+      8.9942369
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 8, Betania"
+ },
+ {
+  "id": "PAR-081408",
+  "finca": "083021",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.53245,
+   8.994417
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5323053,
+      8.9942356
+     ],
+     [
+      -79.5323038,
+      8.9945973
+     ],
+     [
+      -79.5325949,
+      8.9945984
+     ],
+     [
+      -79.5325963,
+      8.9942367
+     ],
+     [
+      -79.5323053,
+      8.9942356
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 9, Betania"
+ },
+ {
+  "id": "PAR-081409",
+  "finca": "083067",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.532159,
+   8.994416
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5320506,
+      8.9942346
+     ],
+     [
+      -79.5320492,
+      8.9945962
+     ],
+     [
+      -79.5322675,
+      8.9945971
+     ],
+     [
+      -79.5322689,
+      8.9942354
+     ],
+     [
+      -79.5320506,
+      8.9942346
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 10, Betania"
+ },
+ {
+  "id": "PAR-081410",
+  "finca": "083066",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531886,
+   8.994415
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5317596,
+      8.9942334
+     ],
+     [
+      -79.5317582,
+      8.9945951
+     ],
+     [
+      -79.5320128,
+      8.9945961
+     ],
+     [
+      -79.5320143,
+      8.9942344
+     ],
+     [
+      -79.5317596,
+      8.9942334
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 11, Betania"
+ },
+ {
+  "id": "PAR-081411",
+  "finca": "083049",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.531577,
+   8.994414
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314322,
+      8.9942321
+     ],
+     [
+      -79.5314307,
+      8.9945938
+     ],
+     [
+      -79.5317218,
+      8.9945949
+     ],
+     [
+      -79.5317232,
+      8.9942333
+     ],
+     [
+      -79.5314322,
+      8.9942321
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 12, Betania"
+ },
+ {
+  "id": "PAR-081412",
+  "finca": "083830",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531286,
+   8.994412
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5311775,
+      8.9942311
+     ],
+     [
+      -79.5311761,
+      8.9945928
+     ],
+     [
+      -79.5313944,
+      8.9945936
+     ],
+     [
+      -79.5313958,
+      8.9942319
+     ],
+     [
+      -79.5311775,
+      8.9942311
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 13, Betania"
+ },
+ {
+  "id": "PAR-081413",
+  "finca": "083834",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531013,
+   8.994411
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5308865,
+      8.9942299
+     ],
+     [
+      -79.530885,
+      8.9945916
+     ],
+     [
+      -79.5311397,
+      8.9945926
+     ],
+     [
+      -79.5311412,
+      8.9942309
+     ],
+     [
+      -79.5308865,
+      8.9942299
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 14, Betania"
+ },
+ {
+  "id": "PAR-081414",
+  "finca": "083875",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.530704,
+   8.99441
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5305591,
+      8.9942286
+     ],
+     [
+      -79.5305576,
+      8.9945903
+     ],
+     [
+      -79.5308487,
+      8.9945915
+     ],
+     [
+      -79.5308501,
+      8.9942298
+     ],
+     [
+      -79.5305591,
+      8.9942286
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 15, Betania"
+ },
+ {
+  "id": "PAR-081415",
+  "finca": "083808",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.530413,
+   8.994409
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5303044,
+      8.9942276
+     ],
+     [
+      -79.530303,
+      8.9945893
+     ],
+     [
+      -79.5305212,
+      8.9945902
+     ],
+     [
+      -79.5305227,
+      8.9942285
+     ],
+     [
+      -79.5303044,
+      8.9942276
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 16, Betania"
+ },
+ {
+  "id": "PAR-081416",
+  "finca": "083883",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.53014,
+   8.994408
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5300134,
+      8.9942264
+     ],
+     [
+      -79.5300119,
+      8.9945881
+     ],
+     [
+      -79.5302666,
+      8.9945891
+     ],
+     [
+      -79.530268,
+      8.9942275
+     ],
+     [
+      -79.5300134,
+      8.9942264
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 17, Betania"
+ },
+ {
+  "id": "PAR-081417",
+  "finca": "083882",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.532706,
+   8.994002
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5325616,
+      8.9938206
+     ],
+     [
+      -79.5325602,
+      8.9941823
+     ],
+     [
+      -79.5328512,
+      8.9941835
+     ],
+     [
+      -79.5328527,
+      8.9938218
+     ],
+     [
+      -79.5325616,
+      8.9938206
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 18, Betania"
+ },
+ {
+  "id": "PAR-081418",
+  "finca": "083811",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.532415,
+   8.994001
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.532307,
+      8.9938196
+     ],
+     [
+      -79.5323055,
+      8.9941813
+     ],
+     [
+      -79.5325238,
+      8.9941822
+     ],
+     [
+      -79.5325253,
+      8.9938205
+     ],
+     [
+      -79.532307,
+      8.9938196
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 19, Betania"
+ },
+ {
+  "id": "PAR-081419",
+  "finca": "083897",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.532143,
+   8.994
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5320159,
+      8.9938185
+     ],
+     [
+      -79.5320145,
+      8.9941802
+     ],
+     [
+      -79.5322691,
+      8.9941812
+     ],
+     [
+      -79.5322706,
+      8.9938195
+     ],
+     [
+      -79.5320159,
+      8.9938185
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 20, Betania"
+ },
+ {
+  "id": "PAR-081420",
+  "finca": "083896",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531833,
+   8.993999
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5316885,
+      8.9938172
+     ],
+     [
+      -79.5316871,
+      8.9941789
+     ],
+     [
+      -79.5319781,
+      8.99418
+     ],
+     [
+      -79.5319796,
+      8.9938183
+     ],
+     [
+      -79.5316885,
+      8.9938172
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 21, Betania"
+ },
+ {
+  "id": "PAR-081421",
+  "finca": "083859",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.531542,
+   8.993997
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314339,
+      8.9938162
+     ],
+     [
+      -79.5314324,
+      8.9941778
+     ],
+     [
+      -79.5316507,
+      8.9941787
+     ],
+     [
+      -79.5316521,
+      8.993817
+     ],
+     [
+      -79.5314339,
+      8.9938162
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 22, Betania"
+ },
+ {
+  "id": "PAR-081422",
+  "finca": "083820",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531269,
+   8.993996
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5311428,
+      8.993815
+     ],
+     [
+      -79.5311414,
+      8.9941767
+     ],
+     [
+      -79.531396,
+      8.9941777
+     ],
+     [
+      -79.5313975,
+      8.993816
+     ],
+     [
+      -79.5311428,
+      8.993815
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 23, Betania"
+ },
+ {
+  "id": "PAR-081423",
+  "finca": "083824",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.53096,
+   8.993995
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5308154,
+      8.9938137
+     ],
+     [
+      -79.530814,
+      8.9941754
+     ],
+     [
+      -79.531105,
+      8.9941765
+     ],
+     [
+      -79.5311065,
+      8.9938149
+     ],
+     [
+      -79.5308154,
+      8.9938137
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 24, Betania"
+ },
+ {
+  "id": "PAR-081424",
+  "finca": "083865",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.530669,
+   8.993994
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5305608,
+      8.9938127
+     ],
+     [
+      -79.5305593,
+      8.9941744
+     ],
+     [
+      -79.5307776,
+      8.9941752
+     ],
+     [
+      -79.530779,
+      8.9938135
+     ],
+     [
+      -79.5305608,
+      8.9938127
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 25, Betania"
+ },
+ {
+  "id": "PAR-081425",
+  "finca": "083848",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.530396,
+   8.993993
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5302697,
+      8.9938115
+     ],
+     [
+      -79.5302683,
+      8.9941732
+     ],
+     [
+      -79.5305229,
+      8.9941742
+     ],
+     [
+      -79.5305244,
+      8.9938125
+     ],
+     [
+      -79.5302697,
+      8.9938115
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 26, Betania"
+ },
+ {
+  "id": "PAR-081426",
+  "finca": "083133",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.533036,
+   8.993587
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5328907,
+      8.993406
+     ],
+     [
+      -79.5328893,
+      8.9937677
+     ],
+     [
+      -79.5331803,
+      8.9937689
+     ],
+     [
+      -79.5331818,
+      8.9934072
+     ],
+     [
+      -79.5328907,
+      8.993406
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 27, Betania"
+ },
+ {
+  "id": "PAR-081427",
+  "finca": "083132",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.532744,
+   8.993586
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5326361,
+      8.993405
+     ],
+     [
+      -79.5326346,
+      8.9937667
+     ],
+     [
+      -79.5328529,
+      8.9937676
+     ],
+     [
+      -79.5328543,
+      8.9934059
+     ],
+     [
+      -79.5326361,
+      8.993405
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 28, Betania"
+ },
+ {
+  "id": "PAR-081428",
+  "finca": "083171",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.532472,
+   8.993585
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.532345,
+      8.9934038
+     ],
+     [
+      -79.5323436,
+      8.9937655
+     ],
+     [
+      -79.5325982,
+      8.9937665
+     ],
+     [
+      -79.5325997,
+      8.9934049
+     ],
+     [
+      -79.532345,
+      8.9934038
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 29, Betania"
+ },
+ {
+  "id": "PAR-081429",
+  "finca": "083107",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.532162,
+   8.993584
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5320176,
+      8.9934025
+     ],
+     [
+      -79.5320162,
+      8.9937642
+     ],
+     [
+      -79.5323072,
+      8.9937654
+     ],
+     [
+      -79.5323087,
+      8.9934037
+     ],
+     [
+      -79.5320176,
+      8.9934025
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 30, Betania"
+ },
+ {
+  "id": "PAR-081430",
+  "finca": "083106",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531871,
+   8.993583
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.531763,
+      8.9934015
+     ],
+     [
+      -79.5317615,
+      8.9937632
+     ],
+     [
+      -79.5319798,
+      8.9937641
+     ],
+     [
+      -79.5319812,
+      8.9934024
+     ],
+     [
+      -79.531763,
+      8.9934015
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 31, Betania"
+ },
+ {
+  "id": "PAR-081431",
+  "finca": "083189",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.531599,
+   8.993582
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314719,
+      8.9934004
+     ],
+     [
+      -79.5314705,
+      8.993762
+     ],
+     [
+      -79.5317251,
+      8.9937631
+     ],
+     [
+      -79.5317266,
+      8.9934014
+     ],
+     [
+      -79.5314719,
+      8.9934004
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 32, Betania"
+ },
+ {
+  "id": "PAR-081432",
+  "finca": "083110",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531289,
+   8.99358
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5311445,
+      8.9933991
+     ],
+     [
+      -79.5311431,
+      8.9937607
+     ],
+     [
+      -79.5314341,
+      8.9937619
+     ],
+     [
+      -79.5314355,
+      8.9934002
+     ],
+     [
+      -79.5311445,
+      8.9933991
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 33, Betania"
+ },
+ {
+  "id": "PAR-081433",
+  "finca": "083114",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.530998,
+   8.993579
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5308899,
+      8.993398
+     ],
+     [
+      -79.5308884,
+      8.9937597
+     ],
+     [
+      -79.5311067,
+      8.9937606
+     ],
+     [
+      -79.5311081,
+      8.9933989
+     ],
+     [
+      -79.5308899,
+      8.993398
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 34, Betania"
+ },
+ {
+  "id": "PAR-081434",
+  "finca": "083195",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.530725,
+   8.993578
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5305988,
+      8.9933969
+     ],
+     [
+      -79.5305974,
+      8.9937586
+     ],
+     [
+      -79.530852,
+      8.9937596
+     ],
+     [
+      -79.5308535,
+      8.9933979
+     ],
+     [
+      -79.5305988,
+      8.9933969
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 35, Betania"
+ },
+ {
+  "id": "PAR-081435",
+  "finca": "083158",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.532055,
+   8.993168
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5319102,
+      8.9929862
+     ],
+     [
+      -79.5319087,
+      8.9933479
+     ],
+     [
+      -79.5321997,
+      8.993349
+     ],
+     [
+      -79.5322012,
+      8.9929873
+     ],
+     [
+      -79.5319102,
+      8.9929862
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 36, Betania"
+ },
+ {
+  "id": "PAR-081436",
+  "finca": "083123",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.531764,
+   8.993166
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5316555,
+      8.9929852
+     ],
+     [
+      -79.531654,
+      8.9933468
+     ],
+     [
+      -79.5318723,
+      8.9933477
+     ],
+     [
+      -79.5318738,
+      8.992986
+     ],
+     [
+      -79.5316555,
+      8.9929852
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 37, Betania"
+ },
+ {
+  "id": "PAR-081437",
+  "finca": "083122",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531491,
+   8.993165
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5313645,
+      8.992984
+     ],
+     [
+      -79.531363,
+      8.9933457
+     ],
+     [
+      -79.5316177,
+      8.9933467
+     ],
+     [
+      -79.5316191,
+      8.992985
+     ],
+     [
+      -79.5313645,
+      8.992984
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 38, Betania"
+ },
+ {
+  "id": "PAR-081438",
+  "finca": "083161",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531182,
+   8.993164
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.531037,
+      8.9929827
+     ],
+     [
+      -79.5310356,
+      8.9933444
+     ],
+     [
+      -79.5313266,
+      8.9933455
+     ],
+     [
+      -79.5313281,
+      8.9929838
+     ],
+     [
+      -79.531037,
+      8.9929827
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 39, Betania"
+ },
+ {
+  "id": "PAR-081439",
+  "finca": "083147",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Institucional",
+  "centroid": [
+   -79.531802,
+   8.992751
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5316936,
+      8.9925694
+     ],
+     [
+      -79.5316921,
+      8.992931
+     ],
+     [
+      -79.5319104,
+      8.9929319
+     ],
+     [
+      -79.5319118,
+      8.9925702
+     ],
+     [
+      -79.5316936,
+      8.9925694
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 40, Betania"
+ },
+ {
+  "id": "PAR-081440",
+  "finca": "083146",
+  "areaM2": 1120,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Residencial multifamiliar",
+  "centroid": [
+   -79.531529,
+   8.99275
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314025,
+      8.9925682
+     ],
+     [
+      -79.5314011,
+      8.9929299
+     ],
+     [
+      -79.5316557,
+      8.9929309
+     ],
+     [
+      -79.5316572,
+      8.9925692
+     ],
+     [
+      -79.5314025,
+      8.9925682
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 41, Betania"
+ },
+ {
+  "id": "PAR-081441",
+  "finca": "083939",
+  "areaM2": 1280,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Mixto",
+  "centroid": [
+   -79.53122,
+   8.992748
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5310751,
+      8.9925669
+     ],
+     [
+      -79.5310736,
+      8.9929286
+     ],
+     [
+      -79.5313647,
+      8.9929297
+     ],
+     [
+      -79.5313661,
+      8.9925681
+     ],
+     [
+      -79.5310751,
+      8.9925669
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 42, Betania"
+ },
+ {
+  "id": "PAR-081442",
+  "finca": "083970",
+  "areaM2": 960,
+  "zoningCode": "RM-2",
+  "zoningSource": {
+   "hoja": "10-3B",
+   "fecha": "Octubre 2023",
+   "poligono": "DGZ-10-3B-0006"
+  },
+  "normaZona": "ficha",
+  "landUse": "Comercial",
+  "centroid": [
+   -79.531549,
+   8.992334
+  ],
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -79.5314406,
+      8.9921524
+     ],
+     [
+      -79.5314391,
+      8.9925141
+     ],
+     [
+      -79.5316574,
+      8.992515
+     ],
+     [
+      -79.5316589,
+      8.9921533
+     ],
+     [
+      -79.5314406,
+      8.9921524
+     ]
+    ]
+   ]
+  },
+  "district": "Panamá",
+  "corregimiento": "Betania",
+  "address": "Lote de demostración 43, Betania"
+ }
+]

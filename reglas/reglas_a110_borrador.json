@@ -1,0 +1,503 @@
+[
+  {
+    "id": "A110-PDC-ACERA-ANCHO",
+    "version": 2,
+    "titulo": "Uso de acera: ancho máximo 1.20 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "128",
+      "pagina_pdf": 22,
+      "cita_textual": "no deberá ocupar más de 1.20 m lineales de ancho de la acera"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "solicita_uso_acera == true",
+    "entradas": [
+      "uso_acera.ancho_m"
+    ],
+    "condicion": "uso_acera.ancho_m <= 1.20",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "no deberá ocupar más de 1.20 m lineales de ancho de la acera",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso de acera solicitado excede 1.20 m de ancho (Art. 128).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («no deberá ocupar más de 1.20 m lineales de ancho de la acera», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-PDC-ACERA-LONGITUD",
+    "version": 2,
+    "titulo": "Uso de acera: máximo 50% del frente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "128",
+      "pagina_pdf": 22,
+      "cita_textual": "un máximo del cincuenta por ciento (50%) de la longitud de la acera frente a la construcción"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "solicita_uso_acera == true",
+    "entradas": [
+      "uso_acera.longitud_m",
+      "acera.longitud_frente_m"
+    ],
+    "condicion": "uso_acera.longitud_m <= 0.5 * acera.longitud_frente_m",
+    "tolerancia": 0.05,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "un máximo del cincuenta por ciento (50%) de la longitud de la acera frente a la construcción",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso de acera excede el 50% de la longitud de la acera frente a la obra (Art. 128).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («un máximo del cincuenta por ciento (50%) de la longitud de la acera frente a la construcción», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-OM-ADICION-100M2",
+    "version": 2,
+    "titulo": "Obras menores en residencias: adiciones hasta 100 m²",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "119",
+      "pagina_pdf": 21,
+      "cita_textual": "adiciones que no superen los 100 metros cuadrados"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite == 'OBRAS_MENORES' and tipo_inmueble == 'residencia' and existe(obra.area_adicion_m2)",
+    "entradas": [
+      "obra.area_adicion_m2"
+    ],
+    "condicion": "obra.area_adicion_m2 <= 100",
+    "tolerancia": 0.5,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "adiciones que no superen los 100 metros cuadrados",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La adición supera 100 m²: no califica como obra menor; requiere plano (Art. 119).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («adiciones que no superen los 100 metros cuadrados», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-OM-CAPA-VEGETAL",
+    "version": 2,
+    "titulo": "Remoción de capa vegetal como obra menor: ≤ 1,000 m² y 10 cm",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "119",
+      "pagina_pdf": 21,
+      "cita_textual": "se tomará un área no mayor de 1,000 m², con espesor de 10 cm"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite == 'OBRAS_MENORES' and existe(obra.capa_vegetal_area_m2)",
+    "entradas": [
+      "obra.capa_vegetal_area_m2",
+      "obra.capa_vegetal_espesor_cm"
+    ],
+    "condicion": "obra.capa_vegetal_area_m2 <= 1000 and obra.capa_vegetal_espesor_cm <= 10",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "se tomará un área no mayor de 1,000 m², con espesor de 10 cm",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La remoción de capa vegetal excede 1,000 m² o 10 cm de espesor (Art. 119).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («se tomará un área no mayor de 1,000 m², con espesor de 10 cm», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-CERCA-TEMP-LATERAL",
+    "version": 3,
+    "titulo": "Cerca temporal: altura máxima lateral y posterior 2.40 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "123.a",
+      "pagina_pdf": 22,
+      "cita_textual": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "existe(cerca_temporal.altura_lateral_m) and tramite == 'OBRAS_MENORES'",
+    "entradas": [
+      "cerca_temporal.altura_lateral_m"
+    ],
+    "condicion": "cerca_temporal.altura_lateral_m <= 2.40",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La cerca temporal excede 2.40 m en laterales o parte posterior (Art. 123).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-09, revisión de subagentes): se acota al trámite de obras menores: el Art. 123 («En caso de solicitudes que tengan que ver con cercas temporales…») está en el Capítulo XII, «PERMISO DIGITAL PARA OBRAS MENORES», y el Art. 119 incluye las «cercas» en esa categoría (texto-completo.md, líneas 635-638 y 685-687). Antes aplicaba a cualquier trámite con el dato (hallazgo 20). | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-CERCA-TEMP-FRONTAL",
+    "version": 3,
+    "titulo": "Cerca temporal: altura máxima frontal 2.10 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "123.a",
+      "pagina_pdf": 22,
+      "cita_textual": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "existe(cerca_temporal.altura_frontal_m) and tramite == 'OBRAS_MENORES'",
+    "entradas": [
+      "cerca_temporal.altura_frontal_m"
+    ],
+    "condicion": "cerca_temporal.altura_frontal_m <= 2.10",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La cerca temporal excede 2.10 m en la parte frontal (Art. 123).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-09, revisión de subagentes): se acota al trámite de obras menores: el Art. 123 («En caso de solicitudes que tengan que ver con cercas temporales…») está en el Capítulo XII, «PERMISO DIGITAL PARA OBRAS MENORES», y el Art. 119 incluye las «cercas» en esa categoría (texto-completo.md, líneas 635-638 y 685-687). Antes aplicaba a cualquier trámite con el dato (hallazgo 20). | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Las cercas deberán tener una altura máxima de 2.40m a los laterales y parte posterior y de 2.10m en la parte frontal.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AIV-RAMPA-DOBLE",
+    "version": 4,
+    "titulo": "Rampa vehicular de doble sentido: ancho mínimo 6.00 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 4",
+      "pagina_pdf": 49,
+      "cita_textual": "deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['RLA', 'RDP'] and rampa.ancho_m > 0 and rampa.sentidos == 2",
+    "entradas": [
+      "rampa.ancho_m"
+    ],
+    "condicion": "rampa.ancho_m >= 6.00",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación)",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La rampa de doble sentido tiene menos de 6.00 m libres (Anexo IV).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 6.00 m literal (Anexo III num. 5 y IV num. 4). Le faltaba el filtro de trámite que tienen las demás reglas de los anexos. Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación)», normativa/acuerdo-110/texto-completo.md) | Versión 4 (2026-10-21, ADR-0018): aplica solo si rampa.ancho_m > 0 (antes existe(rampa.ancho_m)): un ancho 0 dice que no hay rampa vehicular y la regla no aplica; sin el dato queda en revisión. En Casco Antiguo (r80) la IA escribió rampa.ancho_m = 0 «no hay rampa» y la regla seguía aplicando y pidiendo datos de una rampa que no existe."
+  },
+  {
+    "id": "A110-AIV-RAMPA-SIMPLE",
+    "version": 4,
+    "titulo": "Rampa vehicular de un sentido: ancho mínimo 4.00 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 4",
+      "pagina_pdf": 49,
+      "cita_textual": "4.00m mínimo (un solo sentido de circulación)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['RLA', 'RDP'] and rampa.ancho_m > 0 and rampa.sentidos == 1",
+    "entradas": [
+      "rampa.ancho_m"
+    ],
+    "condicion": "rampa.ancho_m >= 4.00",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "las mismas deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación) y 4.00m mínimo (un solo sentido de circulación)",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La rampa de un sentido tiene menos de 4.00 m (Anexo IV).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 4.00 m literal (Anexo III num. 5 y IV num. 4). Le faltaba el filtro de trámite. Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («las mismas deben tener como ancho mínimo 6.00m libres (dos sentidos de circulación) y 4.00m mínimo (un solo sentido d…», normativa/acuerdo-110/texto-completo.md) | Versión 4 (2026-10-21, ADR-0018): aplica solo si rampa.ancho_m > 0 (antes existe(rampa.ancho_m)): un ancho 0 dice que no hay rampa vehicular y la regla no aplica; sin el dato queda en revisión. En Casco Antiguo (r80) la IA escribió rampa.ancho_m = 0 «no hay rampa» y la regla seguía aplicando y pidiendo datos de una rampa que no existe."
+  },
+  {
+    "id": "A110-AIV-ROTURA-CORDON",
+    "version": 4,
+    "titulo": "Rotura máxima de cordón y acera 7.50 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 4",
+      "pagina_pdf": 49,
+      "cita_textual": "el máximo de rotura de cordón y acera permitido es 7.50m"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['RLA', 'RDP'] and acceso_vehicular.rotura_cordon_m > 0",
+    "entradas": [
+      "acceso_vehicular.rotura_cordon_m"
+    ],
+    "condicion": "acceso_vehicular.rotura_cordon_m <= 7.50",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "el máximo de rotura de cordón y acera permitido es 7.50m",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La rotura de cordón y acera excede 7.50 m (Anexo IV).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Máximo 7.50 m literal. Le faltaba el filtro de trámite de los anexos. Cambios: aplica_si. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («el máximo de rotura de cordón y acera permitido es 7.50m», normativa/acuerdo-110/texto-completo.md) | Versión 4 (2026-10-22, ADR-0018): aplica solo si acceso_vehicular.rotura_cordon_m > 0 (antes existe(acceso_vehicular.rotura_cordon_m)): una rotura 0 dice que el proyecto no tiene acceso vehicular y la regla no aplica; sin el dato queda en revisión. Mismo cambio que las reglas de rampa."
+  },
+  {
+    "id": "A110-AIV-CURVAS-NIVEL",
+    "version": 2,
+    "titulo": "Topografía con curvas de nivel a intervalos ≤ 1.00 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 4",
+      "pagina_pdf": 49,
+      "cita_textual": "Topografía mediante curvas de nivel a intervalos no mayores de 1.00m (un metro)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['RLA', 'RDP']",
+    "entradas": [
+      "plano.intervalo_curvas_nivel_m"
+    ],
+    "condicion": "plano.intervalo_curvas_nivel_m <= 1.00",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Topografía mediante curvas de nivel a intervalos no mayores de 1.00m (un metro)",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La topografía no presenta curvas de nivel a intervalos de 1.00 m o menos (Anexo IV).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Topografía mediante curvas de nivel a intervalos no mayores de 1.00m (un metro)», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AIV-FINCA-COINCIDE",
+    "version": 6,
+    "titulo": "Finca, tomo y folio del plano coinciden con el Registro Público",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 1",
+      "pagina_pdf": 49,
+      "cita_textual": "Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propiedad emitida por el Registro Público."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['RLA', 'RDP'] and ((existe(lote.cantidad_fincas) and lote.cantidad_fincas == 1) or (not existe(lote.cantidad_fincas) and not (existe(lote.fincas) and len(lote.fincas) > 1))) and not (existe(registro_publico.fincas) and len(registro_publico.fincas) > 1)",
+    "entradas": [
+      "lote.finca",
+      "registro_publico.finca"
+    ],
+    "condicion": "lote.finca == registro_publico.finca",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propiedad emitida por el Registro Público.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El número de finca del plano no coincide con la Certificación del Registro Público (Anexo IV).",
+    "nota": "Versión 3: decide si el lote es de una finca con lote.cantidad_fincas == 1, el hecho de la extracción con confianza propia (qué tan seguro es el número de fincas, no los dígitos); sin ese hecho decide como la versión 2, con len(lote.fincas). Así una cantidad dudosa deja la regla en revisión y no la saca. La versión 2 usaba solo lote.fincas, cuya confianza es la de los dígitos. Los lotes de varias fincas (lote.cantidad_fincas > 1 o registro_publico.fincas con más de una) van a A110-AIV-FINCAS-COINCIDEN. La cita y la condición no cambian. Versión 4 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 5 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 6 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propieda…», normativa/acuerdo-110/texto-completo.md)",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador"
+  },
+  {
+    "id": "A110-AIV-FINCAS-COINCIDEN",
+    "version": 3,
+    "titulo": "Lote de varias fincas: las fincas del plano coinciden con el Registro Público",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 1",
+      "pagina_pdf": 49,
+      "cita_textual": "Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propiedad emitida por el Registro Público."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['RLA', 'RDP'] and ((existe(lote.cantidad_fincas) and lote.cantidad_fincas > 1) or (not existe(lote.cantidad_fincas) and existe(lote.fincas) and len(lote.fincas) > 1) or (existe(registro_publico.fincas) and len(registro_publico.fincas) > 1))",
+    "entradas": [
+      "lote.fincas",
+      "registro_publico.fincas"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propiedad emitida por el Registro Público.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Las fincas del plano no coinciden con las Certificaciones del Registro Público (Anexo IV).",
+    "nota": "Versión 2: decide si el lote es de varias fincas con lote.cantidad_fincas > 1, el hecho de la extracción con confianza propia (qué tan seguro es el número de fincas, no los dígitos); sin ese hecho decide como la versión 1, con len(lote.fincas). La versión 1 leía lote.fincas, que hereda la confianza de los dígitos: un lote de una sola finca con dígitos dudosos (Casco Antiguo, 0.80) quedaba en «no se puede determinar si aplica». La cita no cambia. Lote formado por varias fincas: lote.fincas y registro_publico.fincas son listas de números de finca. Es de criterio porque el evaluador no tiene un operador que compare dos listas sin importar el orden (== exige el mismo orden); con ese operador se convertiría en documental. El revisor confirma que cada finca del plano tenga su certificación y que no sobre ni falte ninguna. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Finca, Tomo, Folio, o su equivalente y el número de lote que concuerden con los datos de la Certificación de Propieda…», normativa/acuerdo-110/texto-completo.md)",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador"
+  },
+  {
+    "id": "A110-AIV-AREA-LOTE",
+    "version": 3,
+    "titulo": "Área del lote del plano coincide con el Registro Público",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 2",
+      "pagina_pdf": 49,
+      "cita_textual": "Área del lote correspondiente a la Certificación de Propiedad emitida por el Registro Público."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['RLA', 'RDP']",
+    "entradas": [
+      "lote.area_m2",
+      "registro_publico.area_lote_m2"
+    ],
+    "condicion": "abs(lote.area_m2 - registro_publico.area_lote_m2) <= 0.01 * registro_publico.area_lote_m2",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Área del lote correspondiente a la Certificación de Propiedad emitida por el Registro Público.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área del lote indicada en el plano no corresponde a la Certificación de Propiedad (Anexo IV).",
+    "nota": "La tolerancia del 1% es una decisión de implementación, no de la norma: validar con la DOYC. Versión 2: usa lote.area_m2 (el mismo hecho que la extracción del plano y las reglas de zonificación) en lugar de plano.area_lote_m2. En un lote de varias fincas, registro_publico.area_lote_m2 es la suma de las áreas certificadas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Área del lote correspondiente a la Certificación de Propiedad emitida por el Registro Público.», normativa/acuerdo-110/texto-completo.md)",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador"
+  },
+  {
+    "id": "A110-ATC-VIGENCIA",
+    "version": 2,
+    "titulo": "ATC vigente (120 días hábiles)",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "116",
+      "pagina_pdf": 20,
+      "cita_textual": "La ATC tendrá una vigencia de ciento veinte (120) días hábiles a partir de la fecha de su expedición"
+    },
+    "tipo": "plazo",
+    "aplica_si": "tramite == 'PDC_CON_ATC'",
+    "entradas": [
+      "atc.dias_habiles_transcurridos",
+      "atc.extendida"
+    ],
+    "condicion": "atc.dias_habiles_transcurridos <= 120 or (atc.extendida == true and atc.dias_habiles_transcurridos <= 150)",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "período en el cual se deben haber registrado los planos correspondientes de forma satisfactoria",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": "se podrá extender la ATC por una sola vez adicional, por un período de 30 días hábiles"
+    },
+    "mensaje_no_cumple": "La ATC está vencida (Arts. 116-117).",
+    "nota": "dias_habiles_transcurridos debe calcularse con el calendario oficial de feriados. La extensión (Art. 117) es por una sola vez y 30 días hábiles. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B3 («período en el cual se deben haber registrado los planos correspondientes de forma satisfactoria», normativa/acuerdo-110/texto-completo.md)",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador"
+  },
+  {
+    "id": "A110-AIV-RETIROS-ZONIFICACION",
+    "version": 5,
+    "titulo": "Retiros propuestos cumplen la norma de zonificación",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo IV, 4 y Art. 19",
+      "pagina_pdf": 49,
+      "cita_textual": "Retiros exigidos por la norma de zonificación urbana vigente y los retiros laterales y posteriores propuestos"
+    },
+    "tipo": "documental",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Retiros exigidos por la norma de zonificación urbana vigente y los retiros laterales y posteriores propuestos",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La localización general no indica los retiros exigidos por la zonificación y los retiros laterales y posteriores propuestos (Anexo III, num. 5; Anexo IV, num. 4).",
+    "nota": "Los valores exigidos vienen de la norma de zonificación del lote (mupa-gis-zonificacion), no del Acuerdo 110. Cuando esa norma esté cargada, reemplazar por reglas cuantitativas por código de zona. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Exige retiros declarados (escritos o acotados), no medidos a escala. Hecho nuevo, true solo si el plano los declara. El cumplimiento lo deciden las reglas de zona. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. Versión 3 (2026-10-16): severidad «observacion». Es un requisito de contenido del plano (Anexos III y IV del Acuerdo 110): si falta, se pide completar el plano; no es un incumplimiento de la obra. Se muestra como «Observación» y no como «No cumple». Versión 4 (2026-10-19): vuelve a severidad «bloqueante». Es un requisito obligatorio: el plano debe cumplir «los requisitos básicos» del Anexo (Acuerdo 110, Art. 21, num. 3; Art. 53, num. 2) y, si falta, el anteproyecto queda «con pendiente con condiciones a subsanar» (Art. 22). Mostrarlo como observación le decía al arquitecto que era opcional. La web lo muestra como «No cumple · falta en el plano»: se subsana completando el plano, sin cambiar el proyecto. El riesgo que motivó el cambio del 16-oct (dar por ausente lo que no se encontró) lo cubre ahora el contrato de revisión: para escribir que algo no existe con confianza alta, la IA debe haber ampliado la lámina. | Versión 5 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Retiros exigidos por la norma de zonificación urbana vigente y los retiros laterales y posteriores propuestos», normativa/acuerdo-110/texto-completo.md)",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "aplica_si": "tramite in ['RLA', 'RDP']",
+    "condicion": "plano.localizacion_general.retiros_exigidos_y_propuestos_indicados == true",
+    "entradas": [
+      "plano.localizacion_general.retiros_exigidos_y_propuestos_indicados"
+    ]
+  }
+]

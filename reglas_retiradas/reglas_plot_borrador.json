@@ -1,0 +1,196 @@
+[
+ {
+  "id": "PLOT-R5-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "R5: la ficha no exige estacionamientos mínimos",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha R5",
+   "pagina_pdf": 6,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda 0 por vivienda"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['R5', '1R5'] and existe(proyecto.estacionamientos)",
+  "entradas": [
+   "proyecto.estacionamientos"
+  ],
+  "condicion": "proyecto.estacionamientos >= 0",
+  "unidad": "espacios",
+  "severidad": "observacion",
+  "mensaje_no_cumple": "Estacionamientos fuera de lo previsto en la ficha R5.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La ficha R5 no fija un mínimo de estacionamientos (0 por vivienda): la regla deja constancia para que no se exija otro mínimo y solo aplica si el proyecto declara estacionamientos. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha R5 exige 0 o «Libre»: la condición «>= 0» siempre se cumple; no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-RE-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "RE: la ficha no exige estacionamientos mínimos",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha RE",
+   "pagina_pdf": 8,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Unidad de Vivienda 0"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['RE', '1RE'] and existe(proyecto.estacionamientos)",
+  "entradas": [
+   "proyecto.estacionamientos"
+  ],
+  "condicion": "proyecto.estacionamientos >= 0",
+  "unidad": "espacios",
+  "severidad": "observacion",
+  "mensaje_no_cumple": "Estacionamientos fuera de lo previsto en la ficha RE.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La ficha RE no fija un mínimo de estacionamientos (0 por vivienda): la regla deja constancia para que no se exija otro mínimo y solo aplica si el proyecto declara estacionamientos. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha RE exige 0 o «Libre»: la condición «>= 0» siempre se cumple; no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-ZM1-ESTACIONAMIENTOS",
+  "version": 1,
+  "titulo": "ZM1: la ficha no exige estacionamientos mínimos",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha ZM1",
+   "pagina_pdf": 13,
+   "cita_textual": "MÍNIMO DE ESPACIOS DE ESTACIONAMIENTO Libre"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM1', '1ZM1'] and existe(proyecto.estacionamientos)",
+  "entradas": [
+   "proyecto.estacionamientos"
+  ],
+  "condicion": "proyecto.estacionamientos >= 0",
+  "unidad": "espacios",
+  "severidad": "observacion",
+  "mensaje_no_cumple": "Estacionamientos fuera de lo previsto en la ficha ZM1.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La ficha ZM1 no fija un mínimo de estacionamientos (Libre): la regla deja constancia para que no se exija otro mínimo y solo aplica si el proyecto declara estacionamientos. Los de personas con discapacidad se rigen por la norma vigente, no cargada.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha ZM1 exige 0 o «Libre»: la condición «>= 0» siempre se cumple; no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-PL-RETIROS",
+  "version": 1,
+  "titulo": "PL: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha PL",
+   "pagina_pdf": 27,
+   "cita_textual": "N/A"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PL', '1PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: N/A | lateral: N/A | posterior: N/A",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha PL marca los tres retiros N/A: no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-PU-RETIROS",
+  "version": 1,
+  "titulo": "PU: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha PU",
+   "pagina_pdf": 28,
+   "cita_textual": "N/A"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PU', '1PU']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: N/A | lateral: N/A | posterior: N/A",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha PU marca los tres retiros N/A: no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-PD-RETIROS",
+  "version": 1,
+  "titulo": "PD: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha PD",
+   "pagina_pdf": 29,
+   "cita_textual": "N/A"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['PD', '1PD']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: N/A | lateral: N/A | posterior: N/A",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha PD marca los tres retiros N/A: no hay obligación verificable (ruido)."
+  }
+ },
+ {
+  "id": "PLOT-IS-RETIROS",
+  "version": 1,
+  "titulo": "IS: retiros frontal, lateral y posterior",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Ficha IS",
+   "pagina_pdf": 31,
+   "cita_textual": "N/A"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['IS', '1IS']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Verificar retiros contra la ficha de zona.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "frontal: N/A | lateral: N/A | posterior: N/A",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "La ficha IS marca los tres retiros N/A: no hay obligación verificable (ruido)."
+  }
+ }
+]

@@ -1,0 +1,55 @@
+/*
+ * Tokens de marca y de estado del PreCheck de Planos de la Alcaldía de Panamá.
+ * Línea gráfica tomada de los productos digitales de la Alcaldía (p. ej. parkea.pty.gob.pa):
+ * azul institucional #0046EF, fondo #F4F6F7, azul marino #1A1A2E, verde #10B981, Montserrat.
+ * Ningún componente usa colores literales: cambiar la identidad = editar este archivo y src/config/brand.ts.
+ * Contraste: todo color de texto de estado cumple >= 4.5:1 sobre blanco y sobre el fondo (WCAG 2.2 AA).
+ * El verde #10B981 no alcanza 4.5:1 como texto: se usa en rellenos e iconos; el texto usa #047857.
+ */
+:root {
+  /* Base */
+  --mp-ink: #1a1a1a;
+  --mp-ink-muted: #5b6472;
+  --mp-paper: #f4f6f7;
+  --mp-sheet: #ffffff;
+  --mp-surface-2: #eef1f5;
+  --mp-line: #e5e7eb;
+  --mp-line-strong: #cfd4dc;
+
+  /* Marca */
+  --mp-brand: #0046ef;
+  --mp-brand-hover: #0039c7;
+  --mp-brand-soft: #e8eefe;
+  --mp-brand-accent: #10b981;
+  --mp-navy: #1a1a2e;
+  --mp-focus: #0046ef;
+  /* Texto e iconos sobre la marca o el azul marino */
+  --mp-on-brand: #ffffff;
+
+  /* Barra lateral (fondo --mp-navy) */
+  --mp-sidebar-ink: #e6eaf2;
+  --mp-sidebar-accent: #25253f;
+  --mp-sidebar-line: #2c2c48;
+
+  /* Plano y mapa */
+  --mp-plan-paper: #f7f9fb;
+  --mp-plan-grid: #dde3ea;
+  --mp-dimension: #b0226b;
+
+  /* Estados semánticos: color de texto/icono + fondo suave */
+  --mp-pass: #047857;
+  --mp-pass-soft: #e7f8f1;
+  --mp-fail: #d4183d;
+  --mp-fail-soft: #fdecef;
+  --mp-warning: #b45309;
+  --mp-warning-soft: #fef3e2;
+  --mp-info: #0046ef;
+  --mp-info-soft: #e8eefe;
+  --mp-manual: #6d28d9;
+  --mp-manual-soft: #f1ebfd;
+  /* NO_CUMPLE que descansa en un supuesto (ADR-0016): por confirmar, ni falla firme ni observación */
+  --mp-supuesto: #c2410c;
+  --mp-supuesto-soft: #fff1e8;
+  --mp-processing: #0e7490;
+  --mp-processing-soft: #e4f4f8;
+}

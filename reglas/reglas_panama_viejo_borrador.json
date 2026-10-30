@@ -1,0 +1,1268 @@
+[
+ {
+  "id": "PV-PV-USOS",
+  "version": 2,
+  "titulo": "Pv: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Espacios abiertos dedicado a la recreación vecinal, al cual se accede peatonalmente"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "Espacios abiertos dedicado a la recreación vecinal, al cual se accede peatonalmente",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es un espacio abierto de recreación vecinal (Parque Vecinal).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Espacios abiertos dedicado a la recreación vecinal, al cual se accede peatonalmente», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-PV-LOTE-AREA",
+  "version": 3,
+  "titulo": "Pv: área mínima",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Área mínima: 500.00 metros cuadrados."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 500",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área mínima: 500.00 metros cuadrados.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área del parque vecinal es menor que 500.00 m2.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área mínima: 500.00 metros cuadrados.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-PV-SUPERFICIE-DURA",
+  "version": 2,
+  "titulo": "Pv: superficie dura e impermeable entre 20% y 30%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Superficie dura e impermeable: Mínimo 20% Máximo 30%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [
+   "proyecto.superficie_dura_pct"
+  ],
+  "condicion": "proyecto.superficie_dura_pct >= 20 and proyecto.superficie_dura_pct <= 30",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Superficie dura e impermeable: Mínimo 20% Máximo 30%",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La superficie dura e impermeable está fuera del rango 20%-30%.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.superficie_dura_pct (% del área del parque). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Superficie dura e impermeable: Mínimo 20% Máximo 30%», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-PV-SUPERFICIE-SUAVE",
+  "version": 2,
+  "titulo": "Pv: superficie suave entre 70% y 80%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Superficie suave o impermeable: Mínimo 70% Máximo 80%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [
+   "proyecto.superficie_suave_pct"
+  ],
+  "condicion": "proyecto.superficie_suave_pct >= 70 and proyecto.superficie_suave_pct <= 80",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Superficie suave o impermeable: Mínimo 70% Máximo 80%",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La superficie suave está fuera del rango 70%-80%.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.superficie_suave_pct. El original dice 'suave o impermeable' (probable errata por 'permeable'); se transcribe tal cual y se interpreta como superficie suave/permeable. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Superficie suave o impermeable: Mínimo 70% Máximo 80%», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-PV-AREA-CONSTRUCCION",
+  "version": 2,
+  "titulo": "Pv: área de construcción máxima 2%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Área de construcción: Máximo 2%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [
+   "proyecto.area_construccion_pct"
+  ],
+  "condicion": "proyecto.area_construccion_pct <= 2",
+  "unidad": "%",
+  "tolerancia": 0.1,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área de construcción: Máximo 2%",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área de construcción excede el 2% del área del parque.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.area_construccion_pct = área construida / área del lote × 100 (la norma no dice la base; se asume el área del parque). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área de construcción: Máximo 2%», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-PV-ALTURA",
+  "version": 2,
+  "titulo": "Pv: altura máxima un (1) alto",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 1",
+   "pagina_pdf": 2,
+   "cita_textual": "Altura de la Edificación: Máximo un (1) alto."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Altura de la Edificación: Máximo un (1) alto.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación del parque excede la altura permitida.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Criterio porque 'un (1) alto' es ambiguo: puede ser un solo nivel o planta baja más un alto (2 pisos, como en SIv/Siu). La DOYC debe fijar la interpretación. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura de la Edificación: Máximo un (1) alto.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-USOS",
+  "version": 2,
+  "titulo": "SIv: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "conjunto de edificaciones destinadas al servicio de salud, de la educación, seguridad, administrativos y religiosos a nivel vecinal."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "conjunto de edificaciones destinadas al servicio de salud, de la educación, seguridad, administrativos y religiosos a nivel vecinal.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es un servicio institucional vecinal.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («conjunto de edificaciones destinadas al servicio de salud, de la educación, seguridad, administrativos y religiosos a…», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-LOTE-AREA",
+  "version": 3,
+  "titulo": "SIv: área mínima de lote",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Área mínima: 250.00 metros cuadrados."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 250",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área mínima: 250.00 metros cuadrados.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El lote es menor que el área mínima de 250.00 m2 (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área mínima: 250.00 metros cuadrados.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-RETIRO-FRONTAL",
+  "version": 2,
+  "titulo": "SIv: retiro frontal según categoría de la vía",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Retiro Frontal: Según categoría de la calle o vía."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B5",
+   "cita": "Retiro Frontal: Según categoría de la calle o vía.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro frontal no cumple el exigido por la categoría de la calle o vía.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La resolución no da el valor; depende de la categoría de la vía. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Retiro Frontal: Según categoría de la calle o vía.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-RETIRO-LATERAL",
+  "version": 2,
+  "titulo": "SIv: retiro lateral mínimo 1.50 m",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Retiro lateral: 1.50 metros"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.retiro_lateral_m"
+  ],
+  "condicion": "proyecto.retiro_lateral_m >= 1.5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro lateral: 1.50 metros",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro lateral es menor que 1.50 m (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro lateral: 1.50 metros», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-RETIRO-POSTERIOR",
+  "version": 2,
+  "titulo": "SIv: retiro posterior mínimo 2.50 m",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Retiro Posterior: 2.50 metros"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.retiro_posterior_m"
+  ],
+  "condicion": "proyecto.retiro_posterior_m >= 2.5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro Posterior: 2.50 metros",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro posterior es menor que 2.50 m (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro Posterior: 2.50 metros», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-ESTACIONAMIENTOS",
+  "version": 2,
+  "titulo": "SIv: estacionamientos 1 por cada 40.00 m2 y 1 de carga y descarga",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Estacionamiento: 1 espacio por cada 40.00 metros cuadrados 1 espacio para carga y descarga"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Estacionamiento: 1 espacio por cada 40.00 metros cuadrados 1 espacio para carga y descarga",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Los estacionamientos no alcanzan 1 por cada 40.00 m2 más 1 de carga y descarga.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Criterio porque la norma no dice sobre qué superficie se calculan los 40.00 m2 (¿de construcción?, ¿de lote?). Cuando se fije: proyecto.estacionamientos >= ceil(área/40) + espacio de carga. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: 1 espacio por cada 40.00 metros cuadrados 1 espacio para carga y descarga», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-OCUPACION",
+  "version": 2,
+  "titulo": "SIv: ocupación máxima 60%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Área de Ocupación Máxima: 60% sin retiros"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "condicion": "proyecto.ocupacion_pct <= 60",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área de Ocupación Máxima: 60% sin retiros",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación excede el 60% del lote (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "'sin retiros' no está definido (¿ocupación medida sin descontar retiros?); revisar. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área de Ocupación Máxima: 60% sin retiros», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-AREA-LIBRE",
+  "version": 2,
+  "titulo": "SIv: área libre del lote 25%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Área libre del lote: 25%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_libre_pct >= 25",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área libre del lote: 25%",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área libre es menor que el 25% del lote (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La norma no dice 'mínima'; se interpreta como mínimo (60% ocupación + 25% libre + 15% verde = 100%). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área libre del lote: 25%», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-AREA-VERDE",
+  "version": 2,
+  "titulo": "SIv: área verde 15% del área del lote",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Área verde: 15% del área del lote"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.area_verde_pct"
+  ],
+  "condicion": "proyecto.area_verde_pct >= 15",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área verde: 15% del área del lote",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área verde es menor que el 15% del área del lote (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo proyecto.area_verde_pct (% del área del lote). Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área verde: 15% del área del lote», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIV-ALTURA",
+  "version": 2,
+  "titulo": "SIv: planta baja más un alto",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 2",
+   "pagina_pdf": 2,
+   "cita_textual": "Altura: Planta Baja mas un alto"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['SIv', 'SIV']",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "condicion": "proyecto.pisos_totales <= 2",
+  "unidad": "pisos",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Altura: Planta Baja mas un alto",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación excede planta baja más un alto (2 pisos) (SIv).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura: Planta Baja mas un alto», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-USOS",
+  "version": 2,
+  "titulo": "Siu: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 2,
+   "cita_textual": "conjuntos de edificaciones destinados al servicio de la salud, educación, seguridad, administrativo y religiosos a nivel urbano."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "conjuntos de edificaciones destinados al servicio de la salud, educación, seguridad, administrativo y religiosos a nivel urbano.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no es un servicio institucional urbano.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («conjuntos de edificaciones destinados al servicio de la salud, educación, seguridad, administrativo y religiosos a ni…», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-LOTE-AREA",
+  "version": 3,
+  "titulo": "Siu: área mínima de lote",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 2,
+   "cita_textual": "Área mínima: 500.00 metros cuadrados"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 500",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área mínima: 500.00 metros cuadrados",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El lote es menor que el área mínima de 500.00 m2 (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área mínima: 500.00 metros cuadrados», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-RETIRO-FRONTAL",
+  "version": 2,
+  "titulo": "Siu: retiro frontal según categoría de la vía",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Retiro frontal: según categoría de la calle o vía"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B5",
+   "cita": "Retiro frontal: según categoría de la calle o vía",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro frontal no cumple el exigido por la categoría de la calle o vía.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La resolución no da el valor; depende de la categoría de la vía. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Retiro frontal: según categoría de la calle o vía», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-RETIRO-LATERAL",
+  "version": 2,
+  "titulo": "Siu: retiro lateral mínimo 1.50 m",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Retiro Lateral: 1.50 metros"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.retiro_lateral_m"
+  ],
+  "condicion": "proyecto.retiro_lateral_m >= 1.5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro Lateral: 1.50 metros",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro lateral es menor que 1.50 m (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro Lateral: 1.50 metros», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-RETIRO-POSTERIOR",
+  "version": 2,
+  "titulo": "Siu: retiro posterior mínimo 5.00 m",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Retiro Posterior: 5.00 metros."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.retiro_posterior_m"
+  ],
+  "condicion": "proyecto.retiro_posterior_m >= 5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro Posterior: 5.00 metros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro posterior es menor que 5.00 m (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro Posterior: 5.00 metros.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-ESTACIONAMIENTOS",
+  "version": 3,
+  "titulo": "Siu: estacionamientos (general, educacional y salud)",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Estacionamientos: 1 espacio por cada 40.00 metros cuadrados. Servicio Educacional: 1 espacio por cada 60.00 metros cuadrados de construcción. Servicio de Salud: 1 espacio para la ambulancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Estacionamientos: 1 espacio por cada 40.00 metros cuadrados. Servicio Educacional: 1 espacio por cada 60.00 metros cuadrados de construcción. Servicio de Salud: 1 espacio para la ambulancia.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Los estacionamientos no cumplen lo exigido para la zona Siu.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "General: 1 espacio por cada 40.00 metros cuadrados (sin base definida); Servicio Educacional: 1 por cada 60.00 m2 de construcción; Servicio de Salud: 1 espacio para la ambulancia. Criterio porque depende del tipo de servicio y la base general no está definida. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: la base de 1 por 40 m² no está definida. La cita solo traía el caso educacional y el mensaje es general; se citan las tres filas (40-42). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamientos: 1 espacio por cada 40.00 metros cuadrados. Servicio Educacional: 1 espacio por cada 60.00 metros cu…», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-OCUPACION",
+  "version": 2,
+  "titulo": "Siu: ocupación máxima 60%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Ocupación Máxima: 60% sin retiros."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "condicion": "proyecto.ocupacion_pct <= 60",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Ocupación Máxima: 60% sin retiros.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación excede el 60% del lote (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "'sin retiros' no está definido; revisar. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Ocupación Máxima: 60% sin retiros.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-AREA-LIBRE",
+  "version": 3,
+  "titulo": "Siu: área libre del lote 25%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Área libre del lote: 25%"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_libre_pct >= 25",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área libre del lote: 25%",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área libre es menor que el 25% del lote (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "La norma no dice 'mínima'; se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor 25 correcto (bloque Siu, línea 44), pero la cita arrastraba «Área verde» de la línea 45. Se recorta a su fila. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área libre del lote: 25%», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-AREA-VERDE",
+  "version": 2,
+  "titulo": "Siu: área verde 15% del área libre del lote",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Área verde: 15% del área libre del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.area_verde_pct",
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_verde_pct >= 0.15 * proyecto.area_libre_pct",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área verde: 15% del área libre del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área verde es menor que el 15% del área libre del lote (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "A diferencia de SIv (15% del área del lote), aquí la base es el área libre. Hecho nuevo proyecto.area_verde_pct (% del área del lote); se compara con 0.15 × area_libre_pct. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área verde: 15% del área libre del lote.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-SIU-ALTURA",
+  "version": 2,
+  "titulo": "Siu: planta baja más un alto",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 3",
+   "pagina_pdf": 3,
+   "cita_textual": "Altura: Planta baja más un alto."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Siu', 'SIU']",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "condicion": "proyecto.pisos_totales <= 2",
+  "unidad": "pisos",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Altura: Planta baja más un alto.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación excede planta baja más un alto (2 pisos) (Siu).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura: Planta baja más un alto.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-USOS",
+  "version": 2,
+  "titulo": "REMHT: usos permitidos",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "construcción, o modificación de edificios destinados al uso residencial de mediana densidad o de aquellos destinados al hospedaje público de la categoría de hostales"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B2",
+   "cita": "construcción, o modificación de edificios destinados al uso residencial de mediana densidad o de aquellos destinados al hospedaje público de la categoría de hostales",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El uso propuesto no está entre los permitidos en la zona REMHT.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Residencial de mediana densidad, hospedaje público categoría hostales, pequeños comercios vecinales o de barrio, venta de artesanía como uso complementario. Definiciones de Establecimiento Público y Hostales Familiares en el numeral 5 (pág. 4). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («construcción, o modificación de edificios destinados al uso residencial de mediana densidad o de aquellos destinados …», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-DENSIDAD",
+  "version": 2,
+  "titulo": "REMHT: densidad neta máxima",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Densidad neta: hasta 500 personas por hectáreas."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.densidad_pers_ha"
+  ],
+  "condicion": "proyecto.densidad_pers_ha <= 500",
+  "unidad": "pers/ha",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Densidad neta: hasta 500 personas por hectáreas.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La densidad neta excede 500 pers./ha (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Densidad neta: hasta 500 personas por hectáreas.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-LOTE-AREA",
+  "version": 3,
+  "titulo": "REMHT: área mínima de lote",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Área mínima del lote: 160.00 metros cuadrados."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 160",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área mínima del lote: 160.00 metros cuadrados.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El lote es menor que el área mínima de 160.00 m2 (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Área mínima del lote: 160.00 metros cuadrados.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-LOTE-FRENTE",
+  "version": 4,
+  "titulo": "REMHT: frente mínimo por unidad de vivienda",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Frente mínimo del lote: a)- 9.00 ml por unidad de vivienda unifamiliar y bifamiliar. b)- 7.00 ml por cada unidad de vivienda bifamiliar adosada una al lado de la otra de forma horizontal. c)- 6.00 ml por unidad de vivienda en hilera."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "autoridad",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Frente mínimo del lote:",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El frente del lote no alcanza el mínimo por unidad de vivienda según la tipología.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Opciones: a) 9.00 ml por unidad de vivienda unifamiliar y bifamiliar; b) 7.00 ml por cada unidad de vivienda bifamiliar adosada horizontalmente; c) 6.00 ml por unidad de vivienda en hilera. Criterio porque depende de la tipología (no hay hecho) y de cómo se reparte el frente por unidad. Fondo mínimo de lote: libre (sin regla). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: no está claro si los 9.00 m de a) son por edificio o por cada vivienda bifamiliar. La cita solo traía a); se citan a), b) y c). Cambios: cita. Versión 3 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 4 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente mínimo del lote:», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-ALTURA-PISOS",
+  "version": 2,
+  "titulo": "REMHT: planta baja y tres altos",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Altura máxima: planta baja y (3) tres"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.pisos_totales"
+  ],
+  "condicion": "proyecto.pisos_totales <= 4",
+  "unidad": "pisos",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Altura máxima: planta baja y (3) tres",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La edificación excede planta baja y tres altos (4 pisos) (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "'planta baja y (3) tres' se interpreta como planta baja + 3 altos = 4 pisos. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura máxima: planta baja y (3) tres», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-ALTURA-M",
+  "version": 2,
+  "titulo": "REMHT: altura máxima 12.00 m a cumbrera",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "(12.00 metros desde nivel de piso a nivel de cumbrera)."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.altura_m"
+  ],
+  "condicion": "proyecto.altura_m <= 12",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Altura máxima: planta baja y (3) tres (12.00 metros desde nivel de piso a nivel de cumbrera).",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La altura excede 12.00 m desde nivel de piso a nivel de cumbrera (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "proyecto.altura_m debe medirse desde el nivel de piso hasta la cumbrera. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Altura máxima: planta baja y (3) tres (12.00 metros desde nivel de piso a nivel de cumbrera).», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-OCUPACION",
+  "version": 2,
+  "titulo": "REMHT: ocupación máxima 60%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Área de Ocupación máxima: 60% del área del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.ocupacion_pct"
+  ],
+  "condicion": "proyecto.ocupacion_pct <= 60",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área de Ocupación máxima: 60% del área del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La ocupación excede el 60% del lote (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área de Ocupación máxima: 60% del área del lote.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-AREA-LIBRE",
+  "version": 2,
+  "titulo": "REMHT: área libre mínima 40%",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Área libre mínima: 40% del área del lote."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.area_libre_pct"
+  ],
+  "condicion": "proyecto.area_libre_pct >= 40",
+  "unidad": "%",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Área libre mínima: 40% del área del lote.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El área libre es menor que el 40% del lote (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Área libre mínima: 40% del área del lote.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-LINEA-CONSTRUCCION",
+  "version": 2,
+  "titulo": "REMHT: línea de construcción",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "La establecida en el documento oficial de servidumbre y líneas de construcción ó 2.50 mts. mínimo, a partir de la línea de propiedad."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "La establecida en el documento oficial de servidumbre y líneas de construcción ó 2.50 mts. mínimo, a partir de la línea de propiedad.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "La línea de construcción no respeta la oficial ni el mínimo de 2.50 m desde la línea de propiedad.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Opciones: la establecida en el documento oficial de servidumbre y líneas de construcción, ó 2.50 mts. mínimo a partir de la línea de propiedad. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («La establecida en el documento oficial de servidumbre y líneas de construcción ó 2.50 mts. mínimo, a partir de la lín…», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-RETIRO-LATERAL",
+  "version": 3,
+  "titulo": "REMHT: retiro lateral mínimo",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Retiro Lateral mínimo: a)- Adosado con pared ciega acabada hacia el vecino b)- Para lotes con frente de 10.00 mts. o menores de 10.00 mts. se permitirá 1.20 mt."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro Lateral mínimo: a)- Adosado con pared ciega acabada hacia el vecino b)- Para lotes con frente de 10.00 mts. o menores de 10.00 mts. se permitirá 1.20 mt.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro lateral no cumple ninguna de las opciones de la zona REMHT.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Opciones: a) adosado con pared ciega acabada hacia el vecino; b) en lotes con frente de 10.00 m o menos se permite 1.20 m. Criterio porque no se fija el retiro para lotes de frente mayor de 10.00 m con aberturas. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Criterio: adosado con pared ciega o 1.20 m en lotes de hasta 10.00 m de frente. La cita solo traía b); se citan las tres líneas del retiro lateral. Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro Lateral mínimo: a)- Adosado con pared ciega acabada hacia el vecino b)- Para lotes con frente de 10.00 mts. o …», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-RETIRO-POSTERIOR",
+  "version": 2,
+  "titulo": "REMHT: retiro posterior mínimo 2.50 m",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Retiro posterior: 2.50 metros lineales"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.retiro_posterior_m"
+  ],
+  "condicion": "proyecto.retiro_posterior_m >= 2.5",
+  "unidad": "m",
+  "tolerancia": 0.05,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Retiro posterior: 2.50 metros lineales",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "El retiro posterior es menor que 2.50 m (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se interpreta como mínimo. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Retiro posterior: 2.50 metros lineales», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-REMHT-ESTACIONAMIENTOS",
+  "version": 2,
+  "titulo": "REMHT: 1 estacionamiento por vivienda más 1 de carga y descarga",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Segundo, numeral 4",
+   "pagina_pdf": 3,
+   "cita_textual": "Estacionamiento: 1 espacio por unidad de vivienda más un (1) espacio para carga y descarga."
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['REMHT', 'RE-MHT']",
+  "entradas": [
+   "proyecto.estacionamientos",
+   "proyecto.unidades_vivienda"
+  ],
+  "condicion": "proyecto.estacionamientos >= proyecto.unidades_vivienda + 1",
+  "unidad": "espacios",
+  "tolerancia": 0,
+  "severidad": "bloqueante",
+  "subsanacion": "proyecto",
+  "fundamento": {
+   "criterio": "B1",
+   "cita": "Estacionamiento: 1 espacio por unidad de vivienda más un (1) espacio para carga y descarga.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Los estacionamientos no alcanzan 1 por unidad de vivienda más 1 de carga y descarga (REMHT).",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "proyecto.estacionamientos incluye el espacio de carga y descarga. Para hostales o comercios la norma no da cifra: revisar manualmente. Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Estacionamiento: 1 espacio por unidad de vivienda más un (1) espacio para carga y descarga.», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)"
+ },
+ {
+  "id": "PV-TODAS-VISTO-BUENO-DNPH",
+  "version": 3,
+  "titulo": "Visto Bueno de la DNPH dentro del Conjunto Monumental Histórico",
+  "fuente": {
+   "norma": "Resolución N°352-2006 del MIVI (Panamá Viejo)",
+   "articulo": "Artículo Tercero",
+   "pagina_pdf": 4,
+   "cita_textual": "Todo proyecto que se ubique dentro del Conjunto Monumental Histórico deberá contar con el Visto Bueno de la Dirección Nacional de Patrimonio Histórico."
+  },
+  "tipo": "documental",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-PV-R352-2006' and lote.codigo_zona in ['Pv', 'PV', 'SIv', 'SIV', 'Siu', 'SIU', 'REMHT', 'RE-MHT'] and lote.dentro_conjunto_monumental == true",
+  "entradas": [
+   "expediente.visto_bueno_patrimonio_cultural.adjunto"
+  ],
+  "severidad": "bloqueante",
+  "subsanacion": "documento",
+  "fundamento": {
+   "criterio": "B4",
+   "cita": "Todo proyecto que se ubique dentro del Conjunto Monumental Histórico deberá contar con el Visto Bueno de la Dirección Nacional de Patrimonio Histórico.",
+   "archivo": "normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt",
+   "cita_subsanacion": null
+  },
+  "mensaje_no_cumple": "Falta el Visto Bueno de la Dirección Nacional de Patrimonio Histórico para un proyecto dentro del Conjunto Monumental Histórico.",
+  "vigencia": {
+   "desde": "2006-11-20",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Hecho nuevo lote.dentro_conjunto_monumental (bool): el CMH aparece como área rayada en el Anexo 1 y se define en el numeral 5 (pág. 4). Zonas: se aceptan la grafía del Artículo Segundo y la del plano (Anexo 1). Vigencia: la copia no trae fecha de Gaceta Oficial; se usa la fecha de la resolución (20-11-2006). Verificar la fecha de promulgación (Art. Sexto). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Documental sin condición. Visto bueno de otra entidad: observación, se exige en el registro. Se reutiliza la clave del visto bueno de Patrimonio (antes DNPH). Cambios: severidad bloqueante → observacion, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Todo proyecto que se ubique dentro del Conjunto Monumental Histórico deberá contar con el Visto Bueno de la Dirección…», normativa/zonas-exceptuadas/textos/res352_2006_panama_viejo.txt)",
+  "condicion": "expediente.visto_bueno_patrimonio_cultural.adjunto == true"
+ }
+]

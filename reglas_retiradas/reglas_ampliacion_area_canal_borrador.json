@@ -1,0 +1,32 @@
+[
+ {
+  "id": "AC-RES-POBLACION-EFICIENTES",
+  "version": 1,
+  "titulo": "Residencial: eficientes y hospedaje computan 2 personas",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 8, numeral 14",
+   "pagina_pdf": 40,
+   "cita_textual": "14. Para los apartamentos eficientes de un solo ambiente y establecimientos de hospedaje público, tales como hoteles, pensiones, moteles y aparthoteles se computarán dos (2) personas."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1D1', 'R1d1', 'r1d1', 'R1D2', 'R1d2', 'r1d2', 'R1D3', 'R1d3', 'r1d3', 'R2D1', 'R2d1', 'r2d1', 'R2D2', 'R2d2', 'r2d2', 'R2D3', 'R2d3', 'r2d3', 'R3D1', 'R3d1', 'r3d1', 'R1C', 'R1c', 'r1c', 'R2C', 'R2c', 'r2c']",
+  "entradas": [
+   "proyecto.poblacion",
+   "proyecto.densidad_pers_ha"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Los apartamentos eficientes o las unidades de hospedaje no se computan con dos personas en la población (Res. 160-2002, Art. 8, num. 14).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa el cálculo de población y densidad del cuadro de áreas. Cita en la línea 32 de normativa/zonas-exceptuadas/textos/res160_2002_area_canal.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación (cómputo de población, Art. 8 nums. 13-14, líneas contiguas); se integra en la regla de recámaras.",
+   "fusionada_en": "AC-RES-POBLACION-RECAMARAS"
+  }
+ }
+]

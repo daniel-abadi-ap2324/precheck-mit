@@ -1,0 +1,491 @@
+[
+ {
+  "id": "ML2-RE-OCUPACION",
+  "version": 1,
+  "titulo": "MP-RE: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RE",
+   "pagina_pdf": 3,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RE', 'MP-REC1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-RE).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-RME-ALTURA",
+  "version": 1,
+  "titulo": "MP-RME: altura máxima",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RME",
+   "pagina_pdf": 4,
+   "cita_textual": "Altura Máxima Permitida | Residencial | Según Densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RME', 'MP-RMEC1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida o el uso combinado excede PB + 1 (zona MP-RME).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Residencial: según densidad. Residencial + comercial: PB + 1 (comercio en planta baja y un alto, sótano 1 opcional). Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según Densidad»: sin tope propio, lo controla la regla de densidad; la altura comercial combinada la cubre la regla COMBINADO-ALTURA-COMERCIAL.",
+   "fusionada_en": "ML2-COMBINADO-ALTURA-COMERCIAL"
+  }
+ },
+ {
+  "id": "ML2-RME-OCUPACION",
+  "version": 1,
+  "titulo": "MP-RME: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RME",
+   "pagina_pdf": 4,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo con la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RME', 'MP-RMEC1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-RME).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-RM1-ALTURA",
+  "version": 1,
+  "titulo": "MP-RM1: altura máxima",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM1",
+   "pagina_pdf": 5,
+   "cita_textual": "Altura Máxima Permitida | Residencial | Según Densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM1', 'MP-RM1C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida o el uso combinado excede la del código MP-C1 (zona MP-RM1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Residencial: según densidad; residencial + comercial: la del código MP-C1 (PB + 1). Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según Densidad»: sin tope propio, lo controla la regla de densidad; la altura comercial combinada la cubre la regla COMBINADO-ALTURA-COMERCIAL.",
+   "fusionada_en": "ML2-COMBINADO-ALTURA-COMERCIAL"
+  }
+ },
+ {
+  "id": "ML2-RM1-OCUPACION",
+  "version": 1,
+  "titulo": "MP-RM1: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM1",
+   "pagina_pdf": 5,
+   "cita_textual": "100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM1', 'MP-RM1C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-RM1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-RM2-ALTURA",
+  "version": 1,
+  "titulo": "MP-RM2: altura máxima",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM2",
+   "pagina_pdf": 6,
+   "cita_textual": "Altura Máxima Permitida | Residencial | Según Densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM2', 'MP-RM2C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura no resulta de la densidad permitida o el uso combinado excede la del código MP-C1 (zona MP-RM2).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Residencial: según densidad; residencial + comercial: la del código MP-C1 (PB + 1). Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según Densidad»: sin tope propio, lo controla la regla de densidad; la altura comercial combinada la cubre la regla COMBINADO-ALTURA-COMERCIAL.",
+   "fusionada_en": "ML2-COMBINADO-ALTURA-COMERCIAL"
+  }
+ },
+ {
+  "id": "ML2-RM2-OCUPACION",
+  "version": 1,
+  "titulo": "MP-RM2: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM2",
+   "pagina_pdf": 6,
+   "cita_textual": "100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM2', 'MP-RM2C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-RM2).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-RMEC1-LOTE-AREA",
+  "version": 1,
+  "titulo": "MP-RMEC1: área mínima de lote",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Cuadro de clasificación comercial (uso combinado)",
+   "pagina_pdf": 8,
+   "cita_textual": "MP-C1 | Baja | MP | RMEC1 | 600 m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RMEC1']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 600",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote es menor que 600 m² (zona MP-RMEC1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación y mismo valor para el mismo código: ML2-RME-LOTE-AREA ya incluye este código combinado con el mismo mínimo.",
+   "fusionada_en": "ML2-RME-LOTE-AREA"
+  }
+ },
+ {
+  "id": "ML2-RM1C1-LOTE-AREA",
+  "version": 1,
+  "titulo": "MP-RM1C1: área mínima de lote",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Cuadro de clasificación comercial (uso combinado)",
+   "pagina_pdf": 8,
+   "cita_textual": "MP-C1 | Baja | MP | RM1C1 | 800 m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM1C1']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 800",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote es menor que 800 m² (zona MP-RM1C1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación y mismo valor para el mismo código: ML2-RM1-LOTE-AREA ya incluye este código combinado con el mismo mínimo.",
+   "fusionada_en": "ML2-RM1-LOTE-AREA"
+  }
+ },
+ {
+  "id": "ML2-RM2C1-LOTE-AREA",
+  "version": 1,
+  "titulo": "MP-RM2C1: área mínima de lote",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Cuadro de clasificación comercial (uso combinado)",
+   "pagina_pdf": 8,
+   "cita_textual": "MP-C1 | Baja | MP | RM2C1 | 1,000 m2"
+  },
+  "tipo": "cuantitativa",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM2C1']",
+  "entradas": [
+   "lote.area_m2"
+  ],
+  "condicion": "lote.area_m2 >= 1000",
+  "unidad": "m2",
+  "tolerancia": 0.5,
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote es menor que 1,000 m² (zona MP-RM2C1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Misma obligación y mismo valor para el mismo código: ML2-RM2-LOTE-AREA ya incluye este código combinado con el mismo mínimo.",
+   "fusionada_en": "ML2-RM2-LOTE-AREA"
+  }
+ },
+ {
+  "id": "ML2-RM3-OCUPACION",
+  "version": 1,
+  "titulo": "MP-RM3: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-RM3",
+   "pagina_pdf": 7,
+   "cita_textual": "100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-RM3', 'MP-RM3C2', 'MP-RM3C3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-RM3).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-C1-OCUPACION",
+  "version": 1,
+  "titulo": "MP-C1: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-C1",
+   "pagina_pdf": 9,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-C1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-C1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-C2-OCUPACION",
+  "version": 1,
+  "titulo": "MP-C2: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-C2",
+   "pagina_pdf": 10,
+   "cita_textual": "100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-C2).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-C3-OCUPACION",
+  "version": 1,
+  "titulo": "MP-C3: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-C3",
+   "pagina_pdf": 11,
+   "cita_textual": "100% del área del lote de terreno, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-C3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-C3).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-SEU1-OCUPACION",
+  "version": 1,
+  "titulo": "MP-SEU1: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-SEU1",
+   "pagina_pdf": 13,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-SEU1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-SEU1).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-SEU2-OCUPACION",
+  "version": 1,
+  "titulo": "MP-SEU2: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-SEU2",
+   "pagina_pdf": 14,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-SEU2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-SEU2).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-SEU3-OCUPACION",
+  "version": 1,
+  "titulo": "MP-SEU3: ocupación y área libre",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Ficha MP-SEU3",
+   "pagina_pdf": 15,
+   "cita_textual": "100% del área del lote, una vez aplicada la línea de construcción y los retiros de acuerdo a la colindancia."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-SEU3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que queda después de la línea de construcción y los retiros (zona MP-SEU3).",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del lote una vez aplicada la línea de construcción y los retiros según la colindancia; el área libre es la que resulte. Se revisa con la planta de conjunto. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Sin tope propio: 100 % del lote tras línea de construcción y retiros; lo verifican las reglas de retiros y línea de construcción."
+  }
+ },
+ {
+  "id": "ML2-PL-FICHA-FALTANTE",
+  "version": 1,
+  "titulo": "MP-PL: ficha de regulación predial no incluida en la copia",
+  "fuente": {
+   "norma": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro de Panamá (MIVIOT), Gaceta Oficial 28804-A",
+   "articulo": "Cuadro de clasificación de parques, plazas y áreas verdes",
+   "pagina_pdf": 16,
+   "cita_textual": "MP-PRU | Parque Recreativo Urbano | 3,000"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-ML2' and lote.codigo_zona in ['MP-PL']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La copia no trae la ficha de MP-PL: usos, ocupación, retiros y amortiguamiento se revisan contra la ficha oficial.",
+  "vigencia": {
+   "desde": "2019-06-26",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Solo consta el lote mínimo de 500 m² (cuadro de clasificación). Conseguir la ficha oficial. Vigencia desde la publicación en la Gaceta Oficial Digital No. 28804-A (26-jun-2019); la copia no trae el número de la resolución que la aprueba. Confirmarlo antes de aprobar.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Marcador de ficha faltante sin obligación verificable; además cita la fila de MP-PRU (línea 382), no de MP-PL."
+  }
+ }
+]

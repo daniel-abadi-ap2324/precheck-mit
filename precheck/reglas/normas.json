@@ -1,0 +1,15 @@
+{
+  "A110-2025": {"nombre": "Acuerdo N°110 de 22-04-2025", "prefijos": ["A110-"], "deriva_de": null},
+  "PLOT-A61-2021": {"nombre": "PLOT, Acuerdo 61 de 2021", "prefijos": ["PLOT-"], "deriva_de": null},
+  "PLOT-A61-2021+A270-2025": {"nombre": "PLOT con el Acuerdo 270 de 2025 (San Francisco)", "prefijos": ["SF-"], "deriva_de": "PLOT-A61-2021"},
+  "MIVIOT": {"nombre": "Normas del MIVIOT para zonas exceptuadas (sin reglas cargadas)", "prefijos": [], "deriva_de": null},
+  "MIVIOT-CA-R127-2003": {"nombre": "Casco Antiguo, Resolución N°127-2003 (ZOT-E1)", "prefijos": ["CA-"], "deriva_de": null},
+  "MIVIOT-PV-R352-2006": {"nombre": "Panamá Viejo, Resolución N°352-2006 (ZOT-E2)", "prefijos": ["PV-"], "deriva_de": null},
+  "LEY21-1997": {"nombre": "Ley 21 de 1997, Plan General del Área del Canal (ZOT-E3)", "prefijos": ["L21-"], "deriva_de": null},
+  "MIVIOT-AC-R160-2002": {"nombre": "Área del Canal, Resolución N°160-2002 del MIVI (Normas de Desarrollo Urbano)", "prefijos": ["AC-"], "deriva_de": null},
+  "MIVIOT-CDE": {"nombre": "Normas Especiales de Costa del Este (ZOT-E6)", "prefijos": ["CDE-"], "deriva_de": null},
+  "MIVIOT-ML1": {"nombre": "Plan Parcial del Polígono de Influencia de la Línea 1 del Metro (ZOT-E7)", "prefijos": ["ML1-"], "deriva_de": null},
+  "MIVIOT-ML2": {"nombre": "Plan Parcial del Polígono de Influencia de la Línea 2 del Metro (ZOT-E8)", "prefijos": ["ML2-"], "deriva_de": null},
+  "MIVIOT-LC-R15-1992": {"nombre": "La Cresta, Resolución N°15-1992", "prefijos": ["LC-"], "deriva_de": null},
+  "MIVIOT-EC-R192-2013": {"nombre": "El Carmen, Resolución N°192-2013 (ZOT-E9)", "prefijos": ["EC-"], "deriva_de": null}
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "LC-R1B-VISITAS-ACCESO-CALLE",
+    "version": 3,
+    "titulo": "R1B-E: estacionamientos de visitas con fácil acceso desde la calle",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "Los establecimientos para visitas deberán estar ubicados con fácil acceso desde la calle"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Los establecimientos para visitas deberán estar ubicados con fácil acceso desde la calle",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no tienen fácil acceso desde la calle (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Separa de LC-R1B-ESTACIONAMIENTOS-VISITAS la obligación de ubicación, que hoy solo está en su mensaje (ver correcciones-catalogo.md). La copia dice «establecimientos» por «estacionamientos». Cita en la línea 32 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Juicio técnico en planta («fácil acceso»), bloqueante por «deberán». La cita compartía la frase de bienes comunes; se recorta a esta obligación (línea 32). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Los establecimientos para visitas deberán estar ubicados con fácil acceso desde la calle», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R1B-VISITAS-BIENES-COMUNES",
+    "version": 3,
+    "titulo": "R1B-E: estacionamientos de visitas como bienes comunes",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Tercero",
+      "pagina_pdf": 2,
+      "cita_textual": "los mismos deben establecerse como bienes comunes."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R1B-E', 'R1-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "los mismos deben establecerse como bienes comunes.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no se establecen como bienes comunes (zona R1B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el régimen de propiedad horizontal o en el cuadro de áreas comunes. Cita en la línea 32 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Régimen de propiedad horizontal: se constata en el reglamento de copropiedad, no en el anteproyecto; observación. Cita recortada a esta obligación (línea 32). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («los mismos deben establecerse como bienes comunes.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-VISITAS-ACCESO-CALLE",
+    "version": 3,
+    "titulo": "R2A-E: estacionamientos de visitas con fácil acceso desde la calle",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no tienen fácil acceso desde la calle (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Separa de LC-R2A-ESTACIONAMIENTOS-VISITAS la obligación de ubicación, que hoy solo está en su mensaje (ver correcciones-catalogo.md). Cita en la línea 52 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Juicio técnico en planta («fácil acceso»), bloqueante por «deberán». La cita compartía la frase de bienes comunes; se recorta a esta obligación (línea 52). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2A-VISITAS-BIENES-COMUNES",
+    "version": 3,
+    "titulo": "R2A-E: estacionamientos de visitas como bienes comunes",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Cuarto",
+      "pagina_pdf": 3,
+      "cita_textual": "los mismos deben establecerse como bienes comunes."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2A-E', 'R2-A-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "los mismos deben establecerse como bienes comunes.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no se establecen como bienes comunes (zona R2A-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el régimen de propiedad horizontal o en el cuadro de áreas comunes. Cita en la línea 52 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Régimen de propiedad horizontal: se constata en el reglamento de copropiedad, no en el anteproyecto; observación. Cita recortada a esta obligación (línea 52). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («los mismos deben establecerse como bienes comunes.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-VISITAS-ACCESO-CALLE",
+    "version": 3,
+    "titulo": "R2B-E: estacionamientos de visitas con fácil acceso desde la calle",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 4,
+      "cita_textual": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no tienen fácil acceso desde la calle (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Separa de LC-R2B-ESTACIONAMIENTOS-VISITAS la obligación de ubicación, que hoy solo está en su mensaje (ver correcciones-catalogo.md). Cita en la línea 72 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Juicio técnico en planta («fácil acceso»), bloqueante por «deberán». La cita compartía la frase de bienes comunes; se recorta a esta obligación (línea 72). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-R2B-VISITAS-BIENES-COMUNES",
+    "version": 3,
+    "titulo": "R2B-E: estacionamientos de visitas como bienes comunes",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Quinto",
+      "pagina_pdf": 4,
+      "cita_textual": "los mismos deben establecerse como bienes comunes."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['R2B-E', 'R2-B-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "los mismos deben establecerse como bienes comunes.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no se establecen como bienes comunes (zona R2B-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el régimen de propiedad horizontal o en el cuadro de áreas comunes. Cita en la línea 72 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Régimen de propiedad horizontal: se constata en el reglamento de copropiedad, no en el anteproyecto; observación. Cita recortada a esta obligación (línea 72). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («los mismos deben establecerse como bienes comunes.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-VISITAS-ACCESO-CALLE",
+    "version": 3,
+    "titulo": "RM-E: estacionamientos de visitas con fácil acceso desde la calle",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no tienen fácil acceso desde la calle (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Separa de LC-RM-ESTACIONAMIENTOS-VISITAS la obligación de ubicación, que hoy solo está en su mensaje (ver correcciones-catalogo.md). Cita en la línea 90 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Juicio técnico en planta («fácil acceso»), bloqueante por «deberán». La cita compartía la frase de bienes comunes; se recorta a esta obligación (línea 90). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Los estacionamientos para visitas deberán estar ubicados con fácil acceso desde la calle», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  },
+  {
+    "id": "LC-RM-VISITAS-BIENES-COMUNES",
+    "version": 3,
+    "titulo": "RM-E: estacionamientos de visitas como bienes comunes",
+    "fuente": {
+      "norma": "Resolución No. 15-92 del Ministerio de Vivienda (La Cresta)",
+      "articulo": "Artículo Sexto",
+      "pagina_pdf": 4,
+      "cita_textual": "los mimos deben establecerse como bienes comunes."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-LC-R15-1992' and lote.codigo_zona in ['RM-E']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "los mimos deben establecerse como bienes comunes.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos de visitas no se establecen como bienes comunes (zona RM-E).",
+    "vigencia": {
+      "desde": "1992-03-04",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el régimen de propiedad horizontal o en el cuadro de áreas comunes. La copia dice «mimos» por «mismos». Cita en la línea 90 de normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt. Vigencia desde la publicación en la Gaceta Oficial Nº 21.985 (4-mar-1992); la resolución no fija otra fecha. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Régimen de propiedad horizontal: se constata en el reglamento de copropiedad, no en el anteproyecto; observación. Cita recortada a esta obligación (línea 90). Cambios: cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («los mimos deben establecerse como bienes comunes.», normativa/zonas-exceptuadas/textos/res15_1992_la_cresta.txt)"
+  }
+]

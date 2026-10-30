@@ -1,0 +1,344 @@
+[
+ {
+  "id": "EC-RM1-ALTURA",
+  "version": 1,
+  "titulo": "RM-1: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-1",
+   "pagina_pdf": 8,
+   "cita_textual": "Según densidad."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1', 'RM1', 'RM1-C2', 'RM1C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura del proyecto no resulta de la densidad permitida en la zona RM-1.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta; no hay un número de pisos que comprobar. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la misma ficha.",
+   "fusionada_en": "EC-RM1-DENSIDAD"
+  }
+ },
+ {
+  "id": "EC-RM1-OCUPACION",
+  "version": 1,
+  "titulo": "RM-1: área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-1",
+   "pagina_pdf": 8,
+   "cita_textual": "del área de construcción por retiros en planta baja."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1', 'RM1', 'RM1-C2', 'RM1C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona RM-1).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del área construible después de aplicar los retiros en planta baja. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-RM1R-ALTURA",
+  "version": 1,
+  "titulo": "RM-1*: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-1*",
+   "pagina_pdf": 9,
+   "cita_textual": "Según densidad."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1*', 'RM1*', '*RM-1', '*RM1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura del proyecto no resulta de la densidad permitida en la zona RM-1*.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta; no hay un número de pisos que comprobar. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la misma ficha.",
+   "fusionada_en": "EC-RM1R-DENSIDAD"
+  }
+ },
+ {
+  "id": "EC-RM1R-OCUPACION",
+  "version": 1,
+  "titulo": "RM-1*: área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-1*",
+   "pagina_pdf": 9,
+   "cita_textual": "del área de construcción por retiros en planta baja."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1*', 'RM1*', '*RM-1', '*RM1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona RM-1*).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del área construible después de aplicar los retiros en planta baja. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-RM2-ALTURA",
+  "version": 1,
+  "titulo": "RM-2: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-2",
+   "pagina_pdf": 9,
+   "cita_textual": "Según densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-2', 'RM2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura del proyecto no resulta de la densidad permitida en la zona RM-2.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta; no hay un número de pisos que comprobar. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la misma ficha.",
+   "fusionada_en": "EC-RM2-DENSIDAD"
+  }
+ },
+ {
+  "id": "EC-RM2-OCUPACION",
+  "version": 1,
+  "titulo": "RM-2: área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-2",
+   "pagina_pdf": 9,
+   "cita_textual": "del área de construcción por retiro en planta baja."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-2', 'RM2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona RM-2).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del área construible después de aplicar los retiros en planta baja. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-RM2R-OCUPACION",
+  "version": 1,
+  "titulo": "RM-2*: área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-2*",
+   "pagina_pdf": 10,
+   "cita_textual": "del área de construcción por retiro en planta baja."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-2*', 'RM2*', '*RM-2', '*RM2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona RM-2*).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del área construible después de aplicar los retiros en planta baja. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-RM3-ALTURA",
+  "version": 1,
+  "titulo": "RM-3: altura máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-3",
+   "pagina_pdf": 10,
+   "cita_textual": "Según densidad"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-3', 'RM3', 'RM3-C2', 'RM3C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La altura del proyecto no resulta de la densidad permitida en la zona RM-3.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "«Según densidad»: la altura la limita la densidad neta; no hay un número de pisos que comprobar. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según densidad»: sin tope propio de altura; la limita la densidad neta, que verifica la regla de densidad de la misma ficha.",
+   "fusionada_en": "EC-RM3-DENSIDAD"
+  }
+ },
+ {
+  "id": "EC-RM3-OCUPACION",
+  "version": 1,
+  "titulo": "RM-3: área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha RM-3",
+   "pagina_pdf": 10,
+   "cita_textual": "del área de construcción por retiros en planta baja."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-3', 'RM3', 'RM3-C2', 'RM3C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona RM-3).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % del área construible después de aplicar los retiros en planta baja. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-C2RM1-OCUPACION",
+  "version": 1,
+  "titulo": "C-2 (RM/RM1): área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha C-2 (RM/RM1)",
+   "pagina_pdf": 11,
+   "cita_textual": "100% del área construible por retiros. (en planta baja)."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM1-C2', 'RM1C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona C-2 (RM/RM1)).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-C2RM3-OCUPACION",
+  "version": 1,
+  "titulo": "C-2 (RM-2/RM-3): área de ocupación máxima",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Anexo No. 1, ficha C-2 (RM-2/RM-3)",
+   "pagina_pdf": 12,
+   "cita_textual": "100% del área construible por retiros (en planta baja)."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM3-C2', 'RM3C2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación en planta baja excede el área construible que dejan los retiros (zona C-2 (RM-2/RM-3)).",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% del área construible por retiros»: sin tope propio; la ocupación resulta de los retiros y la línea de construcción, que tienen sus propias reglas."
+  }
+ },
+ {
+  "id": "EC-P-SIN-FICHA",
+  "version": 1,
+  "titulo": "Código P: sin ficha normativa en el Anexo 1",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Resuelve SEGUNDO",
+   "pagina_pdf": 3,
+   "cita_textual": "Aprobar la propuesta de los usos del suelo y códigos de zona para el sector que corresponde a El Carmen"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['P']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El lote está en código P, que figura en la leyenda del plano pero no tiene ficha en el Anexo 1: revisión manual.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Ruido: ficha faltante, sin obligación verificable. El hueco se reporta a la DOYC."
+  }
+ },
+ {
+  "id": "EC-TODAS-TRANSICION",
+  "version": 1,
+  "titulo": "Transición de fincas con uso de suelo anterior",
+  "fuente": {
+   "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+   "articulo": "Resuelve QUINTO",
+   "pagina_pdf": 3,
+   "cita_textual": "Se dará un plazo de dos (2) años para que las fincas que tengan un uso de suelo distinto al que se aprueba en esta resolución"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['*RM-1', '*RM-2', '*RM1', '*RM2', 'C-1', 'C-2', 'C1', 'C2', 'P', 'R1-A', 'R1-B', 'R1A', 'R1B', 'R2-A', 'R2-B', 'R2A', 'R2B', 'R3', 'R3-C1', 'R3C1', 'RM-1', 'RM-1*', 'RM-2', 'RM-2*', 'RM-3', 'RM1', 'RM1*', 'RM1-C2', 'RM1C2', 'RM2', 'RM2*', 'RM3', 'RM3-C2', 'RM3C2'] and expediente.invoca_uso_anterior == true",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La finca invoca un uso de suelo anterior a la Res. 192-2013; el plazo de transición de dos años ya venció.",
+  "vigencia": {
+   "desde": "2013-04-30",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Resuelve QUINTO: plazo de dos años desde 2013 para acogerse; vencido, rige en su totalidad la zonificación de 2013. Si el expediente invoca un cambio de uso anterior, revisión. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Ruido: el plazo de dos años del Resuelve QUINTO venció en 2015; ya no impone obligación en octubre de 2026."
+  }
+ }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "SF-A270-ART5-AREA-ESTUDIO",
+    "version": 2,
+    "titulo": "San Francisco: predio en Área de Estudio (AE) sin códigos asignados",
+    "fuente": {
+      "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+      "articulo": "5",
+      "pagina_pdf": 3,
+      "cita_textual": "Los estudio y gestiones correspondientes determinarán, en conjunto con la población, los usos de suelo y los códigos a ser asignados."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and existe(lote.sf_area_estudio) and lote.sf_area_estudio == true",
+    "entradas": [
+      "lote.sf_area_estudio",
+      "lote.codigo_zona"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Los estudio y gestiones correspondientes determinarán, en conjunto con la población, los usos de suelo y los códigos a ser asignados.",
+      "archivo": "normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El predio está en un Área de Estudio del Acuerdo 270 (Art. 5): sus usos y códigos los determina el Programa de Actuación; confirmar con la DPU si ya hay código asignado y aprobado antes de evaluar el proyecto.",
+    "vigencia": {
+      "desde": "2025-10-16",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: lote.sf_area_estudio (true si el predio cae en un Área de Estudio delimitada en el Documento Gráfico actualizado por el Art. 1); lo decide la IA o un extractor GIS futuro. Si el hecho no existe, la regla no aplica (guarda existe()). El Art. 5 no prohíbe expresamente construir en un AE; por eso es observacion y no bloqueante. El Municipio se reserva zonificar el AE por Plan Parcial. Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Los estudio y gestiones correspondientes determinarán, en conjunto con la población, los usos de suelo y los códigos …», normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt)"
+  },
+  {
+    "id": "SF-A270-ART9-MORATORIA-SUELO-PROGRAMADO",
+    "version": 2,
+    "titulo": "San Francisco: moratoria de permisos de construcción con Uso de Suelo Programado",
+    "fuente": {
+      "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+      "articulo": "9",
+      "pagina_pdf": 5,
+      "cita_textual": "pero no se otorgará penniso de construcción hasta la entrada en vigor del Instrumento de Financiamiento mediante plusvalía o compensación urbanas."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and tramite in ['RDP', 'PDC_CON_ATC', 'PDC'] and existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true",
+    "entradas": [
+      "proyecto.usa_codigo_programado",
+      "tramite"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "pero no se otorgará penniso de construcción hasta la entrada en vigor del Instrumento de Financiamiento mediante plusvalía o compensación urbanas.",
+      "archivo": "normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt",
+      "cita_subsanacion": "se podrá presentar anteproyectos con base al Uso de Suelo Programado, pero no se otorgará penniso de construcción hasta la entrada en vigor del Instrumento de Financiamiento"
+    },
+    "mensaje_no_cumple": "El proyecto usa el código de Uso de Suelo Programado: el Acuerdo 270 (Art. 9) no permite otorgar permiso de construcción hasta que entre en vigor el Instrumento de Financiamiento mediante plusvalía o compensación urbanas. El anteproyecto sí puede presentarse.",
+    "vigencia": {
+      "desde": "2025-10-16",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se excluye 'RLA' porque el Art. 9 permite presentar anteproyectos. 'PDC' es un nombre de trámite provisional (permiso de construcción sin ATC); 'RDP' se incluye porque precede al permiso. Duda para un humano: el Acuerdo 128 de 12-05-2026 (G.O. 30537, vigente desde 02-06-2026) se presenta como «Instrumento de Financiamiento» y su Art. 9, num. 4 menciona el uso de suelo programado; si la DOYC/DPU confirma que es el instrumento del Art. 9, esta regla debe cerrarse con vigencia.hasta = 2026-06-02 y aplicar en su lugar la compensación del Acuerdo 128 (PLOT-A128-ART14-...). Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B2 («pero no se otorgará penniso de construcción hasta la entrada en vigor del Instrumento de Financiamiento mediante plus…», normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt)"
+  }
+]

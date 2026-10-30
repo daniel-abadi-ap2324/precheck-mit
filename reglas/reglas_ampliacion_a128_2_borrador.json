@@ -1,0 +1,354 @@
+[
+  {
+    "id": "PLOT-A128-ART30-MEMORIAL",
+    "version": 2,
+    "titulo": "Pago excepcional: memorial dirigido a la DOYC",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 1",
+      "pagina_pdf": 11,
+      "cita_textual": "Memorial dirigido a la Dirección de Obras y Construcciones donde se indique generales del solicitante."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION'",
+    "entradas": [
+      "expediente.pago_excepcional.memorial.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.memorial.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Memorial dirigido a la Dirección de Obras y Construcciones donde se indique generales del solicitante.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La solicitud de pago excepcional no trae el memorial dirigido a la DOYC con las generales del solicitante (Acuerdo 128, Art. 30, num. 1).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.memorial.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. El memorial puede indicar el proyecto preferido del informe del Art. 42 (opcional). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Memorial dirigido a la Dirección de Obras y Construcciones donde se indique generales del solicitante.», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-PROPUESTA-FORMAL",
+    "version": 2,
+    "titulo": "Pago excepcional: propuesta formal firmada por el propietario",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 2",
+      "pagina_pdf": 11,
+      "cita_textual": "Propuesta formal de pago excr:pcir»ral, en el cual se detalla el precio y condiciones de la oferta propuest4 los bienes ofrecidos para pago total o parcial de la compensación urban4 firmada por el propietario de est4 así como la parte interesada en utilizar este medio de pago;"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION'",
+    "entradas": [
+      "expediente.pago_excepcional.propuesta_formal_firmada.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.propuesta_formal_firmada.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Propuesta formal de pago excr:pcir»ral, en el cual se detalla el precio y condiciones de la oferta propuest4 los bienes ofrecidos para pago total o parcial de la compensación urban4 firmada por el propietario de est4 así como la parte interesada en utilizar este medio de pago;",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la propuesta formal de pago excepcional con precio, condiciones y bienes ofrecidos, firmada por el propietario y por la parte interesada (Acuerdo 128, Art. 30, num. 2).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.propuesta_formal_firmada.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Propuesta formal de pago excr:pcir»ral, en el cual se detalla el precio y condiciones de la oferta propuest4 los bien…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-CERTIFICADO-REGISTRO-PJ",
+    "version": 2,
+    "titulo": "Pago excepcional: certificado del Registro Público de la persona jurídica",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 3",
+      "pagina_pdf": 11,
+      "cita_textual": "Si el solicitante es persona jur'ídic.! debe presentar certificación del Registro Público vigente, donde se haga constar la l{epresentación Legal o el poder que coresponde a favor de la persona autorizatta según sea el caso."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION' and solicitante.persona_juridica == true",
+    "entradas": [
+      "expediente.pago_excepcional.certificado_registro_publico_pj.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.certificado_registro_publico_pj.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Si el solicitante es persona jur'ídic.! debe presentar certificación del Registro Público vigente, donde se haga constar la l{epresentación Legal o el poder que coresponde a favor de la persona autorizatta según sea el caso.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El solicitante es persona jurídica y no trae certificación vigente del Registro Público con la representación legal o el poder de quien firma (Acuerdo 128, Art. 30, num. 3).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.certificado_registro_publico_pj.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Hecho provisional de aplicabilidad: solicitante.persona_juridica. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Si la ley exige autorización de otro órgano social para traspasar los activos, también va el acta de ese órgano (mismo numeral; lo valora el revisor). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Si el solicitante es persona jur'ídic.! debe presentar certificación del Registro Público vigente, donde se haga cons…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-PAZ-Y-SALVO",
+    "version": 2,
+    "titulo": "Pago excepcional: Paz y Salvo del Municipio",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 4",
+      "pagina_pdf": 11,
+      "cita_textual": "Puy Salvo del Municipio de Panamá;"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION'",
+    "entradas": [
+      "expediente.pago_excepcional.paz_y_salvo_municipal.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.paz_y_salvo_municipal.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Puy Salvo del Municipio de Panamá;",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La solicitud de pago excepcional no trae el Paz y Salvo del Municipio de Panamá (Acuerdo 128, Art. 30, num. 4).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.paz_y_salvo_municipal.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. El OCR escribe «Puy Salvo» por Paz y Salvo. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Puy Salvo del Municipio de Panamá;», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-PODER-ESPECIAL",
+    "version": 2,
+    "titulo": "Pago excepcional: poder especial si actúa un abogado",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 5",
+      "pagina_pdf": 11,
+      "cita_textual": "Si la solicitud es realizada mediante abogado, el Poder Especial deberá ser dirigido al alcalde del Distrito de Pananrá y presentado con las formalidades establecidas en el Código Judicial;"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION' and expediente.pago_excepcional.mediante_abogado == true",
+    "entradas": [
+      "expediente.pago_excepcional.poder_especial.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.poder_especial.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Si la solicitud es realizada mediante abogado, el Poder Especial deberá ser dirigido al alcalde del Distrito de Pananrá y presentado con las formalidades establecidas en el Código Judicial;",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La solicitud se presenta mediante abogado y falta el Poder Especial dirigido al alcalde con las formalidades del Código Judicial (Acuerdo 128, Art. 30, num. 5).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.poder_especial.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Hecho provisional de aplicabilidad: expediente.pago_excepcional.mediante_abogado. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Si la solicitud es realizada mediante abogado, el Poder Especial deberá ser dirigido al alcalde del Distrito de Panan…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-CERTIFICADO-INMUEBLE",
+    "version": 2,
+    "titulo": "Pago excepcional con inmueble: certificado del Registro Público del bien",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 6",
+      "pagina_pdf": 11,
+      "cita_textual": "Si se trata de pago en bienes irrmueble, deberá aportar certificado de Registro Público, donde conste el nombre del propietario, descripción del bien y si existen graviímenes inscritos"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION' and expediente.pago_excepcional.en_inmueble == true",
+    "entradas": [
+      "expediente.pago_excepcional.certificado_registro_inmueble.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.certificado_registro_inmueble.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Si se trata de pago en bienes irrmueble, deberá aportar certificado de Registro Público, donde conste el nombre del propietario, descripción del bien y si existen graviímenes inscritos",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El pago excepcional ofrece un inmueble y falta el certificado del Registro Público con propietario, descripción y gravámenes (Acuerdo 128, Art. 30, num. 6).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.certificado_registro_inmueble.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Hecho provisional de aplicabilidad: expediente.pago_excepcional.en_inmueble. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Si se trata de pago en bienes irrmueble, deberá aportar certificado de Registro Público, donde conste el nombre del p…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-AVALUO-BIEN-MUEBLE",
+    "version": 2,
+    "titulo": "Pago excepcional con bien mueble no registrable: prueba de propiedad y avalúo",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, num. 7",
+      "pagina_pdf": 11,
+      "cita_textual": "Si se trata de pago en bien mueble que no sea obieto de registro, debe comprobar la propiedad del bien y su val¡¡r comercial, por medio de avalúo de acuerdo con lo establecido en el Código Judi,:ial."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION' and expediente.pago_excepcional.en_bien_mueble == true",
+    "entradas": [
+      "expediente.pago_excepcional.avaluo_bien_mueble.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.avaluo_bien_mueble.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Si se trata de pago en bien mueble que no sea obieto de registro, debe comprobar la propiedad del bien y su val¡¡r comercial, por medio de avalúo de acuerdo con lo establecido en el Código Judi,:ial.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El pago excepcional ofrece un bien mueble no registrable y falta la prueba de propiedad y el avalúo de su valor comercial según el Código Judicial (Acuerdo 128, Art. 30, num. 7).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.avaluo_bien_mueble.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Hecho provisional de aplicabilidad: expediente.pago_excepcional.en_bien_mueble. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Duda: el Art. 24 no lista bienes muebles entre las modalidades excepcionales (solo finca y obras). Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Si se trata de pago en bien mueble que no sea obieto de registro, debe comprobar la propiedad del bien y su val¡¡r co…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART30-PAGO-ORDINARIO-PARCIAL",
+    "version": 2,
+    "titulo": "Pago excepcional: incluye el pago parcial en modalidad ordinaria",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "30, párr. final",
+      "pagina_pdf": 11,
+      "cita_textual": "Sin perjuicio de lo anterior, la soliotud deberá incluir el pago del 5%o de la compensación urbana en modalidad ordinaria"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION'",
+    "entradas": [
+      "expediente.pago_excepcional.pago_ordinario_parcial.presente"
+    ],
+    "condicion": "expediente.pago_excepcional.pago_ordinario_parcial.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Sin perjuicio de lo anterior, la soliotud deberá incluir el pago del 5%o de la compensación urbana en modalidad ordinaria",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La solicitud de pago excepcional no incluye el comprobante del pago de la parte que corresponde en modalidad ordinaria (Acuerdo 128, Art. 30, párr. final).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.pago_excepcional.pago_ordinario_parcial.presente == true (hecho provisional; lo decide la IA o un extractor futuro). Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. No se verifica el monto: el porcentaje sale «5%o» en el OCR y el tope de las modalidades excepcionales del Art. 24 sale «95o/e»; probablemente 5% y 95%, pero hay que confirmarlo con la Gaceta. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Sin perjuicio de lo anterior, la soliotud deberá incluir el pago del 5%o de la compensación urbana en modalidad ordin…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART34-PAGO-ORDINARIO-TRAS-RECHAZO",
+    "version": 2,
+    "titulo": "Pago excepcional rechazado: pago ordinario en diez días hábiles",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "34",
+      "pagina_pdf": 12,
+      "cita_textual": "De ser rechazado el pago excepcional, el autorizado estará obligado al pago orrtinario, contando con un plaza de diez (10) días hábiles pararcalizar el pago."
+    },
+    "tipo": "plazo",
+    "aplica_si": "tramite == 'PAGO_EXCEPCIONAL_COMPENSACION' and expediente.pago_excepcional.rechazado == true",
+    "entradas": [
+      "expediente.compensacion_urbana.pagada_total",
+      "expediente.pago_excepcional.dias_habiles_desde_rechazo"
+    ],
+    "condicion": "expediente.compensacion_urbana.pagada_total == true or expediente.pago_excepcional.dias_habiles_desde_rechazo <= 10",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "De ser rechazado el pago excepcional, el autorizado estará obligado al pago orrtinario, contando con un plaza de diez (10) días hábiles pararcalizar el pago.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": "a favor de la Tesorería Municipal, co,r base ¿r la liquidación que emita la Dirección de Obras y Construcciones."
+    },
+    "mensaje_no_cumple": "Rechazado el pago excepcional, la compensación urbana debe pagarse en modalidad ordinaria dentro de diez (10) días hábiles (Acuerdo 128, Art. 34).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. Trámite provisional 'PAGO_EXCEPCIONAL_COMPENSACION': solicitud de pago excepcional ante la DOYC tras la liquidación (Art. 30), que permite que el permiso de construcción siga su curso. Hechos provisionales: expediente.pago_excepcional.rechazado y expediente.pago_excepcional.dias_habiles_desde_rechazo (desde la notificación de la resolución del Art. 32; calendario oficial de feriados). Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Duda: el Art. 49, num. 1 tipifica la renuencia «fuera del plazo establecido en el Artículo 32», no en el 34. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B3 («De ser rechazado el pago excepcional, el autorizado estará obligado al pago orrtinario, contando con un plaza de diez…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART48-CONSTANCIA-PAGO-OBRA",
+    "version": 2,
+    "titulo": "Pago excepcional por obra: constancia de cumplimiento de la Tesorería",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "48",
+      "pagina_pdf": 15,
+      "cita_textual": "deberá presentar ante Tesorería Municipal\" acta de aceptación final emitida por la unidad gestora del proyecto u obra, para que Tesorería emita constancia del cumplimiento de la compensación urbana."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'PERMISO_OCUPACION' and expediente.compensacion_urbana.exigible == true and expediente.pago_excepcional.por_obra == true",
+    "entradas": [
+      "expediente.compensacion_urbana.constancia_tesoreria.presente"
+    ],
+    "condicion": "expediente.compensacion_urbana.constancia_tesoreria.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "acta de aceptación final emitida por la unidad gestora del proyecto u obra, para que Tesorería emita constancia del cumplimiento de la compensación urbana.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La compensación se pagó mediante obra o proyecto y no consta la constancia de cumplimiento de la Tesorería, emitida con el acta de aceptación final de la unidad gestora (Acuerdo 128, Art. 48).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. condicion: expediente.compensacion_urbana.constancia_tesoreria.presente == true. Hechos provisionales: expediente.pago_excepcional.por_obra y la constancia; expediente.compensacion_urbana.exigible es el de PLOT-A128-ART23-PAGO-ANTES-OCUPACION. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Es la prueba del pago total que exige el Art. 23 cuando el pago fue por obra. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. Código de trámite unificado con el resto de propuestas (PERMISO_OCUPACION). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («acta de aceptación final emitida por la unidad gestora del proyecto u obra, para que Tesorería emita constancia del c…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  },
+  {
+    "id": "PLOT-A128-ART54-TRAMITE-PREVIO",
+    "version": 2,
+    "titulo": "Trámites admitidos antes del 02-06-2026: sin compensación urbana",
+    "fuente": {
+      "norma": "Acuerdo N°128 de 12-05-2026 (Compensación Urbana por Incremento a la Edificabilidad), G.O. 30537",
+      "articulo": "54",
+      "pagina_pdf": 17,
+      "cita_textual": "La compensación urbana no será aplicable a los triimites iniciados y admitidos con anterioridad a la entrada en vigor del presentc Acuerdo, siempre que culminen con un aclo administr¿rtivo favorable."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['RDP', 'PDC_CON_ATC', 'PDC'] and (existe(proyecto.resolucion_edificabilidad) or (existe(proyecto.usa_codigo_programado) and proyecto.usa_codigo_programado == true) or (existe(lote.afectado_compensacion) and lote.afectado_compensacion == true)) and expediente.tramite_admitido_antes_a128 == true",
+    "entradas": [
+      "expediente.tramite_admitido_antes_a128"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "La compensación urbana no será aplicable a los triimites iniciados y admitidos con anterioridad a la entrada en vigor del presentc Acuerdo, siempre que culminen con un aclo administr¿rtivo favorable.",
+      "archivo": "normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El trámite se inició y admitió antes del 02-06-2026: no se exige compensación urbana si culmina con acto favorable; si fue negado, desistido o archivado, la nueva solicitud sí queda sujeta (Acuerdo 128, Art. 54).",
+    "vigencia": {
+      "desde": "2026-06-02",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tanda final del Acuerdo 128. Matiza PLOT-A128-ART14-MOMENTO-PERMISO: el revisor descarta esa exigencia si el trámite es anterior. Hecho provisional: expediente.tramite_admitido_antes_a128. Si falta el dato de aplicabilidad, la regla queda en revisión (D9). Observacion porque es una exención y depende de la fecha de admisión que registra la DOYC. Vigencia: Art. 68 («comenzará a regir a partir de su promulgación») y G.O. No. 30537 del martes 2 de junio de 2026. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («La compensación urbana no será aplicable a los triimites iniciados y admitidos con anterioridad a la entrada en vigor…», normativa/zonificacion/textos/acuerdo128_2026_compensacion.txt)"
+  }
+]

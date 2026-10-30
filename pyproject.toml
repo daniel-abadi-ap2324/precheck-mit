@@ -1,0 +1,25 @@
+[project]
+name = "precheck-mupa"
+version = "0.1.0"
+description = "Verificación preliminar automatizada de planos y trámites de construcción (DOYC, Municipio de Panamá)"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+# Errores reales (pyflakes, sintaxis) y bugs frecuentes; el estilo no bloquea la compuerta.
+select = ["E4", "E7", "E9", "F", "B", "I"]
+ignore = ["E731"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["precheck", "tests"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+check_untyped_defs = false
+warn_unused_ignores = false
+files = ["precheck"]
+exclude = ["precheck/(cad|bim|gis|planos)/"]

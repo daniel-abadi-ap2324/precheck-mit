@@ -1,0 +1,2805 @@
+[
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 1
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de Gobierno/Alcaldía (solo misiones diplomáticas), estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": "1.50 m en lateral (A y B).",
+   "posterior": "3 m en posterior."
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1R6 Programado",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 1
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": "0 si es muro ciego a la LP o 2.5m para muros con aberturas. Cuando colinda con 1R3 el retiro será 2.5m.",
+   "posterior": "PB:0 si es muro ciego a la LP o 2.50m con aberturas. Cuando colinda con 1R3 el retiro será 2.5m.\nDemás pisos: 2.50m"
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 3
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guarderías.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estación de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras, instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar aislada y bifamiliar una sobre otra, bifamiliar adosada e hilera."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "En la tabla de 'Usos Permitidos' de esta ficha (p03) aparece la fila 'Logística e Industrial' con valor 'N/A.' duplicada (una vez en su posición ordinaria y otra vez repetida justo antes del encabezado 'Prohibidos'); se trata aparentemente de un artefacto de maquetación del documento fuente y no cambia el valor extraído."
+  ]
+ },
+ {
+  "codigo": "1R6",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial",
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 5
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Terciario o de Servicios": "Oficinas, restaurantes y cafeterías.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.), centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico y museos.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal, siempre que no corresponda al Uso Vocacional descrito anteriormente.",
+   "Terciario o de Servicios": "Entidades bancarias (bancos), bares, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estación de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "N/A.",
+   "Cultural": "Instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": "0 si es muro ciego a la LP o 2.5m para muros con aberturas. Cuando colinda con 1R3 el retiro será 2.5m.",
+   "posterior": "PB:0 si es muro ciego a la LP o 2.50m con aberturas. Cuando colinda con 1R3 el retiro será 2.5m.\nDemás pisos: 2.50m"
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos.",
+    "Comercial": "Comercio vecinal con un máximo de 500M2 de área de construcción por local."
+   }
+  },
+  "notas": [
+   "En las fincas cuyo único acceso sea desde la calle Las Hortensias, el único uso será residencial.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM-3",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Cultural",
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 7
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Oficinas, restaurantes, cafeterías, hoteles, alojamientos y servicios de turismo.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud, asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Cultural": "Museos e instituciones religiosas.",
+   "Terciario o de Servicios": "Entidades bancarias, bares, uso de espectáculo y ocio, comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estación de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Transporte": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados.",
+    "Cultural": "Bibliotecas, centro comunitario y centro cívico."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "En el mapa de delimitación (Delimitación) el código de zona aparece escrito como '1ZM3' (sin guion) para ambos polígonos, mientras que el encabezado de la ficha y de las tablas usa '1ZM-3'; se usó el código del encabezado de la tabla según instrucciones.",
+   "La nota sobre 'densidad mínima de 200 pers/hect.' para usos mixtos no se registró en 'densidad_max' porque el esquema pide únicamente densidad máxima y el dato del texto es un mínimo; se dejó únicamente en 'notas'."
+  ]
+ },
+ {
+  "codigo": "1ZM4",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Cultural",
+  "unidad_territorial": "Unidad Territorial 5",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 9
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Oficinas, restaurantes, cafeterías, hoteles, alojamientos y servicios de turismo.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Museos e instituciones religiosas.",
+   "Deportivo": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "Entidades bancarias (bancos), bares, uso de espectáculo y ocio, comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estación de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales.",
+   "Cultural": "N/A",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados.",
+    "Cultural": "Bibliotecas, centro comunitario y centro cívico."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM5",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Terciario o de Servicios, Educativo, Cultural",
+  "unidad_territorial": "Unidad Territorial 6",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 11
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales).",
+   "Logística e Industrial": "Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local.",
+   "Educativo": "N/A",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "Entidades bancarias (bancos), bares, uso de espectáculo y ocio (cines y discotecas), comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estación de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales. Asistencia social (asilos, orfanatos, etc.).",
+   "Deportivo": "Grandes centros deportivos especializados y estadios.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados.",
+    "Terciario o de Servicios": "Oficinas, restaurantes, cafeterías, hoteles, alojamientos, servicios de turismo.",
+    "Educativo": "Guardería.",
+    "Cultural": "Bibliotecas, centro comunitario y centro cívico."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 7",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 13
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": {
+   "pisos_sobre_pb": null,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {}
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "La ficha de la Unidad Territorial 7 (p13) ocupa una sola página y, a diferencia de las demás fichas revisadas, no incluye secciones de 'Vocación del Uso', 'Usos Permitidos' ni 'Prohibidos'; solo contiene 'Delimitación', 'Regulación Predial' (Altura Máxima (H): 25 pisos.) y los dos párrafos de cierre. Se verificó la imagen y el texto completos de la página y no falta contenido visible; por eso 'tipo_uso' se dejó en null y 'usos_permitidos'/'usos_prohibidos' quedaron vacíos."
+  ]
+ },
+ {
+  "codigo": "1ZM3",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Terciario o de Servicios, Cultural",
+  "unidad_territorial": "Unidad Territorial 8",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 14
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Servicios de turismo, uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales).",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Museos e instituciones religiosas.",
+   "Deportivo": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "Entidades bancarias (bancos), bares, uso de espectáculo y ocio (cines y discotecas), comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes.",
+   "Institucional": "Estación de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales. Asistencia social (asilos, orfanatos, etc.).",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Transporte": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados.",
+    "Terciario o de Servicios": "Oficinas, restaurantes, cafeterías, hoteles, alojamientos.",
+    "Cultural": "Bibliotecas, centro comunitario y centro cívico."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM4",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Terciario o de Servicios, Cultural",
+  "unidad_territorial": "Unidad Territorial 9",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 16
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud, asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "Bares, uso de espectáculo y ocio, comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Estación de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados con limitación de 500M2 de área de construcción por local.",
+    "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, cafeterías, hoteles, alojamientos y servicios de turismo.",
+    "Cultural": "Bibliotecas, centro comunitario y centro cívico."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 10",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 18
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": {
+   "pisos_sobre_pb": null,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Villa Lilla",
+   "vocacion_del_uso": {}
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "Esta ficha (Unidad Territorial 10: 1ZM7, p.18) no contiene secciones de 'Vocación del Uso', 'Usos Permitidos' ni 'Prohibidos'; solo aparece 'Delimitación' y 'Regulación Predial' (Altura Máxima (H): 25 pisos) seguido de las notas de cierre habituales. Por eso tipo_uso queda null y usos_permitidos/usos_prohibidos/otros.vocacion_del_uso quedan vacíos."
+  ]
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Terciario o Servicios, Logística e Industrial, Institucional, Educativo, Asistencial, Cultural",
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 19
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Deportivos": "Canchas, polideportivos y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o Servicios": "Bares abiertos (con terrazas o áreas al aire libre), comercios nocturnos, centro de convenciones y servicios al turismo.",
+   "Logística e Industrial": "Almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Centros penitenciarios y otras dotaciones de gran impacto.",
+   "Deportivo": "Grandes centros deportivos especializados y estadios.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, Terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": {
+   "pisos_sobre_pb": null,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal, comercio urbano y servicios especializados, centro comercial y supermercados.",
+    "Terciario o Servicios": "Oficinas, entidades bancarias, restaurantes, bares contenidos (sin terrazas o áreas al aire libre), cafeterías, hoteles y alojamientos.",
+    "Logística e Industrial": "Industria de bajo impacto.",
+    "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos y otras dotaciones.",
+    "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+    "Asistencial": "Hospitales, centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+    "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "El documento indica una 'densidad mínima de 200 pers/hect.' para usos mixtos, pero no especifica una densidad máxima explícita; por eso 'densidad_max' se dejó en null."
+  ]
+ },
+ {
+  "codigo": "1RM1",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 21
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Se permite comercio vecinal, comercio urbano y servicios especializados con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Oficinas y entidades bancarias. Con un máximo 500M2 de área de construcción por local. Restaurantes, cafeterías, uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico y museos.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Bares, uso de espectáculo y ocio (cines y discotecas).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM5",
+  "nombre": null,
+  "tipo_uso": "Residencial, Terciario o de Servicios, Logística e Industrial, Cultural",
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 23
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera).",
+   "Comercial": "Se permite comercio vecinal, comercio urbano y servicios especializados con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Hoteles, alojamientos, servicios al turismo, uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales) y comercios nocturnos (bares y restaurantes).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Centro comercial, supermercados, pequeños talleres, almacenes de venta, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Uso de espectáculo y ocio (cines y discotecas), comercios nocturnos (cantinas, clubes nocturnos y centros nocturnos) y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales y asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados y estadios.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares y cafeterías con un máximo de 500M2 de área de construcción por local.",
+    "Logística e Industrial": "Industria de bajo impacto.",
+    "Cultural": "Centro comunitario."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "El documento indica una 'densidad mínima de 200 pers/hect.' para usos mixtos, pero no especifica una densidad máxima explícita; por eso 'densidad_max' se dejó en null."
+  ]
+ },
+ {
+  "codigo": "1ZM6 Programado",
+  "nombre": null,
+  "tipo_uso": "Residencial, Terciario o de Servicios, Logística e Industrial, Cultural",
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 23
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera).",
+   "Comercial": "Se permite comercio vecinal, comercio urbano y servicios especializados con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Hoteles, alojamientos, servicios al turismo, uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales) y comercios nocturnos (bares y restaurantes).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Centro comercial, supermercados, pequeños talleres, almacenes de venta, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Uso de espectáculo y ocio (cines y discotecas), comercios nocturnos (cantinas, clubes nocturnos y centros nocturnos) y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales y asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados y estadios.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares y cafeterías con un máximo de 500M2 de área de construcción por local.",
+    "Logística e Industrial": "Industria de bajo impacto.",
+    "Cultural": "Centro comunitario."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "El documento indica una 'densidad mínima de 200 pers/hect.' para usos mixtos, pero no especifica una densidad máxima explícita; por eso 'densidad_max' se dejó en null."
+  ]
+ },
+ {
+  "codigo": "1RM1",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 26
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Se permite comercio vecinal, comercio urbano y servicios especializados con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Oficinas y entidades bancarias. Con un máximo de 500M2 de área de construcción por local. Restaurantes, cafeterías, uso de espectáculo y ocio (teatros, salones de eventos, galerías de arte, salas de arte, auditorios, centros recreativos, pistas de boliche, escuelas de danza y escuelas de artes marciales).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "N/A.",
+   "Cultural": "Bibliotecas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Bares, uso de espectáculo y ocio (cines y discotecas).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "Esta ficha no contiene sección 'Regulación Predial' ni 'Retiros Mínimos' visibles en las páginas 26-27; se dejan esos campos en null.",
+   "En la sección 'Prohibidos' no aparece la categoría 'Infraestructura Urbana' (a diferencia de 'Usos Permitidos' que sí la incluye); se omitió del diccionario de prohibidos por no estar presente en el documento."
+  ]
+ },
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 5",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 28
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Coco del Mar",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "Esta ficha no contiene sección 'Regulación Predial' ni 'Retiros Mínimos' visibles en las páginas 28-29; se dejan esos campos en null."
+  ]
+ },
+ {
+  "codigo": "1R6",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 30
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Panaderías, cafeterías y fruterías.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "Asistencia social (Asilos).",
+   "Cultural": "Bibliotecas, centro comunitario y centro cívico.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, estaciones de bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (orfanato).",
+   "Cultural": "Museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones"
+  },
+  "lote": {
+   "area_minima": [
+    {
+     "tipologia": "Apartamentos",
+     "valor_m2": 600,
+     "texto": "600m2 ·Apartamentos"
+    }
+   ],
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": {
+   "pisos_sobre_pb": 4,
+   "texto": "4 pisos"
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Los asilos se consideran un uso residencial para esta Unidad Territorial. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT",
+   "Se podrá edificar dos (2) pisos adicionales y tener el uso de Comercio Vecinal siempre que: 1. El área mínima de lote sea 1,500m2 2. Los estacionamientos del edificio sean soterrados o detrás del edificio, ocultados de la calle. 3. Las portacocheras deben ser cubiertas desde la calle, preferiblemente con jardinería 4. Se ofrezca servicio de estacionamiento de acceso público a razón de un (1) estacionamiento por cada 65m2 de terreno, adicionales al mínimo exigido por la ficha del código de uso de suelo."
+  ],
+  "dudas": [
+   "La celda 'Infraestructura Transporte' en Usos Permitidos para 1R6 (p.31) dice literalmente 'Embarcaderos, gasolineras e instalaciones' sin la palabra 'complementarias' ni punto final, a diferencia de las mismas celdas en 1R3 (p.33: '...instalaciones complementarias.') y 1RM1 (p.35: '...instalaciones Complementarias'). Podría ser un texto truncado en el documento original; se transcribió literalmente tal como aparece."
+  ]
+ },
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 32
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": [],
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1RM1",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 34
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Panadería, frutería y comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, cafeterías, bares, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones Complementarias"
+  },
+  "lote": {
+   "area_minima": [],
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "La celda 'Infraestructura Transporte' en Prohibidos para 1RM1 (p.35) dice literalmente 'Embarcaderos, gasolineras e instalaciones Complementarias' (con mayúscula inicial en 'Complementarias' y sin punto final), a diferencia de la redacción con minúscula y punto usada en 1R3 (p.33). Se transcribió literalmente tal como aparece en el documento."
+  ]
+ },
+ {
+  "codigo": "1RM1",
+  "nombre": null,
+  "tipo_uso": "Residencial",
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 36
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal, comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda en apartamentos."
+   }
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM8",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial",
+  "unidad_territorial": "Unidad Territorial 5",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 38
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes y Cafeterías, hoteles y alojamientos.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "Oficinas de Gobierno/Alcaldía (solo misiones diplomáticas) y oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Bares, uso de espectáculo y ocio, comercios nocturnos, centro de convenciones y servicios al turismo.",
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicios, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales. Asistentica social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal con un máximo de 250M2 de área de construcción por local."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "La ficha menciona en la nota de cierre una 'densidad mínima de 200 pers/hect.' aplicable solo para usos mixtos, no una densidad máxima general de la zona; por eso 'densidad_max' se dejó en null.",
+   "Bajo 'Usos Permitidos' la categoría de transporte aparece con la etiqueta 'Transporte' (no 'Infraestructura Transporte' ni 'Infraestructura Urbana' como en 'Prohibidos'); se copió literal tal como aparece en la tabla."
+  ]
+ },
+ {
+  "codigo": "1ZM3",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial",
+  "unidad_territorial": "Unidad Territorial 6",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 40
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Oficinas, restaurantes y cafeterías.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "Oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Entidades bancarias, bares, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo.",
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicios, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales y asistentica social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar.",
+    "Comercial": "Comercio vecinal con un máximo de 250M2 de área de construcción por local."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descrita en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "No hay sección 'Regulación Predial' en esta ficha (p40-p42), por lo que retiros, altura_maxima, lote y demás campos prediales quedan null.",
+   "El texto de notas menciona una 'densidad mínima de 200 pers/hect.' para usos mixtos, no una densidad máxima; no se pudo determinar densidad_max.",
+   "El sector 'Paitilla' fue indicado en las instrucciones de la tarea; no aparece explícitamente como texto en las páginas 40-42 revisadas."
+  ]
+ },
+ {
+  "codigo": "1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial",
+  "unidad_territorial": "Unidad Territorial 6",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 40
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Oficinas, restaurantes y cafeterías, hoteles y alojamientos.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "Oficinas de administración local.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Entidades bancarias, bares, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo.",
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicios, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales y asistentica social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar",
+    "Comercial": "Comercio vecinal con un máximo de 250M2 de área de construcción por local."
+   }
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descrita en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "No hay sección 'Regulación Predial' en esta ficha (p40-p42), por lo que retiros, altura_maxima, lote y demás campos prediales quedan null.",
+   "El texto de notas menciona una 'densidad mínima de 200 pers/hect.' para usos mixtos, no una densidad máxima; no se pudo determinar densidad_max.",
+   "El sector 'Paitilla' fue indicado en las instrucciones de la tarea; no aparece explícitamente como texto en las páginas 40-42 revisadas."
+  ]
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Logística e Industrial",
+  "unidad_territorial": "Unidad Territorial 7",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 43
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, uso de espectáculo y ocio, restaurantes, cafeterías, hoteles, servicios de turismo y alojamientos.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Bares, centro de convenciones, y comercios nocturnos.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": "25 pisos.",
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar",
+    "Comercial": "Comercio vecinal con un máximo de 500M2 de área de construcción por local.",
+    "Logística e Industrial": "Industria de bajo impacto."
+   }
+  },
+  "notas": [
+   "En las fincas que colindan con la Calle Ramón H. Jurado y Avenida Balboa, todos los usos permitidos descritos en la ficha que antecede se consideran usos vocacionales, y todos los usos prohibidos pasan a ser permitidos, con excepción de centros penitenciarios y otras dotaciones de gran impacto, grandes centros deportivos especializados, hospitales, e instalaciones complementarias, embarcaderos e instalaciones complementarias, terminales de transporte e instalaciones complementarias, y estacionamiento de vehículos pesados, autobuses o vehículos de carga."
+  ],
+  "dudas": [
+   "No hay sección 'Retiros Mínimos' ni 'Lote de Terreno' en esta ficha; solo se encontró 'Altura Máxima (H)' bajo 'Regulación Predial'.",
+   "El mapa de delimitación (p43) muestra la etiqueta 'SAN SEBASTIÁN' junto a la zona, aunque el sector indicado en las instrucciones de la tarea es 'Paitilla'.",
+   "No se encontró información de densidad en esta ficha; densidad_max queda null."
+  ]
+ },
+ {
+  "codigo": "1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": "Residencial, Comercial, Logística e Industrial",
+  "unidad_territorial": "Unidad Territorial 7",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 43
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Comercial": "Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, uso de espectáculo y ocio, restaurantes, cafeterías, hoteles, servicios de turismo y alojamientos.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Bares, centro de convenciones, y comercios nocturnos.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "lote": {
+   "area_minima": null,
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": null,
+   "lateral": null,
+   "posterior": null
+  },
+  "altura_maxima": "40 pisos",
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "sector": "Paitilla",
+   "vocacion_del_uso": {
+    "Residencial": "Vivienda multifamiliar",
+    "Comercial": "Comercio vecinal con un máximo de 500M2 de área de construcción por local.",
+    "Logística e Industrial": "Industria de bajo impacto."
+   }
+  },
+  "notas": [
+   "En las fincas que colindan con la Calle Ramón H. Jurado y Avenida Balboa, todos los usos permitidos descritos en la ficha que antecede se consideran usos vocacionales, y todos los usos prohibidos pasan a ser permitidos, con excepción de centros penitenciarios y otras dotaciones de gran impacto, grandes centros deportivos especializados, hospitales, e instalaciones complementarias, embarcaderos e instalaciones complementarias, terminales de transporte e instalaciones complementarias, y estacionamiento de vehículos pesados, autobuses o vehículos de carga."
+  ],
+  "dudas": [
+   "No hay sección 'Retiros Mínimos' ni 'Lote de Terreno' en esta ficha; solo se encontró 'Altura Máxima (H)' bajo 'Regulación Predial'.",
+   "El mapa de delimitación (p43) muestra la etiqueta 'SAN SEBASTIÁN' junto a la zona, aunque el sector indicado en las instrucciones de la tarea es 'Paitilla'.",
+   "No se encontró información de densidad en esta ficha; densidad_max queda null.",
+   "El texto de esta ficha no menciona explícitamente 'suelo programado' con condiciones adicionales (a diferencia de la ficha de la Unidad Territorial 6); no se encontró nota de cierre específica para este código en p43-p44 más allá de la nota general final."
+  ]
+ },
+ {
+  "codigo": "1RM1",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 8",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 46
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda en apartamentos.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal con un máximo de 250M2 de área de construcción por local.",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias y cafeterías.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal arriba de los 250M2 de área de construcción por local. Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios": "Restaurante, bares, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de administración local, estaciones de policía, de bomberos, y otras dotaciones.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Paitilla",
+   "pagina_fin": 47
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1R6",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 9",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 48
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda en apartamentos.",
+   "Comercial": "Comercio vecinal con un máximo de 250M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Oficinas, cafeterías, panaderías y fruterías.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal arriba de los 250M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Entidades bancarias, restaurantes, bares, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, de bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Paitilla",
+   "pagina_fin": 49
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7 / 1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 10",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 50
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": [
+   {
+    "tipologia": "1ZM7",
+    "pisos_sobre_pb": 25,
+    "texto": "25 pisos."
+   },
+   {
+    "tipologia": "1ZM8 Programado",
+    "pisos_sobre_pb": 40,
+    "texto": "40 pisos."
+   }
+  ],
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Paitilla"
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Esta ficha (p.50) sólo presenta Regulación Predial (Altura Máxima) y notas; no repite Vocación del Uso / Usos Permitidos / Prohibidos (posiblemente por remitirse a la ficha de la Unidad Territorial 7, con el mismo código 1ZM7/1ZM8 Programado)."
+  ]
+ },
+ {
+  "codigo": "1R2",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 51
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda unifamiliar aislada y bifamiliar una sobre otra.",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Punta Pacífica",
+   "pagina_fin": 52
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1RM",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 53
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda en apartamentos.",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, uso de espectáculo y ocio.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": {
+   "pisos_sobre_pb": 6,
+   "texto": "6 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Punta Pacífica",
+   "pagina_fin": 54
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7 / 1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 55
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda multifamiliar.",
+   "Comercial (Vocación del Uso)": "Comercio urbano y servicios especializados.",
+   "Terciario o de Servicios (Vocación del Uso)": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio, comercios nocturnos, centro de convenciones y servicios al turismo.",
+   "Logística e industrial (Vocación del Uso)": "Industria de bajo impacto.",
+   "Educativo (Vocación del Uso)": "Guardería, educación, primaria, educación media y educación superior.",
+   "Asistencial (Vocación del Uso)": "Hospitales, centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural (Vocación del Uso)": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo (Vocación del Uso)": "Canchas, polideportivos y piscinas.",
+   "Comercial": "Centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados.",
+   "Transporte": "Gasolineras e instalaciones complementarias.",
+   "Infraestructura de Transporte": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+  },
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": [
+   {
+    "tipologia": "1ZM7",
+    "pisos_sobre_pb": 25,
+    "texto": "25 pisos."
+   },
+   {
+    "tipologia": "1ZM8 Programado",
+    "pisos_sobre_pb": 40,
+    "texto": "40 pisos"
+   }
+  ],
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Punta Pacífica",
+   "pagina_fin": 57
+  },
+  "notas": [
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Esta ficha no presenta sección 'Prohibidos' (se pasa directamente de Usos Permitidos a Regulación Predial); confirmado con la imagen de la página 56.",
+   "Los valores de Vocación del Uso y Usos Permitidos eran idénticos en ambas columnas (1ZM7 y 1ZM8 Programado), por lo que se registraron como un solo texto en vez de lista por tipología."
+  ]
+ },
+ {
+  "codigo": "1ZM7 / 1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 58
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": [
+   {
+    "tipologia": "1ZM7",
+    "pisos_sobre_pb": 25,
+    "texto": "25 pisos."
+   },
+   {
+    "tipologia": "1ZM8",
+    "pisos_sobre_pb": 40,
+    "texto": "40 pisos."
+   }
+  ],
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Punta Pacífica"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Esta ficha (p.58) sólo presenta Regulación Predial (Altura Máxima) y notas; no repite Vocación del Uso / Usos Permitidos / Prohibidos (mismo código que la Unidad territorial 3 de Punta Pacífica)."
+  ]
+ },
+ {
+  "codigo": "1ZM5 / 1ZM6 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 59
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda multifamiliar.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal, comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, todos con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios (Vocación del Uso)": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio, y servicios al turismo.",
+   "Logística e Industrial (Vocación del Uso)": "Industria de bajo impacto.",
+   "Institucional (Vocación del Uso)": "Oficinas de administración local.",
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera).",
+   "Comercial": "Comercio vecinal, comercio urbano y servicios especializados que no cumpla con las limitaciones establecidas en la Vocación de Uso que antecede.",
+   "Terciario o de Servicios": "Comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales, centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.)",
+   "Cultural": "Biblioteca, centro comunitario, centro cívico y museos. Con un máximo de 500M2 de área de construcción por local.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial y supermercados.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "Biblioteca, centro comunitario, centro cívico y museos, con más de 500M2 de área de construcción por local. Instituciones religiosas.",
+   "Deportivo": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro",
+   "pagina_fin": 61
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Los usos mixtos en esta Unidad Territorial no tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect en el caso de remodelaciones de edificaciones existentes, siempre que (i) no se adicionen pisos y (ii) no se expanda la huella de la edificación en un 50% (área cerrada y techada). De lo contrario, los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Vocación del Uso y Usos Permitidos eran idénticos en ambas columnas (1ZM5 y 1ZM6 Programado), por lo que se registraron como un solo texto. Esta ficha no incluye sección de Regulación Predial (sin dato de Altura Máxima); confirmado con la imagen de la página 61."
+  ]
+ },
+ {
+  "codigo": "1ZM4",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 62
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda multifamiliar.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal, comercio urbano y servicios especializados. Con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios (Vocación del Uso)": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio, y servicios de turismo.",
+   "Logística e industrial (Vocación del Uso)": "Industria de bajo impacto.",
+   "Cultural (Vocación del Uso)": "Biblioteca, centro comunitario, centro cívico y museos. Con un máximo de 500 m2 de área de construcción por local.",
+   "Residencial": "Vivienda unifamiliar (aislada, adosada o en hilera).",
+   "Comercial": "Comercio vecinal, comercio urbano y servicios especializados que no cumpla con las limitaciones establecidas en la Vocación de Uso que antecede; y, Pequeños talleres y almacenes de venta. Con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "Talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Asistencial": "Hospitales, centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Cultural": "Biblioteca, centro comunitario, centro cívico y museos, con más de 500M2 de área de construcción por local. Instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos, bodega de acopio (mayoristas), centro comercial y supermercado.",
+   "Terciario o de Servicios": "Comercio nocturno y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes.",
+   "Institucional": "Centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "Grandes centros deportivos especializados y estadios.",
+   "Infraestructura Transporte": "Embarcadero e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro",
+   "pagina_fin": 63
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Los usos mixtos en esta Unidad Territorial no tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect en el caso de remodelaciones de edificaciones existentes, siempre que (i) no se adicionen pisos y (ii) no se expanda la huella de la edificación en un 50% (área cerrada y techada). De lo contrario, los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 64
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": {
+   "pisos_sobre_pb": 25,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "Esta ficha (p.64) sólo presenta Regulación Predial (Altura Máxima) y notas; no incluye Vocación del Uso / Usos Permitidos / Prohibidos."
+  ]
+ },
+ {
+  "codigo": "1ZM5 / 1ZM6 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 65
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda multifamiliar.",
+   "Terciario o de Servicios (Vocación del Uso)": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio, y servicios de turismo.",
+   "Logística e Industrial (Vocación del Uso)": "Industria de bajo impacto.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal, comercio urbano y servicios especializados con un máximo de 500M2 de área de construcción por local.",
+   "Cultural (Vocación del Uso)": "Biblioteca, centro comunitario, centro cívico y museos. Con un máximo de 500M2 de área de construcción por local.",
+   "Residencial": [
+    {
+     "tipologia": "1ZM5",
+     "texto": "Vivienda unifamiliar (aislada, adosada o en hilera)."
+    },
+    {
+     "tipologia": "1ZM6 Programado",
+     "texto": "N/A."
+    }
+   ],
+   "Comercial": "Comercio vecinal, comercio urbano y servicios especializados, centro comercial, supermercados, pequeños talleres y almacenes de venta que no cumpla con las limitaciones establecidas en la Vocación de Uso que antecede.",
+   "Terciario o de Servicios": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Institucional": "Oficinas de administración local, oficinas de gobierno/alcaldía, estaciones de policía, bomberos, y otras dotaciones",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales, centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Biblioteca, centro comunitario, centro cívico y museos. Con más de 500M2 de área de construcción por local. Instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas).",
+   "Terciario o de Servicios": "Comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento.",
+   "Infraestructura Urbana": "Energía eléctrica (plantas eléctricas).",
+   "Institucional": "Centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro",
+   "pagina_fin": 67
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Los usos mixtos en esta Unidad Territorial no tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect en el caso de remodelaciones de edificaciones existentes, siempre que (i) no se adicionen pisos y (ii) no se expanda la huella de la edificación en un 50% (área cerrada y techada). De lo contrario, los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "El uso 'Residencial' bajo Usos Permitidos difiere entre columnas (1ZM5 vs 1ZM6 Programado) y se registró como lista con 'tipologia'; el resto de campos eran idénticos en ambas columnas."
+  ]
+ },
+ {
+  "codigo": "1ZM6 / 1ZM7 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 5",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 68
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda multifamiliar.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal, comercio urbano y servicios especializados, con un máximo de 500M2 de área de construcción por local.",
+   "Terciario o de Servicios (Vocación del Uso)": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio, comercios nocturnos, centro de convenciones y servicios de turismo.",
+   "Residencial": [
+    {
+     "tipologia": "1ZM6",
+     "texto": "Vivienda unifamiliar (asilada, adosada o en hilera)."
+    },
+    {
+     "tipologia": "1ZM7 Programado",
+     "texto": "N/A."
+    }
+   ],
+   "Comercial": "Comercio vecinal, comercio urbano y servicios especializados que no cumpla con las limitaciones establecidas en la Vocación de Uso que antecede.",
+   "Logística e Industrial": "Industria de bajo impacto, talleres de servicio, reparación y mantenimiento.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales, centros y unidades de salud, asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas.",
+   "Deportivo": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercados, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": [
+    {
+     "tipologia": "1ZM6",
+     "texto": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes."
+    },
+    {
+     "tipologia": "1ZM7 Programado",
+     "texto": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas."
+    }
+   ],
+   "Institucional": "Centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Transporte": [
+    {
+     "tipologia": "1ZM6",
+     "texto": "N/A."
+    },
+    {
+     "tipologia": "1ZM7 Programado",
+     "texto": "Gasolineras e instalaciones complementarias."
+    }
+   ],
+   "Infraestructura Urbana": [
+    {
+     "tipologia": "1ZM6",
+     "texto": "N/A."
+    },
+    {
+     "tipologia": "1ZM7 Programado",
+     "texto": "Energía eléctrica (plantas eléctricas)."
+    }
+   ],
+   "Infraestructura Transporte": [
+    {
+     "tipologia": "1ZM6",
+     "texto": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+    },
+    {
+     "tipologia": "1ZM7 Programado",
+     "texto": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga."
+    }
+   ]
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro",
+   "pagina_fin": 70
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Los usos mixtos en esta Unidad Territorial no tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect en el caso de remodelaciones de edificaciones existentes, siempre que (i) no se adicionen pisos y (ii) no se expanda la huella de la edificación en un 50% (área cerrada y techada). De lo contrario, los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Varios usos prohibidos (Logística e Industrial, Transporte, Infraestructura Urbana, Infraestructura Transporte) difieren entre columnas (1ZM6 vs 1ZM7 Programado) y se registraron como listas con 'tipologia'."
+  ]
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 6",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 71
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": {
+   "pisos_sobre_pb": 25,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "Esta ficha (p.71) sólo presenta Regulación Predial (Altura Máxima) y notas; no incluye Vocación del Uso / Usos Permitidos / Prohibidos."
+  ]
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 7",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 72
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": {
+   "pisos_sobre_pb": 25,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "San Francisco Centro"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "Esta ficha (p.72) sólo presenta Regulación Predial (Altura Máxima) y notas; no incluye Vocación del Uso / Usos Permitidos / Prohibidos."
+  ]
+ },
+ {
+  "codigo": "1R2 / 1R2 Programado (Modalidad de Apartamentos)",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 73
+  },
+  "densidad_max": [
+   {
+    "tipologia": "1R2",
+    "valor": 100,
+    "unidad": "pers/ha",
+    "texto": "100 pers/ha"
+   },
+   {
+    "tipologia": "1R2 Programado",
+    "valor": 100,
+    "unidad": "pers/ha",
+    "texto": "100 pers/ha y 35 viviendas/ha"
+   }
+  ],
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": [
+    {
+     "tipologia": "1R2",
+     "texto": "Vivienda unifamiliar aislada y bifamiliar una sobre otra."
+    },
+    {
+     "tipologia": "1R2 Programado",
+     "texto": "Vivienda en apartamentos."
+    }
+   ],
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": [
+    {
+     "tipologia": "1R2",
+     "texto": "Oficinas de Gobierno/Alcaldía (solo misiones diplomáticas)."
+    },
+    {
+     "tipologia": "1R2 Programado",
+     "texto": "N/A."
+    }
+   ],
+   "Educativo": "N/A.",
+   "Asistencial": "Centros y unidades de salud, asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "N/A.",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": {
+   "area_minima": [
+    {
+     "tipologia": "1R2 - Unifamiliar Aislada",
+     "valor_m2": 800,
+     "texto": "800m2 ·Unifamiliar Asilada"
+    },
+    {
+     "tipologia": "1R2 Programado - Apartamentos",
+     "valor_m2": 2000,
+     "texto": "2,000m2 ·Apartamentos"
+    }
+   ],
+   "frente_minimo": null,
+   "fondo_minimo": null
+  },
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": {
+   "frontal": "La establecida ó 5.00m",
+   "lateral": [
+    {
+     "tipologia": "1R2",
+     "texto": "3m en lateral"
+    },
+    {
+     "tipologia": "1R2 Programado",
+     "texto": "5m en lateral"
+    }
+   ],
+   "posterior": [
+    {
+     "tipologia": "1R2",
+     "texto": "5m en posterior"
+    },
+    {
+     "tipologia": "1R2 Programado",
+     "texto": "7.50m en posterior"
+    }
+   ]
+  },
+  "altura_maxima": [
+   {
+    "tipologia": "1R2",
+    "pisos_sobre_pb": 2,
+    "texto": "PB + 2 pisos."
+   },
+   {
+    "tipologia": "1R2 Programado",
+    "pisos_sobre_pb": 3,
+    "texto": "PB + 3 pisos"
+   }
+  ],
+  "estacionamientos": [
+   "Unidad de Vivienda Dos (2) espacios"
+  ],
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf",
+   "pagina_fin": 75
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "En el 1R2 Programado con Vocación Residencial Multifamiliar los estacionamientos deben ser soterrados o detrás del edificio, ocultándose de la calle. Las portacocheras deben ser cubiertas desde la calle preferiblemente con jardinería. Para estacionamientos a nivel de terreno deben tener pavimento permeable.",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "La tabla de Área Mínima de lote muestra 'Unifamiliar Asilada' (con probable errata 'Asilada' por 'Aislada') repetido dos veces bajo la columna 1R2 en el original (posible artefacto de formato); se copió el texto tal como aparece.",
+   "La densidad máxima del 1R2 Programado combina dos unidades distintas ('100 pers/ha y 35 viviendas/ha'); se dejó 'valor' sólo para el componente en pers/ha."
+  ]
+ },
+ {
+  "codigo": "1R6",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 2",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 76
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda en apartamentos",
+   "Comercial": "Comercial vecinal.",
+   "Terciario o de Servicios": "Oficinas, restaurantes y cafeterías",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "Entidades bancarias, bares y uso de espectáculo y ocio (cines, discotecas).",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "Bibliotecas, centro comunitario, centro cívico, museos instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf",
+   "pagina_fin": 77
+  },
+  "notas": [
+   "Los usos mixtos en esta Unidad Territorial no tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect en el caso de remodelaciones de edificaciones existentes, siempre que (i) no se adicionen pisos y (ii) no se expanda la huella de la edificación en un 50% (área cerrada y techada). De lo contrario, los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT.",
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": [
+   "Posibles erratas literales del original: 'Comercial vecinal.' (en vez de 'Comercio vecinal') y 'museos instituciones religiosas.' (falta 'e' antes de instituciones); se copiaron tal cual."
+  ]
+ },
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 3",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 78
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera.",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Oficinas de Gobierno/Alcaldía (solo misiones diplomáticas).",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf",
+   "pagina_fin": 79
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)."
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM3",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 4",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 80
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar.",
+   "Comercial (Vocación del Uso)": "Comercio vecinal. Comercio urbano y servicios especializados hasta 250 M2 de área de construcción por local.",
+   "Educativo (Vocación del Uso)": "Guardería.",
+   "Comercial": "Comercio urbano y servicios especializados mayor a 250 M2 de área de construcción por local.",
+   "Terciario o de Servicios": "Oficinas, entidades bancarias, restaurantes, cafeterías y servicios de turismo.",
+   "Logística e Industrial": "Industria de bajo impacto.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "Centros y unidades de salud.",
+   "Cultural": "Centro comunitario, centro cívico y museos.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Central de abastos y bodega de acopio (mayoristas), centro comercial, supermercado, pequeños talleres y almacenes de venta.",
+   "Terciario o de Servicios": "Bares, hoteles, alojamientos, uso de espectáculo y ocio, comercios nocturnos y centros de convenciones.",
+   "Logística e Industrial": "Almacenamiento y embalaje de productos no contaminantes.",
+   "Institucional": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto.",
+   "Educativo": "Educación primaria, educación media y educación superior.",
+   "Asistencial": "Hospitales. Asistencial social (asilos, orfanatos, etc.).",
+   "Cultural": "Bibliotecas e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf",
+   "pagina_fin": 81
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "Posible errata literal del original: 'Asistencial social' (en vez de 'Asistencia social'); se copió tal cual."
+  ]
+ },
+ {
+  "codigo": "1ZM7",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 5",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 82
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": {
+   "pisos_sobre_pb": 25,
+   "texto": "25 pisos."
+  },
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "Para los usos mixtos tendrán que incorporar el uso residencial con una densidad mínima de 200 pers/hect., siendo permitido el uso residencial exclusivo. Aplican las excepciones descritas en la página 53 del Tomo 2, Anexo 3 del PLOT."
+  ],
+  "dudas": [
+   "Esta ficha (p.82) sólo presenta Regulación Predial (Altura Máxima) y notas; no incluye Vocación del Uso / Usos Permitidos / Prohibidos."
+  ]
+ },
+ {
+  "codigo": "1R3",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 6",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 83
+  },
+  "densidad_max": null,
+  "usos_permitidos": {
+   "Residencial (Vocación del Uso)": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera.",
+   "Comercial": "N/A.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "N/A.",
+   "Educativo": "N/A.",
+   "Asistencial": "N/A.",
+   "Cultural": "N/A.",
+   "Deportivo": "N/A.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "N/A."
+  },
+  "usos_prohibidos": {
+   "Comercial": "Comercio vecinal.",
+   "Terciario o de Servicios": "N/A.",
+   "Logística e Industrial": "N/A.",
+   "Institucional": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "Educativo": "Guardería, educación primaria, educación media y educación superior.",
+   "Asistencial": "Centros y unidades de salud. Asistencia social (asilos, orfanatos, etc.).",
+   "Cultural": "Centro comunitario, centro cívico e instituciones religiosas.",
+   "Deportivo": "Canchas, polideportivos y piscinas.",
+   "Infraestructura Urbana": "N/A.",
+   "Infraestructura Transporte": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": null,
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Loma Alegre y Altos del Golf",
+   "pagina_fin": 84
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P)"
+  ],
+  "dudas": []
+ },
+ {
+  "codigo": "1ZM7 – 1ZM8 Programado",
+  "nombre": null,
+  "tipo_uso": null,
+  "unidad_territorial": "Unidad Territorial 1",
+  "fuente": {
+   "documento": "250912_Anexo-2-Fichas-Actualizadas-R3_JMP.pdf",
+   "pagina": 85
+  },
+  "densidad_max": null,
+  "usos_permitidos": {},
+  "usos_prohibidos": {},
+  "lote": null,
+  "ocupacion_max": null,
+  "area_libre_min": null,
+  "area_verde_min": null,
+  "retiros": null,
+  "altura_maxima": [
+   {
+    "tipologia": "ZM7",
+    "pisos_sobre_pb": 25,
+    "texto": "25 pisos."
+   },
+   {
+    "tipologia": "ZM8 Programado",
+    "pisos_sobre_pb": 40,
+    "texto": "40 pisos."
+   }
+  ],
+  "estacionamientos": null,
+  "acera_minima": null,
+  "otros": {
+   "barrio": "Boca la Caja"
+  },
+  "notas": [
+   "Las anteriores limitaciones no son aplicables a suelos con categorías de Equipamiento Público (1EP) y Espacio abiertos públicos (1P).",
+   "La implementación del suelo programado en esta Unidad Territorial se encuentra condicionado a la aprobación de un Acuerdo Municipal que regule el proceso y monto de compensación."
+  ],
+  "dudas": [
+   "Esta ficha (p.85) sólo presenta Regulación Predial (Altura Máxima) y notas; no incluye Vocación del Uso / Usos Permitidos / Prohibidos."
+  ]
+ }
+]

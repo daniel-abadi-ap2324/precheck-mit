@@ -1,0 +1,496 @@
+[
+ {
+  "id": "AC-R1C-OCUPACION",
+  "version": 1,
+  "titulo": "R1c: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 14",
+   "pagina_pdf": 46,
+   "cita_textual": "Area de ocupación: -------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R1C', 'R1c', 'r1c']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona R1c).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-R2C-OCUPACION",
+  "version": 1,
+  "titulo": "R2c: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 18",
+   "pagina_pdf": 51,
+   "cita_textual": "Area de ocupación: -------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['R2C', 'R2c', 'r2c']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona R2c).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCV1-OCUPACION",
+  "version": 1,
+  "titulo": "Mcv1: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 25",
+   "pagina_pdf": 60,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV1', 'Mcv1', 'mcv1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcv1).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCV2-OCUPACION",
+  "version": 1,
+  "titulo": "Mcv2: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 25",
+   "pagina_pdf": 61,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV2', 'Mcv2', 'mcv2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcv2).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCV3-OCUPACION",
+  "version": 1,
+  "titulo": "Mcv3: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 25",
+   "pagina_pdf": 62,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCV3', 'Mcv3', 'mcv3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcv3).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCU1-OCUPACION",
+  "version": 1,
+  "titulo": "Mcu1: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 26",
+   "pagina_pdf": 63,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU1', 'Mcu1', 'mcu1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcu1).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCU2-OCUPACION",
+  "version": 1,
+  "titulo": "Mcu2: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 26",
+   "pagina_pdf": 64,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU2', 'Mcu2', 'mcu2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcu2).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-MCU3-OCUPACION",
+  "version": 1,
+  "titulo": "Mcu3: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 26",
+   "pagina_pdf": 66,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['MCU3', 'Mcu3', 'mcu3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Mcu3).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIV1-OCUPACION",
+  "version": 1,
+  "titulo": "Siv1: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 44",
+   "pagina_pdf": 84,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV1', 'Siv1', 'siv1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siv1).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIV2-OCUPACION",
+  "version": 1,
+  "titulo": "Siv2: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 44",
+   "pagina_pdf": 85,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV2', 'Siv2', 'siv2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siv2).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIV3-OCUPACION",
+  "version": 1,
+  "titulo": "Siv3: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 44",
+   "pagina_pdf": 86,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIV3', 'Siv3', 'siv3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siv3).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIU1-OCUPACION",
+  "version": 1,
+  "titulo": "Siu1: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 45",
+   "pagina_pdf": 88,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIU1', 'Siu1', 'siu1']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siu1).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIU2-OCUPACION",
+  "version": 1,
+  "titulo": "Siu2: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 45",
+   "pagina_pdf": 89,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIU2', 'Siu2', 'siu2']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siu2).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-SIU3-OCUPACION",
+  "version": 1,
+  "titulo": "Siu3: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 45",
+   "pagina_pdf": 91,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['SIU3', 'Siu3', 'siu3']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Siu3).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-ESV-OCUPACION",
+  "version": 1,
+  "titulo": "Esv: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 56",
+   "pagina_pdf": 103,
+   "cita_textual": "Area de ocupación: ------- | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['ESV', 'Esv', 'esv']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Esv).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-ESU-OCUPACION",
+  "version": 1,
+  "titulo": "Esu: área de ocupación",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 57",
+   "pagina_pdf": 104,
+   "cita_textual": "Area de ocupación: ------ | 100% restando retiros"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['ESU', 'Esu', 'esu']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La ocupación excede el área que dejan los retiros (zona Esu).",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "100 % restando retiros. Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«100% restando retiros» no fija tope propio: equivale a cumplir los retiros, que ya verifican las reglas de retiro de la zona."
+  }
+ },
+ {
+  "id": "AC-TM-REQUERIMIENTOS-TECNICOS",
+  "version": 1,
+  "titulo": "Tm: restricciones según requerimientos técnicos",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 63",
+   "pagina_pdf": 109,
+   "cita_textual": "Restricciones de Lote: Según requerimientos técnicos"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TM', 'Tm', 'tm']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Las restricciones del lote de la zona Tm dependen de requerimientos técnicos no cargados: revisión manual.",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según requerimientos técnicos» no fija restricción verificable (ficha sin valores); el uso ya lo cubre la regla -USOS."
+  }
+ },
+ {
+  "id": "AC-TA-REQUERIMIENTOS-TECNICOS",
+  "version": 1,
+  "titulo": "Ta: restricciones según requerimientos técnicos",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 64",
+   "pagina_pdf": 110,
+   "cita_textual": "Restricciones de Lote: Según requerimientos técnicos"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TA', 'Ta', 'ta']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Las restricciones del lote de la zona Ta dependen de requerimientos técnicos no cargados: revisión manual.",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según requerimientos técnicos» no fija restricción verificable (ficha sin valores); el uso ya lo cubre la regla -USOS."
+  }
+ },
+ {
+  "id": "AC-TF-REQUERIMIENTOS-TECNICOS",
+  "version": 1,
+  "titulo": "Tf: restricciones según requerimientos técnicos",
+  "fuente": {
+   "norma": "Resolución Nº 160-2002 del Ministerio de Vivienda (Área del Canal)",
+   "articulo": "Artículo 65",
+   "pagina_pdf": 111,
+   "cita_textual": "Restricciones de Lote: Según Requerimientos Técnicos"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-AC-R160-2002' and lote.codigo_zona in ['TF', 'Tf', 'tf']",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Las restricciones del lote de la zona Tf dependen de requerimientos técnicos no cargados: revisión manual.",
+  "vigencia": {
+   "desde": "2002-09-24",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Vigencia desde la publicación en la Gaceta Oficial Nº 24,645 (24-sep-2002; Art. 67: rige a partir de su promulgación en la Gaceta Oficial). El Art. 66 ordena revisarla a los cinco años.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "«Según requerimientos técnicos» no fija restricción verificable (ficha sin valores); el uso ya lo cubre la regla -USOS."
+  }
+ }
+]

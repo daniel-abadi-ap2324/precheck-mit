@@ -1,0 +1,442 @@
+[
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 1,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 1,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 1,
+  "codigo": "R6",
+  "programado": true,
+  "pagina_anexo2": 1,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 2,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 3,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 3,
+  "codigo": "R6",
+  "programado": false,
+  "pagina_anexo2": 5,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 4,
+  "codigo": "ZM3",
+  "programado": false,
+  "pagina_anexo2": 7,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 5,
+  "codigo": "ZM4",
+  "programado": false,
+  "pagina_anexo2": 9,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 6,
+  "codigo": "ZM5",
+  "programado": false,
+  "pagina_anexo2": 11,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 7,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 13,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 8,
+  "codigo": "ZM3",
+  "programado": false,
+  "pagina_anexo2": 14,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 9,
+  "codigo": "ZM4",
+  "programado": false,
+  "pagina_anexo2": 16,
+  "base_plot": true
+ },
+ {
+  "sector": "Villa Lilla",
+  "unidad_territorial": 10,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 18,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 1,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 19,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 2,
+  "codigo": "RM1",
+  "programado": false,
+  "pagina_anexo2": 21,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 3,
+  "codigo": "ZM5",
+  "programado": false,
+  "pagina_anexo2": 23,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 3,
+  "codigo": "ZM6",
+  "programado": true,
+  "pagina_anexo2": 23,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 4,
+  "codigo": "RM1",
+  "programado": false,
+  "pagina_anexo2": 26,
+  "base_plot": true
+ },
+ {
+  "sector": "Coco del Mar",
+  "unidad_territorial": 5,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 28,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 1,
+  "codigo": "R6",
+  "programado": false,
+  "pagina_anexo2": 30,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 2,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 32,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 3,
+  "codigo": "RM1",
+  "programado": false,
+  "pagina_anexo2": 34,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 4,
+  "codigo": "RM1",
+  "programado": false,
+  "pagina_anexo2": 36,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 5,
+  "codigo": "ZM8",
+  "programado": false,
+  "pagina_anexo2": 38,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 6,
+  "codigo": "ZM3",
+  "programado": false,
+  "pagina_anexo2": 40,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 6,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 40,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 7,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 43,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 7,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 43,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 8,
+  "codigo": "RM1",
+  "programado": false,
+  "pagina_anexo2": 46,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 9,
+  "codigo": "R6",
+  "programado": false,
+  "pagina_anexo2": 48,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 10,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 50,
+  "base_plot": true
+ },
+ {
+  "sector": "Paitilla",
+  "unidad_territorial": 10,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 50,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 1,
+  "codigo": "R2",
+  "programado": false,
+  "pagina_anexo2": 51,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 2,
+  "codigo": "RM",
+  "programado": false,
+  "pagina_anexo2": 53,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 3,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 55,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 3,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 55,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 4,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 58,
+  "base_plot": true
+ },
+ {
+  "sector": "Punta Pacífica",
+  "unidad_territorial": 4,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 58,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 1,
+  "codigo": "ZM5",
+  "programado": false,
+  "pagina_anexo2": 59,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 1,
+  "codigo": "ZM6",
+  "programado": true,
+  "pagina_anexo2": 59,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 2,
+  "codigo": "ZM4",
+  "programado": false,
+  "pagina_anexo2": 62,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 3,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 64,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 4,
+  "codigo": "ZM5",
+  "programado": false,
+  "pagina_anexo2": 65,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 4,
+  "codigo": "ZM6",
+  "programado": true,
+  "pagina_anexo2": 65,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 5,
+  "codigo": "ZM6",
+  "programado": false,
+  "pagina_anexo2": 68,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 5,
+  "codigo": "ZM7",
+  "programado": true,
+  "pagina_anexo2": 68,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 6,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 71,
+  "base_plot": true
+ },
+ {
+  "sector": "San Francisco Centro",
+  "unidad_territorial": 7,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 72,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 1,
+  "codigo": "R2",
+  "programado": false,
+  "pagina_anexo2": 73,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 1,
+  "codigo": "R2",
+  "programado": true,
+  "pagina_anexo2": 73,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 2,
+  "codigo": "R6",
+  "programado": false,
+  "pagina_anexo2": 76,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 3,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 78,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 4,
+  "codigo": "ZM3",
+  "programado": false,
+  "pagina_anexo2": 80,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 5,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 82,
+  "base_plot": true
+ },
+ {
+  "sector": "Loma Alegre y Altos del Golf",
+  "unidad_territorial": 6,
+  "codigo": "R3",
+  "programado": false,
+  "pagina_anexo2": 83,
+  "base_plot": true
+ },
+ {
+  "sector": "Boca la Caja",
+  "unidad_territorial": 1,
+  "codigo": "ZM7",
+  "programado": false,
+  "pagina_anexo2": 85,
+  "base_plot": true
+ },
+ {
+  "sector": "Boca la Caja",
+  "unidad_territorial": 1,
+  "codigo": "ZM8",
+  "programado": true,
+  "pagina_anexo2": 85,
+  "base_plot": true
+ }
+]

@@ -1,0 +1,2220 @@
+[
+ {
+  "codigo": "R1",
+  "codigo_mapa": "1R1",
+  "nombre": "RESIDENCIAL DE BAJA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 2,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 50,
+  "densidad_texto": "50 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 1500,
+    "texto": "1,500m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 50,
+   "texto": "50% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 50,
+   "texto": "50%"
+  },
+  "area_verde": {
+   "texto": "50% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "La establecida ó 5.00 m",
+   "lateral": "3 m en laterales",
+   "posterior": "5 m en posterior"
+  },
+  "altura_texto": "PB + 2 Pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "Unidad de Vivienda: Dos (2) espacios",
+   "Actividades Permitidas: Uno (1) cada 60m2",
+   "Discapacitados: Uno (1) de Carga/Descarga",
+   "Norma Vigente"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar aislada y bifamiliar una sobre otra",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "N/A",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Centro comunitario, centro cívico e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "El renglón de estacionamientos 'Discapacitados' aparece junto con los textos 'Uno (1) de Carga/Descarga' y 'Norma Vigente'; no es clara la asociación exacta entre etiquetas y valores en la tabla original."
+  ]
+ },
+ {
+  "codigo": "R2",
+  "codigo_mapa": "1R2",
+  "nombre": "RESIDENCIAL DE BAJA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 3,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 100,
+  "densidad_texto": "100 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Unifamiliar Aislada",
+    "valor_m2": 800,
+    "texto": "800 m2"
+   },
+   {
+    "tipologia": "Bif. Una sobre otra",
+    "valor_m2": 800,
+    "texto": "800 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 50,
+   "texto": "50% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 50,
+   "texto": "50%"
+  },
+  "area_verde": {
+   "texto": "40% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "La establecida ó 5.00 m",
+   "lateral": "3 m en lateral",
+   "posterior": "5 m en posterior"
+  },
+  "altura_texto": "PB + 2 Pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "Unidad de Vivienda: Dos (2) espacios"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar aislada y bifamiliar una sobre otra",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "N/A",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Centro comunitario, centro cívico e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": []
+ },
+ {
+  "codigo": "R3",
+  "codigo_mapa": "1R3",
+  "nombre": "RESIDENCIAL DE BAJA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 4,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 200,
+  "densidad_texto": "200 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Unifamiliar Aislada",
+    "valor_m2": 400,
+    "texto": "400 m2"
+   },
+   {
+    "tipologia": "Bif. Una sobre otra",
+    "valor_m2": 400,
+    "texto": "400 m2"
+   },
+   {
+    "tipologia": "Bif. Adosada",
+    "valor_m2": 200,
+    "texto": "200m2"
+   },
+   {
+    "tipologia": "Hilera",
+    "valor_m2": 200,
+    "texto": "200 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": "A",
+    "valor_m": 14,
+    "texto": "14m (A)"
+   },
+   {
+    "tipologia": "B",
+    "valor_m": 7,
+    "texto": "7m (B)"
+   },
+   {
+    "tipologia": "C",
+    "valor_m": 7,
+    "texto": "7m (C)"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 60,
+   "texto": "60% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 40,
+   "texto": "40%"
+  },
+  "area_verde": {
+   "texto": "15% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "La establecida ó 5.00 m",
+   "lateral": "1.50 m en lateral (A y B)",
+   "posterior": "3 m en posterior"
+  },
+  "altura_texto": "PB + 2 Pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "N/A",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Centro comunitario, centro cívico e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": []
+ },
+ {
+  "codigo": "R4",
+  "codigo_mapa": "1R4",
+  "nombre": "RESIDENCIAL DE MEDIANA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 5,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 300,
+  "densidad_texto": "300 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Unifamiliar Aislada",
+    "valor_m2": 160,
+    "texto": "160 m2"
+   },
+   {
+    "tipologia": "Bif. Una sobre otra",
+    "valor_m2": 160,
+    "texto": "160 m2"
+   },
+   {
+    "tipologia": "Bif. Adosada",
+    "valor_m2": 100,
+    "texto": "100m2"
+   },
+   {
+    "tipologia": "Hilera",
+    "valor_m2": 100,
+    "texto": "100 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": "A",
+    "valor_m": 9,
+    "texto": "9m (A)"
+   },
+   {
+    "tipologia": "B",
+    "valor_m": 6,
+    "texto": "6m (B)"
+   },
+   {
+    "tipologia": "C",
+    "valor_m": 6,
+    "texto": "6m (C)"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 70,
+   "texto": "70% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 30,
+   "texto": "30%"
+  },
+  "area_verde": {
+   "texto": "15% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "La establecida ó 2.50m; 0 en B y C",
+   "lateral": "1.50 m en lateral (A y B)",
+   "posterior": "2.50 m en posterior"
+  },
+  "altura_texto": "PB + 2 Pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio; 0.5 (B y C)"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "N/A",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Centro comunitario, centro cívico e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": []
+ },
+ {
+  "codigo": "R5",
+  "codigo_mapa": "1R5",
+  "nombre": "RESIDENCIAL DE MEDIANA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 6,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 400,
+  "densidad_texto": "400 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Unifamiliar Aislada",
+    "valor_m2": 80,
+    "texto": "80 m2"
+   },
+   {
+    "tipologia": "Bif. Una sobre otra",
+    "valor_m2": 80,
+    "texto": "80 m2"
+   },
+   {
+    "tipologia": "Bif. Adosada",
+    "valor_m2": 80,
+    "texto": "80m2"
+   },
+   {
+    "tipologia": "Hilera",
+    "valor_m2": 80,
+    "texto": "80 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": "A",
+    "valor_m": 7,
+    "texto": "7m (A)"
+   },
+   {
+    "tipologia": "B",
+    "valor_m": 6,
+    "texto": "6m (B)"
+   },
+   {
+    "tipologia": "C",
+    "valor_m": 6,
+    "texto": "6m (C)"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 20,
+   "texto": "20%"
+  },
+  "area_verde": {
+   "texto": "20% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "La establecida ó 2.50m; 0 en B y C",
+   "lateral": "1.5 m en lateral (A y B)",
+   "posterior": "2.50 m en posterior"
+  },
+  "altura_texto": "PB + 2 Pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "Unidad de Vivienda: 0 por vivienda"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar aislada, bifamiliar una sobre otra, bifamiliar adosada e hilera",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "N/A",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud. Asistencia Social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Centro comunitario, centro cívico e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": []
+ },
+ {
+  "codigo": "R6",
+  "codigo_mapa": "1R6",
+  "nombre": "RESIDENCIAL MULTIFAMILIAR DE MEDIANA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 7,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 600,
+  "densidad_texto": "600 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Apartamentos",
+    "valor_m2": 600,
+    "texto": "600m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 16,
+    "texto": "16 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según calle",
+   "lateral": "0 si es muro ciego (Z) ó 2.50m para muros con aberturas",
+   "posterior": "0 si es muro ciego (Z) ó 2.50m para muros con aberturas"
+  },
+  "altura_texto": "4 pisos",
+  "pisos_totales": 4,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 3.0,
+   "texto": "3.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda en apartamentos",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('4 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca."
+  ]
+ },
+ {
+  "codigo": "RE",
+  "codigo_mapa": "1RE",
+  "nombre": "RESIDENCIAL DE MEDIANA DENSIDAD EN PARCELA IRREGULAR",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 8,
+  "pagina_resumen": 35,
+  "densidad_max_pers_ha": 500,
+  "densidad_texto": "500 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Unifamiliar Aislada",
+    "valor_m2": null,
+    "texto": "Libre"
+   },
+   {
+    "tipologia": "Bifamiliares",
+    "valor_m2": null,
+    "texto": "Libre"
+   },
+   {
+    "tipologia": "Hilera",
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% (huella)"
+  },
+  "area_libre": {
+   "valor_pct": 20,
+   "texto": "20%"
+  },
+  "area_verde": {
+   "texto": "20% del Área Libre"
+  },
+  "retiros": {
+   "frontal": "Libre",
+   "lateral": "Libre",
+   "posterior": "2.50 m en posterior"
+  },
+  "altura_texto": "PB + Tres (3) Pisos",
+  "pisos_totales": 4,
+  "estacionamientos": [
+   "Unidad de Vivienda: 0"
+  ],
+  "acera_minima": {
+   "valor_m": 1.2,
+   "texto": "1.20m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar",
+   "COMERCIAL": "Comercio vecinal, comercio urbano, servicios especializados, supermercados, pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": []
+ },
+ {
+  "codigo": "RM",
+  "codigo_mapa": "1RM",
+  "nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 9,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 1000,
+  "densidad_texto": "1,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Apartamentos",
+    "valor_m2": 600,
+    "texto": "600m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 16,
+    "texto": "16 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+1"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según calle",
+   "lateral": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas. Demás pisos: 2.50m",
+   "posterior": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas. Demás pisos: 2.50m"
+  },
+  "altura_texto": "10 pisos",
+  "pisos_totales": 10,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 3.0,
+   "texto": "3.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda en apartamentos",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('10 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca."
+  ]
+ },
+ {
+  "codigo": "RM-1",
+  "codigo_mapa": "1RM-1",
+  "nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 10,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 1200,
+  "densidad_texto": "1,200 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Apartamentos",
+    "valor_m2": 600,
+    "texto": "600m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+2"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5m",
+   "lateral": "(PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+   "posterior": "(PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m"
+  },
+  "altura_texto": "20 pisos",
+  "pisos_totales": 20,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda en apartamentos",
+   "COMERCIAL": "Comercio vecinal, comercio urbano y servicios especializados",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('20 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca."
+  ]
+ },
+ {
+  "codigo": "RM-2",
+  "codigo_mapa": "1RM-2",
+  "nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 11,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 1500,
+  "densidad_texto": "1,500 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Apartamentos",
+    "valor_m2": 800,
+    "texto": "800m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+3"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5m",
+   "lateral": "(PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+   "posterior": "(PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m"
+  },
+  "altura_texto": "40 pisos",
+  "pisos_totales": 40,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda en apartamentos",
+   "COMERCIAL": "Comercio vecinal, comercio urbano y servicios especializados",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('40 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca."
+  ]
+ },
+ {
+  "codigo": "RM-3",
+  "codigo_mapa": "1RM-3",
+  "nombre": "RESIDENCIAL MULTIFAMILIAR DE ALTA DENSIDAD",
+  "tipo_uso": "USO DE SUELO RESIDENCIAL",
+  "pagina_ficha": 12,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 2000,
+  "densidad_texto": "2,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": "Apartamentos",
+    "valor_m2": 800,
+    "texto": "800 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+4"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5m",
+   "lateral": "(PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m",
+   "posterior": "(PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas. Demás pisos: 3.00m"
+  },
+  "altura_texto": "80 pisos",
+  "pisos_totales": 80,
+  "estacionamientos": [
+   "Unidad de Vivienda: Un (1) espacio"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda en apartamentos",
+   "COMERCIAL": "Comercio vecinal,  comercio urbano y servicios especializados",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías y uso de espectáculo y ocio (cines, discotecas)",
+   "LOGISTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones.",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos, gasolineras e instalaciones complementarias."
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('80 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca."
+  ]
+ },
+ {
+  "codigo": "ZM1",
+  "codigo_mapa": "1ZM1",
+  "nombre": "ZONA MIXTA DE BAJA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 13,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 200,
+  "densidad_texto": "200 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 2.50m",
+   "lateral": "Muro ciego si se adosa a la LP ó 1.50m para muros con aberturas.",
+   "posterior": "Muro ciego si se adosa a la LP ó 1.50m para muros con aberturas."
+  },
+  "altura_texto": "2 pisos",
+  "pisos_totales": 2,
+  "estacionamientos": [
+   "Libre"
+  ],
+  "acera_minima": {
+   "valor_m": 3.0,
+   "texto": "3.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas) | Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo | Comercios nocturnos y centros de convenciones",
+   "LOGISTICA E INDUSTRIAL": "Industria de bajo impacto | Almacenamiento y embalaje de productos no contaminantes",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "La altura máxima se expresa como número de pisos totales ('2 pisos') sin el formato 'PB + N', por lo que no se infiere 'pisos_sobre_pb' de forma inequívoca.",
+   "La ficha distingue 'VOCACIÓN DEL USO' (uso base) de 'USOS PERMITIDOS' (usos adicionales); para COMERCIAL, TERCIARIO O SERVICIOS y LOGÍSTICA E INDUSTRIAL, que aparecen con textos distintos en ambas secciones, se combinaron los dos textos literales separados por ' | ' dentro de 'usos_permitidos'."
+  ]
+ },
+ {
+  "codigo": "ZM2",
+  "codigo_mapa": "1ZM2",
+  "nombre": "ZONA MIXTA DE BAJA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 14,
+  "pagina_resumen": 36,
+  "densidad_max_pers_ha": 800,
+  "densidad_texto": "800 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 2.50m",
+   "lateral": "Muro ciego si se adosa a la LP (Z) ó 1.50m para muros con aberturas.",
+   "posterior": "Muro ciego si se adosa a la LP (Z) ó 1.50m para muros con aberturas."
+  },
+  "altura_texto": "4 pisos",
+  "pisos_totales": 4,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 3.0,
+   "texto": "3.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS (USOS PERMITIDOS)": "Comercios nocturnos y centros de convenciones",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Almacenamiento y embalaje de productos no contaminantes",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca."
+  ]
+ },
+ {
+  "codigo": "ZM3",
+  "codigo_mapa": "1ZM3",
+  "nombre": "ZONA MIXTA DE BAJA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 15,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 1000,
+  "densidad_texto": "1,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+1"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 2.50m",
+   "lateral": "Muro ciego si se adosa a la LP (Z) ó 1.50m para muros con aberturas.",
+   "posterior": "Muro ciego si se adosa a la LP (Z) ó 1.50m para muros con aberturas."
+  },
+  "altura_texto": "6 pisos",
+  "pisos_totales": 6,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 3.0,
+   "texto": "3.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda unifamiliar (aislada, adosada o en hilera) y vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Canchas, polideportivos y piscinas.",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS (USOS PERMITIDOS)": "Comercios nocturnos y centros de convenciones",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Almacenamiento y embalaje de productos no contaminantes",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca."
+  ]
+ },
+ {
+  "codigo": "ZM4",
+  "codigo_mapa": "1ZM4",
+  "nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 16,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 1500,
+  "densidad_texto": "1,500 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 400,
+    "texto": "400 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+1"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m",
+   "posterior": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m"
+  },
+  "altura_texto": "8 pisos",
+  "pisos_totales": 8,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "RESIDENCIAL (USOS PERMITIDOS)": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS (USOS PERMITIDOS)": "Comercios nocturnos y centros de convenciones",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+1): muro ciego...\" y \"Demás pisos: 2.50m\"); se unieron con \";\" conservando el texto literal de cada viñeta."
+  ]
+ },
+ {
+  "codigo": "ZM5",
+  "codigo_mapa": "1ZM5",
+  "nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 17,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 1500,
+  "densidad_texto": "1,500 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 600,
+    "texto": "600 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 16,
+    "texto": "16 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+1"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m",
+   "posterior": "(PB+1): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m"
+  },
+  "altura_texto": "10 pisos",
+  "pisos_totales": 10,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "RESIDENCIAL (USOS PERMITIDOS)": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS (USOS PERMITIDOS)": "Comercios nocturnos y centros de convenciones",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+1): muro ciego...\" y \"Demás pisos: 2.50m\"); se unieron con \";\" conservando el texto literal de cada viñeta."
+  ]
+ },
+ {
+  "codigo": "ZM6",
+  "codigo_mapa": "1ZM6",
+  "nombre": "ZONA MIXTA DE MEDIANA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 18,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 2000,
+  "densidad_texto": "2,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 600,
+    "texto": "600 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 16,
+    "texto": "16 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+2"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+2): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m",
+   "posterior": "(PB+2): muro ciego si se adosa a la LP (Z) ó 2.50m para muros con aberturas; Demás pisos: 2.50m"
+  },
+  "altura_texto": "15 pisos",
+  "pisos_totales": 15,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "RESIDENCIAL (USOS PERMITIDOS)": "Vivienda unifamiliar (aislada, adosada o en hilera)",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano, servicios especializados, centro comercial, supermercados,  pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS (USOS PERMITIDOS)": "Comercios nocturnos y centros de convenciones",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Almacenamiento y embalaje de productos no contaminantes, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+2): muro ciego...\" y \"Demás pisos: 2.50m\"); se unieron con \";\" conservando el texto literal de cada viñeta."
+  ]
+ },
+ {
+  "codigo": "ZM7",
+  "codigo_mapa": "1ZM7",
+  "nombre": "ZONA MIXTA DE ALTA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 19,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 2000,
+  "densidad_texto": "2,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 600,
+    "texto": "600 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+2"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m",
+   "posterior": "(PB+2): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m"
+  },
+  "altura_texto": "20 pisos",
+  "pisos_totales": 20,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "TRANSPORTE": "Gasolineras e instalaciones complementarias",
+   "LOGÍSTICA E INDUSTRIAL (INFRAESTRUCTURA)": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (Plantas eléctricas)",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+2): muro ciego...\" y \"Demás pisos: 3.00m\"); se unieron con \";\" conservando el texto literal de cada viñeta."
+  ]
+ },
+ {
+  "codigo": "ZM8",
+  "codigo_mapa": "1ZM8",
+  "nombre": "ZONA MIXTA DE ALTA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 20,
+  "pagina_resumen": 37,
+  "densidad_max_pers_ha": 2000,
+  "densidad_texto": "2,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 800,
+    "texto": "800 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+3"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m",
+   "posterior": "(PB+3): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m"
+  },
+  "altura_texto": "40 pisos",
+  "pisos_totales": 40,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "TRANSPORTE": "Gasolineras e instalaciones complementarias",
+   "LOGÍSTICA E INDUSTRIAL (INFRAESTRUCTURA)": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (Plantas eléctricas)",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+3): muro ciego...\" y \"Demás pisos: 3.00m\"); se unieron con \";\" conservando el texto literal de cada viñeta."
+  ]
+ },
+ {
+  "codigo": "ZM9",
+  "codigo_mapa": "1ZM9",
+  "nombre": "ZONA MIXTA DE ALTA INTENSIDAD",
+  "tipo_uso": "USO DE SUELO MIXTO",
+  "pagina_ficha": 21,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": 2000,
+  "densidad_texto": "2,000 pers/ha",
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 800,
+    "texto": "800 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 80,
+   "texto": "80% o según retiros en PB+4"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido ó 5.00m",
+   "lateral": "(PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m",
+   "posterior": "(PB+4): muro ciego si se adosa a la LP (Z) ó 3.00m para muros con aberturas; Demás pisos: 3.00m"
+  },
+  "altura_texto": "80 pisos",
+  "pisos_totales": 80,
+  "estacionamientos": [
+   "Unidad de vivienda: 0.5",
+   "Comercio y servicio: 1 por cada 60m2"
+  ],
+  "acera_minima": {
+   "valor_m": 5.0,
+   "texto": "5.00m"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Comercio urbano y servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Oficinas, entidades bancarias, restaurantes, bares, cafeterías, hoteles, alojamientos, uso de espectáculo y ocio (cines, discotecas), comercios nocturnos, centro de convenciones y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería, educación primaria, educación media y educación superior",
+   "ASISTENCIAL": "Hospitales, centros y unidades de salud  asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centro comunitario, centro cívico, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas.",
+   "TRANSPORTE": "Gasolineras e instalaciones complementarias",
+   "LOGÍSTICA E INDUSTRIAL (INFRAESTRUCTURA)": "Logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas, talleres de servicio, reparación y mantenimiento",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (Plantas eléctricas)",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+  },
+  "otros": {},
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO MIXTO\") no aparece literalmente en esta página; se infiere del título de sección que aparece en la página 13 (ficha ZM1), primera de esta serie, ya que el título no se repite en cada página siguiente.",
+   "El texto de 'altura_maxima' es un número total de pisos (no en formato \"PB+N\"), por lo que 'pisos_sobre_pb' se deja en null para evitar una interpretación no inequívoca.",
+   "El retiro lateral/posterior combina dos viñetas del original (\"(PB+4): muro ciego...\" y \"Demás pisos: 3.00m\"); se unieron con \";\" conservando el texto literal de cada viñeta.",
+   "La altura máxima de 80 pisos es el valor literal impreso en la ficha; se destaca por ser un valor atípicamente alto que podría ser una errata del documento original, pero se transcribe tal como aparece."
+  ]
+ },
+ {
+  "codigo": "CV",
+  "codigo_mapa": "1CV",
+  "nombre": "COMERCIAL VECINAL",
+  "tipo_uso": "USO DE SUELO COMERCIAL",
+  "pagina_ficha": 22,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 12,
+    "texto": "12 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 100,
+   "texto": "100% del área construible"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido o 5.00 m",
+   "lateral": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas",
+   "posterior": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 60 m2 de comercio y servicio"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "Vivienda multifamiliar",
+   "COMERCIAL": "Comercio vecinal, pequeños talleres y almacenes de venta",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes",
+   "INSTITUCIONAL": "Oficinas gobierno/alcaldía, oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones",
+   "EDUCATIVO": "Guardería y educación primaria, educación media y superior",
+   "ASISTENCIAL": "Centros y unidad de salud, asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas",
+   "DEPORTIVO": "Canchas y polideportivos",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias y terminal de transporte terrestre e instalaciones complementarias",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio urbano y servicios especializados",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Talleres de servicio, reparación y mantenimiento",
+   "DEPORTIVO (USOS PERMITIDOS)": "Grandes centros deportivos especializados, estadios y piscinas",
+   "INFRAESTRUCTURA URBANA": "N/A",
+   "INFRAESTRUCTURA TRANSPORTE (USOS PERMITIDOS)": "Aeródromos e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga"
+  },
+  "otros": {
+   "plan_local_distrital": "N/A"
+  },
+  "dudas": [
+   "El campo 'tipo_uso' (\"USO DE SUELO COMERCIAL\") sí aparece literalmente como título en esta página."
+  ]
+ },
+ {
+  "codigo": "CU",
+  "codigo_mapa": "1CU",
+  "nombre": "COMERCIAL URBANO",
+  "tipo_uso": "USO DE SUELO COMERCIAL",
+  "pagina_ficha": 23,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 1000,
+    "texto": "1,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 60,
+   "texto": "60%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Lo establecido o 5.00 m",
+   "lateral": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas",
+   "posterior": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 60 m2 de comercio y servicio"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "COMERCIAL": "Comercio urbano, servicios especializados, centro comercial, supermercados, central de abastos y bodega de acopio (mayoristas)",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venta de sustancias tóxicas y peligrosas y talleres de servicio, reparación y mantenimiento",
+   "INSTITUCIONAL": "Oficinas de administración local, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería y educación primaria, educación media y superior",
+   "ASISTENCIAL": "Hospitales, centros y unidad de salud, asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos, museos e instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas, polideportivos, estadios y piscinas",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias y estacionamiento de vehículos pesados, buses o vehículos de carga",
+   "RESIDENCIAL (USOS PERMITIDOS)": "N/A",
+   "COMERCIAL (USOS PERMITIDOS)": "Pequeños talleres y almacenes de venta",
+   "LOGÍSTICA E INDUSTRIAL (USOS PERMITIDOS)": "Logística y servicios",
+   "INSTITUCIONAL (USOS PERMITIDOS)": "Oficinas de Gobierno/Alcaldía",
+   "INFRAESTRUCTURA TRANSPORTE (USOS PERMITIDOS)": "Aeródromos e instalaciones complementarias"
+  },
+  "otros": {
+   "plan_local_distrital": "N/A"
+  },
+  "dudas": [
+   "El título de sección \"USO DE SUELO COMERCIAL\" no aparece literalmente en esta página (p23); se infiere de la página 22 (CV), primera ficha de esta serie de uso comercial.",
+   "El encabezado de esta ficha dice \"ACERA MÍNIMA\" sin el sufijo \"(A)\" (a diferencia de otras fichas); se preserva tal cual."
+  ]
+ },
+ {
+  "codigo": "PM",
+  "codigo_mapa": "1PM",
+  "nombre": "PRODUCTIVO MANUFACTURA",
+  "tipo_uso": "USO DE SUELO PRODUCTIVO: LOGÍSTICA E INDUSTRIAL",
+  "pagina_ficha": 24,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 1000,
+    "texto": "1,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 70,
+   "texto": "70%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según categoría de vía",
+   "lateral": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas",
+   "posterior": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 150 m2 de productivo",
+   "1 por cada 60 m2 de oficinas"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "COMERCIAL": "Pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos",
+   "RESIDENCIAL (USOS PERMITIDOS)": "N/A",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas)",
+   "INSTITUCIONAL (USOS PERMITIDOS)": "Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería y educación primaria, educación media y superior",
+   "ASISTENCIAL": "Hospitales,  centros y unidad de salud, asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE (USOS PERMITIDOS)": "Terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {
+   "plan_local_distrital": "N/A"
+  },
+  "dudas": [
+   "El encabezado \"ALTURA MÁXIMA\" en esta página no lleva el sufijo \"(H)\"; se preserva tal cual."
+  ]
+ },
+ {
+  "codigo": "P",
+  "codigo_mapa": "1P",
+  "nombre": "PRODUCTIVO LOGÍSTICA",
+  "tipo_uso": "USO DE SUELO PRODUCTIVO: LOGÍSTICA E INDUSTRIAL",
+  "pagina_ficha": 25,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 1000,
+    "texto": "1,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 70,
+   "texto": "70%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según categoría de vía",
+   "lateral": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas",
+   "posterior": "PB+2: muro ciego si se adosa a la LP ó 2.50m para muros con aberturas"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 150 m2 de productivo",
+   "1 por cada 60 m2 de oficinas"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "COMERCIAL": "Pequeños talleres y almacenes de venta",
+   "TERCIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos, espectáculo y ocio (cines, discotecas) comercios nocturnos, centros de convenciones, servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "Industria de bajo impacto, industria mecanizada, automatizada y manufactura, logística y servicios, almacenamiento y embalaje de productos no contaminantes, almacenamiento y venda de sustancias tóxicas y peligrosas , talleres de servicio, reparación y mantenimiento",
+   "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos",
+   "RESIDENCIAL (USOS PERMITIDOS)": "N/A",
+   "COMERCIAL (USOS PERMITIDOS)": "Comercio vecinal, comercio urbano y servicios especializados, central de abastos y bodega de acopio (mayoristas)",
+   "INSTITUCIONAL (USOS PERMITIDOS)": "Oficinas de gobierno/alcaldía, oficinas de administración local, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVO": "Guardería y educación primaria, educación media y superior",
+   "ASISTENCIAL": "Hospitales,  centros y unidad de salud, asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE (USOS PERMITIDOS)": "Terminal de transporte terrestre e instalaciones complementarias"
+  },
+  "otros": {
+   "plan_local_distrital": "N/A"
+  },
+  "dudas": [
+   "El título de sección \"USO DE SUELO PRODUCTIVO: LOGÍSTICA E INDUSTRIAL\" no aparece literalmente en esta página (p25); se infiere de la página 24 (PM), primera ficha de esta serie."
+  ]
+ },
+ {
+  "codigo": "PV",
+  "codigo_mapa": "1PV",
+  "nombre": "PARQUE VECINAL",
+  "tipo_uso": "USO DE SUELO ESPACIOS RECREATIVOS ABIERTOS",
+  "pagina_ficha": 26,
+  "pagina_resumen": 38,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 2000,
+    "texto": "2,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "N/A"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 5,
+   "texto": "5%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según categoría de vía",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "N/A",
+  "pisos_totales": null,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "N/A",
+   "EDUCATIVO": "N/A",
+   "ASISTENCIAL": "N/A",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos y museos",
+   "DEPORTIVO": "Canchas, polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias"
+  },
+  "otros": {
+   "plan_local_distrital": "N/A"
+  },
+  "dudas": [
+   "Esta ficha (PV) no tiene sección 'VOCACIÓN DEL USO' separada; solo presenta una tabla única de 'USOS PERMITIDOS', a diferencia de las demás fichas de este lote."
+  ]
+ },
+ {
+  "codigo": "PL",
+  "codigo_mapa": "1PL",
+  "nombre": "PLAZA",
+  "tipo_uso": null,
+  "pagina_ficha": 27,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 1000,
+    "texto": "1,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "N/A"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 5,
+   "texto": "5%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "N/A",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "1 piso",
+  "pisos_totales": 1,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "N/A",
+   "EDUCATIVO": "N/A",
+   "ASISTENCIAL": "N/A",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos y museos",
+   "DEPORTIVO": "Canchas, polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página."
+  ]
+ },
+ {
+  "codigo": "PU",
+  "codigo_mapa": "1PU",
+  "nombre": "PARQUE URBANO",
+  "tipo_uso": null,
+  "pagina_ficha": 28,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 100000,
+    "texto": "100,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "N/A"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 20,
+   "texto": "20%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "N/A",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "N/A",
+   "EDUCATIVO": "N/A",
+   "ASISTENCIAL": "N/A",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos y museos",
+   "DEPORTIVO": "Canchas, polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página."
+  ]
+ },
+ {
+  "codigo": "PD",
+  "codigo_mapa": "1PD",
+  "nombre": "PARQUE DISTRITAL",
+  "tipo_uso": null,
+  "pagina_ficha": 29,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 300000,
+    "texto": "300,000 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "N/A"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": 20,
+   "texto": "20%"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "N/A",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio vecinal",
+   "TERCIARIO O SERVICIOS": "Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas) y servicios al turismo",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "N/A",
+   "EDUCATIVO": "N/A",
+   "ASISTENCIAL": "N/A",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos y museos",
+   "DEPORTIVO": "Canchas, polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+   "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias"
+  },
+  "otros": {},
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página."
+  ]
+ },
+ {
+  "codigo": "EP",
+  "codigo_mapa": "1EP",
+  "nombre": "EQUIPAMIENTO PÚBLICO",
+  "tipo_uso": "USO DE SUELO INSTITUCIONAL",
+  "pagina_ficha": 30,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "N/A"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": null,
+   "texto": "N/A"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "Según categoría de vía",
+   "lateral": "Según la norma de las áreas colindantes",
+   "posterior": "Según la norma de las áreas colindantes"
+  },
+  "altura_texto": "Según la norma de las áreas colindantes",
+  "pisos_totales": null,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "COMERCIAL": "Comercio vecinal, central de abastos y bodega de acopio (mayoristas)",
+   "TERCIARIO O SERVICIOS": "Centro de convenciones",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía, oficinas de administración local,, estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+   "EDUCATIVOS": "Guardería y educación primaria, educación media y superior",
+   "ASISTENCIAL": "Hospitales,  centros y unidad de salud, asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas, centros comunitarios, centros cívicos, museos, instituciones religiosas, cementerios y servicios funerarios",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas",
+   "INFRAESTRUCTURA TRANSPORTE": "Aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga"
+  },
+  "otros": {
+   "INFRAESTRUCTURA (tabla adicional de la ficha)": {
+    "RESIDENCIAL": "N/A",
+    "TERCIARIO O SERVICIOS": "Restaurantes, bares y cafeterías, espectáculo y ocio (cines, discotecas)",
+    "LOGÍSTICA E INDUSTRIAL": "N/A",
+    "INFRAESTRUCTURA URBANA": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+    "INFRAESTRUCTURA TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias, terminal de transporte terrestre e instalaciones complementarias, estacionamiento de vehículos pesados, buses o vehículos de carga"
+   }
+  },
+  "dudas": []
+ },
+ {
+  "codigo": "IS",
+  "codigo_mapa": "1IS",
+  "nombre": "SERVICIOS DE INFRAESTRUCTURA",
+  "tipo_uso": "USO DE SUELO DE INFRAESTRUCTURAS Y SERVICIOS BÁSICOS",
+  "pagina_ficha": 31,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": null,
+    "texto": "Libre"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": null,
+    "texto": "Libre"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": null,
+   "texto": "N/A"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "N/A",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "N/A",
+  "pisos_totales": null,
+  "estacionamientos": [
+   "N/A"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas)",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía",
+   "EDUCATIVOS": "Educación media y superior",
+   "ASISTENCIAL": "Hospitales y asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas y museos",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+  },
+  "otros": {
+   "VOCACIÓN DEL USO": {
+    "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+    "URBANO": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+    "TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga"
+   }
+  },
+  "dudas": []
+ },
+ {
+  "codigo": "IT",
+  "codigo_mapa": "1IT",
+  "nombre": "INFRAESTRUCTURA TERRESTRE",
+  "tipo_uso": null,
+  "pagina_ficha": 32,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 500,
+    "texto": "500 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": null,
+   "texto": "N/A"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "5 m",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 200 m2 de lote"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas)",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía",
+   "EDUCATIVOS": "Educación media y superior",
+   "ASISTENCIAL": "Hospitales y asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas y museos",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+  },
+  "otros": {
+   "VOCACIÓN DEL USO / ACTIVIDADES PERMITIDAS": {
+    "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+    "URBANO": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+    "TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga"
+   }
+  },
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página; la página p31 del mismo grupo indica 'USO DE SUELO DE INFRAESTRUCTURAS Y SERVICIOS BÁSICOS'."
+  ]
+ },
+ {
+  "codigo": "IM",
+  "codigo_mapa": "1IM",
+  "nombre": "INFRAESTRUCTURA MARÍTIMA",
+  "tipo_uso": null,
+  "pagina_ficha": 33,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 500,
+    "texto": "500 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": null,
+   "texto": "N/A"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "5 m",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 200 m2 de lote"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas)",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía",
+   "EDUCATIVOS": "Educación media y superior",
+   "ASISTENCIAL": "Hospitales y asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas y museos",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+  },
+  "otros": {
+   "VOCACIÓN DEL USO": {
+    "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+    "URBANO": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+    "TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga"
+   }
+  },
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página; la página p31 del mismo grupo indica 'USO DE SUELO DE INFRAESTRUCTURAS Y SERVICIOS BÁSICOS'."
+  ]
+ },
+ {
+  "codigo": "IA",
+  "codigo_mapa": "1IA",
+  "nombre": "INFRAESTRUCTURA AÉREA",
+  "tipo_uso": null,
+  "pagina_ficha": 34,
+  "pagina_resumen": 39,
+  "densidad_max_pers_ha": null,
+  "densidad_texto": null,
+  "area_minima": [
+   {
+    "tipologia": null,
+    "valor_m2": 500,
+    "texto": "500 m2"
+   }
+  ],
+  "frente_minimo": [
+   {
+    "tipologia": null,
+    "valor_m": 20,
+    "texto": "20 m"
+   }
+  ],
+  "ocupacion": {
+   "valor_pct": null,
+   "texto": "N/A"
+  },
+  "area_libre": null,
+  "area_verde": null,
+  "retiros": {
+   "frontal": "5 m",
+   "lateral": "N/A",
+   "posterior": "N/A"
+  },
+  "altura_texto": "PB + 2 pisos",
+  "pisos_totales": 3,
+  "estacionamientos": [
+   "1 por cada 200 m2 de lote"
+  ],
+  "acera_minima": {
+   "valor_m": null,
+   "texto": "Según categorización vial vigente"
+  },
+  "usos_permitidos": {
+   "RESIDENCIAL": "N/A",
+   "COMERCIAL": "Comercio urbano y servicios especializados, pequeños talleres y almacenes de venta, central de abastos y bodega de acopio (mayoristas)",
+   "TERICIARIO O SERVICIOS": "Oficinas y entidades bancarias, restaurantes, bares y cafeterías, hoteles y alojamientos",
+   "LOGÍSTICA E INDUSTRIAL": "N/A",
+   "INSTITUCIONAL": "Oficinas de gobierno/alcaldía",
+   "EDUCATIVOS": "Educación media y superior",
+   "ASISTENCIAL": "Hospitales y asistencia social (asilos, orfanatos, etc.)",
+   "CULTURAL": "Bibliotecas y museos",
+   "DEPORTIVO": "Grandes centros deportivos especializados, canchas y polideportivos, estadios, piscinas"
+  },
+  "otros": {
+   "VOCACIÓN DEL USO / ACTIVIDADES PERMITIDAS": {
+    "INSTITUCIONAL": "Estaciones de policía, bomberos, y otras dotaciones, centros penitenciarios y otras dotaciones de gran impacto",
+    "URBANO": "Energía eléctrica (plantas eléctricas), tratamiento y eliminación de residuos sólidos",
+    "TRANSPORTE": "Embarcaderos e instalaciones complementarias, aeródromos e instalaciones complementarias, gasolineras e instalaciones complementarias terminal de transporte terrestre e instalaciones complementarias , estacionamiento de vehículos pesados, buses o vehículos de carga"
+   }
+  },
+  "dudas": [
+   "No aparece un título de sección (tipo_uso) en esta página; la página p31 del mismo grupo indica 'USO DE SUELO DE INFRAESTRUCTURAS Y SERVICIOS BÁSICOS'.",
+   "En el cuadro resumen (p39, código '1IA') el retiro frontal figura como 6 y el n° máximo de pisos como 4, en vez de 5 m / PB+2 pisos como en esta ficha (p34); se transcribe cada página tal como aparece, sin conciliar la discrepancia."
+  ]
+ }
+]

@@ -1,0 +1,305 @@
+[
+  {
+    "id": "CA-TODAS-ACTIVIDAD-EXISTENTE",
+    "version": 3,
+    "titulo": "Actividad existente con otro uso: la nueva debe adecuarse a los usos permitidos",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 13, Parágrafo",
+      "pagina_pdf": 7,
+      "cita_textual": "Una vez culminada la actividad existente y se desarrolle una nueva, ésta [deberá, parcialmente cubierto por sello] adecuarse a los usos del suelo permitidos por la normativa vigente."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and expediente.invoca_uso_anterior == true",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Se respetarán las actividades que se estén desarrollando sobre aquellas fincas que hayan sido zonificadas con un uso del suelo diferente a dicha actividad al momento de la promulgación de esta resolución.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El expediente invoca una actividad anterior con otro uso: si es una actividad nueva, debe adecuarse a los usos permitidos (Art. 13, Parágrafo).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se respetan las actividades existentes al promulgarse la resolución. Observación porque la palabra «deberá» está tapada en parte por un sello en la copia. Mismo molde que EC-TODAS-TRANSICION. Cita en la línea 90 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Se respetarán las actividades que se estén desarrollando sobre aquellas fincas que hayan sido zonificadas con un uso …», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt) | Versión 3 (2026-10-21, ADR-0018): criterio de lectura de expediente.invoca_uso_anterior: true solo si se conserva una actividad o un uso que hoy no está permitido en la zona; mantener un uso permitido no lo invoca."
+  },
+  {
+    "id": "CA-TODAS-CONDUCTOS-VENTILACION",
+    "version": 3,
+    "titulo": "Los conductos de ventilación no computan como área libre",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 20",
+      "pagina_pdf": 8,
+      "cita_textual": "Los conductos de ventilación no se considerarán como área libre y sus superficies no serán computables al total del área libre."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+    "entradas": [
+      "proyecto.area_libre_incluye_conductos"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O2",
+      "cita": "Los conductos de ventilación no se considerarán como área libre y sus superficies no serán computables al total del área libre.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área libre declarada incluye conductos de ventilación (Art. 20).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se revisa en el cuadro de áreas y en las plantas; afecta a las reglas de área libre del Art. 23. Cita en la línea 121 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Regla de cómputo del área libre: observación; el incumplimiento lo recogen las reglas de área libre. Computable con un dato sí/no declarado. Cambios: severidad bloqueante → observacion, tipo criterio → documental, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O2 («Los conductos de ventilación no se considerarán como área libre y sus superficies no serán computables al total del á…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt); tipo «documental» corregido a «criterio»",
+    "condicion": "proyecto.area_libre_incluye_conductos == false"
+  },
+  {
+    "id": "CA-TODAS-ADOSAMIENTO-FACHADA-FRONTAL",
+    "version": 2,
+    "titulo": "Mantener o recuperar los adosamientos laterales de la fachada frontal",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 24, numeral 1",
+      "pagina_pdf": 9,
+      "cita_textual": "1. Se mantendrán o recuperarán los adosamientos laterales de la fachada frontal."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "1. Se mantendrán o recuperarán los adosamientos laterales de la fachada frontal.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La fachada frontal no mantiene o recupera sus adosamientos laterales (Art. 24, num. 1).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Cita en la línea 138 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («1. Se mantendrán o recuperarán los adosamientos laterales de la fachada frontal.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-MEDIANERA-LATERAL-AUTORIZACION",
+    "version": 2,
+    "titulo": "Aberturas en medianera lateral: autorización del colindante",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 24, numeral 1",
+      "pagina_pdf": 9,
+      "cita_textual": "Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante"
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_medianera_lateral == true",
+    "entradas": [
+      "expediente.autorizacion_colindante_medianera.adjunto"
+    ],
+    "condicion": "expediente.autorizacion_colindante_medianera.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la autorización del propietario colindante para abrir la pared medianera (Art. 24, num. 1).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hoy lo menciona la nota de CA-TODAS-MEDIANERAS (ver correcciones-catalogo.md). Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.aberturas_medianera_lateral, expediente.autorizacion_colindante_medianera.adjunto. Cita en la línea 138 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-MEDIANERA-LATERAL-EVIDENCIA",
+    "version": 2,
+    "titulo": "Aberturas en medianera lateral: evidencia de abertura original",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 24, numeral 1",
+      "pagina_pdf": 9,
+      "cita_textual": "solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellada en tiempo posterior."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_medianera_lateral == true",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellada en tiempo posterior.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "No se demuestra que la abertura en la medianera lateral existía en el inmueble original y fue sellada después (Art. 24, num. 1).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.aberturas_medianera_lateral. Cita en la línea 138 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellad…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-RETIRO-LATERAL-EXISTENTE",
+    "version": 2,
+    "titulo": "Edificio existente: mantiene sus retiros laterales",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 24, numeral 3",
+      "pagina_pdf": 9,
+      "cita_textual": "3. Los edificios existentes mantendrán sus retiros laterales actuales."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == false",
+    "entradas": [
+      "proyecto.retiro_lateral_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "3. Los edificios existentes mantendrán sus retiros laterales actuales.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La intervención del edificio existente modifica sus retiros laterales actuales (Art. 24, num. 3).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se comparan los retiros del levantamiento con los propuestos. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Cita en la línea 140 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («3. Los edificios existentes mantendrán sus retiros laterales actuales.», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-MEDIANERA-POSTERIOR-AUTORIZACION",
+    "version": 2,
+    "titulo": "Aberturas en medianera posterior: autorización del colindante",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 25, numeral 3",
+      "pagina_pdf": 10,
+      "cita_textual": "3. Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante"
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_medianera_posterior == true",
+    "entradas": [
+      "expediente.autorizacion_colindante_medianera.adjunto"
+    ],
+    "condicion": "expediente.autorizacion_colindante_medianera.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "3. Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la autorización del propietario colindante para abrir la pared medianera posterior (Art. 25, num. 3).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hoy lo menciona la nota de CA-TODAS-MEDIANERAS (ver correcciones-catalogo.md). Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.aberturas_medianera_posterior, expediente.autorizacion_colindante_medianera.adjunto. Cita en la línea 149 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («3. Se permitirán aberturas de paredes medianeras, previa autorización del propietario del inmueble colindante», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-MEDIANERA-POSTERIOR-EVIDENCIA",
+    "version": 2,
+    "titulo": "Aberturas en medianera posterior: evidencia de abertura original",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 25, numeral 3",
+      "pagina_pdf": 10,
+      "cita_textual": "solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellada en tiempo posterior;"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.aberturas_medianera_posterior == true",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellada en tiempo posterior;",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "No se demuestra que la abertura en la medianera posterior existía en el inmueble original y fue sellada después (Art. 25, num. 3).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.aberturas_medianera_posterior. Cita en la línea 149 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («solo en el caso de que se demuestre que hay evidencia de que la abertura existía en el inmueble original y fue sellad…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-RETIRO-POSTERIOR-EXISTENTE",
+    "version": 2,
+    "titulo": "Edificio existente: mantiene sus retiros posteriores",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 25, numeral 4",
+      "pagina_pdf": 10,
+      "cita_textual": "4. Los edificios existentes mantendrán sus retiros posteriores actuales;"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and proyecto.obra_nueva == false",
+    "entradas": [
+      "proyecto.retiro_posterior_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "4. Los edificios existentes mantendrán sus retiros posteriores actuales;",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La intervención del edificio existente modifica sus retiros posteriores actuales (Art. 25, num. 4).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se comparan los retiros del levantamiento con los propuestos. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Cita en la línea 150 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («4. Los edificios existentes mantendrán sus retiros posteriores actuales;», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  },
+  {
+    "id": "CA-TODAS-EDIFICIO-ESTACIONAMIENTOS-1Y2-ORDEN",
+    "version": 2,
+    "titulo": "Primer y Segundo Orden: no pueden ser edificios de estacionamientos",
+    "fuente": {
+      "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+      "articulo": "Artículo 31",
+      "pagina_pdf": 11,
+      "cita_textual": "Las edificaciones de Primer y Segundo Orden no podrán ser utilizadas ni total, ni parcialmente como edificios de estacionamientos."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion in ['primer', 'segundo'] and proyecto.edificio_estacionamientos == true",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las edificaciones de Primer y Segundo Orden no podrán ser utilizadas ni total, ni parcialmente como edificios de estacionamientos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Se propone usar total o parcialmente como edificio de estacionamientos una edificación de Primer o Segundo Orden (Art. 31).",
+    "vigencia": {
+      "desde": "2003-09-08",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Distinto del Art. 28 (estacionamientos en planta baja, CA-TODAS-ESTACIONAMIENTOS-1Y2-ORDEN), que admite plazas en planta baja; aquí se prohíbe el uso como edificio de estacionamientos. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): proyecto.edificio_estacionamientos. Cita en la línea 168 de normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Las edificaciones de Primer y Segundo Orden no podrán ser utilizadas ni total, ni parcialmente como edificios de esta…», normativa/zonas-exceptuadas/textos/res127_2003_casco_antiguo.txt)"
+  }
+]

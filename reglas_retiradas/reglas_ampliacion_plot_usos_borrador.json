@@ -1,0 +1,32 @@
+[
+ {
+  "id": "PLOT-ZM1-USO-EXCLUSIVAMENTE-COMERCIAL-VIAS",
+  "version": 1,
+  "titulo": "ZM1: uso exclusivamente comercial solo a lo largo de las vías listadas",
+  "fuente": {
+   "norma": "Anexo 4 PLOT (Acuerdo N°61 de 30-03-2021): Fichas Normativas del Suelo Urbano",
+   "articulo": "Notas del Cuadro resumen de códigos urbanos, Usos mixtos",
+   "pagina_pdf": 39,
+   "cita_textual": "Las parcelas zonificadas 1ZM1 pueden ser exclusivamente comerciales, a lo largo de las siguientes vías: Ave. Central/Vía España/Vía José Agustín Arango (hasta la intersección con la Vía Domingo Díaz), Ave. Balboa, Ave. Justo Arosemena, Ave. Cuba, Ave. Perú, Ave. Nicanor de Obarrio (Calle 50), Ave. Federico Boyd, Ave. Samuel Lewis, Calle Aquilino de la Guardia, Calles 53 y 54 Este (Bella Vista), Ave. Manuel Espinosa Batista, Vía Israel/Ave. Cincuentenario, Vía Brasil/Ramón Arias/El Paical/Juan Pablo II, Ave. Santa Elena, Boulevard El Dorado, Ave. Fernández de Córdoba/Ave. La Paz, Ave. Ernesto T. Lefevre/12 de Octubre/Calle Castilla de Oro, Ave. Monte Oscuro, Ave. Simón Bolívar (Transístmica), Corredor Norte, y Corredor Sur"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['ZM1', '1ZM1']",
+  "entradas": [
+   "proyecto.usos",
+   "proyecto.unidades_vivienda"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Un proyecto exclusivamente comercial en zona 1ZM1 solo se admite en parcelas a lo largo de las vías listadas en las notas del cuadro resumen del Anexo 4 del PLOT; fuera de ellas debe incorporar el uso residencial.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.usos (lista de usos del proyecto según el cuadro de áreas; lo decide la IA o un extractor futuro). Es la excepción a la nota de usos mixtos (PLOT-ZM-USO-MIXTO-DENSIDAD-MINIMA): si el proyecto en 1ZM1 no tiene vivienda ni hotel, el revisor comprueba que la parcela da frente a una de las vías listadas (no hay hecho del lote con la vía de frente; lo resuelve el GIS o el revisor). pagina_pdf 39: el .txt no trae marcadores de página; las notas siguen al cuadro resumen, cuya última página es la 39 (pagina_resumen de PL a IA en normas_plot_anexo4.json; en la Gaceta 29268-A van en la pág. 79, que corresponde a la 39 del Anexo 4).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Es la excepción de la misma obligación (incorporar residencial en ZM); queda dentro de la condición de PLOT-ZM-USO-MIXTO-DENSIDAD-MINIMA con lote.frente_via_listada_zm1.",
+   "fusionada_en": "PLOT-ZM-USO-MIXTO-DENSIDAD-MINIMA"
+  }
+ }
+]

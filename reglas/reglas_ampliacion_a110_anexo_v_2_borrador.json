@@ -1,0 +1,1651 @@
+[
+  {
+    "id": "A110-AV-ES-PROFESIONAL-IDONEO",
+    "version": 2,
+    "titulo": "Estructural: diseño sellado y firmado por un profesional idóneo inscrito en la JTIA",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 1",
+      "pagina_pdf": 51,
+      "cita_textual": "El diseño estructural de un proyecto deberá ser ejecutado por un profesional idóneo debidamente inscrito en la JTIA, quien será responsable de que el diseño estructural cumpla con todos los requisitos del reglamento estructural de Panamá (REP)."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'ES' in plano.disciplinas",
+    "entradas": [
+      "plano.estructural.firmado_profesional_idoneo"
+    ],
+    "condicion": "plano.estructural.firmado_profesional_idoneo == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "El diseño estructural de un proyecto deberá ser ejecutado por un profesional idóneo debidamente inscrito en la JTIA, quien será responsable de que el diseño estructural cumpla con todos los requisitos del reglamento estructural de Panamá (REP).",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Las láminas estructurales deben estar selladas y firmadas por un profesional idóneo inscrito en la JTIA (Anexo V, Estructural, 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo se verifica la firma y la idoneidad; el cumplimiento del REP (no está en el repositorio) no se evalúa. Varias etapas pueden tener distintos profesionales (párr. 2). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.estructural.firmado_profesional_idoneo. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («El diseño estructural de un proyecto deberá ser ejecutado por un profesional idóneo debidamente inscrito en la JTIA, …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ES-MEMORIA-CALCULO-PDF",
+    "version": 2,
+    "titulo": "Estructural, plano por etapas: memoria de cálculo en PDF",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 3",
+      "pagina_pdf": 51,
+      "cita_textual": "La Memoria deberá ser entregada a la DOYC en un archivo PDF."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RDP_ETAPAS' and 'ES' in plano.disciplinas",
+    "entradas": [
+      "expediente.memoria_calculo_estructural.adjunto"
+    ],
+    "condicion": "expediente.memoria_calculo_estructural.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "La Memoria deberá ser entregada a la DOYC en un archivo PDF.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la memoria de cálculo estructural en PDF (Anexo V, Estructural, 2 y 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. En RDP la verifica A110-ART53-CALCULOS-ESTRUCTURALES y en misceláneo y bienes de uso público A110-ART35-CALCULOS-ESTRUCTURALES; en modificación solo «de requerirse» (Art. 76, num. 4). Trámites provisionales: 'RDP_ETAPAS' = plano por etapas (Cap. V). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, expediente.memoria_calculo_estructural.adjunto. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («La Memoria deberá ser entregada a la DOYC en un archivo PDF.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ES-BARRERA-VEHICULAR",
+    "version": 2,
+    "titulo": "Estructural, edificios con estacionamientos: carga del sistema de barrera de vehículos",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 6",
+      "pagina_pdf": 51,
+      "cita_textual": "En el caso de edificios se deberá tomar en cuenta la carga en sistema de barrera de vehículos."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'ES' in plano.disciplinas and proyecto.estacionamientos > 0",
+    "entradas": [
+      "expediente.memoria_calculo_estructural.incluye_barrera_vehicular"
+    ],
+    "condicion": "expediente.memoria_calculo_estructural.incluye_barrera_vehicular == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "En el caso de edificios se deberá tomar en cuenta la carga en sistema de barrera de vehículos.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La memoria estructural debe considerar la carga del sistema de barrera de vehículos (6,000 lb / 26.70 kN, Resolución JTIA N°016 de 2018) (Anexo V, Estructural, 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo se verifica que la memoria la considere; el diseño según la Sección 4.4.1 del REP 2014 no se evalúa (el REP no está en el repositorio). Se usa proyecto.estacionamientos como indicio de edificio con vehículos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, expediente.memoria_calculo_estructural.incluye_barrera_vehicular. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («En el caso de edificios se deberá tomar en cuenta la carga en sistema de barrera de vehículos.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ES-HOJA1-ETAPA-ANTERIOR",
+    "version": 2,
+    "titulo": "Estructural por etapas: Hoja No. 1 de estructura de la etapa anterior aprobada",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 7",
+      "pagina_pdf": 52,
+      "cita_textual": "Cuando la estructura sea aprobada por etapas solo se deberá presentar una copia de la hoja No. 1 de la sección de estructura de la etapa anterior aprobada por el profesional de la DOYC."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'RDP_ETAPAS' and 'ES' in plano.disciplinas and expediente.etapa_estructural_previa_aprobada == true",
+    "entradas": [
+      "expediente.hoja1_estructura_etapa_anterior.adjunto"
+    ],
+    "condicion": "expediente.hoja1_estructura_etapa_anterior.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Cuando la estructura sea aprobada por etapas solo se deberá presentar una copia de la hoja No. 1 de la sección de estructura de la etapa anterior aprobada por el profesional de la DOYC.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Estructura aprobada por etapas: falta la copia de la Hoja No. 1 de la sección de estructura de la etapa anterior aprobada (Anexo V, Estructural, 7).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Complementa a A110-ART67-HOJA1-ETAPA-PREVIA (Hoja N°1 del plano por etapas): aquí es la hoja de la sección de estructura. Trámites provisionales: 'RDP_ETAPAS' = plano por etapas (Cap. V). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, expediente.etapa_estructural_previa_aprobada, expediente.hoja1_estructura_etapa_anterior.adjunto. Si falta un hecho de aplicabilidad (plano.disciplinas, expediente.etapa_estructural_previa_aprobada) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Cuando la estructura sea aprobada por etapas solo se deberá presentar una copia de la hoja No. 1 de la sección de est…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ES-MODIFICACION-ETAPA-APROBADA",
+    "version": 2,
+    "titulo": "Estructural por etapas: modificación de una etapa aprobada con detalles de las áreas afectadas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 8",
+      "pagina_pdf": 52,
+      "cita_textual": "Cuando la estructura sea aprobada por etapas y una de las etapas ya aprobada presenta una modificación, solo se deberá presentar los detalles de las áreas afectadas junto con la copia de la hoja No. 1 de la sección aprobada por el profesional de la DOYC."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['RDP_ETAPAS', 'MODIFICACION_AS_BUILT'] and 'ES' in plano.disciplinas and expediente.modifica_etapa_estructural_aprobada == true",
+    "entradas": [
+      "plano.estructural.detalles_areas_afectadas.presente",
+      "expediente.hoja1_estructura_seccion_aprobada.adjunto"
+    ],
+    "condicion": "plano.estructural.detalles_areas_afectadas.presente == true and expediente.hoja1_estructura_seccion_aprobada.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Cuando la estructura sea aprobada por etapas y una de las etapas ya aprobada presenta una modificación, solo se deberá presentar los detalles de las áreas afectadas junto con la copia de la hoja No. 1 de la sección aprobada por el profesional de la DOYC.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Modificación de una etapa estructural aprobada: faltan los detalles de las áreas afectadas o la copia de la Hoja No. 1 de la sección aprobada (Anexo V, Estructural, 8).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, expediente.modifica_etapa_estructural_aprobada, plano.estructural.detalles_areas_afectadas.presente, expediente.hoja1_estructura_seccion_aprobada.adjunto. Si falta un hecho de aplicabilidad (plano.disciplinas, expediente.modifica_etapa_estructural_aprobada) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Cuando la estructura sea aprobada por etapas y una de las etapas ya aprobada presenta una modificación, solo se deber…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ES-REMODELACION-EXISTENTE-REFORMA",
+    "version": 2,
+    "titulo": "Estructural, remodelaciones: superficie existente y a reformar en las plantas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Estructural, 9",
+      "pagina_pdf": 52,
+      "cita_textual": "En caso de remodelaciones el diseño debe indicar claramente la superficie existente y la superficie a reformar o adicionar por medio de las plantas."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'ES' in plano.disciplinas and proyecto.es_remodelacion == true",
+    "entradas": [
+      "plano.estructural.existente_y_reforma.presente"
+    ],
+    "condicion": "plano.estructural.existente_y_reforma.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "En caso de remodelaciones el diseño debe indicar claramente la superficie existente y la superficie a reformar o adicionar por medio de las plantas.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En remodelaciones, las plantas estructurales deben indicar la superficie existente y la superficie a reformar o adicionar (Anexo V, Estructural, 9).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.es_remodelacion, plano.estructural.existente_y_reforma.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («En caso de remodelaciones el diseño debe indicar claramente la superficie existente y la superficie a reformar o adic…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EL-DISENO-SEGUN-RIE",
+    "version": 2,
+    "titulo": "Eléctrico: diseño conforme al RIE vigente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 15",
+      "pagina_pdf": 52,
+      "cita_textual": "Todas las cargas, protecciones, conductores, canalizaciones y demás elementos relacionados al sistema eléctrico deberán ser diseñados conforme a lo establecido en el Reglamento para las Instalaciones Eléctricas de la República de Panamá (RIE) vigente"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Todas las cargas, protecciones, conductores, canalizaciones y demás elementos relacionados al sistema eléctrico deberán ser diseñados conforme a lo establecido en el Reglamento para las Instalaciones Eléctricas de la República de Panamá (RIE) vigente",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El diseño eléctrico debe cumplir el RIE vigente con sus anexos y resoluciones de la JTIA (Anexo V, Eléctrico, 15).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: el RIE no está en el repositorio; lo juzga el revisor eléctrico. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Todas las cargas, protecciones, conductores, canalizaciones y demás elementos relacionados al sistema eléctrico deber…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EL-DISTRIBUCION-PLANTA",
+    "version": 2,
+    "titulo": "Eléctrico: distribución sobre la planta (luminarias, tomas, tableros, medidores)",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 19",
+      "pagina_pdf": 52,
+      "cita_textual": "La distribución eléctrica se hará sobre la planta del proyecto indicando la ubicación de luminarias, tomacorrientes, interruptores, tableros de carga y de distribución, medidores y de otros elementos especializados del sistema."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas",
+    "entradas": [
+      "plano.electrico.distribucion_en_planta.presente"
+    ],
+    "condicion": "plano.electrico.distribucion_en_planta.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "La distribución eléctrica se hará sobre la planta del proyecto indicando la ubicación de luminarias, tomacorrientes, interruptores, tableros de carga y de distribución, medidores y de otros elementos especializados del sistema.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la distribución eléctrica sobre la planta con luminarias, tomacorrientes, interruptores, tableros y medidores, y los circuitos de cada carga (Anexo V, Eléctrico, 19).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.electrico.distribucion_en_planta.presente. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («La distribución eléctrica se hará sobre la planta del proyecto indicando la ubicación de luminarias, tomacorrientes, …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EL-AMPLIACION-CUARTO-MEDIDORES",
+    "version": 2,
+    "titulo": "Eléctrico: ampliación a escala del cuarto de medidores y tableros principales",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 19",
+      "pagina_pdf": 52,
+      "cita_textual": "Se hará una ampliación legible a escala del cuarto de medidores si"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas and proyecto.tiene_cuarto_medidores == true",
+    "entradas": [
+      "plano.electrico.ampliacion_cuarto_medidores.presente"
+    ],
+    "condicion": "plano.electrico.ampliacion_cuarto_medidores.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Se hará una ampliación legible a escala del cuarto de medidores si",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la ampliación legible a escala del cuarto de medidores y de los tableros de distribución principal (Anexo V, Eléctrico, 19).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. La cita termina antes del salto de página (pág. 52 a 53); el texto sigue «los hubiere, y de los tableros de distribución principal». Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.tiene_cuarto_medidores, plano.electrico.ampliacion_cuarto_medidores.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.tiene_cuarto_medidores) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Se hará una ampliación legible a escala del cuarto de medidores si», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EL-REFORMA-LECTURA-CARGA",
+    "version": 2,
+    "titulo": "Eléctrico, reformas o adiciones: existente a mantener o eliminar y lectura de carga previa",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 20",
+      "pagina_pdf": 53,
+      "cita_textual": "En los planos de reformas y/o adiciones, se debe indicar claramente lo existente a mantener o eliminar, presentando una lectura de carga antes de la reforma."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas and proyecto.es_remodelacion == true",
+    "entradas": [
+      "plano.electrico.existente_y_lectura_carga.presente"
+    ],
+    "condicion": "plano.electrico.existente_y_lectura_carga.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "En los planos de reformas y/o adiciones, se debe indicar claramente lo existente a mantener o eliminar, presentando una lectura de carga antes de la reforma.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En reformas o adiciones, el plano eléctrico debe indicar lo existente a mantener o eliminar y presentar la lectura de carga antes de la reforma (Anexo V, Eléctrico, 20).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo tipo de requisito, cada uno en su lámina: A110-AV-AA-REFORMA-EXISTENTE (A/A 8) y A110-AV-FV-REFORMA-UNIFILAR-CONEXION (fotovoltaico 6). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.es_remodelacion, plano.electrico.existente_y_lectura_carga.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («En los planos de reformas y/o adiciones, se debe indicar claramente lo existente a mantener o eliminar, presentando u…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EL-TUBERIAS-AREAS-COMUNES",
+    "version": 2,
+    "titulo": "Eléctrico, multifamiliares o comerciales: alimentadores en áreas de uso común",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 21",
+      "pagina_pdf": 53,
+      "cita_textual": "Las tuberías eléctricas alimentadoras de edificaciones residenciales multifamiliares o comerciales, deben estar ubicadas en áreas de uso común, tales como pasillos, azoteas o utilizar ductos especiales verticales."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas and proyecto.multifamiliar_o_comercial == true",
+    "entradas": [
+      "plano.electrico.alimentadores_en_areas_comunes"
+    ],
+    "condicion": "plano.electrico.alimentadores_en_areas_comunes == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Las tuberías eléctricas alimentadoras de edificaciones residenciales multifamiliares o comerciales, deben estar ubicadas en áreas de uso común, tales como pasillos, azoteas o utilizar ductos especiales verticales.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Las tuberías alimentadoras de edificaciones multifamiliares o comerciales deben ir por áreas de uso común o ductos verticales especiales (Anexo V, Eléctrico, 21).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.multifamiliar_o_comercial, plano.electrico.alimentadores_en_areas_comunes. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.multifamiliar_o_comercial) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Las tuberías eléctricas alimentadoras de edificaciones residenciales multifamiliares o comerciales, deben estar ubica…», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-AV-EL-OBRA-GRIS-CAPACIDAD",
+    "version": 2,
+    "titulo": "Eléctrico, obra gris: capacidad eléctrica por tipo de obra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Eléctrico, 22",
+      "pagina_pdf": 53,
+      "cita_textual": "Las construcciones en gris deberán tener indicada la capacidad eléctrica por tipo de obra según el R.I.E. y N.E.C. vigente."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'EL' in plano.disciplinas and proyecto.obra_gris == true",
+    "entradas": [
+      "plano.electrico.capacidad_obra_gris.presente"
+    ],
+    "condicion": "plano.electrico.capacidad_obra_gris.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Las construcciones en gris deberán tener indicada la capacidad eléctrica por tipo de obra según el R.I.E. y N.E.C. vigente.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Construcción en gris: el plano eléctrico debe indicar la capacidad eléctrica por tipo de obra (Anexo V, Eléctrico, 22).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo se verifica que la capacidad esté indicada; el RIE y el NEC no están en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.obra_gris, plano.electrico.capacidad_obra_gris.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.obra_gris) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Las construcciones en gris deberán tener indicada la capacidad eléctrica por tipo de obra según el R.I.E. y N.E.C. vi…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-GEN-AISLAMIENTO-ACUSTICO",
+    "version": 2,
+    "titulo": "Generador: detalles del aislamiento acústico",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Generador, 3",
+      "pagina_pdf": 53,
+      "cita_textual": "Detalles del aislamiento acústico, cumpliendo con lo establecido en el Decreto Ejecutivo No.306, de 4 de abril de 2002, dictado por el Ministerio de Salud."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_generador == true",
+    "entradas": [
+      "plano.generador.aislamiento_acustico.presente"
+    ],
+    "condicion": "plano.generador.aislamiento_acustico.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Detalles del aislamiento acústico, cumpliendo con lo establecido en el Decreto Ejecutivo No.306, de 4 de abril de 2002, dictado por el Ministerio de Salud.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano del generador debe incluir los detalles del aislamiento acústico (Anexo V, Generador, 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo presencia: el Decreto Ejecutivo 306 de 2002 del MINSA no está en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_generador, plano.generador.aislamiento_acustico.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_generador) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Detalles del aislamiento acústico, cumpliendo con lo establecido en el Decreto Ejecutivo No.306, de 4 de abril de 200…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-GEN-UBICACION-ALEJADA",
+    "version": 2,
+    "titulo": "Generador: recinto alejado de terceros o colindantes",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Generador, 5",
+      "pagina_pdf": 53,
+      "cita_textual": "Toda planta debe ubicarse alejada de terceros o colindantes en un recinto en el que se pueda controlar fácilmente el ruido, derramamiento de combustible y vibraciones."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_generador == true",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Toda planta debe ubicarse alejada de terceros o colindantes en un recinto en el que se pueda controlar fácilmente el ruido, derramamiento de combustible y vibraciones.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La planta eléctrica debe ubicarse alejada de terceros o colindantes, en un recinto que permita controlar ruido, derrames y vibraciones (Anexo V, Generador, 5).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: el texto no fija una distancia. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_generador. Si falta un hecho de aplicabilidad (proyecto.incluye_generador) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Toda planta debe ubicarse alejada de terceros o colindantes en un recinto en el que se pueda controlar fácilmente el …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-GEN-SILENCIADOR-RESIDENCIAL",
+    "version": 2,
+    "titulo": "Generador en área residencial: silenciador residencial",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Generador, 5",
+      "pagina_pdf": 53,
+      "cita_textual": "Si se ubica en un área residencial, debe ser provista de un silenciador residencial, el cual debe tener un indicador de fábrica que especifique que es residencial."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_generador == true and lote.area_residencial == true",
+    "entradas": [
+      "plano.generador.silenciador_residencial.presente"
+    ],
+    "condicion": "plano.generador.silenciador_residencial.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Si se ubica en un área residencial, debe ser provista de un silenciador residencial, el cual debe tener un indicador de fábrica que especifique que es residencial.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Generador en área residencial: el plano debe especificar un silenciador residencial con indicador de fábrica (Anexo V, Generador, 5).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_generador, lote.area_residencial, plano.generador.silenciador_residencial.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_generador, lote.area_residencial) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Si se ubica en un área residencial, debe ser provista de un silenciador residencial, el cual debe tener un indicador …», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-AV-GEN-TUBERIAS-AREAS-COMUNES-PH",
+    "version": 2,
+    "titulo": "Generador en edificios en Propiedad Horizontal: líneas eléctricas por áreas de uso común",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Generador, 7",
+      "pagina_pdf": 54,
+      "cita_textual": "En los edificios incorporados al Régimen de Propiedad Horizontal, las tuberías de líneas eléctricas deben ser ubicadas en las áreas de uso común, como pasillos, escaleras, azoteas, o bien, utilizar ductos verticales especiales."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_generador == true and expediente.propiedad_horizontal == true",
+    "entradas": [
+      "plano.generador.lineas_en_areas_comunes"
+    ],
+    "condicion": "plano.generador.lineas_en_areas_comunes == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "En los edificios incorporados al Régimen de Propiedad Horizontal, las tuberías de líneas eléctricas deben ser ubicadas en las áreas de uso común, como pasillos, escaleras, azoteas, o bien, utilizar ductos verticales especiales.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En edificios en Propiedad Horizontal, las tuberías de las líneas del generador deben ir por áreas de uso común o ductos verticales especiales (Anexo V, Generador, 7).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_generador, expediente.propiedad_horizontal, plano.generador.lineas_en_areas_comunes. Si falta un hecho de aplicabilidad (proyecto.incluye_generador, expediente.propiedad_horizontal) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («En los edificios incorporados al Régimen de Propiedad Horizontal, las tuberías de líneas eléctricas deben ser ubicada…», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-AV-SD-LOCALIZACION-CAMARA-POSTE",
+    "version": 2,
+    "titulo": "Servicios digitales: localización regional con cámara de inspección o poste más cercano",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Servicios digitales, a",
+      "pagina_pdf": 54,
+      "cita_textual": "Localización regional clara y grande de la edificación, donde se indique número de lote, avenida y calle ubicación de la cámara de inspección para el servicio subterráneo o el poste y su número para el servicio aéreo que se encuentra más cercano a la edificación."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_servicios_digitales == true",
+    "entradas": [
+      "plano.servicios_digitales.localizacion_camara_poste.presente"
+    ],
+    "condicion": "plano.servicios_digitales.localizacion_camara_poste.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Localización regional clara y grande de la edificación, donde se indique número de lote, avenida y calle ubicación de la cámara de inspección para el servicio subterráneo o el poste y su número para el servicio aéreo que se encuentra más cercano a la edificación.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La localización regional de servicios digitales debe indicar lote, avenida, calle y la cámara de inspección o el poste más cercano (Anexo V, Servicios digitales, a).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_servicios_digitales, plano.servicios_digitales.localizacion_camara_poste.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_servicios_digitales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Localización regional clara y grande de la edificación, donde se indique número de lote, avenida y calle ubicación de…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-SD-SIMBOLOGIA",
+    "version": 2,
+    "titulo": "Servicios digitales: simbología del reglamento de red telefónica interna",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Servicios digitales, b",
+      "pagina_pdf": 54,
+      "cita_textual": "Simbología de servicios digitales especificada en el Reglamento para la Instalación de la Red Telefónica Interna de Edificios."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_servicios_digitales == true",
+    "entradas": [
+      "plano.servicios_digitales.simbologia.presente"
+    ],
+    "condicion": "plano.servicios_digitales.simbologia.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Simbología de servicios digitales especificada en el Reglamento para la Instalación de la Red Telefónica Interna de Edificios.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la simbología de servicios digitales (Anexo V, Servicios digitales, b).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo presencia: el Reglamento para la Instalación de la Red Telefónica Interna de Edificios no está en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_servicios_digitales, plano.servicios_digitales.simbologia.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_servicios_digitales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Simbología de servicios digitales especificada en el Reglamento para la Instalación de la Red Telefónica Interna de E…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-SD-PLANTA-DISTRIBUCION",
+    "version": 2,
+    "titulo": "Servicios digitales: planta de distribución",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Servicios digitales, c",
+      "pagina_pdf": 54,
+      "cita_textual": "Planta de distribución de servicios digitales indicando salidas, tuberías, cajas de distribución y la localización de otros equipos."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_servicios_digitales == true",
+    "entradas": [
+      "plano.servicios_digitales.planta_distribucion.presente"
+    ],
+    "condicion": "plano.servicios_digitales.planta_distribucion.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Planta de distribución de servicios digitales indicando salidas, tuberías, cajas de distribución y la localización de otros equipos.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la planta de distribución de servicios digitales con salidas, tuberías, cajas y equipos (Anexo V, Servicios digitales, c).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_servicios_digitales, plano.servicios_digitales.planta_distribucion.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_servicios_digitales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Planta de distribución de servicios digitales indicando salidas, tuberías, cajas de distribución y la localización de…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-SD-DIAGRAMA-ESQUEMATICO",
+    "version": 2,
+    "titulo": "Servicios digitales: diagrama esquemático de integración del edificio",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Servicios digitales, d",
+      "pagina_pdf": 54,
+      "cita_textual": "Diagrama esquemático de integración de todo el edificio, el cual debe incluir:"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_servicios_digitales == true",
+    "entradas": [
+      "plano.servicios_digitales.diagrama_esquematico.presente"
+    ],
+    "condicion": "plano.servicios_digitales.diagrama_esquematico.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Diagrama esquemático de integración de todo el edificio, el cual debe incluir:",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el diagrama esquemático de integración de todo el edificio (acometida, canalización, CDP, CDS, cables, sello y firma) (Anexo V, Servicios digitales, d).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Los literales d.a–d.k detallan su contenido; aquí solo se verifica que el diagrama esté. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_servicios_digitales, plano.servicios_digitales.diagrama_esquematico.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_servicios_digitales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Diagrama esquemático de integración de todo el edificio, el cual debe incluir:», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-DESCRIPCION-COMPONENTES",
+    "version": 2,
+    "titulo": "Alarma contra incendios: descripción técnica de cada componente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, b",
+      "pagina_pdf": 54,
+      "cita_textual": "Descripción técnica de casa uno de los componentes del sistema, de acuerdo con el reglamento de los sistemas de detención y alarmas de incendio."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.descripcion_componentes.presente"
+    ],
+    "condicion": "plano.alarma.descripcion_componentes.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Descripción técnica de casa uno de los componentes del sistema, de acuerdo con el reglamento de los sistemas de detención y alarmas de incendio.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la descripción técnica de cada componente del sistema de alarma (Anexo V, Alarma, b).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). El reglamento de detección y alarma (RAI) no está en el repositorio; la cita conserva las erratas «casa uno» y «detención». Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.descripcion_componentes.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Descripción técnica de casa uno de los componentes del sistema, de acuerdo con el reglamento de los sistemas de deten…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-DIAGRAMA-ZONAS",
+    "version": 2,
+    "titulo": "Alarma contra incendios: diagrama esquemático con interconexión y zonas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, c",
+      "pagina_pdf": 55,
+      "cita_textual": "Diagrama esquemático que muestre la interconexión de todos los componentes del sistema, así como la división en zonas de los circuitos de detección y señalización."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.diagrama_esquematico.presente"
+    ],
+    "condicion": "plano.alarma.diagrama_esquematico.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Diagrama esquemático que muestre la interconexión de todos los componentes del sistema, así como la división en zonas de los circuitos de detección y señalización.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el diagrama esquemático con la interconexión de componentes y la división en zonas (Anexo V, Alarma, c).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.diagrama_esquematico.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Diagrama esquemático que muestre la interconexión de todos los componentes del sistema, así como la división en zonas…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-CONDUCTORES",
+    "version": 2,
+    "titulo": "Alarma contra incendios: tipo y calibre de los conductores",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, d",
+      "pagina_pdf": 55,
+      "cita_textual": "Tipo y calibre de los conductores a utilizarse para las interconexiones en los circuitos de detección y señalización."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.tipo_calibre_conductores.presente"
+    ],
+    "condicion": "plano.alarma.tipo_calibre_conductores.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Tipo y calibre de los conductores a utilizarse para las interconexiones en los circuitos de detección y señalización.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta indicar el tipo y calibre de los conductores de los circuitos de detección y señalización (Anexo V, Alarma, d).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.tipo_calibre_conductores.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Tipo y calibre de los conductores a utilizarse para las interconexiones en los circuitos de detección y señalización.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-SUPERVISION-CIRCUITO-DEDICADO",
+    "version": 2,
+    "titulo": "Alarma contra incendios: tipo de supervisión y circuito dedicado en el tablero",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, e",
+      "pagina_pdf": 55,
+      "cita_textual": "Tipo de supervisión de los circuitos de detección y señalización, indicar en el tablero eléctrico el circuito dedicado para el sistema contra incendio y cualquier alimentación de corriente alterna o directa."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.supervision_y_circuito_dedicado.presente"
+    ],
+    "condicion": "plano.alarma.supervision_y_circuito_dedicado.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Tipo de supervisión de los circuitos de detección y señalización, indicar en el tablero eléctrico el circuito dedicado para el sistema contra incendio y cualquier alimentación de corriente alterna o directa.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el tipo de supervisión de los circuitos o el circuito dedicado del sistema contra incendio en el tablero (Anexo V, Alarma, e).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.supervision_y_circuito_dedicado.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Tipo de supervisión de los circuitos de detección y señalización, indicar en el tablero eléctrico el circuito dedicad…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-FUNCIONES-PANEL",
+    "version": 2,
+    "titulo": "Alarma contra incendios: funciones auxiliares del panel",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, f",
+      "pagina_pdf": 55,
+      "cita_textual": "Funciones auxiliares del panel."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.funciones_auxiliares_panel.presente"
+    ],
+    "condicion": "plano.alarma.funciones_auxiliares_panel.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Funciones auxiliares del panel.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan las funciones auxiliares del panel de alarma (Anexo V, Alarma, f).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.funciones_auxiliares_panel.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Funciones auxiliares del panel.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-SELLO-FIRMA",
+    "version": 2,
+    "titulo": "Alarma contra incendios: sello y firma en tinta negra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, g",
+      "pagina_pdf": 55,
+      "cita_textual": "Sello y firma del profesional responsable del diseño en tinta de color negro."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "plano.alarma.sello_firma_tinta_negra"
+    ],
+    "condicion": "plano.alarma.sello_firma_tinta_negra == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Sello y firma del profesional responsable del diseño en tinta de color negro.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano de alarma debe llevar sello y firma del profesional responsable en tinta negra (Anexo V, Alarma, g).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Mismo requisito por sistema, cada uno en su lámina: equipos electrónicos 3, A/A 7 y fontanería 4. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, plano.alarma.sello_firma_tinta_negra. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Sello y firma del profesional responsable del diseño en tinta de color negro.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-MEMORIA-CALCULOS",
+    "version": 2,
+    "titulo": "Alarma contra incendios: memoria de cálculos (consumo, baterías, impedancias)",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, h",
+      "pagina_pdf": 55,
+      "cita_textual": "Memoria de cálculos que incluya el consumo de corriente de los circuitos de señalización y alarma, capacidad de baterías auxiliares y las impedancias máximas permitidas para los conductores"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true",
+    "entradas": [
+      "expediente.memoria_alarma_incendio.adjunto"
+    ],
+    "condicion": "expediente.memoria_alarma_incendio.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Memoria de cálculos que incluya el consumo de corriente de los circuitos de señalización y alarma, capacidad de baterías auxiliares y las impedancias máximas permitidas para los conductores",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la memoria de cálculos del sistema de alarma (consumo de corriente, baterías auxiliares e impedancias), refrendada (Anexo V, Alarma, h).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, expediente.memoria_alarma_incendio.adjunto. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Memoria de cálculos que incluya el consumo de corriente de los circuitos de señalización y alarma, capacidad de bater…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-REFORMA-CIRCUITO",
+    "version": 2,
+    "titulo": "Alarma contra incendios, reformas o mejoras: circuito y dispositivos del sistema",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, i",
+      "pagina_pdf": 55,
+      "cita_textual": "Cuando los proyectos son reformas o mejoras debe indicar el circuito y todos los dispositivos que forman parte del sistema o alarma contra incendio."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true and proyecto.es_remodelacion == true",
+    "entradas": [
+      "plano.alarma.circuito_y_dispositivos_reforma.presente"
+    ],
+    "condicion": "plano.alarma.circuito_y_dispositivos_reforma.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Cuando los proyectos son reformas o mejoras debe indicar el circuito y todos los dispositivos que forman parte del sistema o alarma contra incendio.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En reformas o mejoras, el plano de alarma debe indicar el circuito y todos los dispositivos del sistema (Anexo V, Alarma, i).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, proyecto.es_remodelacion, plano.alarma.circuito_y_dispositivos_reforma.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Cuando los proyectos son reformas o mejoras debe indicar el circuito y todos los dispositivos que forman parte del si…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-ALARMA-LOCALES-CIRCUITO-PLAZA",
+    "version": 2,
+    "titulo": "Alarma contra incendios en locales comerciales: circuito de la plaza dedicado",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Alarma contra incendios, j",
+      "pagina_pdf": 55,
+      "cita_textual": "Cuando son locales comerciales se debe indicar en el diagrama del sistema contra incendio el número de circuito de la plaza dedicado para alimentar estos locales correspondientes al sistema contra incendio."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_alarma_incendio == true and proyecto.es_local_comercial_en_plaza == true",
+    "entradas": [
+      "plano.alarma.circuito_plaza_dedicado.presente"
+    ],
+    "condicion": "plano.alarma.circuito_plaza_dedicado.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Cuando son locales comerciales se debe indicar en el diagrama del sistema contra incendio el número de circuito de la plaza dedicado para alimentar estos locales correspondientes al sistema contra incendio.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Local comercial: el diagrama contra incendio debe indicar el número de circuito de la plaza dedicado al sistema (Anexo V, Alarma, j).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de detección y alarma la revisa el BCBRP (DINASEPI), otra entidad de la Ventanilla Única (Art. 44; Art. 69). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_alarma_incendio, proyecto.es_local_comercial_en_plaza, plano.alarma.circuito_plaza_dedicado.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_alarma_incendio, proyecto.es_local_comercial_en_plaza) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Cuando son locales comerciales se debe indicar en el diagrama del sistema contra incendio el número de circuito de la…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EE-DIAGRAMA-SISTEMAS-ESPECIALES",
+    "version": 2,
+    "titulo": "Equipos electrónicos: diagrama completo de sistemas especiales con simbología y notas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Equipos electrónicos, 1",
+      "pagina_pdf": 55,
+      "cita_textual": "Diagrama completo de sistemas especiales que muestre la interconexión de los componentes de cada sistema, con cuadro de simbología que describa cada componente de los sistemas especiales"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_sistemas_especiales == true",
+    "entradas": [
+      "plano.equipos_electronicos.diagrama_sistemas.presente"
+    ],
+    "condicion": "plano.equipos_electronicos.diagrama_sistemas.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Diagrama completo de sistemas especiales que muestre la interconexión de los componentes de cada sistema, con cuadro de simbología que describa cada componente de los sistemas especiales",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el diagrama completo de sistemas especiales con interconexión, cuadro de simbología y notas generales (Anexo V, Equipos electrónicos, 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_sistemas_especiales, plano.equipos_electronicos.diagrama_sistemas.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_sistemas_especiales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Diagrama completo de sistemas especiales que muestre la interconexión de los componentes de cada sistema, con cuadro …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EE-RADIOCOMUNICACIONES",
+    "version": 2,
+    "titulo": "Equipos electrónicos: planta y diagrama de radiocomunicaciones y antena parabólica",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Equipos electrónicos, 2",
+      "pagina_pdf": 55,
+      "cita_textual": "Planta y Diagrama completo de Servicios de Radio Comunicaciones incluyendo ubicación de componentes, diagrama de conexiones, detalles de anclajes e instalación en general del sistema"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_sistemas_especiales == true and proyecto.incluye_radiocomunicaciones == true",
+    "entradas": [
+      "plano.equipos_electronicos.radiocomunicaciones.presente"
+    ],
+    "condicion": "plano.equipos_electronicos.radiocomunicaciones.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Planta y Diagrama completo de Servicios de Radio Comunicaciones incluyendo ubicación de componentes, diagrama de conexiones, detalles de anclajes e instalación en general del sistema",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan la planta y el diagrama de radiocomunicaciones (componentes, conexiones, anclajes, unifilar de la antena parabólica) (Anexo V, Equipos electrónicos, 2).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_sistemas_especiales, proyecto.incluye_radiocomunicaciones, plano.equipos_electronicos.radiocomunicaciones.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_sistemas_especiales, proyecto.incluye_radiocomunicaciones) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Planta y Diagrama completo de Servicios de Radio Comunicaciones incluyendo ubicación de componentes, diagrama de cone…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-EE-SELLO-FIRMA",
+    "version": 2,
+    "titulo": "Equipos electrónicos: sello y firma del profesional idóneo en tinta negra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Equipos electrónicos, 3",
+      "pagina_pdf": 55,
+      "cita_textual": "Sello y firma del profesional idóneo responsable del diseño en tinta de color negro."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_sistemas_especiales == true",
+    "entradas": [
+      "plano.equipos_electronicos.sello_firma_tinta_negra"
+    ],
+    "condicion": "plano.equipos_electronicos.sello_firma_tinta_negra == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Sello y firma del profesional idóneo responsable del diseño en tinta de color negro.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano de equipos electrónicos debe llevar sello y firma del profesional idóneo en tinta negra (Anexo V, Equipos electrónicos, 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo requisito por sistema, cada uno en su lámina: alarma g, A/A 7 y fontanería 4. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_sistemas_especiales, plano.equipos_electronicos.sello_firma_tinta_negra. Si falta un hecho de aplicabilidad (proyecto.incluye_sistemas_especiales) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Sello y firma del profesional idóneo responsable del diseño en tinta de color negro.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-CUMPLE-RAV",
+    "version": 2,
+    "titulo": "Aire acondicionado: cumple el RAV vigente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 1",
+      "pagina_pdf": 55,
+      "cita_textual": "Todo lo contemplado para los sistemas de aire acondicionado debe cumplir con el reglamento de aire acondicionado y ventilación, en adelante el RAV vigente según Resolución JTIA-1172013."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Todo lo contemplado para los sistemas de aire acondicionado debe cumplir con el reglamento de aire acondicionado y ventilación, en adelante el RAV vigente según Resolución JTIA-1172013.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El sistema de aire acondicionado debe cumplir el RAV vigente (Anexo V, A/A, 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: el RAV (Resolución JTIA-1172013) no está en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Todo lo contemplado para los sistemas de aire acondicionado debe cumplir con el reglamento de aire acondicionado y ve…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-DISTRIBUCION-EQUIPOS",
+    "version": 2,
+    "titulo": "Aire acondicionado: distribución de equipos por planta",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 3.a",
+      "pagina_pdf": 55,
+      "cita_textual": "Dibujo a escala legible incluyendo Distribución de los equipos de aire acondicionado por planta, indicando la ubicación de cada equipo parte del sistema de aire acondicionado y ventilación."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [
+      "plano.aa.distribucion_equipos.presente"
+    ],
+    "condicion": "plano.aa.distribucion_equipos.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Dibujo a escala legible incluyendo Distribución de los equipos de aire acondicionado por planta, indicando la ubicación de cada equipo parte del sistema de aire acondicionado y ventilación.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La sección de aire acondicionado no incluye distribución de equipos por planta (Anexo V, A/A, 3.a).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Información mínima de la sección de aire acondicionado (Anexo V, A/A, 3). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.aa.distribucion_equipos.presente. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Dibujo a escala legible incluyendo Distribución de los equipos de aire acondicionado por planta, indicando la ubicaci…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-DIAGRAMAS-ALIMENTACION-CONTROL",
+    "version": 2,
+    "titulo": "Aire acondicionado: diagramas de alimentación eléctrica y control",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 3.b",
+      "pagina_pdf": 55,
+      "cita_textual": "Diagramas de alimentación eléctrica y de control de las unidades de aires acondicionado, enfriadores, bombas, conexión del evaporador con condensadores y presurización de escaleras."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [
+      "plano.aa.diagramas_alimentacion_control.presente"
+    ],
+    "condicion": "plano.aa.diagramas_alimentacion_control.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Diagramas de alimentación eléctrica y de control de las unidades de aires acondicionado, enfriadores, bombas, conexión del evaporador con condensadores y presurización de escaleras.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La sección de aire acondicionado no incluye diagramas de alimentación eléctrica y control (Anexo V, A/A, 3.b).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Información mínima de la sección de aire acondicionado (Anexo V, A/A, 3). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.aa.diagramas_alimentacion_control.presente. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Diagramas de alimentación eléctrica y de control de las unidades de aires acondicionado, enfriadores, bombas, conexió…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-UBICACION-CONTROLES",
+    "version": 2,
+    "titulo": "Aire acondicionado: ubicación de termostatos y controles",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 3.c",
+      "pagina_pdf": 55,
+      "cita_textual": "Ubicación en planta de los termostatos, humidistatos y otros elementos de control."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [
+      "plano.aa.ubicacion_controles.presente"
+    ],
+    "condicion": "plano.aa.ubicacion_controles.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Ubicación en planta de los termostatos, humidistatos y otros elementos de control.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La sección de aire acondicionado no incluye ubicación de termostatos y controles (Anexo V, A/A, 3.c).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Información mínima de la sección de aire acondicionado (Anexo V, A/A, 3). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.aa.ubicacion_controles.presente. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Ubicación en planta de los termostatos, humidistatos y otros elementos de control.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-CUADRO-RESUMEN",
+    "version": 2,
+    "titulo": "Aire acondicionado: cuadro resumen de toneladas, refrigerantes y eficiencia",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 5",
+      "pagina_pdf": 56,
+      "cita_textual": "Se debe presentar un cuadro resumen totalizando las toneladas instaladas, los refrigerantes utilizados y la eficiencia del sistema."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [
+      "plano.aa.cuadro_resumen.presente"
+    ],
+    "condicion": "plano.aa.cuadro_resumen.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Se debe presentar un cuadro resumen totalizando las toneladas instaladas, los refrigerantes utilizados y la eficiencia del sistema.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el cuadro resumen con toneladas instaladas, refrigerantes y eficiencia del sistema (Anexo V, A/A, 5).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.aa.cuadro_resumen.presente. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Se debe presentar un cuadro resumen totalizando las toneladas instaladas, los refrigerantes utilizados y la eficienci…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-SELLO-FIRMA",
+    "version": 2,
+    "titulo": "Aire acondicionado: sello y firma del profesional en tinta negra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 7",
+      "pagina_pdf": 56,
+      "cita_textual": "Sello y firma del plano por el profesional responsable en tinta de color negro."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas",
+    "entradas": [
+      "plano.aa.sello_firma_tinta_negra"
+    ],
+    "condicion": "plano.aa.sello_firma_tinta_negra == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Sello y firma del plano por el profesional responsable en tinta de color negro.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano de aire acondicionado debe llevar sello y firma del profesional responsable en tinta negra (Anexo V, A/A, 7).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Mismo requisito por sistema, cada uno en su lámina: alarma g, equipos electrónicos 3 y fontanería 4. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.aa.sello_firma_tinta_negra. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Sello y firma del plano por el profesional responsable en tinta de color negro.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-REFORMA-EXISTENTE",
+    "version": 2,
+    "titulo": "Aire acondicionado, reformas o adiciones: existente a mantener o eliminar",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 8",
+      "pagina_pdf": 56,
+      "cita_textual": "se debe indicar claramente lo existente a mantener o eliminar. El diseñador a cargo de la reforma del aire acondicionado o ventilación debe verificar"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas and proyecto.es_remodelacion == true",
+    "entradas": [
+      "plano.aa.existente_a_mantener_o_eliminar.presente"
+    ],
+    "condicion": "plano.aa.existente_a_mantener_o_eliminar.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "se debe indicar claramente lo existente a mantener o eliminar. El diseñador a cargo de la reforma del aire acondicionado o ventilación debe verificar",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En reformas o adiciones, el plano de aire acondicionado debe indicar lo existente a mantener o eliminar (Anexo V, A/A, 8).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, proyecto.es_remodelacion, plano.aa.existente_a_mantener_o_eliminar.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («se debe indicar claramente lo existente a mantener o eliminar. El diseñador a cargo de la reforma del aire acondicion…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-EQUIPO-JUNTO-TERCEROS",
+    "version": 2,
+    "titulo": "Aire acondicionado junto a terceros o colindantes: aislante, ductos de calor y desagüe",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 9",
+      "pagina_pdf": 56,
+      "cita_textual": "En caso de no ser factible, deberán estar cubiertos de material aislante para disminuir el ruido a los niveles legalmente exigidos, contar con ductos de desviación de calor y tuberías de desagüe que canalicen las aguas que producen."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas and aa.equipo_junto_a_terceros == true",
+    "entradas": [
+      "plano.aa.aislante_ductos_desague.presente"
+    ],
+    "condicion": "plano.aa.aislante_ductos_desague.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "En caso de no ser factible, deberán estar cubiertos de material aislante para disminuir el ruido a los niveles legalmente exigidos, contar con ductos de desviación de calor y tuberías de desagüe que canalicen las aguas que producen.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El equipo de aire acondicionado queda junto a terceros o colindantes: debe mostrar aislante acústico, ductos de desviación de calor y tuberías de desagüe (Anexo V, A/A, 9).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Bloqueante solo la parte obligatoria («deberán»); ubicar el equipo lejos de terceros es preferencia («preferiblemente») y no lleva regla. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, aa.equipo_junto_a_terceros, plano.aa.aislante_ductos_desague.presente. Si falta un hecho de aplicabilidad (plano.disciplinas, aa.equipo_junto_a_terceros) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («En caso de no ser factible, deberán estar cubiertos de material aislante para disminuir el ruido a los niveles legalm…», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-AV-AA-PREVISION-FUTURA",
+    "version": 2,
+    "titulo": "Previsión de aire acondicionado futuro de más de 3 toneladas: alimentación y espacios",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 10",
+      "pagina_pdf": 56,
+      "cita_textual": "deberá contemplar la alimentación eléctrica adecuada y segura, así como los espacios necesarios para el correcto funcionamiento y servicio de los equipos futuros."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.preve_aa_futuro_mayor_3_ton == true",
+    "entradas": [
+      "plano.aa.prevision_alimentacion_y_espacios.presente"
+    ],
+    "condicion": "plano.aa.prevision_alimentacion_y_espacios.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "deberá contemplar la alimentación eléctrica adecuada y segura, así como los espacios necesarios para el correcto funcionamiento y servicio de los equipos futuros.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El plano prevé aire acondicionado futuro de más de 3 toneladas: debe contemplar su alimentación eléctrica y los espacios para los equipos (Anexo V, A/A, 10).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.preve_aa_futuro_mayor_3_ton, plano.aa.prevision_alimentacion_y_espacios.presente. Si falta un hecho de aplicabilidad (proyecto.preve_aa_futuro_mayor_3_ton) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («deberá contemplar la alimentación eléctrica adecuada y segura, así como los espacios necesarios para el correcto func…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-VENTILACION-AMBIENTES",
+    "version": 2,
+    "titulo": "Ventilación adecuada (natural o mecánica) de los ambientes ocupados",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 11",
+      "pagina_pdf": 56,
+      "cita_textual": "Todos los ambientes en los cuales permanezcan personas en forma regular deberán contar con una adecuada ventilación, la cual podrá ser natural o mecánica según lo establezca el RAV."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Todos los ambientes en los cuales permanezcan personas en forma regular deberán contar con una adecuada ventilación, la cual podrá ser natural o mecánica según lo establezca el RAV.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay ambientes ocupados regularmente sin ventilación adecuada natural o mecánica (Anexo V, A/A, 11).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: los caudales del RAV no están en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Todos los ambientes en los cuales permanezcan personas en forma regular deberán contar con una adecuada ventilación, …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-MINI-SPLIT",
+    "version": 2,
+    "titulo": "Mini split en uso público u oficinas y locales de más de 5 personas: requiere ventilación",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 12",
+      "pagina_pdf": 56,
+      "cita_textual": "no se utilizarán equipos tipo mini split separados (mini split) en ambientes de uso público o en oficinas y locales comerciales privados con ocupación para más de cinco personas salvo que se presenten con un sistema de ventilación"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'M' in plano.disciplinas and aa.usa_mini_split == true",
+    "entradas": [
+      "aa.usa_mini_split"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "no se utilizarán equipos tipo mini split separados (mini split) en ambientes de uso público o en oficinas y locales comerciales privados con ocupación para más de cinco personas salvo que se presenten con un sistema de ventilación",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay mini split en ambientes de uso público o en oficinas o locales de más de cinco personas sin un sistema de ventilación con el aire fresco de la tabla 4.3.3 del RAV (Anexo V, A/A, 12).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: la tabla 4.3.3 del RAV no está en el repositorio; el revisor comprueba la ocupación y el sistema de ventilación. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, aa.usa_mini_split. Si falta un hecho de aplicabilidad (plano.disciplinas, aa.usa_mini_split) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («no se utilizarán equipos tipo mini split separados (mini split) en ambientes de uso público o en oficinas y locales c…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-AA-OBRA-GRIS-CARGA-TERMICA",
+    "version": 2,
+    "titulo": "Obra gris: carga térmica estimada y necesidad de energía",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Aire acondicionado, 13",
+      "pagina_pdf": 56,
+      "cita_textual": "Las construcciones en gris deberán tener indicada la carga térmica estimada como lo establece el RAV y su necesidad de energía eléctrica u otra, según el tipo de obra."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.obra_gris == true",
+    "entradas": [
+      "plano.aa.carga_termica_obra_gris.presente"
+    ],
+    "condicion": "plano.aa.carga_termica_obra_gris.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Las construcciones en gris deberán tener indicada la carga térmica estimada como lo establece el RAV y su necesidad de energía eléctrica u otra, según el tipo de obra.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Construcción en gris: debe indicarse la carga térmica estimada y su necesidad de energía, coherente con la sección eléctrica (Anexo V, A/A, 13).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo presencia; el método del RAV no está en el repositorio. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.obra_gris, plano.aa.carga_termica_obra_gris.presente. Si falta un hecho de aplicabilidad (proyecto.obra_gris) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Las construcciones en gris deberán tener indicada la carga térmica estimada como lo establece el RAV y su necesidad d…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-PL-MEMORIA-TECNICA",
+    "version": 2,
+    "titulo": "Fontanería: memorias técnicas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fontanería, 3",
+      "pagina_pdf": 56,
+      "cita_textual": "Memorias Técnicas que cumplan con las normas, requerimientos y criterios vigentes."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'PL' in plano.disciplinas",
+    "entradas": [
+      "expediente.memoria_fontaneria.adjunto"
+    ],
+    "condicion": "expediente.memoria_fontaneria.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Memorias Técnicas que cumplan con las normas, requerimientos y criterios vigentes.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Faltan las memorias técnicas de fontanería en un solo PDF (Anexo V, Fontanería, 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de fontanería la revisan y registran la DINASEPI, el MINSA, el MOP y el IDAAN (Anexo V, Fontanería, 5). Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, expediente.memoria_fontaneria.adjunto. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Memorias Técnicas que cumplan con las normas, requerimientos y criterios vigentes.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-PL-SELLO-FIRMA",
+    "version": 2,
+    "titulo": "Fontanería: sello y firma del profesional en tinta negra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fontanería, 4",
+      "pagina_pdf": 56,
+      "cita_textual": "Sello y firmas de los planos por el Profesional Responsable en tinta de color negro."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and 'PL' in plano.disciplinas",
+    "entradas": [
+      "plano.fontaneria.sello_firma_tinta_negra"
+    ],
+    "condicion": "plano.fontaneria.sello_firma_tinta_negra == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Sello y firmas de los planos por el Profesional Responsable en tinta de color negro.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los planos de fontanería deben llevar sello y firma del profesional responsable en tinta negra (Anexo V, Fontanería, 4).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: la sección de fontanería la revisan y registran la DINASEPI, el MINSA, el MOP y el IDAAN (Anexo V, Fontanería, 5). Mismo requisito por sistema, cada uno en su lámina: alarma g, equipos electrónicos 3 y A/A 7. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): plano.disciplinas, plano.fontaneria.sello_firma_tinta_negra. Si falta un hecho de aplicabilidad (plano.disciplinas) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Sello y firmas de los planos por el Profesional Responsable en tinta de color negro.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-FV-LOCALIZACION-GPS",
+    "version": 2,
+    "titulo": "Fotovoltaico: localización regional con coordenadas GPS",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 2",
+      "pagina_pdf": 57,
+      "cita_textual": "Localización regional del lote clara y grande, usando el Sistema de Posicionamiento Global, en adelante el GPS."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'FOTOVOLTAICO' or (tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true)",
+    "entradas": [
+      "plano.fotovoltaico.localizacion_gps.presente"
+    ],
+    "condicion": "plano.fotovoltaico.localizacion_gps.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Localización regional del lote clara y grande, usando el Sistema de Posicionamiento Global, en adelante el GPS.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La localización regional del plano fotovoltaico debe usar coordenadas GPS (Anexo V, Fotovoltaico, 2).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico, plano.fotovoltaico.localizacion_gps.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («Localización regional del lote clara y grande, usando el Sistema de Posicionamiento Global, en adelante el GPS.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-FV-DISENO-SEGUN-RIE",
+    "version": 2,
+    "titulo": "Fotovoltaico: diseño conforme al RIE vigente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 3",
+      "pagina_pdf": 57,
+      "cita_textual": "Todas las protecciones, conductores, canalizaciones y demás elementos relacionados al sistema fotovoltaico deberán ser diseñados conforme a lo establecido en el Reglamento para las Instalaciones Eléctricas de la República de Panamá (RIE) vigente"
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite == 'FOTOVOLTAICO' or (tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true)",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "Todas las protecciones, conductores, canalizaciones y demás elementos relacionados al sistema fotovoltaico deberán ser diseñados conforme a lo establecido en el Reglamento para las Instalaciones Eléctricas de la República de Panamá (RIE) vigente",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El diseño fotovoltaico debe cumplir el RIE vigente con sus anexos y resoluciones de la JTIA (Anexo V, Fotovoltaico, 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: el RIE no está en el repositorio. Trámites provisionales: 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («Todas las protecciones, conductores, canalizaciones y demás elementos relacionados al sistema fotovoltaico deberán se…», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-FV-MEMORIA-TECNICA",
+    "version": 2,
+    "titulo": "Fotovoltaico: memoria técnica en un solo PDF",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 5",
+      "pagina_pdf": 57,
+      "cita_textual": "Memoria técnica que cumpla con las normas, requerimientos y criterios vigentes. La Memoria deberá ser entregada a la DOYC en un solo archivo PDF con un peso no mayor a 20MEGAS."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'FOTOVOLTAICO' or (tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true)",
+    "entradas": [
+      "expediente.memoria_fotovoltaica.adjunto"
+    ],
+    "condicion": "expediente.memoria_fotovoltaica.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Memoria técnica que cumpla con las normas, requerimientos y criterios vigentes. La Memoria deberá ser entregada a la DOYC en un solo archivo PDF con un peso no mayor a 20MEGAS.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la memoria técnica del sistema fotovoltaico en un solo PDF (Anexo V, Fotovoltaico, 5).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El mismo texto aparece en Eléctrico 18; aquí es la sección fotovoltaica. El peso máximo de 20 MB no se evalúa en esta regla. Trámites provisionales: 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico, expediente.memoria_fotovoltaica.adjunto. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Memoria técnica que cumpla con las normas, requerimientos y criterios vigentes. La Memoria deberá ser entregada a la …», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-FV-REFORMA-UNIFILAR-CONEXION",
+    "version": 2,
+    "titulo": "Fotovoltaico: unifilar del punto de conexión al sistema eléctrico existente",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 6",
+      "pagina_pdf": 57,
+      "cita_textual": "presentando un unifilar del punto de conexionado del sistema fotovoltaico al sistema eléctrico existente."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite == 'FOTOVOLTAICO' or (tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true and proyecto.es_remodelacion == true)",
+    "entradas": [
+      "plano.fotovoltaico.unifilar_conexion_existente.presente"
+    ],
+    "condicion": "plano.fotovoltaico.unifilar_conexion_existente.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "presentando un unifilar del punto de conexionado del sistema fotovoltaico al sistema eléctrico existente.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta indicar lo existente a mantener o eliminar con el unifilar del punto de conexión del sistema fotovoltaico al sistema existente (Anexo V, Fotovoltaico, 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. El plano fotovoltaico (Arts. 90–91) siempre es sobre una edificación existente, por eso aplica a todo trámite FOTOVOLTAICO. Trámites provisionales: 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico, proyecto.es_remodelacion, plano.fotovoltaico.unifilar_conexion_existente.presente. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B4 («presentando un unifilar del punto de conexionado del sistema fotovoltaico al sistema eléctrico existente.», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AV-FV-TUBERIAS-AREAS-COMUNES",
+    "version": 2,
+    "titulo": "Fotovoltaico, multifamiliares o comerciales: tuberías en áreas de uso común",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 7",
+      "pagina_pdf": 57,
+      "cita_textual": "Las tuberías eléctricas del sistema fotovoltaico en edificaciones residenciales multifamiliares o comerciales, deben estar ubicadas en áreas de uso común"
+    },
+    "tipo": "criterio",
+    "aplica_si": "(tramite == 'FOTOVOLTAICO' or (tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true)) and proyecto.multifamiliar_o_comercial == true",
+    "entradas": [
+      "plano.fotovoltaico.tuberias_en_areas_comunes"
+    ],
+    "condicion": "plano.fotovoltaico.tuberias_en_areas_comunes == true",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Las tuberías eléctricas del sistema fotovoltaico en edificaciones residenciales multifamiliares o comerciales, deben estar ubicadas en áreas de uso común",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En edificaciones multifamiliares o comerciales, las tuberías del sistema fotovoltaico deben ir por áreas de uso común o ductos verticales especiales (Anexo V, Fotovoltaico, 7).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Trámites provisionales: 'FOTOVOLTAICO' = plano fotovoltaico (RDPF, Cap. VIII); 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico, proyecto.multifamiliar_o_comercial, plano.fotovoltaico.tuberias_en_areas_comunes. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico, proyecto.multifamiliar_o_comercial) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Las tuberías eléctricas del sistema fotovoltaico en edificaciones residenciales multifamiliares o comerciales, deben …», normativa/acuerdo-110/texto-completo.md); tipo «documental» corregido a «criterio»"
+  },
+  {
+    "id": "A110-AV-FV-CAPACIDAD-SOPORTE-REMODELACION",
+    "version": 2,
+    "titulo": "Fotovoltaico en remodelación dentro de otro plano: certificación de capacidad de soporte",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo V, Fotovoltaico, 8",
+      "pagina_pdf": 57,
+      "cita_textual": "El profesional responsable debe de incluir una certificación dentro del plano o documento adjunto, señalando la capacidad de soporte existente de la estructura y si es apta para recibir las cargas adicionales propuestas en la instalación fotovoltaica."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PLANO_MISCELANEO', 'RDP', 'RDP_ETAPAS', 'MODIFICACION_AS_BUILT', 'BIENES_USO_PUBLICO'] and proyecto.incluye_fotovoltaico == true and proyecto.es_remodelacion == true",
+    "entradas": [
+      "expediente.certificacion_capacidad_soporte.adjunto"
+    ],
+    "condicion": "expediente.certificacion_capacidad_soporte.adjunto == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "El profesional responsable debe de incluir una certificación dentro del plano o documento adjunto, señalando la capacidad de soporte existente de la estructura y si es apta para recibir las cargas adicionales propuestas en la instalación fotovoltaica.",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta la certificación de la capacidad de soporte de la estructura existente para las cargas del sistema fotovoltaico (Anexo V, Fotovoltaico, 8).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. En el trámite FOTOVOLTAICO lo verifica A110-ART96-CAPACIDAD-SOPORTE; esta regla cubre el fotovoltaico incluido en otro plano sobre estructura existente. Trámites provisionales: 'PLANO_MISCELANEO' = plano misceláneo (RDPM, Cap. III); 'RDP_ETAPAS' = plano por etapas (Cap. V); 'MODIFICACION_AS_BUILT' = modificación o As Built (Cap. VI); 'BIENES_USO_PUBLICO' = bienes de uso público o parques (Cap. IX). 'RDP' = plano constructivo de edificación (Cap. IV). Hechos provisionales (los decide la IA o un extractor futuro): proyecto.incluye_fotovoltaico, proyecto.es_remodelacion, expediente.certificacion_capacidad_soporte.adjunto. Si falta un hecho de aplicabilidad (proyecto.incluye_fotovoltaico, proyecto.es_remodelacion) la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («El profesional responsable debe de incluir una certificación dentro del plano o documento adjunto, señalando la capac…», normativa/acuerdo-110/texto-completo.md)"
+  }
+]

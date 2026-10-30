@@ -1,0 +1,1409 @@
+{
+ "generado_desde": "Documento Gráfico de Zonificación (Anexo 6 del PLOT), DPU",
+ "hojas": [
+  {
+   "hoja": "10-3A",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-3A-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591533,
+    8.924619,
+    -79.513783,
+    8.970467
+   ],
+   "poligonos": 169,
+   "por_estado": {
+    "ok": 104,
+    "sin_etiqueta": 60,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "10-3B",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-3B-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591362,
+    8.968934,
+    -79.513602,
+    9.014784
+   ],
+   "poligonos": 896,
+   "por_estado": {
+    "ok": 346,
+    "sin_etiqueta": 539,
+    "conflicto": 11
+   }
+  },
+  {
+   "hoja": "10-3C",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-3C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591109,
+    9.013176,
+    -79.513329,
+    9.059028
+   ],
+   "poligonos": 119,
+   "por_estado": {
+    "ok": 81,
+    "sin_etiqueta": 34,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "10-3E",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-3E-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.590837,
+    9.101869,
+    -79.513036,
+    9.147724
+   ],
+   "poligonos": 48,
+   "por_estado": {
+    "ok": 22,
+    "sin_etiqueta": 23,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "10-3F",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-3F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.590663,
+    9.146057,
+    -79.512861,
+    9.191922
+   ],
+   "poligonos": 22,
+   "por_estado": {
+    "ok": 2,
+    "sin_etiqueta": 19,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "10-4F",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-4F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514706,
+    9.145819,
+    -79.436888,
+    9.19169
+   ],
+   "poligonos": 23,
+   "por_estado": {
+    "ok": 6,
+    "sin_etiqueta": 13,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "10-5F",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-5F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438752,
+    9.145412,
+    -79.360927,
+    9.191288
+   ],
+   "poligonos": 22,
+   "por_estado": {
+    "ok": 14,
+    "sin_etiqueta": 7,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "10-6F",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-6F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.362674,
+    9.144988,
+    -79.284843,
+    9.190887
+   ],
+   "poligonos": 22,
+   "por_estado": {
+    "ok": 18,
+    "sin_etiqueta": 2,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "10-7F",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-7F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.286717,
+    9.144702,
+    -79.208878,
+    9.190607
+   ],
+   "poligonos": 38,
+   "por_estado": {
+    "ok": 30,
+    "sin_etiqueta": 8,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "10-7G",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-7G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.286558,
+    9.189082,
+    -79.208719,
+    9.234998
+   ],
+   "poligonos": 34,
+   "por_estado": {
+    "ok": 26,
+    "sin_etiqueta": 8,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "10-8D",
+   "escala": "1:10.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/10-8D-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.21122,
+    9.077928,
+    -79.133392,
+    9.123863
+   ],
+   "poligonos": 20,
+   "por_estado": {
+    "ok": 8,
+    "sin_etiqueta": 11,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "25-1A",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-1A-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.782412,
+    8.96825,
+    -79.588013,
+    9.082809
+   ],
+   "poligonos": 6,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 2,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-1B",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-1B-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.782231,
+    9.079109,
+    -79.587758,
+    9.193686
+   ],
+   "poligonos": 17,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 12,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "25-1C",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-1C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.781664,
+    9.189786,
+    -79.587125,
+    9.30437
+   ],
+   "poligonos": 7,
+   "por_estado": {
+    "ok": 2,
+    "sin_etiqueta": 5,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-2C",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-2C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591848,
+    9.188813,
+    -79.397274,
+    9.303481
+   ],
+   "poligonos": 23,
+   "por_estado": {
+    "ok": 3,
+    "sin_etiqueta": 19,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "25-2D",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-2D-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591216,
+    9.299849,
+    -79.396574,
+    9.414527
+   ],
+   "poligonos": 4,
+   "por_estado": {
+    "ok": 1,
+    "sin_etiqueta": 3,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-2E",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-2E-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.591034,
+    9.410544,
+    -79.396316,
+    9.525231
+   ],
+   "poligonos": 12,
+   "por_estado": {
+    "ok": 2,
+    "sin_etiqueta": 10,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-3A",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-3A-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.402783,
+    8.966442,
+    -79.2083,
+    9.081183
+   ],
+   "poligonos": 111,
+   "por_estado": {
+    "ok": 28,
+    "sin_etiqueta": 79,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "25-3C",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-3C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.401702,
+    9.188009,
+    -79.207076,
+    9.302779
+   ],
+   "poligonos": 38,
+   "por_estado": {
+    "ok": 31,
+    "sin_etiqueta": 7,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-3D",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-3D-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.401502,
+    9.298748,
+    -79.206809,
+    9.413528
+   ],
+   "poligonos": 9,
+   "por_estado": {
+    "ok": 3,
+    "sin_etiqueta": 5,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "25-3E",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-3E-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400723,
+    9.40961,
+    -79.205961,
+    9.5244
+   ],
+   "poligonos": 5,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 1,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "25-4A",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-4A-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.212743,
+    8.96569,
+    -79.018212,
+    9.080527
+   ],
+   "poligonos": 16,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 9,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "25-4C",
+   "escala": "1:25.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/25-4C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.2117,
+    9.187179,
+    -79.017043,
+    9.302039
+   ],
+   "poligonos": 11,
+   "por_estado": {
+    "ok": 7,
+    "sin_etiqueta": 4,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-10H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-10H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.324774,
+    9.056823,
+    -79.285864,
+    9.079768
+   ],
+   "poligonos": 27,
+   "por_estado": {
+    "ok": 16,
+    "sin_etiqueta": 5,
+    "conflicto": 6
+   }
+  },
+  {
+   "hoja": "5-10I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-10I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.324634,
+    9.078991,
+    -79.285723,
+    9.101936
+   ],
+   "poligonos": 84,
+   "por_estado": {
+    "ok": 46,
+    "sin_etiqueta": 29,
+    "conflicto": 9
+   }
+  },
+  {
+   "hoja": "5-10J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-10J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.324522,
+    9.101168,
+    -79.285617,
+    9.124123
+   ],
+   "poligonos": 49,
+   "por_estado": {
+    "ok": 35,
+    "sin_etiqueta": 7,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-10K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-10K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.324419,
+    9.123301,
+    -79.285511,
+    9.146247
+   ],
+   "poligonos": 15,
+   "por_estado": {
+    "ok": 11,
+    "sin_etiqueta": 1,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-11I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-11I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.286641,
+    9.078792,
+    -79.247727,
+    9.101742
+   ],
+   "poligonos": 45,
+   "por_estado": {
+    "ok": 31,
+    "sin_etiqueta": 9,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-11J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-11J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.286608,
+    9.100997,
+    -79.247701,
+    9.123947
+   ],
+   "poligonos": 35,
+   "por_estado": {
+    "ok": 23,
+    "sin_etiqueta": 10,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "5-11K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-11K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.286457,
+    9.123092,
+    -79.247547,
+    9.146052
+   ],
+   "poligonos": 23,
+   "por_estado": {
+    "ok": 15,
+    "sin_etiqueta": 7,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-12I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-12I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.248656,
+    9.078581,
+    -79.20975,
+    9.101543
+   ],
+   "poligonos": 15,
+   "por_estado": {
+    "ok": 7,
+    "sin_etiqueta": 3,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-12J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-12J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.248631,
+    9.100749,
+    -79.209722,
+    9.123711
+   ],
+   "poligonos": 27,
+   "por_estado": {
+    "ok": 19,
+    "sin_etiqueta": 5,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-12K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-12K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.24845,
+    9.12288,
+    -79.20953,
+    9.145843
+   ],
+   "poligonos": 13,
+   "por_estado": {
+    "ok": 8,
+    "sin_etiqueta": 5,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-3H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-3H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.590572,
+    9.057998,
+    -79.551683,
+    9.080927
+   ],
+   "poligonos": 9,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 2,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-3I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-3I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.590394,
+    9.08016,
+    -79.551503,
+    9.103089
+   ],
+   "poligonos": 7,
+   "por_estado": {
+    "ok": 5,
+    "sin_etiqueta": 1,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-4A",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4A-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.553154,
+    8.902774,
+    -79.514282,
+    8.925704
+   ],
+   "poligonos": 8,
+   "por_estado": {
+    "ok": 6,
+    "sin_etiqueta": 1,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-4B",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4B-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.553067,
+    8.924909,
+    -79.514192,
+    8.947831
+   ],
+   "poligonos": 58,
+   "por_estado": {
+    "ok": 21,
+    "sin_etiqueta": 33,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "5-4C",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4C-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.553079,
+    8.947126,
+    -79.514202,
+    8.970057
+   ],
+   "poligonos": 325,
+   "por_estado": {
+    "ok": 186,
+    "sin_etiqueta": 134,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-4D",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/10/DPU-SNF-C04-MP-0501E-171025-MOSAICO-5-4D.pdf",
+   "fecha_hoja": "Octubre 2025",
+   "bbox": [
+    -79.552919,
+    8.969233,
+    -79.514039,
+    8.992147
+   ],
+   "poligonos": 382,
+   "por_estado": {
+    "ok": 187,
+    "sin_etiqueta": 189,
+    "conflicto": 6
+   }
+  },
+  {
+   "hoja": "5-4E",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/10/DPU-SNF-C04-MP-0504D-171025-MOSAICO-5-4E.pdf",
+   "fecha_hoja": "Octubre 2025",
+   "bbox": [
+    -79.55284,
+    8.991341,
+    -79.513958,
+    9.014273
+   ],
+   "poligonos": 351,
+   "por_estado": {
+    "ok": 219,
+    "sin_etiqueta": 128,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "5-4F",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.552634,
+    9.01353,
+    -79.51374,
+    9.036462
+   ],
+   "poligonos": 118,
+   "por_estado": {
+    "ok": 85,
+    "sin_etiqueta": 30,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-4H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.552566,
+    9.057836,
+    -79.513667,
+    9.080769
+   ],
+   "poligonos": 94,
+   "por_estado": {
+    "ok": 28,
+    "sin_etiqueta": 64,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "5-4I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.552541,
+    9.079989,
+    -79.513648,
+    9.102923
+   ],
+   "poligonos": 102,
+   "por_estado": {
+    "ok": 65,
+    "sin_etiqueta": 32,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-4J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.55238,
+    9.102088,
+    -79.513484,
+    9.125012
+   ],
+   "poligonos": 45,
+   "por_estado": {
+    "ok": 23,
+    "sin_etiqueta": 20,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "5-4K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-4K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.552254,
+    9.124258,
+    -79.513347,
+    9.147192
+   ],
+   "poligonos": 10,
+   "por_estado": {
+    "ok": 5,
+    "sin_etiqueta": 2,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-5C",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/10/DPU-SNF-C04-MP-0502C-171025-MOSAICO-5-5C.pdf",
+   "fecha_hoja": "Octubre 2025",
+   "bbox": [
+    -79.515059,
+    8.946881,
+    -79.47618,
+    8.969807
+   ],
+   "poligonos": 1,
+   "por_estado": {
+    "ok": 1,
+    "sin_etiqueta": 0,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-5D",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/10/DPU-SNF-C04-MP-0503E-040925-MOSAICO-5-5D.pdf",
+   "fecha_hoja": "Octubre 2025",
+   "bbox": [
+    -79.514969,
+    8.969052,
+    -79.476087,
+    8.991978
+   ],
+   "poligonos": 300,
+   "por_estado": {
+    "ok": 165,
+    "sin_etiqueta": 134,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-5E",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/10/DPU-SNF-C04-MP-0505E-171025-MOSAICO-5-5E.pdf",
+   "fecha_hoja": "Octubre 2025",
+   "bbox": [
+    -79.514924,
+    8.991177,
+    -79.476031,
+    9.014122
+   ],
+   "poligonos": 497,
+   "por_estado": {
+    "ok": 341,
+    "sin_etiqueta": 153,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-5F",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514788,
+    9.013393,
+    -79.475901,
+    9.03632
+   ],
+   "poligonos": 215,
+   "por_estado": {
+    "ok": 149,
+    "sin_etiqueta": 63,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-5G",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514661,
+    9.035546,
+    -79.475772,
+    9.058481
+   ],
+   "poligonos": 6,
+   "por_estado": {
+    "ok": 4,
+    "sin_etiqueta": 2,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-5H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514606,
+    9.057716,
+    -79.475714,
+    9.080653
+   ],
+   "poligonos": 55,
+   "por_estado": {
+    "ok": 7,
+    "sin_etiqueta": 48,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-5I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514552,
+    9.079851,
+    -79.475657,
+    9.102788
+   ],
+   "poligonos": 137,
+   "por_estado": {
+    "ok": 53,
+    "sin_etiqueta": 77,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-5J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514497,
+    9.101985,
+    -79.4756,
+    9.124923
+   ],
+   "poligonos": 25,
+   "por_estado": {
+    "ok": 14,
+    "sin_etiqueta": 4,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-5K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-5K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.514415,
+    9.12412,
+    -79.475506,
+    9.147048
+   ],
+   "poligonos": 19,
+   "por_estado": {
+    "ok": 10,
+    "sin_etiqueta": 4,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-6E",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6E-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476917,
+    8.991064,
+    -79.438032,
+    9.013993
+   ],
+   "poligonos": 63,
+   "por_estado": {
+    "ok": 31,
+    "sin_etiqueta": 29,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-6F",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476788,
+    9.013234,
+    -79.4379,
+    9.036173
+   ],
+   "poligonos": 129,
+   "por_estado": {
+    "ok": 66,
+    "sin_etiqueta": 61,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "5-6G",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476622,
+    9.03544,
+    -79.437731,
+    9.058379
+   ],
+   "poligonos": 100,
+   "por_estado": {
+    "ok": 72,
+    "sin_etiqueta": 25,
+    "conflicto": 3
+   }
+  },
+  {
+   "hoja": "5-6H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476639,
+    9.057538,
+    -79.437754,
+    9.080469
+   ],
+   "poligonos": 29,
+   "por_estado": {
+    "ok": 8,
+    "sin_etiqueta": 21,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-6I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476554,
+    9.079672,
+    -79.437649,
+    9.102612
+   ],
+   "poligonos": 84,
+   "por_estado": {
+    "ok": 37,
+    "sin_etiqueta": 36,
+    "conflicto": 11
+   }
+  },
+  {
+   "hoja": "5-6J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476534,
+    9.10177,
+    -79.437626,
+    9.124702
+   ],
+   "poligonos": 32,
+   "por_estado": {
+    "ok": 17,
+    "sin_etiqueta": 11,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "5-6K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-6K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.476294,
+    9.12394,
+    -79.437383,
+    9.146872
+   ],
+   "poligonos": 15,
+   "por_estado": {
+    "ok": 8,
+    "sin_etiqueta": 2,
+    "conflicto": 5
+   }
+  },
+  {
+   "hoja": "5-7F",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438862,
+    9.013026,
+    -79.399972,
+    9.035968
+   ],
+   "poligonos": 21,
+   "por_estado": {
+    "ok": 5,
+    "sin_etiqueta": 9,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-7G",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438767,
+    9.035186,
+    -79.399874,
+    9.058129
+   ],
+   "poligonos": 190,
+   "por_estado": {
+    "ok": 139,
+    "sin_etiqueta": 37,
+    "conflicto": 14
+   }
+  },
+  {
+   "hoja": "5-7H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438598,
+    9.057356,
+    -79.399703,
+    9.080299
+   ],
+   "poligonos": 135,
+   "por_estado": {
+    "ok": 93,
+    "sin_etiqueta": 32,
+    "conflicto": 10
+   }
+  },
+  {
+   "hoja": "5-7I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438503,
+    9.079526,
+    -79.399596,
+    9.102469
+   ],
+   "poligonos": 87,
+   "por_estado": {
+    "ok": 64,
+    "sin_etiqueta": 19,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "5-7J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.43848,
+    9.101632,
+    -79.399579,
+    9.124568
+   ],
+   "poligonos": 56,
+   "por_estado": {
+    "ok": 33,
+    "sin_etiqueta": 22,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-7K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-7K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.438419,
+    9.123829,
+    -79.399516,
+    9.146783
+   ],
+   "poligonos": 8,
+   "por_estado": {
+    "ok": 6,
+    "sin_etiqueta": 2,
+    "conflicto": 0
+   }
+  },
+  {
+   "hoja": "5-8F",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8F-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400828,
+    9.012831,
+    -79.361936,
+    9.035768
+   ],
+   "poligonos": 22,
+   "por_estado": {
+    "ok": 15,
+    "sin_etiqueta": 3,
+    "conflicto": 4
+   }
+  },
+  {
+   "hoja": "5-8G",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400793,
+    9.035037,
+    -79.361899,
+    9.057993
+   ],
+   "poligonos": 29,
+   "por_estado": {
+    "ok": 18,
+    "sin_etiqueta": 3,
+    "conflicto": 8
+   }
+  },
+  {
+   "hoja": "5-8H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400696,
+    9.057143,
+    -79.361799,
+    9.080081
+   ],
+   "poligonos": 66,
+   "por_estado": {
+    "ok": 41,
+    "sin_etiqueta": 24,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-8I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400561,
+    9.079348,
+    -79.361661,
+    9.102287
+   ],
+   "poligonos": 118,
+   "por_estado": {
+    "ok": 71,
+    "sin_etiqueta": 41,
+    "conflicto": 6
+   }
+  },
+  {
+   "hoja": "5-8J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400499,
+    9.101482,
+    -79.361588,
+    9.12442
+   ],
+   "poligonos": 80,
+   "por_estado": {
+    "ok": 61,
+    "sin_etiqueta": 17,
+    "conflicto": 2
+   }
+  },
+  {
+   "hoja": "5-8K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-8K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.400419,
+    9.123606,
+    -79.361514,
+    9.146563
+   ],
+   "poligonos": 14,
+   "por_estado": {
+    "ok": 13,
+    "sin_etiqueta": 0,
+    "conflicto": 1
+   }
+  },
+  {
+   "hoja": "5-9G",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-9G-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.36283,
+    9.034829,
+    -79.323934,
+    9.05778
+   ],
+   "poligonos": 17,
+   "por_estado": {
+    "ok": 8,
+    "sin_etiqueta": 2,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-9H",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-9H-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.362693,
+    9.057043,
+    -79.323785,
+    9.079994
+   ],
+   "poligonos": 36,
+   "por_estado": {
+    "ok": 22,
+    "sin_etiqueta": 7,
+    "conflicto": 7
+   }
+  },
+  {
+   "hoja": "5-9I",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-9I-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.362666,
+    9.079131,
+    -79.323756,
+    9.102082
+   ],
+   "poligonos": 105,
+   "por_estado": {
+    "ok": 59,
+    "sin_etiqueta": 37,
+    "conflicto": 9
+   }
+  },
+  {
+   "hoja": "5-9J",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-9J-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.362556,
+    9.101282,
+    -79.323661,
+    9.124234
+   ],
+   "poligonos": 87,
+   "por_estado": {
+    "ok": 51,
+    "sin_etiqueta": 25,
+    "conflicto": 11
+   }
+  },
+  {
+   "hoja": "5-9K",
+   "escala": "1:5.000",
+   "pdf": "https://dpu.mupa.gob.pa/wp-content/uploads/2025/03/5-9K-121223.pdf",
+   "fecha_hoja": "Octubre 2023",
+   "bbox": [
+    -79.362419,
+    9.123442,
+    -79.323521,
+    9.146394
+   ],
+   "poligonos": 15,
+   "por_estado": {
+    "ok": 11,
+    "sin_etiqueta": 2,
+    "conflicto": 2
+   }
+  }
+ ]
+}

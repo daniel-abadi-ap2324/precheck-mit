@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "PLOT-ART17-CEUS",
+    "version": 2,
+    "titulo": "Certificado de Uso de Suelo (CEUS) para construir",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "17",
+      "pagina_pdf": 12,
+      "cita_textual": "Certificados de Usos del Suelo, requisito indispensable para la construcción de obras en el distrito."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and tramite in ['PDC_CON_ATC', 'PDC']",
+    "entradas": [
+      "expediente.ceus.presente"
+    ],
+    "condicion": "expediente.ceus.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Certificados de Usos del Suelo, requisito indispensable para la construcción de obras en el distrito.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "No consta el Certificado de Uso de Suelo (CEUS) de la DPU, requisito indispensable para construir en el distrito (PLOT, Art. 17; emisión por la DPU, Arts. 19 y 82).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.ceus.presente == true. Hecho provisional (lo decide la IA o un extractor futuro); 'PDC' es un trámite provisional (permiso sin ATC). Se limita al permiso porque el artículo habla de «la construcción de obras»; en RLA el sistema puede determinar la zona sin CEUS (principio 5 del proyecto). Duda: confirmar con la DOYC si el Acuerdo 110 ya exige el CEUS entre los documentos del permiso, para no duplicar. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Certificados de Usos del Suelo, requisito indispensable para la construcción de obras en el distrito.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART21-NO-OBJECION-METRO",
+    "version": 3,
+    "titulo": "No Objeción del Metro de Panamá en polígonos de influencia",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "21",
+      "pagina_pdf": 15,
+      "cita_textual": "Cualquier proyecto que se vaya a realizar dentro los polígonos que delimitan las áreas de influencia de las líneas de Metro, deberá contar con la No Objeción del Metro de Panamá."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['MIVIOT-ML1', 'MIVIOT-ML2']",
+    "entradas": [
+      "expediente.no_objecion_metro.presente"
+    ],
+    "condicion": "expediente.no_objecion_metro.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Cualquier proyecto que se vaya a realizar dentro los polígonos que delimitan las áreas de influencia de las líneas de Metro, deberá contar con la No Objeción del Metro de Panamá.",
+      "archivo": "normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto está dentro del polígono de influencia de una línea de Metro y no consta la No Objeción del Metro de Panamá (PLOT, Art. 21).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.no_objecion_metro.presente == true (hecho provisional; lo decide la IA o un extractor futuro). La frase sigue igual en el texto del Art. 21 que dio el Art. 7 del Acuerdo 270 (G.O. 30388-A, 16-10-2025). Se acota a las normas de los polígonos de Metro con reglas cargadas (Líneas 1 y 2); los polígonos de líneas futuras no tienen hoy código de norma: revisar a mano. No se limita por trámite porque el texto dice «cualquier proyecto». Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): No Objeción del Metro de Panamá: visto bueno de otra entidad, se exige en el registro (criterio 5). Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Cualquier proyecto que se vaya a realizar dentro los polígonos que delimitan las áreas de influencia de las líneas de…», normativa/zonificacion/textos/acuerdo270_sf_y_anexo2.txt)"
+  },
+  {
+    "id": "PLOT-ART38-PISO-ALTURA-ENTRE-LOSAS",
+    "version": 2,
+    "titulo": "Un piso es un nivel de hasta 4.50 m entre losas",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "38",
+      "pagina_pdf": 20,
+      "cita_textual": "Se entenderá por piso, un nivel habitable de hasta 4.50 m de altura entre losas, o entre losa y cubierta."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025']",
+    "entradas": [
+      "proyecto.altura_entre_losas_max_m"
+    ],
+    "condicion": "proyecto.altura_entre_losas_max_m <= 4.5",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O2",
+      "cita": "Se entenderá por piso, un nivel habitable de hasta 4.50 m de altura entre losas, o entre losa y cubierta.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay un nivel con más de 4.50 m entre losas: no cabe en la definición de piso del PLOT (Art. 38); el revisor debe recontar los pisos del proyecto antes de comparar con la altura máxima del código.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.altura_entre_losas_max_m (mayor altura entre losas, o entre losa y cubierta, de los niveles habitables; de cortes y elevaciones). Severidad observacion: el artículo define cómo se cuenta la altura, no prohíbe niveles altos; el efecto real lo dan las reglas de altura de las fichas. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O2 («Se entenderá por piso, un nivel habitable de hasta 4.50 m de altura entre losas, o entre losa y cubierta.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART38-AZOTEA-UN-PISO-NO-HABITABLE",
+    "version": 3,
+    "titulo": "Azotea o techo: no más de un piso adicional ni espacio habitable",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "38",
+      "pagina_pdf": 20,
+      "cita_textual": "En ningún caso podrá el nivel de azotea o techo ocupar más de un piso adicional de altura"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025']",
+    "entradas": [
+      "proyecto.niveles_azotea"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "En ningún caso podrá el nivel de azotea o techo ocupar más de un piso adicional de altura o consistir en un espacio habitable",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El nivel de azotea o techo ocupa más de un piso adicional de altura (PLOT, Art. 38).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Para el revisor: la maquinaria de ascensores, tanques, equipos de uso común, las estructuras que cubren áreas sociales en azotea y el techo inclinado no cuentan como piso; un espacio habitable en azotea sí, y debe sumarse a proyecto.pisos_totales. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con el número de niveles de azotea declarado; si la azotea es habitable el texto la cuenta como un piso más (cómputo), no la prohíbe. Cambios: tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En ningún caso podrá el nivel de azotea o techo ocupar más de un piso adicional de altura o consistir en un espacio h…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)",
+    "condicion": "proyecto.niveles_azotea <= 1"
+  },
+  {
+    "id": "PLOT-ART38-VUELO-MAX-3M",
+    "version": 2,
+    "titulo": "Vuelo sobre la línea de construcción: máximo 3.00 m",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "38",
+      "pagina_pdf": 20,
+      "cita_textual": "El vuelo no podrá extenderse más allá de la línea de propiedad, y nunca más de 3.00 m, con excepción de las áreas donde se disponga lo contrario."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.sobrevuelo_m)",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "condicion": "proyecto.sobrevuelo_m <= 3.0",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "El vuelo no podrá extenderse más allá de la línea de propiedad, y nunca más de 3.00 m, con excepción de las áreas donde se disponga lo contrario.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El vuelo de balcones o terrazas sobre la línea de construcción supera 3.00 m (PLOT, Art. 38).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Reutiliza proyecto.sobrevuelo_m (vuelo medido desde la línea de construcción). Si el plano no tiene vuelos, el hecho no existe y la regla no aplica. «Con excepción de las áreas donde se disponga lo contrario»: una ficha o norma especial puede fijar otro valor, y el Art. 78 permite al Municipio autorizar balcones sobre aceras en El Chorrillo, Santa Ana y Calidonia; en esos casos el revisor decide. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («El vuelo no podrá extenderse más allá de la línea de propiedad, y nunca más de 3.00 m, con excepción de las áreas don…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART38-VUELO-CONDICIONES",
+    "version": 2,
+    "titulo": "Vuelo: solo balcones o terrazas abiertas, desde el nivel sobre la base y sin pasar la línea de propiedad",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "38",
+      "pagina_pdf": 20,
+      "cita_textual": "siempre y cuando la extensión consista en balcones o terrazas abiertas y habitables."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.sobrevuelo_m) and proyecto.sobrevuelo_m > 0",
+    "entradas": [
+      "proyecto.sobrevuelo_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "siempre y cuando la extensión consista en balcones o terrazas abiertas y habitables.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El vuelo sobre la línea de construcción y las aceras solo puede ser de balcones o terrazas abiertas y habitables, a partir del primer nivel después de la base del edificio, y no puede extenderse más allá de la línea de propiedad (PLOT, Art. 38).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio porque el texto permite extenderse «sobre la línea de construcción y las aceras» y a la vez prohíbe pasar «más allá de la línea de propiedad»: cómo se concilian depende de dónde está la línea de propiedad respecto de la acera, y lo decide el revisor. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («siempre y cuando la extensión consista en balcones o terrazas abiertas y habitables.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART41-ESTAC-ABASTO-EN-PROPIEDAD",
+    "version": 2,
+    "titulo": "Zonas mixtas: estacionamientos y abasto dentro de la propiedad",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "41, num. 2",
+      "pagina_pdf": 22,
+      "cita_textual": "(2) Toda edificación ubicada dentro de una zona de uso mixt3 deberá tener sus áreas de estacionamientos y abasto, dentro de la propiedad"
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and lote.codigo_zona in ['ZM1', '1ZM1', 'ZM2', '1ZM2', 'ZM3', '1ZM3', 'ZM4', '1ZM4', 'ZM5', '1ZM5', 'ZM6', '1ZM6', 'ZM7', '1ZM7', 'ZM8', '1ZM8', 'ZM9', '1ZM9']",
+    "entradas": [
+      "plano.estacionamientos_y_abasto_dentro_propiedad"
+    ],
+    "condicion": "plano.estacionamientos_y_abasto_dentro_propiedad == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberá tener sus áreas de estacionamientos y abasto, dentro de la propiedad",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En zona de uso mixto las áreas de estacionamientos y de abasto (carga y descarga) deben estar dentro de la propiedad (PLOT, Art. 41, num. 2).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: plano.estacionamientos_y_abasto_dentro_propiedad == true. Hecho provisional (lo decide la IA o un extractor futuro). Ubicarlas en la parte posterior es solo «de ser posible»: no se exige. Las excepciones del Art. 75 (corregimientos sin requisito, cercanía a transporte masivo, estacionamientos en otro lote) las ve el revisor. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («deberá tener sus áreas de estacionamientos y abasto, dentro de la propiedad», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART41-AREA-SOCIAL-15M2",
+    "version": 2,
+    "titulo": "Zonas mixtas: área de uso social de 15 m² por vivienda",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "41, num. 4",
+      "pagina_pdf": 22,
+      "cita_textual": "(4) Las edificaciones con desarrollos residenciales deberán proveer áreas de uso social a los residentes, a razón de un mínimo de 15 m2 por unidad de vivienda."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and lote.codigo_zona in ['ZM1', '1ZM1', 'ZM2', '1ZM2', 'ZM3', '1ZM3', 'ZM4', '1ZM4', 'ZM5', '1ZM5', 'ZM6', '1ZM6', 'ZM7', '1ZM7', 'ZM8', '1ZM8', 'ZM9', '1ZM9'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "proyecto.area_social_m2_por_vivienda"
+    ],
+    "condicion": "proyecto.area_social_m2_por_vivienda >= 15",
+    "tolerancia": 0.1,
+    "unidad": "m2/vivienda",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "(4) Las edificaciones con desarrollos residenciales deberán proveer áreas de uso social a los residentes, a razón de un mínimo de 15 m2 por unidad de vivienda.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El área de uso social para residentes es menor de 15 m² por unidad de vivienda (PLOT, Art. 41, num. 4).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Reutiliza proyecto.area_social_m2_por_vivienda (área social total / unidades de vivienda). Obviar el área social por excepción es un supuesto generador de compensación urbana (Acuerdo 128, Art. 9, num. 3). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («(4) Las edificaciones con desarrollos residenciales deberán proveer áreas de uso social a los residentes, a razón de …», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART41-ADOSAMIENTO-PARED-CIEGA",
+    "version": 3,
+    "titulo": "Zonas mixtas: adosamientos con pared ciega y acabada",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "41, num. 6",
+      "pagina_pdf": 22,
+      "cita_textual": "(6) Los adosamientos a los linderos, lateral y posterior del polígono, son con pared ciega y acabada hacia el vecino. Se podrán formular aberturas y tratamientos estéticos de fachada en estos adosamientos cuando colinden con espacios o servidumbres abiertas"
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and lote.codigo_zona in ['ZM1', '1ZM1', 'ZM2', '1ZM2', 'ZM3', '1ZM3', 'ZM4', '1ZM4', 'ZM5', '1ZM5', 'ZM6', '1ZM6', 'ZM7', '1ZM7', 'ZM8', '1ZM8', 'ZM9', '1ZM9'] and proyecto.adosado_a_lindero == true",
+    "entradas": [
+      "plano.pared_adosada_ciega_acabada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "(6) Los adosamientos a los linderos, lateral y posterior del polígono, son con pared ciega y acabada hacia el vecino. Se podrán formular aberturas y tratamientos estéticos de fachada en estos adosamientos cuando colinden con espacios o servidumbres abiertas",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El adosamiento a un lindero lateral o posterior no es con pared ciega y acabada hacia el vecino, y no colinda con un espacio o servidumbre abierta (PLOT, Art. 41, num. 6).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Solo aplica si el proyecto se adosa (retiro cero) donde la ficha lo permite; el revisor lo ve en plantas y elevaciones. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con declaraciones sí/no: pared ciega y acabada en el adosamiento, salvo que colinde con espacio o servidumbre abierta. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, entradas_opcionales, mensaje_no_cumple, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («(6) Los adosamientos a los linderos, lateral y posterior del polígono, son con pared ciega y acabada hacia el vecino.…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)",
+    "condicion": "plano.pared_adosada_ciega_acabada == true or (existe(lote.lindero_colinda_espacio_abierto) and lote.lindero_colinda_espacio_abierto == true)",
+    "entradas_opcionales": [
+      "lote.lindero_colinda_espacio_abierto"
+    ]
+  },
+  {
+    "id": "PLOT-ART45-EP-USO-INMODIFICABLE",
+    "version": 2,
+    "titulo": "Equipamiento Público (EP): no se puede modificar el uso",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "45",
+      "pagina_pdf": 22,
+      "cita_textual": "No se podrá modificar el uso de suelo de los lotes designados bajo este código"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and lote.codigo_zona in ['EP', '1EP']",
+    "entradas": [
+      "lote.codigo_zona"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "No se podrá modificar el uso de suelo de los lotes designados bajo este código",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote es de Equipamiento Público (1EP): el proyecto debe mantener un uso de equipamiento público (PLOT, Art. 45). Solo cabe cambiar el código si se aporta un lote de igual superficie en el corregimiento para equipamiento público.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Los lotes 1EP pueden concesionarse a privados o cederse entre instituciones si mantienen el uso. El traspaso no cambia el código. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («No se podrá modificar el uso de suelo de los lotes designados bajo este código», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART54-4AA-DISTANCIA-30M",
+    "version": 3,
+    "titulo": "Asentamientos rurales (4A-A): obra nueva a no más de 30 m de lo edificado",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "54",
+      "pagina_pdf": 27,
+      "cita_textual": "Las construcciones de nueva planta no podrán situarse más allá de un perímetro imaginario en el núcleo rural definido por una distancia máxima a las edificaciones actuales de 30 m"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['4A-A'] and proyecto.obra_nueva == true",
+    "entradas": [
+      "proyecto.distancia_edificacion_existente_m"
+    ],
+    "condicion": "proyecto.distancia_edificacion_existente_m <= 30",
+    "tolerancia": 0.1,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Las construcciones de nueva planta no podrán situarse más allá de un perímetro imaginario en el núcleo rural definido por una distancia máxima a las edificaciones actuales de 30 m",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En Asentamientos en Suelo Rural (4A-A), la construcción nueva no puede quedar a más de 30 m de las edificaciones actuales (PLOT, Art. 54).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.distancia_edificacion_existente_m (distancia de la obra nueva a la edificación actual más cercana del asentamiento). El mismo párrafo prohíbe abrir accesos o caminos nuevos para servir a edificios nuevos (no incluido). Formato del código rural a confirmar con el Documento Gráfico. Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-09, revisión de subagentes): se quita del aplica_si '4AA': el PLOT escribe «4A-A» (acuerdo61_2021_plot_gaceta.txt, líneas 1432 y 1464; codigos-zona.md) y '4AA' no aparece en ningún texto de normativa/; '4A-A' ya estaba en la lista (hallazgo 19). | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Las construcciones de nueva planta no podrán situarse más allá de un perímetro imaginario en el núcleo rural definido…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART55-4AGA-LOTE-MIN-VIVIENDA",
+    "version": 2,
+    "titulo": "Áreas Agrícolas (4AG-A): lote mínimo de 1,000 m² para vivienda",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "55",
+      "pagina_pdf": 28,
+      "cita_textual": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la explotación agropecuaria"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['4AG-A'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 1000",
+    "tolerancia": 1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la explotación agropecuaria",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "La interpretación de todas las componentes del PLOT y sus Anexos corresponde al MUPA"
+    },
+    "mensaje_no_cumple": "En Áreas Agrícolas (4AG-A) la vivienda unifamiliar aislada requiere un lote de al menos 1,000 m² (PLOT, Art. 55).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. No se pueden lotificar parcelas con esa superficie ni hacer urbanizaciones o aglomeraciones de viviendas (mismo párrafo; no incluido). Usos permitidos con CEUS de la DPU. Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la exp…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART55-4AGAF-LOTE-MIN-VIVIENDA",
+    "version": 2,
+    "titulo": "Áreas Agroforestales (4AG-AF): lote mínimo de 1,000 m² para vivienda",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "55",
+      "pagina_pdf": 28,
+      "cita_textual": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la explotación, no se podrán"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['4AG-AF'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 1000",
+    "tolerancia": 1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la explotación, no se podrán",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "La interpretación de todas las componentes del PLOT y sus Anexos corresponde al MUPA"
+    },
+    "mensaje_no_cumple": "En Áreas Agroforestales (4AG-AF) la vivienda unifamiliar aislada requiere un lote de al menos 1,000 m² (PLOT, Art. 55).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Tampoco se permiten urbanizaciones ni aglomeraciones de viviendas (no incluido). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2, de preferencia vinculada a la exp…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART55-4AGF-LOTE-MIN-VIVIENDA",
+    "version": 2,
+    "titulo": "Áreas Forestales (4AG-F): lote mínimo de 5,000 m² para vivienda",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "55",
+      "pagina_pdf": 28,
+      "cita_textual": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 5,000 m2"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['4AG-F'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 5000",
+    "tolerancia": 1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Se permite la vivienda unifamiliar aislada con un área mínima del lote de 5,000 m2",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "La interpretación de todas las componentes del PLOT y sus Anexos corresponde al MUPA"
+    },
+    "mensaje_no_cumple": "En Áreas Forestales (4AG-F) la vivienda unifamiliar aislada requiere un lote de al menos 5,000 m² (PLOT, Art. 55).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. En 4AG-F se prohíben en especial los usos industriales y logísticos (no incluido). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Se permite la vivienda unifamiliar aislada con un área mínima del lote de 5,000 m2», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART56-4F-LOTE-MIN-VIVIENDA",
+    "version": 2,
+    "titulo": "Franja de Transición Rururbana (4F): lote mínimo de 1,000 m² para vivienda",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "56, num. vii",
+      "pagina_pdf": 28,
+      "cita_textual": "(vii) Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and lote.codigo_zona in ['4F'] and proyecto.unidades_vivienda > 0",
+    "entradas": [
+      "lote.area_m2"
+    ],
+    "condicion": "lote.area_m2 >= 1000",
+    "tolerancia": 1,
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "(vii) Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "La interpretación de todas las componentes del PLOT y sus Anexos corresponde al MUPA"
+    },
+    "mensaje_no_cumple": "En la Franja de Transición Rururbana (4F) la vivienda unifamiliar aislada requiere un lote de al menos 1,000 m² (PLOT, Art. 56).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Nums. viii y ix: no se puede lotificar con esa superficie ni desarrollar urbanizaciones (no incluido). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («(vii) Se permite la vivienda unifamiliar aislada con un área mínima del lote de 1,000 m2.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART60-ESTUDIO-INUNDABILIDAD",
+    "version": 3,
+    "titulo": "Zona condicionada por riesgo de inundación (suelo urbano): estudio de inundabilidad",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "60",
+      "pagina_pdf": 29,
+      "cita_textual": "Su uso estará condicionado a estudios de inundabilidad, así como a la aprobación de SINAPROC y compatibilidad de uso definida por la DPU."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.zona_condicionada_inundacion) and lote.zona_condicionada_inundacion == true",
+    "entradas": [
+      "expediente.estudio_inundabilidad.presente"
+    ],
+    "condicion": "expediente.estudio_inundabilidad.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "Su uso estará condicionado a estudios de inundabilidad, así como a la aprobación de SINAPROC y compatibilidad de uso definida por la DPU.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote está en Zona Condicionada por Riesgo de Inundación: no consta el estudio de inundabilidad en condiciones originales y modificadas (predio y área periférica definida por la DPU) (PLOT, Art. 60).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.estudio_inundabilidad.presente == true. Hechos provisionales: lote.zona_condicionada_inundacion (sobrecarga del Anexo 7; el OCR escribe el código «SR-U», que en el Art. 59 parece «5R-U») y expediente.estudio_inundabilidad.presente; los decide la IA o un extractor GIS futuro. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Estudio de inundabilidad revisado por SINAPROC y MUPA: informe técnico de otra entidad, se exige en el registro (criterio 5). Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («Su uso estará condicionado a estudios de inundabilidad, así como a la aprobación de SINAPROC y compatibilidad de uso …», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART60-APROBACION-SINAPROC",
+    "version": 3,
+    "titulo": "Zona condicionada por riesgo de inundación (suelo urbano): aprobación de SINAPROC y MUPA",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "60",
+      "pagina_pdf": 29,
+      "cita_textual": "mediante la Aprobación del SINAPROC y MUPA posteriores a la revisión de Estudios técnicos de detalle de las intervenciones"
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.zona_condicionada_inundacion) and lote.zona_condicionada_inundacion == true",
+    "entradas": [
+      "expediente.aprobacion_sinaproc.presente"
+    ],
+    "condicion": "expediente.aprobacion_sinaproc.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "mediante la Aprobación del SINAPROC y MUPA posteriores a la revisión de Estudios técnicos de detalle de las intervenciones",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "Su uso estará condicionado a estudios de inundabilidad, así como a la aprobación de SINAPROC y compatibilidad de uso definida por la DPU."
+    },
+    "mensaje_no_cumple": "El lote está en Zona Condicionada por Riesgo de Inundación: no consta la aprobación de SINAPROC tras revisar los estudios técnicos (PLOT, Art. 60).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.aprobacion_sinaproc.presente == true (hecho provisional). La compatibilidad de uso la define la DPU (CEUS). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Aprobación de SINAPROC: visto bueno de otra entidad (criterio 5). Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («mediante la Aprobación del SINAPROC y MUPA posteriores a la revisión de Estudios técnicos de detalle de las intervenc…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART63-CONJUNTO-PATRIMONIAL",
+    "version": 3,
+    "titulo": "Predio en conjunto patrimonial: normativa aplicable según la tabla del Art. 63",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "63",
+      "pagina_pdf": 30,
+      "cita_textual": "A contirrjación, se muestra una tabla que sintetiza la normativa que debe seguirse para cada conjunto."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.conjunto_patrimonial_plot)",
+    "entradas": [
+      "lote.conjunto_patrimonial_plot"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B5",
+      "cita": "se muestra una tabla que sintetiza la normativa que debe seguirse para cada conjunto.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El predio está en un conjunto de conservación histórico-patrimonial (PC01 a PC11 del Art. 62): verificar en la tabla del Art. 63 si aplica el Código Distrital y qué leyes o normas especiales rigen.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: lote.conjunto_patrimonial_plot (código PC01 a PC11; lo decide la IA o un extractor GIS futuro). La tabla del Art. 63 está desordenada en el OCR (columnas «Código Distrital» y «Otras Leyes» sin filas claras): no se transcribe qué conjunto lleva «Sí aplica» o «No aplica»; lo confirma un humano con la Gaceta. Casco Antiguo y Panamá Viejo tienen reglas propias (MIVIOT-CA, MIVIOT-PV). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Remite a la normativa de cada conjunto patrimonial (tabla del Art. 63); guía, no límite propio: observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B5 («se muestra una tabla que sintetiza la normativa que debe seguirse para cada conjunto.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART64-LICENCIA-PATRIMONIAL",
+    "version": 2,
+    "titulo": "Predio en conjunto patrimonial: licencias de la autoridad de patrimonio",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "64",
+      "pagina_pdf": 30,
+      "cita_textual": "reconoce las leyes y normas establecidas por las instancias competentes en temas de conservación del patrimonio histórico y cultural para la tramitación de licencias de tipo patrimonial."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.conjunto_patrimonial_plot)",
+    "entradas": [
+      "lote.conjunto_patrimonial_plot"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "reconoce las leyes y normas establecidas por las instancias competentes en temas de conservación del patrimonio histórico y cultural para la tramitación de licencias de tipo patrimonial.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El predio está en un conjunto patrimonial: la licencia de tipo patrimonial la tramita la instancia competente en patrimonio; verificar si el expediente la requiere y la trae (PLOT, Art. 64).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observacion: lo decide otra autoridad. Ver PV-TODAS-VISTO-BUENO-DNPH para Panamá Viejo. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («reconoce las leyes y normas establecidas por las instancias competentes en temas de conservación del patrimonio histó…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART67-COMERCIO-EN-EQUIPAMIENTO",
+    "version": 2,
+    "titulo": "Comercio en edificios de equipamiento: menor que el uso principal",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "67, lit. a",
+      "pagina_pdf": 31,
+      "cita_textual": "(a) La superficie construida de los locales comerciales deberá ser menor con respecto a la superficie destinada al uso principal."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and lote.codigo_zona in ['EP', '1EP'] and existe(proyecto.area_comercial_m2)",
+    "entradas": [
+      "proyecto.area_comercial_m2",
+      "proyecto.area_uso_principal_m2"
+    ],
+    "condicion": "proyecto.area_comercial_m2 < proyecto.area_uso_principal_m2",
+    "unidad": "m2",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "(a) La superficie construida de los locales comerciales deberá ser menor con respecto a la superficie destinada al uso principal.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "En un edificio de equipamiento, la superficie construida de los locales comerciales debe ser menor que la del uso principal (PLOT, Art. 67, lit. a).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hechos provisionales: proyecto.area_comercial_m2 y proyecto.area_uso_principal_m2. El lit. b (relación clara con el uso principal) es criterio del revisor y no se incluye. El mismo artículo dice que en las vías principales se eliminan los parámetros de altura del PLOT para equipamientos: duda para un humano sobre su alcance. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («(a) La superficie construida de los locales comerciales deberá ser menor con respecto a la superficie destinada al us…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART75-ESTAC-DIRECTO-CALLE",
+    "version": 3,
+    "titulo": "Prohibidos los estacionamientos que se sirven directamente de la calle",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "75",
+      "pagina_pdf": 34,
+      "cita_textual": "Quedan prohibidos los estacionamientos que se sirven directamente de la calle en cualquiera de sus formas. Se exceptúan aquello que dan acceso a una residencia."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and tramite in ['RLA', 'RDP']",
+    "entradas": [
+      "proyecto.estacionamientos_directos_calle"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "Quedan prohibidos los estacionamientos que se sirven directamente de la calle en cualquiera de sus formas. Se exceptúan aquello que dan acceso a una residencia.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Hay estacionamientos que se sirven directamente de la calle; el PLOT los prohíbe salvo los que dan acceso a una residencia (Art. 75).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Criterio: «residencia» no está definida (¿vivienda unifamiliar?); lo decide el revisor en la planta de conjunto. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Prohibición computable con el número declarado de estacionamientos servidos directamente de la calle; exceptuados los de acceso a una residencia. Cambios: tipo criterio → cuantitativa, condicion, entradas, entradas_opcionales, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («Quedan prohibidos los estacionamientos que se sirven directamente de la calle en cualquiera de sus formas. Se exceptú…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)",
+    "condicion": "proyecto.estacionamientos_directos_calle == 0 or (existe(proyecto.tipologia_vivienda) and proyecto.tipologia_vivienda in ['unifamiliar', 'bifamiliar_una_sobre_otra', 'bifamiliar_adosada', 'hilera'])",
+    "entradas_opcionales": [
+      "proyecto.tipologia_vivienda"
+    ]
+  },
+  {
+    "id": "PLOT-ART75-DESVINCULACION-TRANSPORTE-MASIVO",
+    "version": 2,
+    "titulo": "Estacionamientos desvinculados cerca de estaciones de transporte masivo",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "75",
+      "pagina_pdf": 34,
+      "cita_textual": "a una distancia de menos de 300 o 600 metros según se trate de proyectos de vivienda o de equipamiento de servicios, respectivamente, se desvinculará la dotación de requisito de estacionamientos."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.distancia_peatonal_transporte_masivo_m) and proyecto.distancia_peatonal_transporte_masivo_m < 600",
+    "entradas": [
+      "proyecto.distancia_peatonal_transporte_masivo_m"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "a una distancia de menos de 300 o 600 metros según se trate de proyectos de vivienda o de equipamiento de servicios, respectivamente, se desvinculará la dotación de requisito de estacionamientos.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto está cerca de una estación de metro o sistema masivo: a menos de 300 m (vivienda) o 600 m (equipamiento de servicios), medidos por recorrido peatonal en vías públicas, se desvincula el requisito de estacionamientos (PLOT, Art. 75), salvo que otra norma lo prohíba.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: proyecto.distancia_peatonal_transporte_masivo_m (recorrido peatonal, no línea recta). El revisor confirma el tipo de proyecto (vivienda o equipamiento de servicios) y, si procede, descarta los NO_CUMPLE de dotación de estacionamientos. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («a una distancia de menos de 300 o 600 metros según se trate de proyectos de vivienda o de equipamiento de servicios, …», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART75-PUERTA-COCHERA",
+    "version": 2,
+    "titulo": "Uso masivo: puerta cochera dentro de los linderos",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "75",
+      "pagina_pdf": 34,
+      "cita_textual": "los colegios, hospitales, hoteles y otros establecimientos de uso masivo están obligados a incorporar una puerta cochera dentro de sus linderos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.uso_masivo) and proyecto.uso_masivo == true",
+    "entradas": [
+      "plano.puerta_cochera_dentro_linderos"
+    ],
+    "condicion": "plano.puerta_cochera_dentro_linderos == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "los colegios, hospitales, hoteles y otros establecimientos de uso masivo están obligados a incorporar una puerta cochera dentro de sus linderos.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Colegios, hospitales, hoteles y otros establecimientos de uso masivo deben incorporar una puerta cochera dentro de sus linderos (PLOT, Art. 75).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: plano.puerta_cochera_dentro_linderos == true. Hechos provisionales: proyecto.uso_masivo (colegio, hospital, hotel u otro de uso masivo) y plano.puerta_cochera_dentro_linderos; los decide la IA o un extractor futuro. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («los colegios, hospitales, hoteles y otros establecimientos de uso masivo están obligados a incorporar una puerta coch…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART75-ESTAC-OTRO-LOTE-DISTANCIA",
+    "version": 2,
+    "titulo": "Estacionamientos en otro lote: distancia máxima de 200 m (vivienda) o 400 m",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "75",
+      "pagina_pdf": 34,
+      "cita_textual": "no podrá superar los 200 m tratándose de edificios de vivienda y 400 m en caso de otros usos."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.estacionamientos_otro_lote_distancia_m)",
+    "entradas": [
+      "proyecto.estacionamientos_otro_lote_distancia_m",
+      "proyecto.es_vivienda"
+    ],
+    "condicion": "(proyecto.es_vivienda == true and proyecto.estacionamientos_otro_lote_distancia_m <= 200) or (proyecto.es_vivienda == false and proyecto.estacionamientos_otro_lote_distancia_m <= 400)",
+    "tolerancia": 1,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "no podrá superar los 200 m tratándose de edificios de vivienda y 400 m en caso de otros usos.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos exigidos ubicados en otro lote están más lejos de lo permitido: 200 m para edificios de vivienda y 400 m para otros usos, por recorrido peatonal en vías públicas entre accesos (PLOT, Art. 75).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hechos provisionales: proyecto.estacionamientos_otro_lote_distancia_m (entre el acceso de los estacionamientos y el del edificio, recorrido peatonal) y proyecto.es_vivienda (true si es edificio de vivienda). Edificios de uso mixto: lo decide el revisor. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («no podrá superar los 200 m tratándose de edificios de vivienda y 400 m en caso de otros usos.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART75-ESTAC-OTRO-LOTE-TITULO",
+    "version": 2,
+    "titulo": "Estacionamientos en otro lote: título ante la DOYC",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "75",
+      "pagina_pdf": 34,
+      "cita_textual": "el propietario deberá acreditar ante la DOYC, la compra, el arriendo u otro título que le permite la ocupación de dichos estacionamientos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(proyecto.estacionamientos_otro_lote_distancia_m)",
+    "entradas": [
+      "expediente.titulo_estacionamientos_otro_lote.presente"
+    ],
+    "condicion": "expediente.titulo_estacionamientos_otro_lote.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "el propietario deberá acreditar ante la DOYC, la compra, el arriendo u otro título que le permite la ocupación de dichos estacionamientos.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los estacionamientos exigidos están en otro lote y no consta la compra, el arriendo u otro título que permita ocuparlos (PLOT, Art. 75).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: expediente.titulo_estacionamientos_otro_lote.presente == true (hecho provisional). Esos estacionamientos no pueden estar ya destinados a cumplir la exigencia de otro edificio (mismo artículo). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («el propietario deberá acreditar ante la DOYC, la compra, el arriendo u otro título que le permite la ocupación de dic…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART76-ACCESO-RUTA-ACCESIBLE",
+    "version": 3,
+    "titulo": "Accesos vehiculares: no interrumpir la ruta accesible ni la acera",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "76, lit. a",
+      "pagina_pdf": 35,
+      "cita_textual": "no podrán interrumpir ni disminuir el ancho de la ruta accesible o vado, ni aumentar la pendiente transversal de ésta. Tampoco podrán interrumpir la accra, debiendo ser éstas rebajadas."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and acceso_vehicular.rotura_cordon_m > 0",
+    "entradas": [
+      "acceso_vehicular.rotura_cordon_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "no podrán interrumpir ni disminuir el ancho de la ruta accesible o vado, ni aumentar la pendiente transversal de ésta. Tampoco podrán interrumpir la accra, debiendo ser éstas rebajadas.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los accesos y salidas vehiculares no pueden interrumpir ni reducir la ruta accesible o el vado, ni aumentar su pendiente transversal, ni interrumpir la acera, que debe rebajarse (PLOT, Art. 76, lit. a).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se usa existe(acceso_vehicular.rotura_cordon_m) como señal de que el proyecto tiene acceso vehicular por la acera. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («no podrán interrumpir ni disminuir el ancho de la ruta accesible o vado, ni aumentar la pendiente transversal de ésta…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt) | Versión 3 (2026-10-22, ADR-0018): aplica solo si acceso_vehicular.rotura_cordon_m > 0 (antes existe(acceso_vehicular.rotura_cordon_m)): una rotura 0 dice que el proyecto no tiene acceso vehicular y la regla no aplica; sin el dato queda en revisión. Mismo cambio que las reglas de rampa."
+  },
+  {
+    "id": "PLOT-ART76-REFUGIO-PEATONAL-2M",
+    "version": 2,
+    "titulo": "Accesos sucesivos del mismo lote: refugio peatonal de 2 m",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "76, lit. b",
+      "pagina_pdf": 35,
+      "cita_textual": "Entre los accesos o salidas sucesivas, correspondientes a un mismo lote, deberá existir un refugio peatonal de una longitud mínima de 2 m, en el sentido de la circulación peatonal."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(acceso_vehicular.cantidad) and acceso_vehicular.cantidad >= 2",
+    "entradas": [
+      "acceso_vehicular.refugio_peatonal_min_m"
+    ],
+    "condicion": "acceso_vehicular.refugio_peatonal_min_m >= 2",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Entre los accesos o salidas sucesivas, correspondientes a un mismo lote, deberá existir un refugio peatonal de una longitud mínima de 2 m, en el sentido de la circulación peatonal.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Entre accesos o salidas vehiculares sucesivas del mismo lote falta un refugio peatonal de al menos 2 m (PLOT, Art. 76, lit. b).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hechos provisionales: acceso_vehicular.cantidad y acceso_vehicular.refugio_peatonal_min_m (menor tramo de acera entre accesos sucesivos). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Entre los accesos o salidas sucesivas, correspondientes a un mismo lote, deberá existir un refugio peatonal de una lo…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART76-ACCESO-VIA-EXPRESA",
+    "version": 3,
+    "titulo": "Accesos frente a vías expresas solo por calle de servicio",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "76, lit. c",
+      "pagina_pdf": 35,
+      "cita_textual": "podrán tener sus accesos y salidas frente a vías expresas sólo a través de una calle de servicio o cuando no puedan comunicarse directamente con vías de menor categoría."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.frente_via_expresa) and lote.frente_via_expresa == true",
+    "entradas": [
+      "proyecto.acceso_por_calle_servicio"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "podrán tener sus accesos y salidas frente a vías expresas sólo a través de una calle de servicio o cuando no puedan comunicarse directamente con vías de menor categoría.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote da a una vía expresa y los accesos no se hacen por una calle de servicio, sin constar que no pueda comunicarse con una vía de menor categoría (PLOT, Art. 76, lit. c).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: lote.frente_via_expresa (lo decide la IA o un extractor GIS futuro). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable con declaraciones sí/no: acceso por calle de servicio o imposibilidad de comunicarse con una vía de menor categoría. Cambios: tipo criterio → documental, condicion, entradas, entradas_opcionales, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B2 («podrán tener sus accesos y salidas frente a vías expresas sólo a través de una calle de servicio o cuando no puedan c…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt); tipo «documental» corregido a «criterio»",
+    "condicion": "proyecto.acceso_por_calle_servicio == true or (existe(lote.sin_via_menor_categoria) and lote.sin_via_menor_categoria == true)",
+    "entradas_opcionales": [
+      "lote.sin_via_menor_categoria"
+    ]
+  },
+  {
+    "id": "PLOT-ART77-DRENAJE-SOBRE-ACERA",
+    "version": 2,
+    "titulo": "Sin descargas pluviales ni drenajes sobre las aceras",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "77",
+      "pagina_pdf": 35,
+      "cita_textual": "No debe existir descargas de agua de lluvia, ni drenajes directamente sobre las aceras."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and tramite in ['RLA', 'RDP']",
+    "entradas": [
+      "plano.descarga_pluvial_sobre_acera"
+    ],
+    "condicion": "plano.descarga_pluvial_sobre_acera == false",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "No debe existir descargas de agua de lluvia, ni drenajes directamente sobre las aceras.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto descarga agua de lluvia o drenajes directamente sobre la acera (PLOT, Art. 77).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: plano.descarga_pluvial_sobre_acera == false (hecho provisional; lo decide la IA o un extractor futuro con las plantas y el plano pluvial). Las juntas del pavimento (no mayores de un centímetro ni más profundas de 5 mm) son de obra y no se incluyen. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («No debe existir descargas de agua de lluvia, ni drenajes directamente sobre las aceras.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART77-VADO-EN-FRANJA-INFRAESTRUCTURA",
+    "version": 3,
+    "titulo": "Rampas y vados dentro de la franja de infraestructura",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "77",
+      "pagina_pdf": 35,
+      "cita_textual": "Las Rampas o vados peatonales o de entradas de autos se resolverán dentro de la franja de infraestructura sin infringir el ancho de paso libre"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and acceso_vehicular.rotura_cordon_m > 0",
+    "entradas": [
+      "acceso_vehicular.rotura_cordon_m",
+      "proyecto.acera_ancho_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Las Rampas o vados peatonales o de entradas de autos se resolverán dentro de la franja de infraestructura sin infringir el ancho de paso libre",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Las rampas o vados de entrada de autos deben resolverse dentro de la franja de infraestructura, sin invadir el ancho de paso libre de la acera (PLOT, Art. 77).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Se verifica en la planta de acera y el detalle del vado. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («Las Rampas o vados peatonales o de entradas de autos se resolverán dentro de la franja de infraestructura sin infring…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt) | Versión 3 (2026-10-22, ADR-0018): aplica solo si acceso_vehicular.rotura_cordon_m > 0 (antes existe(acceso_vehicular.rotura_cordon_m)): una rotura 0 dice que el proyecto no tiene acceso vehicular y la regla no aplica; sin el dato queda en revisión. Mismo cambio que las reglas de rampa."
+  },
+  {
+    "id": "PLOT-ART78-ACERA-FRENTE-LOTE",
+    "version": 2,
+    "titulo": "Proyecto nuevo: construir la acera frente al lote con arborización y mobiliario",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "78",
+      "pagina_pdf": 35,
+      "cita_textual": "Todo proyecto nuevo al ejecutarse debe incluir la construcción de la acera frente al lote, incluyendo su arborización y mobiliario, a su costo."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and proyecto.obra_nueva == true",
+    "entradas": [
+      "plano.acera_frente_lote.presente"
+    ],
+    "condicion": "plano.acera_frente_lote.presente == true",
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Todo proyecto nuevo al ejecutarse debe incluir la construcción de la acera frente al lote, incluyendo su arborización y mobiliario, a su costo.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto nuevo no incluye la construcción de la acera frente al lote con su arborización y mobiliario (PLOT, Art. 78).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. condicion: plano.acera_frente_lote.presente == true (hecho provisional: planta o detalle de la acera nueva con árboles y mobiliario). Reutiliza proyecto.obra_nueva. Especificaciones de materiales, especies y mobiliario: las define el Municipio. En El Chorrillo, Santa Ana y Calidonia la acera mínima es la existente (ver PLOT-ART78-ACERA-EXISTENTE-CORREGIMIENTOS). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («Todo proyecto nuevo al ejecutarse debe incluir la construcción de la acera frente al lote, incluyendo su arborización…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART78-RAMPA-ACERA-8PCT",
+    "version": 2,
+    "titulo": "Rampas en aceras: pendiente máxima de 8%",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "78",
+      "pagina_pdf": 35,
+      "cita_textual": "En caso de haber diferencias de nivel, los mismos deberán ser resueltos mediante rampas de no más de 8% de inclinación."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(acera.rampa_pendiente_max_pct)",
+    "entradas": [
+      "acera.rampa_pendiente_max_pct"
+    ],
+    "condicion": "acera.rampa_pendiente_max_pct <= 8",
+    "tolerancia": 0.1,
+    "unidad": "%",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "En caso de haber diferencias de nivel, los mismos deberán ser resueltos mediante rampas de no más de 8% de inclinación.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Una rampa de la acera supera el 8% de inclinación (PLOT, Art. 78).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: acera.rampa_pendiente_max_pct (mayor pendiente de las rampas de la acera de frente o lateral). Sin rampas, no aplica. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B1 («En caso de haber diferencias de nivel, los mismos deberán ser resueltos mediante rampas de no más de 8% de inclinación.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART78-PODOTACTIL-ANCHO",
+    "version": 3,
+    "titulo": "Rampa de acera: pavimento podotáctil de 0.4 a 0.8 m",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "78",
+      "pagina_pdf": 35,
+      "cita_textual": "deberá se antecedida por un pavimento podotáctil de alerta adosado a la rampa y de un ancho mínimo de 0.4 m y máximo de 0.8 m."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(acera.rampa_pendiente_max_pct)",
+    "entradas": [
+      "acera.pavimento_podotactil_ancho_m"
+    ],
+    "condicion": "acera.pavimento_podotactil_ancho_m >= 0.4 and acera.pavimento_podotactil_ancho_m <= 0.8",
+    "tolerancia": 0.01,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "deberá se antecedida por un pavimento podotáctil de alerta adosado a la rampa y de un ancho mínimo de 0.4 m y máximo de 0.8 m.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La rampa de la acera no está antecedida por un pavimento podotáctil de alerta de 0.4 m a 0.8 m de ancho (PLOT, Art. 78).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: acera.pavimento_podotactil_ancho_m. El pavimento de alerta no puede usarse como pavimento de la rampa (mismo artículo). Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Rango 0.4-0.8 m correcto; detalle de acabado de la rampa (criterio 5). Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («deberá se antecedida por un pavimento podotáctil de alerta adosado a la rampa y de un ancho mínimo de 0.4 m y máximo …», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART78-ACERA-EXISTENTE-CORREGIMIENTOS",
+    "version": 3,
+    "titulo": "El Chorrillo, Santa Ana y Calidonia: la acera mínima es la existente",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "78",
+      "pagina_pdf": 35,
+      "cita_textual": "En los corregimientos de El Chorrillo, Santa Ana y Calidonia, la acera mínima consiste en la acera existente."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.corregimiento) and lote.corregimiento in ['El Chorrillo', 'Santa Ana', 'Calidonia']",
+    "entradas": [
+      "proyecto.acera_ancho_m",
+      "lote.acera_existente_ancho_m"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "En los corregimientos de El Chorrillo, Santa Ana y Calidonia, la acera mínima consiste en la acera existente.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": "El Municipio de Panamá podrá evaluar otras excepciones a las disposiciones de acera mínima"
+    },
+    "mensaje_no_cumple": "En El Chorrillo, Santa Ana y Calidonia la acera mínima es la existente: la acera propuesta es más angosta que la existente (PLOT, Art. 78).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: lote.corregimiento. Duda para un humano: las reglas *-ACERA de reglas/reglas_plot_borrador.json no excluyen estos corregimientos. El Municipio también puede autorizar ahí balcones sobre aceras. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Computable: en esos corregimientos la acera mínima es la existente; las reglas de acera de las fichas los excluyen. Cambios: severidad observacion → bloqueante, tipo criterio → cuantitativa, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («En los corregimientos de El Chorrillo, Santa Ana y Calidonia, la acera mínima consiste en la acera existente.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)",
+    "condicion": "proyecto.acera_ancho_m >= lote.acera_existente_ancho_m"
+  },
+  {
+    "id": "PLOT-ART85-USOS-ACTUALES-REFORMA",
+    "version": 2,
+    "titulo": "Usos actuales: una reforma mayor o demolición obliga a la normativa vigente",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "85",
+      "pagina_pdf": 38,
+      "cita_textual": "Una vez se realicen reformas mayores o demoliciones, las edificaciones tendrán que acogerse a la normativa actual."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(expediente.invoca_uso_actual) and expediente.invoca_uso_actual == true",
+    "entradas": [
+      "expediente.invoca_uso_actual",
+      "obra.area_adicion_m2"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "proyecto",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "Una vez se realicen reformas mayores o demoliciones, las edificaciones tendrán que acogerse a la normativa actual.",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El expediente invoca un uso actual legal no conforme: se mantiene solo con reformas menores; con una reforma mayor o demolición la edificación debe acogerse a la normativa vigente (PLOT, Art. 85).",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: expediente.invoca_uso_actual (true si el proyecto conserva un uso existente legal no conforme con el código; distinto de expediente.invoca_uso_anterior, que se usa para las transiciones). No se hace regla cuantitativa: la definición de reforma mayor dice «más del cincuenta (5 0%) de la superficie en planta ... y se añaden pisos», con la cifra dañada por el OCR y sin aclarar si las dos condiciones son concurrentes; lo decide el revisor. El Acuerdo 270, Art. 8, remite a este artículo para San Francisco. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «proyecto»; criterio B3 («Una vez se realicen reformas mayores o demoliciones, las edificaciones tendrán que acogerse a la normativa actual.», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  },
+  {
+    "id": "PLOT-ART89-EQUIPARACION-SF",
+    "version": 3,
+    "titulo": "San Francisco: consideraciones de la equiparación de normas del Art. 89",
+    "fuente": {
+      "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+      "articulo": "89",
+      "pagina_pdf": 39,
+      "cita_textual": "Las normas del Corregimiento de San Francisco se reemplazarán por las siguientes normas del PLOT, con las consideraciones señaladas, a continuación:"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and lote.codigo_zona in ['R2', '1R2', 'RM', '1RM', 'RM-2', '1RM-2', 'ZM4', '1ZM4', 'ZM8', '1ZM8', 'EP', '1EP']",
+    "entradas": [
+      "lote.codigo_zona",
+      "proyecto.pisos_totales",
+      "lote.area_m2"
+    ],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Las normas del Corregimiento de San Francisco se reemplazarán por las siguientes normas del PLOT, con las consideraciones señaladas, a continuación:",
+      "archivo": "normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El Art. 89 del PLOT fijó para San Francisco consideraciones especiales por código (R2: lote mínimo de 600 m² unifamiliar y 400 m² adosada, sin usos complementarios, retiro posterior de 3.00 m; RM: 6 pisos y sin usos complementarios; 1RM-2: sin usos complementarios y 20 pisos en las calles Winston Churchill, Heliodoro Patiño, Alberto Boyd y Roberto Lewis; ZM4: 6 pisos; ZM8 con frente a Vía Israel: solo comercial o terciario; EP: 10 pisos). Confirmar si siguen vigentes tras el Acuerdo 270.",
+    "vigencia": {
+      "desde": "2021-04-21",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Duda para un humano: el Art. 89 equipara los códigos del PPOT de San Francisco (Acuerdo 94 de 2018), que fue declarado nulo en 2022, y el Acuerdo 270 asignó directamente códigos del PLOT y quitó la ZOT-E4 del Art. 21; además choca con reglas cargadas (p. ej. SF-*-ZM4-ALTURA usa 8 pisos de la ficha ZM4 frente a 6 pisos aquí; SF-*-R2-LOTE-AREA usa 800 m² frente a 600/400 m²). Por eso es observacion y no se hacen reglas cuantitativas. La equivalencia MGA → «IZM8» y las «NIA» (N/A) son lecturas del OCR. Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021. | Versión 2 (2026-10-09, revisión de subagentes): se quitan del aplica_si 'RM2' y '1RM2': el Art. 89 escribe «1RM-2» (acuerdo61_2021_plot_gaceta.txt, línea 2250) y las fichas del Anexo 4 solo usan «RM-2»; la grafía sin guion solo aparece una vez en el OCR del listado de códigos (línea 1147). 'RM-2' y '1RM-2' ya estaban en la lista; zona.clave() sigue sugiriendo la grafía con guion si la CEUS llega sin él (hallazgo 19). | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Las normas del Corregimiento de San Francisco se reemplazarán por las siguientes normas del PLOT, con las consideraci…», normativa/zonificacion/textos/acuerdo61_2021_plot_gaceta.txt)"
+  }
+]

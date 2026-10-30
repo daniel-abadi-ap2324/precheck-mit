@@ -1,0 +1,60 @@
+[
+  {
+    "id": "L21-PACIFICO-ESTE-INTEGRAR-BASES",
+    "version": 2,
+    "titulo": "Subregión Pacífico Este: el nuevo desarrollo integra bases militares y espacios abiertos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, III. Usos del suelo, Subregión 6 - Pacífico Este",
+      "pagina_pdf": 20,
+      "cita_textual": "Este nuevo desarrollo deberá integrar las bases militares y los espacios abiertos en patrones de desarrollo que sean compatibles con el carácter de \"ciudad jardin\" de las dichas bases."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-BAJA-DENSIDAD', 'VIVIENDA-MEDIANA-DENSIDAD', 'VIVIENDA-ALTA-DENSIDAD', 'CENTRO-URBANO', 'CENTRO-VECINAL'] and lote.subregion == 'PACIFICO-ESTE'",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Este nuevo desarrollo deberá integrar las bases militares y los espacios abiertos en patrones de desarrollo que sean compatibles con el carácter de \"ciudad jardin\" de las dichas bases.",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El nuevo desarrollo residencial no integra las bases militares y los espacios abiertos con el carácter de «ciudad jardín» (Ley 21, Anexo II, Pacífico Este).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: es una directriz del Plan General que sirve de base a la zonificación detallada del MIVI (Art. 5), igual que L21-PACIFICO-ESTE-CIUDAD-JARDIN. Cita en la línea 84 de normativa/zonas-exceptuadas/textos/ley21_1997.txt. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Este nuevo desarrollo deberá integrar las bases militares y los espacios abiertos en patrones de desarrollo que sean …», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-PACIFICO-ESTE-CERROS-QUEBRADAS",
+    "version": 2,
+    "titulo": "Subregión Pacífico Este: las áreas verdes preservan cerros y quebradas",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, III. Usos del suelo, Subregión 6 - Pacífico Este",
+      "pagina_pdf": 20,
+      "cita_textual": "Las áreas verdes deben preservar los cerros existentes con pendientes muy pronunciadas y las quebradas de vegetación exuberante"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-VERDE-URBANA', 'AREA-SILVESTRE-PROTEGIDA'] and lote.subregion == 'PACIFICO-ESTE'",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Las áreas verdes deben preservar los cerros existentes con pendientes muy pronunciadas y las quebradas de vegetación exuberante",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto en área verde no preserva los cerros de pendiente pronunciada o las quebradas con vegetación (Ley 21, Anexo II, Pacífico Este).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación: directriz del Plan General con la salvedad «donde sea factible». Códigos de zona como en L21-AREA-VERDE-URBANA-USOS y L21-AREA-SILVESTRE-PROTEGIDA-USOS. Si falta el dato de aplicabilidad, el motor deja la regla en REQUIERE_REVISION. Hechos provisionales (los decide la IA o un extractor futuro): lote.subregion. Cita en la línea 86 de normativa/zonas-exceptuadas/textos/ley21_1997.txt. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Las áreas verdes deben preservar los cerros existentes con pendientes muy pronunciadas y las quebradas de vegetación …», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  }
+]

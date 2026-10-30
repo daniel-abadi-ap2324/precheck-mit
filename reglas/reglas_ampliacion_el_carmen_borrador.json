@@ -1,0 +1,294 @@
+[
+  {
+    "id": "EC-R2B-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "R2-B: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha R2-B",
+      "pagina_pdf": 7,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['R2-B', 'R2B'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona R2-B).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-R2B-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 182 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-R3-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "R3: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha R3",
+      "pagina_pdf": 8,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['R3', 'R3C1', 'R3-C1'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona R3).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-R3-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 200 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-RM1-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-1: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha RM-1",
+      "pagina_pdf": 8,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1', 'RM1', 'RM1-C2', 'RM1C2'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona RM-1).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-RM1-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 217 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-RM1R-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-1*: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha RM-1*",
+      "pagina_pdf": 9,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-1*', 'RM1*', '*RM-1', '*RM1'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona RM-1*).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-RM1R-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 235 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-RM2-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-2: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha RM-2",
+      "pagina_pdf": 9,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-2', 'RM2'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona RM-2).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-RM2-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 252 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-RM2R-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-2*: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha RM-2*",
+      "pagina_pdf": 10,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-2*', 'RM2*', '*RM-2', '*RM2'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona RM-2*).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-RM2R-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 270 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-RM3-VENTILACION-ESTACIONAMIENTOS",
+    "version": 3,
+    "titulo": "RM-3: ventilación de estacionamientos cerrados",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha RM-3",
+      "pagina_pdf": 10,
+      "cita_textual": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM-3', 'RM3', 'RM3-C2', 'RM3C2'] and proyecto.estacionamientos_cerrados == true",
+    "entradas": [
+      "plano.ventilacion_estacionamientos_indicada"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "plano",
+    "fundamento": {
+      "criterio": "B3",
+      "cita": "b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Los niveles de estacionamiento en área cerrada no indican ventilación horizontal o vertical por pozos o rejillas en los pisos (zona RM-3).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. NOTA b) de la ficha; la NOTA a) ya la cubre EC-RM3-VENTILACION. Bloqueante porque la ficha dice «tendrán»; la regla análoga de La Cresta (LC-TODAS-VENTILACION-ESTACIONAMIENTOS) está como observación. Se revisa en las plantas de estacionamientos. Cita en la línea 287 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Tendrán»: bloqueante. Computable con dos datos sí/no declarados: si hay niveles cerrados (aplica_si) y si el plano indica la ventilación. Cambios: tipo criterio → documental, aplica_si, condicion, entradas, mensaje_no_cumple. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «plano»; criterio B3 («b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de poz…», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)",
+    "condicion": "plano.ventilacion_estacionamientos_indicada == true"
+  },
+  {
+    "id": "EC-C2RM1-LOTE-FRENTE",
+    "version": 3,
+    "titulo": "C-2 (RM/RM1): frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha C-2 (RM/RM1)",
+      "pagina_pdf": 11,
+      "cita_textual": "Frente minimo de lote: 20.00 ML."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM1-C2', 'RM1C2']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 20",
+    "tolerancia": 0.05,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente minimo de lote: 20.00 ML.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 20.00 m (zona C-2 (RM/RM1)).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Cita en la línea 311 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente minimo de lote: 20.00 ML.», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)"
+  },
+  {
+    "id": "EC-C2RM3-LOTE-FRENTE",
+    "version": 3,
+    "titulo": "C-2 (RM-2/RM-3): frente mínimo de lote",
+    "fuente": {
+      "norma": "Resolución No. 192-2013 del MIVIOT (El Carmen, Bella Vista)",
+      "articulo": "Anexo No. 1, ficha C-2 (RM-2/RM-3)",
+      "pagina_pdf": 12,
+      "cita_textual": "Frente minimo de lote: 20.00 ML."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'MIVIOT-EC-R192-2013' and lote.codigo_zona in ['RM3-C2', 'RM3C2']",
+    "entradas": [
+      "lote.frente_m"
+    ],
+    "condicion": "lote.frente_m >= 20",
+    "tolerancia": 0.05,
+    "unidad": "m",
+    "severidad": "bloqueante",
+    "subsanacion": "autoridad",
+    "fundamento": {
+      "criterio": "B1",
+      "cita": "Frente minimo de lote: 20.00 ML.",
+      "archivo": "normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El frente del lote es menor que 20.00 m (zona C-2 (RM-2/RM-3)).",
+    "vigencia": {
+      "desde": "2013-04-30",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos.  Cita en la línea 327 de normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt. Vigencia desde la publicación en la Gaceta Oficial Digital No 27276 (30-abr-2013; Resuelve SEXTO: rige a partir de su promulgación). Versión 2 (2026-10-16): severidad «observacion». El tamaño del lote (área o frente) casi siempre es el de un lote ya inscrito, que el proyecto no puede cambiar; ninguna norma del repositorio exime a los lotes existentes (el Art. 87 del PLOT solo reconoce anteproyectos y permisos ya expedidos), así que la regla se mantiene, pero como observación para que la DOYC decida. Caso: CASO-A, frente de 19.86 m en una urbanización aprobada. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «autoridad»; criterio B1 («Frente minimo de lote: 20.00 ML.», normativa/zonas-exceptuadas/textos/res192_2013_el_carmen.txt)"
+  }
+]

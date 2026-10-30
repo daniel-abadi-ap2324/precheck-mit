@@ -1,0 +1,54 @@
+[
+ {
+  "id": "CA-TODAS-LOTE-TRAMO-SIN-NORMA",
+  "version": 1,
+  "titulo": "Lote de 100-101 m2 o 500-501 m2: tramo no definido",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículos 19 y 23",
+   "pagina_pdf": 8,
+   "cita_textual": "En lotes con áreas comprendidas entre 101.00 y 500.00 metros cuadrados"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and (proyecto.obra_nueva == true or lote.orden_conservacion == 'baldio') and ((lote.area_m2 >= 100 and lote.area_m2 < 101) or (lote.area_m2 > 500 and lote.area_m2 <= 501))",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El área del lote cae entre los tramos de los Arts. 19 y 23; la DOYC debe decidir qué parámetros de ocupación y área libre aplica.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Los Arts. 19 y 23 definen < 100.00, 101.00-500.00 y > 501.00 m2 y dejan huecos. No se interpoló. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación).",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Ruido: señala un hueco de la norma y no impone obligación verificable. Se reporta a la DOYC."
+  }
+ },
+ {
+  "id": "CA-TODAS-ESTACIONAMIENTOS-4-ORDEN",
+  "version": 2,
+  "titulo": "Cuarto Orden: conversión a edificio de estacionamientos",
+  "fuente": {
+   "norma": "Resolución N°127-2003 del MIVI (Casco Antiguo)",
+   "articulo": "Artículo 30",
+   "pagina_pdf": 11,
+   "cita_textual": "pero manteniendo la restricción para las alturas máximas permitidas establecidas en la presente Resolución."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'MIVIOT-CA-R127-2003' and lote.codigo_zona in ['RMH1', 'RMH2', 'C1', 'C2', 'SIV', 'SIU', 'PL'] and lote.orden_conservacion == 'cuarto' and proyecto.estacionamientos > 0",
+  "entradas": [],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "La conversión a edificio de estacionamientos supera las alturas máximas de la resolución.",
+  "vigencia": {
+   "desde": "2003-09-08",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Se permite la conversión total y cambio de uso (mediante instrumentos jurídicos y de incentivos) variando alturas internas y fachadas. Hecho nuevo lote.orden_conservacion ('primer'|'segundo'|'tercer'|'cuarto'|'baldio'), según la clasificación del Decreto Ley 9 de 1997 (Art. 15) que asigna la DNPH. Vigencia desde la publicación en Gaceta Oficial Nº 24,882 (8-sep-2003; Art. 33: rige desde su promulgación). Versión 2: solo aplica si el proyecto propone estacionamientos (proyecto.estacionamientos > 0); si falta el dato, va a revisión.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Ruido: la conversión a edificio de estacionamientos es facultativa y su único límite (alturas máximas) lo verifica CA-TODAS-ALTURA-4-ORDEN-PISOS."
+  }
+ }
+]

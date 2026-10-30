@@ -1,0 +1,58 @@
+[
+ {
+  "id": "PLOT-ART75-SIN-REQUISITO-CORREGIMIENTOS",
+  "version": 1,
+  "titulo": "Corregimientos sin requisito de estacionamientos",
+  "fuente": {
+   "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+   "articulo": "75",
+   "pagina_pdf": 34,
+   "cita_textual": "Los siguientes corregimientos no tienen requisitos de estacionamientos: San Felipe, El Chorrillo, Santa Ana, Calidonia y Curundú."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable in ['PLOT-A61-2021', 'PLOT-A61-2021+A270-2025'] and existe(lote.corregimiento) and lote.corregimiento in ['San Felipe', 'El Chorrillo', 'Santa Ana', 'Calidonia', 'Curundú']",
+  "entradas": [
+   "lote.corregimiento"
+  ],
+  "severidad": "observacion",
+  "mensaje_no_cumple": "El lote está en un corregimiento sin requisito de estacionamientos (PLOT, Art. 75): los NO_CUMPLE de dotación mínima de estacionamientos de las fichas no aplican.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: lote.corregimiento (lo decide la IA o un extractor GIS futuro). Duda para un humano: las reglas *-ESTACIONAMIENTOS de reglas/reglas_plot_borrador.json no excluyen estos corregimientos; convendría añadirlo en su aplica_si en una versión nueva. Aplica a 'PLOT-A61-2021' y a 'PLOT-A61-2021+A270-2025' porque el Acuerdo 270 integra San Francisco al PLOT (su Art. 2 mantiene el Anexo 4 y el cuerpo del PLOT en lo no limitado). Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Exención, no obligación: se incorpora al aplica_si de las reglas de estacionamientos de las fichas de este lote."
+  }
+ },
+ {
+  "id": "PLOT-ART87-TRANSICION-24-MESES",
+  "version": 1,
+  "titulo": "Transición del PLOT (24 meses) para acogerse a la normativa anterior",
+  "fuente": {
+   "norma": "Acuerdo N°61 de 30-03-2021 (PLOT), G.O. 29268-A",
+   "articulo": "87",
+   "pagina_pdf": 38,
+   "cita_textual": "Se dispone de un periodo de veinticuatro (24) meses, contado a partir de la entrada en vigencia del presente PLOT como proceso de transición para adecuar el presente cambio de normativa para los nuevos proyectos."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021' and expediente.invoca_uso_anterior == true",
+  "entradas": [
+   "expediente.invoca_uso_anterior"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El expediente invoca la densidad o la altura de la normativa anterior al PLOT: la transición de 24 meses (Art. 87) solo cubrió solicitudes en trámite y anteproyectos presentados en ese periodo; fuera de él, el proyecto debe cumplir el PLOT en su totalidad.",
+  "vigencia": {
+   "desde": "2021-04-21",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Cálculo provisional (verificar): 24 meses desde la G.O. del 21-04-2021 terminan hacia el 21-04-2023, ya vencidos. El artículo reconoce la validez de anteproyectos y permisos expedidos antes del PLOT, con la vigencia que fije el Municipio. Reutiliza expediente.invoca_uso_anterior (patrón de EC-TODAS-TRANSICION). Para San Francisco aplica la transición propia del Acuerdo 270 (SF-A270-ART8-TRANSICION-PLAZO), por eso se acota a 'PLOT-A61-2021'. Vigencia: Art. 91 («El presente acuerdo empezará a regir a partir de su promulgación») y G.O. No. 29268-A del miércoles 21 de abril de 2021.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Plazo de 24 meses desde abril de 2021: vencido en 2023 (criterio 6, ruido)."
+  }
+ }
+]

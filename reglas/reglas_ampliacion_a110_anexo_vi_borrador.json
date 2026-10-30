@@ -1,0 +1,457 @@
+[
+  {
+    "id": "A110-AVI-1-LAMINA-CALIBRE",
+    "version": 2,
+    "titulo": "Letrero de lámina galvanizada calibre 16",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 1",
+      "pagina_pdf": 58,
+      "cita_textual": "Utilizar lámina galvanizada, calibre 16, de 1.80m x 0.90m (6 pies x 3 pies)."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.material",
+      "letrero.calibre"
+    ],
+    "condicion": "letrero.material == 'lamina_galvanizada' and letrero.calibre == 16",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe ser de lámina galvanizada calibre 16 (Anexo VI, num. 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.material, letrero.calibre. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-1-DIMENSIONES",
+    "version": 2,
+    "titulo": "Letrero de 1.80 m x 0.90 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 1",
+      "pagina_pdf": 58,
+      "cita_textual": "Utilizar lámina galvanizada, calibre 16, de 1.80m x 0.90m (6 pies x 3 pies)."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.ancho_m",
+      "letrero.alto_m"
+    ],
+    "condicion": "abs(letrero.ancho_m - 1.80) <= 0.02 and abs(letrero.alto_m - 0.90) <= 0.02",
+    "unidad": "m",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe medir 1.80 m x 0.90 m (6 x 3 pies) (Anexo VI, num. 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Prevalece el texto (1.80 x 0.90 m) sobre las cotas del dibujo del modelo (1.89 / 1.79 x 0.94). Tolerancia de ±0.02 m por la medición sobre foto o en sitio de una lámina comercial. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.ancho_m, letrero.alto_m. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-1-MARCO",
+    "version": 2,
+    "titulo": "Letrero: marco negro de 0.04 m y divisiones internas de 0.01 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 1",
+      "pagina_pdf": 58,
+      "cita_textual": "El marco general debe ser de color negro de 0.04m de espesor y divisiones internas de 0.01m."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.marco_color",
+      "letrero.marco_espesor_m",
+      "letrero.divisiones_espesor_m"
+    ],
+    "condicion": "letrero.marco_color == 'negro' and abs(letrero.marco_espesor_m - 0.04) <= 0.005 and abs(letrero.divisiones_espesor_m - 0.01) <= 0.005",
+    "unidad": "m",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El marco del letrero debe ser negro, de 0.04 m, con divisiones internas de 0.01 m (Anexo VI, num. 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Tolerancia de ±0.005 m (medio centímetro) en el marco y en las divisiones, porque son trazos pintados de 1 a 4 cm. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.marco_color, letrero.marco_espesor_m, letrero.divisiones_espesor_m. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-1-TRES-RECUADROS",
+    "version": 2,
+    "titulo": "Letrero: tres recuadros horizontales",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 1",
+      "pagina_pdf": 58,
+      "cita_textual": "El espacio total estará dividido en tres (3) recuadros horizontales"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.recuadros_horizontales"
+    ],
+    "condicion": "letrero.recuadros_horizontales == 3",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe dividirse en tres recuadros horizontales de 0.20 m, 0.30 m y 0.30 m (Anexo VI, num. 1).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Alturas de los recuadros en el mismo numeral: 0.20 m (líneas 1 y 2), 0.30 m (líneas 3 a 5) y 0.30 m (líneas 6 a 8). Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.recuadros_horizontales. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-2-LEGIBLE-15-20M",
+    "version": 2,
+    "titulo": "Letrero legible a 15–20 m",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 2",
+      "pagina_pdf": 58,
+      "cita_textual": "El letrero deberá ser legible a una distancia de 15 a 20 metros."
+    },
+    "tipo": "criterio",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe ser legible a una distancia de 15 a 20 metros (Anexo VI, num. 2).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Criterio: la legibilidad la juzga el inspector o el revisor sobre la foto. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-3-ALTURA-2-40",
+    "version": 2,
+    "titulo": "Letrero: nivel superior a 2.40 m del suelo",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 3",
+      "pagina_pdf": 58,
+      "cita_textual": "El nivel superior del letrero se colocará a 2.40m del suelo (8 pies)"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.altura_superior_m"
+    ],
+    "condicion": "abs(letrero.altura_superior_m - 2.40) <= 0.05",
+    "unidad": "m",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El nivel superior del letrero debe quedar a 2.40 m (8 pies) del suelo (Anexo VI, num. 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Tolerancia de ±0.05 m por la instalación en sitio y la medición desde un suelo que puede no estar nivelado. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.altura_superior_m. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-3-FRENTE-VISIBLE",
+    "version": 2,
+    "titulo": "Letrero en la parte frontal del proyecto y en lugar visible",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 3",
+      "pagina_pdf": 58,
+      "cita_textual": "en la parte frontal del proyecto en un lugar visible."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.en_frente_visible"
+    ],
+    "condicion": "letrero.en_frente_visible == true",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe colocarse en la parte frontal del proyecto, en un lugar visible (Anexo VI, num. 3).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.en_frente_visible. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-4-TUBOS-GALVANIZADOS",
+    "version": 2,
+    "titulo": "Letrero sobre dos tubos galvanizados de 2½ pulgadas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 4",
+      "pagina_pdf": 58,
+      "cita_textual": "Se debe colocar en dos (2) tubos galvanizados de dos (2) y media pulgadas de diámetro."
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.tubos_galvanizados",
+      "letrero.diametro_tubos_pulg"
+    ],
+    "condicion": "letrero.tubos_galvanizados == 2 and letrero.diametro_tubos_pulg == 2.5",
+    "unidad": "pulg",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe ir sobre dos tubos galvanizados de 2½ pulgadas de diámetro (Anexo VI, num. 4).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. El diámetro de 2½ pulgadas es una medida nominal comercial del tubo, por eso se compara con ==. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.tubos_galvanizados, letrero.diametro_tubos_pulg. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-5-COLORES",
+    "version": 2,
+    "titulo": "Letrero en blanco (fondo) y negro (letras)",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 5",
+      "pagina_pdf": 58,
+      "cita_textual": "El acabado del letrero será de dos (2) colores: blanco y negro."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.color_fondo",
+      "letrero.color_letras"
+    ],
+    "condicion": "letrero.color_fondo == 'blanco' and letrero.color_letras == 'negro'",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El letrero debe ser de fondo blanco con letras negras (Anexo VI, num. 5).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.color_fondo, letrero.color_letras. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-5-TIPOGRAFIA-ARIAL",
+    "version": 2,
+    "titulo": "Letrero: tipografía Arial",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 5",
+      "pagina_pdf": 58,
+      "cita_textual": "Las letras del letrero deberán ser de un tamaño legible a distancia, tipografía ARIAL."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.tipografia"
+    ],
+    "condicion": "letrero.tipografia == 'Arial'",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Las letras del letrero deben ser tipografía Arial; el tamaño solo puede variar en la descripción del proyecto (Anexo VI, num. 5; num. 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. El num. 6 repite la tipografía Arial para la leyenda. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.tipografia. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-6-OCHO-LINEAS",
+    "version": 2,
+    "titulo": "Leyenda del letrero en ocho líneas",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 6",
+      "pagina_pdf": 59,
+      "cita_textual": "La leyenda del letrero se escribirá en ocho (8) líneas en letras formales rectas, tipografía ARIAL, de la siguiente manera:"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.lineas_leyenda"
+    ],
+    "condicion": "letrero.lineas_leyenda == 8",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La leyenda del letrero debe escribirse en ocho líneas (Anexo VI, num. 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.lineas_leyenda. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-6-CONTENIDO-LEYENDA",
+    "version": 2,
+    "titulo": "Leyenda con proyecto, constructor, propietario, anteproyecto, plano y permiso",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 6",
+      "pagina_pdf": 59,
+      "cita_textual": "- Tercera línea: PROYECTO:"
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado in ['RDP', 'RDP_ETAPAS'] and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.leyenda_campos_completos"
+    ],
+    "condicion": "letrero.leyenda_campos_completos == true",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La leyenda debe incluir PROYECTO, CONSTRUCTOR, PROPIETARIO, ANTEPROYECTO, PLANO y PERMISO DE CONSTRUCCIÓN (Anexo VI, num. 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Campos de las líneas tercera a octava. La segunda línea del modelo cita el Acuerdo 281 de 2016 (subrogado); no se verifica. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.leyenda_campos_completos. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-AVI-6-PERMISOS-POR-ETAPAS",
+    "version": 2,
+    "titulo": "Permiso por etapas: el letrero anota todos los permisos concedidos",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "Anexo VI, num. 6",
+      "pagina_pdf": 59,
+      "cita_textual": "En caso de que el permiso sea otorgado por etapas se deben anotar todos los permisos concedidos."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['PDC', 'PDC_CON_ATC', 'REVALIDA_PDC'] and expediente.tramite_plano_asociado == 'RDP_ETAPAS' and existe(expediente.evidencia_letrero)",
+    "entradas": [
+      "letrero.anota_todos_permisos_etapas"
+    ],
+    "condicion": "letrero.anota_todos_permisos_etapas == true",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Formato para el letrero que se deberá colocar dentro del área del Proyecto",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El permiso se otorgó por etapas: el letrero debe anotar todos los permisos concedidos (Anexo VI, num. 6).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: el letrero se comprueba en la obra (inspección o foto), no en el plano; la sanción del Art. 204, num. 3, lit. i (Anexo VII, fila 22) es por no tener letrero, no por su formato. Se exige en proyectos con permiso de construcción de Planos de Edificaciones (Anexo VI, párr. inicial) y se omite en Plano Misceláneo y Obra Menor (Art. 194, num. 3). El modelo del letrero cita el Acuerdo 281 de 2016, Art. 93, subrogado por el Art. 218; no lleva regla. Trámites provisionales: 'PDC' = PDC sobre plano registrado (Cap. XIII); 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, con inspección de campo del Art. 146); 'PDC_CON_ATC' según A110-ATC-VIGENCIA. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). La regla solo se evalúa si existe(expediente.evidencia_letrero) (foto o acta de inspección): el formato solo tiene sentido si hay un letrero que revisar; es la excepción de D9 para datos que solo existen en ciertos casos, como un vuelo. Hechos provisionales (los da la inspección o la foto del letrero): expediente.tramite_plano_asociado, expediente.evidencia_letrero, letrero.anota_todos_permisos_etapas. | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Formato para el letrero que se deberá colocar dentro del área del Proyecto», normativa/acuerdo-110/texto-completo.md)"
+  },
+  {
+    "id": "A110-ART194-LETRERO-INSTALADO",
+    "version": 2,
+    "titulo": "Letrero identificador de planos y permisos instalado en la obra",
+    "fuente": {
+      "norma": "Acuerdo N°110 de 22-04-2025",
+      "articulo": "194, num. 3",
+      "pagina_pdf": 36,
+      "cita_textual": "Contar con letrero identificador de los Planos y Permisos registrados en la DOYC, debidamente instalado. Solo podrá omitirse para proyectos de Plano Misceláneo y Permiso Digital de Obra Menor."
+    },
+    "tipo": "documental",
+    "aplica_si": "tramite in ['REVALIDA_PDC', 'INSPECCION_OBRA'] and expediente.tramite_plano_asociado not in ['PLANO_MISCELANEO', 'OBRAS_MENORES']",
+    "entradas": [
+      "letrero.instalado"
+    ],
+    "condicion": "letrero.instalado == true",
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "En la obra deben reposar en todo momento los siguientes documentos para presentar a los inspectores de la DOYC",
+      "archivo": "normativa/acuerdo-110/texto-completo.md",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La obra no tiene instalado el letrero identificador de los planos y permisos registrados en la DOYC (Art. 194, num. 3; Anexo VI).",
+    "vigencia": {
+      "desde": "2025-05-05",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Observación y no bloqueante: se verifica en la obra (inspección o foto), no en el plano. No tener el letrero es falta general (Art. 204, num. 3, lit. i: «La obra no cuenta con el letrero de identificación del proyecto registrado ante la DOYC»), con multa de B/. 500.00 (Anexo VII, fila 22); la sanción la impone la DOYC y no impide emitir el permiso. También lo exige el párrafo inicial del Anexo VI («debe colocarse en todos los proyectos que consten de permisos de construcción de Planos de Edificaciones»). Trámites provisionales: 'REVALIDA_PDC' = reválida del PDC (Cap. XIV, inspección del Art. 146); 'INSPECCION_OBRA' = inspección de la DOYC durante la obra (nombre nuevo, sin trámite en el motor). Hechos provisionales (los da la inspección o la foto): expediente.tramite_plano_asociado, letrero.instalado. Si falta expediente.tramite_plano_asociado la regla queda en REQUIERE_REVISION (D9). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («En la obra deben reposar en todo momento los siguientes documentos para presentar a los inspectores de la DOYC», normativa/acuerdo-110/texto-completo.md)"
+  }
+]

@@ -1,0 +1,334 @@
+Fuente: República de Panamá, Ministerio de Vivienda y Ordenamiento Territorial, Resolución No. 192-2013 (de 18 de abril de 2013), por la cual se aprueba la zonificación y los usos de suelo correspondientes al Sector de El Carmen, Corregimiento de Bella Vista, Provincia de Panamá.
+Publicación: Gaceta Oficial Digital No 27276, martes 30 de abril de 2013 (encabezado de cada página del PDF). Rige a partir de su promulgación (Resuelve SEXTO).
+PDF: /home/app/normativas/Res. N°192-2013 - El Carmen.pdf (12 páginas escaneadas: págs. 1-3 resolución; pág. 4 carátula del Anexo No. 1; pág. 5 plano de zonificación; págs. 6-12 fichas normativas por código de zona, dos por página, en hoja apaisada).
+Transcripción cotejada con la imagen del PDF escaneado; verificar contra la Gaceta antes de aprobar.
+Convenciones: [[pág N del PDF]] = página del PDF (desde 1). Las fichas se transcriben fila por fila como «Rótulo: contenido de la celda». En las fichas la puntuación decimal (punto o coma) no siempre se distingue en el escaneo; se transcribe la que se ve. Tampoco se distinguen con certeza las tildes de los rótulos de fila («minimo/mínimo», «Linea/Línea»); por eso las citas del catálogo usan el contenido de la celda. Número y fecha manuscritos en el original («192-2013», «18», «abril»).
+
+[[pág 1 del PDF]]
+No 27276 Gaceta Oficial Digital, martes 30 de abril de 2013 1
+
+REPÚBLICA DE PANAMÁ
+MINISTERIO DE VIVIENDA Y ORDENAMIENTO TERRITORIAL
+
+RESOLUCIÓN No. 192-2013
+(DE 18 DE abril DE 2013)
+
+LA MINISTRA DE VIVIENDA Y ORDENAMIENTO TERRITORIAL
+En uso de sus facultades legales
+CONSIDERANDO:
+
+Que la Ley 6 de 1 de febrero de 2006, que reglamenta el ordenamiento territorial para el desarrollo urbano y dicta otras disposiciones, establece que el Ministerio de Vivienda, hoy Ministerio de Vivienda y Ordenamiento Territorial, es la máxima autoridad urbanística a nivel nacional.
+
+Que la Ley 61 de 23 de octubre de 2009, que reorganiza el Ministerio de Vivienda y crea el Viceministerio de Ordenamiento Territorial, establece que será función de este Ministerio, el determinar y dirigir la política habitacional y de ordenamiento territorial para el desarrollo urbano, así como el establecimiento de normas de zonificación realizando las consultas pertinentes.
+
+Que sobre la base de los instrumentos legales que nos facultan las citadas leyes, se elaboró el Plan Parcial de Ordenamiento Territorial (PPOT) para el Corregimiento de Bella Vista, Distrito de Panamá, Provincia de Panamá, para el cual se contrató a la Empresa Interplanos, S.A.
+
+Que la citada firma consultora siguiendo las directrices de este Ministerio, elaboró el Plan Parcial de Ordenamiento Territorial (PPOT) para el Corregimiento de Bella Vista, con un horizonte de 10 años, con el fin de lograr un instrumento técnico, normativo, político y administrativo para la gestión del territorio, mediante el cual se planifica y regula el uso, ocupación y transformación del espacio físico urbano.
+
+Que este estudio ha sido dividido a su vez en sectores para una mejor participación de la ciudadanía, entre los cuales se encuentra el Sector de El Carmen.
+
+Que en virtud de las funciones arriba expuestas, este Ministerio ha llevado a cabo una serie de consultas y talleres con la comunidad, cuyos objetivos se encuentran orientados en brindar a esta institución los elementos técnicos y urbanísticos que nos permitan llevar a cabo un ordenamiento del territorio que resulte lo mas armonioso posible, atendiendo a las características de cada sector.
+
+Que en virtud de lo anterior, se lleva a cabo un proceso de consultas, a través del cual se busca contar con un instrumento actualizado, en el que se muestre la situación actual del sector, así como posibles mecanismos de ordenamiento, que permitan su desarrollo armónico.
+
+Que en atención a la Ley 6 de 2002, que dicta las normas sobre transparencia, y sus normas reglamentarias, se fijó tanto en los murales de
+
+[[pág 2 del PDF]]
+No 27276 Gaceta Oficial Digital, martes 30 de abril de 2013 2
+
+esta Institución, como en un diario de circulación nacional, aviso de participación ciudadana, a fin de que todo aquel interesado en conocer la propuesta presentada por el consultor tuviera acceso a la misma y pudiera hacer observaciones y recomendaciones, o mostrar su aceptación a la misma.
+
+Que el día 10 de febrero del 2012, se celebró en el salón La Rotonda de este Ministerio, Audiencia Pública, en la cual se explicó el contenido de la propuesta presentada por el consultor de Interplanos, para el ordenamiento territorial del Corregimiento de Bella Vista.
+
+Que consta en el expediente Informe de Evaluación de la Consulta Ciudadana en comento, en la que se recomendó analizar y aprobar por etapas el Plan Parcial de Ordenamiento Territorial para el Corregimiento de Bella Vista.
+
+Que como consta en el expediente en nota fechada el 4 de julio de 2012, el Movimiento de Residentes de El Carmen entregó su propuesta para el ordenamiento del territorio de su sector.
+
+Que luego de esto, se sostuvieron reuniones talleres, en varias fechas con los residentes del sector de El Carmen, así como con los propietarios, como se hace constar en el expediente. En la dinámica de la consulta con la comunidad se identificaron ocho (8) puntos de interés, consistentes esencialmente en: mantener R2B en la calle Grecia y RM1C2 en la intersección con la Avenida Ramón Arias; en la vía Ricardo Miró, que colinda con el parque, se llegó a un consenso de bajar la densidad establecida con anterioridad al código de zona RM2, con restricción de altura hasta diecisiete (17) pisos incluyendo estacionamientos, y sin permitir bonificaciones; en la calle Otilia Tejeira el consenso fue el de bajar la zonificación a RM2 al lado derecho (desde la intersección con la Avenida Ramón Arias hasta la intersección con la Avenida Belisario Porras) y RM1 al izquierdo y mantener la calle sin salida en RM1; en la calle Agua Marina, se consensuó con los residentes dejarlo en RM1; en el área residencial interna (calle Carlos M. Arias y calle Ángel Rubio) se unifica toda la zonificación vigente al código de zona R1B (Residencial de Baja Densidad).
+
+Que de los ocho (8) puntos en consideración se logró un consenso con los residentes del sector de El Carmen y el Ministerio en siete (7) de ellos, habiendo desacuerdo en uno (1) de esos puntos. En este punto también el Ministerio aceptó parcialmente la propuesta del R3 en la calle David de Castro y en la calle Ricardo Miró.
+
+Que, mediante Informe Técnico N° 26 de 13 de febrero de 2013, emitido por el Departamento de Planificación Territorial de la Dirección de Ordenamiento Territorial, se recomendó la aprobación del Plan Parcial de Ordenamiento Territorial del Sector que corresponde a El Carmen, del Corregimiento de Bella Vista, el cual colinda al Norte con el Corregimiento de Pueblo Nuevo y el río Matasnillo, al Sur con quebrada sin nombre y el barrio de El Cangrejo del Corregimiento de Bella Vista, al Este con la Avenida Central España (Vía España) y al Oeste con Corregimiento de Bethania.
+
+Que con fundamento a lo anteriormente señalado,
+
+[[pág 3 del PDF]]
+No 27276 Gaceta Oficial Digital, martes 30 de abril de 2013 3
+
+RESUELVE
+
+PRIMERO: APROBAR la propuesta de zonificación presentada para el Sector que corresponde a El Carmen, Corregimiento de Bella Vista, el cual colinda al Norte con el Corregimiento de Pueblo Nuevo y el río Matasnillo, al Sur con quebrada sin nombre y el barrio de El cangrejo del Corregimiento de Bella Vista, al Este con la Avenida Central España (Vía España) y al Oeste con Corregimiento de Bethania.
+
+SEGUNDO: Aprobar la propuesta de los usos del suelo y códigos de zona para el sector que corresponde a El Carmen, Corregimiento de Bella Vista, de conformidad a lo adjunto en el Anexo 1 de esta resolución.
+
+TERCERO: El documento y los planos de la propuesta del Plan Parcial de Ordenamiento Territorial (PPOT) para el Corregimiento de Bella Vista, Distrito de Panamá, Provincia de Panamá, servirán de consulta y referencia en la ejecución de este plan y formarán parte de esta Resolución.
+
+CUARTO: Enviar copia de esta Resolución a la Dirección de Ventanilla Única de este Ministerio, a la Autoridad Local correspondiente y a la Dirección de Estudios y Diseños del Ministerio de Obras Públicas.
+
+QUINTO: Se dará un plazo de dos (2) años para que las fincas que tengan un uso de suelo distinto al que se aprueba en esta resolución, adquirido por un cambio individual o una rezonificación previa del sector, puedan acogerse a dicha normativa; luego de ese período, entrará a regir en su totalidad la presente propuesta de zonificación presentada para el Sector que corresponde a El Carmen, Corregimiento de Bella Vista.
+
+SEXTO: La presente resolución comenzará a regir a partir de su promulgación.
+
+FUNDAMENTO LEGAL: -Ley No. 61 de 23 de octubre de 2009.
+-Ley No. 6 de 1 de febrero de 2006.
+-Decreto Ejecutivo No. 23 de 16 de mayo de 2007.
+-Resolución No.402-2010, de 22 de junio de 2010.
+
+PUBLÍQUESE Y CÚMPLASE,
+
+[firma] YASMINA DEL C. PIMENTEL, Ministra de Vivienda y Ordenamiento Territorial
+[firma] ELADIO OSTIA PRAVIA, Viceministro de Ordenamiento Territorial
+[firma manuscrita y fecha manuscrita «25/9/2013» (copia fiel)]
+
+[[pág 4 del PDF]]
+No 27276 Gaceta Oficial Digital, martes 30 de abril de 2013 4
+
+ANEXO No. 1
+A LA RESOLUCIÓN No. 192-2013 DE 18 DE abril DE 2013, POR LA CUAL SE APRUEBA LA ZONIFICACIÓN Y LOS USOS DE SUELO CORRESPONDIENTES AL SECTOR DEL CARMEN, CORREGIMIENTO DE BELLA VISTA, PROVINCIA DE PANAMÁ.
+
+[[pág 5 del PDF]]
+(Plano apaisado.)
+CORREGIMIENTO DE BELLA VISTA
+REZONIFICACION
+DEL SECTOR EL CARMEN
+ANEXO No. 1 DE LA RESOLUCION 192-2013 DE 18 DE abril DE 2013.
+
+Leyenda (códigos de zona tal como aparecen):
+R1-A | RM-1
+R2-A | RM-2
+R1-B | RM3
+R2-B | C2
+R3C1 | RM1-C2
+P | RM3-C2
+  | * RM-1
+  | * RM-2
+* Ver normas adjuntas
+
+Rótulos en el plano (grafías observadas): RM-1, R1-B, C2, P, RM1-C2, R3C1, * RM-1, * RM2, RM3-C2, R2B, RM3, * RM2, RM1, RM2.
+Colindancias rotuladas: CORREGIMIENTO DE PUEBLO NUEVO, CORREGIMIENTO DE BETANIA, El Cangrejo, Obarrio; vías: Avenida Simón Bolívar (Transístmica), Vía España.
+DIRECCIÓN DE ORDENAMIENTO TERRITORIAL
+DEPARTAMENTO DE PLANIFICACIÓN TERRITORIAL
+PREPARADO: UNIDAD DE INFORMACIÓN GRAFICA TERRITORIAL
+ABRIL 2013
+
+[[pág 6 del PDF]]
+(Ficha izquierda)
+R1- A
+RESIDENCIAL DE BAJA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares una sobre otra o bifamiliares adosadas, una al lado de la otra de forma horizontal.
+Densidad neta: Hasta 100 personas por hectárea.
+Área minima de lote: a) 800.00 M2 vivienda unifamiliar y bifamiliar una sobre otra. b) 400.00 M2 por cada unidad de vivienda bifamiliar adosada una al lado de la otra de forma horizontal.
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: Libre.
+Altura máxima: Planta baja y dos (2) altos.
+Área de ocupación máxima: 50 % del área del lote.
+Área libre minima: 50 % del área del lote.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construccion ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral minimo: 2.50 ML.
+Retiro posterior minimo: 5.00 ML.
+Estacionamientos: Dos (2) espacios dentro de la propiedad por unidad de vivienda.
+NOTA: Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2.
+
+(Ficha derecha)
+R1-B
+RESIDENCIAL DE BAJA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares una sobre otra ó bifamiliares adosadas, una al lado de la otra de forma horizontal.
+Densidad neta: Hasta 200 personas por hectárea.
+Área minima de lote: a) 600.00 M2 para vivienda unifamiliar y bifamiliar, una sobre otra. b) 300.00 M2 por cada unidad de vivienda bifamiliar, una al lado de la otra.
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: Libre.
+Altura máxima: Planta baja y dos (2) altos.
+Área de ocupación máxima: 50 % del área del lote.
+Área libre minima: 50 % del área del lote.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral minimo: En Planta Baja: • Adosada a la linea de propiedad, con pared ciega acabada hacia el vecino. • 1.50 ML. en área de servicio con abertura. • 2.50 ML. en área habitable con abertura. En Plantas Altas: • Adosada a la linea de propiedad, con pared ciega acabada hacia el vecino. • 2.50 ML. con aberturas en área habitable. • 1.50 ML. con pared ciega en área habitable. • 1.50 ML. con abertura en área de servicio.
+Retiro posterior minimo: 5.00 ML.
+Estacionamientos: Dos (2) espacios dentro de la propiedad por unidad de vivienda.
+NOTA: Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2.
+
+[[pág 7 del PDF]]
+(Ficha izquierda)
+R2-A
+RESIDENCIAL DE MEDIANA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares una sobre otra, bifamiliares adosadas una al lado de la otra de forma horizontal y viviendas en hileras.
+Densidad neta: Hasta 300 personas por hectárea.
+Área minima de lote: a) 600.00 M2 por unidad de vivienda unifamiliar b) 600.00 M2 por cada unidad de vivienda bifamiliar, una sobre otra. c) 300.00 M2 por cada unidad de vivienda bifamiliar adosada, una al lado de la otra de forma horizontal. d) 200.00 M2 por cada unidad de vivienda en hilera.
+Frente minimo de lote: a) 20.00 ML. por cada unidad de vivienda unifamiliar o bifamiliar, una sobre otra. b) 7.50 ML. por cada unidad de vivienda bifamiliar, adosada una al lado de la otra de forma horizontal. c) 6.00 ML. por cada unidad de vivienda en hilera.
+Fondo minimo de lote: Libre.
+Altura máxima: Planta baja y dos (2) altos.
+Área de ocupación máxima: 60 % del área del lote.
+Área libre minima: 40 % del área del lote.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 2.50 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral minimo: En Planta Baja: • Adosada a la linea de propiedad, con pared ciega acabada hacia el vecino. • 1.50 ML. en área de servicio con abertura. • 2.50 ML. en área habitable con abertura. En Plantas Altas: • Adosada a la linea de propiedad, con pared ciega acabada hacia el vecino. • 2.50 ML. con aberturas en área habitable. • 1.50 ML. con pared ciega en área habitable. • 1.50 ML. con abertura en área de servicio.
+Retiro posterior minimo: 5.00 ML.
+Estacionamientos: Dos (2) espacios dentro de la propiedad por cada unidad de vivienda.
+NOTA: Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2.
+
+(Ficha derecha)
+R2-B
+RESIDENCIAL DE MEDIANA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares una sobre otra, bifamiliares adosadas una al lado de la otra de forma horizontal, viviendas en hileras y apartamentos. Se permitirá la construcción de edificios docentes, filantrópicos, asistenciales y oficinas de profesionales residentes, cuyo anexo o remodelación no debe sobrepasar el 10% el área de construcción cerrada existente.
+Densidad neta: Hasta 300 personas por hectárea.
+Área minima de lote: a) 600.00 M2 vivienda unifamiliar. b) 600.00 M2 por cada vivienda bifamiliar, una sobre otra. c) 300.00 M2 por cada vivienda bifamiliar adosada, una al lado de la otra de forma horizontal. d) 200.00 M2 por cada unidad de vivienda en hilera. e) 600.00 M2 para edificio de apartamentos.
+Frente minimo de lote: a) 20.00 ML. por vivienda unifamiliar o bifamiliar, una sobre otra. b) 7.50 ML. por cada vivienda bifamiliar adosada una al lado de la otra, de forma horizontal. c) 6.00 ML. por cada vivienda en hilera. d) 20.00 ML. por edificio de apartamentos.
+Fondo minimo de lote: Libre.
+Altura máxima: Planta baja y tres (3) altos.
+Área de ocupación máxima: 60 % del área del lote.
+Área libre minima: 40 % del área del lote.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 2.50 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral minimo: En Planta Baja: • Adosada con pared ciega acabada hacia el vecino. • 2.50 ML. con aberturas en áreas habitables. • 1.50 ML. con aberturas en área de servicio. En Plantas Altas: • Adosada con pared ciega acabada hacia el vecino. • 2.50 ML. con aberturas en áreas habitables. • 1.50 ML. con pared ciega en área habitable. • 1.50 ML. en áreas de servicios.
+Retiro posterior: 5.00 ML.
+Estacionamientos: a) Hasta 125 M2: 1.0 por vivienda b) Hasta 160 M2: 1.25 por vivienda c) Hasta 200 M2: 1.50 por vivienda d) Hasta 300 M2: 2.0 por vivienda e) Hasta 400 M2: 2.50 por vivienda f) Hasta 500 M2: 3.00 por vivienda g) Más de 500 M2: 4.00 por vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2. b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+[[pág 8 del PDF]]
+(Ficha izquierda)
+R3
+RESIDENCIAL DE MEDIANA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios destinados a viviendas unifamiliares, bifamiliares (una sobre otra), bifamiliares adosadas una al lado de la otra de forma horizontal, viviendas en hileras y apartamentos. Se permitirá la construcción de edificios docentes, filantrópicos, asistenciales y oficinas de profesionales residentes, cuyo anexo o remodelación no debe sobrepasar el 10% el área de construcción cerrada existente.
+Densidad neta: Hasta 400 personas por hectárea.
+Área minima de lote: a) 400.00 M2 por unidad de vivienda unifamiliar y bifamiliar, una sobre otra. b) 400.00 M2 de vivienda bifamiliar adosada, una al lado de la otra, de forma horizontal; equivalente a 200.00 m2 cada unidad de vivienda. c) 150.00 M2 por cada unidad de vivienda en hilera. d) 600.00 M2 para edificio de apartamentos.
+Frente minimo de lote: a) 14.00 ML. por vivienda unifamiliar y bifamiliar, una sobre otra. b) 14.00 ML. por vivienda bifamiliar adosada una al lado de la otra, equivalente a 7.00 ml por cada unidad de vivienda. c) 5.00 ML. por cada unidad de vivienda en hilera. d) 20.00 ML. para edificios de apartamentos.
+Fondo minimo de lote: Libre.
+Altura máxima: Planta baja y tres (3) altos.
+Área de ocupación máxima: 60 % del área del lote.
+Área libre minima: 40 % del área del lote.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 2.50 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral minimo: En Planta Baja: • Adosamiento a la linea de propiedad con pared acabada al vecino. • 1.50 ML. con aberturas en área de servicio. • 2.50 ML. con aberturas en área habitables. En Plantas Altas: • Adosamiento a la linea de propiedad con pared ciega acabada hacia el vecino • 2.50 ML. con aberturas en áreas habitables. • 1.50 ML. con pared ciega en área habitable. • 1.50 ML. con abertura en área de servicios.
+Retiro posterior: 4.00 ML.
+Estacionamientos: a) Hasta 125 M2: 1.0 por vivienda b) Hasta 160 M2: 1.25 por vivienda c) Hasta 200 M2: 1.50 por vivienda d) Hasta 300 M2: 2.0 por vivienda e) Hasta 400 M2: 2.50 por vivienda f) Hasta 500 M2: 3.00 por vivienda g) Más de 500 M2: 4.00 por vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2 b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+(Ficha derecha)
+RM-1
+RESIDENCIAL DE ALTA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares y casas en hileras. Se permitirá la construcción de edificios docentes, religiosos, institucionales, culturales, filantrópicos, asistenciales y oficinas, siempre que dichas estructuras no constituyan perjuicios para los vecinos o afecten en forma adversa, el carácter residencial multifamiliar de la zona. Se permiten locales comerciales en la planta baja de los edificios para el expendio de artículos de consumo en general.
+Densidad neta: Hasta 750 personas por hectárea.
+Área minima de lote: 600.00 M2 por edificio de apartamentos
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 30.00 ML.
+Altura máxima: Según densidad.
+Área de ocupación máxima: 100% del área de construcción por retiros en planta baja.
+Área libre minima: La que resulte al aplicar los retiros.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML minimo, a partir de la linea de propiedad.
+Retiro lateral: a) En plantas baja y tres altos: • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 1.50 ML. en área de servicio. • 2.50 ML. en áreas habitables.
+Retiro posterior: a) En plantas baja y tres altos: • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 5.00 ML • Adosado con pared ciega acabada hacia el vecino, cuando colinda con zonificación RM3, C2 ó Industrial. c) Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 3 de la Res. 169-2004 del 8 de octubre de 2004.
+Estacionamientos: a) Hasta 125 M2: 1.00/ Vivienda b) Hasta 160 M2: 1.25/ Vivienda c) Hasta 200 M2: 1.50/ Vivienda d) Hasta 300 M2: 2.00/ Vivienda e) Hasta 400 M2: 2.50/ Vivienda f) Hasta 500 M2: 3.00/ Vivienda g) Más de 500 M2: 3.50/ Vivienda
+NOTA: Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2 b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+[[pág 9 del PDF]]
+(Ficha izquierda)
+RM-1*
+RESIDENCIAL DE ALTA DENSIDAD CON RESTRICCIONES
+Usos permitidos: Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares y casas en hileras.
+Densidad neta: Hasta 750 personas por hectárea.
+Área minima de lote: 600,00 M2 por edificio de apartamentos
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 30.00 ML.
+Altura máxima: Según densidad.
+Área de ocupación máxima: 100% del área de construcción por retiros en planta baja.
+Área libre minima: La que resulte al aplicar los retiros.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML minimo, a partir de la linea de propiedad.
+Retiro lateral: a) En plantas baja y tres altos: • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 1.50 ML. en área de servicio. • 2.50 ML. en áreas habitables.
+Retiro posterior: a) En plantas baja y tres altos: • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 5.00 ML • Adosado con pared ciega acabada hacia el vecino, cuando colinda con zonificación RM3, C2 ó Industrial. c) Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 3 de la Res. 169-2004 del 8 de octubre de 2004.
+Estacionamientos: a) Hasta 125 M2: 1.00/ Vivienda b) Hasta 160 M2: 1.25/ Vivienda c) Hasta 200 M2: 1.50/ Vivienda d) Hasta 300 M2: 2.00/ Vivienda e) Hasta 400 M2: 2.50/ Vivienda f) Hasta 500 M2: 3.00/ Vivienda g) Más de 500 M2: 3.50/ Vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2. b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+(Ficha derecha)
+RM-2
+RESIDENCIAL DE ALTA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares y casas en hileras. Se permitirá la construcción de edificios docentes, religiosos, institucionales, culturales, filantrópicos, asistenciales y oficinas, siempre que dichas estructuras no constituyan perjuicios a los vecinos o afecten en forma adversa, el carácter residencial multifamiliar de la zona. Se permiten locales comerciales en la planta baja de los edificios para el expendio de artículos de consumo en general.
+Densidad neta: Hasta 1,000 personas por hectárea.
+Área minima de lote: 800.00 M2 por edificio de apartamentos.
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 40.00 ML.
+Altura máxima: Según densidad
+Área de ocupación máxima: 100% del área de construcción por retiro en planta baja.
+Área libre minima: La que resulte al aplicar los retiros.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral: a) En plantas baja y cuatro altos • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 1.50 ML. en área de servicio. • 2.50 ML. en áreas habitables. • Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 2 de la Res. 169-2004 del 8 de octubre de 2004.
+Retiro posterior: a) Adosado en planta baja y cuatros con pared ciega acabada hacia el vecino. b) 5.00 ML. en la Torre. c) Adosado con pared ciega acabada hacia el vecino, cuando colinda con zonificación RM3, C2 ó Industrial. a) Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 3
+Estacionamientos: a) Hasta 125 M2: 1.00/ Vivienda b) Hasta 160 M2: 1.25/ Vivienda c) Hasta 200 M2: 1.50/ Vivienda d) Hasta 300 M2: 2.00/ Vivienda e) Hasta 400 M2: 2.50/ Vivienda f) Hasta 500 M2: 3.00/ Vivienda g) Más de 500 M2: 3.50/ Vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2. b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+[[pág 10 del PDF]]
+(Ficha izquierda)
+RM-2*
+RESIDENCIAL DE ALTA DENSIDAD CON RESTRICCIONES
+Usos permitidos: Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares y casas en hileras.
+Densidad neta: Hasta 1,000 personas por hectárea.
+Área minima de lote: 800.00 M2 por edificio de apartamentos.
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 40.00 ML.
+Altura máxima: P.B. + 16 pisos incluyendo estacionamientos.
+Área de ocupación máxima: 100% del área de construcción por retiro en planta baja.
+Área libre minima: La que resulte al aplicar los retiros.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral: a) En plantas baja y cuatro altos • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 1.50 ML. en área de servicio. • 2.50 ML. en áreas habitables. • Cuando colinda con zonificación residencial, aplicar las opciones de la Res. 169-2004 del 8 de octubre de 2004.
+Retiro posterior: a) Adosado en planta baja y cuatros con pared ciega acabada hacia el vecino. b) 5.00 ML. en la Torre. c) Adosado con pared ciega acabada hacia el vecino, cuando colinda con zonificación RM3, C2 ó Industrial. a) Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 3
+Estacionamientos: a) Hasta 125 M2: 1.00/ Vivienda b) Hasta 160 M2: 1.25/ Vivienda c) Hasta 200 M2: 1.50/ Vivienda d) Hasta 300 M2: 2.00/ Vivienda e) Hasta 400 M2: 2.50/ Vivienda f) Hasta 500 M2: 3.00/ Vivienda g) Más de 500 M2: 3.50/ Vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2. b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+(Ficha derecha)
+RM-3
+RESIDENCIAL DE ALTA DENSIDAD
+Usos permitidos: Construcción, reconstrucción o modificación de edificios multifamiliares, viviendas bifamiliares y casas en hileras. Se permitirá la construcción de edificios docentes, religiosos, institucionales, culturales, filantrópicos, asistenciales y oficinas, siempre que dichas estructuras no constituyan perjuicios a los vecinos o afecten en forma adversa, el carácter residencial multifamiliar de la zona. Se permiten locales comerciales en la planta baja de los edificios para el expendio de artículos de consumo en general.
+Densidad neta: Hasta 1,500 personas por hectárea
+Área minima de lote: 800.00 M2 por edificio de apartamentos.
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 40.00 ML.
+Altura máxima: Según densidad
+Área de ocupación máxima: 100% del área de construcción por retiros en planta baja.
+Área libre: La que resulte después de aplicar los retiros.
+Linea de construcción: La establecida en el Documento Oficial de Servidumbres Viales y Lineas de Construcción ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral: a) En plantas baja y cinco altos • Adosado con pared ciega acabada hacia el vecino. b) En la Torre • 1.50 ML. en área de servicio • 2.50 ML. en áreas habitables.
+Retiro posterior: a) En planta baja y cinco altos: adosado con pared ciega acabada hacia el vecino. b) En la Torre • 5.00 ML c) Adosado con pared ciega acabada hacia el vecino, cuando colinda con zonificación RM3, C2 ó Industrial. d) Cuando colinda con zonificación residencial, aplicar las opciones ilustradas en el Anexo No. 3 de la Res. 169-2004 del 8 de octubre de 2004.
+Estacionamientos: a) Hasta 125 M2: 1.00/ Vivienda b) Hasta 160 M2: 1.25/ Vivienda c) Hasta 200 M2: 1.50/ Vivienda d) Hasta 300 M2: 2.00/ Vivienda e) Hasta 400 M2: 2.50/ Vivienda f) Hasta 500 M2: 3.00/ Vivienda g) Mas de 500 M2: 3.50/ Vivienda
+NOTA: a) Todas las áreas habitables requieren de ventilación directa hacia el exterior o hacia un patio interior con un área minima de 6.00 M2. b) Los niveles de estacionamientos en área cerrada tendrán ventilación, ya sea horizontal o vertical, a través de pozos o rejillas en los pisos.
+
+[[pág 11 del PDF]]
+(Ficha izquierda)
+C-1
+COMERCIAL DE INTENSIDAD BAJA Ó BARRIAL
+Usos permitidos: Instalaciones comerciales y de servicios en general relacionadas con las actividades mercantiles y profesionales de la vecindad o del barrio, siempre y cuando no afecten o perjudiquen el carácter residencial. El uso comercial o residencial se podrá dar en forma combinada o independiente, de acuerdo a la norma residencial de la zona.
+Área minima de lote: De acuerdo al área minima permitida en la zona donde está ubicado.
+Frente minimo de lote: 12.00 ML.
+Fondo minimo de lote: Libre
+Área libre minima de lote: 40% del área de lote.
+Área de ocupación máxima: 60% del área de lote.
+Linea de construcción: La establecida ó 2.50 ML. minimo, a partir de la linea de propiedad.
+Altura máxima: Será determinada por el código de zona predominante en el sector.
+Retiro lateral: • Cuando colinde con los códigos de zona R1-B y R2-A: ninguno en planta baja y dos altos con pared ciega acabada hacia el vecino. • Cuando colinde con los códigos de zona R2-B, R3 y RE: ninguno en planta baja y tres altos con pared ciega acabada hacia el vecino. • En el caso que se utilicen aberturas, el retiro lateral minimo será de 1.50 ML.
+Retiro posterior: 5.00 ML. en las zonas R1-B, R2-A y R2-B. 4.00 ML. en la zona R3. 2.50 ML. en la zona RE.
+Estacionamientos: Un (1) espacio por cada 60.00 m2 de uso comercial u oficina.
+
+(Ficha derecha)
+C-2
+COMERCIAL DE INTENSIDAD ALTA Ó CENTRAL
+En áreas zonificadas con RM y RM1
+Usos permitidos: Instalaciones comerciales, oficinas y de servicios en general, relacionadas con las actividades mercantiles y profesionales del centro del área urbana o de la ciudad. La actividad comercial incluirá el manejo, almacenamiento y distribución de mercancías. Se permitirá además, el uso residencial multifamiliar de alta densidad (RM y RM1), así como los usos complementarios a la actividad de habitar, ya sea en forma combinada o independiente. (Ver anexo 1 de la Res. 188-93 de 13 de septiembre de 1993 ).
+Área minima de lote: 600.00 M2
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 30.00 ML.
+Área de ocupación máxima: 100% del área construible por retiros. (en planta baja).
+Área libre minima: La que resulte al aplicar los retiros.
+Linea de construcción: La establecida ó 5.00 ML. minimo a partir de la linea de propiedad.
+Retiro lateral: Cuando colinde con el uso residencial de alta densidad: • En RM: Ninguno en planta baja y dos altos con pared ciega acabada hacia el vecino. • En RM-1: Ninguno en planta baja y tres altos con pared ciega acabada hacia el vecino. • Cuando colinde con el residencial de baja y mediana densidad: aplicar las opciones ilustradas (ver anexo No. 2 de la Res. 188-93 de 13 de septiembre de 1993).
+Retiro posterior: Cuando colinde con el uso residencial de alta densidad: • En RM: Ninguno en planta baja y dos altos con pared ciega acabada hacia el vecino. • En RM-1: Ninguno en planta baja y tres altos con pared ciega acabada hacia el vecino. • Cuando colinde con residencial de baja y mediana densidad: aplicar las opciones ilustradas (ver anexo No. 3 de la Res. 188-93 de 13 de septiembre de 1993). • Torre: 3.00 Ml. en la zona RM 5.00 ML en la zona RM-1
+Estacionamientos: Un espacio por cada 150.00 M2 para edificio de depósitos. Un espacio por cada 60.00 M2. de uso comercial u oficina. Un espacio por cada 150.00 M2 de depósito.
+
+[[pág 12 del PDF]]
+(Ficha derecha; a la izquierda, sello de la Dirección Jurídica del Ministerio de Vivienda; al margen derecho, sello «ES FIEL COPIA DE SU ORIGINAL – DIRECCIÓN JURÍDICA – MINISTERIO DE VIVIENDA», firma y fecha manuscrita.)
+C-2
+COMERCIAL DE ALTA INTENSIDAD Ó CENTRAL
+En áreas zonificadas con RM-2 y RM-3
+Usos permitidos: Instalaciones comerciales, oficinas y de servicios en general, relacionadas con las actividades mercantiles y profesionales del centro urbano. La actividad comercial incluirá el manejo, almacenamiento y distribución de mercancías. Se permitirá además, el uso residencial multifamiliar de alta densidad (RM-2 y RM-3), así como los usos complementarios a la actividad de habitar, ya sea en forma combinada o independiente. (Ver anexo 1 de la Rés. 188-93 de 13 de septiembre de 1993).
+Área minima de lote: 800.00 M2
+Frente minimo de lote: 20.00 ML.
+Fondo minimo de lote: 40.00 ML.
+Área libre minima: La que resulte al aplicar los retiros.
+Área de ocupación máxima: 100% del área construible por retiros (en planta baja).
+Linea de construcción: La establecida ó 5.00 ML. minimo, a partir de la linea de propiedad.
+Retiro lateral: Cuando colinde con el uso residencial de alta densidad: • En RM-2: Ninguno en planta baja y cuatro altos con pared ciega acabada hacia el vecino. • En RM-3: Ninguno en planta baja y cinco altos con pared ciega acabada hacia el vecino. • Cuando colinde con el residencial de baja y mediana densidad: aplicar las opciones ilustradas (ver anexo No. 2 de la Res. 188-93 de 13 de septiembre de 1993).
+Retiro posterior: Cuando colinde con el uso residencial de alta densidad: • En RM-2: Ninguno en planta baja y cuatro altos con pared ciega acabada hacia el vecino. • En RM-3: Ninguno en planta baja y cinco altos con pared ciega acabada hacia el vecino. • Cuando colinde con residencial de baja y mediana densidad: aplicar las opciones ilustradas (ver anexo No. 3 de la Res. 188-93 de 13 de septiembre de 1993 ). • Torre: 5.00 ML.
+Estacionamientos: • Un espacio por cada 150.00 M2, para edificios de depósitos. • Un espacio por cada 60.00 M2, de uso comercial u oficina. • Un espacio por cada 150.00 M2 de depósito. • Para centros comerciales urbanos: un espacio por cada 40.00 m2.

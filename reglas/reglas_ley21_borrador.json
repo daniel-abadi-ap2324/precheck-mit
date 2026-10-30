@@ -1,0 +1,513 @@
+[
+  {
+    "id": "L21-AREA-SILVESTRE-PROTEGIDA-USOS",
+    "version": 3,
+    "titulo": "Áreas silvestres protegidas (I): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 14,
+      "cita_textual": "• Parque nacional • Reserva científica • Bosque de proteccion • Paisaje protegido"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-SILVESTRE-PROTEGIDA']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Parque nacional • Reserva científica • Bosque de proteccion • Paisaje protegido",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Áreas silvestres protegidas (I).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Parque nacional • Reserva científica • Bosque de proteccion • Paisaje protegido», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-AREA-PRODUCCION-RURAL-USOS",
+    "version": 3,
+    "titulo": "Áreas de producción rural (II): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 14,
+      "cita_textual": "• Agricultura sostenible • Silvopastoril • Agroforestal • Forestal"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-PRODUCCION-RURAL']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Agricultura sostenible • Silvopastoril • Agroforestal • Forestal",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Áreas de producción rural (II).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Agricultura sostenible • Silvopastoril • Agroforestal • Forestal», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-AREA-VERDE-URBANA-USOS",
+    "version": 3,
+    "titulo": "Áreas verdes urbanas (III): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 14,
+      "cita_textual": "III. Areas verdes - urbanas | • Permitir disfrutar la naturaleza y la realización de actividades de recreación activa y pasiva | • Parques urbanos"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-VERDE-URBANA']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "III. Areas verdes - urbanas | • Permitir disfrutar la naturaleza y la realización de actividades de recreación activa y pasiva | • Parques urbanos",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Áreas verdes urbanas (III).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Usos típicos ilustrativos (Art. 5): observación. La cita era la columna PROPÓSITO; se cita la categoría con su uso típico «Parques urbanos». Cambios: severidad bloqueante → observacion, cita. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («III. Areas verdes - urbanas | • Permitir disfrutar la naturaleza y la realización de actividades de recreación activa…», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-AREA-GENERACION-EMPLEO-USOS",
+    "version": 3,
+    "titulo": "Áreas de generación de empleo (IV): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 14,
+      "cita_textual": "• Industria ligera, mediana y pesada • Oficinas • Almacenamiento y distribucion"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-GENERACION-EMPLEO']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Industria ligera, mediana y pesada • Oficinas • Almacenamiento y distribucion",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Áreas de generación de empleo (IV).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Industria ligera, mediana y pesada • Oficinas • Almacenamiento y distribucion», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-CENTRO-URBANO-USOS",
+    "version": 3,
+    "titulo": "Uso mixto: centro urbano (V): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "• Actividades no manufactureras • Usos gubernamentales y otros usos institucionales"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['CENTRO-URBANO']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Actividades no manufactureras • Usos gubernamentales y otros usos institucionales",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Uso mixto: centro urbano (V).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Actividades no manufactureras • Usos gubernamentales y otros usos institucionales», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-CENTRO-VECINAL-USOS",
+    "version": 3,
+    "titulo": "Uso mixto: centro vecinal (V): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "• Actividades no manufactureras • Residencial de mediana densidad"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['CENTRO-VECINAL']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Actividades no manufactureras • Residencial de mediana densidad",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Uso mixto: centro vecinal (V).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Actividades no manufactureras • Residencial de mediana densidad», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-BAJA-DENSIDAD-USOS",
+    "version": 3,
+    "titulo": "Residencial: vivienda baja densidad (VI): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "• Casas unifamiliares • Casas bifamiliares • Viviendas en bloque"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-BAJA-DENSIDAD']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Casas unifamiliares • Casas bifamiliares • Viviendas en bloque",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Residencial: vivienda baja densidad (VI).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Casas unifamiliares • Casas bifamiliares • Viviendas en bloque», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-MEDIANA-DENSIDAD-USOS",
+    "version": 3,
+    "titulo": "Residencial: vivienda mediana densidad (VI): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "• Viviendas unifamiliares y edificios multifamiliares • Apartamentos • Condominios"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-MEDIANA-DENSIDAD']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Viviendas unifamiliares y edificios multifamiliares • Apartamentos • Condominios",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Residencial: vivienda mediana densidad (VI).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Viviendas unifamiliares y edificios multifamiliares • Apartamentos • Condominios», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-ALTA-DENSIDAD-USOS",
+    "version": 3,
+    "titulo": "Residencial: vivienda alta densidad (VI): usos del suelo típicos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 16,
+      "cita_textual": "• Vivienda multifamiliar en edificios de apartamentos, condominios"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-ALTA-DENSIDAD']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Vivienda multifamiliar en edificios de apartamentos, condominios",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de los usos típicos de la categoría Residencial: vivienda alta densidad (VI).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. La zonificación detallada del MIVI (Res. 160-2002) concreta estos usos por código. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): «Usos del suelo típicos» del Plan General: lista ilustrativa que sirve de base a la zonificación detallada (Art. 5); criterio, observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Vivienda multifamiliar en edificios de apartamentos, condominios», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-BAJA-DENSIDAD-DENSIDAD",
+    "version": 3,
+    "titulo": "Residencial: vivienda baja densidad (VI): densidad neta",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "Otros tipos de vivienda con una densidad neta de menos de 300 personas por hectárea"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-BAJA-DENSIDAD']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha < 300",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "Otros tipos de vivienda con una densidad neta de menos de 300 personas por hectárea",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta no está en el rango de la categoría (menos de 300 personas por hectárea).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Rango de la categoría del Plan General; el código de la Res. 160-2002 fija un rango más estrecho. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor literal, pero es descripción de usos típicos del Plan General (Art. 5), no código de zona: observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («Otros tipos de vivienda con una densidad neta de menos de 300 personas por hectárea», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-MEDIANA-DENSIDAD-DENSIDAD",
+    "version": 3,
+    "titulo": "Residencial: vivienda mediana densidad (VI): densidad neta",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 15,
+      "cita_textual": "densidad neta de más de 300 pero menos de 600 personas por hectárea"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-MEDIANA-DENSIDAD']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha > 300 and proyecto.densidad_pers_ha < 600",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "densidad neta de más de 300 pero menos de 600 personas por hectárea",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta no está en el rango de la categoría (más de 300 y menos de 600 personas por hectárea).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Rango de la categoría del Plan General; el código de la Res. 160-2002 fija un rango más estrecho. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor literal, pero es descripción de usos típicos del Plan General (Art. 5), no código de zona: observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («densidad neta de más de 300 pero menos de 600 personas por hectárea», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-VIVIENDA-ALTA-DENSIDAD-DENSIDAD",
+    "version": 3,
+    "titulo": "Residencial: vivienda alta densidad (VI): densidad neta",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, II. Categorías de ordenamiento territorial",
+      "pagina_pdf": 16,
+      "cita_textual": "densidad neta de más de 600 pero menos de 1500 personas por hectárea"
+    },
+    "tipo": "cuantitativa",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-ALTA-DENSIDAD']",
+    "entradas": [
+      "proyecto.densidad_pers_ha"
+    ],
+    "condicion": "proyecto.densidad_pers_ha > 600 and proyecto.densidad_pers_ha < 1500",
+    "unidad": "pers/ha",
+    "tolerancia": 0.5,
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "densidad neta de más de 600 pero menos de 1500 personas por hectárea",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "La densidad neta no está en el rango de la categoría (más de 600 y menos de 1500 personas por hectárea).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Rango de la categoría del Plan General; el código de la Res. 160-2002 fija un rango más estrecho. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Valor literal, pero es descripción de usos típicos del Plan General (Art. 5), no código de zona: observación. Cambios: severidad bloqueante → observacion. | Versión 3 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («densidad neta de más de 600 pero menos de 1500 personas por hectárea», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-COMPATIBILIDAD-PERMISO-ACP",
+    "version": 3,
+    "titulo": "Área de compatibilidad: permiso de la Autoridad del Canal",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Artículo 7",
+      "pagina_pdf": 5,
+      "cita_textual": "previo permiso de compatibilidad de la Autoridad del Canal de Panamá, emitido mediante resolución motivada."
+    },
+    "tipo": "documental",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-OPERACION-CANAL', 'AREA-USO-DIFERIDO-ESCLUSAS', 'AREA-COMPATIBILIDAD']",
+    "entradas": [
+      "expediente.permiso_compatibilidad_acp.adjunto"
+    ],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B4",
+      "cita": "previo permiso de compatibilidad de la Autoridad del Canal de Panamá, emitido mediante resolución motivada.",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "Falta el permiso de compatibilidad de la Autoridad del Canal de Panamá (resolución motivada).",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "La autorización de uso del suelo en el área de compatibilidad exige ese permiso previo (hoy, de la ACP; la Autoridad de la Región Interoceánica ya no existe). Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-08, revisión definitiva de anteproyecto): Documental sin condición; se le da condición. Es permiso de otra entidad (ACP): observación, no bloquea el anteproyecto. Cambios: severidad bloqueante → observacion, condicion, entradas. | Versión 3 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B4 («previo permiso de compatibilidad de la Autoridad del Canal de Panamá, emitido mediante resolución motivada.», normativa/zonas-exceptuadas/textos/ley21_1997.txt)",
+    "condicion": "expediente.permiso_compatibilidad_acp.adjunto == true"
+  },
+  {
+    "id": "L21-COMPATIBILIDAD-USOS",
+    "version": 2,
+    "titulo": "Área de compatibilidad con la operación del Canal: usos",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, VII. Área de compatibilidad con la operación del Canal",
+      "pagina_pdf": 16,
+      "cita_textual": "• Uso para la operación, protección del Canal y otros usos compatibles"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-OPERACION-CANAL', 'AREA-USO-DIFERIDO-ESCLUSAS', 'AREA-COMPATIBILIDAD']",
+    "entradas": [],
+    "severidad": "bloqueante",
+    "subsanacion": "documento",
+    "fundamento": {
+      "criterio": "B2",
+      "cita": "destinada al funcionamiento, protección, ampliación del canal de Panamá y a otros usos del suelo compatibles con esa función.",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": "previo permiso de compatibilidad de la Autoridad del Canal de Panamá, emitido mediante resolución motivada."
+    },
+    "mensaje_no_cumple": "El uso propuesto no es de operación o protección del Canal ni compatible con ellas.",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «bloqueante»; subsanación «documento»; criterio B2 («destinada al funcionamiento, protección, ampliación del canal de Panamá y a otros usos del suelo compatibles con esa …», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-AREA-NO-DESARROLLABLE-USOS",
+    "version": 2,
+    "titulo": "Áreas no desarrollables",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, VIII. Otras áreas",
+      "pagina_pdf": 16,
+      "cita_textual": "• Usos no aptos para desarrollo físico"
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-NO-DESARROLLABLE']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Usos no aptos para desarrollo físico",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote está en un área no desarrollable: no admite desarrollo físico.",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Usos no aptos para desarrollo físico», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-AREA-USO-DIFERIDO-PELIGROSOS-USOS",
+    "version": 2,
+    "titulo": "Áreas de uso diferido (impacto y materiales peligrosos)",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, VIII. Otras áreas",
+      "pagina_pdf": 16,
+      "cita_textual": "• Limitar temporalmente cualquier desarrollo basado en potencialidad de condiciones peligrosas."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['AREA-USO-DIFERIDO-PELIGROSOS']",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Limitar temporalmente cualquier desarrollo basado en potencialidad de condiciones peligrosas.",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El lote está en un área de uso diferido por materiales peligrosos: desarrollo limitado.",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Uso de suelo: falta de mayor peso (Acuerdo 110, Art. 204); siempre a revisión humana. Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Limitar temporalmente cualquier desarrollo basado en potencialidad de condiciones peligrosas.», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  },
+  {
+    "id": "L21-PACIFICO-ESTE-CIUDAD-JARDIN",
+    "version": 2,
+    "titulo": "Subregión Pacífico Este: carácter de ciudad jardín",
+    "fuente": {
+      "norma": "Ley 21 de 2 de julio de 1997 (Plan General de Uso, Conservación y Desarrollo del Área del Canal)",
+      "articulo": "Anexo II, III. Usos del suelo, Subregión 6 - Pacífico Este",
+      "pagina_pdf": 20,
+      "cita_textual": "• Mantener el caracter de \"ciudad jardin\" en las comunidades residenciales existentes."
+    },
+    "tipo": "criterio",
+    "aplica_si": "lote.norma_aplicable == 'LEY21-1997' and lote.codigo_zona in ['VIVIENDA-BAJA-DENSIDAD', 'VIVIENDA-MEDIANA-DENSIDAD', 'VIVIENDA-ALTA-DENSIDAD', 'CENTRO-URBANO', 'CENTRO-VECINAL'] and lote.subregion == 'PACIFICO-ESTE'",
+    "entradas": [],
+    "severidad": "observacion",
+    "subsanacion": "informativa",
+    "fundamento": {
+      "criterio": "O3",
+      "cita": "• Mantener el caracter de \"ciudad jardin\" en las comunidades residenciales existentes.",
+      "archivo": "normativa/zonas-exceptuadas/textos/ley21_1997.txt",
+      "cita_subsanacion": null
+    },
+    "mensaje_no_cumple": "El proyecto no mantiene el carácter de «ciudad jardín» de las comunidades residenciales existentes.",
+    "vigencia": {
+      "desde": "1997-07-03",
+      "hasta": null
+    },
+    "estado_revision": "borrador",
+    "nota": "Vigencia desde la publicación en la Gaceta Oficial N°23,323 (3-jul-1997; Art. 16: entra en vigencia a partir de su promulgación). | Versión 2 (2026-10-20, ADR-0017): severidad «observacion»; subsanación «informativa»; criterio O3 («• Mantener el caracter de \"ciudad jardin\" en las comunidades residenciales existentes.», normativa/zonas-exceptuadas/textos/ley21_1997.txt)"
+  }
+]

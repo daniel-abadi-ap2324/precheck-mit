@@ -1,0 +1,116 @@
+[
+ {
+  "id": "SF-A270-ART2-EVALUACION-CONJUNTA-ANEXOS",
+  "version": 1,
+  "titulo": "San Francisco: evaluar juntos el Anexo 2 (limitaciones de la unidad territorial) y el Anexo 4 (ficha del código)",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "2",
+   "pagina_pdf": 2,
+   "cita_textual": "deberá evaluarse de manera conjunta el Anexo 2 y el Anexo 4 para determinar las condiciones de uso, vocación y parámetros de edificación aplicables a cada predio."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025'",
+  "entradas": [
+   "lote.codigo_zona",
+   "lote.sf_sector",
+   "lote.sf_unidad_territorial"
+  ],
+  "severidad": "observacion",
+  "mensaje_no_cumple": "En San Francisco las condiciones de uso, vocación y parámetros del predio salen de leer juntos el Anexo 2 del Acuerdo 270 (limitaciones especiales de la unidad territorial) y la ficha del Anexo 4 del PLOT; lo que el Anexo 2 no limita sigue rigiendo según el Anexo 4 (Acuerdo 270, Art. 2).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Regla guía para el revisor: las 96 reglas del Anexo 2 (reglas/reglas_sf_borrador.json) y las de las fichas del Anexo 4 se evalúan a la vez; si un parámetro no está en el Anexo 2, rige el de la ficha del Anexo 4. Si el predio no está en ninguna unidad territorial del Anexo 2, rige solo el Anexo 4. Severidad observacion porque el «deberá» obliga a quien evalúa (DOYC/DPU), no al solicitante. Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Regla de método (leer juntos Anexo 2 y Anexo 4) sin obligación verificable: ruido; las reglas SF por UT ya la aplican."
+  }
+ },
+ {
+  "id": "SF-A270-ART8-TRANSICION-PLAZO",
+  "version": 1,
+  "titulo": "San Francisco: transición de seis meses para acogerse a la normativa previa",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "8",
+   "pagina_pdf": 4,
+   "cita_textual": "Se establece un periodo de seis (6) meses, contado a partir de la entrada en vigencia del presente Acuerdo como periodo de transición para adecuar el presente cambio de normativa para los nuevos"
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and expediente.invoca_uso_anterior == true",
+  "entradas": [
+   "expediente.invoca_uso_anterior"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "El expediente invoca la capacidad de desarrollo de la normativa previa al Acuerdo 270. Solo procede para solicitudes de permiso en trámite antes de su entrada en vigor o anteproyectos nuevos presentados dentro de los seis meses de transición (Art. 8); fuera de ese periodo, el anteproyecto debe cumplir las normas nuevas en su totalidad.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Cálculo provisional (verificar): seis meses desde la G.O. del 16-10-2025 terminan hacia el 16-04-2026, así que a la fecha (octubre de 2026) la ventana para anteproyectos nuevos ya cerró. Hecho expediente.invoca_uso_anterior reutilizado (mismo patrón que EC-TODAS-TRANSICION): true cuando el profesional pide la densidad o altura de la normativa previa. Duda para un humano: cuál es la «normativa existente previa» en San Francisco, dado que el Acuerdo 94 de 2018 (PPOT) fue declarado nulo en 2022 (considerandos del Acuerdo 270). Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Plazo de 6 meses desde la G.O. del 16-10-2025: vencido en abril de 2026 (criterio 6, ruido)."
+  }
+ },
+ {
+  "id": "SF-A270-ART8-TRANSICION-DEMAS-DISPOSICIONES",
+  "version": 1,
+  "titulo": "San Francisco: el proyecto en transición cumple todas las demás disposiciones nuevas",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "8, num. iii",
+   "pagina_pdf": 5,
+   "cita_textual": "El proyecto deberá cumplir con todas las demás nuevas disposiciones del presente Acuerdo y del PLOT, incluyendo usos permitidos, retiros mínimos, ancho mínimo de acera, y demás criterios."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and expediente.invoca_uso_anterior == true",
+  "entradas": [
+   "expediente.invoca_uso_anterior"
+  ],
+  "severidad": "bloqueante",
+  "mensaje_no_cumple": "Un proyecto acogido a la transición del Acuerdo 270 conserva solo la densidad y la altura máxima de la normativa previa (Art. 8, nums. i y ii); debe cumplir los usos permitidos, retiros mínimos, ancho mínimo de acera y demás criterios nuevos (Art. 8, num. iii).",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Para el revisor: los NO_CUMPLE de altura y densidad de las reglas del Anexo 2 y del Anexo 4 se revisan contra la normativa vigente en el lote antes del Acuerdo 270 (nums. i y ii); los de usos, retiros y acera se mantienen. Solo vale si el expediente cumple también SF-A270-ART8-TRANSICION-PLAZO. Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Meta-regla de la transición ya vencida; las demás reglas SF y PLOT ya exigen usos, retiros y acera."
+  }
+ },
+ {
+  "id": "SF-A270-ART8-ANTEPROYECTO-PREVIO",
+  "version": 1,
+  "titulo": "San Francisco: anteproyecto o permiso expedido antes del Acuerdo 270",
+  "fuente": {
+   "norma": "Acuerdo N°270 de 23-09-2025 (G.O. 30388-A)",
+   "articulo": "8",
+   "pagina_pdf": 4,
+   "cita_textual": "Igualmente se reconoce la validez de los anteproyectos y permisos de Construcción de cualquier tipo, expedidos por el Municipio de Panamá con anterioridad a Ja entrada en vigor del presente acuerdo."
+  },
+  "tipo": "criterio",
+  "aplica_si": "lote.norma_aplicable == 'PLOT-A61-2021+A270-2025' and existe(expediente.anteproyecto_aprobado_previo) and expediente.anteproyecto_aprobado_previo == true",
+  "entradas": [
+   "expediente.anteproyecto_aprobado_previo"
+  ],
+  "severidad": "observacion",
+  "mensaje_no_cumple": "El expediente se apoya en un anteproyecto o permiso expedido antes del 16-10-2025: el Acuerdo 270 (Art. 8) reconoce su validez; verificar que siga vigente según el plazo que fije la norma con que se expidió.",
+  "vigencia": {
+   "desde": "2025-10-16",
+   "hasta": null
+  },
+  "estado_revision": "borrador",
+  "nota": "Borrador sin aprobar (origen: docs/propuestas/catalogo): su aprobación oficial es por el gobierno de reglas con cuatro ojos. Hecho provisional: expediente.anteproyecto_aprobado_previo (true si el expediente presenta un anteproyecto o permiso aprobado antes de la entrada en vigor del Acuerdo 270); lo decide la IA o un extractor futuro. Sin el hecho, no aplica. La vigencia del anteproyecto la fija el Acuerdo 110 u otra norma; no se calcula aquí. Vigencia: Art. 10 («El presente Acuerdo empezará a regir a partir de su promulgación») y G.O. No. 30388-A del jueves 16 de octubre de 2025.",
+  "retirada": {
+   "fecha": "2026-10-08",
+   "motivo": "Reconoce la validez de aprobaciones previas; no impone obligación verificable al anteproyecto nuevo (ruido)."
+  }
+ }
+]
