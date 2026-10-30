@@ -26,10 +26,10 @@ describe("NewPreCheckWizard", () => {
     expect(screen.getByRole("button", { name: "Continuar" })).toBeDisabled();
   });
 
-  it("deja elegir el lector OCR; GLM-OCR viene marcado", () => {
+  it("deja elegir el lector OCR; Rápido viene marcado (solo pide Tesseract)", () => {
     renderWithProviders(<NewPreCheckWizard />);
-    expect(screen.getByRole("radio", { name: /GLM-OCR/ })).toBeChecked();
-    expect(screen.getByRole("radio", { name: /Rápido/ })).not.toBeChecked();
+    expect(screen.getByRole("radio", { name: /Rápido/ })).toBeChecked();
+    expect(screen.getByRole("radio", { name: /GLM-OCR/ })).not.toBeChecked();
     expect(screen.getByRole("radio", { name: /Claude/ })).toBeInTheDocument();
   });
 });

@@ -1,14 +1,14 @@
 "use client";
 
-import { useId } from "react";
+import { useEffect, useId } from "react";
 import { CalloutBlock } from "@/components/common";
 import { FileUploader } from "@/components/uploader";
 import { PlanExamplePicker } from "@/features/plans";
 import { DESCRIPCION_OCR, LECTORES_OCR, type LectorOcr } from "@/lib/lector-ocr";
 import { useWizardStore } from "@/stores/wizard";
-import { AiRequirementNotice } from "@/features/ia/components/ai-requirement-notice";
 import { useEnsureProject } from "../hooks/use-ensure-project";
 import { COTAS_A_DECLARAR } from "../lib/cotas-a-declarar";
+import { useOcrDisponible } from "../hooks/use-ocr-disponible";
 import { usePlanUploads } from "../hooks/use-plan-uploads";
 import { hasUploadedFiles } from "../lib/steps";
 import { WizardFooter } from "../wizard-footer";
@@ -94,21 +94,31 @@ function AvisoCotas() {
 /** Qué lector relee las hojas escaneadas. Se elige antes de cargar: cada plano se lee con el que había al cargarlo. */
 function SelectorOcr({ valor, onChange, bloqueado }: { valor: LectorOcr; onChange: (v: LectorOcr) => void; bloqueado: boolean }) {
   const id = useId();
+  const { data: disponible } = useOcrDisponible();
+  // Si el lector elegido no funciona en este equipo, se pasa al primero que sí (el que solo pide Tesseract va primero).
+  useEffect(() => {
+    if (!disponible || bloqueado || disponible[valor].disponible) return;
+    const alterno = (["rapido", "glm", "claude"] as const).find((l) => disponible[l].disponible);
+    if (alterno) onChange(alterno);
+  }, [disponible, valor, bloqueado, onChange]);
   return (
     <fieldset className="flex flex-col gap-2" aria-describedby={`${id}-nota`}>
       <legend className="text-sm font-medium">Lector para hojas escaneadas</legend>
       <div className="grid gap-2 md:grid-cols-3">
-        {LECTORES_OCR.map((l) => (
-          <label key={l} className="flex cursor-pointer gap-2 rounded-md border p-3 has-checked:border-brand has-checked:bg-brand/5 has-disabled:cursor-not-allowed has-disabled:opacity-70">
-            <input type="radio" name={`${id}-ocr`} value={l} checked={valor === l} disabled={bloqueado} onChange={() => onChange(l)} className="mt-0.5" />
-            <span className="flex flex-col gap-0.5">
-              <span className="text-sm font-medium">{DESCRIPCION_OCR[l].titulo}</span>
-              <span className="text-2xs text-muted-foreground">{DESCRIPCION_OCR[l].detalle}</span>
-            </span>
-          </label>
-        ))}
+        {LECTORES_OCR.map((l) => {
+          const falta = disponible && !disponible[l].disponible ? disponible[l].motivo : undefined;
+          return (
+            <label key={l} className="flex cursor-pointer gap-2 rounded-md border p-3 has-checked:border-brand has-checked:bg-brand/5 has-disabled:cursor-not-allowed has-disabled:opacity-70">
+              <input type="radio" name={`${id}-ocr`} value={l} checked={valor === l} disabled={bloqueado || Boolean(falta)} onChange={() => onChange(l)} className="mt-0.5" />
+              <span className="flex flex-col gap-0.5">
+                <span className="text-sm font-medium">{DESCRIPCION_OCR[l].titulo}</span>
+                <span className="text-2xs text-muted-foreground">{DESCRIPCION_OCR[l].detalle}</span>
+                {falta ? <span className="text-2xs font-medium text-warning">No disponible: {falta}</span> : null}
+              </span>
+            </label>
+          );
+        })}
       </div>
-      {valor === "claude" ? <AiRequirementNotice que="El lector Claude" /> : null}
       <p id={`${id}-nota`} className="text-2xs text-muted-foreground">
         {bloqueado ? "Para cambiar de lector, quite los planos cargados y súbalos de nuevo." : "Los PDF vectoriales traen el texto: el lector solo se usa en hojas escaneadas."}
       </p>

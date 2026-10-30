@@ -23,7 +23,7 @@ export function PlanExamplePicker({ projectId, onAdded, asegurar, ocr }: { proje
         <label htmlFor={id} className="text-sm font-medium">
           Plano de ejemplo
         </label>
-        <p className="text-2xs text-muted-foreground">Anteproyectos reales de la DOYC para probar la lectura sin cargar un archivo.</p>
+        <p className="text-2xs text-muted-foreground">Planos de la carpeta demo/ del repositorio para probar la lectura sin cargar un archivo.</p>
         <NativeSelect id={id} value={elegido} onChange={(e) => setNombre(e.target.value)}>
           {data.map((e) => (
             <option key={e.nombre} value={e.nombre}>

@@ -103,3 +103,13 @@ export async function validarDatosUsuario(datos: DatosAValidar): Promise<AvisoDa
   const res = await fetch("/api/validar-datos", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(datos) });
   return (await json<{ avisos: AvisoDato[] }>(res)).avisos;
 }
+
+export interface DisponibilidadOcr {
+  disponible: boolean;
+  motivo?: string;
+}
+
+/** Qué lectores OCR funcionan en el servidor y, de los que no, qué falta instalar o conectar. */
+export async function disponibilidadOcr(): Promise<Record<LectorOcr, DisponibilidadOcr>> {
+  return json(await fetch("/api/planos/ocr", { cache: "no-store" }));
+}

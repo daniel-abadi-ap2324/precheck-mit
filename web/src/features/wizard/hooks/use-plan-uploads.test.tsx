@@ -12,7 +12,7 @@ describe("usePlanUploads", () => {
     const { result } = renderHook(() => usePlanUploads("prj-x"));
     act(() => result.current.add([{ name: "Bella Vista.pdf", size: 8, format: "PDF", file: archivo }]));
     await waitFor(() => expect(useWizardStore.getState().files[0]?.status).toBe("uploaded"));
-    expect(subir).toHaveBeenCalledWith("prj-x", { name: "Bella Vista.pdf", size: 8, format: "PDF", file: archivo, ocr: "glm" }, expect.any(Function));
+    expect(subir).toHaveBeenCalledWith("prj-x", { name: "Bella Vista.pdf", size: 8, format: "PDF", file: archivo, ocr: "rapido" }, expect.any(Function));
     expect(useWizardStore.getState().files[0].planId).toBe("plan-srv-9");
     subir.mockRestore();
   });
