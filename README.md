@@ -91,7 +91,9 @@ your PATH. Vector PDFs, like the synthetic plan, do not.
 
 In the web app, create a project and pick a plan in the "Plano de ejemplo" list (it shows both files in `demo/`), or
 upload one yourself. For the synthetic plan, confirm the facts (zone R1, Betania) and run the PreCheck. The synthetic
-plan has one failure on purpose: its sidewalk is 1.00 m wide, and zone R1 requires 1.20 m.
+plan is built to fail one rule: its sidewalk is 1.00 m wide, and zone R1 requires 1.20 m. The engine measures the
+sidewalk from the lot regions, and without AI the region step only proposes the parking lots; the lot itself needs
+"Proponer con IA (visión)" or a region drawn by hand. A scanned plan like Casco Antiguo takes a few minutes to read.
 
 ### What needs an API key or a Claude session
 

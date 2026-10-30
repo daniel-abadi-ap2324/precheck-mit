@@ -7,6 +7,7 @@ const CASCO_ANTIGUO = "casco-antiguo-rla-1678.pdf";
 
 test.describe("lectura de planos PDF", () => {
   test.skip(({ isMobile }) => isMobile, "El flujo se prueba en escritorio; el reflujo móvil lo cubre sin-desborde.spec.ts");
+  test.setTimeout(330_000); // un plano escaneado se lee con OCR en unos minutos
 
   test.beforeEach(async ({ context }) => {
     await context.addCookies([{ name: "mp_session", value: "demo-token", url: "http://localhost:3100" }]);
@@ -18,7 +19,7 @@ test.describe("lectura de planos PDF", () => {
     await page.getByRole("button", { name: "Cargar y leer el ejemplo" }).click();
 
     const lectura = page.getByRole("region", { name: `Lectura de ${CASCO_ANTIGUO}` });
-    await expect(lectura.getByRole("list", { name: "Datos leídos del plano" })).toBeVisible({ timeout: 90_000 });
+    await expect(lectura.getByRole("list", { name: "Datos leídos del plano" })).toBeVisible({ timeout: 280_000 });
     await expect(lectura.getByRole("list", { name: "Contraste con el expediente" })).toContainText("Corregimiento: el plano dice San Felipe; el expediente, Betania");
     const miniatura = lectura.getByRole("list", { name: "Láminas del plano" }).getByRole("img").first();
     await expect(miniatura).toHaveJSProperty("complete", true);
@@ -32,7 +33,7 @@ test.describe("lectura de planos PDF", () => {
     const ok = await request.post("/api/planos", { multipart: { file: { name: CASCO_ANTIGUO, mimeType: "application/pdf", buffer: pdf } } });
     expect(ok.status()).toBe(202);
     const { id } = await ok.json();
-    await expect.poll(async () => (await (await request.get(`/api/planos/${id}`)).json()).status, { timeout: 90_000 }).toBe("ready");
+    await expect.poll(async () => (await (await request.get(`/api/planos/${id}`)).json()).status, { timeout: 280_000 }).toBe("ready");
 
     const falso = await request.post("/api/planos", { multipart: { file: { name: "falso.pdf", mimeType: "application/pdf", buffer: Buffer.from("no soy un pdf") } } });
     expect(falso.status()).toBe(415);

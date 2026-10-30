@@ -7,7 +7,7 @@ export const LECTOR_OCR_POR_DEFECTO: LectorOcr = "rapido";
 
 export const DESCRIPCION_OCR: Record<LectorOcr, { titulo: string; detalle: string }> = {
   glm: { titulo: "GLM-OCR", detalle: "El más exacto. Corre en esta computadora con Ollama (el plano no sale de ella), pero tarda unos 8 minutos por plano escaneado." },
-  rapido: { titulo: "Rápido", detalle: "Tesseract y RapidOCR: menos de un minuto, pero se equivoca más en los números; le pedirá confirmar más datos." },
+  rapido: { titulo: "Rápido", detalle: "Tesseract y RapidOCR: de uno a tres minutos por plano escaneado, pero se equivoca más en los números; le pedirá confirmar más datos." },
   claude: { titulo: "Claude", detalle: "Sonnet relee el recuadro con Claude Code: unos 15 segundos, gasta cuota de la cuenta y envía el recorte a Anthropic." },
 };
 

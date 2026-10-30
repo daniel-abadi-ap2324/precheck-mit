@@ -13,3 +13,5 @@ __pycache__/
 tmp*/
 *.log
 web/public/maplibre/
+web/test-results/
+web/playwright-report/
