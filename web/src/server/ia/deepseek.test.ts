@@ -404,7 +404,7 @@ describe("bucle de DeepSeek", () => {
     const ctx: ContextoHerramientas = { dir, pdf: null, clavesPermitidas: new Set(), reevaluar: async () => true };
     await expect(revisarConDeepSeek(cliente, ctx, { ...entrada(), pedidos: [] }, registroEn(dir), dir)).rejects.toThrow(/dictamen JSON|no cerró/);
     expect(n).toBeLessThanOrEqual(MAX_LLAMADAS + 3);
-  });
+  }, 60_000); // medir_membrete lanza Python de verdad en cada vuelta
 
   it("anotar el gasto desde varias revisiones en paralelo no pierde llamadas", async () => {
     const cliente: Cliente = async () => ({ message: { role: "assistant", content: '{"conclusion":"x","supuestos":[],"decisiones":[]}' }, finish_reason: "stop", usage: uso });

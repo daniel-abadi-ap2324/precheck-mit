@@ -20,6 +20,10 @@ const CSP = [
 ].join("; ");
 
 const nextConfig: NextConfig = {
+  // El botón flotante de desarrollo de Next tapa «Cerrar sesión» en la barra lateral.
+  devIndicators: false,
+  // `next dev` no debe escribir AGENTS.md ni CLAUDE.md dentro del repositorio.
+  agentRules: false,
   async headers() {
     return [
       {

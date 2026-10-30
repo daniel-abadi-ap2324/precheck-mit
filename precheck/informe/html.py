@@ -98,6 +98,7 @@ h2 { font-size: 13pt; margin: 6mm 0 2mm; border-bottom: 1px solid #555; }
 .uso-interno, .regenerado { font-weight: bold; text-transform: none; border: 2px dashed #111; padding: 2mm; }
 table { border-collapse: collapse; width: 100%; margin: 2mm 0; }
 th, td { border: 1px solid #555; padding: 1mm 2mm; text-align: left; vertical-align: top; }
+th, td, dd, .nota, .pie { overflow-wrap: anywhere; }
 thead { display: table-header-group; }
 tr { break-inside: avoid; page-break-inside: avoid; }
 dl { margin: 0; } dt { font-weight: bold; } dd { margin: 0 0 1mm 4mm; }
@@ -108,10 +109,12 @@ dl { margin: 0; } dt { font-weight: bold; } dd { margin: 0 0 1mm 4mm; }
 .pie { font-size: 8pt; border-top: 1px solid #555; margin-top: 6mm; padding-top: 1mm; }
 @page { size: letter; margin: 18mm 15mm 22mm 15mm; }
 @media print {
-  body { max-width: none; padding: 0 0 12mm 0; }
-  .pie { position: fixed; bottom: 0; left: 0; right: 0; margin: 0; background: #fff; }
-  .uso-interno { position: fixed; top: 0; left: 0; right: 0; background: #fff; }
-  .uso-interno + * { margin-top: 14mm; }
+  body { max-width: none; padding: 0; }
+  /* El pie y la marca de uso interno se repiten en cada hoja (position: fixed). Para que no se dibujen encima del
+     texto, el contenido reserva su espacio en cada hoja: clone repite el relleno en cada fragmento de página. */
+  main { padding: 12mm 0; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .pie { position: fixed; bottom: 0; left: 0; right: 0; margin: 0; padding-top: 1mm; background: #fff; }
+  .uso-interno { position: fixed; top: 0; left: 0; right: 0; margin: 0; background: #fff; }
   h2 { break-after: avoid; page-break-after: avoid; }
 }
 """

@@ -28,33 +28,35 @@ export function PlansInfo({ model }: { model: ReportModel }) {
   if (expediente) return <FieldList fields={expediente} />;
   if (model.plans.length === 0) return <Muted>No hay planos cargados.</Muted>;
   return (
-    <table className="w-full text-sm">
-      <thead className="text-left text-ink-muted">
-        <tr className="border-b">
-          <th scope="col" className="py-1 pr-3 font-medium">
-            Archivo
-          </th>
-          <th scope="col" className="py-1 pr-3 font-medium">
-            Formato
-          </th>
-          <th scope="col" className="py-1 pr-3 font-medium">
-            Hojas
-          </th>
-          <th scope="col" className="py-1 font-medium">
-            Tamaño
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {model.plans.map((p) => (
-          <tr key={p.id} className="border-b last:border-0">
-            <td className="py-1 pr-3 break-all">{p.fileName}</td>
-            <td className="py-1 pr-3">{p.format}</td>
-            <td className="py-1 pr-3">{p.sheets.length ? p.sheets.map((s) => s.name).join(", ") : "—"}</td>
-            <td className="tabular py-1">{formatBytes(p.sizeBytes)}</td>
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-lg text-sm">
+        <thead className="text-left text-ink-muted">
+          <tr className="border-b">
+            <th scope="col" className="py-1 pr-3 font-medium">
+              Archivo
+            </th>
+            <th scope="col" className="py-1 pr-3 font-medium">
+              Formato
+            </th>
+            <th scope="col" className="py-1 pr-3 font-medium">
+              Hojas
+            </th>
+            <th scope="col" className="py-1 font-medium">
+              Tamaño
+            </th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {model.plans.map((p) => (
+            <tr key={p.id} className="border-b last:border-0">
+              <td className="py-1 pr-3 break-all">{p.fileName}</td>
+              <td className="py-1 pr-3">{p.format}</td>
+              <td className="py-1 pr-3">{p.sheets.length ? p.sheets.map((s) => s.name).join(", ") : "—"}</td>
+              <td className="tabular py-1">{formatBytes(p.sizeBytes)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

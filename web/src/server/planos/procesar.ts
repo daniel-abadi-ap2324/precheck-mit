@@ -1,4 +1,5 @@
 import { spawn } from "node:child_process";
+import { existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { enCurso, encolar, esperar } from "@/server/trabajos";
 import { entornoOcr } from "@/lib/lector-ocr";
@@ -8,8 +9,14 @@ import { carpetaDe, escribirEstado, leerEstado, type EstadoPlano } from "./almac
  * Extracción con el módulo Python del núcleo (precheck/planos: texto del PDF u OCR con Tesseract). Una a la vez:
  * el OCR de una hoja escaneada ocupa un núcleo entero. PLANOS_EXTRACTOR permite otro comando (pruebas, backend).
  */
-export const PYTHON = process.env.PRECHECK_PYTHON ?? join(process.env.HOME ?? "", ".venvs", "precheck-dev", "bin", "python");
 export const REPO = resolve(process.cwd(), "..");
+/** PRECHECK_PYTHON, o el `.venv` del repositorio si existe, o el `python` del PATH. */
+function pythonPorDefecto() {
+  const venv = process.platform === "win32" ? join(REPO, ".venv", "Scripts", "python.exe") : join(REPO, ".venv", "bin", "python");
+  if (existsSync(/* turbopackIgnore: true */ venv)) return venv;
+  return process.platform === "win32" ? "python" : "python3";
+}
+export const PYTHON = process.env.PRECHECK_PYTHON ?? pythonPorDefecto();
 const MENSAJE_FALLO = "No se pudo leer el plano. Verifique que el PDF no esté dañado ni protegido.";
 /** Un plano grande escaneado puede tardar varios minutos; más que esto es un proceso colgado. */
 const LIMITE_MS = 20 * 60_000;

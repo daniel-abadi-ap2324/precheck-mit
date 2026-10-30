@@ -93,8 +93,9 @@ export function RondasVista({ datos, otras = null }: { datos: RespuestaRondas; o
       ))}
       {faltantes.metricas ? (
         <Callout tone="info" title="Sin métricas">
-          Todavía no hay cifras por corrida. Ejecuta <code className="rounded bg-muted px-1">{COMANDO}</code> desde la raíz del repositorio (o el botón
-          «Recalcular métricas») para calcularlas; se guardan en web/.data/rondas-metricas.json.
+          Las cifras de cada corrida se midieron con planos reales que no vienen en esta copia pública, por eso aparecen como «—». Para medir corridas
+          propias, ejecuta <code className="rounded bg-muted px-1">{COMANDO}</code> desde la raíz del repositorio (o el botón «Recalcular métricas»);
+          se guardan en web/.data/rondas-metricas.json.
         </Callout>
       ) : null}
       {faltantes.catalogo ? (
