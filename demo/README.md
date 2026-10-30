@@ -8,6 +8,11 @@ A real anteproyecto (RLA-1678, "Antigua Bajada") in Casco Antiguo, San Felipe. I
 exercises the OCR step. It is the only real plan in this repository, and Josué gave permission to share it. Casco Antiguo has its own
 regulation (Resolución 127 de 2003), loaded under `normativa/zonas-exceptuadas/`.
 
+What to expect: with the default "Rápido" reader, reading the plan takes one to three minutes. The reader finds
+two different lot areas on sheet 1 (733.14 m² and 7,133.44 m²: it misreads one of the two printed values) and asks a
+person to decide, so the PreCheck cannot run until step 2 is settled. Press "Corregir" on "Área del lote", enter
+733.14 (the value printed on the plan) and save. That is the human confirmation step working as designed.
+
 ## `plano-sintetico.pdf` — synthetic plan
 
 A made-up plan for trying the app: a two-storey single-family house ("Residencia Ejemplo") on an invented

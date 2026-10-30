@@ -16,7 +16,7 @@ permission to share; the other is a synthetic plan (`demo/plano-sintetico.pdf`).
 
 ## Who did what
 
-**Josué (original author)** created PreCheck up to commit `8d3092e` (October 1, 2026), 250 commits in all:
+**Josué (original author)** created the first version of PreCheck:
 
 - the Python rule engine, with four results: CUMPLE, NO_CUMPLE, REQUIERE_REVISION and NO_APLICA;
 - rule versioning, the append-only audit log, and rule governance (a second person has to approve every rule);
@@ -24,8 +24,7 @@ permission to share; the other is a synthetic plan (`demo/plano-sintetico.pdf`).
   each with a verified citation;
 - the Next.js web interface, which ran on demo data.
 
-**Daniel (me)** made 405 commits between October 4 and 28, 2026, about 44,000 added lines in `web/src`, `precheck/`
-and `scripts/`:
+**Daniel (me)** built on it, mostly in `web/src`, `precheck/` and `scripts/`:
 
 - **Running it locally.** I made PreCheck run on Windows and connected the web app to the real engine, so plans you
   upload are actually read and evaluated instead of showing demo data.
