@@ -49,12 +49,6 @@ permission to share; the other is a synthetic plan (`demo/plano-sintetico.pdf`).
   blocking failures. Every change is a new rule version with a dated note, and the citation checker still passes. The
   same house went from 18 failures to 1. The catalog now has 2,194 rules.
 
-**How I used Claude Code.** Almost all of the code I added was written by Claude Code (Anthropic's coding agent)
-working in my copy of the repository. My part was to decide what to build and set the ground rules: quote the law
-exactly, no guessing, version every rule change, never send real data off the machine. I checked results in the
-running app and read the regulations myself before any rule was changed. Claude wrote and tested the code and
-drafted the documents. Inside the product, Claude (Sonnet, Opus) and DeepSeek models review plans through their APIs.
-
 ## Layout
 
 | Folder | What is in it |
