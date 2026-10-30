@@ -11,7 +11,8 @@ inspector at the DOYC (Dirección de Obras y Construcciones, Municipality of Pan
 This repository is a sanitized copy made for the MIT Maker Portfolio and shared with the permission of the original
 author. Fincas (property registry numbers), ID numbers, names, emails, addresses and permit numbers from real
 applications were removed or replaced with fake values. The git history was left out, and no real permit files are
-included. The only plan included is a synthetic one (`demo/plano-sintetico.pdf`).
+included. The only real plan is the Casco Antiguo one (`demo/casco-antiguo-rla-1678.pdf`), which Josué gave
+permission to share; the other is a synthetic plan (`demo/plano-sintetico.pdf`).
 
 ## Who did what
 
@@ -65,7 +66,7 @@ drafted the documents. Inside the product, Claude (Sonnet, Opus) and DeepSeek mo
 | `web/` | Next.js app: upload, fact confirmation, results, AI review, model comparison |
 | `scripts/` | Analysis and maintenance scripts (accuracy, rounds, cost, rule corrections) |
 | `tests/` | Python tests (`web/src` has its own Vitest tests) |
-| `demo/` | Synthetic plan for trying the app |
+| `demo/` | The Casco Antiguo plan and a synthetic plan for trying the app |
 
 ## Running it
 
@@ -82,8 +83,8 @@ python precheck/motor/verificar_citas.py reglas/reglas_plot_borrador.json normat
 cd web && npm install && npx next dev -H 127.0.0.1 -p 3000
 ```
 
-In the web app, create a project, upload `demo/plano-sintetico.pdf`, confirm the facts (zone R1, Betania) and run
-the PreCheck. The synthetic plan has one failure on purpose: its sidewalk is 1.00 m wide, and zone R1 requires
+In the web app, create a project and pick a plan in the "Plano de ejemplo" list (it shows both files in `demo/`), or
+upload one yourself. For the synthetic plan, confirm the facts (zone R1, Betania) and run the PreCheck. The synthetic plan has one failure on purpose: its sidewalk is 1.00 m wide, and zone R1 requires
 1.20 m. The AI review step needs Claude Code installed or an Anthropic API key. Without either, the rule engine
 still runs.
 

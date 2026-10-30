@@ -2,12 +2,12 @@ import { readdir, stat } from "node:fs/promises";
 import { join } from "node:path";
 
 /**
- * Anteproyectos RLA reales (PDF) de la carpeta PLANOS_EJEMPLO_DIR. Sirven de planos de ejemplo para probar la
+ * Anteproyectos (PDF) de la carpeta PLANOS_EJEMPLO_DIR, por defecto `demo/` del repositorio (el plano sintético y el Casco Antiguo). Sirven de planos de ejemplo para probar la
  * lectura y son también los documentos originales de los expedientes revisados por el agente revisor-planos.
  * Solo se ofrecen sus PDF, por nombre exacto comparado contra el listado (nunca una ruta).
  * `turbopackIgnore`: rutas de datos en tiempo de ejecución; el build no debe rastrear ni copiar esas carpetas.
  */
-export const carpetaEjemplos = () => process.env.PLANOS_EJEMPLO_DIR ?? "/home/app/Zonificacion_MUPA/Anteproyecto_Solicitados";
+export const carpetaEjemplos = () => process.env.PLANOS_EJEMPLO_DIR ?? join(/* turbopackIgnore: true */ process.cwd(), "..", "demo");
 
 export interface PdfEjemplo {
   nombre: string;
